@@ -1,0 +1,812 @@
+{
+  "slug": "selfish-giant",
+  "entries": [
+    {
+      "id": "delicate",
+      "match": "delicate",
+      "para": 2,
+      "headword": "delicate",
+      "pos": "adjective",
+      "ipa": "/ˈdɛlɪkət/",
+      "sense_en": "fine, light and beautiful, and easily damaged",
+      "sense_ko": "여리고 섬세한",
+      "synonyms": [
+        {"word": "fragile", "nuance": "Stresses only that something breaks easily; no idea of beauty or fineness.", "example": "a fragile glass vase"},
+        {"word": "dainty", "nuance": "Small, pretty and neat; often used for food, hands or manners, a little cute.", "example": "dainty little cakes"},
+        {"word": "frail", "nuance": "Weak in body, usually said of old or sick people, not of flowers or fabrics.", "example": "a frail old woman"}
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "break-out-into",
+      "match": "broke out into",
+      "para": 2,
+      "headword": "break out into",
+      "pos": "phrasal verb",
+      "ipa": null,
+      "sense_en": "suddenly start to be covered with something (here, flowers)",
+      "sense_ko": "(꽃이) 활짝 피어나다, 갑자기 ~로 뒤덮이다",
+      "synonyms": [
+        {"word": "burst into", "nuance": "Even more sudden and dramatic; very common with flowers, tears and song.", "example": "The trees burst into bloom."},
+        {"word": "come into", "nuance": "Calm and gradual; just says the stage has been reached.", "example": "The roses are coming into flower."}
+      ],
+      "modern": null,
+      "tip_ko": "break out into a sweat / a rash처럼 갑자기 뭔가가 몸이나 표면을 덮을 때 쓴다.",
+      "all": true
+    },
+    {
+      "id": "ogre",
+      "match": "ogre",
+      "para": 3,
+      "headword": "ogre",
+      "pos": "noun",
+      "ipa": "/ˈoʊɡər/",
+      "sense_en": "a huge, cruel creature in fairy tales that sometimes eats people",
+      "sense_ko": "(동화 속) 식인 거인, 괴물",
+      "synonyms": [
+        {"word": "giant", "nuance": "Just a very big person-like creature; can be kind, as this story shows.", "example": "a friendly giant"},
+        {"word": "troll", "nuance": "Ugly creature from Scandinavian tales living under bridges or in caves; today also an online troublemaker.", "example": "the troll under the bridge"},
+        {"word": "monster", "nuance": "General word for any frightening creature, of any size or shape.", "example": "a sea monster"}
+      ],
+      "modern": null,
+      "tip_ko": "발음은 '오거'(/ˈoʊɡər/). 비유적으로 '무서운 상사' 같은 사람에게도 쓴다.",
+      "all": true
+    },
+    {
+      "id": "limited",
+      "match": "limited",
+      "para": 3,
+      "headword": "limited",
+      "pos": "adjective",
+      "ipa": "/ˈlɪmɪtɪd/",
+      "sense_en": "not very large; here, he had little to say",
+      "sense_ko": "(화제·말주변이) 빈약한, 한정된",
+      "synonyms": [
+        {"word": "restricted", "nuance": "Kept small by a rule or outside control, not by natural lack.", "example": "restricted access"},
+        {"word": "narrow", "nuance": "Used for interests or views; suggests a closed or small mind.", "example": "a narrow range of interests"},
+        {"word": "scant", "nuance": "Formal; barely enough, used before uncountable nouns.", "example": "scant attention"}
+      ],
+      "modern": null,
+      "tip_ko": "Wilde의 농담: 할 말이 7년 만에 바닥났다는 뜻이다.",
+      "all": true
+    },
+    {
+      "id": "determined",
+      "match": "determined",
+      "para": 3,
+      "headword": "determine",
+      "pos": "verb",
+      "ipa": "/dɪˈtɜrmɪn/",
+      "sense_en": "firmly decided to do something",
+      "sense_ko": "(~하기로) 결심했다",
+      "synonyms": [
+        {"word": "decide", "nuance": "Neutral, everyday word; no idea of strong will.", "example": "She decided to stay."},
+        {"word": "resolve", "nuance": "Formal; a serious promise to oneself, often about behaviour.", "example": "He resolved to work harder."},
+        {"word": "make up one's mind", "nuance": "Informal; the end of a period of thinking about choices.", "example": "I can’t make up my mind."}
+      ],
+      "modern": "decided",
+      "tip_ko": "determine to do는 다소 옛 표현. 오늘날은 be determined to do(굳게 결심하다)가 흔하다.",
+      "all": true
+    },
+    {
+      "id": "gruff",
+      "match": "gruff",
+      "para": 4,
+      "headword": "gruff",
+      "pos": "adjective",
+      "ipa": "/ɡrʌf/",
+      "sense_en": "low, rough and unfriendly-sounding",
+      "sense_ko": "퉁명스럽고 걸걸한",
+      "synonyms": [
+        {"word": "hoarse", "nuance": "Rough because of a sore throat or shouting; says nothing about mood.", "example": "hoarse from cheering"},
+        {"word": "husky", "nuance": "Low and slightly rough, often attractive.", "example": "a husky voice"},
+        {"word": "brusque", "nuance": "About manner, not sound: short and rude in speech.", "example": "a brusque reply"}
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "notice-board",
+      "match": "notice-board",
+      "para": 5,
+      "headword": "notice board",
+      "pos": "noun",
+      "ipa": "/ˈnoʊtɪs bɔrd/",
+      "sense_en": "a board on which a written message is shown to the public",
+      "sense_ko": "게시판, 안내판",
+      "synonyms": [
+        {"word": "bulletin board", "nuance": "American word; usually indoors, with many papers pinned on it.", "example": "the office bulletin board"},
+        {"word": "sign", "nuance": "Any board with a short message, often a warning; the most natural word here today.", "example": "a No Parking sign"}
+      ],
+      "modern": "sign",
+      "tip_ko": "notice board는 영국식, 미국은 bulletin board.",
+      "all": true
+    },
+    {
+      "id": "trespasser",
+      "match": "Trespassers",
+      "para": 6,
+      "headword": "trespasser",
+      "pos": "noun",
+      "ipa": "/ˈtrɛspæsər/",
+      "sense_en": "a person who goes onto someone’s land without permission",
+      "sense_ko": "무단 침입자",
+      "synonyms": [
+        {"word": "intruder", "nuance": "Stronger; someone who enters a building or place, often to steal or harm.", "example": "The alarm scared off the intruder."},
+        {"word": "interloper", "nuance": "Formal; someone who joins a group or place where they are not wanted.", "example": "She felt like an interloper at the party."}
+      ],
+      "modern": null,
+      "tip_ko": "'Trespassers will be prosecuted'(무단 침입자는 고발함)는 영국 사유지의 전형적인 경고문이다.",
+      "all": true
+    },
+    {
+      "id": "prosecute",
+      "match": "Prosecuted",
+      "para": 8,
+      "headword": "prosecute",
+      "pos": "verb",
+      "ipa": "/ˈprɑsɪˌkjut/",
+      "sense_en": "officially accused of a crime in a court of law",
+      "sense_ko": "기소되다, 고발되다",
+      "synonyms": [
+        {"word": "sue", "nuance": "A private person takes someone to court, usually for money; not criminal.", "example": "They sued the company."},
+        {"word": "charge", "nuance": "The police formally accuse someone; a step before a trial.", "example": "He was charged with theft."}
+      ],
+      "modern": null,
+      "tip_ko": "persecute(박해하다)와 헷갈리기 쉽다. pro-는 법정, per-는 괴롭힘.",
+      "all": true
+    },
+    {
+      "id": "wander",
+      "match": "wander",
+      "para": 10,
+      "headword": "wander",
+      "pos": "verb",
+      "ipa": "/ˈwɑndər/",
+      "sense_en": "walk slowly around without a clear purpose",
+      "sense_ko": "(목적 없이) 서성이다, 거닐다",
+      "synonyms": [
+        {"word": "roam", "nuance": "Over a wide area, freely, often for a long time.", "example": "Wild horses roam the plains."},
+        {"word": "stroll", "nuance": "A relaxed, pleasant walk for enjoyment.", "example": "a stroll along the beach"},
+        {"word": "drift", "nuance": "Moves passively, pushed along with no aim or energy.", "example": "The crowd drifted away."}
+      ],
+      "modern": null,
+      "tip_ko": "wander /ˈwɑndər/(헤매다)와 wonder /ˈwʌndər/(궁금하다)의 모음을 구분하자.",
+      "all": true
+    },
+    {
+      "id": "cloak",
+      "match": "cloak",
+      "para": 11,
+      "headword": "cloak",
+      "pos": "noun",
+      "ipa": "/kloʊk/",
+      "sense_en": "a long, loose coat without sleeves; here, a layer that covers everything",
+      "sense_ko": "망토; (비유) 온통 덮은 것",
+      "synonyms": [
+        {"word": "cape", "nuance": "Usually shorter, covering the shoulders; think of superheroes.", "example": "Superman’s red cape"},
+        {"word": "blanket", "nuance": "As a metaphor, a thick even layer over the ground.", "example": "a blanket of snow"},
+        {"word": "mantle", "nuance": "Literary; a loose cloak, or a covering layer, often also responsibility.", "example": "a mantle of snow"}
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "roar",
+      "match": "roared",
+      "para": 11,
+      "headword": "roar",
+      "pos": "verb",
+      "ipa": "/rɔr/",
+      "sense_en": "made a very loud, deep, continuous noise",
+      "sense_ko": "울부짖었다, 굉음을 냈다",
+      "synonyms": [
+        {"word": "howl", "nuance": "Long, high, wailing sound, like a wolf or strong wind.", "example": "The wind howled all night."},
+        {"word": "bellow", "nuance": "A person or animal shouting in a deep, angry voice.", "example": "He bellowed orders."},
+        {"word": "boom", "nuance": "A single deep, loud sound, like a cannon or thunder.", "example": "Thunder boomed overhead."}
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "chimney-pot",
+      "match": "chimney-pots",
+      "para": 11,
+      "headword": "chimney pot",
+      "pos": "noun",
+      "ipa": "/ˈtʃɪmni pɑt/",
+      "sense_en": "a short pipe on top of a chimney",
+      "sense_ko": "굴뚝 꼭대기의 연통",
+      "synonyms": [
+        {"word": "chimney", "nuance": "The whole structure that carries smoke up; the pot is only the top part.", "example": "smoke from the chimney"},
+        {"word": "flue", "nuance": "The inside passage for smoke, not the visible top.", "example": "a blocked flue"}
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "hail",
+      "match": "Hail",
+      "para": 11,
+      "headword": "hail",
+      "pos": "noun",
+      "ipa": "/heɪl/",
+      "sense_en": "small balls of ice that fall from the sky like rain",
+      "sense_ko": "우박",
+      "synonyms": [
+        {"word": "sleet", "nuance": "A mix of rain and snow, or half-melted snow; softer than hail.", "example": "driving through sleet"},
+        {"word": "hailstone", "nuance": "One single ball of hail; countable.", "example": "hailstones as big as golf balls"}
+      ],
+      "modern": null,
+      "tip_ko": "동사 hail은 '(택시를) 부르다, 환호하다'라는 전혀 다른 뜻도 있다.",
+      "all": true
+    },
+    {
+      "id": "rattle",
+      "match": "rattled",
+      "para": 11,
+      "headword": "rattle",
+      "pos": "verb",
+      "ipa": "/ˈrætəl/",
+      "sense_en": "made quick, repeated knocking sounds by hitting something",
+      "sense_ko": "덜거덕거리며 두드렸다",
+      "synonyms": [
+        {"word": "clatter", "nuance": "Louder, harder crashing sound of hard objects hitting each other.", "example": "Dishes clattered to the floor."},
+        {"word": "patter", "nuance": "Light, soft, quick taps, like gentle rain or small feet.", "example": "the patter of rain on the window"},
+        {"word": "drum", "nuance": "Steady, rhythmic beating.", "example": "Rain drummed on the roof."}
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "slate",
+      "match": "slates",
+      "para": 11,
+      "headword": "slate",
+      "pos": "noun",
+      "ipa": "/sleɪt/",
+      "sense_en": "thin flat pieces of grey stone used to cover a roof",
+      "sense_ko": "(지붕의) 슬레이트, 석판",
+      "synonyms": [
+        {"word": "tile", "nuance": "General word for any flat roofing or floor piece, often clay.", "example": "red roof tiles"},
+        {"word": "shingle", "nuance": "Usually wooden or asphalt roof pieces, common in America.", "example": "cedar shingles"}
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "all-the-year-round",
+      "match": "all the year round",
+      "para": 11,
+      "headword": "all (the) year round",
+      "pos": "idiom",
+      "ipa": null,
+      "sense_en": "during the whole year, in every season",
+      "sense_ko": "일 년 내내",
+      "synonyms": [
+        {"word": "year-round", "nuance": "Modern, compact form; also used as an adjective.", "example": "a year-round resort"},
+        {"word": "all year long", "nuance": "Casual; stresses how long the time feels.", "example": "It rained all year long."}
+      ],
+      "modern": "all year round",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "linnet",
+      "match": "linnet",
+      "para": 14,
+      "headword": "linnet",
+      "pos": "noun",
+      "ipa": "/ˈlɪnɪt/",
+      "sense_en": "a small brown songbird",
+      "sense_ko": "홍방울새(작은 노래새)",
+      "synonyms": [
+        {"word": "finch", "nuance": "The bird family the linnet belongs to; broader term.", "example": "a flock of finches"},
+        {"word": "songbird", "nuance": "Any small bird that sings; no specific species.", "example": "songbirds in the garden"}
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "cease",
+      "match": "ceased",
+      "para": 14,
+      "headword": "cease",
+      "pos": "verb",
+      "ipa": "/sis/",
+      "sense_en": "stopped",
+      "sense_ko": "멈췄다, 그쳤다",
+      "synonyms": [
+        {"word": "stop", "nuance": "Everyday, neutral word for the same idea.", "example": "The rain stopped."},
+        {"word": "halt", "nuance": "Sudden stop, often of movement or a process, sometimes by order.", "example": "The train halted."},
+        {"word": "quit", "nuance": "Informal; a person gives up doing something on purpose.", "example": "He quit smoking."}
+      ],
+      "modern": "stopped",
+      "tip_ko": "cease는 격식체. ceasefire(휴전)에 남아 있다. 발음은 '시스'(/sis/).",
+      "all": true
+    },
+    {
+      "id": "perfume",
+      "match": "perfume",
+      "para": 14,
+      "headword": "perfume",
+      "pos": "noun",
+      "ipa": "/ˈpɜrfjum/",
+      "sense_en": "a pleasant smell, here from flowers",
+      "sense_ko": "향기",
+      "synonyms": [
+        {"word": "scent", "nuance": "Any smell, usually pleasant and light; also the smell animals follow.", "example": "the scent of pine"},
+        {"word": "fragrance", "nuance": "Sweet, pleasant smell; slightly formal, used in advertising.", "example": "a delicate fragrance"},
+        {"word": "aroma", "nuance": "Mostly for food and drink, rich and warm.", "example": "the aroma of fresh coffee"}
+      ],
+      "modern": "scent",
+      "tip_ko": "오늘날 perfume은 주로 '향수(제품)'. 자연의 향기는 scent나 fragrance가 자연스럽다.",
+      "all": true
+    },
+    {
+      "id": "casement",
+      "match": "casement",
+      "para": 14,
+      "headword": "casement",
+      "pos": "noun",
+      "ipa": "/ˈkeɪsmənt/",
+      "sense_en": "a window that opens outward on hinges at the side, like a door",
+      "sense_ko": "여닫이창",
+      "synonyms": [
+        {"word": "window", "nuance": "The general word; casement is a special type.", "example": "Open the window."},
+        {"word": "sash window", "nuance": "Slides up and down instead of swinging open.", "example": "an old sash window"}
+      ],
+      "modern": "window",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "creep",
+      "match": "crept",
+      "para": 16,
+      "headword": "creep",
+      "pos": "verb",
+      "ipa": "/krip/",
+      "sense_en": "moved slowly and quietly so as not to be noticed",
+      "sense_ko": "살금살금 기어들다",
+      "synonyms": [
+        {"word": "sneak", "nuance": "Quiet movement with a guilty or secret purpose.", "example": "He sneaked out of class."},
+        {"word": "crawl", "nuance": "Move on hands and knees; about body position, not quietness.", "example": "The baby crawled to the door."},
+        {"word": "tiptoe", "nuance": "Walk on the toes to stay quiet.", "example": "She tiptoed past the bedroom."}
+      ],
+      "modern": null,
+      "tip_ko": "과거형 crept는 불규칙(creep–crept–crept).",
+      "all": true
+    },
+    {
+      "id": "twitter",
+      "match": "twittering",
+      "para": 16,
+      "headword": "twitter",
+      "pos": "verb",
+      "ipa": "/ˈtwɪtər/",
+      "sense_en": "making many quick, high, light sounds, as small birds do",
+      "sense_ko": "지저귀는",
+      "synonyms": [
+        {"word": "chirp", "nuance": "One short, sharp bird or insect sound.", "example": "crickets chirping"},
+        {"word": "tweet", "nuance": "Childlike word for a bird’s call; now also a social media post.", "example": "tweet, tweet!"},
+        {"word": "warble", "nuance": "Singing with many changing notes, more musical.", "example": "a warbling blackbird"}
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "bitterly",
+      "match": "bitterly",
+      "para": 16,
+      "headword": "bitterly",
+      "pos": "adverb",
+      "ipa": "/ˈbɪtərli/",
+      "sense_en": "with great sadness and pain",
+      "sense_ko": "서럽게, 몹시 슬프게",
+      "synonyms": [
+        {"word": "inconsolably", "nuance": "So sad that nobody can comfort you; stresses hopelessness more than pain.", "example": "The lost child sobbed inconsolably."},
+        {"word": "hard", "nuance": "Everyday; cry hard focuses on how much, not how painful.", "example": "She cried hard."}
+      ],
+      "modern": null,
+      "tip_ko": "bitterly cold(살을 에는 듯 추운), bitterly disappointed처럼 '몹시'의 뜻으로도 쓴다.",
+      "all": true
+    },
+    {
+      "id": "heart-melted",
+      "match": "heart melted",
+      "para": 17,
+      "headword": "someone’s heart melts",
+      "pos": "idiom",
+      "ipa": "/mɛlt/",
+      "sense_en": "he suddenly felt love and pity instead of hardness",
+      "sense_ko": "마음이 누그러지다, 녹다",
+      "synonyms": [
+        {"word": "soften", "nuance": "Gradual and milder; less emotional.", "example": "His attitude softened."},
+        {"word": "be moved", "nuance": "Feel strong emotion, often to tears; no idea of earlier coldness.", "example": "I was moved by her speech."}
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "for-ever-and-ever",
+      "match": "for ever and ever",
+      "para": 17,
+      "headword": "for ever and ever",
+      "pos": "idiom",
+      "ipa": null,
+      "sense_en": "always, with no end; a stronger form of 'forever'",
+      "sense_ko": "영원히, 언제까지나",
+      "synonyms": [
+        {"word": "forever", "nuance": "Plain modern form, written as one word in American English.", "example": "I’ll love you forever."},
+        {"word": "permanently", "nuance": "Neutral, practical; about arrangements, not feelings.", "example": "The shop closed permanently."}
+      ],
+      "modern": "forever",
+      "tip_ko": "동화와 기도문('for ever and ever, Amen')에서 흔한 강조 표현.",
+      "all": true
+    },
+    {
+      "id": "steal-up",
+      "match": "stole up",
+      "para": 18,
+      "headword": "steal up",
+      "pos": "phrasal verb",
+      "ipa": "/stil/",
+      "sense_en": "came close quietly, without being noticed",
+      "sense_ko": "살며시 다가가다",
+      "synonyms": [
+        {"word": "creep up", "nuance": "Very close in meaning; slightly more common today, can sound threatening.", "example": "Don’t creep up on me like that!"},
+        {"word": "sneak up", "nuance": "Informal; often to surprise someone.", "example": "She sneaked up behind him."}
+      ],
+      "modern": "crept up",
+      "tip_ko": "여기서 steal은 '훔치다'가 아니라 '몰래 움직이다'. steal a glance(몰래 흘끗 보다)도 같은 계열.",
+      "all": true
+    },
+    {
+      "id": "fling",
+      "match": "flung",
+      "para": 18,
+      "headword": "fling",
+      "pos": "verb",
+      "ipa": "/flɪŋ/",
+      "sense_en": "threw or moved (his arms) quickly and with energy",
+      "sense_ko": "(팔을) 확 던지듯 두르다",
+      "synonyms": [
+        {"word": "throw", "nuance": "Neutral; no sense of speed or strong feeling.", "example": "Throw me the ball."},
+        {"word": "toss", "nuance": "Light, careless throw.", "example": "She tossed her keys on the table."},
+        {"word": "hurl", "nuance": "Violent, very forceful throw, often in anger.", "example": "He hurled a rock at the window."}
+      ],
+      "modern": null,
+      "tip_ko": "fling–flung–flung. 명사 fling은 '짧은 연애'라는 뜻도 있다.",
+      "all": true
+    },
+    {
+      "id": "wicked",
+      "match": "wicked",
+      "para": 18,
+      "headword": "wicked",
+      "pos": "adjective",
+      "ipa": "/ˈwɪkɪd/",
+      "sense_en": "morally bad and cruel",
+      "sense_ko": "사악한, 못된",
+      "synonyms": [
+        {"word": "evil", "nuance": "Stronger and darker; deep, serious badness.", "example": "an evil dictator"},
+        {"word": "mean", "nuance": "Everyday; unkind to others, small-scale.", "example": "Don’t be mean to your sister."},
+        {"word": "naughty", "nuance": "Only for children behaving badly; mild.", "example": "a naughty boy"}
+      ],
+      "modern": null,
+      "tip_ko": "발음은 '위키드'(/ˈwɪkɪd/), 두 음절. 속어로는 '끝내주는'이라는 칭찬도 된다.",
+      "all": true
+    },
+    {
+      "id": "bid-good-bye",
+      "match": "bid him good-bye",
+      "para": 19,
+      "headword": "bid someone goodbye",
+      "pos": "idiom",
+      "ipa": "/bɪd/",
+      "sense_en": "say goodbye to someone",
+      "sense_ko": "작별 인사를 하다",
+      "synonyms": [
+        {"word": "say goodbye to", "nuance": "Plain everyday form.", "example": "I said goodbye to my friends."},
+        {"word": "take leave of", "nuance": "Formal, old-fashioned; politely leaving someone.", "example": "He took leave of his host."}
+      ],
+      "modern": "say goodbye to him",
+      "tip_ko": "bid farewell, bid good night처럼 인사말과 쓰이는 문어체.",
+      "all": true
+    },
+    {
+      "id": "companion",
+      "match": "companion",
+      "para": 20,
+      "headword": "companion",
+      "pos": "noun",
+      "ipa": "/kəmˈpænjən/",
+      "sense_en": "a person you spend time or play with",
+      "sense_ko": "친구, 동무",
+      "synonyms": [
+        {"word": "friend", "nuance": "Stresses affection; companion stresses being together.", "example": "my best friend"},
+        {"word": "comrade", "nuance": "Shared hardship, as in war or politics.", "example": "his comrades in arms"},
+        {"word": "partner", "nuance": "Someone you do an activity with, or a romantic partner.", "example": "a dance partner"}
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "be-sure-and",
+      "match": "be sure and come",
+      "para": 22,
+      "headword": "be sure and (do)",
+      "pos": "idiom",
+      "ipa": null,
+      "sense_en": "make certain that you do something; don’t forget to",
+      "sense_ko": "꼭 ~하도록 하다",
+      "synonyms": [
+        {"word": "be sure to", "nuance": "The standard, more formal form of the same phrase.", "example": "Be sure to lock the door."},
+        {"word": "make sure you", "nuance": "Everyday; slightly stronger reminder.", "example": "Make sure you call me."}
+      ],
+      "modern": "be sure to come",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "long-for",
+      "match": "longed for",
+      "para": 23,
+      "headword": "long for",
+      "pos": "phrasal verb",
+      "ipa": "/lɔŋ/",
+      "sense_en": "wanted very much to see or have someone, with sadness",
+      "sense_ko": "간절히 그리워하다",
+      "synonyms": [
+        {"word": "miss", "nuance": "Everyday; feel sad someone is absent, less intense.", "example": "I miss you."},
+        {"word": "yearn for", "nuance": "Literary, very deep and often painful desire.", "example": "She yearned for home."},
+        {"word": "crave", "nuance": "Strong physical desire, often for food or drugs.", "example": "I’m craving chocolate."}
+      ],
+      "modern": null,
+      "tip_ko": "형용사 long과 달리 동사 long for는 '갈망하다'. longing(그리움)도 함께 알아 두자.",
+      "all": true
+    },
+    {
+      "id": "feeble",
+      "match": "feeble",
+      "para": 24,
+      "headword": "feeble",
+      "pos": "adjective",
+      "ipa": "/ˈfibəl/",
+      "sense_en": "very weak in body, usually from age or illness",
+      "sense_ko": "노쇠한, 기력이 약한",
+      "synonyms": [
+        {"word": "frail", "nuance": "Thin and delicate, looks easily hurt; very common for old people.", "example": "her frail grandmother"},
+        {"word": "weak", "nuance": "General word; can be temporary.", "example": "I feel weak after the flu."},
+        {"word": "infirm", "nuance": "Formal, medical; ill for a long time.", "example": "care for the old and infirm"}
+      ],
+      "modern": null,
+      "tip_ko": "a feeble excuse(궁색한 변명)처럼 '설득력 없는'의 뜻으로도 쓴다.",
+      "all": true
+    },
+    {
+      "id": "merely",
+      "match": "merely",
+      "para": 25,
+      "headword": "merely",
+      "pos": "adverb",
+      "ipa": "/ˈmɪrli/",
+      "sense_en": "only; nothing more than",
+      "sense_ko": "그저, 단지",
+      "synonyms": [
+        {"word": "just", "nuance": "Everyday spoken word for the same idea.", "example": "It’s just a joke."},
+        {"word": "simply", "nuance": "Often stresses that something is easy or plain.", "example": "It’s simply a matter of time."},
+        {"word": "only", "nuance": "Neutral; often about amount or number.", "example": "only two left"}
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "marvellous",
+      "match": "marvellous",
+      "para": 26,
+      "headword": "marvellous",
+      "pos": "adjective",
+      "ipa": "/ˈmɑrvələs/",
+      "sense_en": "so wonderful that it causes amazement",
+      "sense_ko": "경이로운, 놀라운",
+      "synonyms": [
+        {"word": "wonderful", "nuance": "Very common, warm praise; less sense of astonishment.", "example": "a wonderful day"},
+        {"word": "astonishing", "nuance": "Focuses on surprise, not on beauty or goodness.", "example": "an astonishing result"},
+        {"word": "miraculous", "nuance": "Seems impossible, like a miracle.", "example": "a miraculous recovery"}
+      ],
+      "modern": null,
+      "tip_ko": "marvellous는 영국식, 미국식은 marvelous(l 하나).",
+      "all": true
+    },
+    {
+      "id": "hasten",
+      "match": "hastened",
+      "para": 27,
+      "headword": "hasten",
+      "pos": "verb",
+      "ipa": "/ˈheɪsən/",
+      "sense_en": "went somewhere quickly",
+      "sense_ko": "서둘러 가다",
+      "synonyms": [
+        {"word": "hurry", "nuance": "Everyday word; often because of little time.", "example": "Hurry, we’re late!"},
+        {"word": "rush", "nuance": "Very fast, sometimes careless.", "example": "He rushed out of the room."},
+        {"word": "dash", "nuance": "A sudden short run.", "example": "She dashed for the bus."}
+      ],
+      "modern": "hurried",
+      "tip_ko": "t는 소리 나지 않는다: '헤이슨'(/ˈheɪsən/). listen, castle과 같다.",
+      "all": true
+    },
+    {
+      "id": "hath",
+      "match": "hath",
+      "para": 27,
+      "headword": "hath",
+      "pos": "verb",
+      "ipa": "/hæθ/",
+      "sense_en": "an old form of 'has'",
+      "sense_ko": "has의 옛 형태",
+      "synonyms": [
+        {"word": "has", "nuance": "The modern form used today.", "example": "Who has done this?"},
+        {"word": "doth", "nuance": "The matching old form of 'does'.", "example": "The lady doth protest too much."}
+      ],
+      "modern": "has",
+      "tip_ko": "성경·셰익스피어 말투. 거인이 갑자기 옛말을 쓰며 장면이 엄숙해진다.",
+      "all": true
+    },
+    {
+      "id": "wound",
+      "match": "wound",
+      "para": 27,
+      "headword": "wound",
+      "pos": "verb",
+      "ipa": "/wund/",
+      "sense_en": "hurt someone so that the skin is cut or broken",
+      "sense_ko": "상처를 입히다",
+      "synonyms": [
+        {"word": "injure", "nuance": "General word, often from accidents, not weapons.", "example": "injured in a car crash"},
+        {"word": "hurt", "nuance": "Everyday, broad; body or feelings.", "example": "Did you hurt yourself?"},
+        {"word": "harm", "nuance": "Any damage, often abstract; less physical.", "example": "No one was harmed."}
+      ],
+      "modern": null,
+      "tip_ko": "상처 wound는 '운드'(/wund/). wind(감다)의 과거 wound(/waʊnd/)와 발음이 다르다.",
+      "all": true
+    },
+    {
+      "id": "thee",
+      "match": "thee",
+      "para": 27,
+      "headword": "thee",
+      "pos": "pronoun",
+      "ipa": "/ði/",
+      "sense_en": "an old form of 'you' as an object",
+      "sense_ko": "그대를 (you의 옛 목적격)",
+      "synonyms": [
+        {"word": "you", "nuance": "The modern form for subject and object.", "example": "Who hurt you?"},
+        {"word": "thou", "nuance": "The old subject form: thou = you as subject.", "example": "Who art thou?"}
+      ],
+      "modern": "you",
+      "tip_ko": "thou(주격)–thee(목적격)–thy(소유격). 원래 친근한 말투였으나 지금은 성경·기도문에서 엄숙하게 들린다.",
+      "all": true
+    },
+    {
+      "id": "slay",
+      "match": "slay",
+      "para": 28,
+      "headword": "slay",
+      "pos": "verb",
+      "ipa": "/sleɪ/",
+      "sense_en": "kill violently, especially with a weapon",
+      "sense_ko": "베어 죽이다",
+      "synonyms": [
+        {"word": "kill", "nuance": "Neutral, everyday word.", "example": "The frost killed the plants."},
+        {"word": "murder", "nuance": "Unlawful and deliberate killing of a person; a crime word.", "example": "He was murdered."},
+        {"word": "slaughter", "nuance": "Killing many, cruelly, or animals for food.", "example": "the slaughter of innocents"}
+      ],
+      "modern": "kill",
+      "tip_ko": "문어·신화 표현(slay a dragon). 요즘 속어 slay는 '끝내주게 잘하다'.",
+      "all": true
+    },
+    {
+      "id": "nay",
+      "match": "Nay",
+      "para": 29,
+      "headword": "nay",
+      "pos": "interjection",
+      "ipa": "/neɪ/",
+      "sense_en": "an old word for 'no'",
+      "sense_ko": "아니오 (옛말)",
+      "synonyms": [
+        {"word": "no", "nuance": "The modern word.", "example": "No, thank you."},
+        {"word": "nope", "nuance": "Very casual spoken form.", "example": "Nope, not today."}
+      ],
+      "modern": "no",
+      "tip_ko": "오늘날은 의회 투표(yeas and nays)에 남아 있다.",
+      "all": true
+    },
+    {
+      "id": "art-thou",
+      "match": "art thou",
+      "para": 30,
+      "headword": "art thou",
+      "pos": "phrase",
+      "ipa": "/ɑrt ðaʊ/",
+      "sense_en": "old form of 'are you'",
+      "sense_ko": "그대는 ~인가 (are you의 옛말)",
+      "synonyms": [
+        {"word": "are you", "nuance": "The modern form.", "example": "Who are you?"},
+        {"word": "wert thou", "nuance": "The old past form, 'were you'.", "example": "Where wert thou?"}
+      ],
+      "modern": "are you",
+      "tip_ko": "여기서 art는 '예술'이 아니라 be동사의 옛 2인칭 형태.",
+      "all": true
+    },
+    {
+      "id": "awe",
+      "match": "awe",
+      "para": 30,
+      "headword": "awe",
+      "pos": "noun",
+      "ipa": "/ɔ/",
+      "sense_en": "a feeling of deep respect mixed with wonder and some fear",
+      "sense_ko": "경외감",
+      "synonyms": [
+        {"word": "wonder", "nuance": "Amazement and delight, without fear or respect.", "example": "children’s sense of wonder"},
+        {"word": "reverence", "nuance": "Deep, calm respect, often religious; less fear or surprise.", "example": "reverence for nature"},
+        {"word": "fear", "nuance": "Only the frightened part, with no admiration.", "example": "fear of the dark"}
+      ],
+      "modern": null,
+      "tip_ko": "awesome은 요즘 '끝내준다'지만 awe 자체는 무겁고 진지한 감정이다.",
+      "all": true
+    },
+    {
+      "id": "kneel",
+      "match": "knelt",
+      "para": 30,
+      "headword": "kneel",
+      "pos": "verb",
+      "ipa": "/nil/",
+      "sense_en": "went down onto his knees, as a sign of respect",
+      "sense_ko": "무릎을 꿇었다",
+      "synonyms": [
+        {"word": "bow", "nuance": "Bend the head or upper body; still standing.", "example": "He bowed to the queen."},
+        {"word": "crouch", "nuance": "Bend low on the feet, often to hide or prepare; no respect.", "example": "She crouched behind the car."},
+        {"word": "genuflect", "nuance": "Formal; bend one knee briefly in church.", "example": "genuflect before the altar"}
+      ],
+      "modern": null,
+      "tip_ko": "k는 묵음: '닐'(/nil/). 과거형은 knelt 또는 kneeled.",
+      "all": true
+    },
+    {
+      "id": "paradise",
+      "match": "Paradise",
+      "para": 31,
+      "headword": "paradise",
+      "pos": "noun",
+      "ipa": "/ˈpɛrəˌdaɪs/",
+      "sense_en": "heaven; the perfect place where good people go after death",
+      "sense_ko": "낙원, 천국",
+      "synonyms": [
+        {"word": "heaven", "nuance": "The common religious word; also used for great happiness.", "example": "go to heaven"},
+        {"word": "Eden", "nuance": "The garden of Adam and Eve; a perfect, innocent place.", "example": "an untouched Eden"}
+      ],
+      "modern": null,
+      "tip_ko": "Paradise는 원래 '담으로 둘러싼 정원'이라는 뜻의 말에서 왔다. 거인의 정원과 짝을 이룬다.",
+      "all": true
+    }
+  ]
+}

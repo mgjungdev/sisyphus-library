@@ -1,16 +1,2254 @@
 [
-  {"slug": "happy-prince", "title": "The Happy Prince", "author": "Oscar Wilde", "year": 1888, "month": "2026-10", "gutenberg": 902,
-   "spine": {"color": "#8a3b2e", "height": 0.92, "thickness": 34}, "cover": {"motif": "swallow", "accent": "#d9b45a"}},
-  {"slug": "gift-of-the-magi", "title": "The Gift of the Magi", "author": "O. Henry", "year": 1905, "month": "2026-10", "gutenberg": 7256,
-   "spine": {"color": "#2f4a3a", "height": 0.84, "thickness": 26}, "cover": {"motif": "comb", "accent": "#c9a86a"}},
-  {"slug": "selfish-giant", "title": "The Selfish Giant", "author": "Oscar Wilde", "year": 1888, "month": "2026-11", "gutenberg": 902,
-   "spine": {"color": "#3d5a73", "height": 0.88, "thickness": 22}, "cover": {"motif": "tree", "accent": "#e6d2a2"}},
-  {"slug": "last-leaf", "title": "The Last Leaf", "author": "O. Henry", "year": 1907, "month": "2026-11",
-   "spine": {"color": "#6b5a2a", "height": 0.8, "thickness": 24}, "cover": {"motif": "leaf", "accent": "#e0b872"}},
-  {"slug": "nightingale-and-the-rose", "title": "The Nightingale and the Rose", "author": "Oscar Wilde", "year": 1888, "month": "2026-12", "gutenberg": 902,
-   "spine": {"color": "#5a2438", "height": 0.95, "thickness": 28}, "cover": {"motif": "rose", "accent": "#e7b7a3"}},
-  {"slug": "after-twenty-years", "title": "After Twenty Years", "author": "O. Henry", "year": 1906, "month": "2026-12",
-   "spine": {"color": "#2e3440", "height": 0.78, "thickness": 20}, "cover": {"motif": "lamp", "accent": "#d8c08a"}},
-  {"slug": "tell-tale-heart", "title": "The Tell-Tale Heart", "author": "Edgar Allan Poe", "year": 1843, "month": "2027-01",
-   "spine": {"color": "#1f1f24", "height": 0.86, "thickness": 22}, "cover": {"motif": "heart", "accent": "#b3423a"}}
+ {
+  "slug": "happy-prince",
+  "title": "The Happy Prince",
+  "author": "Oscar Wilde",
+  "year": 1888,
+  "genre": "Fairy Tales & Fables",
+  "level": 1,
+  "tags": [
+   "British",
+   "kindness"
+  ],
+  "spine": {
+   "color": "#7a4a2a",
+   "height": 0.9
+  },
+  "cover": {
+   "motif": "swallow",
+   "accent": "#e3c16f"
+  },
+  "gutenberg": 902,
+  "month": "2026-10",
+  "plan": 1
+ },
+ {
+  "slug": "gift-of-the-magi",
+  "title": "The Gift of the Magi",
+  "author": "O. Henry",
+  "year": 1905,
+  "genre": "Love & Society",
+  "level": 2,
+  "tags": [
+   "American",
+   "Christmas",
+   "marriage"
+  ],
+  "spine": {
+   "color": "#6e2f55",
+   "height": 0.84
+  },
+  "cover": {
+   "motif": "comb",
+   "accent": "#ecc9a8"
+  },
+  "gutenberg": 7256,
+  "month": "2026-10",
+  "plan": 2
+ },
+ {
+  "slug": "selfish-giant",
+  "title": "The Selfish Giant",
+  "author": "Oscar Wilde",
+  "year": 1888,
+  "genre": "Fairy Tales & Fables",
+  "level": 1,
+  "tags": [
+   "British",
+   "children",
+   "seasons"
+  ],
+  "spine": {
+   "color": "#6e3b4e",
+   "height": 0.88
+  },
+  "cover": {
+   "motif": "tree",
+   "accent": "#e3c16f"
+  },
+  "gutenberg": 902,
+  "month": "2026-10",
+  "plan": 3
+ },
+ {
+  "slug": "rikki-tikki-tavi",
+  "title": "Rikki-Tikki-Tavi",
+  "author": "Rudyard Kipling",
+  "year": 1894,
+  "genre": "Adventure",
+  "level": 1,
+  "tags": [
+   "British",
+   "India",
+   "animals"
+  ],
+  "spine": {
+   "color": "#4a5a2a",
+   "height": 0.96
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#d8c48a"
+  },
+  "month": "2026-10",
+  "plan": 4,
+  "gutenberg": 236
+ },
+ {
+  "slug": "after-twenty-years",
+  "title": "After Twenty Years",
+  "author": "O. Henry",
+  "year": 1906,
+  "genre": "Mystery & Detective",
+  "level": 1,
+  "tags": [
+   "American",
+   "city",
+   "twist ending"
+  ],
+  "spine": {
+   "color": "#243a5e",
+   "height": 0.88
+  },
+  "cover": {
+   "motif": "lamp",
+   "accent": "#d9c08a"
+  },
+  "month": "2026-11",
+  "plan": 5,
+  "gutenberg": 2776
+ },
+ {
+  "slug": "vanka",
+  "title": "Vanka",
+  "author": "Anton Chekhov",
+  "year": 1886,
+  "genre": "Realism & Character",
+  "level": 1,
+  "tags": [
+   "Russian",
+   "children",
+   "Christmas"
+  ],
+  "spine": {
+   "color": "#5a4a3a",
+   "height": 0.96
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2026-11",
+  "plan": 6,
+  "gutenberg": 13417
+ },
+ {
+  "slug": "emperors-new-clothes",
+  "title": "The Emperor's New Clothes",
+  "author": "Hans Christian Andersen",
+  "year": 1837,
+  "genre": "Fairy Tales & Fables",
+  "level": 1,
+  "tags": [
+   "Danish",
+   "vanity"
+  ],
+  "spine": {
+   "color": "#a0522d",
+   "height": 0.9
+  },
+  "cover": {
+   "motif": "crown",
+   "accent": "#e3c16f"
+  },
+  "month": "2026-11",
+  "plan": 7,
+  "gutenberg": 1597
+ },
+ {
+  "slug": "ugly-duckling",
+  "title": "The Ugly Duckling",
+  "author": "Hans Christian Andersen",
+  "year": 1843,
+  "genre": "Fairy Tales & Fables",
+  "level": 1,
+  "tags": [
+   "Danish",
+   "animals"
+  ],
+  "spine": {
+   "color": "#a0522d",
+   "height": 0.87
+  },
+  "cover": {
+   "motif": "crown",
+   "accent": "#e3c16f"
+  },
+  "month": "2026-11",
+  "plan": 8
+ },
+ {
+  "slug": "little-match-girl",
+  "title": "The Little Match Girl",
+  "author": "Hans Christian Andersen",
+  "year": 1845,
+  "genre": "Fairy Tales & Fables",
+  "level": 1,
+  "tags": [
+   "Danish",
+   "Christmas",
+   "poverty"
+  ],
+  "spine": {
+   "color": "#9c6b30",
+   "height": 0.82
+  },
+  "cover": {
+   "motif": "crown",
+   "accent": "#e3c16f"
+  },
+  "month": "2026-12",
+  "plan": 9
+ },
+ {
+  "slug": "rumpelstiltskin",
+  "title": "Rumpelstiltskin",
+  "author": "Brothers Grimm",
+  "year": 1812,
+  "genre": "Fairy Tales & Fables",
+  "level": 1,
+  "tags": [
+   "German",
+   "bargains"
+  ],
+  "spine": {
+   "color": "#7a4a2a",
+   "height": 0.81
+  },
+  "cover": {
+   "motif": "crown",
+   "accent": "#e3c16f"
+  },
+  "month": "2026-12",
+  "plan": 10
+ },
+ {
+  "slug": "hansel-and-gretel",
+  "title": "Hansel and Gretel",
+  "author": "Brothers Grimm",
+  "year": 1812,
+  "genre": "Fairy Tales & Fables",
+  "level": 1,
+  "tags": [
+   "German",
+   "children"
+  ],
+  "spine": {
+   "color": "#8a3b2e",
+   "height": 0.9
+  },
+  "cover": {
+   "motif": "crown",
+   "accent": "#e3c16f"
+  },
+  "month": "2026-12",
+  "plan": 11
+ },
+ {
+  "slug": "cinderella",
+  "title": "Cinderella",
+  "author": "Charles Perrault",
+  "year": 1697,
+  "genre": "Fairy Tales & Fables",
+  "level": 1,
+  "tags": [
+   "French",
+   "romance"
+  ],
+  "spine": {
+   "color": "#8a3b2e",
+   "height": 0.85
+  },
+  "cover": {
+   "motif": "crown",
+   "accent": "#e3c16f"
+  },
+  "month": "2026-12",
+  "plan": 12
+ },
+ {
+  "slug": "puss-in-boots",
+  "title": "Puss in Boots",
+  "author": "Charles Perrault",
+  "year": 1697,
+  "genre": "Fairy Tales & Fables",
+  "level": 1,
+  "tags": [
+   "French",
+   "animals"
+  ],
+  "spine": {
+   "color": "#a0522d",
+   "height": 0.89
+  },
+  "cover": {
+   "motif": "crown",
+   "accent": "#e3c16f"
+  },
+  "month": "2027-01",
+  "plan": 13
+ },
+ {
+  "slug": "aesop-fables",
+  "title": "Selected Fables",
+  "author": "Aesop",
+  "year": -550,
+  "genre": "Fairy Tales & Fables",
+  "level": 1,
+  "tags": [
+   "Greek",
+   "animals",
+   "morals"
+  ],
+  "spine": {
+   "color": "#a0522d",
+   "height": 0.84
+  },
+  "cover": {
+   "motif": "crown",
+   "accent": "#e3c16f"
+  },
+  "month": "2027-01",
+  "plan": 14
+ },
+ {
+  "slug": "peter-rabbit",
+  "title": "The Tale of Peter Rabbit",
+  "author": "Beatrix Potter",
+  "year": 1902,
+  "genre": "Fairy Tales & Fables",
+  "level": 1,
+  "tags": [
+   "British",
+   "animals",
+   "children"
+  ],
+  "spine": {
+   "color": "#8a3b2e",
+   "height": 0.93
+  },
+  "cover": {
+   "motif": "crown",
+   "accent": "#e3c16f"
+  },
+  "month": "2027-01",
+  "plan": 15
+ },
+ {
+  "slug": "velveteen-rabbit",
+  "title": "The Velveteen Rabbit",
+  "author": "Margery Williams",
+  "year": 1922,
+  "genre": "Fairy Tales & Fables",
+  "level": 1,
+  "tags": [
+   "British",
+   "toys",
+   "children"
+  ],
+  "spine": {
+   "color": "#6e3b4e",
+   "height": 0.87
+  },
+  "cover": {
+   "motif": "crown",
+   "accent": "#e3c16f"
+  },
+  "month": "2027-01",
+  "plan": 16
+ },
+ {
+  "slug": "whale-throat",
+  "title": "How the Whale Got His Throat",
+  "author": "Rudyard Kipling",
+  "year": 1902,
+  "genre": "Fairy Tales & Fables",
+  "level": 1,
+  "tags": [
+   "British",
+   "animals",
+   "sea"
+  ],
+  "spine": {
+   "color": "#7a4a2a",
+   "height": 0.95
+  },
+  "cover": {
+   "motif": "crown",
+   "accent": "#e3c16f"
+  },
+  "month": "2027-02",
+  "plan": 17
+ },
+ {
+  "slug": "three-questions",
+  "title": "The Three Questions",
+  "author": "Leo Tolstoy",
+  "year": 1885,
+  "genre": "Fairy Tales & Fables",
+  "level": 1,
+  "tags": [
+   "Russian",
+   "parable"
+  ],
+  "spine": {
+   "color": "#7a4a2a",
+   "height": 0.86
+  },
+  "cover": {
+   "motif": "crown",
+   "accent": "#e3c16f"
+  },
+  "month": "2027-02",
+  "plan": 18
+ },
+ {
+  "slug": "nightingale-and-the-rose",
+  "title": "The Nightingale and the Rose",
+  "author": "Oscar Wilde",
+  "year": 1888,
+  "genre": "Fairy Tales & Fables",
+  "level": 2,
+  "tags": [
+   "British",
+   "love"
+  ],
+  "spine": {
+   "color": "#7a4a2a",
+   "height": 0.8
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#e3c16f"
+  },
+  "gutenberg": 902,
+  "month": "2027-02",
+  "plan": 19
+ },
+ {
+  "slug": "to-build-a-fire",
+  "title": "To Build a Fire",
+  "author": "Jack London",
+  "year": 1908,
+  "genre": "Adventure",
+  "level": 2,
+  "tags": [
+   "American",
+   "Yukon",
+   "survival"
+  ],
+  "spine": {
+   "color": "#4a5a2a",
+   "height": 0.85
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#d8c48a"
+  },
+  "month": "2027-02",
+  "plan": 20
+ },
+ {
+  "slug": "tell-tale-heart",
+  "title": "The Tell-Tale Heart",
+  "author": "Edgar Allan Poe",
+  "year": 1843,
+  "genre": "Gothic & Horror",
+  "level": 2,
+  "tags": [
+   "American",
+   "guilt"
+  ],
+  "spine": {
+   "color": "#2a2530",
+   "height": 0.81
+  },
+  "cover": {
+   "motif": "heart",
+   "accent": "#c9a24a"
+  },
+  "month": "2027-03",
+  "plan": 21
+ },
+ {
+  "slug": "canterville-ghost",
+  "title": "The Canterville Ghost",
+  "author": "Oscar Wilde",
+  "year": 1887,
+  "genre": "Ghost Stories",
+  "level": 2,
+  "tags": [
+   "British",
+   "humor",
+   "haunted house"
+  ],
+  "spine": {
+   "color": "#3d4450",
+   "height": 0.91
+  },
+  "cover": {
+   "motif": "lamp",
+   "accent": "#d6cfb8"
+  },
+  "month": "2027-03",
+  "plan": 22
+ },
+ {
+  "slug": "magic-shop",
+  "title": "The Magic Shop",
+  "author": "H. G. Wells",
+  "year": 1903,
+  "genre": "Science Fiction & Fantasy",
+  "level": 2,
+  "tags": [
+   "British",
+   "London",
+   "children"
+  ],
+  "spine": {
+   "color": "#3b5f8a",
+   "height": 0.81
+  },
+  "cover": {
+   "motif": "planet",
+   "accent": "#e0cf94"
+  },
+  "month": "2027-03",
+  "plan": 23
+ },
+ {
+  "slug": "last-leaf",
+  "title": "The Last Leaf",
+  "author": "O. Henry",
+  "year": 1907,
+  "genre": "Love & Society",
+  "level": 2,
+  "tags": [
+   "American",
+   "friendship",
+   "art"
+  ],
+  "spine": {
+   "color": "#6e2f55",
+   "height": 0.83
+  },
+  "cover": {
+   "motif": "leaf",
+   "accent": "#ecc9a8"
+  },
+  "month": "2027-03",
+  "plan": 24
+ },
+ {
+  "slug": "ransom-of-red-chief",
+  "title": "The Ransom of Red Chief",
+  "author": "O. Henry",
+  "year": 1907,
+  "genre": "Humor & Satire",
+  "level": 2,
+  "tags": [
+   "American",
+   "children"
+  ],
+  "spine": {
+   "color": "#7f6a2e",
+   "height": 0.87
+  },
+  "cover": {
+   "motif": "mask",
+   "accent": "#f3e2b8"
+  },
+  "month": "2027-04",
+  "plan": 25
+ },
+ {
+  "slug": "ali-baba",
+  "title": "Ali Baba and the Forty Thieves",
+  "author": "The Arabian Nights",
+  "year": 850,
+  "genre": "Fairy Tales & Fables",
+  "level": 2,
+  "tags": [
+   "Arabic",
+   "treasure"
+  ],
+  "spine": {
+   "color": "#8a3b2e",
+   "height": 0.94
+  },
+  "cover": {
+   "motif": "crown",
+   "accent": "#e3c16f"
+  },
+  "month": "2027-04",
+  "plan": 26
+ },
+ {
+  "slug": "most-dangerous-game",
+  "title": "The Most Dangerous Game",
+  "author": "Richard Connell",
+  "year": 1924,
+  "genre": "Adventure",
+  "level": 2,
+  "tags": [
+   "American",
+   "island",
+   "hunting"
+  ],
+  "spine": {
+   "color": "#2e5358",
+   "height": 0.81
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#d8c48a"
+  },
+  "month": "2027-04",
+  "plan": 27
+ },
+ {
+  "slug": "monkeys-paw",
+  "title": "The Monkey's Paw",
+  "author": "W. W. Jacobs",
+  "year": 1902,
+  "genre": "Gothic & Horror",
+  "level": 2,
+  "tags": [
+   "British",
+   "wishes"
+  ],
+  "spine": {
+   "color": "#2a2530",
+   "height": 0.96
+  },
+  "cover": {
+   "motif": "raven",
+   "accent": "#c9a24a"
+  },
+  "month": "2027-04",
+  "plan": 28
+ },
+ {
+  "slug": "necklace",
+  "title": "The Necklace",
+  "author": "Guy de Maupassant",
+  "year": 1884,
+  "genre": "Love & Society",
+  "level": 2,
+  "tags": [
+   "French",
+   "money",
+   "twist ending"
+  ],
+  "spine": {
+   "color": "#944a52",
+   "height": 0.96
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2027-05",
+  "plan": 29
+ },
+ {
+  "slug": "open-window",
+  "title": "The Open Window",
+  "author": "Saki",
+  "year": 1914,
+  "genre": "Humor & Satire",
+  "level": 2,
+  "tags": [
+   "British",
+   "twist ending"
+  ],
+  "spine": {
+   "color": "#a3552d",
+   "height": 0.93
+  },
+  "cover": {
+   "motif": "mask",
+   "accent": "#f3e2b8"
+  },
+  "month": "2027-05",
+  "plan": 30
+ },
+ {
+  "slug": "reluctant-dragon",
+  "title": "The Reluctant Dragon",
+  "author": "Kenneth Grahame",
+  "year": 1898,
+  "genre": "Fairy Tales & Fables",
+  "level": 2,
+  "tags": [
+   "British",
+   "dragons",
+   "humor"
+  ],
+  "spine": {
+   "color": "#9c6b30",
+   "height": 0.91
+  },
+  "cover": {
+   "motif": "crown",
+   "accent": "#e3c16f"
+  },
+  "month": "2027-05",
+  "plan": 31
+ },
+ {
+  "slug": "interlopers",
+  "title": "The Interlopers",
+  "author": "Saki",
+  "year": 1919,
+  "genre": "Adventure",
+  "level": 2,
+  "tags": [
+   "British",
+   "forest",
+   "twist ending"
+  ],
+  "spine": {
+   "color": "#4a5a2a",
+   "height": 0.88
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#d8c48a"
+  },
+  "month": "2027-05",
+  "plan": 32
+ },
+ {
+  "slug": "story-of-an-hour",
+  "title": "The Story of an Hour",
+  "author": "Kate Chopin",
+  "year": 1894,
+  "genre": "Love & Society",
+  "level": 2,
+  "tags": [
+   "American",
+   "women",
+   "marriage"
+  ],
+  "spine": {
+   "color": "#8a4a5a",
+   "height": 0.9
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2027-06",
+  "plan": 33
+ },
+ {
+  "slug": "cop-and-the-anthem",
+  "title": "The Cop and the Anthem",
+  "author": "O. Henry",
+  "year": 1904,
+  "genre": "Humor & Satire",
+  "level": 2,
+  "tags": [
+   "American",
+   "city"
+  ],
+  "spine": {
+   "color": "#b0602a",
+   "height": 0.82
+  },
+  "cover": {
+   "motif": "mask",
+   "accent": "#f3e2b8"
+  },
+  "month": "2027-06",
+  "plan": 34
+ },
+ {
+  "slug": "how-much-land",
+  "title": "How Much Land Does a Man Need?",
+  "author": "Leo Tolstoy",
+  "year": 1886,
+  "genre": "Fairy Tales & Fables",
+  "level": 2,
+  "tags": [
+   "Russian",
+   "greed",
+   "parable"
+  ],
+  "spine": {
+   "color": "#9c6b30",
+   "height": 0.88
+  },
+  "cover": {
+   "motif": "crown",
+   "accent": "#e3c16f"
+  },
+  "month": "2027-06",
+  "plan": 35
+ },
+ {
+  "slug": "pair-of-silk-stockings",
+  "title": "A Pair of Silk Stockings",
+  "author": "Kate Chopin",
+  "year": 1897,
+  "genre": "Love & Society",
+  "level": 2,
+  "tags": [
+   "American",
+   "women",
+   "money"
+  ],
+  "spine": {
+   "color": "#7a3346",
+   "height": 0.82
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2027-06",
+  "plan": 36
+ },
+ {
+  "slug": "lottery-ticket",
+  "title": "The Lottery Ticket",
+  "author": "Anton Chekhov",
+  "year": 1887,
+  "genre": "Humor & Satire",
+  "level": 2,
+  "tags": [
+   "Russian",
+   "money",
+   "marriage"
+  ],
+  "spine": {
+   "color": "#a3552d",
+   "height": 0.93
+  },
+  "cover": {
+   "motif": "mask",
+   "accent": "#f3e2b8"
+  },
+  "month": "2027-07",
+  "plan": 37
+ },
+ {
+  "slug": "romance-of-a-busy-broker",
+  "title": "The Romance of a Busy Broker",
+  "author": "O. Henry",
+  "year": 1904,
+  "genre": "Love & Society",
+  "level": 2,
+  "tags": [
+   "American",
+   "city",
+   "humor"
+  ],
+  "spine": {
+   "color": "#5e3350",
+   "height": 0.92
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2027-07",
+  "plan": 38
+ },
+ {
+  "slug": "call-of-the-wild",
+  "title": "The Call of the Wild",
+  "author": "Jack London",
+  "year": 1903,
+  "genre": "Adventure",
+  "level": 3,
+  "tags": [
+   "American",
+   "Yukon",
+   "animals"
+  ],
+  "spine": {
+   "color": "#2f4a3a",
+   "height": 0.91
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#d8c48a"
+  },
+  "month": "2027-07",
+  "plan": 39
+ },
+ {
+  "slug": "scandal-in-bohemia",
+  "title": "A Scandal in Bohemia",
+  "author": "Arthur Conan Doyle",
+  "year": 1891,
+  "genre": "Mystery & Detective",
+  "level": 3,
+  "tags": [
+   "British",
+   "Sherlock Holmes"
+  ],
+  "spine": {
+   "color": "#2b4a70",
+   "height": 0.84
+  },
+  "cover": {
+   "motif": "key",
+   "accent": "#d9c08a"
+  },
+  "month": "2027-07",
+  "plan": 40
+ },
+ {
+  "slug": "cask-of-amontillado",
+  "title": "The Cask of Amontillado",
+  "author": "Edgar Allan Poe",
+  "year": 1846,
+  "genre": "Gothic & Horror",
+  "level": 3,
+  "tags": [
+   "American",
+   "revenge"
+  ],
+  "spine": {
+   "color": "#26262e",
+   "height": 0.96
+  },
+  "cover": {
+   "motif": "raven",
+   "accent": "#c9a24a"
+  },
+  "month": "2027-08",
+  "plan": 41
+ },
+ {
+  "slug": "christmas-carol",
+  "title": "A Christmas Carol",
+  "author": "Charles Dickens",
+  "year": 1843,
+  "genre": "Ghost Stories",
+  "level": 3,
+  "tags": [
+   "British",
+   "Christmas",
+   "London"
+  ],
+  "spine": {
+   "color": "#55505e",
+   "height": 0.85
+  },
+  "cover": {
+   "motif": "lamp",
+   "accent": "#d6cfb8"
+  },
+  "month": "2027-08",
+  "plan": 42
+ },
+ {
+  "slug": "country-of-the-blind",
+  "title": "The Country of the Blind",
+  "author": "H. G. Wells",
+  "year": 1904,
+  "genre": "Science Fiction & Fantasy",
+  "level": 3,
+  "tags": [
+   "British",
+   "mountains"
+  ],
+  "spine": {
+   "color": "#2b4f81",
+   "height": 0.81
+  },
+  "cover": {
+   "motif": "planet",
+   "accent": "#e0cf94"
+  },
+  "month": "2027-08",
+  "plan": 43
+ },
+ {
+  "slug": "desirees-baby",
+  "title": "Désirée's Baby",
+  "author": "Kate Chopin",
+  "year": 1893,
+  "genre": "Love & Society",
+  "level": 3,
+  "tags": [
+   "American",
+   "race",
+   "marriage"
+  ],
+  "spine": {
+   "color": "#944a52",
+   "height": 0.91
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2027-08",
+  "plan": 44
+ },
+ {
+  "slug": "jumping-frog",
+  "title": "The Celebrated Jumping Frog of Calaveras County",
+  "author": "Mark Twain",
+  "year": 1865,
+  "genre": "Humor & Satire",
+  "level": 3,
+  "tags": [
+   "American",
+   "Wild West",
+   "animals"
+  ],
+  "spine": {
+   "color": "#a0702a",
+   "height": 0.8
+  },
+  "cover": {
+   "motif": "mask",
+   "accent": "#f3e2b8"
+  },
+  "month": "2027-09",
+  "plan": 45
+ },
+ {
+  "slug": "garden-party",
+  "title": "The Garden Party",
+  "author": "Katherine Mansfield",
+  "year": 1922,
+  "genre": "Realism & Character",
+  "level": 3,
+  "tags": [
+   "New Zealand",
+   "class"
+  ],
+  "spine": {
+   "color": "#6a5a44",
+   "height": 0.84
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2027-09",
+  "plan": 46
+ },
+ {
+  "slug": "outcasts-of-poker-flat",
+  "title": "The Outcasts of Poker Flat",
+  "author": "Bret Harte",
+  "year": 1869,
+  "genre": "Adventure",
+  "level": 3,
+  "tags": [
+   "American",
+   "Wild West"
+  ],
+  "spine": {
+   "color": "#2f4a3a",
+   "height": 0.84
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#d8c48a"
+  },
+  "month": "2027-09",
+  "plan": 47
+ },
+ {
+  "slug": "red-headed-league",
+  "title": "The Red-Headed League",
+  "author": "Arthur Conan Doyle",
+  "year": 1891,
+  "genre": "Mystery & Detective",
+  "level": 3,
+  "tags": [
+   "British",
+   "Sherlock Holmes"
+  ],
+  "spine": {
+   "color": "#243a5e",
+   "height": 0.82
+  },
+  "cover": {
+   "motif": "key",
+   "accent": "#d9c08a"
+  },
+  "month": "2027-09",
+  "plan": 48
+ },
+ {
+  "slug": "masque-of-the-red-death",
+  "title": "The Masque of the Red Death",
+  "author": "Edgar Allan Poe",
+  "year": 1842,
+  "genre": "Gothic & Horror",
+  "level": 3,
+  "tags": [
+   "American",
+   "plague"
+  ],
+  "spine": {
+   "color": "#1f1f24",
+   "height": 0.92
+  },
+  "cover": {
+   "motif": "raven",
+   "accent": "#c9a24a"
+  },
+  "month": "2027-10",
+  "plan": 49
+ },
+ {
+  "slug": "signal-man",
+  "title": "The Signal-Man",
+  "author": "Charles Dickens",
+  "year": 1866,
+  "genre": "Ghost Stories",
+  "level": 3,
+  "tags": [
+   "British",
+   "railway"
+  ],
+  "spine": {
+   "color": "#3f4a55",
+   "height": 0.93
+  },
+  "cover": {
+   "motif": "lamp",
+   "accent": "#d6cfb8"
+  },
+  "month": "2027-10",
+  "plan": 50
+ },
+ {
+  "slug": "the-star",
+  "title": "The Star",
+  "author": "H. G. Wells",
+  "year": 1897,
+  "genre": "Science Fiction & Fantasy",
+  "level": 3,
+  "tags": [
+   "British",
+   "space"
+  ],
+  "spine": {
+   "color": "#1f4f66",
+   "height": 0.86
+  },
+  "cover": {
+   "motif": "planet",
+   "accent": "#e0cf94"
+  },
+  "month": "2027-10",
+  "plan": 51
+ },
+ {
+  "slug": "furnished-room",
+  "title": "The Furnished Room",
+  "author": "O. Henry",
+  "year": 1904,
+  "genre": "Love & Society",
+  "level": 3,
+  "tags": [
+   "American",
+   "city"
+  ],
+  "spine": {
+   "color": "#944a52",
+   "height": 0.94
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2027-10",
+  "plan": 52
+ },
+ {
+  "slug": "million-pound-bank-note",
+  "title": "The £1,000,000 Bank-Note",
+  "author": "Mark Twain",
+  "year": 1893,
+  "genre": "Humor & Satire",
+  "level": 3,
+  "tags": [
+   "American",
+   "London",
+   "money"
+  ],
+  "spine": {
+   "color": "#7f6a2e",
+   "height": 0.95
+  },
+  "cover": {
+   "motif": "mask",
+   "accent": "#f3e2b8"
+  },
+  "month": "2027-11",
+  "plan": 53
+ },
+ {
+  "slug": "the-bet",
+  "title": "The Bet",
+  "author": "Anton Chekhov",
+  "year": 1889,
+  "genre": "Realism & Character",
+  "level": 3,
+  "tags": [
+   "Russian",
+   "money"
+  ],
+  "spine": {
+   "color": "#4a4a44",
+   "height": 0.93
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2027-11",
+  "plan": 54
+ },
+ {
+  "slug": "luck-of-roaring-camp",
+  "title": "The Luck of Roaring Camp",
+  "author": "Bret Harte",
+  "year": 1868,
+  "genre": "Adventure",
+  "level": 3,
+  "tags": [
+   "American",
+   "Wild West"
+  ],
+  "spine": {
+   "color": "#2f4a3a",
+   "height": 0.82
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#d8c48a"
+  },
+  "month": "2027-11",
+  "plan": 55
+ },
+ {
+  "slug": "speckled-band",
+  "title": "The Adventure of the Speckled Band",
+  "author": "Arthur Conan Doyle",
+  "year": 1892,
+  "genre": "Mystery & Detective",
+  "level": 3,
+  "tags": [
+   "British",
+   "Sherlock Holmes"
+  ],
+  "spine": {
+   "color": "#3a3a60",
+   "height": 0.92
+  },
+  "cover": {
+   "motif": "key",
+   "accent": "#d9c08a"
+  },
+  "month": "2027-11",
+  "plan": 56
+ },
+ {
+  "slug": "black-cat",
+  "title": "The Black Cat",
+  "author": "Edgar Allan Poe",
+  "year": 1843,
+  "genre": "Gothic & Horror",
+  "level": 3,
+  "tags": [
+   "American",
+   "animals",
+   "guilt"
+  ],
+  "spine": {
+   "color": "#26262e",
+   "height": 0.84
+  },
+  "cover": {
+   "motif": "raven",
+   "accent": "#c9a24a"
+  },
+  "month": "2027-12",
+  "plan": 57
+ },
+ {
+  "slug": "upper-berth",
+  "title": "The Upper Berth",
+  "author": "F. Marion Crawford",
+  "year": 1886,
+  "genre": "Ghost Stories",
+  "level": 3,
+  "tags": [
+   "American",
+   "sea"
+  ],
+  "spine": {
+   "color": "#3d4450",
+   "height": 0.87
+  },
+  "cover": {
+   "motif": "lamp",
+   "accent": "#d6cfb8"
+  },
+  "month": "2027-12",
+  "plan": 58
+ },
+ {
+  "slug": "door-in-the-wall",
+  "title": "The Door in the Wall",
+  "author": "H. G. Wells",
+  "year": 1906,
+  "genre": "Science Fiction & Fantasy",
+  "level": 3,
+  "tags": [
+   "British",
+   "London"
+  ],
+  "spine": {
+   "color": "#2b4f81",
+   "height": 0.86
+  },
+  "cover": {
+   "motif": "planet",
+   "accent": "#e0cf94"
+  },
+  "month": "2027-12",
+  "plan": 59
+ },
+ {
+  "slug": "tobermory",
+  "title": "Tobermory",
+  "author": "Saki",
+  "year": 1911,
+  "genre": "Humor & Satire",
+  "level": 3,
+  "tags": [
+   "British",
+   "animals"
+  ],
+  "spine": {
+   "color": "#7f6a2e",
+   "height": 0.8
+  },
+  "cover": {
+   "motif": "mask",
+   "accent": "#f3e2b8"
+  },
+  "month": "2027-12",
+  "plan": 60
+ },
+ {
+  "slug": "great-stone-face",
+  "title": "The Great Stone Face",
+  "author": "Nathaniel Hawthorne",
+  "year": 1850,
+  "genre": "Realism & Character",
+  "level": 3,
+  "tags": [
+   "American",
+   "mountains",
+   "parable"
+  ],
+  "spine": {
+   "color": "#4a4a44",
+   "height": 0.92
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2028-01",
+  "plan": 61
+ },
+ {
+  "slug": "bride-comes-to-yellow-sky",
+  "title": "The Bride Comes to Yellow Sky",
+  "author": "Stephen Crane",
+  "year": 1898,
+  "genre": "Adventure",
+  "level": 3,
+  "tags": [
+   "American",
+   "Wild West",
+   "humor"
+  ],
+  "spine": {
+   "color": "#4a5a2a",
+   "height": 0.86
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#d8c48a"
+  },
+  "month": "2028-01",
+  "plan": 62
+ },
+ {
+  "slug": "blue-carbuncle",
+  "title": "The Adventure of the Blue Carbuncle",
+  "author": "Arthur Conan Doyle",
+  "year": 1892,
+  "genre": "Mystery & Detective",
+  "level": 3,
+  "tags": [
+   "British",
+   "Sherlock Holmes",
+   "Christmas"
+  ],
+  "spine": {
+   "color": "#3a3a60",
+   "height": 0.92
+  },
+  "cover": {
+   "motif": "key",
+   "accent": "#d9c08a"
+  },
+  "month": "2028-01",
+  "plan": 63
+ },
+ {
+  "slug": "yellow-wallpaper",
+  "title": "The Yellow Wallpaper",
+  "author": "Charlotte Perkins Gilman",
+  "year": 1892,
+  "genre": "Gothic & Horror",
+  "level": 3,
+  "tags": [
+   "American",
+   "women"
+  ],
+  "spine": {
+   "color": "#26262e",
+   "height": 0.92
+  },
+  "cover": {
+   "motif": "raven",
+   "accent": "#c9a24a"
+  },
+  "month": "2028-01",
+  "plan": 64
+ },
+ {
+  "slug": "rip-van-winkle",
+  "title": "Rip Van Winkle",
+  "author": "Washington Irving",
+  "year": 1819,
+  "genre": "Science Fiction & Fantasy",
+  "level": 3,
+  "tags": [
+   "American",
+   "time"
+  ],
+  "spine": {
+   "color": "#3b5f8a",
+   "height": 0.88
+  },
+  "cover": {
+   "motif": "planet",
+   "accent": "#e0cf94"
+  },
+  "month": "2028-02",
+  "plan": 65
+ },
+ {
+  "slug": "blue-cross",
+  "title": "The Blue Cross",
+  "author": "G. K. Chesterton",
+  "year": 1910,
+  "genre": "Mystery & Detective",
+  "level": 3,
+  "tags": [
+   "British",
+   "Father Brown"
+  ],
+  "spine": {
+   "color": "#3a3a60",
+   "height": 0.89
+  },
+  "cover": {
+   "motif": "key",
+   "accent": "#d9c08a"
+  },
+  "month": "2028-02",
+  "plan": 66
+ },
+ {
+  "slug": "hammer-of-god",
+  "title": "The Hammer of God",
+  "author": "G. K. Chesterton",
+  "year": 1910,
+  "genre": "Mystery & Detective",
+  "level": 3,
+  "tags": [
+   "British",
+   "Father Brown"
+  ],
+  "spine": {
+   "color": "#1f4e5f",
+   "height": 0.83
+  },
+  "cover": {
+   "motif": "key",
+   "accent": "#d9c08a"
+  },
+  "month": "2028-02",
+  "plan": 67
+ },
+ {
+  "slug": "jury-of-her-peers",
+  "title": "A Jury of Her Peers",
+  "author": "Susan Glaspell",
+  "year": 1917,
+  "genre": "Mystery & Detective",
+  "level": 3,
+  "tags": [
+   "American",
+   "women"
+  ],
+  "spine": {
+   "color": "#2e3f6b",
+   "height": 0.83
+  },
+  "cover": {
+   "motif": "key",
+   "accent": "#d9c08a"
+  },
+  "month": "2028-02",
+  "plan": 68
+ },
+ {
+  "slug": "man-who-would-be-king",
+  "title": "The Man Who Would Be King",
+  "author": "Rudyard Kipling",
+  "year": 1888,
+  "genre": "Adventure",
+  "level": 4,
+  "tags": [
+   "British",
+   "India",
+   "empire"
+  ],
+  "spine": {
+   "color": "#5b6b3a",
+   "height": 0.88
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#d8c48a"
+  },
+  "month": "2028-03",
+  "plan": 69
+ },
+ {
+  "slug": "murders-in-the-rue-morgue",
+  "title": "The Murders in the Rue Morgue",
+  "author": "Edgar Allan Poe",
+  "year": 1841,
+  "genre": "Mystery & Detective",
+  "level": 4,
+  "tags": [
+   "American",
+   "Paris"
+  ],
+  "spine": {
+   "color": "#2b4a70",
+   "height": 0.81
+  },
+  "cover": {
+   "motif": "key",
+   "accent": "#d9c08a"
+  },
+  "month": "2028-03",
+  "plan": 70
+ },
+ {
+  "slug": "jekyll-and-hyde",
+  "title": "Strange Case of Dr Jekyll and Mr Hyde",
+  "author": "Robert Louis Stevenson",
+  "year": 1886,
+  "genre": "Gothic & Horror",
+  "level": 4,
+  "tags": [
+   "British",
+   "science",
+   "London"
+  ],
+  "spine": {
+   "color": "#26262e",
+   "height": 0.95
+  },
+  "cover": {
+   "motif": "raven",
+   "accent": "#c9a24a"
+  },
+  "month": "2028-03",
+  "plan": 71
+ },
+ {
+  "slug": "sleepy-hollow",
+  "title": "The Legend of Sleepy Hollow",
+  "author": "Washington Irving",
+  "year": 1820,
+  "genre": "Ghost Stories",
+  "level": 4,
+  "tags": [
+   "American",
+   "Halloween"
+  ],
+  "spine": {
+   "color": "#55505e",
+   "height": 0.9
+  },
+  "cover": {
+   "motif": "lamp",
+   "accent": "#d6cfb8"
+  },
+  "month": "2028-03",
+  "plan": 72
+ },
+ {
+  "slug": "time-machine",
+  "title": "The Time Machine",
+  "author": "H. G. Wells",
+  "year": 1895,
+  "genre": "Science Fiction & Fantasy",
+  "level": 4,
+  "tags": [
+   "British",
+   "time travel"
+  ],
+  "spine": {
+   "color": "#2b4f81",
+   "height": 0.96
+  },
+  "cover": {
+   "motif": "planet",
+   "accent": "#e0cf94"
+  },
+  "month": "2028-04",
+  "plan": 73
+ },
+ {
+  "slug": "lady-with-the-dog",
+  "title": "The Lady with the Dog",
+  "author": "Anton Chekhov",
+  "year": 1899,
+  "genre": "Love & Society",
+  "level": 4,
+  "tags": [
+   "Russian",
+   "love"
+  ],
+  "spine": {
+   "color": "#7a3346",
+   "height": 0.94
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2028-04",
+  "plan": 74
+ },
+ {
+  "slug": "hadleyburg",
+  "title": "The Man That Corrupted Hadleyburg",
+  "author": "Mark Twain",
+  "year": 1899,
+  "genre": "Humor & Satire",
+  "level": 4,
+  "tags": [
+   "American",
+   "money"
+  ],
+  "spine": {
+   "color": "#8f6a1f",
+   "height": 0.95
+  },
+  "cover": {
+   "motif": "mask",
+   "accent": "#f3e2b8"
+  },
+  "month": "2028-04",
+  "plan": 75
+ },
+ {
+  "slug": "araby",
+  "title": "Araby",
+  "author": "James Joyce",
+  "year": 1914,
+  "genre": "Realism & Character",
+  "level": 4,
+  "tags": [
+   "Irish",
+   "love"
+  ],
+  "spine": {
+   "color": "#5e5040",
+   "height": 0.9
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2028-04",
+  "plan": 76
+ },
+ {
+  "slug": "descent-into-the-maelstrom",
+  "title": "A Descent into the Maelström",
+  "author": "Edgar Allan Poe",
+  "year": 1841,
+  "genre": "Adventure",
+  "level": 4,
+  "tags": [
+   "American",
+   "sea",
+   "survival"
+  ],
+  "spine": {
+   "color": "#2e5358",
+   "height": 0.85
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#d8c48a"
+  },
+  "month": "2028-05",
+  "plan": 77
+ },
+ {
+  "slug": "purloined-letter",
+  "title": "The Purloined Letter",
+  "author": "Edgar Allan Poe",
+  "year": 1844,
+  "genre": "Mystery & Detective",
+  "level": 4,
+  "tags": [
+   "American",
+   "Paris"
+  ],
+  "spine": {
+   "color": "#1f4e5f",
+   "height": 0.9
+  },
+  "cover": {
+   "motif": "key",
+   "accent": "#d9c08a"
+  },
+  "month": "2028-05",
+  "plan": 78
+ },
+ {
+  "slug": "young-goodman-brown",
+  "title": "Young Goodman Brown",
+  "author": "Nathaniel Hawthorne",
+  "year": 1835,
+  "genre": "Gothic & Horror",
+  "level": 4,
+  "tags": [
+   "American",
+   "Puritans"
+  ],
+  "spine": {
+   "color": "#1f1f24",
+   "height": 0.9
+  },
+  "cover": {
+   "motif": "raven",
+   "accent": "#c9a24a"
+  },
+  "month": "2028-05",
+  "plan": 79
+ },
+ {
+  "slug": "whistle-and-ill-come",
+  "title": "Oh, Whistle, and I'll Come to You, My Lad",
+  "author": "M. R. James",
+  "year": 1904,
+  "genre": "Ghost Stories",
+  "level": 4,
+  "tags": [
+   "British",
+   "seaside"
+  ],
+  "spine": {
+   "color": "#3d4450",
+   "height": 0.94
+  },
+  "cover": {
+   "motif": "lamp",
+   "accent": "#d6cfb8"
+  },
+  "month": "2028-05",
+  "plan": 80
+ },
+ {
+  "slug": "diamond-lens",
+  "title": "The Diamond Lens",
+  "author": "Fitz-James O'Brien",
+  "year": 1858,
+  "genre": "Science Fiction & Fantasy",
+  "level": 4,
+  "tags": [
+   "American",
+   "science"
+  ],
+  "spine": {
+   "color": "#3b5f8a",
+   "height": 0.82
+  },
+  "cover": {
+   "motif": "planet",
+   "accent": "#e0cf94"
+  },
+  "month": "2028-06",
+  "plan": 81
+ },
+ {
+  "slug": "owl-creek-bridge",
+  "title": "An Occurrence at Owl Creek Bridge",
+  "author": "Ambrose Bierce",
+  "year": 1890,
+  "genre": "Realism & Character",
+  "level": 4,
+  "tags": [
+   "American",
+   "war",
+   "twist ending"
+  ],
+  "spine": {
+   "color": "#5a4a3a",
+   "height": 0.85
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2028-06",
+  "plan": 82
+ },
+ {
+  "slug": "open-boat",
+  "title": "The Open Boat",
+  "author": "Stephen Crane",
+  "year": 1897,
+  "genre": "Adventure",
+  "level": 4,
+  "tags": [
+   "American",
+   "sea",
+   "survival"
+  ],
+  "spine": {
+   "color": "#5b6b3a",
+   "height": 0.83
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#d8c48a"
+  },
+  "month": "2028-06",
+  "plan": 83
+ },
+ {
+  "slug": "gold-bug",
+  "title": "The Gold-Bug",
+  "author": "Edgar Allan Poe",
+  "year": 1843,
+  "genre": "Mystery & Detective",
+  "level": 4,
+  "tags": [
+   "American",
+   "treasure",
+   "codes"
+  ],
+  "spine": {
+   "color": "#2b4a70",
+   "height": 0.84
+  },
+  "cover": {
+   "motif": "key",
+   "accent": "#d9c08a"
+  },
+  "month": "2028-06",
+  "plan": 84
+ },
+ {
+  "slug": "body-snatcher",
+  "title": "The Body Snatcher",
+  "author": "Robert Louis Stevenson",
+  "year": 1884,
+  "genre": "Gothic & Horror",
+  "level": 4,
+  "tags": [
+   "British",
+   "science"
+  ],
+  "spine": {
+   "color": "#26262e",
+   "height": 0.84
+  },
+  "cover": {
+   "motif": "raven",
+   "accent": "#c9a24a"
+  },
+  "month": "2028-07",
+  "plan": 85
+ },
+ {
+  "slug": "phantom-rickshaw",
+  "title": "The Phantom Rickshaw",
+  "author": "Rudyard Kipling",
+  "year": 1885,
+  "genre": "Ghost Stories",
+  "level": 4,
+  "tags": [
+   "British",
+   "India"
+  ],
+  "spine": {
+   "color": "#55505e",
+   "height": 0.89
+  },
+  "cover": {
+   "motif": "lamp",
+   "accent": "#d6cfb8"
+  },
+  "month": "2028-07",
+  "plan": 86
+ },
+ {
+  "slug": "birth-mark",
+  "title": "The Birth-Mark",
+  "author": "Nathaniel Hawthorne",
+  "year": 1843,
+  "genre": "Science Fiction & Fantasy",
+  "level": 4,
+  "tags": [
+   "American",
+   "science",
+   "marriage"
+  ],
+  "spine": {
+   "color": "#3b5f8a",
+   "height": 0.96
+  },
+  "cover": {
+   "motif": "planet",
+   "accent": "#e0cf94"
+  },
+  "month": "2028-07",
+  "plan": 87
+ },
+ {
+  "slug": "overcoat",
+  "title": "The Overcoat",
+  "author": "Nikolai Gogol",
+  "year": 1842,
+  "genre": "Realism & Character",
+  "level": 4,
+  "tags": [
+   "Russian",
+   "poverty",
+   "humor"
+  ],
+  "spine": {
+   "color": "#4e4b3c",
+   "height": 0.92
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2028-07",
+  "plan": 88
+ },
+ {
+  "slug": "ministers-black-veil",
+  "title": "The Minister's Black Veil",
+  "author": "Nathaniel Hawthorne",
+  "year": 1836,
+  "genre": "Gothic & Horror",
+  "level": 4,
+  "tags": [
+   "American",
+   "Puritans"
+  ],
+  "spine": {
+   "color": "#4a1e1e",
+   "height": 0.83
+  },
+  "cover": {
+   "motif": "raven",
+   "accent": "#c9a24a"
+  },
+  "month": "2028-08",
+  "plan": 89
+ },
+ {
+  "slug": "machine-stops",
+  "title": "The Machine Stops",
+  "author": "E. M. Forster",
+  "year": 1909,
+  "genre": "Science Fiction & Fantasy",
+  "level": 4,
+  "tags": [
+   "British",
+   "technology"
+  ],
+  "spine": {
+   "color": "#3b5f8a",
+   "height": 0.82
+  },
+  "cover": {
+   "motif": "planet",
+   "accent": "#e0cf94"
+  },
+  "month": "2028-08",
+  "plan": 90
+ },
+ {
+  "slug": "pauls-case",
+  "title": "Paul's Case",
+  "author": "Willa Cather",
+  "year": 1905,
+  "genre": "Realism & Character",
+  "level": 4,
+  "tags": [
+   "American",
+   "art",
+   "city"
+  ],
+  "spine": {
+   "color": "#6a5a44",
+   "height": 0.89
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2028-08",
+  "plan": 91
+ },
+ {
+  "slug": "diamond-as-big-as-the-ritz",
+  "title": "The Diamond as Big as the Ritz",
+  "author": "F. Scott Fitzgerald",
+  "year": 1922,
+  "genre": "Science Fiction & Fantasy",
+  "level": 4,
+  "tags": [
+   "American",
+   "money"
+  ],
+  "spine": {
+   "color": "#1f4f66",
+   "height": 0.85
+  },
+  "cover": {
+   "motif": "planet",
+   "accent": "#e0cf94"
+  },
+  "month": "2028-08",
+  "plan": 92
+ },
+ {
+  "slug": "micromegas",
+  "title": "Micromégas",
+  "author": "Voltaire",
+  "year": 1752,
+  "genre": "Science Fiction & Fantasy",
+  "level": 4,
+  "tags": [
+   "French",
+   "space",
+   "satire"
+  ],
+  "spine": {
+   "color": "#1d5c63",
+   "height": 0.9
+  },
+  "cover": {
+   "motif": "planet",
+   "accent": "#e0cf94"
+  },
+  "month": "2028-09",
+  "plan": 93
+ },
+ {
+  "slug": "fall-of-the-house-of-usher",
+  "title": "The Fall of the House of Usher",
+  "author": "Edgar Allan Poe",
+  "year": 1839,
+  "genre": "Gothic & Horror",
+  "level": 5,
+  "tags": [
+   "American",
+   "haunted house"
+  ],
+  "spine": {
+   "color": "#3a1c24",
+   "height": 0.84
+  },
+  "cover": {
+   "motif": "raven",
+   "accent": "#c9a24a"
+  },
+  "month": "2028-09",
+  "plan": 94
+ },
+ {
+  "slug": "haunted-and-the-haunters",
+  "title": "The Haunted and the Haunters",
+  "author": "Edward Bulwer-Lytton",
+  "year": 1859,
+  "genre": "Ghost Stories",
+  "level": 5,
+  "tags": [
+   "British",
+   "haunted house"
+  ],
+  "spine": {
+   "color": "#4a4458",
+   "height": 0.91
+  },
+  "cover": {
+   "motif": "lamp",
+   "accent": "#d6cfb8"
+  },
+  "month": "2028-09",
+  "plan": 95
+ },
+ {
+  "slug": "daisy-miller",
+  "title": "Daisy Miller",
+  "author": "Henry James",
+  "year": 1878,
+  "genre": "Love & Society",
+  "level": 5,
+  "tags": [
+   "American",
+   "Europe"
+  ],
+  "spine": {
+   "color": "#6e2f55",
+   "height": 0.96
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2028-09",
+  "plan": 96
+ },
+ {
+  "slug": "modest-proposal",
+  "title": "A Modest Proposal",
+  "author": "Jonathan Swift",
+  "year": 1729,
+  "genre": "Humor & Satire",
+  "level": 5,
+  "tags": [
+   "Irish",
+   "poverty"
+  ],
+  "spine": {
+   "color": "#7f6a2e",
+   "height": 0.83
+  },
+  "cover": {
+   "motif": "mask",
+   "accent": "#f3e2b8"
+  },
+  "month": "2028-10",
+  "plan": 97
+ },
+ {
+  "slug": "bartleby",
+  "title": "Bartleby, the Scrivener",
+  "author": "Herman Melville",
+  "year": 1853,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "American",
+   "work",
+   "city"
+  ],
+  "spine": {
+   "color": "#5a4a3a",
+   "height": 0.94
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2028-10",
+  "plan": 98
+ },
+ {
+  "slug": "rappaccinis-daughter",
+  "title": "Rappaccini's Daughter",
+  "author": "Nathaniel Hawthorne",
+  "year": 1844,
+  "genre": "Gothic & Horror",
+  "level": 5,
+  "tags": [
+   "American",
+   "science",
+   "Italy"
+  ],
+  "spine": {
+   "color": "#3a1c24",
+   "height": 0.82
+  },
+  "cover": {
+   "motif": "raven",
+   "accent": "#c9a24a"
+  },
+  "month": "2028-10",
+  "plan": 99
+ },
+ {
+  "slug": "the-dead",
+  "title": "The Dead",
+  "author": "James Joyce",
+  "year": 1914,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "Irish",
+   "Christmas"
+  ],
+  "spine": {
+   "color": "#5a4a3a",
+   "height": 0.87
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2028-10",
+  "plan": 100
+ }
 ]

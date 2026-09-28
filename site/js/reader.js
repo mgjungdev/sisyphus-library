@@ -40,6 +40,17 @@ export function renderReader(root, book, startPara) {
     if (id) return `<span class="g${sv}" data-id="${id}" data-h="${esc(l)}" tabindex="0" role="button">${esc(s)}</span>`;
     return `<span class="w${sv}" data-l="${esc(l)}">${esc(s)}</span>`;
   };
+  const chapters = book.chapters || [];
+  const segs = chapters.length
+    ? chapters.map((c, i) => ({ title: c.title, start: i === 0 ? 1 : c.para, end: (chapters[i + 1]?.para ?? total + 1) - 1 }))
+    : [{ title: '', start: 1, end: total }];
+  const segOf = para => Math.max(0, segs.findIndex(x => para >= x.start && para <= x.end));
+  const titlePage = `<section class="tp"><p class="tp-author">${esc(book.author)}</p><h1>${esc(book.title)}</h1><p class="tp-year">${book.year < 0 ? `c. ${-book.year} BC` : book.year < 1000 ? `c. ${book.year}` : book.year}</p></section>`;
+  const paraHTML = i => {
+    const p = book.paragraphs[i - 1];
+    if (p.length === 1 && p[0] && p[0].h) return `<h2 class="ch" id="p${i}" data-p="${i}">${esc(p[0].h)}</h2>`;
+    return `<p id="p${i}" data-p="${i}">${p.map(x => tok(x, i)).join('')}</p>`;
+  };
   const seg = (name, items, cur) => `<div class="seg" role="group">${items.map(([v, l]) =>
     `<button class="chip" data-set="${name}" data-val="${v}" aria-pressed="${String(cur) === String(v)}">${l}</button>`).join('')}</div>`;
 
@@ -58,16 +69,7 @@ export function renderReader(root, book, startPara) {
       <div class="sheet s1"><span class="folio"></span></div>
       <div class="sheet s2"><span class="folio"></span></div>
       <div class="clip">
-        <div class="flow">
-          <section class="tp">
-            <p class="tp-author">${esc(book.author)}</p>
-            <h1>${esc(book.title)}</h1>
-            <p class="tp-year">${book.year}</p>
-          </section>
-          ${book.paragraphs.map((p, i) => `<p id="p${i + 1}" data-p="${i + 1}">${p.map(x => tok(x, i + 1)).join('')}</p>`).join('\n')}
-          <p class="the-end">The End</p>
-          <span class="flow-end"></span>
-        </div>
+        <div class="flow"></div>
       </div>
       <button class="turn prev" aria-label="Previous page">${ICON.prev}</button>
       <button class="turn next" aria-label="Next page">${ICON.next}</button>
@@ -93,7 +95,7 @@ export function renderReader(root, book, startPara) {
 
     <aside class="panel-words" hidden aria-label="Words in this story">
       <header><h2>Words in this story</h2><button class="icon-btn" data-close-panel aria-label="Close">${ICON.close}</button></header>
-      <div class="seg wtabs" role="group"><button class="chip" data-wtab="all" aria-pressed="true">All ${book.order.length}</button><button class="chip" data-wtab="saved" aria-pressed="false">Saved</button></div>
+      <div class="seg wtabs" role="group"><button class="chip" data-wtab="all" aria-pressed="true">All ${book.order.length}</button><button class="chip" data-wtab="saved" aria-pressed="false">Saved</button>${chapters.length ? '<button class="chip" data-wtab="toc" aria-pressed="false">Contents</button>' : ''}</div>
       <ol class="wlist"></ol>
     </aside>
   </div>`;
@@ -104,7 +106,18 @@ export function renderReader(root, book, startPara) {
   const flow = R.querySelector('.flow');
   const sheets = [...R.querySelectorAll('.sheet')];
   const scrub = R.querySelector('.scrub');
-  const paras = [...flow.querySelectorAll('p[data-p]')];
+  let paras = [];
+  let si = -1;              // current segment (chapter)
+  function renderSeg(n) {
+    si = n;
+    page = 0;
+    const sg = segs[n];
+    let html = n === 0 ? titlePage : '';
+    for (let i = sg.start; i <= sg.end; i++) html += paraHTML(i);
+    if (n === segs.length - 1) html += '<p class="the-end">The End</p>';
+    flow.innerHTML = html + '<span class="flow-end"></span>';
+    paras = [...flow.querySelectorAll('[data-p]')];
+  }
 
   let L = null;         // layout metrics
   let page = 0;         // index of first visible page
@@ -127,7 +140,9 @@ export function renderReader(root, book, startPara) {
     return { W, H, phone, spread, top, bottom, m, vpad, pageW, pageH, colW, textH, x0, per: spread ? 2 : 1 };
   }
 
-  function layout(anchorPara) {
+  function layout(anchorPara, atEnd = false) {
+    if (anchorPara && segOf(anchorPara) !== si) renderSeg(segOf(anchorPara));
+    else if (si < 0) renderSeg(0);
     L = measure();
     R.classList.toggle('is-spread', L.spread);
     R.classList.toggle('phone', L.phone);
@@ -144,7 +159,8 @@ export function renderReader(root, book, startPara) {
     L.pages = pageOf(flow.querySelector('.flow-end')) + 1;
     if (L.pages % L.per) L.pages += L.per - (L.pages % L.per);
     scrub.max = String(L.pages / L.per);
-    let pg = anchorPara ? pageOf(paras[anchorPara - 1]) : Math.min(page, L.pages - 1);
+    const anchorEl = anchorPara ? flow.querySelector(`[data-p="${anchorPara}"]`) : null;
+    let pg = atEnd ? L.pages - 1 : anchorEl ? pageOf(anchorEl) : Math.min(page, L.pages - 1);
     pg -= pg % L.per;
     show(pg);
   }
@@ -163,7 +179,7 @@ export function renderReader(root, book, startPara) {
         if (Math.floor((r.left - fl + 2) / L.pageW) >= pg) return +p.dataset.p;
       }
     }
-    return total;
+    return segs[si].end;
   }
 
   function show(pg) {
@@ -173,14 +189,16 @@ export function renderReader(root, book, startPara) {
     sheets[1].querySelector('.folio').textContent = L.spread && page + 1 < L.pages ? page + 2 : '';
     scrub.value = String(page / L.per + 1);
     const last = page + L.per >= L.pages;
+    const end = last && si === segs.length - 1;
     const a = page, b = Math.min(page + L.per - 1, L.pages - 1);
-    R.querySelector('.pos').textContent = L.per === 2 ? `Pages ${a + 1}–${b + 1} of ${L.pages}` : `Page ${a + 1} of ${L.pages}`;
-    const left = Math.max(0, Math.round(book.minutes * (1 - (page + L.per) / L.pages)));
-    R.querySelector('.left').textContent = last ? 'End of story' : left <= 1 ? 'Less than a minute left' : `${left} min left`;
-    R.querySelector('.turn.prev').disabled = page === 0;
-    R.querySelector('.turn.next').disabled = last;
-    const para = page === 0 ? 1 : firstParaOnPage(page);
-    setProgress(book.slug, last ? total : para, ((page + L.per) / L.pages) * 100, total);
+    const pages = L.per === 2 ? `ages ${a + 1}–${b + 1} of ${L.pages}` : `age ${a + 1} of ${L.pages}`;
+    R.querySelector('.pos').textContent = segs.length > 1 ? `${segs[si].title}, p${pages}` : `P${pages}`;
+    const para = page === 0 ? segs[si].start : firstParaOnPage(page);
+    const left = Math.max(0, Math.round(book.minutes * (1 - para / total)));
+    R.querySelector('.left').textContent = end ? 'End of story' : left <= 1 ? 'Less than a minute left' : `${left} min left`;
+    R.querySelector('.turn.prev').disabled = page === 0 && si === 0;
+    R.querySelector('.turn.next').disabled = end;
+    setProgress(book.slug, end ? total : para, end ? 100 : (para / total) * 100, total);
   }
 
   /* ---------- page turning ---------- */
@@ -210,7 +228,16 @@ export function renderReader(root, book, startPara) {
   async function turn(dir) {
     if (busy) return;
     const target = page + dir * L.per;
-    if (target < 0 || target > L.pages - L.per) return;
+    if (target < 0 || target > L.pages - L.per) {
+      const next = si + dir;
+      if (next < 0 || next >= segs.length) return;
+      closeCard(true);
+      hideChrome();
+      renderSeg(next);
+      layout(null, dir < 0);
+      if (!reduceMotion()) clip.animate([{ opacity: 0, transform: `translateX(${dir * 24}px)` }, { opacity: 1, transform: 'none' }], { duration: 320, easing: 'ease-out' });
+      return;
+    }
     closeCard(true);
     hideChrome();
     const mode = reduceMotion() ? 'none' : o.turn;
@@ -283,6 +310,8 @@ export function renderReader(root, book, startPara) {
     });
   };
   const gotoEntry = id => {
+    const cp = book.cards[id]?.para;
+    if (cp && segOf(cp) !== si) { renderSeg(segOf(cp)); layout(null); }
     const span = flow.querySelector(`.g[data-id="${id}"]`);
     if (!span) return;
     closeCard(true);
@@ -347,6 +376,10 @@ export function renderReader(root, book, startPara) {
 
   let wtab = 'all';
   function drawWords() {
+    if (wtab === 'toc') {
+      R.querySelector('.wlist').innerHTML = segs.map((x, n) => `<li><button data-seg="${n}"${n === si ? ' aria-current="true"' : ''}><span class="hw">${esc(x.title || book.title)}</span></button></li>`).join('');
+      return;
+    }
     const ids = book.order.filter(id => wtab === 'all' || isSaved(book.cards[id].headword));
     R.querySelector('.wlist').innerHTML = ids.length ? ids.map(id => {
       const c = book.cards[id];
@@ -358,6 +391,8 @@ export function renderReader(root, book, startPara) {
     if (t) { wtab = t.dataset.wtab; panels.words.querySelectorAll('[data-wtab]').forEach(b => b.setAttribute('aria-pressed', String(b === t))); drawWords(); }
     const g = e.target.closest('[data-goto]');
     if (g) gotoEntry(g.dataset.goto);
+    const sgb = e.target.closest('[data-seg]');
+    if (sgb) { closePanels(); renderSeg(+sgb.dataset.seg); layout(null); show(0); }
   });
 
   panels.aa.addEventListener('click', e => {

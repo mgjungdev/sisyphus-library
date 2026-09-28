@@ -61,6 +61,9 @@ def check(slug: str) -> list[str]:
         if not isinstance(p, int) or not 1 <= p <= len(paras):
             errors.append(f"{tag}: para {p} out of range 1..{len(paras)}")
             continue
+        if paras[p - 1].startswith("## "):
+            errors.append(f"{tag}: para {p} is a chapter heading")
+            continue
         hits = find_all(paras[p - 1], e.get("match", ""))
         occ = e.get("occurrence", 1)
         if len(hits) < occ:
@@ -72,8 +75,12 @@ def check(slug: str) -> list[str]:
             errors.append(f"{tag}: same text position as {spans[key]}")
         spans[key] = eid
     n = len(data.get("entries", []))
-    if not 30 <= n <= 70:
-        errors.append(f"{n} entries (expected 40-60)")
+    words = sum(len(p.split()) for p in paras if not p.startswith("## "))
+    lo, hi = (25, 70) if words < 8000 else (40, 110)
+    if words < 1500:
+        lo = 12
+    if not lo <= n <= hi:
+        errors.append(f"{n} entries (expected {lo}-{hi} for {words} words)")
     return errors
 
 

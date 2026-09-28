@@ -40,7 +40,7 @@ body[data-view="library"] .topbar {
 }
 .wordmark svg { width: 22px; height: 22px; color: var(--ink); }
 .topbar-title {
-  min-width: 0; text-align: center; font-family: var(--font-read); font-size: 15px; color: var(--ink-2);
+  min-width: 0; text-align: center; display: flex; justify-content: center; font-family: var(--font-read); font-size: 15px; color: var(--ink-2);
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
 .topbar-actions { display: flex; gap: 4px; }
@@ -58,7 +58,7 @@ body[data-view="library"] .topbar {
 }
 @media (max-width: 560px) {
   .wordmark span { display: none; }
-  body[data-view="library"] .wordmark span { display: inline; }
+  body[data-view="library"] .wordmark span { display: none; }
 }
 
 /* ---------- shared bits ---------- */

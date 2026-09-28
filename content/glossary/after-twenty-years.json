@@ -1,0 +1,541 @@
+{
+  "slug": "after-twenty-years",
+  "entries": [
+    {
+      "id": "on-the-beat",
+      "match": "on the beat",
+      "para": 1,
+      "headword": "beat",
+      "pos": "noun",
+      "ipa": "/bit/",
+      "sense_en": "the regular area or route that a police officer walks and watches",
+      "sense_ko": "(경찰의) 순찰 구역, 담당 순찰로",
+      "synonyms": [
+        {"word": "patrol", "nuance": "The act of walking around to guard an area; beat is the fixed route or district itself.", "example": "officers on night patrol"},
+        {"word": "round", "nuance": "A regular series of visits or stops, used for doctors, guards, milkmen; not police-specific.", "example": "The doctor is on her rounds."},
+        {"word": "district", "nuance": "An official administrative area; larger and more formal than one officer's beat.", "example": "the fifth police district"}
+      ],
+      "modern": null,
+      "tip_ko": "beat는 '때리다'만이 아니라 경찰의 '순찰 구역'이라는 뜻도 있습니다. a cop on the beat = 거리를 도는 순경.",
+      "all": true
+    },
+    {
+      "id": "gust",
+      "match": "gusts",
+      "para": 1,
+      "headword": "gust",
+      "pos": "noun",
+      "ipa": "/ɡʌst/",
+      "sense_en": "a sudden, short, strong rush of wind",
+      "sense_ko": "돌풍, 확 몰아치는 바람",
+      "synonyms": [
+        {"word": "breeze", "nuance": "A gentle, pleasant wind; a gust is sudden and forceful.", "example": "a cool evening breeze"},
+        {"word": "blast", "nuance": "Stronger and more violent, often very cold or loud.", "example": "a blast of icy air"},
+        {"word": "squall", "nuance": "A sudden storm with strong wind, often with rain or snow, usually at sea.", "example": "The boat was caught in a squall."}
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "well-nigh",
+      "match": "well nigh",
+      "para": 1,
+      "headword": "well-nigh",
+      "pos": "adverb",
+      "ipa": "/ˌwɛlˈnaɪ/",
+      "sense_en": "almost; very nearly",
+      "sense_ko": "거의",
+      "synonyms": [
+        {"word": "almost", "nuance": "The plain everyday word; well-nigh sounds old and literary.", "example": "It's almost ten o'clock."},
+        {"word": "virtually", "nuance": "Modern and a little formal; means 'in effect, for practical purposes'.", "example": "The streets were virtually empty."},
+        {"word": "practically", "nuance": "Informal and common in speech; often used for mild exaggeration.", "example": "I practically ran all the way."}
+      ],
+      "modern": "almost / nearly",
+      "tip_ko": "nigh는 '가까운(near)'의 옛말입니다. well nigh impossible(거의 불가능한)처럼 지금도 가끔 문어체에 남아 있습니다.",
+      "all": true
+    },
+    {
+      "id": "twirl",
+      "match": "twirling",
+      "para": 2,
+      "headword": "twirl",
+      "pos": "verb",
+      "ipa": "/twɝl/",
+      "sense_en": "spinning something round and round quickly, often with skill",
+      "sense_ko": "(손에 든 것을) 빙빙 돌리다",
+      "synonyms": [
+        {"word": "spin", "nuance": "General word for turning fast; twirl suggests a light, playful or showy movement.", "example": "The wheel spun faster."},
+        {"word": "twiddle", "nuance": "To turn or fiddle with something idly, often from boredom.", "example": "He sat twiddling his thumbs."},
+        {"word": "whirl", "nuance": "Faster and wilder, often with a sense of confusion or force.", "example": "Leaves whirled in the wind."}
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "adown",
+      "match": "adown",
+      "para": 2,
+      "headword": "adown",
+      "pos": "preposition",
+      "ipa": "/əˈdaʊn/",
+      "sense_en": "down; along (an old poetic word)",
+      "sense_ko": "~을 따라 저 아래로 (옛 시적 표현)",
+      "synonyms": [
+        {"word": "down", "nuance": "The normal modern word; adown is archaic and used here for a mock-grand style.", "example": "He looked down the street."},
+        {"word": "along", "nuance": "Stresses following the length of something, without the sense of direction downward.", "example": "We walked along the river."}
+      ],
+      "modern": "down",
+      "tip_ko": "O. Henry는 평범한 순경을 일부러 거창한 옛말(adown, pacific)로 묘사해 유머를 만듭니다.",
+      "all": true
+    },
+    {
+      "id": "thoroughfare",
+      "match": "thoroughfare",
+      "para": 2,
+      "headword": "thoroughfare",
+      "pos": "noun",
+      "ipa": "/ˈθɝoʊˌfɛr/",
+      "sense_en": "a main road or street that people and traffic pass through",
+      "sense_ko": "(사람·차가 다니는) 큰길, 대로",
+      "synonyms": [
+        {"word": "street", "nuance": "Everyday word for any road in a town; thoroughfare is formal and stresses passing through.", "example": "a quiet street"},
+        {"word": "avenue", "nuance": "A wide city street, often lined with trees or big buildings.", "example": "Fifth Avenue"},
+        {"word": "highway", "nuance": "A main road between towns or cities, for fast traffic.", "example": "Take the highway north."}
+      ],
+      "modern": null,
+      "tip_ko": "thorough의 발음 /ˈθɝoʊ/에 주의하세요. through(/θru/)와 모양은 비슷하지만 발음이 다릅니다.",
+      "all": true
+    },
+    {
+      "id": "stalwart",
+      "match": "stalwart",
+      "para": 2,
+      "headword": "stalwart",
+      "pos": "adjective",
+      "ipa": "/ˈstɔlwɚt/",
+      "sense_en": "strong, solid and sturdy in build",
+      "sense_ko": "건장한, 튼튼한",
+      "synonyms": [
+        {"word": "sturdy", "nuance": "Neutral: strongly built; also used for furniture, shoes, etc.", "example": "a sturdy table"},
+        {"word": "burly", "nuance": "Big, heavy and muscular; can sound rough or a little threatening.", "example": "a burly bouncer"},
+        {"word": "robust", "nuance": "Healthy and strong; often about health, systems or arguments, not just bodies.", "example": "a robust economy"}
+      ],
+      "modern": null,
+      "tip_ko": "stalwart는 '충실한 지지자'라는 뜻의 명사로도 자주 씁니다 (a party stalwart).",
+      "all": true
+    },
+    {
+      "id": "swagger",
+      "match": "swagger",
+      "para": 2,
+      "headword": "swagger",
+      "pos": "noun",
+      "ipa": "/ˈswæɡɚ/",
+      "sense_en": "a proud, confident way of walking that shows you think you are important",
+      "sense_ko": "뽐내는 걸음걸이, 으스댐",
+      "synonyms": [
+        {"word": "strut", "nuance": "A stiff, showy walk with the chest out; more ridiculous-looking than swagger.", "example": "the strut of a rooster"},
+        {"word": "confidence", "nuance": "A neutral or positive inner quality; swagger is how confidence shows outwardly, sometimes too much.", "example": "She spoke with confidence."},
+        {"word": "arrogance", "nuance": "Clearly negative: believing you are better than others.", "example": "His arrogance annoyed everyone."}
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "vicinity",
+      "match": "vicinity",
+      "para": 2,
+      "headword": "vicinity",
+      "pos": "noun",
+      "ipa": "/vəˈsɪnəti/",
+      "sense_en": "the area around a particular place; the neighborhood",
+      "sense_ko": "부근, 인근 지역",
+      "synonyms": [
+        {"word": "neighborhood", "nuance": "Everyday word for the local area where people live; warmer and less formal.", "example": "a friendly neighborhood"},
+        {"word": "area", "nuance": "General, neutral word for any region, big or small.", "example": "the downtown area"},
+        {"word": "proximity", "nuance": "Formal: the state of being near, not the place itself.", "example": "in close proximity to the station"}
+      ],
+      "modern": null,
+      "tip_ko": "in the vicinity of ~ (~ 부근에)의 형태로 자주 쓰이며, 강세는 두 번째 음절 -ci-에 있습니다.",
+      "all": true
+    },
+    {
+      "id": "keep-early-hours",
+      "match": "kept early hours",
+      "para": 2,
+      "headword": "keep early hours",
+      "pos": "idiom",
+      "ipa": null,
+      "sense_en": "to go to bed and close up early; here, the shops and homes closed early",
+      "sense_ko": "일찍 문을 닫다, 일찍 잠자리에 드는 생활을 하다",
+      "synonyms": [
+        {"word": "early bird", "nuance": "A noun for a person who gets up early; keep early hours is about the whole daily routine.", "example": "She's an early bird."},
+        {"word": "keep late hours", "nuance": "The opposite: staying up or open until late at night.", "example": "Students often keep late hours."}
+      ],
+      "modern": "went to bed early / closed early",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "keen",
+      "match": "keen",
+      "para": 6,
+      "headword": "keen",
+      "pos": "adjective",
+      "ipa": "/kin/",
+      "sense_en": "sharp and quick to notice things",
+      "sense_ko": "날카로운, 예리한 (눈빛)",
+      "synonyms": [
+        {"word": "sharp", "nuance": "Common and general; keen sounds a bit more literary and admiring.", "example": "She has sharp eyes."},
+        {"word": "piercing", "nuance": "Stronger: a look that seems to go right through you, often uncomfortable.", "example": "a piercing stare"},
+        {"word": "alert", "nuance": "Awake and ready to notice danger; about a state, not a permanent quality.", "example": "Stay alert while driving."}
+      ],
+      "modern": null,
+      "tip_ko": "영국 영어에서 keen은 주로 '열심인, 좋아하는'(I'm keen on tennis)이지만, 여기서는 '예리한'입니다.",
+      "all": true
+    },
+    {
+      "id": "chum",
+      "match": "chum",
+      "para": 7,
+      "headword": "chum",
+      "pos": "noun",
+      "ipa": "/tʃʌm/",
+      "sense_en": "a close friend (old-fashioned)",
+      "sense_ko": "단짝, 친한 친구",
+      "synonyms": [
+        {"word": "buddy", "nuance": "Modern American informal word; the closest everyday equivalent.", "example": "my old buddy from school"},
+        {"word": "pal", "nuance": "Informal and friendly, slightly old-fashioned but still used.", "example": "Thanks, pal."},
+        {"word": "crony", "nuance": "Usually negative: a friend who gets favors, especially in business or politics.", "example": "He gave jobs to his cronies."}
+      ],
+      "modern": "buddy / best friend",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "correspond",
+      "match": "corresponded",
+      "para": 9,
+      "headword": "correspond",
+      "pos": "verb",
+      "ipa": "/ˌkɔrəˈspɑnd/",
+      "sense_en": "wrote letters to each other regularly",
+      "sense_ko": "편지를 주고받다, 서신 왕래하다",
+      "synonyms": [
+        {"word": "write to", "nuance": "Everyday phrase; correspond is formal and suggests a regular exchange both ways.", "example": "I'll write to you every week."},
+        {"word": "keep in touch", "nuance": "Informal; any kind of contact, not only letters.", "example": "Let's keep in touch."},
+        {"word": "communicate", "nuance": "Broad and formal: any exchange of information by any means.", "example": "We communicate by email."}
+      ],
+      "modern": null,
+      "tip_ko": "correspond to ~ 는 '~에 해당하다'라는 전혀 다른 뜻이니, 전치사 with/to를 꼭 확인하세요.",
+      "all": true
+    },
+    {
+      "id": "lose-track-of",
+      "match": "lost track of",
+      "para": 9,
+      "headword": "lose track of",
+      "pos": "idiom",
+      "ipa": null,
+      "sense_en": "to stop knowing where someone is or what is happening to them",
+      "sense_ko": "~의 소식이 끊기다, ~을 놓치다",
+      "synonyms": [
+        {"word": "lose touch with", "nuance": "Specifically about stopping contact with a person; lose track of can also be about time or things.", "example": "We lost touch after college."},
+        {"word": "drift apart", "nuance": "Slowly becoming less close emotionally, not just losing contact.", "example": "Old friends often drift apart."}
+      ],
+      "modern": null,
+      "tip_ko": "lose track of time (시간 가는 줄 모르다)도 아주 자주 쓰는 표현입니다.",
+      "all": true
+    },
+    {
+      "id": "proposition",
+      "match": "proposition",
+      "para": 9,
+      "headword": "proposition",
+      "pos": "noun",
+      "ipa": "/ˌprɑpəˈzɪʃən/",
+      "sense_en": "(informal American) a thing or situation to deal with; here, a huge place",
+      "sense_ko": "(구어) 상대해야 할 대상, 만만치 않은 것",
+      "synonyms": [
+        {"word": "proposal", "nuance": "A formal suggestion or plan; proposition here does not mean a suggestion at all.", "example": "a business proposal"},
+        {"word": "matter", "nuance": "Neutral word for a subject or situation.", "example": "That's a different matter."},
+        {"word": "undertaking", "nuance": "A big task or project someone takes on.", "example": "Moving house is a big undertaking."}
+      ],
+      "modern": "a big place / a whole different thing",
+      "tip_ko": "보통은 '제안, 명제'지만, 여기서는 옛 미국 구어로 '(다루기) ~한 대상'이라는 뜻입니다.",
+      "all": true
+    },
+    {
+      "id": "stanch",
+      "match": "stanchest",
+      "para": 9,
+      "headword": "stanch",
+      "pos": "adjective",
+      "ipa": "/stɔntʃ/",
+      "sense_en": "most loyal and dependable",
+      "sense_ko": "(가장) 충실한, 믿음직한",
+      "synonyms": [
+        {"word": "staunch", "nuance": "The usual modern spelling of the same word, especially for supporters and allies.", "example": "a staunch supporter"},
+        {"word": "loyal", "nuance": "Everyday word; staunch adds firmness that does not change under pressure.", "example": "a loyal dog"},
+        {"word": "faithful", "nuance": "Stresses keeping promises and devotion over time; also used for marriage.", "example": "a faithful friend"}
+      ],
+      "modern": "staunchest",
+      "tip_ko": "지금은 형용사로 staunch 철자를 쓰고, stanch는 주로 '(피를) 멈추게 하다'라는 동사로 씁니다.",
+      "all": true
+    },
+    {
+      "id": "plodder",
+      "match": "plodder",
+      "para": 13,
+      "headword": "plodder",
+      "pos": "noun",
+      "ipa": "/ˈplɑdɚ/",
+      "sense_en": "a person who works slowly and steadily but without brilliance",
+      "sense_ko": "꾸준하지만 느리고 평범한 사람, 굼벵이",
+      "synonyms": [
+        {"word": "hard worker", "nuance": "Positive; plodder hints at dullness or lack of talent.", "example": "She's a hard worker."},
+        {"word": "slowpoke", "nuance": "Informal, about someone who is slow in general, often teasing.", "example": "Hurry up, slowpoke!"},
+        {"word": "drudge", "nuance": "Someone doing boring, hard work, often for others; more pitiful.", "example": "an office drudge"}
+      ],
+      "modern": null,
+      "tip_ko": "동사 plod는 '터벅터벅 무겁게 걷다'입니다. Bob은 친구를 약간 얕보며 말하고 있습니다.",
+      "all": true
+    },
+    {
+      "id": "pile",
+      "match": "pile",
+      "para": 13,
+      "headword": "pile",
+      "pos": "noun",
+      "ipa": "/paɪl/",
+      "sense_en": "(slang) a large amount of money; a fortune",
+      "sense_ko": "(속어) 큰돈, 한 재산",
+      "synonyms": [
+        {"word": "fortune", "nuance": "Standard word for great wealth; pile is casual slang.", "example": "He made a fortune in oil."},
+        {"word": "bundle", "nuance": "Informal, often for a large sum spent or earned at once.", "example": "That car cost a bundle."},
+        {"word": "wealth", "nuance": "Formal and general; describes being rich, not a sum you collect.", "example": "the family's wealth"}
+      ],
+      "modern": "make a fortune / make a bundle",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "in-a-groove",
+      "match": "in a groove",
+      "para": 13,
+      "headword": "get in a groove",
+      "pos": "idiom",
+      "ipa": null,
+      "sense_en": "to be stuck in a fixed, dull routine that never changes",
+      "sense_ko": "판에 박힌 생활에 빠지다",
+      "synonyms": [
+        {"word": "in a rut", "nuance": "The common modern idiom with the same negative meaning.", "example": "I feel stuck in a rut."},
+        {"word": "in the groove", "nuance": "Positive modern slang: working or playing smoothly and well.", "example": "The band was really in the groove."}
+      ],
+      "modern": "stuck in a rut",
+      "tip_ko": "요즘 in the groove는 오히려 '리듬을 타다, 잘 풀리다'라는 긍정적 의미이니 헷갈리지 마세요.",
+      "all": true
+    },
+    {
+      "id": "drizzle",
+      "match": "drizzle",
+      "para": 18,
+      "headword": "drizzle",
+      "pos": "noun",
+      "ipa": "/ˈdrɪzəl/",
+      "sense_en": "light rain made of very small drops",
+      "sense_ko": "이슬비, 가랑비",
+      "synonyms": [
+        {"word": "shower", "nuance": "A short fall of rain that may be heavy; drizzle is light and steady.", "example": "a sudden shower"},
+        {"word": "mist", "nuance": "Tiny water drops hanging in the air, finer than drizzle.", "example": "morning mist over the lake"},
+        {"word": "downpour", "nuance": "The opposite: very heavy rain.", "example": "We got caught in a downpour."}
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "astir",
+      "match": "astir",
+      "para": 18,
+      "headword": "astir",
+      "pos": "adjective",
+      "ipa": "/əˈstɝ/",
+      "sense_en": "out and moving about",
+      "sense_ko": "(밖에 나와) 움직이고 있는, 돌아다니는",
+      "synonyms": [
+        {"word": "about", "nuance": "Everyday: out and around; astir is literary.", "example": "Not many people were about."},
+        {"word": "up and about", "nuance": "Out of bed and active, often after illness.", "example": "She's up and about again."},
+        {"word": "bustling", "nuance": "Full of busy, noisy activity; astir can mean just a few people moving.", "example": "a bustling market"}
+      ],
+      "modern": "out / about",
+      "tip_ko": "a- + stir(움직이다)로 된 문어체 형용사로, 명사 앞이 아니라 뒤나 be 동사 뒤에 옵니다.",
+      "all": true
+    },
+    {
+      "id": "dismally",
+      "match": "dismally",
+      "para": 18,
+      "headword": "dismally",
+      "pos": "adverb",
+      "ipa": "/ˈdɪzməli/",
+      "sense_en": "in a gloomy, miserable way",
+      "sense_ko": "음울하게, 처량하게",
+      "synonyms": [
+        {"word": "gloomily", "nuance": "Close in meaning; stresses dark, low mood.", "example": "He stared gloomily out the window."},
+        {"word": "miserably", "nuance": "Stronger personal unhappiness or discomfort.", "example": "She shivered miserably in the cold."},
+        {"word": "drearily", "nuance": "Stresses dullness and boredom more than sadness.", "example": "The rain fell drearily all day."}
+      ],
+      "modern": null,
+      "tip_ko": "dismally failed(처참하게 실패했다)처럼 '형편없이'라는 뜻으로도 자주 씁니다.",
+      "all": true
+    },
+    {
+      "id": "absurdity",
+      "match": "absurdity",
+      "para": 18,
+      "headword": "absurdity",
+      "pos": "noun",
+      "ipa": "/əbˈsɝdəti/",
+      "sense_en": "the state of being silly and unreasonable; almost to absurdity = almost ridiculously",
+      "sense_ko": "터무니없음, 황당함",
+      "synonyms": [
+        {"word": "nonsense", "nuance": "Everyday and often dismissive; used for ideas or talk.", "example": "That's complete nonsense."},
+        {"word": "ridiculousness", "nuance": "Stresses that something invites laughter.", "example": "the ridiculousness of the rule"},
+        {"word": "folly", "nuance": "Literary; foolishness that leads to harm.", "example": "It was folly to go out in the storm."}
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "sure-as-fate",
+      "match": "sure as fate",
+      "para": 22,
+      "headword": "sure as fate",
+      "pos": "idiom",
+      "ipa": null,
+      "sense_en": "completely certainly; without any doubt",
+      "sense_ko": "틀림없이, 확실히",
+      "synonyms": [
+        {"word": "sure as eggs is eggs", "nuance": "British, humorous and old-fashioned version.", "example": "He'll be late, sure as eggs is eggs."},
+        {"word": "without a doubt", "nuance": "Neutral modern phrase, usable in any register.", "example": "It's without a doubt the best."},
+        {"word": "sure enough", "nuance": "Means 'as expected'; used when a prediction comes true.", "example": "Sure enough, it started to rain."}
+      ],
+      "modern": "for sure / no doubt about it",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "bully",
+      "match": "Bully",
+      "para": 23,
+      "headword": "bully",
+      "pos": "interjection",
+      "ipa": "/ˈbʊli/",
+      "sense_en": "(old American slang) excellent; very good",
+      "sense_ko": "(옛 미국 속어) 아주 좋아, 끝내줘",
+      "synonyms": [
+        {"word": "great", "nuance": "The everyday modern word for the same enthusiasm.", "example": "\"How was it?\" \"Great!\""},
+        {"word": "splendid", "nuance": "Also a bit old-fashioned, more polite and upper-class.", "example": "What a splendid idea!"},
+        {"word": "swell", "nuance": "Old American slang like bully, popular in the early 1900s.", "example": "We had a swell time."}
+      ],
+      "modern": "great / terrific",
+      "tip_ko": "지금 bully는 거의 '괴롭히는 사람, 괴롭히다'로만 씁니다. 여기서는 20세기 초 '최고야!'라는 감탄사입니다.",
+      "all": true
+    },
+    {
+      "id": "egotism",
+      "match": "egotism",
+      "para": 27,
+      "headword": "egotism",
+      "pos": "noun",
+      "ipa": "/ˈiɡəˌtɪzəm/",
+      "sense_en": "too much pride in yourself and love of talking about yourself",
+      "sense_ko": "자기 자랑, 자만심",
+      "synonyms": [
+        {"word": "conceit", "nuance": "Too high an opinion of your own abilities; less about talking.", "example": "full of conceit"},
+        {"word": "vanity", "nuance": "Too much pride, especially in your looks.", "example": "He checked the mirror out of vanity."},
+        {"word": "egoism", "nuance": "In careful use: acting only in self-interest, not necessarily boasting.", "example": "moral egoism"}
+      ],
+      "modern": null,
+      "tip_ko": "egotism(자기 자랑)과 egoism(이기주의)은 철자가 비슷하지만 뉘앙스가 다릅니다.",
+      "all": true
+    },
+    {
+      "id": "submerged",
+      "match": "submerged",
+      "para": 27,
+      "headword": "submerged",
+      "pos": "adjective",
+      "ipa": "/səbˈmɝdʒd/",
+      "sense_en": "almost hidden, as if sunk deep inside (his overcoat)",
+      "sense_ko": "(외투 속에) 파묻힌",
+      "synonyms": [
+        {"word": "buried", "nuance": "Everyday: covered up completely; submerged comes from being under water.", "example": "buried in blankets"},
+        {"word": "hidden", "nuance": "General: not seen, with no image of sinking.", "example": "a hidden door"},
+        {"word": "swallowed up", "nuance": "Informal image of being lost inside something big.", "example": "He was swallowed up by the crowd."}
+      ],
+      "modern": null,
+      "tip_ko": "원래 '물속에 잠긴'이라는 뜻을 비유적으로 써서, 얼굴을 숨기려는 인물의 모습을 암시합니다.",
+      "all": true
+    },
+    {
+      "id": "glare",
+      "match": "glare",
+      "para": 28,
+      "headword": "glare",
+      "pos": "noun",
+      "ipa": "/ɡlɛr/",
+      "sense_en": "a very strong, bright light that is hard to look at",
+      "sense_ko": "눈부신 빛, 환한 불빛",
+      "synonyms": [
+        {"word": "glow", "nuance": "Soft, steady and warm light; glare is harsh and strong.", "example": "the glow of the fire"},
+        {"word": "dazzle", "nuance": "Light so bright it blinds you for a moment; often admiring.", "example": "the dazzle of the sun on the snow"},
+        {"word": "gleam", "nuance": "A small, shining light reflected from a surface.", "example": "the gleam of a knife"}
+      ],
+      "modern": null,
+      "tip_ko": "동사 glare at ~은 '~을 노려보다'라는 뜻입니다. 여기서는 명사 '눈부신 빛'.",
+      "all": true
+    },
+    {
+      "id": "snap",
+      "match": "snapped",
+      "para": 30,
+      "headword": "snap",
+      "pos": "verb",
+      "ipa": "/snæp/",
+      "sense_en": "said something suddenly and sharply, in an angry way",
+      "sense_ko": "딱딱거리며 쏘아붙이다",
+      "synonyms": [
+        {"word": "bark", "nuance": "Louder, like giving an order; snap is short and sudden.", "example": "\"Sit down!\" he barked."},
+        {"word": "retort", "nuance": "A quick, clever or angry reply to what someone said.", "example": "\"Mind your own business,\" she retorted."},
+        {"word": "growl", "nuance": "Low, rough voice showing anger or threat.", "example": "\"Get out,\" he growled."}
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "pug",
+      "match": "pug",
+      "para": 30,
+      "headword": "pug nose",
+      "pos": "noun",
+      "ipa": "/pʌɡ/",
+      "sense_en": "a short, flat nose that turns up at the end",
+      "sense_ko": "납작하고 들창코인 코 (퍼그 코)",
+      "synonyms": [
+        {"word": "snub nose", "nuance": "Same shape; a neutral description, less jokey than pug.", "example": "a child with a snub nose"},
+        {"word": "Roman nose", "nuance": "The opposite in this sentence: a large nose with a high, curved bridge.", "example": "a proud Roman nose"},
+        {"word": "button nose", "nuance": "Small and round, usually said as a cute compliment.", "example": "the baby's button nose"}
+      ],
+      "modern": null,
+      "tip_ko": "퍼그(pug)라는 개의 얼굴처럼 납작한 코를 말합니다. Roman nose(매부리코)와 대비됩니다.",
+      "all": true
+    }
+  ]
+}

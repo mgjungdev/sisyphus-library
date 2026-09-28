@@ -4,6 +4,26 @@ const S = (vb, body) => `<svg viewBox="${vb}" aria-hidden="true" focusable="fals
 const G = 'fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"';
 
 export const MOTIFS = {
+  crown: S('0 0 120 100', `<g ${G}>
+    <path d="M20 74l-6-44 26 22 20-32 20 32 26-22-6 44z"/><path d="M22 86h76"/>
+    <circle cx="14" cy="28" r="4"/><circle cx="60" cy="16" r="4"/><circle cx="106" cy="28" r="4"/><circle cx="60" cy="60" r="5"/></g>`),
+  compass: S('0 0 120 110', `<g ${G}>
+    <circle cx="60" cy="55" r="38"/><circle cx="60" cy="55" r="30" opacity=".5"/>
+    <path d="M60 25l8 30-8 30-8-30z"/><path d="M30 55l30-8 30 8-30 8z" opacity=".7"/><path d="M60 11v6M60 93v6M16 55h6M98 55h6"/></g>`),
+  key: S('0 0 120 100', `<g ${G}>
+    <circle cx="34" cy="50" r="16"/><circle cx="34" cy="50" r="6"/><path d="M50 50h54M86 50v14M98 50v10M72 50v8"/></g>`),
+  raven: S('0 0 120 100', `<g ${G}>
+    <path d="M18 70c12-2 22-8 30-18 6-16 20-26 36-24l12-6-4 10c4 10 0 24-12 32l6 16-12-10c-14 4-34 4-56 0z"/>
+    <path d="M58 76l-4 14M70 76l2 14"/><circle cx="84" cy="34" r="1.8" fill="currentColor"/><path d="M96 22l12 2-10 6"/></g>`),
+  planet: S('0 0 120 100', `<g ${G}>
+    <circle cx="60" cy="50" r="24"/><ellipse cx="60" cy="52" rx="48" ry="12" transform="rotate(-14 60 52)"/>
+    <circle cx="18" cy="16" r="2" fill="currentColor"/><circle cx="102" cy="84" r="2" fill="currentColor"/><circle cx="100" cy="18" r="1.4" fill="currentColor"/></g>`),
+  mask: S('0 0 120 100', `<g ${G}>
+    <path d="M18 26c26 8 58 8 84 0 2 30-8 52-42 56-34-4-44-26-42-56z"/>
+    <path d="M36 44c4-4 12-4 16 0M68 44c4-4 12-4 16 0"/><path d="M42 62c10 10 26 10 36 0"/></g>`),
+  quill: S('0 0 120 110', `<g ${G}>
+    <path d="M96 10C60 18 38 44 30 88c16-20 42-30 52-52 4-10 8-18 14-26z"/><path d="M30 88l-8 14M44 60c10-2 18-8 24-16"/>
+    <path d="M18 102h40" opacity=".6"/></g>`),
   swallow: S('0 0 120 90', `<g ${G}>
     <path d="M10 44c18-6 34-4 46 4 8-12 22-20 40-22-8 6-13 12-15 18 10-2 20 0 29 5-12 1-22 5-30 12l-8 18-7-16c-14 2-30-2-55-19z"/>
     <path d="M74 56c6 8 16 14 30 17M78 50c8 4 18 6 30 6"/>

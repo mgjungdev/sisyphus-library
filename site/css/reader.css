@@ -150,3 +150,6 @@ body[data-view="reader"] .topbar { display: none; }
 @media (max-width: 599px) {
   .panel-aa, .panel-words { top: auto; bottom: 0; right: 0; left: 0; width: auto; max-height: 78dvh; border-radius: 18px 18px 0 0; padding-bottom: max(16px, env(safe-area-inset-bottom)); }
 }
+.flow h2.ch { margin: 1.2em 0 1.4em; text-align: center; font-weight: 400; font-size: calc(var(--fs) * 1.35); line-height: 1.2; letter-spacing: .02em; font-variant: small-caps; }
+.flow h2.ch + p { text-indent: 0; }
+.wlist button[aria-current="true"] .hw { font-weight: 700; }

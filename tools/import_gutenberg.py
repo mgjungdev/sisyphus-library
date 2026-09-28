@@ -2,6 +2,9 @@
 
 Usage:
     python tools/import_gutenberg.py <slug> <gutenberg_id> "<start heading>" ["<end heading>"]
+        [--heading REGEX]   paragraphs fully matching REGEX become chapter headings ("## ...")
+        [--raw PATH]        use a local plain-text file instead of downloading (gutenberg_id = 0)
+        [--nth N]           use the Nth line equal to the start heading (e.g. 2 to skip a table of contents)
 
 The start heading is the exact line that opens the story (e.g. "The Happy Prince.").
 The story runs until the end heading, or until the Gutenberg END marker.
@@ -27,19 +30,19 @@ def fetch(gid: int) -> str:
     return path.read_text(encoding="utf-8-sig")
 
 
-def cut(text: str, start: str, end: str | None) -> list[str]:
+def cut(text: str, start: str, end: str | None, nth: int = 1) -> list[str]:
     lines = text.splitlines()
-    body_start = next(i for i, l in enumerate(lines) if l.startswith("*** START OF"))
-    body_end = next(i for i, l in enumerate(lines) if l.startswith("*** END OF"))
+    body_start = next((i for i, l in enumerate(lines) if l.startswith("*** START OF")), -1)
+    body_end = next((i for i, l in enumerate(lines) if l.startswith("*** END OF")), len(lines))
     lines = lines[body_start + 1 : body_end]
-    s = next(i for i, l in enumerate(lines) if l.strip() == start)
+    s = [i for i, l in enumerate(lines) if l.strip() == start][nth - 1]
     e = len(lines)
     if end:
         e = next(i for i, l in enumerate(lines) if i > s and l.strip() == end)
     return lines[s + 1 : e]
 
 
-def paragraphs(lines: list[str]) -> list[str]:
+def paragraphs(lines: list[str], heading: str | None = None) -> list[str]:
     paras, cur = [], []
     for l in lines:
         if not l.strip():
@@ -57,7 +60,11 @@ def paragraphs(lines: list[str]) -> list[str]:
         if re.fullmatch(r"by [A-Z][\w. ]+", p):  # byline
             continue
         p = re.sub(r"\s{2,}", " ", p)
-        p = re.sub(r"_([^_]+)_", r"\1", p)  # Gutenberg italics markers
+        if heading and re.fullmatch(heading, p.strip()):
+            out.append("## " + p.strip().rstrip("."))
+            continue
+        p = p.replace("_", "")  # Gutenberg italics markers (can span paragraphs)
+        p = re.sub(r"\s*--\s*", "—", p)  # plain-text dashes
         # small-caps opening word: "HIGH above" -> "High above"
         p = re.sub(r"^([A-Z])([A-Z]+)\b", lambda m: m.group(1) + m.group(2).lower(), p)
         out.append(p)
@@ -65,13 +72,22 @@ def paragraphs(lines: list[str]) -> list[str]:
 
 
 def main():
-    slug, gid, start = sys.argv[1], int(sys.argv[2]), sys.argv[3]
-    end = sys.argv[4] if len(sys.argv) > 4 else None
-    paras = paragraphs(cut(fetch(gid), start, end))
+    args, opts = [], {}
+    it = iter(sys.argv[1:])
+    for a in it:
+        if a in ("--heading", "--raw", "--nth"):
+            opts[a] = next(it)
+        else:
+            args.append(a)
+    slug, gid, start = args[0], int(args[1]), args[2]
+    end = args[3] if len(args) > 3 else None
+    text = Path(opts["--raw"]).read_text(encoding="utf-8-sig") if "--raw" in opts else fetch(gid)
+    paras = paragraphs(cut(text, start, end, int(opts.get("--nth", 1))), opts.get("--heading"))
     SOURCES.mkdir(parents=True, exist_ok=True)
     (SOURCES / f"{slug}.txt").write_text("\n\n".join(paras) + "\n", encoding="utf-8")
-    words = sum(len(p.split()) for p in paras)
-    print(f"{slug}: {len(paras)} paragraphs, {words} words")
+    words = sum(len(p.split()) for p in paras if not p.startswith("## "))
+    heads = [p[3:] for p in paras if p.startswith("## ")]
+    print(f"{slug}: {len(paras)} paragraphs, {words} words" + (f", {len(heads)} chapters: {heads}" if heads else ""))
 
 
 if __name__ == "__main__":
