@@ -1,0 +1,535 @@
+{
+  "slug": "whale-throat",
+  "entries": [
+    {
+      "id": "out-of-harms-way",
+      "match": "out of harm’s way",
+      "para": 1,
+      "headword": "out of harm’s way",
+      "pos": "idiom",
+      "ipa": "/hɑrm/",
+      "sense_en": "in a safe place where nothing can hurt you",
+      "sense_ko": "해를 입지 않을 안전한 곳에",
+      "synonyms": [
+        {"word": "safe", "nuance": "Plain everyday word for the state; the idiom stresses keeping away from a nearby danger.", "example": "The children are safe at home."},
+        {"word": "out of the way", "nuance": "Means not blocking or not bothering others, with no idea of danger.", "example": "Move your bike out of the way."},
+        {"word": "under cover", "nuance": "Hidden or sheltered, especially from rain or from being seen.", "example": "We waited under cover until the storm passed."}
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "cetacean",
+      "match": "Cetacean",
+      "para": 1,
+      "headword": "cetacean",
+      "pos": "noun",
+      "ipa": "/sɪˈteɪʃən/",
+      "sense_en": "a whale, dolphin or porpoise; a scientific name, used here as a grand, flattering title",
+      "sense_ko": "고래류(고래·돌고래 등을 이르는 학술어) — 여기선 고래를 치켜세우는 거창한 호칭",
+      "synonyms": [
+        {"word": "whale", "nuance": "The everyday word; ‘cetacean’ sounds scientific, which is why the flattering fish uses it.", "example": "We saw a whale from the boat."},
+        {"word": "marine mammal", "nuance": "Wider group that also includes seals and sea otters, not only whales and dolphins.", "example": "Seals are marine mammals too."}
+      ],
+      "modern": null,
+      "tip_ko": "강세는 둘째 음절: 시-테이-션.",
+      "all": true
+    },
+    {
+      "id": "nubbly",
+      "match": "nubbly",
+      "para": 3,
+      "headword": "nubbly",
+      "pos": "adjective",
+      "ipa": "/ˈnʌbli/",
+      "sense_en": "full of small hard lumps, so not smooth to eat",
+      "sense_ko": "울퉁불퉁 딱딱한 게 씹히는",
+      "synonyms": [
+        {"word": "lumpy", "nuance": "Common word for food or surfaces with lumps, often a complaint (lumpy gravy).", "example": "The porridge was lumpy."},
+        {"word": "bumpy", "nuance": "Usually about roads, rides or surfaces you move over, not food.", "example": "a bumpy road"},
+        {"word": "knobbly", "nuance": "Has hard rounded bumps, often bones or wood (knobbly knees); a little humorous.", "example": "his knobbly knees"}
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "fetch",
+      "match": "fetch",
+      "para": 4,
+      "headword": "fetch",
+      "pos": "verb",
+      "ipa": "/fɛtʃ/",
+      "sense_en": "to go somewhere, get something, and bring it back",
+      "sense_ko": "가서 가져오다",
+      "synonyms": [
+        {"word": "bring", "nuance": "Only the carrying toward the speaker; ‘fetch’ includes going there first.", "example": "Bring me a chair."},
+        {"word": "get", "nuance": "Most common and informal; can mean fetch, buy or receive.", "example": "Can you get the milk from the fridge?"},
+        {"word": "retrieve", "nuance": "Formal; getting back something lost, left or stored.", "example": "She retrieved her bag from the lost-and-found."}
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "froth-up",
+      "match": "froth up",
+      "para": 4,
+      "headword": "froth up",
+      "pos": "phrasal verb",
+      "ipa": "/frɔθ/",
+      "sense_en": "to become covered with a mass of small white bubbles",
+      "sense_ko": "거품이 부글부글 일다",
+      "synonyms": [
+        {"word": "foam", "nuance": "Very close; ‘foam’ is more neutral, ‘froth’ suggests light, messy bubbles on a liquid’s surface.", "example": "The waves foamed on the rocks."},
+        {"word": "fizz", "nuance": "Bubbles rising with a hissing sound, as in soda.", "example": "The cola fizzed in the glass."},
+        {"word": "churn", "nuance": "Water moving violently round and round, not the bubbles themselves.", "example": "The propeller churned the water."}
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "breeches",
+      "match": "breeches",
+      "para": 5,
+      "headword": "breeches",
+      "pos": "noun",
+      "ipa": "/ˈbrɪtʃɪz/",
+      "sense_en": "trousers (an old-fashioned word)",
+      "sense_ko": "바지(옛말)",
+      "synonyms": [
+        {"word": "trousers", "nuance": "Standard British word for the same garment.", "example": "a pair of grey trousers"},
+        {"word": "pants", "nuance": "American everyday word; in British English it means underwear.", "example": "He spilled coffee on his pants."},
+        {"word": "shorts", "nuance": "Trousers that end above the knee.", "example": "It’s hot, so wear shorts."}
+      ],
+      "modern": "trousers / pants",
+      "tip_ko": "철자와 달리 ‘브리치즈’로 발음합니다.",
+      "all": true
+    },
+    {
+      "id": "suspenders",
+      "match": "suspenders",
+      "para": 5,
+      "headword": "suspenders",
+      "pos": "noun",
+      "ipa": "/səˈspɛndərz/",
+      "sense_en": "two straps over the shoulders that hold trousers up",
+      "sense_ko": "멜빵",
+      "synonyms": [
+        {"word": "braces", "nuance": "The British word for the same thing; British ‘suspenders’ hold up stockings.", "example": "He wore red braces with his suit."},
+        {"word": "belt", "nuance": "Goes around the waist instead of over the shoulders.", "example": "Tighten your belt."}
+      ],
+      "modern": null,
+      "tip_ko": "미국식 ‘멜빵’. 영국에서 suspenders는 스타킹을 고정하는 끈이라 혼동 주의.",
+      "all": true
+    },
+    {
+      "id": "jack-knife",
+      "match": "jack-knife",
+      "para": 5,
+      "headword": "jack-knife",
+      "pos": "noun",
+      "ipa": "/ˈdʒækˌnaɪf/",
+      "sense_en": "a large knife whose blade folds into the handle",
+      "sense_ko": "접칼(큰 주머니칼)",
+      "synonyms": [
+        {"word": "penknife", "nuance": "Smaller and lighter folding knife, often with one short blade.", "example": "He sharpened the pencil with a penknife."},
+        {"word": "pocketknife", "nuance": "General word for any folding knife carried in a pocket.", "example": "a Swiss pocketknife"}
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "mariner",
+      "match": "Mariner",
+      "para": 5,
+      "headword": "mariner",
+      "pos": "noun",
+      "ipa": "/ˈmærənər/",
+      "sense_en": "a sailor",
+      "sense_ko": "뱃사람, 선원",
+      "synonyms": [
+        {"word": "sailor", "nuance": "The everyday word; ‘mariner’ is literary or old-fashioned.", "example": "The sailors pulled the ropes."},
+        {"word": "seaman", "nuance": "Official or naval word, also a rank.", "example": "an experienced seaman"},
+        {"word": "seafarer", "nuance": "Formal, stresses a life spent travelling by sea.", "example": "a nation of seafarers"}
+      ],
+      "modern": "sailor",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "sagacity",
+      "match": "sagacity",
+      "para": 5,
+      "headword": "sagacity",
+      "pos": "noun",
+      "ipa": "/səˈɡæsəti/",
+      "sense_en": "the ability to understand things well and make wise decisions",
+      "sense_ko": "명민함, 지혜로움",
+      "synonyms": [
+        {"word": "wisdom", "nuance": "Everyday word; often from age and experience rather than sharp thinking.", "example": "the wisdom of old age"},
+        {"word": "shrewdness", "nuance": "Practical cleverness, especially in business or judging people; can be slightly calculating.", "example": "his shrewdness in business"},
+        {"word": "cleverness", "nuance": "Quick intelligence; can be showy and not always wise.", "example": "She solved it with great cleverness."}
+      ],
+      "modern": "good sense, wisdom",
+      "tip_ko": "‘infinite-resource-and-sagacity’는 ‘무궁무진한 재치와 지혜’를 한 덩어리 별명처럼 붙여 쓴 말장난입니다.",
+      "all": true
+    },
+    {
+      "id": "solitary",
+      "match": "solitary",
+      "para": 6,
+      "headword": "solitary",
+      "pos": "adjective",
+      "ipa": "/ˈsɑləˌtɛri/",
+      "sense_en": "completely alone, with nobody else around",
+      "sense_ko": "외톨이의, 홀로 있는",
+      "synonyms": [
+        {"word": "alone", "nuance": "Plain fact of being by yourself; not used before a noun.", "example": "He lives alone."},
+        {"word": "lonely", "nuance": "Adds sadness about being alone; ‘solitary’ is neutral.", "example": "She felt lonely in the big city."},
+        {"word": "lone", "nuance": "Only one of its kind in that place; used only before a noun.", "example": "a lone tree on the hill"}
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "trail",
+      "match": "trailing",
+      "para": 6,
+      "headword": "trail",
+      "pos": "verb",
+      "ipa": "/treɪl/",
+      "sense_en": "to let something hang or drag loosely behind or in the water",
+      "sense_ko": "(물에) 늘어뜨리다, 질질 끌다",
+      "synonyms": [
+        {"word": "drag", "nuance": "Pulling something heavy along with effort; ‘trail’ is loose and relaxed.", "example": "He dragged the box across the floor."},
+        {"word": "dangle", "nuance": "Hanging freely and swinging in the air, not through water or along the ground.", "example": "Her legs dangled over the edge."},
+        {"word": "dip", "nuance": "Putting something into liquid briefly and taking it out.", "example": "Dip your toes in the pool."}
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "leave-permission",
+      "match": "leave",
+      "para": 6,
+      "headword": "leave",
+      "pos": "noun",
+      "ipa": "/liv/",
+      "sense_en": "permission to do something",
+      "sense_ko": "허락",
+      "synonyms": [
+        {"word": "permission", "nuance": "Everyday word; ‘leave’ in this sense is old-fashioned or formal.", "example": "You need permission to enter."},
+        {"word": "consent", "nuance": "Formal agreement, often legal or medical.", "example": "written consent from a parent"},
+        {"word": "blessing", "nuance": "Approval plus warm support, especially from family.", "example": "They married with her father’s blessing."}
+      ],
+      "modern": "permission",
+      "tip_ko": "동사 ‘떠나다’가 아니라 명사 ‘허락’. ‘휴가(annual leave)’도 원래 ‘자리를 비워도 된다는 허락’에서 나온 뜻입니다.",
+      "all": true
+    },
+    {
+      "id": "paddle",
+      "match": "paddle",
+      "para": 6,
+      "headword": "paddle",
+      "pos": "verb",
+      "ipa": "/ˈpædəl/",
+      "sense_en": "to walk or play with bare feet in shallow water",
+      "sense_ko": "(얕은 물에서) 발을 담그고 첨벙거리다",
+      "synonyms": [
+        {"word": "wade", "nuance": "Walking through water, often deeper and with effort; not playful.", "example": "We waded across the river."},
+        {"word": "splash", "nuance": "Making water fly up noisily; focuses on the noise and spray.", "example": "Kids splashed in the pool."},
+        {"word": "swim", "nuance": "Moving through water without touching the bottom.", "example": "She swam to the island."}
+      ],
+      "modern": null,
+      "tip_ko": "‘노를 젓다’ 뜻도 있지만, 영국 영어에선 아이들이 얕은 물에서 노는 것을 주로 paddle이라 합니다.",
+      "all": true
+    },
+    {
+      "id": "smack-ones-lips",
+      "match": "smacked his lips",
+      "para": 7,
+      "headword": "smack one’s lips",
+      "pos": "idiom",
+      "ipa": "/smæk/",
+      "sense_en": "to open and close your lips noisily to show you enjoyed food",
+      "sense_ko": "(맛있게 먹고) 입맛을 쩝쩝 다시다",
+      "synonyms": [
+        {"word": "lick one’s lips", "nuance": "Usually before eating, showing you want something; ‘smack’ is often after.", "example": "He licked his lips at the sight of the cake."},
+        {"word": "savor", "nuance": "Enjoying taste slowly and quietly, with no noise.", "example": "She savored every bite."}
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "prowl",
+      "match": "prowled",
+      "para": 8,
+      "headword": "prowl",
+      "pos": "verb",
+      "ipa": "/praʊl/",
+      "sense_en": "to move around quietly, like an animal hunting",
+      "sense_ko": "(먹이를 찾듯) 살금살금 돌아다니다",
+      "synonyms": [
+        {"word": "roam", "nuance": "Wandering freely over a wide area with no aim, not secretly.", "example": "Cows roamed the hills."},
+        {"word": "sneak", "nuance": "Moving secretly to avoid being seen, not necessarily hunting.", "example": "He sneaked out of the house."},
+        {"word": "stalk", "nuance": "Following one particular target closely and secretly.", "example": "The lion stalked the zebra."}
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "bawl",
+      "match": "bawled",
+      "para": 8,
+      "headword": "bawl",
+      "pos": "verb",
+      "ipa": "/bɔl/",
+      "sense_en": "to cry or shout very loudly",
+      "sense_ko": "고래고래 울부짖다",
+      "synonyms": [
+        {"word": "wail", "nuance": "Long, high, sad cry of grief or pain.", "example": "The mother wailed for her lost child."},
+        {"word": "sob", "nuance": "Crying with short noisy breaths; about sadness, not loudness.", "example": "She sobbed into her pillow."},
+        {"word": "yell", "nuance": "Loud shout, often in anger or excitement, without tears.", "example": "Don’t yell at me!"}
+      ],
+      "modern": null,
+      "tip_ko": "ball과 발음이 같습니다(/bɔl/).",
+      "all": true
+    },
+    {
+      "id": "hornpipe",
+      "match": "hornpipes",
+      "para": 8,
+      "headword": "hornpipe",
+      "pos": "noun",
+      "ipa": "/ˈhɔrnˌpaɪp/",
+      "sense_en": "a lively dance done alone, traditionally by sailors",
+      "sense_ko": "혼파이프(선원들이 추던 경쾌한 독무)",
+      "synonyms": [
+        {"word": "jig", "nuance": "Fast, bouncy folk dance, especially Irish; not linked to sailors.", "example": "They danced a jig at the wedding."},
+        {"word": "reel", "nuance": "Quick Scottish or Irish dance for couples or groups.", "example": "a Scottish reel"}
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "hiccough",
+      "match": "hiccough",
+      "para": 9,
+      "headword": "hiccough",
+      "pos": "verb",
+      "ipa": "/ˈhɪkʌp/",
+      "sense_en": "to make short sudden sounds in the throat you cannot control",
+      "sense_ko": "딸꾹질하다",
+      "synonyms": [
+        {"word": "hiccup", "nuance": "Same word, modern spelling; far more common today.", "example": "The baby hiccuped after drinking."},
+        {"word": "burp", "nuance": "Letting air up from the stomach through the mouth, not a throat spasm.", "example": "He burped after the soda."}
+      ],
+      "modern": "hiccup",
+      "tip_ko": "철자는 cough가 들어 있지만 발음은 ‘히컵’입니다.",
+      "all": true
+    },
+    {
+      "id": "nay",
+      "match": "Nay",
+      "para": 12,
+      "headword": "nay",
+      "pos": "adverb",
+      "ipa": "/neɪ/",
+      "sense_en": "no (an old word)",
+      "sense_ko": "아니, 싫다(옛말)",
+      "synonyms": [
+        {"word": "no", "nuance": "The normal modern word.", "example": "No, thank you."},
+        {"word": "nope", "nuance": "Very casual spoken form of ‘no’.", "example": "Nope, not today."}
+      ],
+      "modern": "no",
+      "tip_ko": "오늘날엔 투표의 ‘반대’(yeas and nays)나 장난스러운 말투에서만 씁니다.",
+      "all": true
+    },
+    {
+      "id": "far-otherwise",
+      "match": "far otherwise",
+      "para": 12,
+      "headword": "far otherwise",
+      "pos": "phrase",
+      "ipa": "/ˈʌðərˌwaɪz/",
+      "sense_en": "quite the opposite; very different from that",
+      "sense_ko": "전혀 그렇지 않다, 오히려 정반대다",
+      "synonyms": [
+        {"word": "on the contrary", "nuance": "Modern standard way to reject what was said and state the opposite.", "example": "“Are you tired?” “On the contrary, I feel great.”"},
+        {"word": "quite the opposite", "nuance": "Everyday spoken phrase with the same meaning.", "example": "It wasn’t boring—quite the opposite."}
+      ],
+      "modern": "quite the opposite",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "natal",
+      "match": "natal",
+      "para": 12,
+      "headword": "natal",
+      "pos": "adjective",
+      "ipa": "/ˈneɪtəl/",
+      "sense_en": "connected with the place or time of your birth",
+      "sense_ko": "태어난, 고향의",
+      "synonyms": [
+        {"word": "native", "nuance": "Common word for where you were born (native land, native language).", "example": "her native country"},
+        {"word": "home", "nuance": "Everyday and warm; the place you belong to now, not only birth.", "example": "my home town"}
+      ],
+      "modern": "native (natal shore → home shore)",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "had-better",
+      "match": "had better",
+      "para": 13,
+      "headword": "had better",
+      "pos": "phrase",
+      "ipa": "/ˈbɛtər/",
+      "sense_en": "should, because something bad will happen if you don’t",
+      "sense_ko": "~하는 게 좋을 거다(안 그러면 곤란해진다)",
+      "synonyms": [
+        {"word": "should", "nuance": "General advice; ‘had better’ is stronger and hints at a bad result.", "example": "You should try the soup."},
+        {"word": "ought to", "nuance": "Like ‘should’, a little more about duty; less urgent than ‘had better’.", "example": "You ought to call your mother."},
+        {"word": "must", "nuance": "Strong necessity or rule, not just a warning.", "example": "You must wear a seatbelt."}
+      ],
+      "modern": null,
+      "tip_ko": "‘~하는 편이 낫다’보다 경고 느낌이 강해서, 윗사람에게 쓰면 무례하게 들릴 수 있습니다.",
+      "all": true
+    },
+    {
+      "id": "grating",
+      "match": "grating",
+      "para": 14,
+      "headword": "grating",
+      "pos": "noun",
+      "ipa": "/ˈɡreɪtɪŋ/",
+      "sense_en": "a frame of crossed bars that lets water or air through but blocks larger things",
+      "sense_ko": "격자 창살, 쇠살",
+      "synonyms": [
+        {"word": "grille", "nuance": "Decorative bars over a window, door or car front.", "example": "the car’s front grille"},
+        {"word": "grid", "nuance": "Any pattern of crossing lines, including on paper or maps.", "example": "Draw a grid of squares."},
+        {"word": "lattice", "nuance": "Criss-cross strips of wood or metal, often decorative, in a fence or window.", "example": "roses climbing a wooden lattice"}
+      ],
+      "modern": null,
+      "tip_ko": "형용사 grating은 ‘귀에 거슬리는’(a grating voice)이란 전혀 다른 뜻입니다.",
+      "all": true
+    },
+    {
+      "id": "criss-cross",
+      "match": "criss-cross",
+      "para": 14,
+      "headword": "criss-cross",
+      "pos": "adverb",
+      "ipa": "/ˈkrɪsˌkrɔs/",
+      "sense_en": "in a pattern of lines that cross each other many times",
+      "sense_ko": "열십자로 엇갈리게",
+      "synonyms": [
+        {"word": "crosswise", "nuance": "Across or diagonally, one crossing only rather than a repeated pattern.", "example": "Cut the bread crosswise."},
+        {"word": "zigzag", "nuance": "Sharp turns one way then the other along a single line; lines don’t cross.", "example": "The path zigzagged up the hill."}
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "good-and",
+      "match": "good and tight",
+      "para": 14,
+      "headword": "good and",
+      "pos": "idiom",
+      "ipa": null,
+      "sense_en": "very, completely (informal, before an adjective)",
+      "sense_ko": "아주, 단단히(구어)",
+      "synonyms": [
+        {"word": "really", "nuance": "Neutral intensifier; ‘good and’ is folksy and suggests thoroughly done.", "example": "It’s really cold."},
+        {"word": "thoroughly", "nuance": "Formal; stresses that something was done completely.", "example": "Wash it thoroughly."},
+        {"word": "nice and", "nuance": "Same pattern but pleasant, approving tone (nice and warm).", "example": "The soup is nice and hot."}
+      ],
+      "modern": null,
+      "tip_ko": "‘좋고 단단한’이 아니라 ‘아주 단단히’. good은 뜻 없이 강조만 합니다.",
+      "all": true
+    },
+    {
+      "id": "recite",
+      "match": "recited",
+      "para": 14,
+      "headword": "recite",
+      "pos": "verb",
+      "ipa": "/rɪˈsaɪt/",
+      "sense_en": "to say a poem or text aloud from memory",
+      "sense_ko": "(시 등을) 암송하다, 읊다",
+      "synonyms": [
+        {"word": "read aloud", "nuance": "Saying words from a page, not from memory.", "example": "She read the letter aloud."},
+        {"word": "chant", "nuance": "Repeating words rhythmically, often in a group or singing tone.", "example": "The crowd chanted his name."},
+        {"word": "declaim", "nuance": "Formal; speaking dramatically, like an actor or orator.", "example": "He declaimed the speech to the hall."}
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "relate",
+      "match": "relate",
+      "para": 14,
+      "headword": "relate",
+      "pos": "verb",
+      "ipa": "/rɪˈleɪt/",
+      "sense_en": "to tell a story or report what was said",
+      "sense_ko": "이야기하다, 들려주다",
+      "synonyms": [
+        {"word": "tell", "nuance": "Everyday word; ‘relate’ in this sense is formal and literary.", "example": "Tell me what happened."},
+        {"word": "recount", "nuance": "Telling events in order, often from personal experience.", "example": "He recounted his adventures at sea."},
+        {"word": "narrate", "nuance": "Telling a story as a storyteller or voice in a film.", "example": "The film is narrated by an old man."}
+      ],
+      "modern": "tell",
+      "tip_ko": "‘관련시키다/공감하다’로 흔히 알지만 여기선 ‘이야기해 주다’입니다. ‘proceed to relate’ = ‘이제 들려주겠다’.",
+      "all": true
+    },
+    {
+      "id": "shingle",
+      "match": "shingle",
+      "para": 16,
+      "headword": "shingle",
+      "pos": "noun",
+      "ipa": "/ˈʃɪŋɡəl/",
+      "sense_en": "a mass of small smooth stones on a beach",
+      "sense_ko": "(해변의) 조약돌 자갈밭",
+      "synonyms": [
+        {"word": "pebbles", "nuance": "The individual small stones; ‘shingle’ is the whole stony beach surface.", "example": "She collected pebbles by the sea."},
+        {"word": "gravel", "nuance": "Small rough stones used on paths and roads, not rounded by the sea.", "example": "a gravel driveway"},
+        {"word": "sand", "nuance": "Tiny grains, much finer than shingle.", "example": "The sand was hot under our feet."}
+      ],
+      "modern": null,
+      "tip_ko": "미국에선 주로 ‘지붕널’ 뜻으로 알려져 있어요. 이 해변 뜻은 영국 영어에서 흔합니다.",
+      "all": true
+    },
+    {
+      "id": "sill",
+      "match": "Door-sills",
+      "para": 17,
+      "headword": "doorsill",
+      "pos": "noun",
+      "ipa": "/ˈdɔrˌsɪl/",
+      "sense_en": "the strip of wood or stone at the bottom of a doorway",
+      "sense_ko": "문지방",
+      "synonyms": [
+        {"word": "threshold", "nuance": "Same thing, more common and also used figuratively (on the threshold of change).", "example": "He carried her over the threshold."},
+        {"word": "doorstep", "nuance": "The step just outside a door, not the strip inside the frame.", "example": "The parcel was left on the doorstep."},
+        {"word": "windowsill", "nuance": "The same kind of ledge but at the bottom of a window.", "example": "a plant on the windowsill"}
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    }
+  ]
+}

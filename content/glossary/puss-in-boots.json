@@ -1,0 +1,797 @@
+{
+  "slug": "puss-in-boots",
+  "entries": [
+    {
+      "id": "estate",
+      "match": "estate",
+      "para": 1,
+      "headword": "estate",
+      "pos": "noun",
+      "ipa": "/ɪˈsteɪt/",
+      "sense_en": "everything a person owns, especially what is left to others after death",
+      "sense_ko": "(죽은 사람이 남긴) 재산, 유산",
+      "synonyms": [
+        {"word": "property", "nuance": "General word for things owned, often land or buildings; not tied to death or inheritance.", "example": "private property"},
+        {"word": "inheritance", "nuance": "Focuses on what you receive from someone who died, seen from the heir's side.", "example": "She spent her inheritance on a house."},
+        {"word": "assets", "nuance": "Business or legal word for things of value, including money and shares.", "example": "the company's assets"}
+      ],
+      "modern": null,
+      "tip_ko": "'estate'는 '넓은 땅, 영지'라는 뜻도 있어 뒤에 나오는 'vast estates'는 '광대한 영지'로 읽는다.",
+      "all": false
+    },
+    {
+      "id": "partition",
+      "match": "partition",
+      "para": 1,
+      "headword": "partition",
+      "pos": "noun",
+      "ipa": "/pɑrˈtɪʃən/",
+      "sense_en": "the dividing of something into shares among several people",
+      "sense_ko": "(재산의) 분배, 나누기",
+      "synonyms": [
+        {"word": "division", "nuance": "Plain, everyday word for splitting anything into parts.", "example": "the division of the profits"},
+        {"word": "distribution", "nuance": "Stresses handing out shares to many people, not the act of cutting up.", "example": "the distribution of food aid"},
+        {"word": "split", "nuance": "Informal; often used for money or shares between a few people.", "example": "a fifty-fifty split"}
+      ],
+      "modern": "division (of the property)",
+      "tip_ko": "현대에는 주로 '칸막이'나 '국가 분할'의 뜻으로 쓰인다.",
+      "all": true
+    },
+    {
+      "id": "scrivener",
+      "match": "scrivener",
+      "para": 1,
+      "headword": "scrivener",
+      "pos": "noun",
+      "ipa": "/ˈskrɪvənɚ/",
+      "sense_en": "a person paid to write legal papers such as contracts and wills",
+      "sense_ko": "(옛날의) 대서인, 서류 작성인",
+      "synonyms": [
+        {"word": "clerk", "nuance": "Office worker who keeps records; a general, modern word.", "example": "a court clerk"},
+        {"word": "scribe", "nuance": "Someone who copied texts by hand, especially before printing.", "example": "medieval scribes"},
+        {"word": "notary", "nuance": "Official who witnesses and certifies legal documents.", "example": "signed before a notary"}
+      ],
+      "modern": "notary / lawyer",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "patrimony",
+      "match": "patrimony",
+      "para": 1,
+      "headword": "patrimony",
+      "pos": "noun",
+      "ipa": "/ˈpætrəˌmoʊni/",
+      "sense_en": "property inherited from one's father",
+      "sense_ko": "(아버지에게서 물려받은) 유산",
+      "synonyms": [
+        {"word": "inheritance", "nuance": "Everyday word for anything received from someone who died, from any relative.", "example": "a small inheritance"},
+        {"word": "legacy", "nuance": "Money left in a will, or figuratively something handed down, like ideas.", "example": "the legacy of the war"},
+        {"word": "heritage", "nuance": "Usually culture, traditions, or buildings passed down in a community, not private money.", "example": "our national heritage"}
+      ],
+      "modern": "inheritance",
+      "tip_ko": "강세는 첫 음절 PAT-에 온다: 패트러모우니.",
+      "all": true
+    },
+    {
+      "id": "comfortless",
+      "match": "comfortless",
+      "para": 1,
+      "headword": "comfortless",
+      "pos": "adjective",
+      "ipa": "/ˈkʌmfɚtləs/",
+      "sense_en": "very sad, with nothing to cheer him up",
+      "sense_ko": "위안이 없는, 몹시 낙담한",
+      "synonyms": [
+        {"word": "miserable", "nuance": "Common everyday word for very unhappy; also used of bad weather or places.", "example": "a miserable winter"},
+        {"word": "disconsolate", "nuance": "Formal; so sad that no one can comfort you.", "example": "a disconsolate child"},
+        {"word": "uncomfortable", "nuance": "About physical or social unease, not deep sadness.", "example": "an uncomfortable chair"}
+      ],
+      "modern": "miserable, heartbroken",
+      "tip_ko": "'uncomfortable(불편한)'과 다르다. 여기서는 '마음을 달랠 길 없는'이라는 뜻.",
+      "all": true
+    },
+    {
+      "id": "muff",
+      "match": "muff",
+      "para": 2,
+      "headword": "muff",
+      "pos": "noun",
+      "ipa": "/mʌf/",
+      "sense_en": "a short tube of fur that you put your hands into to keep them warm",
+      "sense_ko": "(털로 만든) 손토시, 머프",
+      "synonyms": [
+        {"word": "mitten", "nuance": "Worn on each hand separately, with one part for the thumb.", "example": "a pair of wool mittens"},
+        {"word": "glove", "nuance": "Has separate fingers; the usual modern choice.", "example": "leather gloves"},
+        {"word": "earmuffs", "nuance": "Same idea, but two warm pads that cover the ears.", "example": "pink earmuffs"}
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "make-as-if",
+      "match": "made as if",
+      "para": 3,
+      "headword": "make as if",
+      "pos": "phrase",
+      "ipa": null,
+      "sense_en": "pretended; acted in a way that suggested something untrue",
+      "sense_ko": "~인 척하다",
+      "synonyms": [
+        {"word": "pretend", "nuance": "Most common modern word; neutral, used for games or deception.", "example": "He pretended to be asleep."},
+        {"word": "act as if", "nuance": "Everyday phrase; stresses outward behavior.", "example": "She acted as if nothing had happened."},
+        {"word": "feign", "nuance": "Formal; pretending to have a feeling or condition.", "example": "feign surprise"}
+      ],
+      "modern": "pretended",
+      "tip_ko": "'make as if to + 동사'는 '~하려는 시늉을 하다'라는 뜻으로 지금도 문어에서 쓴다.",
+      "all": true
+    },
+    {
+      "id": "afflict",
+      "match": "afflict",
+      "para": 4,
+      "headword": "afflict",
+      "pos": "verb",
+      "ipa": "/əˈflɪkt/",
+      "sense_en": "to make yourself suffer or feel great distress",
+      "sense_ko": "괴로워하다, 비탄에 빠지다",
+      "synonyms": [
+        {"word": "trouble", "nuance": "Milder; worry or bother, often small problems.", "example": "What's troubling you?"},
+        {"word": "torment", "nuance": "Stronger; long, severe mental or physical pain, often deliberate.", "example": "tormented by guilt"},
+        {"word": "distress", "nuance": "Causes anxiety and sorrow; common in formal and news English.", "example": "The news distressed her."}
+      ],
+      "modern": "Don't upset yourself like this.",
+      "tip_ko": "현대 영어에서는 보통 질병·재난이 사람을 '괴롭히다'(be afflicted with a disease)로 쓴다.",
+      "all": true
+    },
+    {
+      "id": "scamper",
+      "match": "scamper",
+      "para": 4,
+      "headword": "scamper",
+      "pos": "verb",
+      "ipa": "/ˈskæmpɚ/",
+      "sense_en": "to run quickly and lightly, like a small animal",
+      "sense_ko": "종종걸음으로 재빨리 뛰어다니다",
+      "synonyms": [
+        {"word": "scurry", "nuance": "Short quick steps, often nervously or in a hurry.", "example": "Mice scurried across the floor."},
+        {"word": "dash", "nuance": "One sudden fast run to a place; not tied to small animals.", "example": "dash for the bus"},
+        {"word": "scramble", "nuance": "Moving quickly but clumsily, often using hands, over rough ground.", "example": "scramble up the rocks"}
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "bramble",
+      "match": "brambles",
+      "para": 4,
+      "headword": "bramble",
+      "pos": "noun",
+      "ipa": "/ˈbræmbəl/",
+      "sense_en": "wild bushes with sharp thorns, such as blackberry bushes",
+      "sense_ko": "가시덤불",
+      "synonyms": [
+        {"word": "thorn", "nuance": "The sharp point itself, or any thorny plant.", "example": "a rose without thorns"},
+        {"word": "briar", "nuance": "Similar thorny wild plant, often wild rose; a little literary.", "example": "caught in the briars"},
+        {"word": "undergrowth", "nuance": "Any low bushes and plants in a forest, not necessarily thorny.", "example": "thick undergrowth"}
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "build-upon",
+      "match": "build very much upon",
+      "para": 5,
+      "headword": "build on",
+      "pos": "phrase",
+      "ipa": null,
+      "sense_en": "to rely on or put hope in something",
+      "sense_ko": "~을 믿다, ~에 기대를 걸다",
+      "synonyms": [
+        {"word": "count on", "nuance": "Everyday phrase: trust that something will happen or someone will help.", "example": "You can count on me."},
+        {"word": "rely on", "nuance": "Neutral; depend on something because you need it.", "example": "rely on public transport"},
+        {"word": "pin your hopes on", "nuance": "Stresses hoping for one uncertain thing to succeed.", "example": "They pinned their hopes on the new player."}
+      ],
+      "modern": "didn't count on it much",
+      "tip_ko": "현대의 'build on'은 주로 '~을 토대로 발전시키다'라는 뜻이다.",
+      "all": true
+    },
+    {
+      "id": "cunning",
+      "match": "cunning",
+      "para": 5,
+      "headword": "cunning",
+      "pos": "adjective",
+      "ipa": "/ˈkʌnɪŋ/",
+      "sense_en": "clever in a tricky, secret way",
+      "sense_ko": "교활한, 약삭빠른",
+      "synonyms": [
+        {"word": "sly", "nuance": "Hides intentions; often slightly negative or playful.", "example": "a sly smile"},
+        {"word": "crafty", "nuance": "Good at tricking people to get what you want; negative.", "example": "a crafty old fox"},
+        {"word": "clever", "nuance": "Neutral or positive; simply intelligent.", "example": "a clever idea"}
+      ],
+      "modern": null,
+      "tip_ko": "한국어 '커닝(시험 부정행위)'은 영어로 cheating이다.",
+      "all": true
+    },
+    {
+      "id": "gallantly",
+      "match": "gallantly",
+      "para": 5,
+      "headword": "gallantly",
+      "pos": "adverb",
+      "ipa": "/ˈɡæləntli/",
+      "sense_en": "in a grand, stylish, confident way",
+      "sense_ko": "멋지게, 당당하게",
+      "synonyms": [
+        {"word": "bravely", "nuance": "Simply with courage; no idea of style or fine manners.", "example": "fought bravely"},
+        {"word": "dashingly", "nuance": "Stylish and attractive, usually of a man's looks or clothes.", "example": "dashingly dressed"},
+        {"word": "chivalrously", "nuance": "Polite and protective, especially a man toward women.", "example": "He chivalrously opened the door."}
+      ],
+      "modern": "smartly, in style",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "warren",
+      "match": "warren",
+      "para": 5,
+      "headword": "warren",
+      "pos": "noun",
+      "ipa": "/ˈwɔrən/",
+      "sense_en": "an area of ground full of rabbit holes where many rabbits live",
+      "sense_ko": "토끼 굴이 많은 곳, 토끼 사육장",
+      "synonyms": [
+        {"word": "burrow", "nuance": "A single hole or tunnel an animal digs to live in.", "example": "a fox's burrow"},
+        {"word": "den", "nuance": "Home of a wild animal like a fox or lion; not always underground.", "example": "a bear's den"},
+        {"word": "maze", "nuance": "Figuratively, a confusing network; a warren is also used this way.", "example": "a maze of narrow streets"}
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "rummage",
+      "match": "rummage",
+      "para": 5,
+      "headword": "rummage",
+      "pos": "verb",
+      "ipa": "/ˈrʌmɪdʒ/",
+      "sense_en": "to search through something by moving things around carelessly",
+      "sense_ko": "뒤적이다, 샅샅이 뒤지다",
+      "synonyms": [
+        {"word": "search", "nuance": "Neutral; any careful or careless looking for something.", "example": "search the room"},
+        {"word": "ransack", "nuance": "Violent and destructive, often by thieves.", "example": "The burglars ransacked the house."},
+        {"word": "root around", "nuance": "Informal; digging through things like an animal with its nose.", "example": "rooting around in the drawer"}
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "deceit",
+      "match": "deceits",
+      "para": 5,
+      "headword": "deceit",
+      "pos": "noun",
+      "ipa": "/dɪˈsit/",
+      "sense_en": "tricks and lies used to fool others",
+      "sense_ko": "속임수, 기만",
+      "synonyms": [
+        {"word": "deception", "nuance": "The act of deceiving; more neutral, also used for illusions.", "example": "a clever deception"},
+        {"word": "trickery", "nuance": "Clever tricks to cheat someone; slightly lighter tone.", "example": "won by trickery"},
+        {"word": "fraud", "nuance": "Legal or financial cheating to get money.", "example": "tax fraud"}
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "rash",
+      "match": "rash",
+      "para": 6,
+      "headword": "rash",
+      "pos": "adjective",
+      "ipa": "/ræʃ/",
+      "sense_en": "acting too quickly without thinking about the danger",
+      "sense_ko": "경솔한, 성급한",
+      "synonyms": [
+        {"word": "reckless", "nuance": "Ignores danger again and again; stronger and more habitual.", "example": "reckless driving"},
+        {"word": "hasty", "nuance": "Done too fast; about a decision, less about danger.", "example": "a hasty decision"},
+        {"word": "impulsive", "nuance": "Acting on sudden feelings; a personality trait.", "example": "an impulsive buyer"}
+      ],
+      "modern": null,
+      "tip_ko": "명사 rash는 '발진, 두드러기'라는 전혀 다른 뜻이다.",
+      "all": true
+    },
+    {
+      "id": "reverence",
+      "match": "reverence",
+      "para": 6,
+      "headword": "reverence",
+      "pos": "noun",
+      "ipa": "/ˈrɛvərəns/",
+      "sense_en": "a bow made to show deep respect",
+      "sense_ko": "(공손한) 절, 경례",
+      "synonyms": [
+        {"word": "bow", "nuance": "Everyday word for bending the body or head to greet or honor.", "example": "take a bow"},
+        {"word": "curtsy", "nuance": "Women's bow, bending the knees.", "example": "She curtsied to the queen."},
+        {"word": "respect", "nuance": "The feeling, not the physical movement.", "example": "show respect"}
+      ],
+      "modern": "a low bow",
+      "tip_ko": "현대에는 주로 '깊은 존경, 경외심'(feel reverence for)이라는 감정을 뜻한다.",
+      "all": true
+    },
+    {
+      "id": "brace",
+      "match": "brace",
+      "para": 9,
+      "headword": "brace",
+      "pos": "noun",
+      "ipa": "/breɪs/",
+      "sense_en": "a pair of game birds or animals",
+      "sense_ko": "(사냥감) 한 쌍",
+      "synonyms": [
+        {"word": "pair", "nuance": "General word for two of anything.", "example": "a pair of shoes"},
+        {"word": "couple", "nuance": "Two people together, or informally 'about two'.", "example": "a couple of days"},
+        {"word": "duo", "nuance": "Two people working or performing together.", "example": "a comedy duo"}
+      ],
+      "modern": "a pair",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "take-the-air",
+      "match": "take the air",
+      "para": 10,
+      "headword": "take the air",
+      "pos": "idiom",
+      "ipa": null,
+      "sense_en": "to go outside for a walk or ride to enjoy fresh air",
+      "sense_ko": "바람을 쐬러 나가다",
+      "synonyms": [
+        {"word": "get some fresh air", "nuance": "Everyday modern phrase for the same idea.", "example": "Let's go out and get some fresh air."},
+        {"word": "go for a stroll", "nuance": "Specifically a slow, relaxed walk.", "example": "a stroll in the park"},
+        {"word": "go for a drive", "nuance": "Riding in a car for pleasure, like the King's coach ride.", "example": "We went for a drive along the coast."}
+      ],
+      "modern": "go out for some fresh air",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "why-or-wherefore",
+      "match": "why or wherefore",
+      "para": 12,
+      "headword": "why and wherefore",
+      "pos": "idiom",
+      "ipa": null,
+      "sense_en": "the reason for something (two words with the same meaning, used for emphasis)",
+      "sense_ko": "이유, 까닭 (왜 그런지)",
+      "synonyms": [
+        {"word": "the reason", "nuance": "Plain modern equivalent.", "example": "without knowing the reason"},
+        {"word": "the ins and outs", "nuance": "All the details of a situation, not only the reason.", "example": "the ins and outs of the plan"},
+        {"word": "rhyme or reason", "nuance": "Used in negatives: no logic at all.", "example": "without rhyme or reason"}
+      ],
+      "modern": "without knowing why",
+      "tip_ko": "wherefore는 'where'가 아니라 'why'라는 뜻이다(Romeo, wherefore art thou Romeo?).",
+      "all": true
+    },
+    {
+      "id": "rogue",
+      "match": "rogues",
+      "para": 14,
+      "headword": "rogue",
+      "pos": "noun",
+      "ipa": "/roʊɡ/",
+      "sense_en": "a dishonest or criminal man",
+      "sense_ko": "악당, 불량배",
+      "synonyms": [
+        {"word": "thief", "nuance": "Specifically someone who steals.", "example": "a car thief"},
+        {"word": "scoundrel", "nuance": "Old-fashioned; a man who treats others very badly.", "example": "that lying scoundrel"},
+        {"word": "rascal", "nuance": "Now mostly playful, e.g. a naughty child.", "example": "You little rascal!"}
+      ],
+      "modern": "crooks, thieves",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "caress",
+      "match": "caressed",
+      "para": 16,
+      "headword": "caress",
+      "pos": "verb",
+      "ipa": "/kəˈrɛs/",
+      "sense_en": "treated with great warmth and friendly attention",
+      "sense_ko": "각별히 환대하다, 다정하게 대하다",
+      "synonyms": [
+        {"word": "fuss over", "nuance": "Modern informal: give someone a lot of attention and care.", "example": "Grandma fussed over the baby."},
+        {"word": "fondle", "nuance": "Touching lovingly, sometimes sexual; only physical.", "example": "fondle a puppy"},
+        {"word": "stroke", "nuance": "Moving a hand gently over something, physical only.", "example": "stroke the cat"}
+      ],
+      "modern": "made a great fuss of him",
+      "tip_ko": "현대에서는 '부드럽게 쓰다듬다'라는 신체적 의미가 거의 전부다.",
+      "all": true
+    },
+    {
+      "id": "mien",
+      "match": "mien",
+      "para": 16,
+      "headword": "mien",
+      "pos": "noun",
+      "ipa": "/min/",
+      "sense_en": "a person's appearance and manner",
+      "sense_ko": "풍채, 용모와 태도",
+      "synonyms": [
+        {"word": "bearing", "nuance": "How you stand and move; suggests dignity.", "example": "a soldier's bearing"},
+        {"word": "demeanor", "nuance": "Outward behavior and mood, especially calm or serious.", "example": "a calm demeanor"},
+        {"word": "appearance", "nuance": "Just how someone looks, without manner.", "example": "neat appearance"}
+      ],
+      "modern": "looks, bearing",
+      "tip_ko": "발음은 mean과 같다: /min/.",
+      "all": true
+    },
+    {
+      "id": "set-off",
+      "match": "set off",
+      "para": 16,
+      "headword": "set off",
+      "pos": "phrase",
+      "ipa": null,
+      "sense_en": "made something look better by contrast or decoration",
+      "sense_ko": "돋보이게 하다",
+      "synonyms": [
+        {"word": "show off", "nuance": "Also means display well, but more often boasting.", "example": "The dress shows off her figure."},
+        {"word": "enhance", "nuance": "Formal; improve the quality or look of something.", "example": "enhance the flavor"},
+        {"word": "bring out", "nuance": "Make a hidden quality more noticeable.", "example": "That color brings out your eyes."}
+      ],
+      "modern": null,
+      "tip_ko": "set off는 '출발하다', '(경보를) 울리다'라는 뜻이 더 흔하니 문맥으로 구별한다.",
+      "all": true
+    },
+    {
+      "id": "inclination",
+      "match": "inclination",
+      "para": 16,
+      "headword": "inclination",
+      "pos": "noun",
+      "ipa": "/ˌɪnkləˈneɪʃən/",
+      "sense_en": "a feeling of liking or attraction toward someone",
+      "sense_ko": "호감, 마음이 끌림",
+      "synonyms": [
+        {"word": "fondness", "nuance": "Warm liking, often long-lasting and gentle.", "example": "a fondness for cats"},
+        {"word": "attraction", "nuance": "Being drawn to someone, especially romantically.", "example": "a strong attraction"},
+        {"word": "tendency", "nuance": "A habit of behavior, not a feeling for a person.", "example": "a tendency to worry"}
+      ],
+      "modern": "took a secret liking to him",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "to-distraction",
+      "match": "to distraction",
+      "para": 16,
+      "headword": "to distraction",
+      "pos": "idiom",
+      "ipa": "/dɪˈstrækʃən/",
+      "sense_en": "so strongly that you almost go mad",
+      "sense_ko": "미칠 듯이, 정신없이",
+      "synonyms": [
+        {"word": "madly", "nuance": "Common with love: 'madly in love'.", "example": "madly in love"},
+        {"word": "head over heels", "nuance": "Informal idiom for falling completely in love.", "example": "head over heels in love"},
+        {"word": "desperately", "nuance": "Suggests strong need or unhappiness.", "example": "desperately in love"}
+      ],
+      "modern": "madly (in love)",
+      "tip_ko": "보통 distraction은 '주의를 흩뜨리는 것'이지만 'drive someone to distraction'처럼 '미칠 지경'의 뜻도 있다.",
+      "all": true
+    },
+    {
+      "id": "mow",
+      "match": "mowing",
+      "para": 16,
+      "headword": "mow",
+      "pos": "verb",
+      "ipa": "/moʊ/",
+      "sense_en": "to cut grass or grain with a blade",
+      "sense_ko": "(풀·곡식을) 베다",
+      "synonyms": [
+        {"word": "cut", "nuance": "General word for any cutting.", "example": "cut the grass"},
+        {"word": "reap", "nuance": "Cutting and gathering a grain crop at harvest.", "example": "reap the wheat"},
+        {"word": "trim", "nuance": "Cutting a little to make neat.", "example": "trim the hedge"}
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "yield",
+      "match": "yield",
+      "para": 20,
+      "headword": "yield",
+      "pos": "verb",
+      "ipa": "/jild/",
+      "sense_en": "to produce a crop or result",
+      "sense_ko": "(수확을) 내다, 산출하다",
+      "synonyms": [
+        {"word": "produce", "nuance": "General word for making or growing something.", "example": "The farm produces milk."},
+        {"word": "bear", "nuance": "Used of trees and plants carrying fruit.", "example": "The tree bears fruit."},
+        {"word": "generate", "nuance": "Creating energy, money or ideas, not crops.", "example": "generate income"}
+      ],
+      "modern": null,
+      "tip_ko": "yield는 '양보하다'(도로 표지 YIELD)라는 뜻도 있다.",
+      "all": true
+    },
+    {
+      "id": "reaper",
+      "match": "reapers",
+      "para": 21,
+      "headword": "reaper",
+      "pos": "noun",
+      "ipa": "/ˈripɚ/",
+      "sense_en": "a person who cuts and gathers grain at harvest time",
+      "sense_ko": "(곡식을) 베는 사람, 추수꾼",
+      "synonyms": [
+        {"word": "mower", "nuance": "Cuts grass or hay; today usually a machine.", "example": "a lawn mower"},
+        {"word": "harvester", "nuance": "Modern word, often a big farm machine.", "example": "a combine harvester"},
+        {"word": "farmhand", "nuance": "Any hired worker on a farm.", "example": "hired farmhands"}
+      ],
+      "modern": "harvesters",
+      "tip_ko": "'the Grim Reaper'는 낫을 든 '죽음의 신'이다.",
+      "all": true
+    },
+    {
+      "id": "thereupon",
+      "match": "thereupon",
+      "para": 24,
+      "headword": "thereupon",
+      "pos": "adverb",
+      "ipa": "/ˌðɛrəˈpɑn/",
+      "sense_en": "about that thing just mentioned",
+      "sense_ko": "그 일에 대해, 그 점에 관해",
+      "synonyms": [
+        {"word": "on that", "nuance": "Plain modern equivalent.", "example": "I congratulate you on that."},
+        {"word": "immediately after", "nuance": "Another sense of thereupon: right after that.", "example": "He left immediately after."},
+        {"word": "consequently", "nuance": "As a result; formal linking word.", "example": "Consequently, prices rose."}
+      ],
+      "modern": "on it",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "stately",
+      "match": "stately",
+      "para": 25,
+      "headword": "stately",
+      "pos": "adjective",
+      "ipa": "/ˈsteɪtli/",
+      "sense_en": "large, grand, and impressive",
+      "sense_ko": "웅장한, 위엄 있는",
+      "synonyms": [
+        {"word": "grand", "nuance": "Big and splendid; common and general.", "example": "a grand hotel"},
+        {"word": "imposing", "nuance": "So big it makes you feel small or impressed.", "example": "an imposing building"},
+        {"word": "majestic", "nuance": "Beautiful and powerful, often of nature.", "example": "majestic mountains"}
+      ],
+      "modern": null,
+      "tip_ko": "'a stately home'은 영국의 대저택을 가리키는 표현이다.",
+      "all": true
+    },
+    {
+      "id": "civilly",
+      "match": "civilly",
+      "para": 26,
+      "headword": "civilly",
+      "pos": "adverb",
+      "ipa": "/ˈsɪvəli/",
+      "sense_en": "politely, with basic good manners",
+      "sense_ko": "예의 바르게, 정중하게",
+      "synonyms": [
+        {"word": "politely", "nuance": "Common everyday word; warmer than civilly.", "example": "ask politely"},
+        {"word": "courteously", "nuance": "Formal; polite and considerate.", "example": "treated courteously"},
+        {"word": "cordially", "nuance": "Warm and friendly, not just correct.", "example": "cordially invited"}
+      ],
+      "modern": null,
+      "tip_ko": "civil은 '겨우 무례하지 않은 정도'의 최소한의 예의를 뜻할 때가 많다.",
+      "all": true
+    },
+    {
+      "id": "have-a-mind-to",
+      "match": "have a mind to",
+      "para": 27,
+      "headword": "have a mind to",
+      "pos": "idiom",
+      "ipa": null,
+      "sense_en": "to want to or intend to do something",
+      "sense_ko": "~하고 싶다, ~할 마음이 있다",
+      "synonyms": [
+        {"word": "feel like", "nuance": "Informal; a passing wish.", "example": "I feel like going out."},
+        {"word": "intend to", "nuance": "Clear plan or purpose, more formal.", "example": "I intend to finish tonight."},
+        {"word": "be inclined to", "nuance": "Leaning toward doing something, often mild.", "example": "I'm inclined to agree."}
+      ],
+      "modern": "want to",
+      "tip_ko": "'have half a mind to'는 '~할까 말까 하다'라는 현대 표현이다.",
+      "all": true
+    },
+    {
+      "id": "briskly",
+      "match": "briskly",
+      "para": 28,
+      "headword": "briskly",
+      "pos": "adverb",
+      "ipa": "/ˈbrɪskli/",
+      "sense_en": "quickly and in a confident, energetic way",
+      "sense_ko": "힘차게, 시원시원하게",
+      "synonyms": [
+        {"word": "quickly", "nuance": "Just fast; no sense of energy or confidence.", "example": "reply quickly"},
+        {"word": "curtly", "nuance": "Short and rude in speech.", "example": "answered curtly"},
+        {"word": "smartly", "nuance": "Quick and sharp, often of movement or walking.", "example": "stepped smartly aside"}
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "gutter",
+      "match": "gutter",
+      "para": 29,
+      "headword": "gutter",
+      "pos": "noun",
+      "ipa": "/ˈɡʌtɚ/",
+      "sense_en": "the channel along the edge of a roof that carries rainwater away",
+      "sense_ko": "(지붕의) 홈통, 처마 물받이",
+      "synonyms": [
+        {"word": "drainpipe", "nuance": "The vertical pipe running down the wall from the gutter.", "example": "climb the drainpipe"},
+        {"word": "ditch", "nuance": "A long channel dug in the ground beside a road or field.", "example": "The car went into a ditch."},
+        {"word": "drain", "nuance": "Opening or pipe that takes water away, usually underground.", "example": "a blocked drain"}
+      ],
+      "modern": null,
+      "tip_ko": "길가의 도랑도 gutter라서 'in the gutter'는 '밑바닥 인생'을 뜻하기도 한다.",
+      "all": true
+    },
+    {
+      "id": "own",
+      "match": "owned",
+      "para": 29,
+      "headword": "own",
+      "pos": "verb",
+      "ipa": "/oʊn/",
+      "sense_en": "admitted that something was true",
+      "sense_ko": "인정하다, 털어놓다",
+      "synonyms": [
+        {"word": "admit", "nuance": "Everyday word for agreeing something (often bad) is true.", "example": "I admit I was wrong."},
+        {"word": "confess", "nuance": "Admit something shameful or a crime.", "example": "confess to the crime"},
+        {"word": "own up", "nuance": "Modern phrasal verb: admit a fault.", "example": "Nobody owned up to breaking it."}
+      ],
+      "modern": "admitted",
+      "tip_ko": "여기서 own은 '소유하다'가 아니라 '인정하다'(= admit)이다.",
+      "all": true
+    },
+    {
+      "id": "presently",
+      "match": "presently",
+      "para": 31,
+      "headword": "presently",
+      "pos": "adverb",
+      "ipa": "/ˈprɛzəntli/",
+      "sense_en": "very soon, in a moment",
+      "sense_ko": "곧, 금방",
+      "synonyms": [
+        {"word": "soon", "nuance": "Common neutral word for a short time from now.", "example": "See you soon."},
+        {"word": "shortly", "nuance": "Slightly formal; used in announcements.", "example": "We will be landing shortly."},
+        {"word": "currently", "nuance": "Means 'now', the other sense of presently in American English.", "example": "She is currently abroad."}
+      ],
+      "modern": "in a moment",
+      "tip_ko": "미국 영어에서는 presently가 '현재'(currently)의 뜻으로도 쓰여 헷갈리기 쉽다.",
+      "all": true
+    },
+    {
+      "id": "fall-upon",
+      "match": "fell upon",
+      "para": 32,
+      "headword": "fall upon",
+      "pos": "phrase",
+      "ipa": null,
+      "sense_en": "to attack suddenly",
+      "sense_ko": "덮치다, 달려들다",
+      "synonyms": [
+        {"word": "pounce on", "nuance": "Jump suddenly to catch, like a cat on a mouse.", "example": "The cat pounced on the toy."},
+        {"word": "attack", "nuance": "General word for using violence against someone.", "example": "attacked by a dog"},
+        {"word": "seize", "nuance": "Take hold of suddenly and firmly.", "example": "seize the thief"}
+      ],
+      "modern": "pounced on him",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "spacious",
+      "match": "spacious",
+      "para": 36,
+      "headword": "spacious",
+      "pos": "adjective",
+      "ipa": "/ˈspeɪʃəs/",
+      "sense_en": "large, with plenty of room",
+      "sense_ko": "넓은, 널찍한",
+      "synonyms": [
+        {"word": "roomy", "nuance": "Informal; enough space inside, often of cars or clothes.", "example": "a roomy car"},
+        {"word": "vast", "nuance": "Extremely large, often land or sea.", "example": "a vast desert"},
+        {"word": "wide", "nuance": "Large from side to side only.", "example": "a wide road"}
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "collation",
+      "match": "collation",
+      "para": 36,
+      "headword": "collation",
+      "pos": "noun",
+      "ipa": "/kəˈleɪʃən/",
+      "sense_en": "a light meal laid out for guests",
+      "sense_ko": "(손님을 위해 차린) 가벼운 식사, 다과",
+      "synonyms": [
+        {"word": "buffet", "nuance": "Food set out for guests to serve themselves.", "example": "a buffet lunch"},
+        {"word": "banquet", "nuance": "A large formal feast, heavier than a collation.", "example": "a wedding banquet"},
+        {"word": "refreshments", "nuance": "Light food and drinks at an event.", "example": "Refreshments will be served."}
+      ],
+      "modern": "a spread of food",
+      "tip_ko": "현대에는 주로 '(자료의) 수집·대조'라는 뜻으로 쓰인다.",
+      "all": true
+    },
+    {
+      "id": "confer",
+      "match": "conferred",
+      "para": 38,
+      "headword": "confer",
+      "pos": "verb",
+      "ipa": "/kənˈfɝ/",
+      "sense_en": "to give an honor, title, or right to someone",
+      "sense_ko": "(영예·칭호를) 수여하다",
+      "synonyms": [
+        {"word": "bestow", "nuance": "Formal, a bit old; give a gift or honor generously.", "example": "bestow a blessing"},
+        {"word": "grant", "nuance": "Give officially, often permission or money.", "example": "grant a visa"},
+        {"word": "award", "nuance": "Give a prize for achievement.", "example": "awarded a medal"}
+      ],
+      "modern": null,
+      "tip_ko": "confer with는 '상의하다'라는 다른 뜻이다.",
+      "all": true
+    },
+    {
+      "id": "forthwith",
+      "match": "forthwith",
+      "para": 38,
+      "headword": "forthwith",
+      "pos": "adverb",
+      "ipa": "/ˌfɔrθˈwɪθ/",
+      "sense_en": "immediately, without delay",
+      "sense_ko": "즉시, 지체 없이",
+      "synonyms": [
+        {"word": "immediately", "nuance": "Everyday neutral word.", "example": "Call me immediately."},
+        {"word": "at once", "nuance": "Common, a little stronger or more urgent.", "example": "Come here at once!"},
+        {"word": "straightaway", "nuance": "Informal, mostly British.", "example": "I'll do it straightaway."}
+      ],
+      "modern": "right away",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "diversion",
+      "match": "diversion",
+      "para": 39,
+      "headword": "diversion",
+      "pos": "noun",
+      "ipa": "/daɪˈvɝʒən/",
+      "sense_en": "something done for fun or amusement",
+      "sense_ko": "재미, 기분 전환(오락)",
+      "synonyms": [
+        {"word": "amusement", "nuance": "General enjoyment from something funny or pleasant.", "example": "for our amusement"},
+        {"word": "pastime", "nuance": "A regular hobby you enjoy in free time.", "example": "Fishing is his favorite pastime."},
+        {"word": "distraction", "nuance": "Takes attention away, often unwanted.", "example": "The TV is a distraction."}
+      ],
+      "modern": "just for fun",
+      "tip_ko": "영국 도로 표지 'Diversion'은 '우회로'라는 뜻이다.",
+      "all": true
+    }
+  ]
+}

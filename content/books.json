@@ -193,7 +193,8 @@
   },
   "month": "2026-11",
   "plan": 8,
-  "gutenberg": 27200
+  "gutenberg": 27200,
+  "reviewed": "2026-09-28"
  },
  {
   "slug": "little-match-girl",
@@ -217,7 +218,8 @@
   },
   "month": "2026-12",
   "plan": 9,
-  "gutenberg": 1597
+  "gutenberg": 1597,
+  "reviewed": "2026-09-28"
  },
  {
   "slug": "rumpelstiltskin",
@@ -240,7 +242,8 @@
   },
   "month": "2026-12",
   "plan": 10,
-  "gutenberg": 2591
+  "gutenberg": 2591,
+  "reviewed": "2026-09-28"
  },
  {
   "slug": "hansel-and-gretel",
@@ -263,7 +266,8 @@
   },
   "month": "2026-12",
   "plan": 11,
-  "gutenberg": 2591
+  "gutenberg": 2591,
+  "reviewed": "2026-09-28"
  },
  {
   "slug": "cinderella",
@@ -286,7 +290,8 @@
   },
   "month": "2026-12",
   "plan": 12,
-  "gutenberg": 503
+  "gutenberg": 503,
+  "reviewed": "2026-09-28"
  },
  {
   "slug": "puss-in-boots",
@@ -309,7 +314,8 @@
   },
   "month": "2027-01",
   "plan": 13,
-  "gutenberg": 503
+  "gutenberg": 503,
+  "reviewed": "2026-09-28"
  },
  {
   "slug": "aesop-fables",
@@ -332,7 +338,8 @@
    "accent": "#e3c16f"
   },
   "month": "2027-01",
-  "plan": 14
+  "plan": 14,
+  "reviewed": "2026-09-28"
  },
  {
   "slug": "peter-rabbit",
@@ -356,7 +363,8 @@
   },
   "month": "2027-01",
   "plan": 15,
-  "gutenberg": 14838
+  "gutenberg": 14838,
+  "reviewed": "2026-09-28"
  },
  {
   "slug": "velveteen-rabbit",
@@ -380,7 +388,8 @@
   },
   "month": "2027-01",
   "plan": 16,
-  "gutenberg": 11757
+  "gutenberg": 11757,
+  "reviewed": "2026-09-28"
  },
  {
   "slug": "whale-throat",
@@ -404,7 +413,8 @@
   },
   "month": "2027-02",
   "plan": 17,
-  "gutenberg": 2781
+  "gutenberg": 2781,
+  "reviewed": "2026-09-28"
  },
  {
   "slug": "three-questions",
@@ -449,7 +459,8 @@
   },
   "gutenberg": 902,
   "month": "2027-02",
-  "plan": 19
+  "plan": 19,
+  "reviewed": "2026-09-28"
  },
  {
   "slug": "to-build-a-fire",

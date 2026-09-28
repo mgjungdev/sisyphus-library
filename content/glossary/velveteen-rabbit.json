@@ -1,0 +1,1685 @@
+{
+  "slug": "velveteen-rabbit",
+  "entries": [
+    {
+      "id": "splendid",
+      "match": "splendid",
+      "para": 1,
+      "headword": "splendid",
+      "pos": "adjective",
+      "ipa": "/ˈsplɛndɪd/",
+      "sense_en": "very fine and impressive to look at",
+      "sense_ko": "아주 멋진, 훌륭한",
+      "synonyms": [
+        {
+          "word": "magnificent",
+          "nuance": "Stronger and grander; suits palaces, views and great performances more than a toy.",
+          "example": "a magnificent cathedral"
+        },
+        {
+          "word": "wonderful",
+          "nuance": "Everyday word for anything very pleasant; says nothing about appearance in particular.",
+          "example": "We had a wonderful time."
+        },
+        {
+          "word": "gorgeous",
+          "nuance": "Informal and warm; mostly about beauty of people, clothes or weather.",
+          "example": "a gorgeous dress"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "splendid는 영국식 대화에서 '좋아요!'(Splendid!)라는 감탄으로도 자주 쓴다.",
+      "all": true
+    },
+    {
+      "id": "wedge",
+      "match": "wedged",
+      "para": 1,
+      "headword": "wedge",
+      "pos": "verb",
+      "ipa": "/wɛdʒ/",
+      "sense_en": "pushed tightly into a narrow space so that it cannot move",
+      "sense_ko": "(좁은 틈에) 꽉 끼어 있는",
+      "synonyms": [
+        {
+          "word": "squeeze",
+          "nuance": "Stresses the effort of pushing into a tight space; the thing may still move afterwards.",
+          "example": "squeeze into a crowded train"
+        },
+        {
+          "word": "jam",
+          "nuance": "Forceful and often careless; the result is stuck or blocked.",
+          "example": "The door is jammed."
+        },
+        {
+          "word": "stuff",
+          "nuance": "Pushing soft things in loosely and quickly, often too many.",
+          "example": "stuff clothes into a bag"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "sprig",
+      "match": "sprig",
+      "para": 1,
+      "headword": "sprig",
+      "pos": "noun",
+      "ipa": "/sprɪɡ/",
+      "sense_en": "a small stem with leaves, cut from a plant",
+      "sense_ko": "(잎 달린) 작은 잔가지",
+      "synonyms": [
+        {
+          "word": "twig",
+          "nuance": "A small thin piece of a branch, usually bare and woody, not for decoration.",
+          "example": "dry twigs for the fire"
+        },
+        {
+          "word": "branch",
+          "nuance": "Much bigger; an arm growing from a tree trunk.",
+          "example": "a bird on a branch"
+        },
+        {
+          "word": "spray",
+          "nuance": "A small bunch of flowers or leaves on one stem, used for decoration.",
+          "example": "a spray of roses"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "rustling",
+      "match": "rustling",
+      "para": 2,
+      "headword": "rustling",
+      "pos": "noun",
+      "ipa": "/ˈrʌslɪŋ/",
+      "sense_en": "the soft, dry sound of paper or leaves moving",
+      "sense_ko": "바스락거리는 소리",
+      "synonyms": [
+        {
+          "word": "crackle",
+          "nuance": "Sharper, repeated snapping sounds, like a fire or dry plastic.",
+          "example": "the crackle of the fire"
+        },
+        {
+          "word": "whisper",
+          "nuance": "Figurative for a very soft sound; gentler and quieter than rustling.",
+          "example": "the whisper of the wind"
+        },
+        {
+          "word": "crunch",
+          "nuance": "A loud sound of something being crushed, like steps on gravel or snow.",
+          "example": "the crunch of snow underfoot"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "parcel",
+      "match": "parcels",
+      "para": 2,
+      "headword": "parcel",
+      "pos": "noun",
+      "ipa": "/ˈpɑrsəl/",
+      "sense_en": "a thing wrapped in paper, here a wrapped present",
+      "sense_ko": "(포장된) 꾸러미, 선물 꾸러미",
+      "synonyms": [
+        {
+          "word": "package",
+          "nuance": "The usual American word; British English also uses it for boxes sent by post.",
+          "example": "a package from the post office"
+        },
+        {
+          "word": "bundle",
+          "nuance": "Several things tied together loosely, not neatly wrapped.",
+          "example": "a bundle of old letters"
+        },
+        {
+          "word": "packet",
+          "nuance": "A small container of a product, like sugar or seeds.",
+          "example": "a packet of seeds"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "미국에서는 package, 영국에서는 parcel을 더 흔히 쓴다.",
+      "all": true
+    },
+    {
+      "id": "snub",
+      "match": "snubbed",
+      "para": 3,
+      "headword": "snub",
+      "pos": "verb",
+      "ipa": "/snʌb/",
+      "sense_en": "treated someone coldly on purpose, as if they were not important",
+      "sense_ko": "무시하다, 쌀쌀맞게 대하다",
+      "synonyms": [
+        {
+          "word": "ignore",
+          "nuance": "Simply pay no attention; not always meant as an insult.",
+          "example": "He ignored my message."
+        },
+        {
+          "word": "cold-shoulder",
+          "nuance": "Informal; a longer, deliberate unfriendliness toward someone you know.",
+          "example": "She cold-shouldered me all week."
+        },
+        {
+          "word": "look down on",
+          "nuance": "Describes the attitude of feeling superior, not a single act of rudeness.",
+          "example": "They look down on newcomers."
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "superior",
+      "match": "superior",
+      "para": 3,
+      "headword": "superior",
+      "pos": "adjective",
+      "ipa": "/səˈpɪriɚ/",
+      "sense_en": "behaving as if you are better than other people",
+      "sense_ko": "잘난 체하는, 거만한",
+      "synonyms": [
+        {
+          "word": "arrogant",
+          "nuance": "Stronger and harsher; openly proud and rude.",
+          "example": "an arrogant boss"
+        },
+        {
+          "word": "condescending",
+          "nuance": "Talking to others as if they were less clever; focuses on the tone used.",
+          "example": "a condescending smile"
+        },
+        {
+          "word": "snobbish",
+          "nuance": "Looking down on people of lower class or taste.",
+          "example": "a snobbish club"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "'우월한'이라는 뜻 외에, 사람의 태도를 말할 때는 '잘난 척하는'이라는 부정적 의미가 된다.",
+      "all": true
+    },
+    {
+      "id": "look-down-upon",
+      "match": "looked down upon",
+      "para": 3,
+      "headword": "look down on/upon",
+      "pos": "phrasal verb",
+      "ipa": null,
+      "sense_en": "thought that others were less important or less good than you",
+      "sense_ko": "깔보다, 업신여기다",
+      "synonyms": [
+        {
+          "word": "despise",
+          "nuance": "Much stronger; real hatred and disgust.",
+          "example": "He despised liars."
+        },
+        {
+          "word": "scorn",
+          "nuance": "Showing contempt openly, often in words.",
+          "example": "She scorned their offer."
+        },
+        {
+          "word": "underestimate",
+          "nuance": "Thinking someone is weaker or less able than they are; no pride involved.",
+          "example": "Don't underestimate her."
+        }
+      ],
+      "modern": "look down on",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "rigging",
+      "match": "rigging",
+      "para": 3,
+      "headword": "rigging",
+      "pos": "noun",
+      "ipa": "/ˈrɪɡɪŋ/",
+      "sense_en": "the ropes and chains that hold up a ship's masts and sails",
+      "sense_ko": "(배의) 삭구, 돛대 밧줄 장치",
+      "synonyms": [
+        {
+          "word": "tackle",
+          "nuance": "Ropes and pulleys for lifting; also general equipment, as in fishing tackle.",
+          "example": "fishing tackle"
+        },
+        {
+          "word": "equipment",
+          "nuance": "General word for the tools needed for any job.",
+          "example": "camping equipment"
+        },
+        {
+          "word": "mast",
+          "nuance": "Only the tall pole that holds the sails, not the ropes.",
+          "example": "The mast snapped in the storm."
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "put-on-airs",
+      "match": "put on airs",
+      "para": 3,
+      "headword": "put on airs",
+      "pos": "idiom",
+      "ipa": null,
+      "sense_en": "acted as if more important or elegant than one really is",
+      "sense_ko": "잘난 척하다, 거드름 피우다",
+      "synonyms": [
+        {
+          "word": "show off",
+          "nuance": "Doing things to make others admire you; more active and childish.",
+          "example": "He was showing off his new car."
+        },
+        {
+          "word": "give oneself airs",
+          "nuance": "Same meaning; slightly more old-fashioned.",
+          "example": "She gives herself airs since the promotion."
+        },
+        {
+          "word": "brag",
+          "nuance": "Talking proudly about yourself; putting on airs is more about manner.",
+          "example": "He brags about his salary."
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "insignificant",
+      "match": "insignificant",
+      "para": 3,
+      "headword": "insignificant",
+      "pos": "adjective",
+      "ipa": "/ˌɪnsɪɡˈnɪfɪkənt/",
+      "sense_en": "small and unimportant, not worth noticing",
+      "sense_ko": "하찮은, 보잘것없는",
+      "synonyms": [
+        {
+          "word": "trivial",
+          "nuance": "Of little importance; used for matters and problems, rarely for people.",
+          "example": "a trivial mistake"
+        },
+        {
+          "word": "minor",
+          "nuance": "Neutral; smaller or less serious than others.",
+          "example": "a minor injury"
+        },
+        {
+          "word": "negligible",
+          "nuance": "So small it can be ignored; used for amounts.",
+          "example": "a negligible difference"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "commonplace",
+      "match": "commonplace",
+      "para": 3,
+      "headword": "commonplace",
+      "pos": "adjective",
+      "ipa": "/ˈkɑmənˌpleɪs/",
+      "sense_en": "ordinary and not special in any way",
+      "sense_ko": "평범한, 흔해 빠진",
+      "synonyms": [
+        {
+          "word": "ordinary",
+          "nuance": "Neutral word for normal, not special.",
+          "example": "an ordinary day"
+        },
+        {
+          "word": "mundane",
+          "nuance": "Boring because it is part of daily routine.",
+          "example": "mundane chores"
+        },
+        {
+          "word": "common",
+          "nuance": "Happening often or found in many places; not necessarily dull.",
+          "example": "a common name"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "seam",
+      "match": "seams",
+      "para": 4,
+      "headword": "seam",
+      "pos": "noun",
+      "ipa": "/sim/",
+      "sense_en": "the line where two pieces of cloth are sewn together",
+      "sense_ko": "솔기, 이음매",
+      "synonyms": [
+        {
+          "word": "stitch",
+          "nuance": "One single loop of thread; a seam is made of many stitches.",
+          "example": "She needed five stitches."
+        },
+        {
+          "word": "hem",
+          "nuance": "The folded, sewn edge at the bottom of clothing.",
+          "example": "take up the hem of a skirt"
+        },
+        {
+          "word": "joint",
+          "nuance": "A place where two parts meet, in objects or the body.",
+          "example": "a pipe joint"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "succession",
+      "match": "succession",
+      "para": 4,
+      "headword": "succession",
+      "pos": "noun",
+      "ipa": "/səkˈsɛʃən/",
+      "sense_en": "a number of things coming one after another",
+      "sense_ko": "연속, 잇따름",
+      "synonyms": [
+        {
+          "word": "series",
+          "nuance": "Things of the same kind in order, often planned.",
+          "example": "a series of lectures"
+        },
+        {
+          "word": "sequence",
+          "nuance": "Order matters; each follows logically from the one before.",
+          "example": "the sequence of events"
+        },
+        {
+          "word": "string",
+          "nuance": "Informal; many similar things, often bad, happening close together.",
+          "example": "a string of failures"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "swagger",
+      "match": "swagger",
+      "para": 4,
+      "headword": "swagger",
+      "pos": "verb",
+      "ipa": "/ˈswæɡɚ/",
+      "sense_en": "to walk or behave in a very proud, showy way",
+      "sense_ko": "으스대다, 뽐내며 걷다",
+      "synonyms": [
+        {
+          "word": "strut",
+          "nuance": "Walking stiffly and proudly, chest out; only about walking.",
+          "example": "strutting like a peacock"
+        },
+        {
+          "word": "boast",
+          "nuance": "Only about talking proudly, not about movement.",
+          "example": "He boasted about his win."
+        },
+        {
+          "word": "show off",
+          "nuance": "Informal; any action meant to impress people.",
+          "example": "Stop showing off!"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "by-and-by",
+      "match": "by-and-by",
+      "para": 4,
+      "headword": "by and by",
+      "pos": "adverb",
+      "ipa": null,
+      "sense_en": "after some time; eventually",
+      "sense_ko": "머지않아, 이윽고",
+      "synonyms": [
+        {
+          "word": "eventually",
+          "nuance": "Modern, neutral; after a long time or many steps.",
+          "example": "Eventually he agreed."
+        },
+        {
+          "word": "before long",
+          "nuance": "Soon; stresses a short wait.",
+          "example": "Before long it was dark."
+        },
+        {
+          "word": "in time",
+          "nuance": "Gradually, as time passes.",
+          "example": "In time you will forget."
+        }
+      ],
+      "modern": "eventually / after a while",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "mainspring",
+      "match": "mainsprings",
+      "para": 4,
+      "headword": "mainspring",
+      "pos": "noun",
+      "ipa": "/ˈmeɪnˌsprɪŋ/",
+      "sense_en": "the main coiled spring that makes a clockwork toy or watch go",
+      "sense_ko": "(태엽 장치의) 큰 태엽",
+      "synonyms": [
+        {
+          "word": "spring",
+          "nuance": "General word for any coil of wire that bounces back.",
+          "example": "a mattress spring"
+        },
+        {
+          "word": "clockwork",
+          "nuance": "The whole wind-up mechanism, not one part.",
+          "example": "a clockwork mouse"
+        },
+        {
+          "word": "driving force",
+          "nuance": "Figurative: the main cause behind something.",
+          "example": "She was the driving force behind the plan."
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "fender",
+      "match": "fender",
+      "para": 5,
+      "headword": "fender",
+      "pos": "noun",
+      "ipa": "/ˈfɛndɚ/",
+      "sense_en": "a low metal frame around a fireplace that keeps coals from falling out",
+      "sense_ko": "(벽난로 앞의) 낮은 쇠 울타리, 난로 가드",
+      "synonyms": [
+        {
+          "word": "fireguard",
+          "nuance": "A taller screen in front of a fire to protect people, especially children.",
+          "example": "Put the fireguard up."
+        },
+        {
+          "word": "hearth",
+          "nuance": "The stone floor of the fireplace itself; also used for 'home'.",
+          "example": "sitting by the hearth"
+        },
+        {
+          "word": "bumper",
+          "nuance": "In American English fender is part of a car; bumper is the bar at front and back.",
+          "example": "a dented bumper"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "미국 영어에서 fender는 보통 자동차 바퀴 덮개(흙받기)를 뜻한다.",
+      "all": true
+    },
+    {
+      "id": "shabby",
+      "match": "shabby",
+      "para": 10,
+      "headword": "shabby",
+      "pos": "adjective",
+      "ipa": "/ˈʃæbi/",
+      "sense_en": "old and worn from long use",
+      "sense_ko": "낡아빠진, 초라한",
+      "synonyms": [
+        {
+          "word": "worn",
+          "nuance": "Neutral; damaged a little by use.",
+          "example": "worn shoes"
+        },
+        {
+          "word": "threadbare",
+          "nuance": "Cloth so worn the threads show; more extreme.",
+          "example": "a threadbare coat"
+        },
+        {
+          "word": "scruffy",
+          "nuance": "Untidy and dirty, usually about a person's look.",
+          "example": "a scruffy beard"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "long",
+      "match": "longed",
+      "para": 13,
+      "headword": "long (for/to)",
+      "pos": "verb",
+      "ipa": "/lɔŋ/",
+      "sense_en": "wanted something very much, often something hard to get",
+      "sense_ko": "간절히 바라다, 갈망하다",
+      "synonyms": [
+        {
+          "word": "wish",
+          "nuance": "Weaker and more general; often for something unlikely.",
+          "example": "I wish I could fly."
+        },
+        {
+          "word": "yearn",
+          "nuance": "Even more emotional and literary; a deep, sad wanting.",
+          "example": "yearning for home"
+        },
+        {
+          "word": "crave",
+          "nuance": "Strong physical or emotional need, often for food.",
+          "example": "craving chocolate"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "형용사 long(긴)과 철자가 같지만 동사 long for/to는 '몹시 바라다'이다.",
+      "all": true
+    },
+    {
+      "id": "swoop",
+      "match": "swooping",
+      "para": 14,
+      "headword": "swoop",
+      "pos": "verb",
+      "ipa": "/swup/",
+      "sense_en": "rushing about suddenly and fast, like a bird diving down on something",
+      "sense_ko": "(바람처럼) 휙휙 들이닥치다",
+      "synonyms": [
+        {
+          "word": "pounce",
+          "nuance": "Jumping suddenly on something to catch it, like a cat.",
+          "example": "The cat pounced on the mouse."
+        },
+        {
+          "word": "dive",
+          "nuance": "Going straight down fast, often head first.",
+          "example": "dive into the pool"
+        },
+        {
+          "word": "sweep",
+          "nuance": "Moving quickly and smoothly across a wide area.",
+          "example": "She swept into the room."
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "hustle",
+      "match": "hustled",
+      "para": 14,
+      "headword": "hustle",
+      "pos": "verb",
+      "ipa": "/ˈhʌsəl/",
+      "sense_en": "pushed something quickly and roughly somewhere",
+      "sense_ko": "(거칠게) 떠밀다, 몰아넣다",
+      "synonyms": [
+        {
+          "word": "hurry",
+          "nuance": "Neutral; just moving fast, without force.",
+          "example": "Hurry up!"
+        },
+        {
+          "word": "shove",
+          "nuance": "A single rough push.",
+          "example": "He shoved me aside."
+        },
+        {
+          "word": "bundle",
+          "nuance": "Put someone somewhere quickly and without care.",
+          "example": "They bundled him into a car."
+        }
+      ],
+      "modern": null,
+      "tip_ko": "현대 구어의 hustle은 '열심히 일하다, 사기 치다'란 뜻도 있지만 여기서는 '밀어 넣다'이다.",
+      "all": true
+    },
+    {
+      "id": "scarcely",
+      "match": "scarcely",
+      "para": 17,
+      "headword": "scarcely",
+      "pos": "adverb",
+      "ipa": "/ˈskɛrsli/",
+      "sense_en": "almost not; only just",
+      "sense_ko": "거의 ~하지 못하다",
+      "synonyms": [
+        {
+          "word": "hardly",
+          "nuance": "The everyday equivalent; same meaning, less formal.",
+          "example": "I could hardly hear."
+        },
+        {
+          "word": "barely",
+          "nuance": "Stresses 'only just enough'.",
+          "example": "He barely passed the test."
+        },
+        {
+          "word": "rarely",
+          "nuance": "About frequency (not often), not about degree.",
+          "example": "She rarely calls."
+        }
+      ],
+      "modern": null,
+      "tip_ko": "scarcely 자체에 부정 의미가 있으므로 not과 함께 쓰지 않는다.",
+      "all": true
+    },
+    {
+      "id": "mantelpiece",
+      "match": "mantelpiece",
+      "para": 17,
+      "headword": "mantelpiece",
+      "pos": "noun",
+      "ipa": "/ˈmæntəlˌpis/",
+      "sense_en": "the shelf above a fireplace",
+      "sense_ko": "벽난로 선반",
+      "synonyms": [
+        {
+          "word": "mantel",
+          "nuance": "Shorter form, more common in American English.",
+          "example": "photos on the mantel"
+        },
+        {
+          "word": "shelf",
+          "nuance": "Any flat board for putting things on.",
+          "example": "a book shelf"
+        },
+        {
+          "word": "hearth",
+          "nuance": "The floor of the fireplace, not the shelf above it.",
+          "example": "a cat by the hearth"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "burrow",
+      "match": "burrows",
+      "para": 17,
+      "headword": "burrow",
+      "pos": "noun",
+      "ipa": "/ˈbɝoʊ/",
+      "sense_en": "a hole or tunnel in the ground where a rabbit or other animal lives",
+      "sense_ko": "(토끼 등의) 굴",
+      "synonyms": [
+        {
+          "word": "den",
+          "nuance": "The home of a wild animal like a fox or bear; not always underground.",
+          "example": "a fox's den"
+        },
+        {
+          "word": "hole",
+          "nuance": "Any opening or hollow; the most general word.",
+          "example": "a hole in the ground"
+        },
+        {
+          "word": "nest",
+          "nuance": "A bird's home built of twigs; also any cosy place.",
+          "example": "a bird's nest"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "borrow(빌리다)와 혼동하기 쉽다: burrow /ˈbɝoʊ/, borrow /ˈbɑroʊ/.",
+      "all": true
+    },
+    {
+      "id": "snuggle-down",
+      "match": "snuggle down",
+      "para": 17,
+      "headword": "snuggle down",
+      "pos": "phrasal verb",
+      "ipa": "/ˈsnʌɡəl/",
+      "sense_en": "to lie close and comfortably against someone or into something warm",
+      "sense_ko": "포근히 파고들다",
+      "synonyms": [
+        {
+          "word": "cuddle",
+          "nuance": "Holding each other lovingly in your arms.",
+          "example": "cuddle a baby"
+        },
+        {
+          "word": "nestle",
+          "nuance": "Settling into a sheltered, comfortable place; more gentle and literary.",
+          "example": "a village nestled in the hills"
+        },
+        {
+          "word": "curl up",
+          "nuance": "Lying with your body bent into a ball.",
+          "example": "curl up on the sofa"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "dusk",
+      "match": "dusk",
+      "para": 19,
+      "headword": "dusk",
+      "pos": "noun",
+      "ipa": "/dʌsk/",
+      "sense_en": "the time in the evening just after the sun goes down",
+      "sense_ko": "해 질 녘, 땅거미",
+      "synonyms": [
+        {
+          "word": "twilight",
+          "nuance": "The soft light itself, at dawn or dusk; more poetic.",
+          "example": "walking in the twilight"
+        },
+        {
+          "word": "sunset",
+          "nuance": "The moment the sun goes down; dusk comes a little after.",
+          "example": "We watched the sunset."
+        },
+        {
+          "word": "nightfall",
+          "nuance": "The moment it becomes fully dark.",
+          "example": "before nightfall"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "grumble",
+      "match": "grumbled",
+      "para": 19,
+      "headword": "grumble",
+      "pos": "verb",
+      "ipa": "/ˈɡrʌmbəl/",
+      "sense_en": "complained in a low, bad-tempered voice",
+      "sense_ko": "투덜거리다",
+      "synonyms": [
+        {
+          "word": "complain",
+          "nuance": "Neutral, general word; may be loud or formal.",
+          "example": "complain to the manager"
+        },
+        {
+          "word": "mutter",
+          "nuance": "Speaking quietly and unclearly; not always a complaint.",
+          "example": "He muttered something."
+        },
+        {
+          "word": "moan",
+          "nuance": "Informal British; complaining in an annoying, whining way.",
+          "example": "Stop moaning about the weather."
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "fancy",
+      "match": "Fancy",
+      "para": 20,
+      "headword": "fancy!",
+      "pos": "interjection",
+      "ipa": "/ˈfænsi/",
+      "sense_en": "used to show surprise or mild disapproval: 'just imagine!'",
+      "sense_ko": "세상에, ~라니!",
+      "synonyms": [
+        {
+          "word": "imagine",
+          "nuance": "Modern equivalent: 'Imagine that!'",
+          "example": "Imagine making all that fuss!"
+        },
+        {
+          "word": "fancy that",
+          "nuance": "Fixed old-fashioned phrase of surprise.",
+          "example": "He's getting married? Fancy that!"
+        },
+        {
+          "word": "wow",
+          "nuance": "Informal modern surprise, with no disapproval.",
+          "example": "Wow, that's big!"
+        }
+      ],
+      "modern": "Imagine ...! / Can you believe ...!",
+      "tip_ko": "Fancy + 명사/-ing 는 '~라니 (놀랍다)'라는 뜻의 영국식 옛 표현이다.",
+      "all": true
+    },
+    {
+      "id": "fuss",
+      "match": "fuss",
+      "para": 20,
+      "headword": "fuss",
+      "pos": "noun",
+      "ipa": "/fʌs/",
+      "sense_en": "too much excitement or worry about something unimportant",
+      "sense_ko": "법석, 야단",
+      "synonyms": [
+        {
+          "word": "commotion",
+          "nuance": "Noisy, confused activity involving many people.",
+          "example": "a commotion in the street"
+        },
+        {
+          "word": "bother",
+          "nuance": "Trouble or effort; milder, often in 'no bother'.",
+          "example": "It's no bother."
+        },
+        {
+          "word": "drama",
+          "nuance": "Informal; exaggerated emotional reaction.",
+          "example": "Don't make such a drama."
+        }
+      ],
+      "modern": null,
+      "tip_ko": "make a fuss about ~ (~로 법석을 떨다) 형태로 자주 쓴다.",
+      "all": true
+    },
+    {
+      "id": "i-declare",
+      "match": "I declare",
+      "para": 24,
+      "headword": "I declare",
+      "pos": "idiom",
+      "ipa": null,
+      "sense_en": "an old-fashioned way to show surprise",
+      "sense_ko": "어머나, 정말이지",
+      "synonyms": [
+        {
+          "word": "well I never",
+          "nuance": "Old-fashioned British exclamation of surprise.",
+          "example": "Well I never! You've grown."
+        },
+        {
+          "word": "my goodness",
+          "nuance": "Mild surprise, still used today.",
+          "example": "My goodness, it's late!"
+        },
+        {
+          "word": "honestly",
+          "nuance": "Modern; can show surprise or annoyance.",
+          "example": "Honestly, look at this mess!"
+        }
+      ],
+      "modern": "My goodness! / Well!",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "knowing",
+      "match": "knowing",
+      "para": 24,
+      "headword": "knowing",
+      "pos": "adjective",
+      "ipa": "/ˈnoʊɪŋ/",
+      "sense_en": "showing that you understand more than others think you do",
+      "sense_ko": "뭔가 다 안다는 듯한",
+      "synonyms": [
+        {
+          "word": "wise",
+          "nuance": "Having good judgment from experience; a lasting quality.",
+          "example": "a wise old man"
+        },
+        {
+          "word": "meaningful",
+          "nuance": "A look that carries a hidden message.",
+          "example": "a meaningful glance"
+        },
+        {
+          "word": "shrewd",
+          "nuance": "Clever at judging people and situations, often for advantage.",
+          "example": "a shrewd businessman"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "brigand",
+      "match": "brigands",
+      "para": 26,
+      "headword": "brigand",
+      "pos": "noun",
+      "ipa": "/ˈbrɪɡənd/",
+      "sense_en": "a member of a gang that robs travelers in wild country",
+      "sense_ko": "산적, 도적",
+      "synonyms": [
+        {
+          "word": "bandit",
+          "nuance": "The common modern word for the same thing.",
+          "example": "bandits in the mountains"
+        },
+        {
+          "word": "robber",
+          "nuance": "General word for anyone who steals by force.",
+          "example": "a bank robber"
+        },
+        {
+          "word": "pirate",
+          "nuance": "A robber at sea.",
+          "example": "pirates and treasure"
+        }
+      ],
+      "modern": "bandit",
+      "tip_ko": "play at brigands = 아이들의 '도적놀이'.",
+      "all": true
+    },
+    {
+      "id": "bracken",
+      "match": "bracken",
+      "para": 26,
+      "headword": "bracken",
+      "pos": "noun",
+      "ipa": "/ˈbrækən/",
+      "sense_en": "a large wild fern that grows thickly in woods",
+      "sense_ko": "고사리 덤불",
+      "synonyms": [
+        {
+          "word": "fern",
+          "nuance": "Any plant of this leafy family; bracken is one tall wild kind.",
+          "example": "a fern in a pot"
+        },
+        {
+          "word": "undergrowth",
+          "nuance": "All the low plants and bushes under the trees.",
+          "example": "hiding in the undergrowth"
+        },
+        {
+          "word": "thicket",
+          "nuance": "A dense group of bushes or small trees.",
+          "example": "a thicket of thorns"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "to-and-fro",
+      "match": "to and fro",
+      "para": 26,
+      "headword": "to and fro",
+      "pos": "idiom",
+      "ipa": null,
+      "sense_en": "moving in one direction and then back again, many times",
+      "sense_ko": "이리저리, 왔다 갔다",
+      "synonyms": [
+        {
+          "word": "back and forth",
+          "nuance": "The everyday modern phrase for the same movement.",
+          "example": "walking back and forth"
+        },
+        {
+          "word": "up and down",
+          "nuance": "Along a line such as a street or room, often restlessly.",
+          "example": "pacing up and down"
+        },
+        {
+          "word": "here and there",
+          "nuance": "In various places, not a repeated movement.",
+          "example": "toys scattered here and there"
+        }
+      ],
+      "modern": "back and forth",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "queer",
+      "match": "queer",
+      "para": 27,
+      "headword": "queer",
+      "pos": "adjective",
+      "ipa": "/kwɪr/",
+      "sense_en": "strange or unusual",
+      "sense_ko": "이상한, 기묘한",
+      "synonyms": [
+        {
+          "word": "strange",
+          "nuance": "Neutral modern word for unusual.",
+          "example": "a strange noise"
+        },
+        {
+          "word": "odd",
+          "nuance": "Slightly strange; light and informal.",
+          "example": "an odd feeling"
+        },
+        {
+          "word": "peculiar",
+          "nuance": "Strange in a way that is hard to explain; a bit formal.",
+          "example": "a peculiar smell"
+        }
+      ],
+      "modern": "strange / odd",
+      "tip_ko": "오늘날 queer는 주로 성소수자를 가리키므로 '이상한'의 뜻으로는 쓰지 않는 것이 좋다.",
+      "all": true
+    },
+    {
+      "id": "twitch",
+      "match": "twitching",
+      "para": 27,
+      "headword": "twitch",
+      "pos": "verb",
+      "ipa": "/twɪtʃ/",
+      "sense_en": "making small, quick movements",
+      "sense_ko": "씰룩거리다, 움찔하다",
+      "synonyms": [
+        {
+          "word": "jerk",
+          "nuance": "A sudden, stronger single movement.",
+          "example": "The car jerked forward."
+        },
+        {
+          "word": "wiggle",
+          "nuance": "Moving from side to side, often on purpose and playfully.",
+          "example": "wiggle your toes"
+        },
+        {
+          "word": "tremble",
+          "nuance": "Shaking slightly all over from fear, cold or emotion.",
+          "example": "Her hands trembled."
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "evidently",
+      "match": "evidently",
+      "para": 27,
+      "headword": "evidently",
+      "pos": "adverb",
+      "ipa": "/ˈɛvədəntli/",
+      "sense_en": "clearly, as you can tell from what you see",
+      "sense_ko": "보아하니, 분명히",
+      "synonyms": [
+        {
+          "word": "obviously",
+          "nuance": "Stronger and more everyday; anyone could see it.",
+          "example": "Obviously, he was lying."
+        },
+        {
+          "word": "apparently",
+          "nuance": "Based on what you heard or what seems true; less certain.",
+          "example": "Apparently, she quit."
+        },
+        {
+          "word": "clearly",
+          "nuance": "Neutral; plainly true.",
+          "example": "He was clearly tired."
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "wrinkle",
+      "match": "wrinkled",
+      "para": 43,
+      "headword": "wrinkle",
+      "pos": "verb",
+      "ipa": "/ˈrɪŋkəl/",
+      "sense_en": "made small lines or folds appear by pulling the skin together",
+      "sense_ko": "찡그리다, 주름을 잡다",
+      "synonyms": [
+        {
+          "word": "crease",
+          "nuance": "Making a sharp fold line, usually in paper or cloth.",
+          "example": "a creased shirt"
+        },
+        {
+          "word": "screw up",
+          "nuance": "Tightening your face or eyes, often in dislike.",
+          "example": "She screwed up her face."
+        },
+        {
+          "word": "frown",
+          "nuance": "Only the forehead and eyebrows, showing anger or thought.",
+          "example": "He frowned at me."
+        }
+      ],
+      "modern": null,
+      "tip_ko": "wrinkle one's nose = (싫거나 이상해서) 코를 찡그리다.",
+      "all": true
+    },
+    {
+      "id": "presently",
+      "match": "presently",
+      "para": 50,
+      "headword": "presently",
+      "pos": "adverb",
+      "ipa": "/ˈprɛzəntli/",
+      "sense_en": "after a short time; soon",
+      "sense_ko": "이윽고, 곧",
+      "synonyms": [
+        {
+          "word": "soon",
+          "nuance": "Everyday modern word; same meaning.",
+          "example": "He'll be here soon."
+        },
+        {
+          "word": "shortly",
+          "nuance": "A little formal; 'in a short time'.",
+          "example": "The train will arrive shortly."
+        },
+        {
+          "word": "currently",
+          "nuance": "Means 'now'; presently can also mean this in American English.",
+          "example": "She is currently abroad."
+        }
+      ],
+      "modern": "soon / after a while",
+      "tip_ko": "현대 미국 영어에서 presently는 주로 '현재'를 뜻하지만, 옛글에서는 '곧'이다.",
+      "all": true
+    },
+    {
+      "id": "flutter",
+      "match": "fluttered",
+      "para": 50,
+      "headword": "flutter",
+      "pos": "verb",
+      "ipa": "/ˈflʌtɚ/",
+      "sense_en": "flew with quick, light movements of the wings",
+      "sense_ko": "팔랑거리며 날다",
+      "synonyms": [
+        {
+          "word": "flap",
+          "nuance": "Bigger, slower wing movements; can be noisy.",
+          "example": "The flag flapped in the wind."
+        },
+        {
+          "word": "flit",
+          "nuance": "Moving quickly and lightly from place to place.",
+          "example": "birds flitting between trees"
+        },
+        {
+          "word": "hover",
+          "nuance": "Staying in one place in the air.",
+          "example": "a hovering hummingbird"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "flushed",
+      "match": "flushed",
+      "para": 53,
+      "headword": "flushed",
+      "pos": "adjective",
+      "ipa": "/flʌʃt/",
+      "sense_en": "red in the face, here because of fever",
+      "sense_ko": "(열로) 얼굴이 벌건",
+      "synonyms": [
+        {
+          "word": "red-faced",
+          "nuance": "Plain description; often from embarrassment or effort.",
+          "example": "a red-faced runner"
+        },
+        {
+          "word": "blushing",
+          "nuance": "Turning red from shyness or shame, not illness.",
+          "example": "a blushing bride"
+        },
+        {
+          "word": "feverish",
+          "nuance": "Having a fever; describes the illness, not just the colour.",
+          "example": "He felt feverish."
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "stir",
+      "match": "stirred",
+      "para": 53,
+      "headword": "stir",
+      "pos": "verb",
+      "ipa": "/stɝ/",
+      "sense_en": "moved slightly",
+      "sense_ko": "(살짝) 움직이다, 꿈틀하다",
+      "synonyms": [
+        {
+          "word": "move",
+          "nuance": "General word for any change of position.",
+          "example": "Don't move!"
+        },
+        {
+          "word": "budge",
+          "nuance": "Move even a little; used mostly with 'not', often for stubborn things.",
+          "example": "The door wouldn't budge."
+        },
+        {
+          "word": "fidget",
+          "nuance": "Keep making small restless movements.",
+          "example": "Kids fidget in class."
+        }
+      ],
+      "modern": null,
+      "tip_ko": "stir는 '젓다'가 기본 뜻이지만 never stirred처럼 쓰면 '꼼짝도 않다'가 된다.",
+      "all": false
+    },
+    {
+      "id": "weary",
+      "match": "weary",
+      "para": 54,
+      "headword": "weary",
+      "pos": "adjective",
+      "ipa": "/ˈwɪri/",
+      "sense_en": "long and tiring",
+      "sense_ko": "지루하고 지치게 하는",
+      "synonyms": [
+        {
+          "word": "tiring",
+          "nuance": "Everyday word for something that makes you tired.",
+          "example": "a tiring journey"
+        },
+        {
+          "word": "tedious",
+          "nuance": "Boring because it is slow and repetitive.",
+          "example": "a tedious task"
+        },
+        {
+          "word": "exhausting",
+          "nuance": "Much stronger; uses up all your energy.",
+          "example": "an exhausting day"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "weary /ˈwɪri/와 worry /ˈwɝi/는 발음이 다르다.",
+      "all": true
+    },
+    {
+      "id": "thicket",
+      "match": "thicket",
+      "para": 54,
+      "headword": "thicket",
+      "pos": "noun",
+      "ipa": "/ˈθɪkɪt/",
+      "sense_en": "a group of bushes or small plants growing very close together",
+      "sense_ko": "덤불, 수풀",
+      "synonyms": [
+        {
+          "word": "bush",
+          "nuance": "A single low woody plant.",
+          "example": "a rose bush"
+        },
+        {
+          "word": "undergrowth",
+          "nuance": "All the low plants under trees in a forest.",
+          "example": "deep undergrowth"
+        },
+        {
+          "word": "hedge",
+          "nuance": "A row of bushes planted as a wall.",
+          "example": "a garden hedge"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "disinfect",
+      "match": "disinfected",
+      "para": 56,
+      "headword": "disinfect",
+      "pos": "verb",
+      "ipa": "/ˌdɪsɪnˈfɛkt/",
+      "sense_en": "cleaned with chemicals to kill germs",
+      "sense_ko": "소독하다",
+      "synonyms": [
+        {
+          "word": "sterilize",
+          "nuance": "Killing all germs completely, usually with heat; medical.",
+          "example": "sterilize the needles"
+        },
+        {
+          "word": "sanitize",
+          "nuance": "Cleaning to a safe level; common for hands and surfaces.",
+          "example": "hand sanitizer"
+        },
+        {
+          "word": "clean",
+          "nuance": "General word; does not always kill germs.",
+          "example": "clean the kitchen"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "attend-to",
+      "match": "attend to",
+      "para": 61,
+      "headword": "attend to",
+      "pos": "phrasal verb",
+      "ipa": null,
+      "sense_en": "to deal with or take care of something",
+      "sense_ko": "처리하다, 돌보다",
+      "synonyms": [
+        {
+          "word": "deal with",
+          "nuance": "Everyday and neutral; handle a problem or task.",
+          "example": "I'll deal with it tomorrow."
+        },
+        {
+          "word": "see to",
+          "nuance": "Informal; make sure something gets done, often personally.",
+          "example": "I'll see to the dinner."
+        },
+        {
+          "word": "take care of",
+          "nuance": "Common; also means looking after people.",
+          "example": "take care of the kids"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "attend a meeting(참석하다)과 달리 attend to는 '처리하다, 돌보다'이다.",
+      "all": true
+    },
+    {
+      "id": "wriggle",
+      "match": "wriggling",
+      "para": 63,
+      "headword": "wriggle",
+      "pos": "verb",
+      "ipa": "/ˈrɪɡəl/",
+      "sense_en": "twisting and turning the body with small quick movements",
+      "sense_ko": "꼼지락거리다, 몸을 비틀다",
+      "synonyms": [
+        {
+          "word": "squirm",
+          "nuance": "Wriggling because of discomfort or embarrassment.",
+          "example": "He squirmed in his chair."
+        },
+        {
+          "word": "wiggle",
+          "nuance": "Lighter and more playful movement from side to side.",
+          "example": "wiggle your fingers"
+        },
+        {
+          "word": "twist",
+          "nuance": "Turning one part round; not necessarily repeated.",
+          "example": "twist the lid"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "threadbare",
+      "match": "threadbare",
+      "para": 63,
+      "headword": "threadbare",
+      "pos": "adjective",
+      "ipa": "/ˈθrɛdˌbɛr/",
+      "sense_en": "so worn that the threads can be seen",
+      "sense_ko": "닳아서 올이 드러난",
+      "synonyms": [
+        {
+          "word": "shabby",
+          "nuance": "Old and worn-looking in general; less extreme.",
+          "example": "a shabby hotel"
+        },
+        {
+          "word": "worn-out",
+          "nuance": "So used it no longer works or is useful.",
+          "example": "worn-out shoes"
+        },
+        {
+          "word": "ragged",
+          "nuance": "Torn, with loose edges; about clothes or people.",
+          "example": "ragged clothes"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "bygone",
+      "match": "bygone",
+      "para": 63,
+      "headword": "bygone",
+      "pos": "adjective",
+      "ipa": "/ˈbaɪˌɡɔn/",
+      "sense_en": "from a time in the past",
+      "sense_ko": "지나간, 옛",
+      "synonyms": [
+        {
+          "word": "past",
+          "nuance": "Neutral everyday word.",
+          "example": "in past years"
+        },
+        {
+          "word": "former",
+          "nuance": "About what someone or something used to be.",
+          "example": "a former teacher"
+        },
+        {
+          "word": "olden",
+          "nuance": "Only in 'the olden days'; old-fashioned, childlike.",
+          "example": "in the olden days"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "let bygones be bygones = 지난 일은 잊자.",
+      "all": true
+    },
+    {
+      "id": "trickle",
+      "match": "trickled",
+      "para": 63,
+      "headword": "trickle",
+      "pos": "verb",
+      "ipa": "/ˈtrɪkəl/",
+      "sense_en": "flowed slowly in a thin line or drops",
+      "sense_ko": "(눈물 등이) 또르르 흐르다",
+      "synonyms": [
+        {
+          "word": "drip",
+          "nuance": "Falling one drop at a time.",
+          "example": "a dripping tap"
+        },
+        {
+          "word": "stream",
+          "nuance": "Flowing a lot, continuously.",
+          "example": "Tears streamed down her face."
+        },
+        {
+          "word": "seep",
+          "nuance": "Passing slowly through small holes or cracks.",
+          "example": "Water seeped through the wall."
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "slender",
+      "match": "slender",
+      "para": 64,
+      "headword": "slender",
+      "pos": "adjective",
+      "ipa": "/ˈslɛndɚ/",
+      "sense_en": "thin in a graceful, attractive way",
+      "sense_ko": "가느다란, 날씬한",
+      "synonyms": [
+        {
+          "word": "slim",
+          "nuance": "Everyday word for attractively thin, mostly for people.",
+          "example": "a slim waist"
+        },
+        {
+          "word": "thin",
+          "nuance": "Neutral; can be negative for people.",
+          "example": "thin paper"
+        },
+        {
+          "word": "skinny",
+          "nuance": "Informal and often negative; too thin.",
+          "example": "a skinny kid"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "glade",
+      "match": "glade",
+      "para": 72,
+      "headword": "glade",
+      "pos": "noun",
+      "ipa": "/ɡleɪd/",
+      "sense_en": "an open grassy space in a forest",
+      "sense_ko": "숲속의 빈터",
+      "synonyms": [
+        {
+          "word": "clearing",
+          "nuance": "The everyday word for an open space in a forest, natural or cut; 'glade' is more poetic.",
+          "example": "a clearing in the woods"
+        },
+        {
+          "word": "meadow",
+          "nuance": "A field of grass and flowers, not inside a forest.",
+          "example": "a meadow full of daisies"
+        },
+        {
+          "word": "grove",
+          "nuance": "A small group of trees, not an open space.",
+          "example": "an olive grove"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "dingy",
+      "match": "dingy",
+      "para": 77,
+      "headword": "dingy",
+      "pos": "adjective",
+      "ipa": "/ˈdɪndʒi/",
+      "sense_en": "dull, dirty and faded in colour",
+      "sense_ko": "칙칙한, 꾀죄죄한",
+      "synonyms": [
+        {
+          "word": "drab",
+          "nuance": "Dull and boring in colour, but not dirty.",
+          "example": "drab grey walls"
+        },
+        {
+          "word": "grimy",
+          "nuance": "Covered with a layer of dirt.",
+          "example": "grimy windows"
+        },
+        {
+          "word": "faded",
+          "nuance": "Colour grown pale with age or sun.",
+          "example": "faded jeans"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "dingy /ˈdɪndʒi/는 'ㅈ' 소리. 작은 보트 dinghy /ˈdɪŋi/와 혼동 주의.",
+      "all": true
+    },
+    {
+      "id": "turf",
+      "match": "turf",
+      "para": 77,
+      "headword": "turf",
+      "pos": "noun",
+      "ipa": "/tɝf/",
+      "sense_en": "short grass and the soil it grows in",
+      "sense_ko": "잔디밭",
+      "synonyms": [
+        {
+          "word": "lawn",
+          "nuance": "A grass area kept short, usually in a garden.",
+          "example": "mow the lawn"
+        },
+        {
+          "word": "grass",
+          "nuance": "The plant itself; the most general word.",
+          "example": "sit on the grass"
+        },
+        {
+          "word": "sod",
+          "nuance": "A piece of turf cut out; American usage.",
+          "example": "lay new sod"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "peep",
+      "match": "peeped",
+      "para": 79,
+      "headword": "peep",
+      "pos": "verb",
+      "ipa": "/pip/",
+      "sense_en": "looked quickly and secretly",
+      "sense_ko": "살짝 엿보다",
+      "synonyms": [
+        {
+          "word": "peek",
+          "nuance": "Very close; a quick look, often playful (peekaboo).",
+          "example": "No peeking!"
+        },
+        {
+          "word": "glance",
+          "nuance": "A quick look, not secret.",
+          "example": "She glanced at her watch."
+        },
+        {
+          "word": "spy on",
+          "nuance": "Watching secretly for information; negative.",
+          "example": "spy on the neighbours"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    }
+  ]
+}
