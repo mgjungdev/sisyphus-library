@@ -20,7 +20,8 @@
   },
   "gutenberg": 902,
   "month": "2026-10",
-  "plan": 1
+  "plan": 1,
+  "reviewed": "2026-09-28"
  },
  {
   "slug": "gift-of-the-magi",
@@ -44,7 +45,8 @@
   },
   "gutenberg": 7256,
   "month": "2026-10",
-  "plan": 2
+  "plan": 2,
+  "reviewed": "2026-09-28"
  },
  {
   "slug": "selfish-giant",
@@ -68,7 +70,8 @@
   },
   "gutenberg": 902,
   "month": "2026-10",
-  "plan": 3
+  "plan": 3,
+  "reviewed": "2026-09-28"
  },
  {
   "slug": "rikki-tikki-tavi",
@@ -92,7 +95,8 @@
   },
   "month": "2026-10",
   "plan": 4,
-  "gutenberg": 236
+  "gutenberg": 236,
+  "reviewed": "2026-09-28"
  },
  {
   "slug": "after-twenty-years",
@@ -116,7 +120,8 @@
   },
   "month": "2026-11",
   "plan": 5,
-  "gutenberg": 2776
+  "gutenberg": 2776,
+  "reviewed": "2026-09-28"
  },
  {
   "slug": "vanka",
@@ -140,7 +145,8 @@
   },
   "month": "2026-11",
   "plan": 6,
-  "gutenberg": 13417
+  "gutenberg": 13417,
+  "reviewed": "2026-09-28"
  },
  {
   "slug": "emperors-new-clothes",
@@ -163,7 +169,8 @@
   },
   "month": "2026-11",
   "plan": 7,
-  "gutenberg": 1597
+  "gutenberg": 1597,
+  "reviewed": "2026-09-28"
  },
  {
   "slug": "ugly-duckling",
@@ -185,7 +192,8 @@
    "accent": "#e3c16f"
   },
   "month": "2026-11",
-  "plan": 8
+  "plan": 8,
+  "gutenberg": 27200
  },
  {
   "slug": "little-match-girl",
@@ -208,7 +216,8 @@
    "accent": "#e3c16f"
   },
   "month": "2026-12",
-  "plan": 9
+  "plan": 9,
+  "gutenberg": 1597
  },
  {
   "slug": "rumpelstiltskin",
@@ -230,7 +239,8 @@
    "accent": "#e3c16f"
   },
   "month": "2026-12",
-  "plan": 10
+  "plan": 10,
+  "gutenberg": 2591
  },
  {
   "slug": "hansel-and-gretel",
@@ -252,7 +262,8 @@
    "accent": "#e3c16f"
   },
   "month": "2026-12",
-  "plan": 11
+  "plan": 11,
+  "gutenberg": 2591
  },
  {
   "slug": "cinderella",
@@ -274,7 +285,8 @@
    "accent": "#e3c16f"
   },
   "month": "2026-12",
-  "plan": 12
+  "plan": 12,
+  "gutenberg": 503
  },
  {
   "slug": "puss-in-boots",
@@ -296,7 +308,8 @@
    "accent": "#e3c16f"
   },
   "month": "2027-01",
-  "plan": 13
+  "plan": 13,
+  "gutenberg": 503
  },
  {
   "slug": "aesop-fables",
@@ -342,7 +355,8 @@
    "accent": "#e3c16f"
   },
   "month": "2027-01",
-  "plan": 15
+  "plan": 15,
+  "gutenberg": 14838
  },
  {
   "slug": "velveteen-rabbit",
@@ -365,7 +379,8 @@
    "accent": "#e3c16f"
   },
   "month": "2027-01",
-  "plan": 16
+  "plan": 16,
+  "gutenberg": 11757
  },
  {
   "slug": "whale-throat",
@@ -388,7 +403,8 @@
    "accent": "#e3c16f"
   },
   "month": "2027-02",
-  "plan": 17
+  "plan": 17,
+  "gutenberg": 2781
  },
  {
   "slug": "three-questions",

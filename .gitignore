@@ -3,3 +3,7 @@ __pycache__/
 *.pyc
 .DS_Store
 site/data/
+PIPELINE.md
+logs/
+PAUSE
+.pipeline.lock

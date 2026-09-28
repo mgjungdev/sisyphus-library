@@ -5,7 +5,9 @@ tools: Bash, Read, Write, Edit, Grep
 ---
 
 You write `content/glossary/<slug>.json` for one story in `C:\Users\mingo\sisyphus\library`.
-Read `content/GLOSSARY_SCHEMA.md` first and follow it exactly. Read the story in `content/sources/<slug>.txt` once, completely. Lines starting with `## ` are chapter headings: they count as paragraphs for `para` numbering but must never be glossed.
+Read `content/GLOSSARY_SCHEMA.md` first and follow it exactly. Read the story in `content/sources/<slug>.txt` once, completely.
+
+**Works over 12,000 words:** do not read the whole text. Run `python tools/candidates.py <slug>` instead. It prints the uncommon words by chapter, each with its paragraph number and first sentence (glossed text in [[ ]]). Pick from that sheet, and add idioms and phrases by reading only the paragraphs around your picks (`sed -n` on the source, or Grep). Spread entries over every chapter. Lines starting with `## ` are chapter headings: they count as paragraphs for `para` numbering but must never be glossed.
 
 The reader: a Korean adult studying English alone (around B1–B2). Cards teach meaning in context and the difference between near-synonyms.
 

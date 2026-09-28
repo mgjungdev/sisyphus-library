@@ -4,7 +4,8 @@
   content/sources/<slug>.txt       story text, paragraphs separated by blank lines
   content/glossary/<slug>.json     curated vocabulary cards
 
-A book is "ready" when it has both a source and a glossary; otherwise it is
+A book is "ready" when it has a source, a glossary and a "reviewed" date in
+books.json (set by tools/pipeline.py mark-reviewed after the independent check); otherwise it is
 shown as a planned (not yet openable) spine on its month's shelf.
 Any glossary error stops the build.
 """
@@ -120,7 +121,7 @@ def main():
     errors, out = [], []
     for meta in catalog:
         slug = meta["slug"]
-        ready = (CONTENT / "sources" / f"{slug}.txt").exists() and (CONTENT / "glossary" / f"{slug}.json").exists()
+        ready = (CONTENT / "sources" / f"{slug}.txt").exists() and (CONTENT / "glossary" / f"{slug}.json").exists() and bool(meta.get("reviewed"))
         info = {k: meta.get(k) for k in ("slug", "title", "author", "year", "genre", "tags", "level", "month", "plan", "cover")}
         info["century"] = century(meta["year"])
         info["status"] = "planned"

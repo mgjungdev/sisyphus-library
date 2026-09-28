@@ -1,0 +1,21 @@
+{
+  "env": { "PYTHONIOENCODING": "utf-8" },
+  "enabledMcpjsonServers": ["gutenberg"],
+  "permissions": {
+    "allow": [
+      "Agent",
+      "Read", "Write", "Edit", "Grep", "Glob",
+      "Bash(python tools/*)",
+      "Bash(git status*)", "Bash(git diff*)", "Bash(git log*)", "Bash(git fetch*)", "Bash(git ls-tree*)",
+      "Bash(git add content/*)", "Bash(git commit *)", "Bash(git push origin main)", "Bash(git push)",
+      "Bash(curl *gutendex.com*)", "Bash(curl *gutenberg.org*)", "Bash(curl *wikisource.org*)",
+      "Bash(grep *)", "Bash(sed -n *)", "Bash(head *)", "Bash(tail *)", "Bash(wc *)", "Bash(ls *)", "Bash(cat *)",
+      "WebFetch(domain:gutendex.com)", "WebFetch(domain:www.gutenberg.org)", "WebFetch(domain:gutenberg.org)",
+      "WebFetch(domain:en.wikisource.org)",
+      "mcp__gutenberg"
+    ],
+    "deny": [
+      "Bash(git push --force*)", "Bash(git push -f*)", "Bash(git reset --hard*)", "Bash(rm -rf*)"
+    ]
+  }
+}
