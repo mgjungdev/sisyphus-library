@@ -1,27 +1,27 @@
 [
  {
-  "slug": "happy-prince",
-  "title": "The Happy Prince",
-  "author": "Oscar Wilde",
-  "year": 1888,
+  "slug": "king-of-the-golden-river",
+  "title": "The King of the Golden River",
+  "author": "John Ruskin",
+  "year": 1851,
   "genre": "Fairy Tales & Fables",
-  "level": 1,
+  "level": 2,
   "tags": [
    "British",
-   "kindness"
+   "greed",
+   "mountains"
   ],
   "spine": {
    "color": "#7a4a2a",
    "height": 0.9
   },
   "cover": {
-   "motif": "swallow",
+   "motif": "key",
    "accent": "#e3c16f"
   },
-  "gutenberg": 902,
   "month": "2026-10",
   "plan": 1,
-  "reviewed": "2026-09-28"
+  "gutenberg": 701
  },
  {
   "slug": "gift-of-the-magi",
@@ -49,29 +49,28 @@
   "reviewed": "2026-09-28"
  },
  {
-  "slug": "selfish-giant",
-  "title": "The Selfish Giant",
-  "author": "Oscar Wilde",
-  "year": 1888,
+  "slug": "golden-key",
+  "title": "The Golden Key",
+  "author": "George MacDonald",
+  "year": 1867,
   "genre": "Fairy Tales & Fables",
-  "level": 1,
+  "level": 2,
   "tags": [
    "British",
-   "children",
-   "seasons"
+   "journey",
+   "wonder"
   ],
   "spine": {
    "color": "#6e3b4e",
    "height": 0.88
   },
   "cover": {
-   "motif": "tree",
+   "motif": "key",
    "accent": "#e3c16f"
   },
-  "gutenberg": 902,
   "month": "2026-10",
   "plan": 3,
-  "reviewed": "2026-09-28"
+  "gutenberg": 18811
  },
  {
   "slug": "rikki-tikki-tavi",
@@ -149,15 +148,16 @@
   "reviewed": "2026-09-28"
  },
  {
-  "slug": "emperors-new-clothes",
-  "title": "The Emperor's New Clothes",
+  "slug": "snow-queen",
+  "title": "The Snow Queen",
   "author": "Hans Christian Andersen",
-  "year": 1837,
+  "year": 1844,
   "genre": "Fairy Tales & Fables",
   "level": 1,
   "tags": [
    "Danish",
-   "vanity"
+   "friendship",
+   "winter"
   ],
   "spine": {
    "color": "#a0522d",
@@ -169,153 +169,151 @@
   },
   "month": "2026-11",
   "plan": 7,
-  "gutenberg": 1597,
-  "reviewed": "2026-09-28"
+  "gutenberg": 1597
  },
  {
-  "slug": "ugly-duckling",
-  "title": "The Ugly Duckling",
+  "slug": "little-mermaid",
+  "title": "The Little Mermaid",
   "author": "Hans Christian Andersen",
-  "year": 1843,
+  "year": 1837,
   "genre": "Fairy Tales & Fables",
   "level": 1,
   "tags": [
    "Danish",
-   "animals"
+   "sea",
+   "love"
   ],
   "spine": {
    "color": "#a0522d",
    "height": 0.87
   },
   "cover": {
-   "motif": "crown",
+   "motif": "heart",
    "accent": "#e3c16f"
   },
   "month": "2026-11",
   "plan": 8,
-  "gutenberg": 27200,
-  "reviewed": "2026-09-28"
+  "gutenberg": 27200
  },
  {
-  "slug": "little-match-girl",
-  "title": "The Little Match Girl",
+  "slug": "marsh-kings-daughter",
+  "title": "The Marsh King's Daughter",
   "author": "Hans Christian Andersen",
-  "year": 1845,
+  "year": 1858,
   "genre": "Fairy Tales & Fables",
-  "level": 1,
+  "level": 2,
   "tags": [
    "Danish",
-   "Christmas",
-   "poverty"
+   "Egypt",
+   "storks"
   ],
   "spine": {
    "color": "#9c6b30",
    "height": 0.82
   },
   "cover": {
-   "motif": "crown",
+   "motif": "swallow",
    "accent": "#e3c16f"
   },
   "month": "2026-12",
   "plan": 9,
-  "gutenberg": 1597,
-  "reviewed": "2026-09-28"
+  "gutenberg": 27200
  },
  {
-  "slug": "rumpelstiltskin",
-  "title": "Rumpelstiltskin",
+  "slug": "two-brothers",
+  "title": "The Two Brothers",
   "author": "Brothers Grimm",
-  "year": 1812,
+  "year": 1819,
   "genre": "Fairy Tales & Fables",
   "level": 1,
   "tags": [
    "German",
-   "bargains"
+   "forest",
+   "animals"
   ],
   "spine": {
    "color": "#7a4a2a",
    "height": 0.81
   },
   "cover": {
-   "motif": "crown",
+   "motif": "tree",
    "accent": "#e3c16f"
   },
   "month": "2026-12",
   "plan": 10,
-  "gutenberg": 2591,
-  "reviewed": "2026-09-28"
+  "gutenberg": 5314
  },
  {
-  "slug": "hansel-and-gretel",
-  "title": "Hansel and Gretel",
-  "author": "Brothers Grimm",
-  "year": 1812,
+  "slug": "enchanted-horse",
+  "title": "The Enchanted Horse",
+  "author": "The Arabian Nights",
+  "year": 850,
   "genre": "Fairy Tales & Fables",
-  "level": 1,
+  "level": 2,
   "tags": [
-   "German",
-   "children"
+   "Arabic",
+   "magic",
+   "romance"
   ],
   "spine": {
    "color": "#8a3b2e",
    "height": 0.9
   },
   "cover": {
-   "motif": "crown",
+   "motif": "planet",
    "accent": "#e3c16f"
   },
   "month": "2026-12",
   "plan": 11,
-  "gutenberg": 2591,
-  "reviewed": "2026-09-28"
+  "gutenberg": 128
  },
  {
-  "slug": "cinderella",
-  "title": "Cinderella",
-  "author": "Charles Perrault",
-  "year": 1697,
+  "slug": "beauty-and-the-beast",
+  "title": "Beauty and the Beast",
+  "author": "Madame de Villeneuve",
+  "year": 1740,
   "genre": "Fairy Tales & Fables",
   "level": 1,
   "tags": [
    "French",
-   "romance"
+   "romance",
+   "kindness"
   ],
   "spine": {
    "color": "#8a3b2e",
    "height": 0.85
   },
   "cover": {
-   "motif": "crown",
+   "motif": "rose",
    "accent": "#e3c16f"
   },
   "month": "2026-12",
   "plan": 12,
-  "gutenberg": 503,
-  "reviewed": "2026-09-28"
+  "gutenberg": 503
  },
  {
-  "slug": "puss-in-boots",
-  "title": "Puss in Boots",
-  "author": "Charles Perrault",
-  "year": 1697,
+  "slug": "camaralzaman",
+  "title": "Camaralzaman and Badoura",
+  "author": "The Arabian Nights",
+  "year": 850,
   "genre": "Fairy Tales & Fables",
-  "level": 1,
+  "level": 2,
   "tags": [
-   "French",
-   "animals"
+   "Arabic",
+   "love",
+   "romance"
   ],
   "spine": {
    "color": "#a0522d",
    "height": 0.89
   },
   "cover": {
-   "motif": "crown",
+   "motif": "lamp",
    "accent": "#e3c16f"
   },
   "month": "2027-01",
   "plan": 13,
-  "gutenberg": 503,
-  "reviewed": "2026-09-28"
+  "gutenberg": 128
  },
  {
   "slug": "aesop-fables",
@@ -339,92 +337,90 @@
   },
   "month": "2027-01",
   "plan": 14,
-  "reviewed": "2026-09-28"
+  "gutenberg": 21
  },
  {
-  "slug": "peter-rabbit",
-  "title": "The Tale of Peter Rabbit",
-  "author": "Beatrix Potter",
-  "year": 1902,
+  "slug": "light-princess",
+  "title": "The Light Princess",
+  "author": "George MacDonald",
+  "year": 1864,
   "genre": "Fairy Tales & Fables",
-  "level": 1,
+  "level": 2,
   "tags": [
    "British",
-   "animals",
-   "children"
+   "humor",
+   "love"
   ],
   "spine": {
    "color": "#8a3b2e",
    "height": 0.93
   },
   "cover": {
-   "motif": "crown",
+   "motif": "leaf",
    "accent": "#e3c16f"
   },
   "month": "2027-01",
   "plan": 15,
-  "gutenberg": 14838,
-  "reviewed": "2026-09-28"
+  "gutenberg": 697
  },
  {
-  "slug": "velveteen-rabbit",
-  "title": "The Velveteen Rabbit",
-  "author": "Margery Williams",
-  "year": 1922,
+  "slug": "racketty-packetty-house",
+  "title": "Racketty-Packetty House",
+  "author": "Frances Hodgson Burnett",
+  "year": 1906,
   "genre": "Fairy Tales & Fables",
   "level": 1,
   "tags": [
    "British",
    "toys",
-   "children"
+   "friendship"
   ],
   "spine": {
    "color": "#6e3b4e",
    "height": 0.87
   },
   "cover": {
-   "motif": "crown",
+   "motif": "heart",
    "accent": "#e3c16f"
   },
   "month": "2027-01",
   "plan": 16,
-  "gutenberg": 11757,
-  "reviewed": "2026-09-28"
+  "gutenberg": 8574
  },
  {
-  "slug": "whale-throat",
-  "title": "How the Whale Got His Throat",
+  "slug": "kaas-hunting",
+  "title": "Kaa's Hunting",
   "author": "Rudyard Kipling",
-  "year": 1902,
-  "genre": "Fairy Tales & Fables",
-  "level": 1,
+  "year": 1894,
+  "genre": "Adventure",
+  "level": 2,
   "tags": [
-   "British",
+   "India",
    "animals",
-   "sea"
+   "forest"
   ],
   "spine": {
    "color": "#7a4a2a",
    "height": 0.95
   },
   "cover": {
-   "motif": "crown",
+   "motif": "tree",
    "accent": "#e3c16f"
   },
   "month": "2027-02",
   "plan": 17,
-  "gutenberg": 2781,
-  "reviewed": "2026-09-28"
+  "gutenberg": 236
  },
  {
-  "slug": "three-questions",
-  "title": "The Three Questions",
+  "slug": "what-men-live-by",
+  "title": "What Men Live By",
   "author": "Leo Tolstoy",
-  "year": 1885,
+  "year": 1881,
   "genre": "Fairy Tales & Fables",
   "level": 1,
   "tags": [
    "Russian",
+   "kindness",
    "parable"
   ],
   "spine": {
@@ -432,21 +428,23 @@
    "height": 0.86
   },
   "cover": {
-   "motif": "crown",
+   "motif": "swallow",
    "accent": "#e3c16f"
   },
   "month": "2027-02",
-  "plan": 18
+  "plan": 18,
+  "gutenberg": 6157
  },
  {
-  "slug": "nightingale-and-the-rose",
-  "title": "The Nightingale and the Rose",
+  "slug": "fisherman-and-his-soul",
+  "title": "The Fisherman and His Soul",
   "author": "Oscar Wilde",
-  "year": 1888,
+  "year": 1891,
   "genre": "Fairy Tales & Fables",
   "level": 2,
   "tags": [
    "British",
+   "sea",
    "love"
   ],
   "spine": {
@@ -454,13 +452,12 @@
    "height": 0.8
   },
   "cover": {
-   "motif": "rose",
+   "motif": "mask",
    "accent": "#e3c16f"
   },
-  "gutenberg": 902,
   "month": "2027-02",
   "plan": 19,
-  "reviewed": "2026-09-28"
+  "gutenberg": 873
  },
  {
   "slug": "to-build-a-fire",
@@ -483,7 +480,8 @@
    "accent": "#d8c48a"
   },
   "month": "2027-02",
-  "plan": 20
+  "plan": 20,
+  "gutenberg": 2429
  },
  {
   "slug": "tell-tale-heart",
@@ -505,7 +503,8 @@
    "accent": "#c9a24a"
   },
   "month": "2027-03",
-  "plan": 21
+  "plan": 21,
+  "gutenberg": 2148
  },
  {
   "slug": "canterville-ghost",
@@ -528,7 +527,8 @@
    "accent": "#d6cfb8"
   },
   "month": "2027-03",
-  "plan": 22
+  "plan": 22,
+  "gutenberg": 14522
  },
  {
   "slug": "magic-shop",
@@ -551,7 +551,8 @@
    "accent": "#e0cf94"
   },
   "month": "2027-03",
-  "plan": 23
+  "plan": 23,
+  "gutenberg": 1743
  },
  {
   "slug": "last-leaf",
@@ -574,7 +575,8 @@
    "accent": "#ecc9a8"
   },
   "month": "2027-03",
-  "plan": 24
+  "plan": 24,
+  "gutenberg": 3707
  },
  {
   "slug": "ransom-of-red-chief",
@@ -599,14 +601,15 @@
   "plan": 25
  },
  {
-  "slug": "ali-baba",
-  "title": "Ali Baba and the Forty Thieves",
+  "slug": "sindbad",
+  "title": "The Seven Voyages of Sindbad the Sailor",
   "author": "The Arabian Nights",
   "year": 850,
-  "genre": "Fairy Tales & Fables",
+  "genre": "Adventure",
   "level": 2,
   "tags": [
    "Arabic",
+   "sea",
    "treasure"
   ],
   "spine": {
@@ -614,11 +617,12 @@
    "height": 0.94
   },
   "cover": {
-   "motif": "crown",
+   "motif": "compass",
    "accent": "#e3c16f"
   },
   "month": "2027-04",
-  "plan": 26
+  "plan": 26,
+  "gutenberg": 128
  },
  {
   "slug": "most-dangerous-game",
@@ -802,16 +806,16 @@
   "plan": 34
  },
  {
-  "slug": "how-much-land",
-  "title": "How Much Land Does a Man Need?",
+  "slug": "ivan-the-fool",
+  "title": "Ivan the Fool",
   "author": "Leo Tolstoy",
   "year": 1886,
   "genre": "Fairy Tales & Fables",
   "level": 2,
   "tags": [
    "Russian",
-   "greed",
-   "parable"
+   "work",
+   "satire"
   ],
   "spine": {
    "color": "#9c6b30",
@@ -822,7 +826,8 @@
    "accent": "#e3c16f"
   },
   "month": "2027-06",
-  "plan": 35
+  "plan": 35,
+  "gutenberg": 51708
  },
  {
   "slug": "pair-of-silk-stockings",
