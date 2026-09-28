@@ -1,6 +1,7 @@
 import { esc } from './art.js';
 import { savedList, removeWord, subscribe, getState, syncConfig, setSyncConfig, syncAll, exportJSON, prefs } from './store.js';
 import { speak, canSpeak } from './speech.js';
+import { applyTheme, currentTheme } from './reader.js';
 
 const STATUS = {
   local: 'On this device only', pending: 'Changes waiting to sync', syncing: 'Syncing…',
@@ -72,7 +73,7 @@ export function renderWords(root) {
 export function renderSettings(root) {
   const draw = () => {
     const cfg = syncConfig();
-    const theme = prefs.get('theme', 'auto');
+    const theme = currentTheme();
     root.innerHTML = `
     <section class="page narrow">
       <header class="page-head"><h1>Settings</h1></header>
@@ -80,11 +81,9 @@ export function renderSettings(root) {
       <section class="panel">
         <h2>Reading</h2>
         <div class="field-row"><span class="label">Theme</span>
-          <div class="seg">${['auto', 'light', 'sepia', 'dark'].map(t => `<button class="chip" data-theme-set="${t}" aria-pressed="${theme === t}">${t[0].toUpperCase() + t.slice(1)}</button>`).join('')}</div>
+          <div class="seg">${['auto', 'white', 'paper', 'gray', 'night'].map(t => `<button class="chip" data-theme-set="${t}" aria-pressed="${theme === t}">${t[0].toUpperCase() + t.slice(1)}</button>`).join('')}</div>
         </div>
-        <div class="field-row"><span class="label">Glossary marks</span>
-          <button class="chip" data-underline aria-pressed="${prefs.get('underline', true)}">${prefs.get('underline', true) ? 'On' : 'Off'}</button>
-        </div>
+
       </section>
 
       <section class="panel">
@@ -114,12 +113,9 @@ export function renderSettings(root) {
   root.addEventListener('click', async e => {
     const b = e.target.closest('button'); if (!b) return;
     if (b.dataset.themeSet) {
-      const t = b.dataset.themeSet; prefs.set('theme', t);
-      try { localStorage.setItem('sl.theme', t); } catch { /* ignore */ }
-      if (t === 'auto') delete document.documentElement.dataset.theme; else document.documentElement.dataset.theme = t;
+      applyTheme(b.dataset.themeSet);
       draw();
     }
-    if (b.hasAttribute('data-underline')) { prefs.set('underline', !prefs.get('underline', true)); draw(); }
     if (b.dataset.act === 'sync') syncAll();
     if (b.dataset.act === 'disconnect') setSyncConfig(null);
     if (b.dataset.act === 'export') {

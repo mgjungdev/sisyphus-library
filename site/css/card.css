@@ -22,7 +22,7 @@
 
 .card-head { display: flex; align-items: flex-start; gap: 8px; padding: 14px 10px 8px 18px; touch-action: none; }
 .hw { flex: 1; min-width: 0; }
-.hw h2 { margin: 0; font: 600 24px/1.2 var(--font-read); overflow-wrap: anywhere; }
+.hw h2 { margin: 0; font: 400 27px/1.15 var(--font-read); overflow-wrap: anywhere; }
 .hw .meta { margin: 3px 0 0; font-size: 14px; color: var(--ink-2); }
 .hw .meta .from { color: var(--ink-3); }
 .card-tools { display: flex; gap: 0; margin-top: -4px; }
@@ -35,12 +35,12 @@
 .sense .en { margin: 0; font: 16.5px/1.5 var(--font-read); }
 .sense .ko { margin: 6px 0 0; font: 15px/1.5 var(--font-ko); color: var(--ink-2); }
 .modern { margin: 10px 0 0; font-size: 14.5px; display: flex; gap: 8px; align-items: baseline; }
-.modern span { flex: 0 0 auto; font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+.modern span { flex: 0 0 auto; font-size: 13px; font-weight: 600; color: var(--accent); }
 .tip {
   margin: 10px 0 0; padding: 9px 12px; border-radius: 8px; font: 14px/1.55 var(--font-ko);
   background: color-mix(in srgb, #e8c34a 16%, transparent); border-left: 3px solid #d4a72c;
 }
-.syns h3 { margin: 16px 0 6px; font-size: 11.5px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); }
+.syns h3 { margin: 18px 0 6px; font-size: 13px; font-weight: 600; color: var(--ink-2); }
 .syns ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
 .syns li { padding-bottom: 10px; border-bottom: 1px solid var(--rule); }
 .syns li:last-child { border-bottom: 0; padding-bottom: 0; }

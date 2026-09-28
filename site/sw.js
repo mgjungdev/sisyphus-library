@@ -1,5 +1,5 @@
 // Offline support: app shell cache-first, book data network-first, dictionary lookups cache-first.
-const VERSION = 'v1';
+const VERSION = 'v3';
 const SHELL = `shell-${VERSION}`, DATA = `data-${VERSION}`, LOOKUP = 'lookup-v1', FONTS = 'fonts-v1';
 const SHELL_FILES = [
   './', 'index.html', 'manifest.webmanifest', 'img/icon.svg',

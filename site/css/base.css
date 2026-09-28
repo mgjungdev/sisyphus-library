@@ -30,15 +30,15 @@ a { color: inherit; }
   border-bottom: 1px solid var(--rule);
 }
 body[data-view="library"] .topbar {
-  background: color-mix(in srgb, var(--wall-2) 72%, transparent);
+  background: color-mix(in srgb, var(--wall) 86%, transparent);
   border-bottom-color: transparent;
 }
 .wordmark {
   display: inline-flex; align-items: center; gap: 8px;
-  text-decoration: none; font-family: var(--font-read); font-weight: 600; font-size: 17px; letter-spacing: .01em;
+  text-decoration: none; font-family: var(--font-read); font-weight: 400; font-size: 20px; letter-spacing: -.01em;
   min-height: 44px;
 }
-.wordmark svg { width: 22px; height: 22px; color: var(--accent); }
+.wordmark svg { width: 22px; height: 22px; color: var(--ink); }
 .topbar-title {
   min-width: 0; text-align: center; font-family: var(--font-read); font-size: 15px; color: var(--ink-2);
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;

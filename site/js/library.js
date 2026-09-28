@@ -1,4 +1,4 @@
-import { coverHTML, initials, DECOR, esc } from './art.js';
+import { coverHTML, initials, esc } from './art.js';
 import { getProgress } from './store.js';
 
 const reduceMotion = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -7,46 +7,61 @@ const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 
 
 let flight = null; // active pull-out state
 
+const NUM = ['No', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten'];
+
 export function renderLibrary(root, lib, { go }) {
-  const shelfH = isNarrow() ? 176 : 216;
+  const shelfH = isNarrow() ? 214 : 262;
   const thisMonth = new Date().toISOString().slice(0, 7);
   const target = lib.shelves.find(s => s.month >= thisMonth) || lib.shelves[lib.shelves.length - 1];
-  const decorFor = i => [['plant'], ['stack', 'globe'], ['candle'], ['bookend', 'plant'], ['globe']][i % 5];
+
+  const summary = s => {
+    const ready = s.books.filter(b => b.status === 'ready');
+    if (!ready.length) return `${NUM[s.books.length] || s.books.length} ${s.books.length === 1 ? 'story' : 'stories'} planned.`;
+    const mins = ready.reduce((n, b) => n + b.minutes, 0);
+    return `${NUM[ready.length] || ready.length} ${ready.length === 1 ? 'story' : 'stories'}, about ${mins} minutes of reading.`;
+  };
+  const indexItem = b => {
+    if (b.status !== 'ready') {
+      return `<li><div class="planned"><span class="t">${esc(b.title)}</span><span class="a">${esc(b.author)}, ${b.year}</span></div></li>`;
+    }
+    const p = getProgress(b.slug);
+    const right = p?.done ? 'Finished' : p ? `${p.pct}%` : `${b.minutes} min`;
+    return `<li><button type="button" data-open="${b.slug}">
+      <span class="t">${esc(b.title)}</span><span class="a">${esc(b.author)}, ${b.year}</span><span class="r">${right}</span>
+      ${p && !p.done ? `<span class="bar"><i style="width:${p.pct}%"></i></span>` : ''}
+    </button></li>`;
+  };
 
   root.innerHTML = `
-  <section class="room">
-    <div class="library-head">
-      <h1>The Reading Room</h1>
-      <p>${esc(lib.shelves.reduce((n, s) => n + s.books.filter(b => b.status === 'ready').length, 0))} stories on the shelves</p>
-    </div>
-    <div class="bookcase">
-      ${lib.shelves.map((s, i) => `
-      <section class="shelf${s === target ? ' is-current' : ''}" id="shelf-${s.month}" data-month="${s.month}" aria-label="${esc(s.label)}">
-        <div class="shelf-back">
-          <div class="shelf-row">
-            ${decorFor(i).includes('stack') ? `<span class="decor stack">${DECOR.stack}</span>` : ''}
-            ${decorFor(i).includes('bookend') ? `<span class="decor bookend">${DECOR.bookend}</span>` : ''}
-            ${s.books.map(b => bookHTML(b, shelfH, s.label)).join('')}
-            ${decorFor(i).filter(d => !['stack', 'bookend'].includes(d)).map(d => `<span class="decor ${d}">${DECOR[d]}</span>`).join('')}
-          </div>
+  <div class="library">
+    ${lib.shelves.map(s => {
+      const [y, m] = s.month.split('-');
+      return `
+    <section class="month${s === target ? ' is-current' : ''}" id="shelf-${s.month}" data-month="${s.month}" aria-label="${esc(s.label)}">
+      <header class="month-head">
+        <h2><span class="m">${MONTHS[+m - 1]}</span><span class="y">${y}</span></h2>
+        <p>${summary(s)}</p>
+      </header>
+      <div class="month-body">
+        <div class="ledge-wrap">
+          <div class="shelf-row">${s.books.map(b => bookHTML(b, shelfH, s.label)).join('')}</div>
+          <div class="ledge"></div>
         </div>
-        <div class="shelf-board"><span class="shelf-plate">${esc(s.label)}</span></div>
-      </section>`).join('')}
-    </div>
-  </section>
+        <ul class="book-index">${s.books.map(indexItem).join('')}</ul>
+      </div>
+    </section>`;
+    }).join('')}
+  </div>
   <nav class="month-nav" aria-label="Months">
     ${lib.shelves.map(s => {
       const [y, m] = s.month.split('-');
-      return `<a href="#shelf-${s.month}" data-month="${s.month}"><i></i><span>${MONTHS[+m - 1].slice(0, 3)} ${y}</span></a>`;
+      return `<a href="#shelf-${s.month}" data-month="${s.month}">${MONTHS[+m - 1].slice(0, 3)} ${y.slice(2)}</a>`;
     }).join('')}
   </nav>`;
 
-  const shelves = [...root.querySelectorAll('.shelf')];
+  const shelves = [...root.querySelectorAll('.month')];
   const navLinks = [...root.querySelectorAll('.month-nav a')];
 
-  // reveal on scroll + month-nav highlight
-  const reveal = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); }), { rootMargin: '0px 0px -8% 0px' });
-  shelves.forEach(s => reveal.observe(s));
   const spy = new IntersectionObserver(es => {
     const vis = es.filter(e => e.isIntersecting).sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)[0];
     if (vis) navLinks.forEach(a => a.setAttribute('aria-current', String(a.dataset.month === vis.target.dataset.month)));
@@ -57,28 +72,27 @@ export function renderLibrary(root, lib, { go }) {
     root.querySelector('#shelf-' + a.dataset.month).scrollIntoView({ behavior: reduceMotion() ? 'auto' : 'smooth', block: 'start' });
   }));
 
-  // initial scroll: restore, or go to this month's shelf
-  const saved = sessionStorage.getItem('sl.libScroll');
+  let saved = null;
+  try { saved = sessionStorage.getItem('sl.libScroll'); } catch { /* ignore */ }
   requestAnimationFrame(() => {
     if (saved != null) scrollTo(0, +saved);
     else if (target && shelves.indexOf(root.querySelector('#shelf-' + target.month)) > 0) {
       root.querySelector('#shelf-' + target.month).scrollIntoView({ block: 'start' });
     }
-    shelves.forEach(s => { const r = s.getBoundingClientRect(); if (r.top < innerHeight && r.bottom > 0) s.classList.add('in'); });
   });
-  const onScroll = () => sessionStorage.setItem('sl.libScroll', String(scrollY));
+  const onScroll = () => { try { sessionStorage.setItem('sl.libScroll', String(scrollY)); } catch { /* ignore */ } };
   addEventListener('scroll', onScroll, { passive: true });
 
-  // books
   const books = new Map(lib.shelves.flatMap(s => s.books).map(b => [b.slug, b]));
   root.addEventListener('click', e => {
-    const el = e.target.closest('.book');
+    const idx = e.target.closest('[data-open]');
+    const el = idx ? root.querySelector(`.book[data-slug="${idx.dataset.open}"]`) : e.target.closest('.book');
     if (!el || el.dataset.status !== 'ready') return;
     pullOut(el, books.get(el.dataset.slug), go);
   });
 
   return () => {
-    reveal.disconnect(); spy.disconnect();
+    spy.disconnect();
     removeEventListener('scroll', onScroll);
     if (flight && !flight.opening) closeFlight(true);
   };
@@ -104,7 +118,6 @@ function bookHTML(b, shelfH, monthLabel) {
       ${p && !p.done ? '<span class="face ribbon"></span>' : ''}
       ${p && p.done ? '<span class="face done-mark"></span>' : ''}
     </span>
-    <span class="book-tip" aria-hidden="true"><b>${esc(b.title)}</b><span>${esc(b.author)} · ${b.year}${ready ? ` · ${b.minutes} min` : ''}</span></span>
   </button>`;
 }
 

@@ -1,103 +1,78 @@
-/* Design tokens — light (paper), sepia, dark (evening library) */
+/* Design tokens
+   Library: stone wall, floating ledges, cloth-bound books as the only colour.
+   Reader themes: white / paper / gray / night. */
 :root {
   color-scheme: light;
-  --font-read: "Literata", Georgia, "Times New Roman", serif;
-  --font-ui: "Inter", system-ui, -apple-system, "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  --font-read: "Times New Roman", Tinos, Times, "Liberation Serif", serif;
+  --font-ui: "Instrument Sans", system-ui, -apple-system, "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
   --font-ko: "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", var(--font-ui);
 
-  /* page */
-  --bg: #f4efe6;
-  --surface: #fbf8f2;
-  --surface-2: #efe8db;
-  --ink: #2a2420;
-  --ink-2: #5d534b;
-  --ink-3: #8b8076;
-  --rule: #ddd3c4;
-  --accent: #8a3b2e;
-  --accent-ink: #fff8ef;
-  --gloss-line: #b9855a;
-  --saved: #b2621f;
+  --wall: #e8eae6;
+  --bg: #e8eae6;
+  --surface: #fbfbf9;
+  --surface-2: #eff1ed;
+  --ink: #1c2220;
+  --ink-2: #57605c;
+  --ink-3: #89918d;
+  --rule: #d3d8d1;
+  --accent: #2f4f6a;
+  --accent-ink: #ffffff;
+  --gloss-line: #7d8f9e;
+  --saved: #e2b93b;
   --focus: #2f6fb3;
-  --shadow: 0 1px 2px rgb(40 28 18 / .08), 0 8px 24px rgb(40 28 18 / .10);
+  --shadow: 0 1px 2px rgb(28 34 32 / .06), 0 12px 32px -8px rgb(28 34 32 / .18);
 
-  /* library room */
-  --wall-1: #e9dfcf;
-  --wall-2: #d9ccb7;
-  --wood-1: #7b5436;
-  --wood-2: #5e3e26;
-  --wood-3: #43291a;
-  --wood-edge: #8d6443;
-  --brass-1: #e2c77e;
-  --brass-2: #a8873f;
-  --brass-ink: #3b2c10;
-  --lamp: rgb(255 226 170 / .55);
-  --book-shadow: rgb(20 10 4 / .45);
+  --ledge: #f7f7f4;
+  --ledge-edge: #d6dad3;
+  --ledge-shadow: rgb(40 48 44 / .22);
+  --book-shadow: rgb(28 34 32 / .35);
+  --scrim: rgb(232 234 230 / .82);
+
+  /* reader page */
+  --page: #ffffff;
+  --page-ink: #1b1b1b;
+  --page-ink-2: #6b6b6b;
+  --surround: #eceeeb;
 }
 
-:root[data-theme="sepia"] {
-  --bg: #efe3cc;
-  --surface: #f6ecd8;
-  --surface-2: #e8d9bc;
-  --ink: #3b2e22;
-  --ink-2: #624f3d;
-  --ink-3: #8d7760;
-  --rule: #d8c6a6;
-  --gloss-line: #a4703f;
+:root[data-theme="paper"] {
+  --wall: #ece5d6; --bg: #ece5d6; --surface: #f8f2e5; --surface-2: #efe7d6;
+  --ink: #3a2f24; --ink-2: #6d5d4c; --ink-3: #978672; --rule: #dccfb8;
+  --gloss-line: #9b8266; --ledge: #f6f0e3; --ledge-edge: #d8ccb5; --scrim: rgb(236 229 214 / .84);
+  --page: #f7f0e1; --page-ink: #3b3024; --page-ink-2: #85735f; --surround: #e9e0cd;
 }
 
-:root[data-theme="dark"] {
+:root[data-theme="gray"] {
   color-scheme: dark;
-  --bg: #17130f;
-  --surface: #1f1a15;
-  --surface-2: #29221b;
-  --ink: #ece3d6;
-  --ink-2: #bfb2a2;
-  --ink-3: #8e8273;
-  --rule: #3a3129;
-  --accent: #d9876f;
-  --accent-ink: #1b120c;
-  --gloss-line: #b78a5f;
-  --saved: #e39a4f;
-  --focus: #79aef0;
-  --shadow: 0 1px 2px rgb(0 0 0 / .3), 0 10px 30px rgb(0 0 0 / .45);
+  --wall: #3b3e41; --bg: #3b3e41; --surface: #4a4d51; --surface-2: #54585c;
+  --ink: #ececea; --ink-2: #c3c5c3; --ink-3: #9a9d9c; --rule: #5d6165;
+  --accent: #9cc0e0; --accent-ink: #15222d; --gloss-line: #a9b6c1; --saved: #d9b44a;
+  --shadow: 0 1px 2px rgb(0 0 0 / .25), 0 12px 32px -8px rgb(0 0 0 / .5);
+  --ledge: #4c5054; --ledge-edge: #2e3134; --ledge-shadow: rgb(0 0 0 / .45); --book-shadow: rgb(0 0 0 / .55);
+  --scrim: rgb(59 62 65 / .84);
+  --page: #4b4e52; --page-ink: #e9e9e6; --page-ink-2: #b0b2b1; --surround: #3b3e41;
+}
 
-  --wall-1: #231c16;
-  --wall-2: #18130f;
-  --wood-1: #5a3c25;
-  --wood-2: #432b19;
-  --wood-3: #2c1b10;
-  --wood-edge: #6c4a30;
-  --brass-1: #d4b56a;
-  --brass-2: #8c6f31;
-  --lamp: rgb(255 196 120 / .22);
-  --book-shadow: rgb(0 0 0 / .65);
+:root[data-theme="night"] {
+  color-scheme: dark;
+  --wall: #161a19; --bg: #161a19; --surface: #1f2423; --surface-2: #272d2b;
+  --ink: #e4e3dd; --ink-2: #aeb2ad; --ink-3: #7c827e; --rule: #313836;
+  --accent: #8fb3d4; --accent-ink: #0f1a24; --gloss-line: #6f8394; --saved: #c9a13c;
+  --shadow: 0 1px 2px rgb(0 0 0 / .4), 0 14px 36px -8px rgb(0 0 0 / .7);
+  --ledge: #242a28; --ledge-edge: #0e1110; --ledge-shadow: rgb(0 0 0 / .6); --book-shadow: rgb(0 0 0 / .7);
+  --scrim: rgb(22 26 25 / .86);
+  --page: #1b1f1e; --page-ink: #d8d5cd; --page-ink-2: #8d918c; --surround: #121514;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme]) {
     color-scheme: dark;
-    --bg: #17130f;
-    --surface: #1f1a15;
-    --surface-2: #29221b;
-    --ink: #ece3d6;
-    --ink-2: #bfb2a2;
-    --ink-3: #8e8273;
-    --rule: #3a3129;
-    --accent: #d9876f;
-    --accent-ink: #1b120c;
-    --gloss-line: #b78a5f;
-    --saved: #e39a4f;
-    --focus: #79aef0;
-    --shadow: 0 1px 2px rgb(0 0 0 / .3), 0 10px 30px rgb(0 0 0 / .45);
-    --wall-1: #231c16;
-    --wall-2: #18130f;
-    --wood-1: #5a3c25;
-    --wood-2: #432b19;
-    --wood-3: #2c1b10;
-    --wood-edge: #6c4a30;
-    --brass-1: #d4b56a;
-    --brass-2: #8c6f31;
-    --lamp: rgb(255 196 120 / .22);
-    --book-shadow: rgb(0 0 0 / .65);
+    --wall: #161a19; --bg: #161a19; --surface: #1f2423; --surface-2: #272d2b;
+    --ink: #e4e3dd; --ink-2: #aeb2ad; --ink-3: #7c827e; --rule: #313836;
+    --accent: #8fb3d4; --accent-ink: #0f1a24; --gloss-line: #6f8394; --saved: #c9a13c;
+    --shadow: 0 1px 2px rgb(0 0 0 / .4), 0 14px 36px -8px rgb(0 0 0 / .7);
+    --ledge: #242a28; --ledge-edge: #0e1110; --ledge-shadow: rgb(0 0 0 / .6); --book-shadow: rgb(0 0 0 / .7);
+    --scrim: rgb(22 26 25 / .86);
+    --page: #1b1f1e; --page-ink: #d8d5cd; --page-ink-2: #8d918c; --surround: #121514;
   }
 }
