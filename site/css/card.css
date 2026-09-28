@@ -1,0 +1,69 @@
+/* ================= Word card ================= */
+.card-backdrop { position: fixed; inset: 0; z-index: 44; }
+.card-backdrop.dim { background: rgb(10 6 3 / 0); transition: background .25s; }
+.card-backdrop.dim.open { background: rgb(10 6 3 / .28); }
+
+.card {
+  position: fixed; z-index: 45; display: flex; flex-direction: column;
+  background: var(--surface); color: var(--ink); border: 1px solid var(--rule);
+  box-shadow: var(--shadow); font-family: var(--font-ui);
+}
+.card.pop { border-radius: 14px; animation: pop-in .18s ease-out; overflow: hidden; }
+@keyframes pop-in { from { opacity: 0; transform: translateY(4px) scale(.98); } to { opacity: 1; transform: none; } }
+.card.sheet {
+  left: 0; right: 0; bottom: 0; max-height: 78dvh;
+  border-radius: 18px 18px 0 0; border-bottom: 0;
+  padding-bottom: env(safe-area-inset-bottom);
+  transform: translateY(100%); transition: transform .26s cubic-bezier(.2,.8,.2,1);
+}
+@media (min-width: 640px) { .card.sheet { left: 50%; right: auto; width: min(560px, 100vw); margin-left: max(-280px, -50vw); } }
+.card.sheet.open { transform: none; }
+.sheet-handle { width: 40px; height: 5px; border-radius: 3px; background: var(--rule); margin: 8px auto 0; flex: 0 0 auto; }
+
+.card-head { display: flex; align-items: flex-start; gap: 8px; padding: 14px 10px 8px 18px; touch-action: none; }
+.hw { flex: 1; min-width: 0; }
+.hw h2 { margin: 0; font: 600 24px/1.2 var(--font-read); overflow-wrap: anywhere; }
+.hw .meta { margin: 3px 0 0; font-size: 14px; color: var(--ink-2); }
+.hw .meta .from { color: var(--ink-3); }
+.card-tools { display: flex; gap: 0; margin-top: -4px; }
+.card-tools .star svg { fill: none; }
+.card-tools .star[aria-pressed="true"] { color: var(--saved); }
+.card-tools .star[aria-pressed="true"] svg { fill: currentColor; }
+
+.card-body { overflow-y: auto; overscroll-behavior: contain; padding: 4px 18px 12px; flex: 1 1 auto; }
+.sense { padding: 12px 14px; border-radius: 10px; background: var(--surface-2); }
+.sense .en { margin: 0; font: 16.5px/1.5 var(--font-read); }
+.sense .ko { margin: 6px 0 0; font: 15px/1.5 var(--font-ko); color: var(--ink-2); }
+.modern { margin: 10px 0 0; font-size: 14.5px; display: flex; gap: 8px; align-items: baseline; }
+.modern span { flex: 0 0 auto; font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+.tip {
+  margin: 10px 0 0; padding: 9px 12px; border-radius: 8px; font: 14px/1.55 var(--font-ko);
+  background: color-mix(in srgb, #e8c34a 16%, transparent); border-left: 3px solid #d4a72c;
+}
+.syns h3 { margin: 16px 0 6px; font-size: 11.5px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); }
+.syns ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.syns li { padding-bottom: 10px; border-bottom: 1px solid var(--rule); }
+.syns li:last-child { border-bottom: 0; padding-bottom: 0; }
+.syn-head b, .syn-link { font: 600 16px/1.3 var(--font-read); }
+.syn-link { padding: 0; border: 0; background: none; cursor: pointer; color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+.syns li p { margin: 2px 0 0; font-size: 14px; line-height: 1.5; color: var(--ink-2); }
+.syns li p.ex { font: italic 14.5px/1.5 var(--font-read); color: var(--ink); }
+details.more { margin-top: 12px; }
+details.more summary { cursor: pointer; font-size: 13.5px; color: var(--ink-2); min-height: 32px; display: flex; align-items: center; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.syn-chip { border: 1px solid var(--rule); background: var(--bg); border-radius: 999px; padding: 4px 11px; min-height: 32px; cursor: pointer; font: 14px var(--font-read); }
+.syn-chip:hover { border-color: var(--ink-3); }
+.defs ol { margin: 4px 0 0; padding-left: 20px; display: grid; gap: 6px; font: 15.5px/1.5 var(--font-read); }
+.defs i { font: italic 13px var(--font-ui); color: var(--ink-3); }
+.muted { color: var(--ink-3); font-size: 14px; }
+.skeleton { height: 14px; border-radius: 6px; margin: 10px 0; background: linear-gradient(90deg, var(--surface-2), var(--rule), var(--surface-2)); background-size: 200% 100%; animation: shimmer 1.2s linear infinite; }
+.skeleton.short { width: 60%; }
+@keyframes shimmer { to { background-position: -200% 0; } }
+
+.card-links { display: flex; flex-wrap: wrap; gap: 6px; padding: 10px 18px 14px; border-top: 1px solid var(--rule); flex: 0 0 auto; }
+.card-links a {
+  display: inline-flex; align-items: center; gap: 4px; min-height: 32px; padding: 0 10px; border-radius: 8px;
+  font-size: 13px; text-decoration: none; color: var(--ink-2); background: var(--surface-2);
+}
+.card-links a:hover { color: var(--ink); }
+.card-links svg { width: 13px; height: 13px; }

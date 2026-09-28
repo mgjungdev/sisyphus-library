@@ -1,0 +1,146 @@
+{
+ "shelves": [
+  {
+   "month": "2026-10",
+   "label": "October 2026",
+   "books": [
+    {
+     "slug": "happy-prince",
+     "title": "The Happy Prince",
+     "author": "Oscar Wilde",
+     "year": 1888,
+     "spine": {
+      "color": "#8a3b2e",
+      "height": 0.92,
+      "thickness": 34
+     },
+     "cover": {
+      "motif": "swallow",
+      "accent": "#d9b45a"
+     },
+     "status": "ready",
+     "words": 3472,
+     "minutes": 19,
+     "entries": 58
+    },
+    {
+     "slug": "gift-of-the-magi",
+     "title": "The Gift of the Magi",
+     "author": "O. Henry",
+     "year": 1905,
+     "spine": {
+      "color": "#2f4a3a",
+      "height": 0.84,
+      "thickness": 26
+     },
+     "cover": {
+      "motif": "comb",
+      "accent": "#c9a86a"
+     },
+     "status": "ready",
+     "words": 2063,
+     "minutes": 11,
+     "entries": 60
+    }
+   ]
+  },
+  {
+   "month": "2026-11",
+   "label": "November 2026",
+   "books": [
+    {
+     "slug": "selfish-giant",
+     "title": "The Selfish Giant",
+     "author": "Oscar Wilde",
+     "year": 1888,
+     "spine": {
+      "color": "#3d5a73",
+      "height": 0.88,
+      "thickness": 22
+     },
+     "cover": {
+      "motif": "tree",
+      "accent": "#e6d2a2"
+     },
+     "status": "planned"
+    },
+    {
+     "slug": "last-leaf",
+     "title": "The Last Leaf",
+     "author": "O. Henry",
+     "year": 1907,
+     "spine": {
+      "color": "#6b5a2a",
+      "height": 0.8,
+      "thickness": 24
+     },
+     "cover": {
+      "motif": "leaf",
+      "accent": "#e0b872"
+     },
+     "status": "planned"
+    }
+   ]
+  },
+  {
+   "month": "2026-12",
+   "label": "December 2026",
+   "books": [
+    {
+     "slug": "nightingale-and-the-rose",
+     "title": "The Nightingale and the Rose",
+     "author": "Oscar Wilde",
+     "year": 1888,
+     "spine": {
+      "color": "#5a2438",
+      "height": 0.95,
+      "thickness": 28
+     },
+     "cover": {
+      "motif": "rose",
+      "accent": "#e7b7a3"
+     },
+     "status": "planned"
+    },
+    {
+     "slug": "after-twenty-years",
+     "title": "After Twenty Years",
+     "author": "O. Henry",
+     "year": 1906,
+     "spine": {
+      "color": "#2e3440",
+      "height": 0.78,
+      "thickness": 20
+     },
+     "cover": {
+      "motif": "lamp",
+      "accent": "#d8c08a"
+     },
+     "status": "planned"
+    }
+   ]
+  },
+  {
+   "month": "2027-01",
+   "label": "January 2027",
+   "books": [
+    {
+     "slug": "tell-tale-heart",
+     "title": "The Tell-Tale Heart",
+     "author": "Edgar Allan Poe",
+     "year": 1843,
+     "spine": {
+      "color": "#1f1f24",
+      "height": 0.86,
+      "thickness": 22
+     },
+     "cover": {
+      "motif": "heart",
+      "accent": "#b3423a"
+     },
+     "status": "planned"
+    }
+   ]
+  }
+ ]
+}

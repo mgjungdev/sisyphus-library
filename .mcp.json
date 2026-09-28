@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "gutenberg": {
+      "command": "npx",
+      "args": ["-y", "@cyanheads/gutenberg-mcp-server@latest"]
+    }
+  }
+}
