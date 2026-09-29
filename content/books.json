@@ -814,7 +814,9 @@
    "accent": "#ecc9a8"
   },
   "month": "2027-06",
-  "plan": 33
+  "plan": 33,
+  "gutenberg": 0,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "cop-and-the-anthem",
@@ -836,7 +838,9 @@
    "accent": "#f3e2b8"
   },
   "month": "2027-06",
-  "plan": 34
+  "plan": 34,
+  "gutenberg": 2776,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "ivan-the-fool",
@@ -884,7 +888,9 @@
    "accent": "#ecc9a8"
   },
   "month": "2027-06",
-  "plan": 36
+  "plan": 36,
+  "gutenberg": 160,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "lottery-ticket",
