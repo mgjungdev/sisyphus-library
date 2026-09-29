@@ -8,3 +8,4 @@ logs/
 PAUSE
 .pipeline.lock
 pipeline.config.json
+.mirror/
