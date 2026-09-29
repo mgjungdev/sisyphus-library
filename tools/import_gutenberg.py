@@ -5,6 +5,9 @@ Usage:
         [--heading REGEX]   paragraphs fully matching REGEX become chapter headings ("## ...")
         [--raw PATH]        use a local plain-text file instead of downloading (gutenberg_id = 0)
         [--nth N]           use the Nth line equal to the start heading (e.g. 2 to skip a table of contents)
+        [--keep-start]      keep the start heading line itself (a volume that opens on a chapter heading)
+        [--drop REGEX]      leave out paragraphs fully matching REGEX (e.g. title pages reprinted inside the text)
+        [--end-nth N]       end at the Nth line (counted from the top) equal to the end heading, not the first after the start
 
 The start heading is the exact line that opens the story (e.g. "The Happy Prince.").
 The story runs until the end heading, or until the Gutenberg END marker.
@@ -30,19 +33,22 @@ def fetch(gid: int) -> str:
     return path.read_text(encoding="utf-8-sig")
 
 
-def cut(text: str, start: str, end: str | None, nth: int = 1) -> list[str]:
+def cut(text: str, start: str, end: str | None, nth: int = 1, keep_start: bool = False,
+        end_nth: int | None = None) -> list[str]:
     lines = text.splitlines()
     body_start = next((i for i, l in enumerate(lines) if l.startswith("*** START OF")), -1)
     body_end = next((i for i, l in enumerate(lines) if l.startswith("*** END OF")), len(lines))
     lines = lines[body_start + 1 : body_end]
     s = [i for i, l in enumerate(lines) if l.strip() == start][nth - 1]
     e = len(lines)
-    if end:
+    if end and end_nth:
+        e = [i for i, l in enumerate(lines) if l.strip() == end][end_nth - 1]
+    elif end:
         e = next(i for i, l in enumerate(lines) if i > s and l.strip() == end)
-    return lines[s + 1 : e]
+    return lines[s if keep_start else s + 1 : e]
 
 
-def paragraphs(lines: list[str], heading: str | None = None) -> list[str]:
+def paragraphs(lines: list[str], heading: str | None = None, drop: str | None = None) -> list[str]:
     paras, cur = [], []
     for l in lines:
         if not l.strip():
@@ -55,13 +61,15 @@ def paragraphs(lines: list[str], heading: str | None = None) -> list[str]:
         paras.append(" ".join(cur))
     out = []
     for p in paras:
-        if re.fullmatch(r"\[Picture:[^\]]*\]", p) or re.fullmatch(r"[* ]+", p):
+        if re.fullmatch(r"\[(Picture|Illustration)[^\]]*\]", p) or re.fullmatch(r"[* ]+", p):
             continue
         if re.fullmatch(r"by [A-Z][\w. ]+", p):  # byline
             continue
         p = re.sub(r"\s{2,}", " ", p)
+        if drop and re.fullmatch(drop, p.strip()):
+            continue
         if heading and re.fullmatch(heading, p.strip()):
-            out.append("## " + p.strip().rstrip("."))
+            out.append("## " + p.strip().rstrip(".").replace("_", ""))
             continue
         p = p.replace("_", "")  # Gutenberg italics markers (can span paragraphs)
         p = re.sub(r"\s*--\s*", "—", p)  # plain-text dashes
@@ -75,14 +83,18 @@ def main():
     args, opts = [], {}
     it = iter(sys.argv[1:])
     for a in it:
-        if a in ("--heading", "--raw", "--nth"):
+        if a in ("--heading", "--raw", "--nth", "--end-nth", "--drop"):
             opts[a] = next(it)
+        elif a == "--keep-start":
+            opts[a] = True
         else:
             args.append(a)
     slug, gid, start = args[0], int(args[1]), args[2]
     end = args[3] if len(args) > 3 else None
     text = Path(opts["--raw"]).read_text(encoding="utf-8-sig") if "--raw" in opts else fetch(gid)
-    paras = paragraphs(cut(text, start, end, int(opts.get("--nth", 1))), opts.get("--heading"))
+    end_nth = int(opts["--end-nth"]) if "--end-nth" in opts else None
+    paras = paragraphs(cut(text, start, end, int(opts.get("--nth", 1)), "--keep-start" in opts, end_nth),
+                       opts.get("--heading"), opts.get("--drop"))
     SOURCES.mkdir(parents=True, exist_ok=True)
     (SOURCES / f"{slug}.txt").write_text("\n\n".join(paras) + "\n", encoding="utf-8")
     words = sum(len(p.split()) for p in paras if not p.startswith("## "))

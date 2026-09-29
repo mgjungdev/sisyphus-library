@@ -42,7 +42,7 @@
 | `tip_ko` | no | one short Korean tip when Korean speakers typically confuse or mispronounce it |
 | `all` | no (true) | also link the other occurrences of the same `match` in the story |
 
-Selection — entry count scales with length: under 1,500 words 12–30; under 8,000 words 30–60; longer works 60–100, spread across all chapters:
+Selection — entry count scales with length: under 1,500 words 12–30; under 8,000 words 30–60; under 20,000 words 60–100; a novel volume (20,000+ words) 90–140 — always spread across all chapters:
 1. hard or rare words a B1–B2 learner would not know,
 2. easy-looking words whose synonyms differ in nuance (gaze / stare / glance),
 3. archaic, literary or idiomatic expressions (incl. multi-word phrases).

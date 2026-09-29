@@ -1,4 +1,4 @@
-import { esc } from './art.js';
+import { esc, roman, volOf } from './art.js';
 import { openCard, closeCard, cardOpen } from './card.js';
 import { getProgress, setProgress, savedAt, isSaved, prefs, subscribe } from './store.js';
 
@@ -49,7 +49,13 @@ export function renderReader(root, book, startPara) {
     ? chapters.map((c, i) => ({ title: c.title, start: i === 0 ? 1 : c.para, end: (chapters[i + 1]?.para ?? total + 1) - 1 }))
     : [{ title: '', start: 1, end: total }];
   const segOf = para => Math.max(0, segs.findIndex(x => para >= x.start && para <= x.end));
-  const titlePage = `<section class="tp"><p class="tp-author">${esc(book.author)}</p><h1>${esc(book.title)}</h1><p class="tp-year">${book.year < 0 ? `c. ${-book.year} BC` : book.year < 1000 ? `c. ${book.year}` : book.year}</p></section>`;
+  const titlePage = `<section class="tp"><p class="tp-author">${esc(book.author)}</p><h1>${esc(book.title)}</h1>${book.vol ? `<p class="tp-vol">${volOf(book)}</p>` : ''}<p class="tp-year">${book.year < 0 ? `c. ${-book.year} BC` : book.year < 1000 ? `c. ${book.year}` : book.year}</p></section>`;
+  // The last volume ends the novel; the others hand over to the next volume once it is on the shelf.
+  const more = book.vol && book.vol < book.vols;
+  const endHTML = !more ? '<p class="the-end">The End</p>'
+    : `<p class="the-end">End of Volume ${roman(book.vol)}</p>` + (book.next
+      ? `<p class="next-vol"><a href="#/read/${esc(book.next.slug)}">Continue to Volume ${roman(book.next.vol)}</a></p>`
+      : `<p class="next-vol soon">Volume ${roman(book.vol + 1)} is coming soon</p>`);
   const paraHTML = i => {
     const p = book.paragraphs[i - 1];
     if (p.length === 1 && p[0] && p[0].h) return `<h2 class="ch" id="p${i}" data-p="${i}">${esc(p[0].h)}</h2>`;
@@ -62,7 +68,7 @@ export function renderReader(root, book, startPara) {
   <div class="ereader">
     <header class="r-top chrome">
       <a class="r-back" href="#/">${ICON.back}<span>Library</span></a>
-      <div class="r-title"><b>${esc(book.title)}</b><span>${esc(book.author)}</span></div>
+      <div class="r-title"><b>${esc(book.title)}${book.vol ? ` ${roman(book.vol)}` : ''}</b><span>${esc(book.author)}</span></div>
       <div class="r-actions">
         <button class="icon-btn" data-panel="words" aria-label="Words in this story" aria-expanded="false">${ICON.list}</button>
         <button class="icon-btn aa" data-panel="aa" aria-label="Reading settings" aria-expanded="false">Aa</button>
@@ -142,7 +148,7 @@ export function renderReader(root, book, startPara) {
     const sg = segs[n];
     let html = n === 0 ? titlePage : '';
     for (let i = sg.start; i <= sg.end; i++) html += paraHTML(i);
-    if (n === segs.length - 1) html += '<p class="the-end">The End</p>';
+    if (n === segs.length - 1) html += endHTML;
     flow.innerHTML = html + '<span class="flow-end"></span>';
     paras = [...flow.querySelectorAll('[data-p]')];
   }
@@ -249,7 +255,7 @@ export function renderReader(root, book, startPara) {
     R.querySelector('.pos').textContent = segs.length > 1 ? `${segs[si].title}, p${pages}` : `P${pages}`;
     const para = page === 0 ? segs[si].start : firstParaOnPage(page);
     const left = Math.max(0, Math.round(book.minutes * (1 - para / total)));
-    R.querySelector('.left').textContent = end ? 'End of story' : left <= 1 ? 'Less than a minute left' : `${left} min left`;
+    R.querySelector('.left').textContent = end ? (more ? 'End of volume' : 'End of story') : left <= 1 ? 'Less than a minute left' : `${left} min left`;
     R.querySelectorAll('.prev').forEach(b => { b.disabled = page === 0 && si === 0; });
     R.querySelectorAll('.next').forEach(b => { b.disabled = end; });
     setProgress(book.slug, end ? total : para, end ? 100 : (para / total) * 100, total);

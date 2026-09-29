@@ -76,7 +76,7 @@ def check(slug: str) -> list[str]:
         spans[key] = eid
     n = len(data.get("entries", []))
     words = sum(len(p.split()) for p in paras if not p.startswith("## "))
-    lo, hi = (25, 70) if words < 8000 else (40, 110)
+    lo, hi = (25, 70) if words < 8000 else (40, 110) if words < 20000 else (80, 150)
     if words < 1500:
         lo = 12
     if not lo <= n <= hi:

@@ -95,11 +95,27 @@ def next_wave(st: list[tuple[dict, str]]) -> list[tuple[dict, str]]:
 
 # ---- control queue ---------------------------------------------------------------------
 
+def vol_label(b: dict) -> str:
+    return f" {b['vol']}권" if b.get("vol") else ""
+
+
 def job_for(b: dict, s: str, models: dict) -> dict | None:
     slug, title = b["slug"], b.get("title", b["slug"])
     who = f"{slug} (\"{title}\"{' by ' + b['author'] if b.get('author') else ''})"
+    if b.get("vol"):
+        who += f", volume {b['vol']} of {b['vols']} (the other volumes are separate books)"
+    src = b.get("source")
+    if s == "no-source" and src and b.get("gutenberg"):
+        # The volume split was planned from the downloaded text (tools/plan_volumes.py): cut it as planned.
+        argv = ["python", "tools/import_gutenberg.py", slug, str(b["gutenberg"]), src["from"]]
+        argv += [src["to"]] if src.get("to") else []
+        argv += ["--nth", str(src.get("nth", 1)), "--keep-start"]
+        argv += ["--end-nth", str(src["to_nth"])] if src.get("to_nth") else []
+        argv += ["--heading", src["heading"]] if src.get("heading") else []
+        argv += ["--drop", src["drop"]] if src.get("drop") else []
+        return {"key": f"import:{slug}", "title": f"{title}{vol_label(b)} · 원문", "tags": [slug], "argv": argv}
     if s == "no-source":
-        return {"key": f"import:{slug}", "title": f"{title} · 원문", "model": models["import"], "tags": [slug],
+        return {"key": f"import:{slug}", "title": f"{title}{vol_label(b)} · 원문", "model": models["import"], "tags": [slug],
                 "prompt": f"Import the source text of the Sisyphus Library book {who}. Follow "
                           f"`.claude/agents/book-importer.md` exactly for this one slug, then record the id with "
                           f"`python tools/set_source.py {slug}=<gutenberg id>`. If the Gutenberg MCP catalog is down, "
@@ -110,12 +126,12 @@ def job_for(b: dict, s: str, models: dict) -> dict | None:
         fix = (" The glossary already exists but fails `python tools/check_glossary.py`; fix the existing file "
                "instead of rewriting it." if s == "failing" else "")
         long = f" The story has {w} words, so work from `python tools/candidates.py {slug}`." if w > LONG else ""
-        return {"key": f"glossary:{slug}", "title": f"{title} · 어휘집", "model": models["glossary"], "tags": [slug],
+        return {"key": f"glossary:{slug}", "title": f"{title}{vol_label(b)} · 어휘집", "model": models["glossary"], "tags": [slug],
                 "prompt": f"Write the glossary for the Sisyphus Library book {who}. Follow "
                           f"`.claude/agents/glossary-writer.md` exactly.{long}{fix} "
                           f"`python tools/check_glossary.py {slug}` must pass before you finish."}
     if s == "unreviewed":
-        return {"key": f"check:{slug}", "title": f"{title} · 검토", "model": models["check"], "tags": [slug],
+        return {"key": f"check:{slug}", "title": f"{title}{vol_label(b)} · 검토", "model": models["check"], "tags": [slug],
                 "prompt": f"Review the glossary of the Sisyphus Library book {who}, which you did not write. Follow "
                           f"`.claude/agents/glossary-checker.md` exactly for this slug. When "
                           f"`python tools/check_glossary.py {slug}` passes after your fixes, run "
@@ -150,7 +166,7 @@ def wave_table() -> list[dict]:
 def panel() -> dict:
     st = states()
     nxt = {b["slug"] for b, _ in next_wave(st)}
-    by = {b["slug"]: {"slug": b["slug"], "title": b.get("title", b["slug"]), "month": b["month"], "stage": s}
+    by = {b["slug"]: {"slug": b["slug"], "title": b.get("title", b["slug"]) + vol_label(b), "month": b["month"], "stage": s}
           for b, s in st}
     counts: dict[str, int] = {}
     for _, s in st:

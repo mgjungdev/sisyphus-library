@@ -34,6 +34,9 @@ body[data-view="reader"] .topbar { display: none; }
 .flow p { margin: 0; text-indent: 1.5em; }
 .flow p[data-p="1"] { text-indent: 0; }
 .flow p[data-p="1"]::first-line { font-variant: small-caps; letter-spacing: .03em; }
+.flow .next-vol { text-indent: 0; text-align: center; margin-top: 1.2em; }
+.flow .next-vol a { color: inherit; font-style: italic; text-underline-offset: .2em; }
+.flow .next-vol.soon { font-size: .9em; color: var(--page-ink-2); }
 .flow .the-end { text-indent: 0; text-align: center; margin-top: 2.5em; font-style: italic; color: var(--page-ink-2); }
 
 .tp {
@@ -42,6 +45,7 @@ body[data-view="reader"] .topbar { display: none; }
 }
 .tp h1 { margin: 0; font-weight: 400; font-size: calc(var(--fs) * 2.3); line-height: 1.05; letter-spacing: -.01em; text-wrap: balance; }
 .tp .tp-author { margin: 0 0 .6em; text-indent: 0; font-size: calc(var(--fs) * .95); font-style: italic; }
+.tp .tp-vol { margin: .5em 0 0; text-indent: 0; font-size: calc(var(--fs) * .85); letter-spacing: .12em; text-transform: uppercase; color: var(--page-ink-2); }
 .tp .tp-year { margin: .9em 0 0; text-indent: 0; font-size: calc(var(--fs) * .8); color: var(--page-ink-2); }
 
 /* words in the text */

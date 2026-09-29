@@ -1,4 +1,4 @@
-import { coverHTML, initials, esc } from './art.js';
+import { coverHTML, initials, esc, roman, volOf } from './art.js';
 import { getProgress, prefs } from './store.js';
 
 const reduceMotion = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -82,11 +82,12 @@ export function renderLibrary(root, lib, { go }) {
     };
     const indexItem = b => {
       const cls = tag && !b.tags.includes(tag) ? ' class="off"' : '';
-      if (b.status !== 'ready') return `<li${cls} data-slug="${b.slug}"><div class="planned"><span class="t">${esc(b.title)}</span><span class="a">${esc(b.author)}, ${yearText(b.year)}</span></div></li>`;
+      const title = esc(b.title) + (b.vol ? ` <span class="v">${roman(b.vol)}</span>` : '');
+      if (b.status !== 'ready') return `<li${cls} data-slug="${b.slug}"><div class="planned"><span class="t">${title}</span><span class="a">${esc(b.author)}, ${yearText(b.year)}</span></div></li>`;
       const p = getProgress(b.slug);
       const right = p?.done ? 'Finished' : p ? `${p.pct}%` : `${b.minutes} min`;
       return `<li${cls} data-slug="${b.slug}"><button type="button" data-open="${b.slug}">
-        <span class="t">${esc(b.title)}</span><span class="a">${esc(b.author)}, ${yearText(b.year)}</span><span class="r">${right}</span>
+        <span class="t">${title}</span><span class="a">${esc(b.author)}, ${yearText(b.year)}</span><span class="r">${right}</span>
         ${p && !p.done ? `<span class="bar"><i style="width:${p.pct}%"></i></span>` : ''}
       </button></li>`;
     };
@@ -224,7 +225,7 @@ function bookHTML(b, shelfH, groupLabel) {
   const fs = Math.max(8, Math.min(t * 0.4, 15, (h - 50) / (b.title.length * 0.56))).toFixed(1);
   const p = getProgress(b.slug);
   const ready = b.status === 'ready';
-  const label = `${b.title} by ${b.author}${ready ? '' : `, ${groupLabel}, coming soon`}`;
+  const label = `${b.title}${b.vol ? `, volume ${b.vol} of ${b.vols},` : ''} by ${b.author}${ready ? '' : `, ${groupLabel}, coming soon`}`;
   return `
   <button class="book" type="button" data-slug="${b.slug}" data-status="${b.status}"
     style="--h:${h}px;--t:${t}px;--w:${w}px;--fs:${fs}px;--c:${b.spine?.color};--a:${b.cover?.accent}"
@@ -233,11 +234,16 @@ function bookHTML(b, shelfH, groupLabel) {
       ${ready ? `<span class="face back"></span>
       <span class="face top"></span>
       <span class="face cover">${coverHTML(b)}</span>` : ''}
-      <span class="face spine"><span class="spine-title">${esc(b.title)}</span><span class="spine-author">${esc(initials(b.author))}</span></span>
+      <span class="face spine">${spineHTML(b)}</span>
       ${p && !p.done ? '<span class="face ribbon"></span>' : ''}
       ${p && p.done ? '<span class="face done-mark"></span>' : ''}
     </span>
   </button>`;
+}
+
+function spineHTML(b) {
+  const vol = b.vol ? `<span class="spine-vol">${roman(b.vol)}</span>` : '';
+  return `<span class="spine-title">${esc(b.title)}</span>${vol}<span class="spine-author">${esc(initials(b.author))}</span>`;
 }
 
 /* ---------------- pull-out ---------------- */
@@ -274,14 +280,15 @@ function pullOut(el, book, go) {
         <span class="face back"></span>
         <span class="face top"></span>
         <span class="face cover">
-          <span class="title-page"><span class="tt">${esc(book.title)}</span><hr><span class="ta">${esc(book.author)}</span></span>
+          <span class="title-page"><span class="tt">${esc(book.title)}</span>${book.vol ? `<span class="tv">${volOf(book)}</span>` : ''}<hr><span class="ta">${esc(book.author)}</span></span>
           <span class="cover-board">${coverHTML(book)}<span class="endpaper"></span></span>
         </span>
-        <span class="face spine"><span class="spine-title">${esc(book.title)}</span><span class="spine-author">${esc(initials(book.author))}</span></span>
+        <span class="face spine">${spineHTML(book)}</span>
       </span>
     </div>
     <section class="flight-info" style="${infoStyle}" role="dialog" aria-modal="true" aria-labelledby="fi-title">
       <h2 id="fi-title">${esc(book.title)}</h2>
+      ${book.vol ? `<p class="vol">${volOf(book)}</p>` : ''}
       <p class="by">${esc(book.author)}, ${yearText(book.year)}</p>
       <dl>
         <dt>Genre</dt><dd>${esc(book.genre)}</dd>

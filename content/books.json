@@ -936,7 +936,8 @@
    "accent": "#ecc9a8"
   },
   "month": "2027-07",
-  "plan": 38
+  "plan": 38,
+  "gutenberg": 2776
  },
  {
   "slug": "call-of-the-wild",
@@ -959,7 +960,8 @@
    "accent": "#d8c48a"
   },
   "month": "2027-07",
-  "plan": 39
+  "plan": 39,
+  "gutenberg": 215
  },
  {
   "slug": "scandal-in-bohemia",
@@ -981,7 +983,8 @@
    "accent": "#d9c08a"
   },
   "month": "2027-07",
-  "plan": 40
+  "plan": 40,
+  "gutenberg": 1661
  },
  {
   "slug": "cask-of-amontillado",
@@ -1003,7 +1006,8 @@
    "accent": "#c9a24a"
   },
   "month": "2027-08",
-  "plan": 41
+  "plan": 41,
+  "gutenberg": 2148
  },
  {
   "slug": "christmas-carol",
@@ -1026,7 +1030,8 @@
    "accent": "#d6cfb8"
   },
   "month": "2027-08",
-  "plan": 42
+  "plan": 42,
+  "gutenberg": 46
  },
  {
   "slug": "country-of-the-blind",
@@ -1048,7 +1053,8 @@
    "accent": "#e0cf94"
   },
   "month": "2027-08",
-  "plan": 43
+  "plan": 43,
+  "gutenberg": 11870
  },
  {
   "slug": "desirees-baby",
@@ -1071,7 +1077,8 @@
    "accent": "#ecc9a8"
   },
   "month": "2027-08",
-  "plan": 44
+  "plan": 44,
+  "gutenberg": 46650
  },
  {
   "slug": "jumping-frog",
@@ -1094,7 +1101,8 @@
    "accent": "#f3e2b8"
   },
   "month": "2027-09",
-  "plan": 45
+  "plan": 45,
+  "gutenberg": 10947
  },
  {
   "slug": "garden-party",
@@ -1116,7 +1124,8 @@
    "accent": "#e2cfa3"
   },
   "month": "2027-09",
-  "plan": 46
+  "plan": 46,
+  "gutenberg": 1429
  },
  {
   "slug": "outcasts-of-poker-flat",
@@ -1138,7 +1147,8 @@
    "accent": "#d8c48a"
   },
   "month": "2027-09",
-  "plan": 47
+  "plan": 47,
+  "gutenberg": 6373
  },
  {
   "slug": "red-headed-league",
@@ -1160,7 +1170,8 @@
    "accent": "#d9c08a"
   },
   "month": "2027-09",
-  "plan": 48
+  "plan": 48,
+  "gutenberg": 1661
  },
  {
   "slug": "masque-of-the-red-death",
@@ -1182,7 +1193,8 @@
    "accent": "#c9a24a"
   },
   "month": "2027-10",
-  "plan": 49
+  "plan": 49,
+  "gutenberg": 1064
  },
  {
   "slug": "signal-man",
@@ -1204,7 +1216,8 @@
    "accent": "#d6cfb8"
   },
   "month": "2027-10",
-  "plan": 50
+  "plan": 50,
+  "gutenberg": 27924
  },
  {
   "slug": "the-star",
@@ -1248,7 +1261,8 @@
    "accent": "#ecc9a8"
   },
   "month": "2027-10",
-  "plan": 52
+  "plan": 52,
+  "gutenberg": 2776
  },
  {
   "slug": "million-pound-bank-note",
@@ -1271,7 +1285,8 @@
    "accent": "#f3e2b8"
   },
   "month": "2027-11",
-  "plan": 53
+  "plan": 53,
+  "gutenberg": 61522
  },
  {
   "slug": "the-bet",
@@ -1293,7 +1308,8 @@
    "accent": "#e2cfa3"
   },
   "month": "2027-11",
-  "plan": 54
+  "plan": 54,
+  "gutenberg": 55283
  },
  {
   "slug": "luck-of-roaring-camp",
@@ -1315,7 +1331,8 @@
    "accent": "#d8c48a"
   },
   "month": "2027-11",
-  "plan": 55
+  "plan": 55,
+  "gutenberg": 6373
  },
  {
   "slug": "speckled-band",
@@ -1337,7 +1354,8 @@
    "accent": "#d9c08a"
   },
   "month": "2027-11",
-  "plan": 56
+  "plan": 56,
+  "gutenberg": 1661
  },
  {
   "slug": "black-cat",
@@ -2322,5 +2340,9463 @@
   },
   "month": "2028-10",
   "plan": 100
+ },
+ {
+  "slug": "treasure-island-1",
+  "title": "Treasure Island",
+  "author": "Robert Louis Stevenson",
+  "year": 1883,
+  "genre": "Adventure",
+  "level": 3,
+  "tags": [
+   "British",
+   "sea",
+   "treasure"
+  ],
+  "spine": {
+   "color": "#8a3b2e",
+   "height": 0.92
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#e3c16f"
+  },
+  "month": "2028-11",
+  "gutenberg": 120,
+  "plan": 101,
+  "series": "treasure-island",
+  "vol": 1,
+  "vols": 2,
+  "source": {
+   "from": "PART ONE--The Old Buccaneer",
+   "nth": 1,
+   "to": "XIX",
+   "heading": "PART [A-Z]+--.*|[IVXLC]+ [A-Z“][^.?!]*",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "treasure-island-2",
+  "title": "Treasure Island",
+  "author": "Robert Louis Stevenson",
+  "year": 1883,
+  "genre": "Adventure",
+  "level": 3,
+  "tags": [
+   "British",
+   "sea",
+   "treasure"
+  ],
+  "spine": {
+   "color": "#8a3b2e",
+   "height": 0.92
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#e3c16f"
+  },
+  "month": "2028-11",
+  "gutenberg": 120,
+  "plan": 102,
+  "series": "treasure-island",
+  "vol": 2,
+  "vols": 2,
+  "source": {
+   "from": "XIX",
+   "nth": 1,
+   "to": null,
+   "heading": "PART [A-Z]+--.*|[IVXLC]+ [A-Z“][^.?!]*"
+  }
+ },
+ {
+  "slug": "around-the-world-1",
+  "title": "Around the World in Eighty Days",
+  "author": "Jules Verne",
+  "year": 1873,
+  "genre": "Adventure",
+  "level": 3,
+  "tags": [
+   "French",
+   "journey",
+   "time"
+  ],
+  "spine": {
+   "color": "#2e5358",
+   "height": 0.85
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#d8c48a"
+  },
+  "month": "2028-11",
+  "gutenberg": 103,
+  "plan": 103,
+  "series": "around-the-world",
+  "vol": 1,
+  "vols": 2,
+  "source": {
+   "from": "CHAPTER I.",
+   "nth": 1,
+   "to": "CHAPTER XXI.",
+   "heading": "CHAPTER [IVXLC]+\\..*",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "around-the-world-2",
+  "title": "Around the World in Eighty Days",
+  "author": "Jules Verne",
+  "year": 1873,
+  "genre": "Adventure",
+  "level": 3,
+  "tags": [
+   "French",
+   "journey",
+   "time"
+  ],
+  "spine": {
+   "color": "#2e5358",
+   "height": 0.85
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#d8c48a"
+  },
+  "month": "2028-11",
+  "gutenberg": 103,
+  "plan": 104,
+  "series": "around-the-world",
+  "vol": 2,
+  "vols": 2,
+  "source": {
+   "from": "CHAPTER XXI.",
+   "nth": 1,
+   "to": null,
+   "heading": "CHAPTER [IVXLC]+\\..*"
+  }
+ },
+ {
+  "slug": "hound-of-the-baskervilles-1",
+  "title": "The Hound of the Baskervilles",
+  "author": "Arthur Conan Doyle",
+  "year": 1902,
+  "genre": "Mystery & Detective",
+  "level": 3,
+  "tags": [
+   "British",
+   "Sherlock Holmes"
+  ],
+  "spine": {
+   "color": "#243a5e",
+   "height": 0.95
+  },
+  "cover": {
+   "motif": "key",
+   "accent": "#d9c08a"
+  },
+  "month": "2028-12",
+  "gutenberg": 2852,
+  "plan": 105,
+  "series": "hound-of-the-baskervilles",
+  "vol": 1,
+  "vols": 2,
+  "source": {
+   "from": "Chapter 1.",
+   "nth": 1,
+   "to": "Chapter 9.",
+   "heading": "Chapter \\d+\\. .*",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "hound-of-the-baskervilles-2",
+  "title": "The Hound of the Baskervilles",
+  "author": "Arthur Conan Doyle",
+  "year": 1902,
+  "genre": "Mystery & Detective",
+  "level": 3,
+  "tags": [
+   "British",
+   "Sherlock Holmes"
+  ],
+  "spine": {
+   "color": "#243a5e",
+   "height": 0.95
+  },
+  "cover": {
+   "motif": "key",
+   "accent": "#d9c08a"
+  },
+  "month": "2028-12",
+  "gutenberg": 2852,
+  "plan": 106,
+  "series": "hound-of-the-baskervilles",
+  "vol": 2,
+  "vols": 2,
+  "source": {
+   "from": "Chapter 9.",
+   "nth": 1,
+   "to": "THE END",
+   "heading": "Chapter \\d+\\. .*"
+  }
+ },
+ {
+  "slug": "tom-sawyer-1",
+  "title": "The Adventures of Tom Sawyer",
+  "author": "Mark Twain",
+  "year": 1876,
+  "genre": "Adventure",
+  "level": 3,
+  "tags": [
+   "American",
+   "children",
+   "humor"
+  ],
+  "spine": {
+   "color": "#2f4a3a",
+   "height": 0.89
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#d8c48a"
+  },
+  "month": "2028-12",
+  "gutenberg": 74,
+  "plan": 107,
+  "series": "tom-sawyer",
+  "vol": 1,
+  "vols": 2,
+  "source": {
+   "from": "CHAPTER I",
+   "nth": 1,
+   "to": "CHAPTER XVII",
+   "heading": "CHAPTER [IVXLC]+|CONCLUSION",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "tom-sawyer-2",
+  "title": "The Adventures of Tom Sawyer",
+  "author": "Mark Twain",
+  "year": 1876,
+  "genre": "Adventure",
+  "level": 3,
+  "tags": [
+   "American",
+   "children",
+   "humor"
+  ],
+  "spine": {
+   "color": "#2f4a3a",
+   "height": 0.89
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#d8c48a"
+  },
+  "month": "2028-12",
+  "gutenberg": 74,
+  "plan": 108,
+  "series": "tom-sawyer",
+  "vol": 2,
+  "vols": 2,
+  "source": {
+   "from": "CHAPTER XVII",
+   "nth": 1,
+   "to": null,
+   "heading": "CHAPTER [IVXLC]+|CONCLUSION"
+  }
+ },
+ {
+  "slug": "invisible-man-1",
+  "title": "The Invisible Man",
+  "author": "H. G. Wells",
+  "year": 1897,
+  "genre": "Science Fiction & Fantasy",
+  "level": 3,
+  "tags": [
+   "British",
+   "science"
+  ],
+  "spine": {
+   "color": "#2b4f81",
+   "height": 0.85
+  },
+  "cover": {
+   "motif": "planet",
+   "accent": "#e0cf94"
+  },
+  "month": "2029-01",
+  "gutenberg": 5230,
+  "plan": 109,
+  "series": "invisible-man",
+  "vol": 1,
+  "vols": 2,
+  "source": {
+   "from": "CHAPTER I.",
+   "nth": 1,
+   "to": "CHAPTER XVIII.",
+   "heading": "CHAPTER [IVXLC]+\\..*|THE EPILOGUE",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "invisible-man-2",
+  "title": "The Invisible Man",
+  "author": "H. G. Wells",
+  "year": 1897,
+  "genre": "Science Fiction & Fantasy",
+  "level": 3,
+  "tags": [
+   "British",
+   "science"
+  ],
+  "spine": {
+   "color": "#2b4f81",
+   "height": 0.85
+  },
+  "cover": {
+   "motif": "planet",
+   "accent": "#e0cf94"
+  },
+  "month": "2029-01",
+  "gutenberg": 5230,
+  "plan": 110,
+  "series": "invisible-man",
+  "vol": 2,
+  "vols": 2,
+  "source": {
+   "from": "CHAPTER XVIII.",
+   "nth": 1,
+   "to": null,
+   "heading": "CHAPTER [IVXLC]+\\..*|THE EPILOGUE"
+  }
+ },
+ {
+  "slug": "white-fang-1",
+  "title": "White Fang",
+  "author": "Jack London",
+  "year": 1906,
+  "genre": "Adventure",
+  "level": 3,
+  "tags": [
+   "American",
+   "Yukon",
+   "animals"
+  ],
+  "spine": {
+   "color": "#5b6b3a",
+   "height": 0.84
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#d8c48a"
+  },
+  "month": "2029-01",
+  "gutenberg": 910,
+  "plan": 111,
+  "series": "white-fang",
+  "vol": 1,
+  "vols": 2,
+  "source": {
+   "from": "PART I",
+   "nth": 2,
+   "to": "CHAPTER V",
+   "heading": "PART [IVX]+|CHAPTER [IVXLC]+ [A-Z].*",
+   "to_nth": 2
+  }
+ },
+ {
+  "slug": "white-fang-2",
+  "title": "White Fang",
+  "author": "Jack London",
+  "year": 1906,
+  "genre": "Adventure",
+  "level": 3,
+  "tags": [
+   "American",
+   "Yukon",
+   "animals"
+  ],
+  "spine": {
+   "color": "#5b6b3a",
+   "height": 0.84
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#d8c48a"
+  },
+  "month": "2029-01",
+  "gutenberg": 910,
+  "plan": 112,
+  "series": "white-fang",
+  "vol": 2,
+  "vols": 2,
+  "source": {
+   "from": "CHAPTER V",
+   "nth": 2,
+   "to": null,
+   "heading": "PART [IVX]+|CHAPTER [IVXLC]+ [A-Z].*"
+  }
+ },
+ {
+  "slug": "study-in-scarlet-1",
+  "title": "A Study in Scarlet",
+  "author": "Arthur Conan Doyle",
+  "year": 1887,
+  "genre": "Mystery & Detective",
+  "level": 3,
+  "tags": [
+   "British",
+   "Sherlock Holmes",
+   "London"
+  ],
+  "spine": {
+   "color": "#2b4a70",
+   "height": 0.9
+  },
+  "cover": {
+   "motif": "key",
+   "accent": "#d9c08a"
+  },
+  "month": "2029-02",
+  "gutenberg": 244,
+  "plan": 113,
+  "series": "study-in-scarlet",
+  "vol": 1,
+  "vols": 2,
+  "source": {
+   "from": "PART I.",
+   "nth": 2,
+   "to": "PART II.",
+   "heading": "PART I+\\..*|CHAPTER [IVX]+\\..*",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "study-in-scarlet-2",
+  "title": "A Study in Scarlet",
+  "author": "Arthur Conan Doyle",
+  "year": 1887,
+  "genre": "Mystery & Detective",
+  "level": 3,
+  "tags": [
+   "British",
+   "Sherlock Holmes",
+   "London"
+  ],
+  "spine": {
+   "color": "#2b4a70",
+   "height": 0.9
+  },
+  "cover": {
+   "motif": "key",
+   "accent": "#d9c08a"
+  },
+  "month": "2029-02",
+  "gutenberg": 244,
+  "plan": 114,
+  "series": "study-in-scarlet",
+  "vol": 2,
+  "vols": 2,
+  "source": {
+   "from": "PART II.",
+   "nth": 1,
+   "to": null,
+   "heading": "PART I+\\..*|CHAPTER [IVX]+\\..*"
+  }
+ },
+ {
+  "slug": "prisoner-of-zenda-1",
+  "title": "The Prisoner of Zenda",
+  "author": "Anthony Hope",
+  "year": 1894,
+  "genre": "Adventure",
+  "level": 3,
+  "tags": [
+   "British",
+   "Europe",
+   "romance"
+  ],
+  "spine": {
+   "color": "#4a5a2a",
+   "height": 0.85
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#d8c48a"
+  },
+  "month": "2029-02",
+  "gutenberg": 95,
+  "plan": 115,
+  "series": "prisoner-of-zenda",
+  "vol": 1,
+  "vols": 2,
+  "source": {
+   "from": "CHAPTER 1",
+   "nth": 1,
+   "to": "CHAPTER 12",
+   "heading": "CHAPTER \\d+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "prisoner-of-zenda-2",
+  "title": "The Prisoner of Zenda",
+  "author": "Anthony Hope",
+  "year": 1894,
+  "genre": "Adventure",
+  "level": 3,
+  "tags": [
+   "British",
+   "Europe",
+   "romance"
+  ],
+  "spine": {
+   "color": "#4a5a2a",
+   "height": 0.85
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#d8c48a"
+  },
+  "month": "2029-02",
+  "gutenberg": 95,
+  "plan": 116,
+  "series": "prisoner-of-zenda",
+  "vol": 2,
+  "vols": 2,
+  "source": {
+   "from": "CHAPTER 12",
+   "nth": 1,
+   "to": null,
+   "heading": "CHAPTER \\d+"
+  }
+ },
+ {
+  "slug": "war-of-the-worlds-1",
+  "title": "The War of the Worlds",
+  "author": "H. G. Wells",
+  "year": 1898,
+  "genre": "Science Fiction & Fantasy",
+  "level": 3,
+  "tags": [
+   "British",
+   "space",
+   "war"
+  ],
+  "spine": {
+   "color": "#1f4f66",
+   "height": 0.85
+  },
+  "cover": {
+   "motif": "planet",
+   "accent": "#e0cf94"
+  },
+  "month": "2029-03",
+  "gutenberg": 36,
+  "plan": 117,
+  "series": "war-of-the-worlds",
+  "vol": 1,
+  "vols": 2,
+  "source": {
+   "from": "BOOK ONE",
+   "nth": 1,
+   "to": "XVI.",
+   "heading": "BOOK (ONE|TWO) THE .*|[IVX]+\\. [A-Z“][A-Z “”’,-]+\\.",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "war-of-the-worlds-2",
+  "title": "The War of the Worlds",
+  "author": "H. G. Wells",
+  "year": 1898,
+  "genre": "Science Fiction & Fantasy",
+  "level": 3,
+  "tags": [
+   "British",
+   "space",
+   "war"
+  ],
+  "spine": {
+   "color": "#1f4f66",
+   "height": 0.85
+  },
+  "cover": {
+   "motif": "planet",
+   "accent": "#e0cf94"
+  },
+  "month": "2029-03",
+  "gutenberg": 36,
+  "plan": 118,
+  "series": "war-of-the-worlds",
+  "vol": 2,
+  "vols": 2,
+  "source": {
+   "from": "XVI.",
+   "nth": 1,
+   "to": null,
+   "heading": "BOOK (ONE|TWO) THE .*|[IVX]+\\. [A-Z“][A-Z “”’,-]+\\."
+  }
+ },
+ {
+  "slug": "journey-to-the-centre-1",
+  "title": "A Journey to the Centre of the Earth",
+  "author": "Jules Verne",
+  "year": 1864,
+  "genre": "Science Fiction & Fantasy",
+  "level": 3,
+  "tags": [
+   "French",
+   "journey",
+   "science"
+  ],
+  "spine": {
+   "color": "#1d5c63",
+   "height": 0.96
+  },
+  "cover": {
+   "motif": "planet",
+   "accent": "#e0cf94"
+  },
+  "month": "2029-03",
+  "gutenberg": 18857,
+  "plan": 119,
+  "series": "journey-to-the-centre",
+  "vol": 1,
+  "vols": 3,
+  "source": {
+   "from": "CHAPTER 1",
+   "nth": 1,
+   "to": "CHAPTER 16",
+   "heading": "CHAPTER \\d+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "journey-to-the-centre-2",
+  "title": "A Journey to the Centre of the Earth",
+  "author": "Jules Verne",
+  "year": 1864,
+  "genre": "Science Fiction & Fantasy",
+  "level": 3,
+  "tags": [
+   "French",
+   "journey",
+   "science"
+  ],
+  "spine": {
+   "color": "#1d5c63",
+   "height": 0.96
+  },
+  "cover": {
+   "motif": "planet",
+   "accent": "#e0cf94"
+  },
+  "month": "2029-03",
+  "gutenberg": 18857,
+  "plan": 120,
+  "series": "journey-to-the-centre",
+  "vol": 2,
+  "vols": 3,
+  "source": {
+   "from": "CHAPTER 16",
+   "nth": 1,
+   "to": "CHAPTER 31",
+   "heading": "CHAPTER \\d+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "journey-to-the-centre-3",
+  "title": "A Journey to the Centre of the Earth",
+  "author": "Jules Verne",
+  "year": 1864,
+  "genre": "Science Fiction & Fantasy",
+  "level": 3,
+  "tags": [
+   "French",
+   "journey",
+   "science"
+  ],
+  "spine": {
+   "color": "#1d5c63",
+   "height": 0.96
+  },
+  "cover": {
+   "motif": "planet",
+   "accent": "#e0cf94"
+  },
+  "month": "2029-03",
+  "gutenberg": 18857,
+  "plan": 121,
+  "series": "journey-to-the-centre",
+  "vol": 3,
+  "vols": 3,
+  "source": {
+   "from": "CHAPTER 31",
+   "nth": 1,
+   "to": "End of the Voyage Extraordinaire",
+   "heading": "CHAPTER \\d+"
+  }
+ },
+ {
+  "slug": "sign-of-the-four",
+  "title": "The Sign of the Four",
+  "author": "Arthur Conan Doyle",
+  "year": 1890,
+  "genre": "Mystery & Detective",
+  "level": 3,
+  "tags": [
+   "British",
+   "Sherlock Holmes",
+   "India"
+  ],
+  "spine": {
+   "color": "#3a3a60",
+   "height": 0.86
+  },
+  "cover": {
+   "motif": "key",
+   "accent": "#d9c08a"
+  },
+  "month": "2029-04",
+  "gutenberg": 2097,
+  "plan": 122,
+  "source": {
+   "from": "Chapter I",
+   "nth": 1,
+   "to": null,
+   "heading": "Chapter [IVX]+ [A-Z].*"
+  }
+ },
+ {
+  "slug": "kidnapped-1",
+  "title": "Kidnapped",
+  "author": "Robert Louis Stevenson",
+  "year": 1886,
+  "genre": "Adventure",
+  "level": 3,
+  "tags": [
+   "British",
+   "journey"
+  ],
+  "spine": {
+   "color": "#7a4a2a",
+   "height": 0.93
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#e3c16f"
+  },
+  "month": "2029-04",
+  "gutenberg": 421,
+  "plan": 123,
+  "series": "kidnapped",
+  "vol": 1,
+  "vols": 2,
+  "source": {
+   "from": "CHAPTER I",
+   "nth": 1,
+   "to": "CHAPTER XVII",
+   "heading": "CHAPTER [IVXL]+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "kidnapped-2",
+  "title": "Kidnapped",
+  "author": "Robert Louis Stevenson",
+  "year": 1886,
+  "genre": "Adventure",
+  "level": 3,
+  "tags": [
+   "British",
+   "journey"
+  ],
+  "spine": {
+   "color": "#7a4a2a",
+   "height": 0.93
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#e3c16f"
+  },
+  "month": "2029-04",
+  "gutenberg": 421,
+  "plan": 124,
+  "series": "kidnapped",
+  "vol": 2,
+  "vols": 2,
+  "source": {
+   "from": "CHAPTER XVII",
+   "nth": 1,
+   "to": null,
+   "heading": "CHAPTER [IVXL]+"
+  }
+ },
+ {
+  "slug": "mysterious-affair-at-styles-1",
+  "title": "The Mysterious Affair at Styles",
+  "author": "Agatha Christie",
+  "year": 1920,
+  "genre": "Mystery & Detective",
+  "level": 3,
+  "tags": [
+   "British",
+   "twist ending"
+  ],
+  "spine": {
+   "color": "#1f4e5f",
+   "height": 0.95
+  },
+  "cover": {
+   "motif": "key",
+   "accent": "#d9c08a"
+  },
+  "month": "2029-04",
+  "gutenberg": 863,
+  "plan": 125,
+  "series": "mysterious-affair-at-styles",
+  "vol": 1,
+  "vols": 2,
+  "source": {
+   "from": "CHAPTER I.",
+   "nth": 1,
+   "to": "CHAPTER VIII.",
+   "heading": "CHAPTER [IVX]+\\. .*",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "mysterious-affair-at-styles-2",
+  "title": "The Mysterious Affair at Styles",
+  "author": "Agatha Christie",
+  "year": 1920,
+  "genre": "Mystery & Detective",
+  "level": 3,
+  "tags": [
+   "British",
+   "twist ending"
+  ],
+  "spine": {
+   "color": "#1f4e5f",
+   "height": 0.95
+  },
+  "cover": {
+   "motif": "key",
+   "accent": "#d9c08a"
+  },
+  "month": "2029-04",
+  "gutenberg": 863,
+  "plan": 126,
+  "series": "mysterious-affair-at-styles",
+  "vol": 2,
+  "vols": 2,
+  "source": {
+   "from": "CHAPTER VIII.",
+   "nth": 1,
+   "to": "THE END",
+   "heading": "CHAPTER [IVX]+\\. .*"
+  }
+ },
+ {
+  "slug": "three-men-in-a-boat-1",
+  "title": "Three Men in a Boat",
+  "author": "Jerome K. Jerome",
+  "year": 1889,
+  "genre": "Humor & Satire",
+  "level": 3,
+  "tags": [
+   "British",
+   "humor",
+   "journey"
+  ],
+  "spine": {
+   "color": "#a0702a",
+   "height": 0.87
+  },
+  "cover": {
+   "motif": "mask",
+   "accent": "#f3e2b8"
+  },
+  "month": "2029-05",
+  "gutenberg": 308,
+  "plan": 127,
+  "series": "three-men-in-a-boat",
+  "vol": 1,
+  "vols": 2,
+  "source": {
+   "from": "CHAPTER I.",
+   "nth": 1,
+   "to": "CHAPTER XI.",
+   "heading": "CHAPTER [IVX]+\\.",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "three-men-in-a-boat-2",
+  "title": "Three Men in a Boat",
+  "author": "Jerome K. Jerome",
+  "year": 1889,
+  "genre": "Humor & Satire",
+  "level": 3,
+  "tags": [
+   "British",
+   "humor",
+   "journey"
+  ],
+  "spine": {
+   "color": "#a0702a",
+   "height": 0.87
+  },
+  "cover": {
+   "motif": "mask",
+   "accent": "#f3e2b8"
+  },
+  "month": "2029-05",
+  "gutenberg": 308,
+  "plan": 128,
+  "series": "three-men-in-a-boat",
+  "vol": 2,
+  "vols": 2,
+  "source": {
+   "from": "CHAPTER XI.",
+   "nth": 1,
+   "to": "Footnotes.",
+   "heading": "CHAPTER [IVX]+\\."
+  }
+ },
+ {
+  "slug": "thirty-nine-steps",
+  "title": "The Thirty-Nine Steps",
+  "author": "John Buchan",
+  "year": 1915,
+  "genre": "Mystery & Detective",
+  "level": 3,
+  "tags": [
+   "British",
+   "codes",
+   "war"
+  ],
+  "spine": {
+   "color": "#2e3f6b",
+   "height": 0.85
+  },
+  "cover": {
+   "motif": "key",
+   "accent": "#d9c08a"
+  },
+  "month": "2029-05",
+  "gutenberg": 558,
+  "plan": 129,
+  "source": {
+   "from": "Chapter I.",
+   "nth": 1,
+   "to": null,
+   "heading": "Chapter [IVX]+\\. .*"
+  }
+ },
+ {
+  "slug": "the-gambler-1",
+  "title": "The Gambler",
+  "author": "Fyodor Dostoevsky",
+  "year": 1866,
+  "genre": "Realism & Character",
+  "level": 4,
+  "tags": [
+   "Russian",
+   "money"
+  ],
+  "spine": {
+   "color": "#5a4a3a",
+   "height": 0.95
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2029-05",
+  "gutenberg": 2197,
+  "plan": 130,
+  "series": "the-gambler",
+  "vol": 1,
+  "vols": 2,
+  "source": {
+   "from": "I",
+   "nth": 1,
+   "to": "XI",
+   "heading": "[IVX]+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "the-gambler-2",
+  "title": "The Gambler",
+  "author": "Fyodor Dostoevsky",
+  "year": 1866,
+  "genre": "Realism & Character",
+  "level": 4,
+  "tags": [
+   "Russian",
+   "money"
+  ],
+  "spine": {
+   "color": "#5a4a3a",
+   "height": 0.95
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2029-05",
+  "gutenberg": 2197,
+  "plan": 131,
+  "series": "the-gambler",
+  "vol": 2,
+  "vols": 2,
+  "source": {
+   "from": "XI",
+   "nth": 1,
+   "to": null,
+   "heading": "[IVX]+"
+  }
+ },
+ {
+  "slug": "frankenstein-1",
+  "title": "Frankenstein",
+  "author": "Mary Shelley",
+  "year": 1818,
+  "genre": "Gothic & Horror",
+  "level": 4,
+  "tags": [
+   "British",
+   "science",
+   "guilt"
+  ],
+  "spine": {
+   "color": "#3a1c24",
+   "height": 0.86
+  },
+  "cover": {
+   "motif": "raven",
+   "accent": "#c9a24a"
+  },
+  "month": "2029-06",
+  "gutenberg": 84,
+  "plan": 132,
+  "series": "frankenstein",
+  "vol": 1,
+  "vols": 2,
+  "source": {
+   "from": "Letter 1",
+   "nth": 2,
+   "to": "Chapter 14",
+   "heading": "(Letter|Chapter) \\d+",
+   "to_nth": 2
+  }
+ },
+ {
+  "slug": "frankenstein-2",
+  "title": "Frankenstein",
+  "author": "Mary Shelley",
+  "year": 1818,
+  "genre": "Gothic & Horror",
+  "level": 4,
+  "tags": [
+   "British",
+   "science",
+   "guilt"
+  ],
+  "spine": {
+   "color": "#3a1c24",
+   "height": 0.86
+  },
+  "cover": {
+   "motif": "raven",
+   "accent": "#c9a24a"
+  },
+  "month": "2029-06",
+  "gutenberg": 84,
+  "plan": 133,
+  "series": "frankenstein",
+  "vol": 2,
+  "vols": 2,
+  "source": {
+   "from": "Chapter 14",
+   "nth": 2,
+   "to": null,
+   "heading": "(Letter|Chapter) \\d+"
+  }
+ },
+ {
+  "slug": "the-awakening-1",
+  "title": "The Awakening",
+  "author": "Kate Chopin",
+  "year": 1899,
+  "genre": "Love & Society",
+  "level": 4,
+  "tags": [
+   "American",
+   "women",
+   "marriage",
+   "seaside"
+  ],
+  "spine": {
+   "color": "#944a52",
+   "height": 0.88
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2029-06",
+  "gutenberg": 160,
+  "plan": 134,
+  "series": "the-awakening",
+  "vol": 1,
+  "vols": 2,
+  "source": {
+   "from": "I",
+   "nth": 4,
+   "to": "XX",
+   "heading": "[IVXL]+",
+   "to_nth": 2
+  }
+ },
+ {
+  "slug": "the-awakening-2",
+  "title": "The Awakening",
+  "author": "Kate Chopin",
+  "year": 1899,
+  "genre": "Love & Society",
+  "level": 4,
+  "tags": [
+   "American",
+   "women",
+   "marriage",
+   "seaside"
+  ],
+  "spine": {
+   "color": "#944a52",
+   "height": 0.88
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2029-06",
+  "gutenberg": 160,
+  "plan": 135,
+  "series": "the-awakening",
+  "vol": 2,
+  "vols": 2,
+  "source": {
+   "from": "XX",
+   "nth": 2,
+   "to": "BEYOND THE BAYOU",
+   "heading": "[IVXL]+"
+  }
+ },
+ {
+  "slug": "king-solomons-mines-1",
+  "title": "King Solomon's Mines",
+  "author": "H. Rider Haggard",
+  "year": 1885,
+  "genre": "Adventure",
+  "level": 3,
+  "tags": [
+   "British",
+   "treasure",
+   "empire"
+  ],
+  "spine": {
+   "color": "#8a3b2e",
+   "height": 0.88
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#e3c16f"
+  },
+  "month": "2029-07",
+  "gutenberg": 2166,
+  "plan": 136,
+  "series": "king-solomons-mines",
+  "vol": 1,
+  "vols": 3,
+  "source": {
+   "from": "CHAPTER I.",
+   "nth": 1,
+   "to": "CHAPTER VIII.",
+   "heading": "CHAPTER [IVX]+\\. .*",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "king-solomons-mines-2",
+  "title": "King Solomon's Mines",
+  "author": "H. Rider Haggard",
+  "year": 1885,
+  "genre": "Adventure",
+  "level": 3,
+  "tags": [
+   "British",
+   "treasure",
+   "empire"
+  ],
+  "spine": {
+   "color": "#8a3b2e",
+   "height": 0.88
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#e3c16f"
+  },
+  "month": "2029-07",
+  "gutenberg": 2166,
+  "plan": 137,
+  "series": "king-solomons-mines",
+  "vol": 2,
+  "vols": 3,
+  "source": {
+   "from": "CHAPTER VIII.",
+   "nth": 1,
+   "to": "CHAPTER XIV.",
+   "heading": "CHAPTER [IVX]+\\. .*",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "king-solomons-mines-3",
+  "title": "King Solomon's Mines",
+  "author": "H. Rider Haggard",
+  "year": 1885,
+  "genre": "Adventure",
+  "level": 3,
+  "tags": [
+   "British",
+   "treasure",
+   "empire"
+  ],
+  "spine": {
+   "color": "#8a3b2e",
+   "height": 0.88
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#e3c16f"
+  },
+  "month": "2029-07",
+  "gutenberg": 2166,
+  "plan": 138,
+  "series": "king-solomons-mines",
+  "vol": 3,
+  "vols": 3,
+  "source": {
+   "from": "CHAPTER XIV.",
+   "nth": 1,
+   "to": null,
+   "heading": "CHAPTER [IVX]+\\. .*"
+  }
+ },
+ {
+  "slug": "the-great-gatsby-1",
+  "title": "The Great Gatsby",
+  "author": "F. Scott Fitzgerald",
+  "year": 1925,
+  "genre": "Love & Society",
+  "level": 4,
+  "tags": [
+   "American",
+   "money",
+   "love"
+  ],
+  "spine": {
+   "color": "#8a4a5a",
+   "height": 0.9
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2029-07",
+  "gutenberg": 64317,
+  "plan": 139,
+  "series": "the-great-gatsby",
+  "vol": 1,
+  "vols": 2,
+  "source": {
+   "from": "I",
+   "nth": 2,
+   "to": "VI",
+   "heading": "[IVX]+",
+   "to_nth": 2
+  }
+ },
+ {
+  "slug": "the-great-gatsby-2",
+  "title": "The Great Gatsby",
+  "author": "F. Scott Fitzgerald",
+  "year": 1925,
+  "genre": "Love & Society",
+  "level": 4,
+  "tags": [
+   "American",
+   "money",
+   "love"
+  ],
+  "spine": {
+   "color": "#8a4a5a",
+   "height": 0.9
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2029-07",
+  "gutenberg": 64317,
+  "plan": 140,
+  "series": "the-great-gatsby",
+  "vol": 2,
+  "vols": 2,
+  "source": {
+   "from": "VI",
+   "nth": 2,
+   "to": null,
+   "heading": "[IVX]+"
+  }
+ },
+ {
+  "slug": "island-of-doctor-moreau-1",
+  "title": "The Island of Doctor Moreau",
+  "author": "H. G. Wells",
+  "year": 1896,
+  "genre": "Science Fiction & Fantasy",
+  "level": 4,
+  "tags": [
+   "British",
+   "island",
+   "science"
+  ],
+  "spine": {
+   "color": "#3b5f8a",
+   "height": 0.86
+  },
+  "cover": {
+   "motif": "planet",
+   "accent": "#e0cf94"
+  },
+  "month": "2029-08",
+  "gutenberg": 159,
+  "plan": 141,
+  "series": "island-of-doctor-moreau",
+  "vol": 1,
+  "vols": 2,
+  "source": {
+   "from": "INTRODUCTION.",
+   "nth": 1,
+   "to": "XIV.",
+   "heading": "INTRODUCTION\\.|[IVXL]+\\. [A-Z“][A-Z “”’.,-]+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "island-of-doctor-moreau-2",
+  "title": "The Island of Doctor Moreau",
+  "author": "H. G. Wells",
+  "year": 1896,
+  "genre": "Science Fiction & Fantasy",
+  "level": 4,
+  "tags": [
+   "British",
+   "island",
+   "science"
+  ],
+  "spine": {
+   "color": "#3b5f8a",
+   "height": 0.86
+  },
+  "cover": {
+   "motif": "planet",
+   "accent": "#e0cf94"
+  },
+  "month": "2029-08",
+  "gutenberg": 159,
+  "plan": 142,
+  "series": "island-of-doctor-moreau",
+  "vol": 2,
+  "vols": 2,
+  "source": {
+   "from": "XIV.",
+   "nth": 1,
+   "to": "NOTE.",
+   "heading": "INTRODUCTION\\.|[IVXL]+\\. [A-Z“][A-Z “”’.,-]+"
+  }
+ },
+ {
+  "slug": "scarlet-pimpernel-1",
+  "title": "The Scarlet Pimpernel",
+  "author": "Baroness Orczy",
+  "year": 1905,
+  "genre": "Adventure",
+  "level": 3,
+  "tags": [
+   "British",
+   "French",
+   "romance"
+  ],
+  "spine": {
+   "color": "#2e5358",
+   "height": 0.84
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#d8c48a"
+  },
+  "month": "2029-08",
+  "gutenberg": 60,
+  "plan": 143,
+  "series": "scarlet-pimpernel",
+  "vol": 1,
+  "vols": 3,
+  "source": {
+   "from": "CHAPTER I.",
+   "nth": 1,
+   "to": "CHAPTER XI.",
+   "heading": "CHAPTER [IVXL]+\\. .*",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "scarlet-pimpernel-2",
+  "title": "The Scarlet Pimpernel",
+  "author": "Baroness Orczy",
+  "year": 1905,
+  "genre": "Adventure",
+  "level": 3,
+  "tags": [
+   "British",
+   "French",
+   "romance"
+  ],
+  "spine": {
+   "color": "#2e5358",
+   "height": 0.84
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#d8c48a"
+  },
+  "month": "2029-08",
+  "gutenberg": 60,
+  "plan": 144,
+  "series": "scarlet-pimpernel",
+  "vol": 2,
+  "vols": 3,
+  "source": {
+   "from": "CHAPTER XI.",
+   "nth": 1,
+   "to": "CHAPTER XXII.",
+   "heading": "CHAPTER [IVXL]+\\. .*",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "scarlet-pimpernel-3",
+  "title": "The Scarlet Pimpernel",
+  "author": "Baroness Orczy",
+  "year": 1905,
+  "genre": "Adventure",
+  "level": 3,
+  "tags": [
+   "British",
+   "French",
+   "romance"
+  ],
+  "spine": {
+   "color": "#2e5358",
+   "height": 0.84
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#d8c48a"
+  },
+  "month": "2029-08",
+  "gutenberg": 60,
+  "plan": 145,
+  "series": "scarlet-pimpernel",
+  "vol": 3,
+  "vols": 3,
+  "source": {
+   "from": "CHAPTER XXII.",
+   "nth": 1,
+   "to": null,
+   "heading": "CHAPTER [IVXL]+\\. .*"
+  }
+ },
+ {
+  "slug": "ethan-frome",
+  "title": "Ethan Frome",
+  "author": "Edith Wharton",
+  "year": 1911,
+  "genre": "Realism & Character",
+  "level": 4,
+  "tags": [
+   "American",
+   "winter",
+   "marriage"
+  ],
+  "spine": {
+   "color": "#6a5a44",
+   "height": 0.86
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2029-09",
+  "gutenberg": 4517,
+  "plan": 146,
+  "source": {
+   "from": "ETHAN FROME",
+   "nth": 2,
+   "to": null,
+   "heading": "ETHAN FROME|[IVX]+"
+  }
+ },
+ {
+  "slug": "dorian-gray-1",
+  "title": "The Picture of Dorian Gray",
+  "author": "Oscar Wilde",
+  "year": 1890,
+  "genre": "Gothic & Horror",
+  "level": 4,
+  "tags": [
+   "British",
+   "art",
+   "London"
+  ],
+  "spine": {
+   "color": "#2a2530",
+   "height": 0.92
+  },
+  "cover": {
+   "motif": "raven",
+   "accent": "#c9a24a"
+  },
+  "month": "2029-09",
+  "gutenberg": 174,
+  "plan": 147,
+  "series": "dorian-gray",
+  "vol": 1,
+  "vols": 2,
+  "source": {
+   "from": "THE PREFACE",
+   "nth": 2,
+   "to": "CHAPTER IX.",
+   "heading": "THE PREFACE|CHAPTER [IVX]+\\.",
+   "to_nth": 2
+  }
+ },
+ {
+  "slug": "dorian-gray-2",
+  "title": "The Picture of Dorian Gray",
+  "author": "Oscar Wilde",
+  "year": 1890,
+  "genre": "Gothic & Horror",
+  "level": 4,
+  "tags": [
+   "British",
+   "art",
+   "London"
+  ],
+  "spine": {
+   "color": "#2a2530",
+   "height": 0.92
+  },
+  "cover": {
+   "motif": "raven",
+   "accent": "#c9a24a"
+  },
+  "month": "2029-09",
+  "gutenberg": 174,
+  "plan": 148,
+  "series": "dorian-gray",
+  "vol": 2,
+  "vols": 2,
+  "source": {
+   "from": "CHAPTER IX.",
+   "nth": 2,
+   "to": "THE END",
+   "heading": "THE PREFACE|CHAPTER [IVX]+\\."
+  }
+ },
+ {
+  "slug": "lost-world-1",
+  "title": "The Lost World",
+  "author": "Arthur Conan Doyle",
+  "year": 1912,
+  "genre": "Science Fiction & Fantasy",
+  "level": 3,
+  "tags": [
+   "British",
+   "journey",
+   "science"
+  ],
+  "spine": {
+   "color": "#2b4f81",
+   "height": 0.87
+  },
+  "cover": {
+   "motif": "planet",
+   "accent": "#e0cf94"
+  },
+  "month": "2029-09",
+  "gutenberg": 139,
+  "plan": 149,
+  "series": "lost-world",
+  "vol": 1,
+  "vols": 2,
+  "source": {
+   "from": "CHAPTER I",
+   "nth": 1,
+   "to": "CHAPTER X",
+   "heading": "CHAPTER [IVX]+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "lost-world-2",
+  "title": "The Lost World",
+  "author": "Arthur Conan Doyle",
+  "year": 1912,
+  "genre": "Science Fiction & Fantasy",
+  "level": 3,
+  "tags": [
+   "British",
+   "journey",
+   "science"
+  ],
+  "spine": {
+   "color": "#2b4f81",
+   "height": 0.87
+  },
+  "cover": {
+   "motif": "planet",
+   "accent": "#e0cf94"
+  },
+  "month": "2029-09",
+  "gutenberg": 139,
+  "plan": 150,
+  "series": "lost-world",
+  "vol": 2,
+  "vols": 2,
+  "source": {
+   "from": "CHAPTER X",
+   "nth": 1,
+   "to": null,
+   "heading": "CHAPTER [IVX]+"
+  }
+ },
+ {
+  "slug": "red-badge-of-courage-1",
+  "title": "The Red Badge of Courage",
+  "author": "Stephen Crane",
+  "year": 1895,
+  "genre": "Realism & Character",
+  "level": 4,
+  "tags": [
+   "American",
+   "war"
+  ],
+  "spine": {
+   "color": "#4a4a44",
+   "height": 0.95
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2029-10",
+  "gutenberg": 73,
+  "plan": 151,
+  "series": "red-badge-of-courage",
+  "vol": 1,
+  "vols": 2,
+  "source": {
+   "from": "Chapter I.",
+   "nth": 1,
+   "to": "Chapter XII.",
+   "heading": "Chapter [IVXLC]+\\.",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "red-badge-of-courage-2",
+  "title": "The Red Badge of Courage",
+  "author": "Stephen Crane",
+  "year": 1895,
+  "genre": "Realism & Character",
+  "level": 4,
+  "tags": [
+   "American",
+   "war"
+  ],
+  "spine": {
+   "color": "#4a4a44",
+   "height": 0.95
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2029-10",
+  "gutenberg": 73,
+  "plan": 152,
+  "series": "red-badge-of-courage",
+  "vol": 2,
+  "vols": 2,
+  "source": {
+   "from": "Chapter XII.",
+   "nth": 1,
+   "to": "THE END.",
+   "heading": "Chapter [IVXLC]+\\."
+  }
+ },
+ {
+  "slug": "flatland",
+  "title": "Flatland",
+  "author": "Edwin A. Abbott",
+  "year": 1884,
+  "genre": "Science Fiction & Fantasy",
+  "level": 4,
+  "tags": [
+   "British",
+   "satire",
+   "science"
+  ],
+  "spine": {
+   "color": "#1f4f66",
+   "height": 0.84
+  },
+  "cover": {
+   "motif": "planet",
+   "accent": "#e0cf94"
+  },
+  "month": "2029-10",
+  "gutenberg": 97,
+  "plan": 153,
+  "source": {
+   "from": "PART I",
+   "nth": 1,
+   "to": "PREFACE TO THE SECOND AND REVISED EDITION, 1884. BY THE EDITOR",
+   "heading": "PART [IV]+ [A-Z ]+|§ \\d+ .*"
+  }
+ },
+ {
+  "slug": "herland-1",
+  "title": "Herland",
+  "author": "Charlotte Perkins Gilman",
+  "year": 1915,
+  "genre": "Science Fiction & Fantasy",
+  "level": 4,
+  "tags": [
+   "American",
+   "women",
+   "satire"
+  ],
+  "spine": {
+   "color": "#1d5c63",
+   "height": 0.84
+  },
+  "cover": {
+   "motif": "planet",
+   "accent": "#e0cf94"
+  },
+  "month": "2029-10",
+  "gutenberg": 32,
+  "plan": 154,
+  "series": "herland",
+  "vol": 1,
+  "vols": 2,
+  "source": {
+   "from": "CHAPTER 1.",
+   "nth": 1,
+   "to": "CHAPTER 7.",
+   "heading": "CHAPTER \\d+\\. .*",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "herland-2",
+  "title": "Herland",
+  "author": "Charlotte Perkins Gilman",
+  "year": 1915,
+  "genre": "Science Fiction & Fantasy",
+  "level": 4,
+  "tags": [
+   "American",
+   "women",
+   "satire"
+  ],
+  "spine": {
+   "color": "#1d5c63",
+   "height": 0.84
+  },
+  "cover": {
+   "motif": "planet",
+   "accent": "#e0cf94"
+  },
+  "month": "2029-10",
+  "gutenberg": 32,
+  "plan": 155,
+  "series": "herland",
+  "vol": 2,
+  "vols": 2,
+  "source": {
+   "from": "CHAPTER 7.",
+   "nth": 1,
+   "to": null,
+   "heading": "CHAPTER \\d+\\. .*"
+  }
+ },
+ {
+  "slug": "man-who-was-thursday-1",
+  "title": "The Man Who Was Thursday",
+  "author": "G. K. Chesterton",
+  "year": 1908,
+  "genre": "Mystery & Detective",
+  "level": 4,
+  "tags": [
+   "British",
+   "London",
+   "twist ending"
+  ],
+  "spine": {
+   "color": "#243a5e",
+   "height": 0.95
+  },
+  "cover": {
+   "motif": "key",
+   "accent": "#d9c08a"
+  },
+  "month": "2029-11",
+  "gutenberg": 1695,
+  "plan": 156,
+  "series": "man-who-was-thursday",
+  "vol": 1,
+  "vols": 2,
+  "source": {
+   "from": "CHAPTER I.",
+   "nth": 1,
+   "to": "CHAPTER IX.",
+   "heading": "CHAPTER [IVXLC]+\\. [A-Z][A-Z ,'’.-]+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "man-who-was-thursday-2",
+  "title": "The Man Who Was Thursday",
+  "author": "G. K. Chesterton",
+  "year": 1908,
+  "genre": "Mystery & Detective",
+  "level": 4,
+  "tags": [
+   "British",
+   "London",
+   "twist ending"
+  ],
+  "spine": {
+   "color": "#243a5e",
+   "height": 0.95
+  },
+  "cover": {
+   "motif": "key",
+   "accent": "#d9c08a"
+  },
+  "month": "2029-11",
+  "gutenberg": 1695,
+  "plan": 157,
+  "series": "man-who-was-thursday",
+  "vol": 2,
+  "vols": 2,
+  "source": {
+   "from": "CHAPTER IX.",
+   "nth": 1,
+   "to": null,
+   "heading": "CHAPTER [IVXLC]+\\. [A-Z][A-Z ,'’.-]+"
+  }
+ },
+ {
+  "slug": "sorrows-of-young-werther",
+  "title": "The Sorrows of Young Werther",
+  "author": "Johann Wolfgang von Goethe",
+  "year": 1774,
+  "genre": "Love & Society",
+  "level": 4,
+  "tags": [
+   "German",
+   "love"
+  ],
+  "spine": {
+   "color": "#7a3346",
+   "height": 0.87
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2029-11",
+  "gutenberg": 2527,
+  "plan": 158,
+  "source": {
+   "from": "PREFACE",
+   "nth": 1,
+   "to": null,
+   "heading": "PREFACE|BOOK I+\\.?|THE EDITOR TO THE READER\\."
+  }
+ },
+ {
+  "slug": "sea-wolf-1",
+  "title": "The Sea-Wolf",
+  "author": "Jack London",
+  "year": 1904,
+  "genre": "Adventure",
+  "level": 4,
+  "tags": [
+   "American",
+   "sea",
+   "survival"
+  ],
+  "spine": {
+   "color": "#2f4a3a",
+   "height": 0.87
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#d8c48a"
+  },
+  "month": "2029-11",
+  "gutenberg": 1074,
+  "plan": 159,
+  "series": "sea-wolf",
+  "vol": 1,
+  "vols": 3,
+  "source": {
+   "from": "CHAPTER I",
+   "nth": 1,
+   "to": "CHAPTER XIII",
+   "heading": "CHAPTER [IVXLC]+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "sea-wolf-2",
+  "title": "The Sea-Wolf",
+  "author": "Jack London",
+  "year": 1904,
+  "genre": "Adventure",
+  "level": 4,
+  "tags": [
+   "American",
+   "sea",
+   "survival"
+  ],
+  "spine": {
+   "color": "#2f4a3a",
+   "height": 0.87
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#d8c48a"
+  },
+  "month": "2029-11",
+  "gutenberg": 1074,
+  "plan": 160,
+  "series": "sea-wolf",
+  "vol": 2,
+  "vols": 3,
+  "source": {
+   "from": "CHAPTER XIII",
+   "nth": 1,
+   "to": "CHAPTER XXVI",
+   "heading": "CHAPTER [IVXLC]+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "sea-wolf-3",
+  "title": "The Sea-Wolf",
+  "author": "Jack London",
+  "year": 1904,
+  "genre": "Adventure",
+  "level": 4,
+  "tags": [
+   "American",
+   "sea",
+   "survival"
+  ],
+  "spine": {
+   "color": "#2f4a3a",
+   "height": 0.87
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#d8c48a"
+  },
+  "month": "2029-11",
+  "gutenberg": 1074,
+  "plan": 161,
+  "series": "sea-wolf",
+  "vol": 3,
+  "vols": 3,
+  "source": {
+   "from": "CHAPTER XXVI",
+   "nth": 1,
+   "to": "THE END",
+   "heading": "CHAPTER [IVXLC]+"
+  }
+ },
+ {
+  "slug": "turn-of-the-screw",
+  "title": "The Turn of the Screw",
+  "author": "Henry James",
+  "year": 1898,
+  "genre": "Ghost Stories",
+  "level": 5,
+  "tags": [
+   "British",
+   "children",
+   "haunted house"
+  ],
+  "spine": {
+   "color": "#4a4458",
+   "height": 0.85
+  },
+  "cover": {
+   "motif": "lamp",
+   "accent": "#d6cfb8"
+  },
+  "month": "2029-12",
+  "gutenberg": 209,
+  "plan": 162,
+  "source": {
+   "from": "THE TURN OF THE SCREW",
+   "nth": 2,
+   "to": null,
+   "heading": "THE TURN OF THE SCREW|[IVXL]+"
+  }
+ },
+ {
+  "slug": "o-pioneers-1",
+  "title": "O Pioneers!",
+  "author": "Willa Cather",
+  "year": 1913,
+  "genre": "Realism & Character",
+  "level": 4,
+  "tags": [
+   "American",
+   "work",
+   "love"
+  ],
+  "spine": {
+   "color": "#5e5040",
+   "height": 0.94
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2029-12",
+  "gutenberg": 24,
+  "plan": 163,
+  "series": "o-pioneers",
+  "vol": 1,
+  "vols": 2,
+  "source": {
+   "from": "PART I.",
+   "nth": 1,
+   "to": "VIII",
+   "heading": "PART [IV]+\\. [A-Z][a-z].*|[IVXL]+",
+   "to_nth": 3
+  }
+ },
+ {
+  "slug": "o-pioneers-2",
+  "title": "O Pioneers!",
+  "author": "Willa Cather",
+  "year": 1913,
+  "genre": "Realism & Character",
+  "level": 4,
+  "tags": [
+   "American",
+   "work",
+   "love"
+  ],
+  "spine": {
+   "color": "#5e5040",
+   "height": 0.94
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2029-12",
+  "gutenberg": 24,
+  "plan": 164,
+  "series": "o-pioneers",
+  "vol": 2,
+  "vols": 2,
+  "source": {
+   "from": "VIII",
+   "nth": 3,
+   "to": null,
+   "heading": "PART [IV]+\\. [A-Z][a-z].*|[IVXL]+"
+  }
+ },
+ {
+  "slug": "dracula-1",
+  "title": "Dracula",
+  "author": "Bram Stoker",
+  "year": 1897,
+  "genre": "Gothic & Horror",
+  "level": 4,
+  "tags": [
+   "British",
+   "Europe",
+   "Halloween"
+  ],
+  "spine": {
+   "color": "#26262e",
+   "height": 0.89
+  },
+  "cover": {
+   "motif": "raven",
+   "accent": "#c9a24a"
+  },
+  "month": "2030-01",
+  "gutenberg": 345,
+  "plan": 165,
+  "series": "dracula",
+  "vol": 1,
+  "vols": 5,
+  "source": {
+   "from": "CHAPTER I",
+   "nth": 1,
+   "to": "CHAPTER VII",
+   "heading": "CHAPTER [IVXL]+|NOTE",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "dracula-2",
+  "title": "Dracula",
+  "author": "Bram Stoker",
+  "year": 1897,
+  "genre": "Gothic & Horror",
+  "level": 4,
+  "tags": [
+   "British",
+   "Europe",
+   "Halloween"
+  ],
+  "spine": {
+   "color": "#26262e",
+   "height": 0.89
+  },
+  "cover": {
+   "motif": "raven",
+   "accent": "#c9a24a"
+  },
+  "month": "2030-01",
+  "gutenberg": 345,
+  "plan": 166,
+  "series": "dracula",
+  "vol": 2,
+  "vols": 5,
+  "source": {
+   "from": "CHAPTER VII",
+   "nth": 1,
+   "to": "CHAPTER XII",
+   "heading": "CHAPTER [IVXL]+|NOTE",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "dracula-3",
+  "title": "Dracula",
+  "author": "Bram Stoker",
+  "year": 1897,
+  "genre": "Gothic & Horror",
+  "level": 4,
+  "tags": [
+   "British",
+   "Europe",
+   "Halloween"
+  ],
+  "spine": {
+   "color": "#26262e",
+   "height": 0.89
+  },
+  "cover": {
+   "motif": "raven",
+   "accent": "#c9a24a"
+  },
+  "month": "2030-01",
+  "gutenberg": 345,
+  "plan": 167,
+  "series": "dracula",
+  "vol": 3,
+  "vols": 5,
+  "source": {
+   "from": "CHAPTER XII",
+   "nth": 1,
+   "to": "CHAPTER XVIII",
+   "heading": "CHAPTER [IVXL]+|NOTE",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "dracula-4",
+  "title": "Dracula",
+  "author": "Bram Stoker",
+  "year": 1897,
+  "genre": "Gothic & Horror",
+  "level": 4,
+  "tags": [
+   "British",
+   "Europe",
+   "Halloween"
+  ],
+  "spine": {
+   "color": "#26262e",
+   "height": 0.89
+  },
+  "cover": {
+   "motif": "raven",
+   "accent": "#c9a24a"
+  },
+  "month": "2030-01",
+  "gutenberg": 345,
+  "plan": 168,
+  "series": "dracula",
+  "vol": 4,
+  "vols": 5,
+  "source": {
+   "from": "CHAPTER XVIII",
+   "nth": 1,
+   "to": "CHAPTER XXIII",
+   "heading": "CHAPTER [IVXL]+|NOTE",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "dracula-5",
+  "title": "Dracula",
+  "author": "Bram Stoker",
+  "year": 1897,
+  "genre": "Gothic & Horror",
+  "level": 4,
+  "tags": [
+   "British",
+   "Europe",
+   "Halloween"
+  ],
+  "spine": {
+   "color": "#26262e",
+   "height": 0.89
+  },
+  "cover": {
+   "motif": "raven",
+   "accent": "#c9a24a"
+  },
+  "month": "2030-01",
+  "gutenberg": 345,
+  "plan": 169,
+  "series": "dracula",
+  "vol": 5,
+  "vols": 5,
+  "source": {
+   "from": "CHAPTER XXIII",
+   "nth": 1,
+   "to": "THE END",
+   "heading": "CHAPTER [IVXL]+|NOTE"
+  }
+ },
+ {
+  "slug": "candide",
+  "title": "Candide",
+  "author": "Voltaire",
+  "year": 1759,
+  "genre": "Humor & Satire",
+  "level": 4,
+  "tags": [
+   "French",
+   "satire",
+   "journey"
+  ],
+  "spine": {
+   "color": "#8f6a1f",
+   "height": 0.95
+  },
+  "cover": {
+   "motif": "mask",
+   "accent": "#f3e2b8"
+  },
+  "month": "2030-02",
+  "gutenberg": 19942,
+  "plan": 170,
+  "source": {
+   "from": "I",
+   "nth": 1,
+   "to": "FOOTNOTES:",
+   "heading": "[IVXL]+"
+  }
+ },
+ {
+  "slug": "silas-marner-1",
+  "title": "Silas Marner",
+  "author": "George Eliot",
+  "year": 1861,
+  "genre": "Realism & Character",
+  "level": 4,
+  "tags": [
+   "British",
+   "money",
+   "children"
+  ],
+  "spine": {
+   "color": "#4e4b3c",
+   "height": 0.88
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2030-02",
+  "gutenberg": 550,
+  "plan": 171,
+  "series": "silas-marner",
+  "vol": 1,
+  "vols": 2,
+  "source": {
+   "from": "PART I.",
+   "nth": 1,
+   "to": "CHAPTER XI.",
+   "heading": "PART I+\\.|CHAPTER [IVXL]+\\.|CONCLUSION",
+   "to_nth": 2
+  }
+ },
+ {
+  "slug": "silas-marner-2",
+  "title": "Silas Marner",
+  "author": "George Eliot",
+  "year": 1861,
+  "genre": "Realism & Character",
+  "level": 4,
+  "tags": [
+   "British",
+   "money",
+   "children"
+  ],
+  "spine": {
+   "color": "#4e4b3c",
+   "height": 0.88
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2030-02",
+  "gutenberg": 550,
+  "plan": 172,
+  "series": "silas-marner",
+  "vol": 2,
+  "vols": 2,
+  "source": {
+   "from": "CHAPTER XI.",
+   "nth": 2,
+   "to": null,
+   "heading": "PART I+\\.|CHAPTER [IVXL]+\\.|CONCLUSION"
+  }
+ },
+ {
+  "slug": "twenty-thousand-leagues-1",
+  "title": "Twenty Thousand Leagues under the Sea",
+  "author": "Jules Verne",
+  "year": 1870,
+  "genre": "Science Fiction & Fantasy",
+  "level": 4,
+  "tags": [
+   "French",
+   "sea",
+   "technology"
+  ],
+  "spine": {
+   "color": "#3b5f8a",
+   "height": 0.94
+  },
+  "cover": {
+   "motif": "planet",
+   "accent": "#e0cf94"
+  },
+  "month": "2030-02",
+  "gutenberg": 164,
+  "plan": 173,
+  "series": "twenty-thousand-leagues",
+  "vol": 1,
+  "vols": 3,
+  "source": {
+   "from": "PART ONE",
+   "nth": 1,
+   "to": "CHAPTER XVIII",
+   "heading": "PART (ONE|TWO)|CHAPTER [IVXL]+ .+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "twenty-thousand-leagues-2",
+  "title": "Twenty Thousand Leagues under the Sea",
+  "author": "Jules Verne",
+  "year": 1870,
+  "genre": "Science Fiction & Fantasy",
+  "level": 4,
+  "tags": [
+   "French",
+   "sea",
+   "technology"
+  ],
+  "spine": {
+   "color": "#3b5f8a",
+   "height": 0.94
+  },
+  "cover": {
+   "motif": "planet",
+   "accent": "#e0cf94"
+  },
+  "month": "2030-02",
+  "gutenberg": 164,
+  "plan": 174,
+  "series": "twenty-thousand-leagues",
+  "vol": 2,
+  "vols": 3,
+  "source": {
+   "from": "CHAPTER XVIII",
+   "nth": 1,
+   "to": "CHAPTER IX",
+   "heading": "PART (ONE|TWO)|CHAPTER [IVXL]+ .+",
+   "to_nth": 2
+  }
+ },
+ {
+  "slug": "twenty-thousand-leagues-3",
+  "title": "Twenty Thousand Leagues under the Sea",
+  "author": "Jules Verne",
+  "year": 1870,
+  "genre": "Science Fiction & Fantasy",
+  "level": 4,
+  "tags": [
+   "French",
+   "sea",
+   "technology"
+  ],
+  "spine": {
+   "color": "#3b5f8a",
+   "height": 0.94
+  },
+  "cover": {
+   "motif": "planet",
+   "accent": "#e0cf94"
+  },
+  "month": "2030-02",
+  "gutenberg": 164,
+  "plan": 175,
+  "series": "twenty-thousand-leagues",
+  "vol": 3,
+  "vols": 3,
+  "source": {
+   "from": "CHAPTER IX",
+   "nth": 2,
+   "to": null,
+   "heading": "PART (ONE|TWO)|CHAPTER [IVXL]+ .+"
+  }
+ },
+ {
+  "slug": "washington-square-1",
+  "title": "Washington Square",
+  "author": "Henry James",
+  "year": 1880,
+  "genre": "Love & Society",
+  "level": 4,
+  "tags": [
+   "American",
+   "marriage",
+   "money"
+  ],
+  "spine": {
+   "color": "#5e3350",
+   "height": 0.95
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2030-03",
+  "gutenberg": 2870,
+  "plan": 176,
+  "series": "washington-square",
+  "vol": 1,
+  "vols": 2,
+  "source": {
+   "from": "I",
+   "nth": 1,
+   "to": "XVIII",
+   "heading": "[IVXL]+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "washington-square-2",
+  "title": "Washington Square",
+  "author": "Henry James",
+  "year": 1880,
+  "genre": "Love & Society",
+  "level": 4,
+  "tags": [
+   "American",
+   "marriage",
+   "money"
+  ],
+  "spine": {
+   "color": "#5e3350",
+   "height": 0.95
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2030-03",
+  "gutenberg": 2870,
+  "plan": 177,
+  "series": "washington-square",
+  "vol": 2,
+  "vols": 2,
+  "source": {
+   "from": "XVIII",
+   "nth": 1,
+   "to": null,
+   "heading": "[IVXL]+"
+  }
+ },
+ {
+  "slug": "phantom-of-the-opera-1",
+  "title": "The Phantom of the Opera",
+  "author": "Gaston Leroux",
+  "year": 1910,
+  "genre": "Gothic & Horror",
+  "level": 4,
+  "tags": [
+   "French",
+   "Paris",
+   "love"
+  ],
+  "spine": {
+   "color": "#1f1f24",
+   "height": 0.94
+  },
+  "cover": {
+   "motif": "raven",
+   "accent": "#c9a24a"
+  },
+  "month": "2030-03",
+  "gutenberg": 175,
+  "plan": 178,
+  "series": "phantom-of-the-opera",
+  "vol": 1,
+  "vols": 3,
+  "source": {
+   "from": "Prologue",
+   "nth": 1,
+   "to": "Chapter IX  At the Masked Ball",
+   "heading": "Prologue|Chapter [IVXL]+ .+|Epilogue\\.",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "phantom-of-the-opera-2",
+  "title": "The Phantom of the Opera",
+  "author": "Gaston Leroux",
+  "year": 1910,
+  "genre": "Gothic & Horror",
+  "level": 4,
+  "tags": [
+   "French",
+   "Paris",
+   "love"
+  ],
+  "spine": {
+   "color": "#1f1f24",
+   "height": 0.94
+  },
+  "cover": {
+   "motif": "raven",
+   "accent": "#c9a24a"
+  },
+  "month": "2030-03",
+  "gutenberg": 175,
+  "plan": 179,
+  "series": "phantom-of-the-opera",
+  "vol": 2,
+  "vols": 3,
+  "source": {
+   "from": "Chapter IX  At the Masked Ball",
+   "nth": 1,
+   "to": "Chapter XIX  The Viscount and the Persian",
+   "heading": "Prologue|Chapter [IVXL]+ .+|Epilogue\\.",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "phantom-of-the-opera-3",
+  "title": "The Phantom of the Opera",
+  "author": "Gaston Leroux",
+  "year": 1910,
+  "genre": "Gothic & Horror",
+  "level": 4,
+  "tags": [
+   "French",
+   "Paris",
+   "love"
+  ],
+  "spine": {
+   "color": "#1f1f24",
+   "height": 0.94
+  },
+  "cover": {
+   "motif": "raven",
+   "accent": "#c9a24a"
+  },
+  "month": "2030-03",
+  "gutenberg": 175,
+  "plan": 180,
+  "series": "phantom-of-the-opera",
+  "vol": 3,
+  "vols": 3,
+  "source": {
+   "from": "Chapter XIX  The Viscount and the Persian",
+   "nth": 1,
+   "to": "[1] Even so, I am convinced that it would be easy to reach it by",
+   "heading": "Prologue|Chapter [IVXL]+ .+|Epilogue\\."
+  }
+ },
+ {
+  "slug": "northanger-abbey-1",
+  "title": "Northanger Abbey",
+  "author": "Jane Austen",
+  "year": 1817,
+  "genre": "Humor & Satire",
+  "level": 4,
+  "tags": [
+   "British",
+   "satire",
+   "romance"
+  ],
+  "spine": {
+   "color": "#7f6a2e",
+   "height": 0.85
+  },
+  "cover": {
+   "motif": "mask",
+   "accent": "#f3e2b8"
+  },
+  "month": "2030-04",
+  "gutenberg": 121,
+  "plan": 181,
+  "series": "northanger-abbey",
+  "vol": 1,
+  "vols": 2,
+  "source": {
+   "from": "CHAPTER 1",
+   "nth": 2,
+   "to": "CHAPTER 17",
+   "heading": "CHAPTER \\d+",
+   "to_nth": 2
+  }
+ },
+ {
+  "slug": "northanger-abbey-2",
+  "title": "Northanger Abbey",
+  "author": "Jane Austen",
+  "year": 1817,
+  "genre": "Humor & Satire",
+  "level": 4,
+  "tags": [
+   "British",
+   "satire",
+   "romance"
+  ],
+  "spine": {
+   "color": "#7f6a2e",
+   "height": 0.85
+  },
+  "cover": {
+   "motif": "mask",
+   "accent": "#f3e2b8"
+  },
+  "month": "2030-04",
+  "gutenberg": 121,
+  "plan": 182,
+  "series": "northanger-abbey",
+  "vol": 2,
+  "vols": 2,
+  "source": {
+   "from": "CHAPTER 17",
+   "nth": 2,
+   "to": "A NOTE ON THE TEXT",
+   "heading": "CHAPTER \\d+"
+  }
+ },
+ {
+  "slug": "huckleberry-finn-1",
+  "title": "Adventures of Huckleberry Finn",
+  "author": "Mark Twain",
+  "year": 1884,
+  "genre": "Adventure",
+  "level": 4,
+  "tags": [
+   "American",
+   "journey",
+   "race"
+  ],
+  "spine": {
+   "color": "#5b6b3a",
+   "height": 0.84
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#d8c48a"
+  },
+  "month": "2030-04",
+  "gutenberg": 76,
+  "plan": 183,
+  "series": "huckleberry-finn",
+  "vol": 1,
+  "vols": 3,
+  "source": {
+   "from": "CHAPTER I.",
+   "nth": 2,
+   "to": "CHAPTER XVII.",
+   "heading": "CHAPTER ([IVXL]+\\.|THE LAST)",
+   "to_nth": 2
+  }
+ },
+ {
+  "slug": "huckleberry-finn-2",
+  "title": "Adventures of Huckleberry Finn",
+  "author": "Mark Twain",
+  "year": 1884,
+  "genre": "Adventure",
+  "level": 4,
+  "tags": [
+   "American",
+   "journey",
+   "race"
+  ],
+  "spine": {
+   "color": "#5b6b3a",
+   "height": 0.84
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#d8c48a"
+  },
+  "month": "2030-04",
+  "gutenberg": 76,
+  "plan": 184,
+  "series": "huckleberry-finn",
+  "vol": 2,
+  "vols": 3,
+  "source": {
+   "from": "CHAPTER XVII.",
+   "nth": 2,
+   "to": "CHAPTER XXIX.",
+   "heading": "CHAPTER ([IVXL]+\\.|THE LAST)",
+   "to_nth": 2
+  }
+ },
+ {
+  "slug": "huckleberry-finn-3",
+  "title": "Adventures of Huckleberry Finn",
+  "author": "Mark Twain",
+  "year": 1884,
+  "genre": "Adventure",
+  "level": 4,
+  "tags": [
+   "American",
+   "journey",
+   "race"
+  ],
+  "spine": {
+   "color": "#5b6b3a",
+   "height": 0.84
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#d8c48a"
+  },
+  "month": "2030-04",
+  "gutenberg": 76,
+  "plan": 185,
+  "series": "huckleberry-finn",
+  "vol": 3,
+  "vols": 3,
+  "source": {
+   "from": "CHAPTER XXIX.",
+   "nth": 2,
+   "to": "THE END. YOURS TRULY, _HUCK FINN_.",
+   "heading": "CHAPTER ([IVXL]+\\.|THE LAST)"
+  }
+ },
+ {
+  "slug": "notes-from-underground-1",
+  "title": "Notes from Underground",
+  "author": "Fyodor Dostoevsky",
+  "year": 1864,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "Russian",
+   "city"
+  ],
+  "spine": {
+   "color": "#5a4a3a",
+   "height": 0.84
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2030-05",
+  "gutenberg": 600,
+  "plan": 186,
+  "series": "notes-from-underground",
+  "vol": 1,
+  "vols": 2,
+  "source": {
+   "from": "NOTES FROM THE UNDERGROUND[*]",
+   "nth": 1,
+   "to": "IV",
+   "heading": "NOTES FROM THE UNDERGROUND\\[\\*\\] A NOVEL|PART I+ [A-ZÀ].+|[IVXL]+",
+   "to_nth": 4
+  }
+ },
+ {
+  "slug": "notes-from-underground-2",
+  "title": "Notes from Underground",
+  "author": "Fyodor Dostoevsky",
+  "year": 1864,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "Russian",
+   "city"
+  ],
+  "spine": {
+   "color": "#5a4a3a",
+   "height": 0.84
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2030-05",
+  "gutenberg": 600,
+  "plan": 187,
+  "series": "notes-from-underground",
+  "vol": 2,
+  "vols": 2,
+  "source": {
+   "from": "IV",
+   "nth": 4,
+   "to": null,
+   "heading": "NOTES FROM THE UNDERGROUND\\[\\*\\] A NOVEL|PART I+ [A-ZÀ].+|[IVXL]+"
+  }
+ },
+ {
+  "slug": "room-with-a-view-1",
+  "title": "A Room with a View",
+  "author": "E. M. Forster",
+  "year": 1908,
+  "genre": "Love & Society",
+  "level": 4,
+  "tags": [
+   "British",
+   "Italy",
+   "romance"
+  ],
+  "spine": {
+   "color": "#6e2f55",
+   "height": 0.84
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2030-05",
+  "gutenberg": 2641,
+  "plan": 188,
+  "series": "room-with-a-view",
+  "vol": 1,
+  "vols": 2,
+  "source": {
+   "from": "PART ONE",
+   "nth": 1,
+   "to": "Chapter X",
+   "heading": "PART (ONE|TWO)|Chapter [IVXL]+ [A-Z].*",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "room-with-a-view-2",
+  "title": "A Room with a View",
+  "author": "E. M. Forster",
+  "year": 1908,
+  "genre": "Love & Society",
+  "level": 4,
+  "tags": [
+   "British",
+   "Italy",
+   "romance"
+  ],
+  "spine": {
+   "color": "#6e2f55",
+   "height": 0.84
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2030-05",
+  "gutenberg": 2641,
+  "plan": 189,
+  "series": "room-with-a-view",
+  "vol": 2,
+  "vols": 2,
+  "source": {
+   "from": "Chapter X",
+   "nth": 1,
+   "to": null,
+   "heading": "PART (ONE|TWO)|Chapter [IVXL]+ [A-Z].*"
+  }
+ },
+ {
+  "slug": "robinson-crusoe-1",
+  "title": "Robinson Crusoe",
+  "author": "Daniel Defoe",
+  "year": 1719,
+  "genre": "Adventure",
+  "level": 4,
+  "tags": [
+   "British",
+   "island",
+   "survival"
+  ],
+  "spine": {
+   "color": "#4a5a2a",
+   "height": 0.85
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#d8c48a"
+  },
+  "month": "2030-06",
+  "gutenberg": 521,
+  "plan": 190,
+  "series": "robinson-crusoe",
+  "vol": 1,
+  "vols": 4,
+  "source": {
+   "from": "CHAPTER I. START IN LIFE",
+   "nth": 1,
+   "to": "CHAPTER VI. ILL AND CONSCIENCE-STRICKEN",
+   "heading": "CHAPTER [IVXL]+\\. [A-Z].+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "robinson-crusoe-2",
+  "title": "Robinson Crusoe",
+  "author": "Daniel Defoe",
+  "year": 1719,
+  "genre": "Adventure",
+  "level": 4,
+  "tags": [
+   "British",
+   "island",
+   "survival"
+  ],
+  "spine": {
+   "color": "#4a5a2a",
+   "height": 0.85
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#d8c48a"
+  },
+  "month": "2030-06",
+  "gutenberg": 521,
+  "plan": 191,
+  "series": "robinson-crusoe",
+  "vol": 2,
+  "vols": 4,
+  "source": {
+   "from": "CHAPTER VI. ILL AND CONSCIENCE-STRICKEN",
+   "nth": 1,
+   "to": "CHAPTER XI. FINDS PRINT OF MAN’S FOOT ON THE SAND",
+   "heading": "CHAPTER [IVXL]+\\. [A-Z].+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "robinson-crusoe-3",
+  "title": "Robinson Crusoe",
+  "author": "Daniel Defoe",
+  "year": 1719,
+  "genre": "Adventure",
+  "level": 4,
+  "tags": [
+   "British",
+   "island",
+   "survival"
+  ],
+  "spine": {
+   "color": "#4a5a2a",
+   "height": 0.85
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#d8c48a"
+  },
+  "month": "2030-06",
+  "gutenberg": 521,
+  "plan": 192,
+  "series": "robinson-crusoe",
+  "vol": 3,
+  "vols": 4,
+  "source": {
+   "from": "CHAPTER XI. FINDS PRINT OF MAN’S FOOT ON THE SAND",
+   "nth": 1,
+   "to": "CHAPTER XVI. RESCUE OF PRISONERS FROM CANNIBALS",
+   "heading": "CHAPTER [IVXL]+\\. [A-Z].+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "robinson-crusoe-4",
+  "title": "Robinson Crusoe",
+  "author": "Daniel Defoe",
+  "year": 1719,
+  "genre": "Adventure",
+  "level": 4,
+  "tags": [
+   "British",
+   "island",
+   "survival"
+  ],
+  "spine": {
+   "color": "#4a5a2a",
+   "height": 0.85
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#d8c48a"
+  },
+  "month": "2030-06",
+  "gutenberg": 521,
+  "plan": 193,
+  "series": "robinson-crusoe",
+  "vol": 4,
+  "vols": 4,
+  "source": {
+   "from": "CHAPTER XVI. RESCUE OF PRISONERS FROM CANNIBALS",
+   "nth": 1,
+   "to": null,
+   "heading": "CHAPTER [IVXL]+\\. [A-Z].+"
+  }
+ },
+ {
+  "slug": "the-warden-1",
+  "title": "The Warden",
+  "author": "Anthony Trollope",
+  "year": 1855,
+  "genre": "Realism & Character",
+  "level": 4,
+  "tags": [
+   "British",
+   "class",
+   "money"
+  ],
+  "spine": {
+   "color": "#6a5a44",
+   "height": 0.95
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2030-07",
+  "gutenberg": 619,
+  "plan": 194,
+  "series": "the-warden",
+  "vol": 1,
+  "vols": 2,
+  "source": {
+   "from": "Chapter I",
+   "nth": 1,
+   "to": "Chapter XI",
+   "heading": "Chapter [IVXL]+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "the-warden-2",
+  "title": "The Warden",
+  "author": "Anthony Trollope",
+  "year": 1855,
+  "genre": "Realism & Character",
+  "level": 4,
+  "tags": [
+   "British",
+   "class",
+   "money"
+  ],
+  "spine": {
+   "color": "#6a5a44",
+   "height": 0.95
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2030-07",
+  "gutenberg": 619,
+  "plan": 195,
+  "series": "the-warden",
+  "vol": 2,
+  "vols": 2,
+  "source": {
+   "from": "Chapter XI",
+   "nth": 1,
+   "to": null,
+   "heading": "Chapter [IVXL]+"
+  }
+ },
+ {
+  "slug": "fathers-and-sons-1",
+  "title": "Fathers and Sons",
+  "author": "Ivan Turgenev",
+  "year": 1862,
+  "genre": "Realism & Character",
+  "level": 4,
+  "tags": [
+   "Russian",
+   "class",
+   "love"
+  ],
+  "spine": {
+   "color": "#4a4a44",
+   "height": 0.87
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2030-07",
+  "gutenberg": 47935,
+  "plan": 196,
+  "series": "fathers-and-sons",
+  "vol": 1,
+  "vols": 2,
+  "source": {
+   "from": "I",
+   "nth": 1,
+   "to": "XIX",
+   "heading": "[IVXL]+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "fathers-and-sons-2",
+  "title": "Fathers and Sons",
+  "author": "Ivan Turgenev",
+  "year": 1862,
+  "genre": "Realism & Character",
+  "level": 4,
+  "tags": [
+   "Russian",
+   "class",
+   "love"
+  ],
+  "spine": {
+   "color": "#4a4a44",
+   "height": 0.87
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2030-07",
+  "gutenberg": 47935,
+  "plan": 197,
+  "series": "fathers-and-sons",
+  "vol": 2,
+  "vols": 2,
+  "source": {
+   "from": "XIX",
+   "nth": 1,
+   "to": "[1] In the text this word is given in English.",
+   "heading": "[IVXL]+"
+  }
+ },
+ {
+  "slug": "scarlet-letter-1",
+  "title": "The Scarlet Letter",
+  "author": "Nathaniel Hawthorne",
+  "year": 1850,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "American",
+   "Puritans",
+   "guilt"
+  ],
+  "spine": {
+   "color": "#5e5040",
+   "height": 0.87
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2030-08",
+  "gutenberg": 33,
+  "plan": 198,
+  "series": "scarlet-letter",
+  "vol": 1,
+  "vols": 2,
+  "source": {
+   "from": "I.",
+   "nth": 1,
+   "to": "XIII.",
+   "heading": "[IVXL]+\\. [A-Z][A-Z ,’'-]+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "scarlet-letter-2",
+  "title": "The Scarlet Letter",
+  "author": "Nathaniel Hawthorne",
+  "year": 1850,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "American",
+   "Puritans",
+   "guilt"
+  ],
+  "spine": {
+   "color": "#5e5040",
+   "height": 0.87
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2030-08",
+  "gutenberg": 33,
+  "plan": 199,
+  "series": "scarlet-letter",
+  "vol": 2,
+  "vols": 2,
+  "source": {
+   "from": "XIII.",
+   "nth": 1,
+   "to": null,
+   "heading": "[IVXL]+\\. [A-Z][A-Z ,’'-]+"
+  }
+ },
+ {
+  "slug": "pride-and-prejudice-1",
+  "title": "Pride and Prejudice",
+  "author": "Jane Austen",
+  "year": 1813,
+  "genre": "Love & Society",
+  "level": 4,
+  "tags": [
+   "British",
+   "marriage",
+   "class"
+  ],
+  "spine": {
+   "color": "#944a52",
+   "height": 0.95
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2030-08",
+  "gutenberg": 42671,
+  "plan": 200,
+  "series": "pride-and-prejudice",
+  "vol": 1,
+  "vols": 4,
+  "source": {
+   "from": "CHAPTER I.",
+   "nth": 1,
+   "to": "CHAPTER XIX.",
+   "heading": "CHAPTER [IVXLC]+\\.",
+   "to_nth": 1,
+   "drop": "\\[Illustration.*|_(Invented|Engraved) .*|PRIDE AND PREJUDICE:|A Novel\\.|In Three Volumes\\.|By the Author of .*|VOL\\. [IVX]+\\.|London: Printed for T\\. Egerton, Military Library, Whitehall\\. 1813\\.|END OF (VOL\\. I|THE SECOND VOLUME)\\."
+  }
+ },
+ {
+  "slug": "pride-and-prejudice-2",
+  "title": "Pride and Prejudice",
+  "author": "Jane Austen",
+  "year": 1813,
+  "genre": "Love & Society",
+  "level": 4,
+  "tags": [
+   "British",
+   "marriage",
+   "class"
+  ],
+  "spine": {
+   "color": "#944a52",
+   "height": 0.95
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2030-08",
+  "gutenberg": 42671,
+  "plan": 201,
+  "series": "pride-and-prejudice",
+  "vol": 2,
+  "vols": 4,
+  "source": {
+   "from": "CHAPTER XIX.",
+   "nth": 1,
+   "to": "CHAPTER XII.",
+   "heading": "CHAPTER [IVXLC]+\\.",
+   "to_nth": 2,
+   "drop": "\\[Illustration.*|_(Invented|Engraved) .*|PRIDE AND PREJUDICE:|A Novel\\.|In Three Volumes\\.|By the Author of .*|VOL\\. [IVX]+\\.|London: Printed for T\\. Egerton, Military Library, Whitehall\\. 1813\\.|END OF (VOL\\. I|THE SECOND VOLUME)\\."
+  }
+ },
+ {
+  "slug": "pride-and-prejudice-3",
+  "title": "Pride and Prejudice",
+  "author": "Jane Austen",
+  "year": 1813,
+  "genre": "Love & Society",
+  "level": 4,
+  "tags": [
+   "British",
+   "marriage",
+   "class"
+  ],
+  "spine": {
+   "color": "#944a52",
+   "height": 0.95
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2030-08",
+  "gutenberg": 42671,
+  "plan": 202,
+  "series": "pride-and-prejudice",
+  "vol": 3,
+  "vols": 4,
+  "source": {
+   "from": "CHAPTER XII.",
+   "nth": 2,
+   "to": "CHAPTER VI.",
+   "heading": "CHAPTER [IVXLC]+\\.",
+   "to_nth": 3,
+   "drop": "\\[Illustration.*|_(Invented|Engraved) .*|PRIDE AND PREJUDICE:|A Novel\\.|In Three Volumes\\.|By the Author of .*|VOL\\. [IVX]+\\.|London: Printed for T\\. Egerton, Military Library, Whitehall\\. 1813\\.|END OF (VOL\\. I|THE SECOND VOLUME)\\."
+  }
+ },
+ {
+  "slug": "pride-and-prejudice-4",
+  "title": "Pride and Prejudice",
+  "author": "Jane Austen",
+  "year": 1813,
+  "genre": "Love & Society",
+  "level": 4,
+  "tags": [
+   "British",
+   "marriage",
+   "class"
+  ],
+  "spine": {
+   "color": "#944a52",
+   "height": 0.95
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2030-08",
+  "gutenberg": 42671,
+  "plan": 203,
+  "series": "pride-and-prejudice",
+  "vol": 4,
+  "vols": 4,
+  "source": {
+   "from": "CHAPTER VI.",
+   "nth": 3,
+   "to": "Transcriber's note:",
+   "heading": "CHAPTER [IVXLC]+\\.",
+   "drop": "\\[Illustration.*|_(Invented|Engraved) .*|PRIDE AND PREJUDICE:|A Novel\\.|In Three Volumes\\.|By the Author of .*|VOL\\. [IVX]+\\.|London: Printed for T\\. Egerton, Military Library, Whitehall\\. 1813\\.|END OF (VOL\\. I|THE SECOND VOLUME)\\."
+  }
+ },
+ {
+  "slug": "aspern-papers",
+  "title": "The Aspern Papers",
+  "author": "Henry James",
+  "year": 1888,
+  "genre": "Love & Society",
+  "level": 5,
+  "tags": [
+   "American",
+   "Italy",
+   "art"
+  ],
+  "spine": {
+   "color": "#8a4a5a",
+   "height": 0.85
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2030-09",
+  "gutenberg": 211,
+  "plan": 204,
+  "source": {
+   "from": "I",
+   "nth": 1,
+   "to": null,
+   "heading": "[IVXL]+"
+  }
+ },
+ {
+  "slug": "billy-budd",
+  "title": "Billy Budd",
+  "author": "Herman Melville",
+  "year": 1924,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "American",
+   "sea",
+   "war"
+  ],
+  "spine": {
+   "color": "#4e4b3c",
+   "height": 0.95
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2030-09",
+  "gutenberg": 76513,
+  "plan": 205,
+  "source": {
+   "from": "I",
+   "nth": 1,
+   "to": "END OF BOOK,",
+   "heading": "[IVXL]+"
+  }
+ },
+ {
+  "slug": "hero-of-our-time-1",
+  "title": "A Hero of Our Time",
+  "author": "Mikhail Lermontov",
+  "year": 1840,
+  "genre": "Realism & Character",
+  "level": 4,
+  "tags": [
+   "Russian",
+   "mountains",
+   "love"
+  ],
+  "spine": {
+   "color": "#5a4a3a",
+   "height": 0.87
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2030-09",
+  "gutenberg": 913,
+  "plan": 206,
+  "series": "hero-of-our-time",
+  "vol": 1,
+  "vols": 2,
+  "source": {
+   "from": "BOOK I BELA",
+   "nth": 1,
+   "to": "BOOK V THE THIRD EXTRACT FROM PECHORIN’S DIARY",
+   "heading": "BOOK [IVX]+ .*|CHAPTER [IVXL]+([.] .*)?|FOREWORD TO BOOKS III, IV, AND V|THE HEART OF A RUSSIAN|CONCERNING PECHORIN’S DIARY|TAMAN|THE FATALIST|PRINCESS MARY",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "hero-of-our-time-2",
+  "title": "A Hero of Our Time",
+  "author": "Mikhail Lermontov",
+  "year": 1840,
+  "genre": "Realism & Character",
+  "level": 4,
+  "tags": [
+   "Russian",
+   "mountains",
+   "love"
+  ],
+  "spine": {
+   "color": "#5a4a3a",
+   "height": 0.87
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2030-09",
+  "gutenberg": 913,
+  "plan": 207,
+  "series": "hero-of-our-time",
+  "vol": 2,
+  "vols": 2,
+  "source": {
+   "from": "BOOK V THE THIRD EXTRACT FROM PECHORIN’S DIARY",
+   "nth": 1,
+   "to": "APPENDIX",
+   "heading": "BOOK [IVX]+ .*|CHAPTER [IVXL]+([.] .*)?|FOREWORD TO BOOKS III, IV, AND V|THE HEART OF A RUSSIAN|CONCERNING PECHORIN’S DIARY|TAMAN|THE FATALIST|PRINCESS MARY"
+  }
+ },
+ {
+  "slug": "agnes-grey-1",
+  "title": "Agnes Grey",
+  "author": "Anne Brontë",
+  "year": 1847,
+  "genre": "Love & Society",
+  "level": 4,
+  "tags": [
+   "British",
+   "work",
+   "children"
+  ],
+  "spine": {
+   "color": "#7a3346",
+   "height": 0.92
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2030-10",
+  "gutenberg": 767,
+  "plan": 208,
+  "series": "agnes-grey",
+  "vol": 1,
+  "vols": 2,
+  "source": {
+   "from": "CHAPTER I.",
+   "nth": 1,
+   "to": "CHAPTER XII.",
+   "heading": "CHAPTER [IVXL]+[.] .*",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "agnes-grey-2",
+  "title": "Agnes Grey",
+  "author": "Anne Brontë",
+  "year": 1847,
+  "genre": "Love & Society",
+  "level": 4,
+  "tags": [
+   "British",
+   "work",
+   "children"
+  ],
+  "spine": {
+   "color": "#7a3346",
+   "height": 0.92
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2030-10",
+  "gutenberg": 767,
+  "plan": 209,
+  "series": "agnes-grey",
+  "vol": 2,
+  "vols": 2,
+  "source": {
+   "from": "CHAPTER XII.",
+   "nth": 1,
+   "to": "_Spottiswode & Co. Ltd._, _Printers_, _London_. _Colchester and Eton_.",
+   "heading": "CHAPTER [IVXL]+[.] .*"
+  }
+ },
+ {
+  "slug": "connecticut-yankee-1",
+  "title": "A Connecticut Yankee in King Arthur's Court",
+  "author": "Mark Twain",
+  "year": 1889,
+  "genre": "Humor & Satire",
+  "level": 4,
+  "tags": [
+   "American",
+   "time travel",
+   "satire"
+  ],
+  "spine": {
+   "color": "#a3552d",
+   "height": 0.92
+  },
+  "cover": {
+   "motif": "mask",
+   "accent": "#f3e2b8"
+  },
+  "month": "2030-10",
+  "gutenberg": 86,
+  "plan": 210,
+  "series": "connecticut-yankee",
+  "vol": 1,
+  "vols": 3,
+  "source": {
+   "from": "A WORD OF EXPLANATION",
+   "nth": 1,
+   "to": "CHAPTER XVIII",
+   "heading": "CHAPTER [IVXL]+([.] .*)?|A WORD OF EXPLANATION|THE STRANGER'S HISTORY|THE TALE OF THE LOST LAND|THE END OF THE MANUSCRIPT|FINAL P[.]S[.] BY M[.]T[.]|KING\\ ARTHUR'S\\ COURT|KNIGHTS\\ OF\\ THE\\ TABLE\\ ROUND|SIR\\ DINADAN\\ THE\\ HUMORIST|AN\\ INSPIRATION|THE\\ ECLIPSE|MERLIN'S\\ TOWER|THE\\ BOSS|THE\\ TOURNAMENT|BEGINNINGS\\ OF\\ CIVILIZATION|THE\\ YANKEE\\ IN\\ SEARCH\\ OF\\ ADVENTURES|SLOW\\ TORTURE|FREEMEN|“DEFEND\\ THEE,\\ LORD”|SANDY'S\\ TALE|MORGAN\\ LE\\ FAY|A\\ ROYAL\\ BANQUET|IN\\ THE\\ QUEEN'S\\ DUNGEONS|KNIGHT\\-ERRANTRY\\ AS\\ A\\ TRADE|THE\\ OGRE'S\\ CASTLE|THE\\ PILGRIMS|THE\\ HOLY\\ FOUNTAIN|RESTORATION\\ OF\\ THE\\ FOUNTAIN|A\\ RIVAL\\ MAGICIAN|A\\ COMPETITIVE\\ EXAMINATION|THE\\ FIRST\\ NEWSPAPER|THE\\ YANKEE\\ AND\\ THE\\ KING\\ TRAVEL\\ INCOGNITO|DRILLING\\ THE\\ KING|THE\\ SMALLPOX\\ HUT|THE\\ TRAGEDY\\ OF\\ THE\\ MANOR\\-HOUSE|MARCO|DOWLEY'S\\ HUMILIATION|SIXTH\\ CENTURY\\ POLITICAL\\ ECONOMY|THE\\ YANKEE\\ AND\\ THE\\ KING\\ SOLD\\ AS\\ SLAVES|A\\ PITIFUL\\ INCIDENT|AN\\ ENCOUNTER\\ IN\\ THE\\ DARK|AN\\ AWFUL\\ PREDICAMENT|SIR\\ LAUNCELOT\\ AND\\ KNIGHTS\\ TO\\ THE\\ RESCUE|THE\\ YANKEE'S\\ FIGHT\\ WITH\\ THE\\ KNIGHTS|THREE\\ YEARS\\ LATER|THE\\ INTERDICT|WAR!|THE\\ BATTLE\\ OF\\ THE\\ SAND\\ BELT|A\\ POSTSCRIPT\\ BY\\ CLARENCE",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "connecticut-yankee-2",
+  "title": "A Connecticut Yankee in King Arthur's Court",
+  "author": "Mark Twain",
+  "year": 1889,
+  "genre": "Humor & Satire",
+  "level": 4,
+  "tags": [
+   "American",
+   "time travel",
+   "satire"
+  ],
+  "spine": {
+   "color": "#a3552d",
+   "height": 0.92
+  },
+  "cover": {
+   "motif": "mask",
+   "accent": "#f3e2b8"
+  },
+  "month": "2030-10",
+  "gutenberg": 86,
+  "plan": 211,
+  "series": "connecticut-yankee",
+  "vol": 2,
+  "vols": 3,
+  "source": {
+   "from": "CHAPTER XVIII",
+   "nth": 1,
+   "to": "CHAPTER XXXI",
+   "heading": "CHAPTER [IVXL]+([.] .*)?|A WORD OF EXPLANATION|THE STRANGER'S HISTORY|THE TALE OF THE LOST LAND|THE END OF THE MANUSCRIPT|FINAL P[.]S[.] BY M[.]T[.]|KING\\ ARTHUR'S\\ COURT|KNIGHTS\\ OF\\ THE\\ TABLE\\ ROUND|SIR\\ DINADAN\\ THE\\ HUMORIST|AN\\ INSPIRATION|THE\\ ECLIPSE|MERLIN'S\\ TOWER|THE\\ BOSS|THE\\ TOURNAMENT|BEGINNINGS\\ OF\\ CIVILIZATION|THE\\ YANKEE\\ IN\\ SEARCH\\ OF\\ ADVENTURES|SLOW\\ TORTURE|FREEMEN|“DEFEND\\ THEE,\\ LORD”|SANDY'S\\ TALE|MORGAN\\ LE\\ FAY|A\\ ROYAL\\ BANQUET|IN\\ THE\\ QUEEN'S\\ DUNGEONS|KNIGHT\\-ERRANTRY\\ AS\\ A\\ TRADE|THE\\ OGRE'S\\ CASTLE|THE\\ PILGRIMS|THE\\ HOLY\\ FOUNTAIN|RESTORATION\\ OF\\ THE\\ FOUNTAIN|A\\ RIVAL\\ MAGICIAN|A\\ COMPETITIVE\\ EXAMINATION|THE\\ FIRST\\ NEWSPAPER|THE\\ YANKEE\\ AND\\ THE\\ KING\\ TRAVEL\\ INCOGNITO|DRILLING\\ THE\\ KING|THE\\ SMALLPOX\\ HUT|THE\\ TRAGEDY\\ OF\\ THE\\ MANOR\\-HOUSE|MARCO|DOWLEY'S\\ HUMILIATION|SIXTH\\ CENTURY\\ POLITICAL\\ ECONOMY|THE\\ YANKEE\\ AND\\ THE\\ KING\\ SOLD\\ AS\\ SLAVES|A\\ PITIFUL\\ INCIDENT|AN\\ ENCOUNTER\\ IN\\ THE\\ DARK|AN\\ AWFUL\\ PREDICAMENT|SIR\\ LAUNCELOT\\ AND\\ KNIGHTS\\ TO\\ THE\\ RESCUE|THE\\ YANKEE'S\\ FIGHT\\ WITH\\ THE\\ KNIGHTS|THREE\\ YEARS\\ LATER|THE\\ INTERDICT|WAR!|THE\\ BATTLE\\ OF\\ THE\\ SAND\\ BELT|A\\ POSTSCRIPT\\ BY\\ CLARENCE",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "connecticut-yankee-3",
+  "title": "A Connecticut Yankee in King Arthur's Court",
+  "author": "Mark Twain",
+  "year": 1889,
+  "genre": "Humor & Satire",
+  "level": 4,
+  "tags": [
+   "American",
+   "time travel",
+   "satire"
+  ],
+  "spine": {
+   "color": "#a3552d",
+   "height": 0.92
+  },
+  "cover": {
+   "motif": "mask",
+   "accent": "#f3e2b8"
+  },
+  "month": "2030-10",
+  "gutenberg": 86,
+  "plan": 212,
+  "series": "connecticut-yankee",
+  "vol": 3,
+  "vols": 3,
+  "source": {
+   "from": "CHAPTER XXXI",
+   "nth": 1,
+   "to": null,
+   "heading": "CHAPTER [IVXL]+([.] .*)?|A WORD OF EXPLANATION|THE STRANGER'S HISTORY|THE TALE OF THE LOST LAND|THE END OF THE MANUSCRIPT|FINAL P[.]S[.] BY M[.]T[.]|KING\\ ARTHUR'S\\ COURT|KNIGHTS\\ OF\\ THE\\ TABLE\\ ROUND|SIR\\ DINADAN\\ THE\\ HUMORIST|AN\\ INSPIRATION|THE\\ ECLIPSE|MERLIN'S\\ TOWER|THE\\ BOSS|THE\\ TOURNAMENT|BEGINNINGS\\ OF\\ CIVILIZATION|THE\\ YANKEE\\ IN\\ SEARCH\\ OF\\ ADVENTURES|SLOW\\ TORTURE|FREEMEN|“DEFEND\\ THEE,\\ LORD”|SANDY'S\\ TALE|MORGAN\\ LE\\ FAY|A\\ ROYAL\\ BANQUET|IN\\ THE\\ QUEEN'S\\ DUNGEONS|KNIGHT\\-ERRANTRY\\ AS\\ A\\ TRADE|THE\\ OGRE'S\\ CASTLE|THE\\ PILGRIMS|THE\\ HOLY\\ FOUNTAIN|RESTORATION\\ OF\\ THE\\ FOUNTAIN|A\\ RIVAL\\ MAGICIAN|A\\ COMPETITIVE\\ EXAMINATION|THE\\ FIRST\\ NEWSPAPER|THE\\ YANKEE\\ AND\\ THE\\ KING\\ TRAVEL\\ INCOGNITO|DRILLING\\ THE\\ KING|THE\\ SMALLPOX\\ HUT|THE\\ TRAGEDY\\ OF\\ THE\\ MANOR\\-HOUSE|MARCO|DOWLEY'S\\ HUMILIATION|SIXTH\\ CENTURY\\ POLITICAL\\ ECONOMY|THE\\ YANKEE\\ AND\\ THE\\ KING\\ SOLD\\ AS\\ SLAVES|A\\ PITIFUL\\ INCIDENT|AN\\ ENCOUNTER\\ IN\\ THE\\ DARK|AN\\ AWFUL\\ PREDICAMENT|SIR\\ LAUNCELOT\\ AND\\ KNIGHTS\\ TO\\ THE\\ RESCUE|THE\\ YANKEE'S\\ FIGHT\\ WITH\\ THE\\ KNIGHTS|THREE\\ YEARS\\ LATER|THE\\ INTERDICT|WAR!|THE\\ BATTLE\\ OF\\ THE\\ SAND\\ BELT|A\\ POSTSCRIPT\\ BY\\ CLARENCE"
+  }
+ },
+ {
+  "slug": "heart-of-darkness",
+  "title": "Heart of Darkness",
+  "author": "Joseph Conrad",
+  "year": 1899,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "British",
+   "empire",
+   "journey"
+  ],
+  "spine": {
+   "color": "#6a5a44",
+   "height": 0.85
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2030-11",
+  "gutenberg": 219,
+  "plan": 213,
+  "source": {
+   "from": "I",
+   "nth": 2,
+   "to": null,
+   "heading": "I{1,3}"
+  }
+ },
+ {
+  "slug": "cranford-1",
+  "title": "Cranford",
+  "author": "Elizabeth Gaskell",
+  "year": 1853,
+  "genre": "Humor & Satire",
+  "level": 4,
+  "tags": [
+   "British",
+   "women",
+   "humor"
+  ],
+  "spine": {
+   "color": "#b0602a",
+   "height": 0.88
+  },
+  "cover": {
+   "motif": "mask",
+   "accent": "#f3e2b8"
+  },
+  "month": "2030-11",
+  "gutenberg": 394,
+  "plan": 214,
+  "series": "cranford",
+  "vol": 1,
+  "vols": 2,
+  "source": {
+   "from": "CHAPTER I.",
+   "nth": 1,
+   "to": "CHAPTER IX.",
+   "heading": "CHAPTER [IVXL]+[.] .*",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "cranford-2",
+  "title": "Cranford",
+  "author": "Elizabeth Gaskell",
+  "year": 1853,
+  "genre": "Humor & Satire",
+  "level": 4,
+  "tags": [
+   "British",
+   "women",
+   "humor"
+  ],
+  "spine": {
+   "color": "#b0602a",
+   "height": 0.88
+  },
+  "cover": {
+   "motif": "mask",
+   "accent": "#f3e2b8"
+  },
+  "month": "2030-11",
+  "gutenberg": 394,
+  "plan": 215,
+  "series": "cranford",
+  "vol": 2,
+  "vols": 2,
+  "source": {
+   "from": "CHAPTER IX.",
+   "nth": 1,
+   "to": "PRINTED BY",
+   "heading": "CHAPTER [IVXL]+[.] .*"
+  }
+ },
+ {
+  "slug": "the-moonstone-1",
+  "title": "The Moonstone",
+  "author": "Wilkie Collins",
+  "year": 1868,
+  "genre": "Mystery & Detective",
+  "level": 4,
+  "tags": [
+   "British",
+   "India",
+   "treasure"
+  ],
+  "spine": {
+   "color": "#2b4a70",
+   "height": 0.92
+  },
+  "cover": {
+   "motif": "key",
+   "accent": "#d9c08a"
+  },
+  "month": "2030-12",
+  "gutenberg": 155,
+  "plan": 216,
+  "series": "the-moonstone",
+  "vol": 1,
+  "vols": 5,
+  "source": {
+   "from": "PROLOGUE",
+   "nth": 2,
+   "to": "CHAPTER XII",
+   "heading": "PROLOGUE|THE STORY|FIRST PERIOD|THE END OF THE FIRST PERIOD[.]|SECOND PERIOD[.]|(FIRST|SECOND|THIRD|FOURTH|FIFTH|SIXTH|SEVENTH|EIGHTH) NARRATIVE[.]|EPILOGUE[.]|THE FINDING OF THE DIAMOND[.]|CHAPTER [IVXL]+|I|II|III|IV|V|THE STORMING OF SERINGAPATAM [(]1799[)]:|THE LOSS OF THE DIAMOND [(]1848[)]|THE DISCOVERY OF THE TRUTH[.] [(]1848-1849[.][)]|THE STATEMENT OF [^()]+[.] [(]18[45][0-9][.][)]",
+   "to_nth": 2
+  }
+ },
+ {
+  "slug": "the-moonstone-2",
+  "title": "The Moonstone",
+  "author": "Wilkie Collins",
+  "year": 1868,
+  "genre": "Mystery & Detective",
+  "level": 4,
+  "tags": [
+   "British",
+   "India",
+   "treasure"
+  ],
+  "spine": {
+   "color": "#2b4a70",
+   "height": 0.92
+  },
+  "cover": {
+   "motif": "key",
+   "accent": "#d9c08a"
+  },
+  "month": "2030-12",
+  "gutenberg": 155,
+  "plan": 217,
+  "series": "the-moonstone",
+  "vol": 2,
+  "vols": 5,
+  "source": {
+   "from": "CHAPTER XII",
+   "nth": 2,
+   "to": "CHAPTER XXIII",
+   "heading": "PROLOGUE|THE STORY|FIRST PERIOD|THE END OF THE FIRST PERIOD[.]|SECOND PERIOD[.]|(FIRST|SECOND|THIRD|FOURTH|FIFTH|SIXTH|SEVENTH|EIGHTH) NARRATIVE[.]|EPILOGUE[.]|THE FINDING OF THE DIAMOND[.]|CHAPTER [IVXL]+|I|II|III|IV|V|THE STORMING OF SERINGAPATAM [(]1799[)]:|THE LOSS OF THE DIAMOND [(]1848[)]|THE DISCOVERY OF THE TRUTH[.] [(]1848-1849[.][)]|THE STATEMENT OF [^()]+[.] [(]18[45][0-9][.][)]",
+   "to_nth": 2
+  }
+ },
+ {
+  "slug": "the-moonstone-3",
+  "title": "The Moonstone",
+  "author": "Wilkie Collins",
+  "year": 1868,
+  "genre": "Mystery & Detective",
+  "level": 4,
+  "tags": [
+   "British",
+   "India",
+   "treasure"
+  ],
+  "spine": {
+   "color": "#2b4a70",
+   "height": 0.92
+  },
+  "cover": {
+   "motif": "key",
+   "accent": "#d9c08a"
+  },
+  "month": "2030-12",
+  "gutenberg": 155,
+  "plan": 218,
+  "series": "the-moonstone",
+  "vol": 3,
+  "vols": 5,
+  "source": {
+   "from": "CHAPTER XXIII",
+   "nth": 2,
+   "to": "CHAPTER III",
+   "heading": "PROLOGUE|THE STORY|FIRST PERIOD|THE END OF THE FIRST PERIOD[.]|SECOND PERIOD[.]|(FIRST|SECOND|THIRD|FOURTH|FIFTH|SIXTH|SEVENTH|EIGHTH) NARRATIVE[.]|EPILOGUE[.]|THE FINDING OF THE DIAMOND[.]|CHAPTER [IVXL]+|I|II|III|IV|V|THE STORMING OF SERINGAPATAM [(]1799[)]:|THE LOSS OF THE DIAMOND [(]1848[)]|THE DISCOVERY OF THE TRUTH[.] [(]1848-1849[.][)]|THE STATEMENT OF [^()]+[.] [(]18[45][0-9][.][)]",
+   "to_nth": 7
+  }
+ },
+ {
+  "slug": "the-moonstone-4",
+  "title": "The Moonstone",
+  "author": "Wilkie Collins",
+  "year": 1868,
+  "genre": "Mystery & Detective",
+  "level": 4,
+  "tags": [
+   "British",
+   "India",
+   "treasure"
+  ],
+  "spine": {
+   "color": "#2b4a70",
+   "height": 0.92
+  },
+  "cover": {
+   "motif": "key",
+   "accent": "#d9c08a"
+  },
+  "month": "2030-12",
+  "gutenberg": 155,
+  "plan": 219,
+  "series": "the-moonstone",
+  "vol": 4,
+  "vols": 5,
+  "source": {
+   "from": "CHAPTER III",
+   "nth": 7,
+   "to": "CHAPTER IX",
+   "heading": "PROLOGUE|THE STORY|FIRST PERIOD|THE END OF THE FIRST PERIOD[.]|SECOND PERIOD[.]|(FIRST|SECOND|THIRD|FOURTH|FIFTH|SIXTH|SEVENTH|EIGHTH) NARRATIVE[.]|EPILOGUE[.]|THE FINDING OF THE DIAMOND[.]|CHAPTER [IVXL]+|I|II|III|IV|V|THE STORMING OF SERINGAPATAM [(]1799[)]:|THE LOSS OF THE DIAMOND [(]1848[)]|THE DISCOVERY OF THE TRUTH[.] [(]1848-1849[.][)]|THE STATEMENT OF [^()]+[.] [(]18[45][0-9][.][)]",
+   "to_nth": 4
+  }
+ },
+ {
+  "slug": "the-moonstone-5",
+  "title": "The Moonstone",
+  "author": "Wilkie Collins",
+  "year": 1868,
+  "genre": "Mystery & Detective",
+  "level": 4,
+  "tags": [
+   "British",
+   "India",
+   "treasure"
+  ],
+  "spine": {
+   "color": "#2b4a70",
+   "height": 0.92
+  },
+  "cover": {
+   "motif": "key",
+   "accent": "#d9c08a"
+  },
+  "month": "2030-12",
+  "gutenberg": 155,
+  "plan": 220,
+  "series": "the-moonstone",
+  "vol": 5,
+  "vols": 5,
+  "source": {
+   "from": "CHAPTER IX",
+   "nth": 4,
+   "to": "FINIS",
+   "heading": "PROLOGUE|THE STORY|FIRST PERIOD|THE END OF THE FIRST PERIOD[.]|SECOND PERIOD[.]|(FIRST|SECOND|THIRD|FOURTH|FIFTH|SIXTH|SEVENTH|EIGHTH) NARRATIVE[.]|EPILOGUE[.]|THE FINDING OF THE DIAMOND[.]|CHAPTER [IVXL]+|I|II|III|IV|V|THE STORMING OF SERINGAPATAM [(]1799[)]:|THE LOSS OF THE DIAMOND [(]1848[)]|THE DISCOVERY OF THE TRUTH[.] [(]1848-1849[.][)]|THE STATEMENT OF [^()]+[.] [(]18[45][0-9][.][)]"
+  }
+ },
+ {
+  "slug": "my-antonia-1",
+  "title": "My Ántonia",
+  "author": "Willa Cather",
+  "year": 1918,
+  "genre": "Realism & Character",
+  "level": 4,
+  "tags": [
+   "American",
+   "friendship",
+   "work"
+  ],
+  "spine": {
+   "color": "#4a4a44",
+   "height": 0.91
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2031-01",
+  "gutenberg": 242,
+  "plan": 221,
+  "series": "my-antonia",
+  "vol": 1,
+  "vols": 3,
+  "source": {
+   "from": "INTRODUCTION",
+   "nth": 2,
+   "to": "XVII",
+   "heading": "INTRODUCTION|BOOK [IV]+[.] .*|[IVX]+",
+   "to_nth": 2
+  }
+ },
+ {
+  "slug": "my-antonia-2",
+  "title": "My Ántonia",
+  "author": "Willa Cather",
+  "year": 1918,
+  "genre": "Realism & Character",
+  "level": 4,
+  "tags": [
+   "American",
+   "friendship",
+   "work"
+  ],
+  "spine": {
+   "color": "#4a4a44",
+   "height": 0.91
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2031-01",
+  "gutenberg": 242,
+  "plan": 222,
+  "series": "my-antonia",
+  "vol": 2,
+  "vols": 3,
+  "source": {
+   "from": "XVII",
+   "nth": 2,
+   "to": "XV",
+   "heading": "INTRODUCTION|BOOK [IV]+[.] .*|[IVX]+",
+   "to_nth": 4
+  }
+ },
+ {
+  "slug": "my-antonia-3",
+  "title": "My Ántonia",
+  "author": "Willa Cather",
+  "year": 1918,
+  "genre": "Realism & Character",
+  "level": 4,
+  "tags": [
+   "American",
+   "friendship",
+   "work"
+  ],
+  "spine": {
+   "color": "#4a4a44",
+   "height": 0.91
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2031-01",
+  "gutenberg": 242,
+  "plan": 223,
+  "series": "my-antonia",
+  "vol": 3,
+  "vols": 3,
+  "source": {
+   "from": "XV",
+   "nth": 4,
+   "to": null,
+   "heading": "INTRODUCTION|BOOK [IV]+[.] .*|[IVX]+"
+  }
+ },
+ {
+  "slug": "tale-of-two-cities-1",
+  "title": "A Tale of Two Cities",
+  "author": "Charles Dickens",
+  "year": 1859,
+  "genre": "Realism & Character",
+  "level": 4,
+  "tags": [
+   "British",
+   "French",
+   "Paris",
+   "London"
+  ],
+  "spine": {
+   "color": "#5e5040",
+   "height": 0.89
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2031-02",
+  "gutenberg": 98,
+  "plan": 224,
+  "series": "tale-of-two-cities",
+  "vol": 1,
+  "vols": 4,
+  "source": {
+   "from": "Book the First--Recalled to Life",
+   "nth": 2,
+   "to": "CHAPTER VII.",
+   "heading": "Book the (First|Second|Third)--.*|CHAPTER [IVXL]+[.] .*",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "tale-of-two-cities-2",
+  "title": "A Tale of Two Cities",
+  "author": "Charles Dickens",
+  "year": 1859,
+  "genre": "Realism & Character",
+  "level": 4,
+  "tags": [
+   "British",
+   "French",
+   "Paris",
+   "London"
+  ],
+  "spine": {
+   "color": "#5e5040",
+   "height": 0.89
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2031-02",
+  "gutenberg": 98,
+  "plan": 225,
+  "series": "tale-of-two-cities",
+  "vol": 2,
+  "vols": 4,
+  "source": {
+   "from": "CHAPTER VII.",
+   "nth": 1,
+   "to": "CHAPTER XVIII.",
+   "heading": "Book the (First|Second|Third)--.*|CHAPTER [IVXL]+[.] .*",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "tale-of-two-cities-3",
+  "title": "A Tale of Two Cities",
+  "author": "Charles Dickens",
+  "year": 1859,
+  "genre": "Realism & Character",
+  "level": 4,
+  "tags": [
+   "British",
+   "French",
+   "Paris",
+   "London"
+  ],
+  "spine": {
+   "color": "#5e5040",
+   "height": 0.89
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2031-02",
+  "gutenberg": 98,
+  "plan": 226,
+  "series": "tale-of-two-cities",
+  "vol": 3,
+  "vols": 4,
+  "source": {
+   "from": "CHAPTER XVIII.",
+   "nth": 1,
+   "to": "CHAPTER VII.",
+   "heading": "Book the (First|Second|Third)--.*|CHAPTER [IVXL]+[.] .*",
+   "to_nth": 2
+  }
+ },
+ {
+  "slug": "tale-of-two-cities-4",
+  "title": "A Tale of Two Cities",
+  "author": "Charles Dickens",
+  "year": 1859,
+  "genre": "Realism & Character",
+  "level": 4,
+  "tags": [
+   "British",
+   "French",
+   "Paris",
+   "London"
+  ],
+  "spine": {
+   "color": "#5e5040",
+   "height": 0.89
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2031-02",
+  "gutenberg": 98,
+  "plan": 227,
+  "series": "tale-of-two-cities",
+  "vol": 4,
+  "vols": 4,
+  "source": {
+   "from": "CHAPTER VII.",
+   "nth": 2,
+   "to": null,
+   "heading": "Book the (First|Second|Third)--.*|CHAPTER [IVXL]+[.] .*"
+  }
+ },
+ {
+  "slug": "the-jungle-1",
+  "title": "The Jungle",
+  "author": "Upton Sinclair",
+  "year": 1906,
+  "genre": "Realism & Character",
+  "level": 4,
+  "tags": [
+   "American",
+   "work",
+   "poverty",
+   "city"
+  ],
+  "spine": {
+   "color": "#4e4b3c",
+   "height": 0.89
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2031-03",
+  "gutenberg": 140,
+  "plan": 228,
+  "series": "the-jungle",
+  "vol": 1,
+  "vols": 4,
+  "source": {
+   "from": "CHAPTER I",
+   "nth": 2,
+   "to": "CHAPTER VIII",
+   "heading": "CHAPTER [IVXL]+",
+   "to_nth": 2
+  }
+ },
+ {
+  "slug": "the-jungle-2",
+  "title": "The Jungle",
+  "author": "Upton Sinclair",
+  "year": 1906,
+  "genre": "Realism & Character",
+  "level": 4,
+  "tags": [
+   "American",
+   "work",
+   "poverty",
+   "city"
+  ],
+  "spine": {
+   "color": "#4e4b3c",
+   "height": 0.89
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2031-03",
+  "gutenberg": 140,
+  "plan": 229,
+  "series": "the-jungle",
+  "vol": 2,
+  "vols": 4,
+  "source": {
+   "from": "CHAPTER VIII",
+   "nth": 2,
+   "to": "CHAPTER XVIII",
+   "heading": "CHAPTER [IVXL]+",
+   "to_nth": 2
+  }
+ },
+ {
+  "slug": "the-jungle-3",
+  "title": "The Jungle",
+  "author": "Upton Sinclair",
+  "year": 1906,
+  "genre": "Realism & Character",
+  "level": 4,
+  "tags": [
+   "American",
+   "work",
+   "poverty",
+   "city"
+  ],
+  "spine": {
+   "color": "#4e4b3c",
+   "height": 0.89
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2031-03",
+  "gutenberg": 140,
+  "plan": 230,
+  "series": "the-jungle",
+  "vol": 3,
+  "vols": 4,
+  "source": {
+   "from": "CHAPTER XVIII",
+   "nth": 2,
+   "to": "CHAPTER XXVI",
+   "heading": "CHAPTER [IVXL]+",
+   "to_nth": 2
+  }
+ },
+ {
+  "slug": "the-jungle-4",
+  "title": "The Jungle",
+  "author": "Upton Sinclair",
+  "year": 1906,
+  "genre": "Realism & Character",
+  "level": 4,
+  "tags": [
+   "American",
+   "work",
+   "poverty",
+   "city"
+  ],
+  "spine": {
+   "color": "#4e4b3c",
+   "height": 0.89
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2031-03",
+  "gutenberg": 140,
+  "plan": 231,
+  "series": "the-jungle",
+  "vol": 4,
+  "vols": 4,
+  "source": {
+   "from": "CHAPTER XXVI",
+   "nth": 2,
+   "to": null,
+   "heading": "CHAPTER [IVXL]+"
+  }
+ },
+ {
+  "slug": "gullivers-travels-1",
+  "title": "Gulliver's Travels",
+  "author": "Jonathan Swift",
+  "year": 1726,
+  "genre": "Humor & Satire",
+  "level": 5,
+  "tags": [
+   "British",
+   "satire",
+   "journey"
+  ],
+  "spine": {
+   "color": "#a0702a",
+   "height": 0.96
+  },
+  "cover": {
+   "motif": "mask",
+   "accent": "#f3e2b8"
+  },
+  "month": "2031-04",
+  "gutenberg": 829,
+  "plan": 232,
+  "series": "gullivers-travels",
+  "vol": 1,
+  "vols": 3,
+  "source": {
+   "from": "THE PUBLISHER TO THE READER.",
+   "nth": 2,
+   "to": "CHAPTER IV.",
+   "heading": "THE PUBLISHER TO THE READER[.]|A LETTER FROM CAPTAIN GULLIVER TO HIS COUSIN SYMPSON[.]|PART [IV]+[.] .*|CHAPTER [IVXL]+[.]",
+   "to_nth": 2
+  }
+ },
+ {
+  "slug": "gullivers-travels-2",
+  "title": "Gulliver's Travels",
+  "author": "Jonathan Swift",
+  "year": 1726,
+  "genre": "Humor & Satire",
+  "level": 5,
+  "tags": [
+   "British",
+   "satire",
+   "journey"
+  ],
+  "spine": {
+   "color": "#a0702a",
+   "height": 0.96
+  },
+  "cover": {
+   "motif": "mask",
+   "accent": "#f3e2b8"
+  },
+  "month": "2031-04",
+  "gutenberg": 829,
+  "plan": 233,
+  "series": "gullivers-travels",
+  "vol": 2,
+  "vols": 3,
+  "source": {
+   "from": "CHAPTER IV.",
+   "nth": 2,
+   "to": "CHAPTER IX.",
+   "heading": "THE PUBLISHER TO THE READER[.]|A LETTER FROM CAPTAIN GULLIVER TO HIS COUSIN SYMPSON[.]|PART [IV]+[.] .*|CHAPTER [IVXL]+[.]",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "gullivers-travels-3",
+  "title": "Gulliver's Travels",
+  "author": "Jonathan Swift",
+  "year": 1726,
+  "genre": "Humor & Satire",
+  "level": 5,
+  "tags": [
+   "British",
+   "satire",
+   "journey"
+  ],
+  "spine": {
+   "color": "#a0702a",
+   "height": 0.96
+  },
+  "cover": {
+   "motif": "mask",
+   "accent": "#f3e2b8"
+  },
+  "month": "2031-04",
+  "gutenberg": 829,
+  "plan": 234,
+  "series": "gullivers-travels",
+  "vol": 3,
+  "vols": 3,
+  "source": {
+   "from": "CHAPTER IX.",
+   "nth": 1,
+   "to": "FOOTNOTES:",
+   "heading": "THE PUBLISHER TO THE READER[.]|A LETTER FROM CAPTAIN GULLIVER TO HIS COUSIN SYMPSON[.]|PART [IV]+[.] .*|CHAPTER [IVXL]+[.]"
+  }
+ },
+ {
+  "slug": "sense-and-sensibility-1",
+  "title": "Sense and Sensibility",
+  "author": "Jane Austen",
+  "year": 1811,
+  "genre": "Love & Society",
+  "level": 4,
+  "tags": [
+   "British",
+   "marriage",
+   "money"
+  ],
+  "spine": {
+   "color": "#5e3350",
+   "height": 0.91
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2031-04",
+  "gutenberg": 161,
+  "plan": 235,
+  "series": "sense-and-sensibility",
+  "vol": 1,
+  "vols": 3,
+  "source": {
+   "from": "CHAPTER I.",
+   "nth": 1,
+   "to": "CHAPTER XXII.",
+   "heading": "CHAPTER [IVXL]+[.]",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "sense-and-sensibility-2",
+  "title": "Sense and Sensibility",
+  "author": "Jane Austen",
+  "year": 1811,
+  "genre": "Love & Society",
+  "level": 4,
+  "tags": [
+   "British",
+   "marriage",
+   "money"
+  ],
+  "spine": {
+   "color": "#5e3350",
+   "height": 0.91
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2031-04",
+  "gutenberg": 161,
+  "plan": 236,
+  "series": "sense-and-sensibility",
+  "vol": 2,
+  "vols": 3,
+  "source": {
+   "from": "CHAPTER XXII.",
+   "nth": 1,
+   "to": "CHAPTER XXXVII.",
+   "heading": "CHAPTER [IVXL]+[.]",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "sense-and-sensibility-3",
+  "title": "Sense and Sensibility",
+  "author": "Jane Austen",
+  "year": 1811,
+  "genre": "Love & Society",
+  "level": 4,
+  "tags": [
+   "British",
+   "marriage",
+   "money"
+  ],
+  "spine": {
+   "color": "#5e3350",
+   "height": 0.91
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2031-04",
+  "gutenberg": 161,
+  "plan": 237,
+  "series": "sense-and-sensibility",
+  "vol": 3,
+  "vols": 3,
+  "source": {
+   "from": "CHAPTER XXXVII.",
+   "nth": 1,
+   "to": "THE END",
+   "heading": "CHAPTER [IVXL]+[.]"
+  }
+ },
+ {
+  "slug": "kim-1",
+  "title": "Kim",
+  "author": "Rudyard Kipling",
+  "year": 1901,
+  "genre": "Adventure",
+  "level": 5,
+  "tags": [
+   "British",
+   "India",
+   "empire",
+   "journey"
+  ],
+  "spine": {
+   "color": "#7a4a2a",
+   "height": 0.92
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#e3c16f"
+  },
+  "month": "2031-05",
+  "gutenberg": 2226,
+  "plan": 238,
+  "series": "kim",
+  "vol": 1,
+  "vols": 3,
+  "source": {
+   "from": "CHAPTER I",
+   "nth": 2,
+   "to": "CHAPTER VI",
+   "heading": "CHAPTER [IVXL]+",
+   "to_nth": 2
+  }
+ },
+ {
+  "slug": "kim-2",
+  "title": "Kim",
+  "author": "Rudyard Kipling",
+  "year": 1901,
+  "genre": "Adventure",
+  "level": 5,
+  "tags": [
+   "British",
+   "India",
+   "empire",
+   "journey"
+  ],
+  "spine": {
+   "color": "#7a4a2a",
+   "height": 0.92
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#e3c16f"
+  },
+  "month": "2031-05",
+  "gutenberg": 2226,
+  "plan": 239,
+  "series": "kim",
+  "vol": 2,
+  "vols": 3,
+  "source": {
+   "from": "CHAPTER VI",
+   "nth": 2,
+   "to": "CHAPTER XI",
+   "heading": "CHAPTER [IVXL]+",
+   "to_nth": 2
+  }
+ },
+ {
+  "slug": "kim-3",
+  "title": "Kim",
+  "author": "Rudyard Kipling",
+  "year": 1901,
+  "genre": "Adventure",
+  "level": 5,
+  "tags": [
+   "British",
+   "India",
+   "empire",
+   "journey"
+  ],
+  "spine": {
+   "color": "#7a4a2a",
+   "height": 0.92
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#e3c16f"
+  },
+  "month": "2031-05",
+  "gutenberg": 2226,
+  "plan": 240,
+  "series": "kim",
+  "vol": 3,
+  "vols": 3,
+  "source": {
+   "from": "CHAPTER XI",
+   "nth": 2,
+   "to": null,
+   "heading": "CHAPTER [IVXL]+"
+  }
+ },
+ {
+  "slug": "house-of-the-seven-gables-1",
+  "title": "The House of the Seven Gables",
+  "author": "Nathaniel Hawthorne",
+  "year": 1851,
+  "genre": "Gothic & Horror",
+  "level": 5,
+  "tags": [
+   "American",
+   "haunted house",
+   "guilt"
+  ],
+  "spine": {
+   "color": "#4a1e1e",
+   "height": 0.89
+  },
+  "cover": {
+   "motif": "raven",
+   "accent": "#c9a24a"
+  },
+  "month": "2031-05",
+  "gutenberg": 77,
+  "plan": 241,
+  "series": "house-of-the-seven-gables",
+  "vol": 1,
+  "vols": 3,
+  "source": {
+   "from": "I.",
+   "nth": 1,
+   "to": "VIII.",
+   "heading": "[IVXL]+[.] [A-Z][A-Za-zœ’ -]+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "house-of-the-seven-gables-2",
+  "title": "The House of the Seven Gables",
+  "author": "Nathaniel Hawthorne",
+  "year": 1851,
+  "genre": "Gothic & Horror",
+  "level": 5,
+  "tags": [
+   "American",
+   "haunted house",
+   "guilt"
+  ],
+  "spine": {
+   "color": "#4a1e1e",
+   "height": 0.89
+  },
+  "cover": {
+   "motif": "raven",
+   "accent": "#c9a24a"
+  },
+  "month": "2031-05",
+  "gutenberg": 77,
+  "plan": 242,
+  "series": "house-of-the-seven-gables",
+  "vol": 2,
+  "vols": 3,
+  "source": {
+   "from": "VIII.",
+   "nth": 1,
+   "to": "XIV.",
+   "heading": "[IVXL]+[.] [A-Z][A-Za-zœ’ -]+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "house-of-the-seven-gables-3",
+  "title": "The House of the Seven Gables",
+  "author": "Nathaniel Hawthorne",
+  "year": 1851,
+  "genre": "Gothic & Horror",
+  "level": 5,
+  "tags": [
+   "American",
+   "haunted house",
+   "guilt"
+  ],
+  "spine": {
+   "color": "#4a1e1e",
+   "height": 0.89
+  },
+  "cover": {
+   "motif": "raven",
+   "accent": "#c9a24a"
+  },
+  "month": "2031-05",
+  "gutenberg": 77,
+  "plan": 243,
+  "series": "house-of-the-seven-gables",
+  "vol": 3,
+  "vols": 3,
+  "source": {
+   "from": "XIV.",
+   "nth": 1,
+   "to": null,
+   "heading": "[IVXL]+[.] [A-Z][A-Za-zœ’ -]+"
+  }
+ },
+ {
+  "slug": "madame-bovary-1",
+  "title": "Madame Bovary",
+  "author": "Gustave Flaubert",
+  "year": 1857,
+  "genre": "Love & Society",
+  "level": 4,
+  "tags": [
+   "French",
+   "marriage",
+   "money"
+  ],
+  "spine": {
+   "color": "#6e2f55",
+   "height": 0.86
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2031-06",
+  "gutenberg": 2413,
+  "plan": 244,
+  "series": "madame-bovary",
+  "vol": 1,
+  "vols": 3,
+  "source": {
+   "from": "Part I",
+   "nth": 1,
+   "to": "Chapter Six",
+   "heading": "Part I{1,3}|Chapter (One|Two|Three|Four|Five|Six|Seven|Eight|Nine|Ten|Eleven|Twelve|Thirteen|Fourteen|Fifteen)",
+   "to_nth": 2
+  }
+ },
+ {
+  "slug": "madame-bovary-2",
+  "title": "Madame Bovary",
+  "author": "Gustave Flaubert",
+  "year": 1857,
+  "genre": "Love & Society",
+  "level": 4,
+  "tags": [
+   "French",
+   "marriage",
+   "money"
+  ],
+  "spine": {
+   "color": "#6e2f55",
+   "height": 0.86
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2031-06",
+  "gutenberg": 2413,
+  "plan": 245,
+  "series": "madame-bovary",
+  "vol": 2,
+  "vols": 3,
+  "source": {
+   "from": "Chapter Six",
+   "nth": 2,
+   "to": "Part III",
+   "heading": "Part I{1,3}|Chapter (One|Two|Three|Four|Five|Six|Seven|Eight|Nine|Ten|Eleven|Twelve|Thirteen|Fourteen|Fifteen)",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "madame-bovary-3",
+  "title": "Madame Bovary",
+  "author": "Gustave Flaubert",
+  "year": 1857,
+  "genre": "Love & Society",
+  "level": 4,
+  "tags": [
+   "French",
+   "marriage",
+   "money"
+  ],
+  "spine": {
+   "color": "#6e2f55",
+   "height": 0.86
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2031-06",
+  "gutenberg": 2413,
+  "plan": 246,
+  "series": "madame-bovary",
+  "vol": 3,
+  "vols": 3,
+  "source": {
+   "from": "Part III",
+   "nth": 1,
+   "to": null,
+   "heading": "Part I{1,3}|Chapter (One|Two|Three|Four|Five|Six|Seven|Eight|Nine|Ten|Eleven|Twelve|Thirteen|Fourteen|Fifteen)"
+  }
+ },
+ {
+  "slug": "wuthering-heights-1",
+  "title": "Wuthering Heights",
+  "author": "Emily Brontë",
+  "year": 1847,
+  "genre": "Gothic & Horror",
+  "level": 5,
+  "tags": [
+   "British",
+   "love",
+   "revenge"
+  ],
+  "spine": {
+   "color": "#3a1c24",
+   "height": 0.88
+  },
+  "cover": {
+   "motif": "raven",
+   "accent": "#c9a24a"
+  },
+  "month": "2031-06",
+  "gutenberg": 768,
+  "plan": 247,
+  "series": "wuthering-heights",
+  "vol": 1,
+  "vols": 3,
+  "source": {
+   "from": "CHAPTER I",
+   "nth": 1,
+   "to": "CHAPTER XII",
+   "heading": "CHAPTER [IVXL]+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "wuthering-heights-2",
+  "title": "Wuthering Heights",
+  "author": "Emily Brontë",
+  "year": 1847,
+  "genre": "Gothic & Horror",
+  "level": 5,
+  "tags": [
+   "British",
+   "love",
+   "revenge"
+  ],
+  "spine": {
+   "color": "#3a1c24",
+   "height": 0.88
+  },
+  "cover": {
+   "motif": "raven",
+   "accent": "#c9a24a"
+  },
+  "month": "2031-06",
+  "gutenberg": 768,
+  "plan": 248,
+  "series": "wuthering-heights",
+  "vol": 2,
+  "vols": 3,
+  "source": {
+   "from": "CHAPTER XII",
+   "nth": 1,
+   "to": "CHAPTER XXII",
+   "heading": "CHAPTER [IVXL]+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "wuthering-heights-3",
+  "title": "Wuthering Heights",
+  "author": "Emily Brontë",
+  "year": 1847,
+  "genre": "Gothic & Horror",
+  "level": 5,
+  "tags": [
+   "British",
+   "love",
+   "revenge"
+  ],
+  "spine": {
+   "color": "#3a1c24",
+   "height": 0.88
+  },
+  "cover": {
+   "motif": "raven",
+   "accent": "#c9a24a"
+  },
+  "month": "2031-06",
+  "gutenberg": 768,
+  "plan": 249,
+  "series": "wuthering-heights",
+  "vol": 3,
+  "vols": 3,
+  "source": {
+   "from": "CHAPTER XXII",
+   "nth": 1,
+   "to": null,
+   "heading": "CHAPTER [IVXL]+"
+  }
+ },
+ {
+  "slug": "this-side-of-paradise-1",
+  "title": "This Side of Paradise",
+  "author": "F. Scott Fitzgerald",
+  "year": 1920,
+  "genre": "Love & Society",
+  "level": 4,
+  "tags": [
+   "American",
+   "love",
+   "class"
+  ],
+  "spine": {
+   "color": "#944a52",
+   "height": 0.92
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2031-07",
+  "gutenberg": 805,
+  "plan": 250,
+  "series": "this-side-of-paradise",
+  "vol": 1,
+  "vols": 3,
+  "source": {
+   "from": "BOOK ONE—The Romantic Egotist",
+   "nth": 2,
+   "to": "CHAPTER 3. The Egotist Considers",
+   "heading": "BOOK (ONE|TWO)—.*|CHAPTER [1-5][.] .*|(?![^a-z]*:—?$)[^a-z]+",
+   "to_nth": 2
+  }
+ },
+ {
+  "slug": "this-side-of-paradise-2",
+  "title": "This Side of Paradise",
+  "author": "F. Scott Fitzgerald",
+  "year": 1920,
+  "genre": "Love & Society",
+  "level": 4,
+  "tags": [
+   "American",
+   "love",
+   "class"
+  ],
+  "spine": {
+   "color": "#944a52",
+   "height": 0.92
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2031-07",
+  "gutenberg": 805,
+  "plan": 251,
+  "series": "this-side-of-paradise",
+  "vol": 2,
+  "vols": 3,
+  "source": {
+   "from": "CHAPTER 3. The Egotist Considers",
+   "nth": 2,
+   "to": "FIVE WEEKS LATER",
+   "heading": "BOOK (ONE|TWO)—.*|CHAPTER [1-5][.] .*|(?![^a-z]*:—?$)[^a-z]+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "this-side-of-paradise-3",
+  "title": "This Side of Paradise",
+  "author": "F. Scott Fitzgerald",
+  "year": 1920,
+  "genre": "Love & Society",
+  "level": 4,
+  "tags": [
+   "American",
+   "love",
+   "class"
+  ],
+  "spine": {
+   "color": "#944a52",
+   "height": 0.92
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2031-07",
+  "gutenberg": 805,
+  "plan": 252,
+  "series": "this-side-of-paradise",
+  "vol": 3,
+  "vols": 3,
+  "source": {
+   "from": "FIVE WEEKS LATER",
+   "nth": 1,
+   "to": "Appendix: Production notes for eBook edition 11",
+   "heading": "BOOK (ONE|TWO)—.*|CHAPTER [1-5][.] .*|(?![^a-z]*:—?$)[^a-z]+"
+  }
+ },
+ {
+  "slug": "oliver-twist-1",
+  "title": "Oliver Twist",
+  "author": "Charles Dickens",
+  "year": 1838,
+  "genre": "Realism & Character",
+  "level": 4,
+  "tags": [
+   "British",
+   "London",
+   "poverty",
+   "children"
+  ],
+  "spine": {
+   "color": "#5a4a3a",
+   "height": 0.94
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2031-08",
+  "gutenberg": 730,
+  "plan": 253,
+  "series": "oliver-twist",
+  "vol": 1,
+  "vols": 4,
+  "source": {
+   "from": "CHAPTER I.",
+   "nth": 1,
+   "to": "CHAPTER XV.",
+   "heading": "CHAPTER [IVXL]+[.] .*",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "oliver-twist-2",
+  "title": "Oliver Twist",
+  "author": "Charles Dickens",
+  "year": 1838,
+  "genre": "Realism & Character",
+  "level": 4,
+  "tags": [
+   "British",
+   "London",
+   "poverty",
+   "children"
+  ],
+  "spine": {
+   "color": "#5a4a3a",
+   "height": 0.94
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2031-08",
+  "gutenberg": 730,
+  "plan": 254,
+  "series": "oliver-twist",
+  "vol": 2,
+  "vols": 4,
+  "source": {
+   "from": "CHAPTER XV.",
+   "nth": 1,
+   "to": "CHAPTER XXIX.",
+   "heading": "CHAPTER [IVXL]+[.] .*",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "oliver-twist-3",
+  "title": "Oliver Twist",
+  "author": "Charles Dickens",
+  "year": 1838,
+  "genre": "Realism & Character",
+  "level": 4,
+  "tags": [
+   "British",
+   "London",
+   "poverty",
+   "children"
+  ],
+  "spine": {
+   "color": "#5a4a3a",
+   "height": 0.94
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2031-08",
+  "gutenberg": 730,
+  "plan": 255,
+  "series": "oliver-twist",
+  "vol": 3,
+  "vols": 4,
+  "source": {
+   "from": "CHAPTER XXIX.",
+   "nth": 1,
+   "to": "CHAPTER XLII.",
+   "heading": "CHAPTER [IVXL]+[.] .*",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "oliver-twist-4",
+  "title": "Oliver Twist",
+  "author": "Charles Dickens",
+  "year": 1838,
+  "genre": "Realism & Character",
+  "level": 4,
+  "tags": [
+   "British",
+   "London",
+   "poverty",
+   "children"
+  ],
+  "spine": {
+   "color": "#5a4a3a",
+   "height": 0.94
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2031-08",
+  "gutenberg": 730,
+  "plan": 256,
+  "series": "oliver-twist",
+  "vol": 4,
+  "vols": 4,
+  "source": {
+   "from": "CHAPTER XLII.",
+   "nth": 1,
+   "to": null,
+   "heading": "CHAPTER [IVXL]+[.] .*"
+  }
+ },
+ {
+  "slug": "secret-agent-1",
+  "title": "The Secret Agent",
+  "author": "Joseph Conrad",
+  "year": 1907,
+  "genre": "Mystery & Detective",
+  "level": 5,
+  "tags": [
+   "British",
+   "London",
+   "city"
+  ],
+  "spine": {
+   "color": "#3a3a60",
+   "height": 0.89
+  },
+  "cover": {
+   "motif": "key",
+   "accent": "#d9c08a"
+  },
+  "month": "2031-09",
+  "gutenberg": 974,
+  "plan": 257,
+  "series": "secret-agent",
+  "vol": 1,
+  "vols": 3,
+  "source": {
+   "from": "CHAPTER I",
+   "nth": 1,
+   "to": "CHAPTER VI",
+   "heading": "CHAPTER [IVXL]+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "secret-agent-2",
+  "title": "The Secret Agent",
+  "author": "Joseph Conrad",
+  "year": 1907,
+  "genre": "Mystery & Detective",
+  "level": 5,
+  "tags": [
+   "British",
+   "London",
+   "city"
+  ],
+  "spine": {
+   "color": "#3a3a60",
+   "height": 0.89
+  },
+  "cover": {
+   "motif": "key",
+   "accent": "#d9c08a"
+  },
+  "month": "2031-09",
+  "gutenberg": 974,
+  "plan": 258,
+  "series": "secret-agent",
+  "vol": 2,
+  "vols": 3,
+  "source": {
+   "from": "CHAPTER VI",
+   "nth": 1,
+   "to": "CHAPTER X",
+   "heading": "CHAPTER [IVXL]+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "secret-agent-3",
+  "title": "The Secret Agent",
+  "author": "Joseph Conrad",
+  "year": 1907,
+  "genre": "Mystery & Detective",
+  "level": 5,
+  "tags": [
+   "British",
+   "London",
+   "city"
+  ],
+  "spine": {
+   "color": "#3a3a60",
+   "height": 0.89
+  },
+  "cover": {
+   "motif": "key",
+   "accent": "#d9c08a"
+  },
+  "month": "2031-09",
+  "gutenberg": 974,
+  "plan": 259,
+  "series": "secret-agent",
+  "vol": 3,
+  "vols": 3,
+  "source": {
+   "from": "CHAPTER X",
+   "nth": 1,
+   "to": null,
+   "heading": "CHAPTER [IVXL]+"
+  }
+ },
+ {
+  "slug": "persuasion-1",
+  "title": "Persuasion",
+  "author": "Jane Austen",
+  "year": 1817,
+  "genre": "Love & Society",
+  "level": 4,
+  "tags": [
+   "British",
+   "love",
+   "seaside"
+  ],
+  "spine": {
+   "color": "#8a4a5a",
+   "height": 0.91
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2031-09",
+  "gutenberg": 105,
+  "plan": 260,
+  "series": "persuasion",
+  "vol": 1,
+  "vols": 3,
+  "source": {
+   "from": "CHAPTER I.",
+   "nth": 2,
+   "to": "CHAPTER X.",
+   "heading": "CHAPTER [IVXL]+[.]",
+   "to_nth": 2
+  }
+ },
+ {
+  "slug": "persuasion-2",
+  "title": "Persuasion",
+  "author": "Jane Austen",
+  "year": 1817,
+  "genre": "Love & Society",
+  "level": 4,
+  "tags": [
+   "British",
+   "love",
+   "seaside"
+  ],
+  "spine": {
+   "color": "#8a4a5a",
+   "height": 0.91
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2031-09",
+  "gutenberg": 105,
+  "plan": 261,
+  "series": "persuasion",
+  "vol": 2,
+  "vols": 3,
+  "source": {
+   "from": "CHAPTER X.",
+   "nth": 2,
+   "to": "CHAPTER XIX.",
+   "heading": "CHAPTER [IVXL]+[.]",
+   "to_nth": 2
+  }
+ },
+ {
+  "slug": "persuasion-3",
+  "title": "Persuasion",
+  "author": "Jane Austen",
+  "year": 1817,
+  "genre": "Love & Society",
+  "level": 4,
+  "tags": [
+   "British",
+   "love",
+   "seaside"
+  ],
+  "spine": {
+   "color": "#8a4a5a",
+   "height": 0.91
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2031-09",
+  "gutenberg": 105,
+  "plan": 262,
+  "series": "persuasion",
+  "vol": 3,
+  "vols": 3,
+  "source": {
+   "from": "CHAPTER XIX.",
+   "nth": 2,
+   "to": "Finis",
+   "heading": "CHAPTER [IVXL]+[.]"
+  }
+ },
+ {
+  "slug": "winesburg-ohio-1",
+  "title": "Winesburg, Ohio",
+  "author": "Sherwood Anderson",
+  "year": 1919,
+  "genre": "Realism & Character",
+  "level": 4,
+  "tags": [
+   "American",
+   "city"
+  ],
+  "spine": {
+   "color": "#6a5a44",
+   "height": 0.91
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2031-10",
+  "gutenberg": 416,
+  "plan": 263,
+  "series": "winesburg-ohio",
+  "vol": 1,
+  "vols": 2,
+  "source": {
+   "from": "THE BOOK OF THE GROTESQUE",
+   "nth": 2,
+   "to": "THE THINKER",
+   "heading": "[A-Z“][A-Z ”]+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "winesburg-ohio-2",
+  "title": "Winesburg, Ohio",
+  "author": "Sherwood Anderson",
+  "year": 1919,
+  "genre": "Realism & Character",
+  "level": 4,
+  "tags": [
+   "American",
+   "city"
+  ],
+  "spine": {
+   "color": "#6a5a44",
+   "height": 0.91
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2031-10",
+  "gutenberg": 416,
+  "plan": 264,
+  "series": "winesburg-ohio",
+  "vol": 2,
+  "vols": 2,
+  "source": {
+   "from": "THE THINKER",
+   "nth": 1,
+   "to": null,
+   "heading": "[A-Z“][A-Z ”]+"
+  }
+ },
+ {
+  "slug": "germinal-1",
+  "title": "Germinal",
+  "author": "Émile Zola",
+  "year": 1885,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "French",
+   "work",
+   "poverty"
+  ],
+  "spine": {
+   "color": "#4a4a44",
+   "height": 0.85
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2031-11",
+  "gutenberg": 56528,
+  "plan": 265,
+  "series": "germinal",
+  "vol": 1,
+  "vols": 5,
+  "source": {
+   "from": "PART ONE",
+   "nth": 1,
+   "to": "CHAPTER IV",
+   "heading": "PART [A-Z]+|CHAPTER [IVXLC]+",
+   "to_nth": 2
+  }
+ },
+ {
+  "slug": "germinal-2",
+  "title": "Germinal",
+  "author": "Émile Zola",
+  "year": 1885,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "French",
+   "work",
+   "poverty"
+  ],
+  "spine": {
+   "color": "#4a4a44",
+   "height": 0.85
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2031-11",
+  "gutenberg": 56528,
+  "plan": 266,
+  "series": "germinal",
+  "vol": 2,
+  "vols": 5,
+  "source": {
+   "from": "CHAPTER IV",
+   "nth": 2,
+   "to": "CHAPTER II",
+   "heading": "PART [A-Z]+|CHAPTER [IVXLC]+",
+   "to_nth": 4
+  }
+ },
+ {
+  "slug": "germinal-3",
+  "title": "Germinal",
+  "author": "Émile Zola",
+  "year": 1885,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "French",
+   "work",
+   "poverty"
+  ],
+  "spine": {
+   "color": "#4a4a44",
+   "height": 0.85
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2031-11",
+  "gutenberg": 56528,
+  "plan": 267,
+  "series": "germinal",
+  "vol": 3,
+  "vols": 5,
+  "source": {
+   "from": "CHAPTER II",
+   "nth": 4,
+   "to": "CHAPTER III",
+   "heading": "PART [A-Z]+|CHAPTER [IVXLC]+",
+   "to_nth": 5
+  }
+ },
+ {
+  "slug": "germinal-4",
+  "title": "Germinal",
+  "author": "Émile Zola",
+  "year": 1885,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "French",
+   "work",
+   "poverty"
+  ],
+  "spine": {
+   "color": "#4a4a44",
+   "height": 0.85
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2031-11",
+  "gutenberg": 56528,
+  "plan": 268,
+  "series": "germinal",
+  "vol": 4,
+  "vols": 5,
+  "source": {
+   "from": "CHAPTER III",
+   "nth": 5,
+   "to": "CHAPTER V",
+   "heading": "PART [A-Z]+|CHAPTER [IVXLC]+",
+   "to_nth": 6
+  }
+ },
+ {
+  "slug": "germinal-5",
+  "title": "Germinal",
+  "author": "Émile Zola",
+  "year": 1885,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "French",
+   "work",
+   "poverty"
+  ],
+  "spine": {
+   "color": "#4a4a44",
+   "height": 0.85
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2031-11",
+  "gutenberg": 56528,
+  "plan": 269,
+  "series": "germinal",
+  "vol": 5,
+  "vols": 5,
+  "source": {
+   "from": "CHAPTER V",
+   "nth": 6,
+   "to": null,
+   "heading": "PART [A-Z]+|CHAPTER [IVXLC]+"
+  }
+ },
+ {
+  "slug": "hard-times-1",
+  "title": "Hard Times",
+  "author": "Charles Dickens",
+  "year": 1854,
+  "genre": "Realism & Character",
+  "level": 4,
+  "tags": [
+   "British",
+   "work",
+   "satire"
+  ],
+  "spine": {
+   "color": "#5e5040",
+   "height": 0.85
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2031-12",
+  "gutenberg": 786,
+  "plan": 270,
+  "series": "hard-times",
+  "vol": 1,
+  "vols": 3,
+  "source": {
+   "from": "BOOK THE FIRST",
+   "nth": 1,
+   "to": "CHAPTER XVI",
+   "heading": "BOOK THE (FIRST|SECOND|THIRD) _[A-Z]+_|CHAPTER [IVXL]+ [A-Z].*",
+   "to_nth": 2
+  }
+ },
+ {
+  "slug": "hard-times-2",
+  "title": "Hard Times",
+  "author": "Charles Dickens",
+  "year": 1854,
+  "genre": "Realism & Character",
+  "level": 4,
+  "tags": [
+   "British",
+   "work",
+   "satire"
+  ],
+  "spine": {
+   "color": "#5e5040",
+   "height": 0.85
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2031-12",
+  "gutenberg": 786,
+  "plan": 271,
+  "series": "hard-times",
+  "vol": 2,
+  "vols": 3,
+  "source": {
+   "from": "CHAPTER XVI",
+   "nth": 2,
+   "to": "CHAPTER X",
+   "heading": "BOOK THE (FIRST|SECOND|THIRD) _[A-Z]+_|CHAPTER [IVXL]+ [A-Z].*",
+   "to_nth": 4
+  }
+ },
+ {
+  "slug": "hard-times-3",
+  "title": "Hard Times",
+  "author": "Charles Dickens",
+  "year": 1854,
+  "genre": "Realism & Character",
+  "level": 4,
+  "tags": [
+   "British",
+   "work",
+   "satire"
+  ],
+  "spine": {
+   "color": "#5e5040",
+   "height": 0.85
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2031-12",
+  "gutenberg": 786,
+  "plan": 272,
+  "series": "hard-times",
+  "vol": 3,
+  "vols": 3,
+  "source": {
+   "from": "CHAPTER X",
+   "nth": 4,
+   "to": "FOOTNOTES",
+   "heading": "BOOK THE (FIRST|SECOND|THIRD) _[A-Z]+_|CHAPTER [IVXL]+ [A-Z].*"
+  }
+ },
+ {
+  "slug": "sun-also-rises-1",
+  "title": "The Sun Also Rises",
+  "author": "Ernest Hemingway",
+  "year": 1926,
+  "genre": "Realism & Character",
+  "level": 4,
+  "tags": [
+   "American",
+   "Europe",
+   "love"
+  ],
+  "spine": {
+   "color": "#4e4b3c",
+   "height": 0.86
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2031-12",
+  "gutenberg": 67138,
+  "plan": 273,
+  "series": "sun-also-rises",
+  "vol": 1,
+  "vols": 2,
+  "source": {
+   "from": "BOOK I",
+   "nth": 1,
+   "to": "CHAPTER",
+   "heading": "BOOK I{1,3}|CHAPTER [1-9][0-9]?",
+   "to_nth": 13
+  }
+ },
+ {
+  "slug": "sun-also-rises-2",
+  "title": "The Sun Also Rises",
+  "author": "Ernest Hemingway",
+  "year": 1926,
+  "genre": "Realism & Character",
+  "level": 4,
+  "tags": [
+   "American",
+   "Europe",
+   "love"
+  ],
+  "spine": {
+   "color": "#4e4b3c",
+   "height": 0.86
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2031-12",
+  "gutenberg": 67138,
+  "plan": 274,
+  "series": "sun-also-rises",
+  "vol": 2,
+  "vols": 2,
+  "source": {
+   "from": "CHAPTER",
+   "nth": 13,
+   "to": "THE END",
+   "heading": "BOOK I{1,3}|CHAPTER [1-9][0-9]?"
+  }
+ },
+ {
+  "slug": "far-from-the-madding-crowd-1",
+  "title": "Far from the Madding Crowd",
+  "author": "Thomas Hardy",
+  "year": 1874,
+  "genre": "Love & Society",
+  "level": 5,
+  "tags": [
+   "British",
+   "love",
+   "work"
+  ],
+  "spine": {
+   "color": "#7a3346",
+   "height": 0.89
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2032-01",
+  "gutenberg": 107,
+  "plan": 275,
+  "series": "far-from-the-madding-crowd",
+  "vol": 1,
+  "vols": 4,
+  "source": {
+   "from": "CHAPTER I",
+   "nth": 1,
+   "to": "CHAPTER XV",
+   "heading": "CHAPTER [IVXL]+ .*|[IV]+|VI{1,2}",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "far-from-the-madding-crowd-2",
+  "title": "Far from the Madding Crowd",
+  "author": "Thomas Hardy",
+  "year": 1874,
+  "genre": "Love & Society",
+  "level": 5,
+  "tags": [
+   "British",
+   "love",
+   "work"
+  ],
+  "spine": {
+   "color": "#7a3346",
+   "height": 0.89
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2032-01",
+  "gutenberg": 107,
+  "plan": 276,
+  "series": "far-from-the-madding-crowd",
+  "vol": 2,
+  "vols": 4,
+  "source": {
+   "from": "CHAPTER XV",
+   "nth": 1,
+   "to": "CHAPTER XXXII",
+   "heading": "CHAPTER [IVXL]+ .*|[IV]+|VI{1,2}",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "far-from-the-madding-crowd-3",
+  "title": "Far from the Madding Crowd",
+  "author": "Thomas Hardy",
+  "year": 1874,
+  "genre": "Love & Society",
+  "level": 5,
+  "tags": [
+   "British",
+   "love",
+   "work"
+  ],
+  "spine": {
+   "color": "#7a3346",
+   "height": 0.89
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2032-01",
+  "gutenberg": 107,
+  "plan": 277,
+  "series": "far-from-the-madding-crowd",
+  "vol": 3,
+  "vols": 4,
+  "source": {
+   "from": "CHAPTER XXXII",
+   "nth": 1,
+   "to": "CHAPTER XLV",
+   "heading": "CHAPTER [IVXL]+ .*|[IV]+|VI{1,2}",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "far-from-the-madding-crowd-4",
+  "title": "Far from the Madding Crowd",
+  "author": "Thomas Hardy",
+  "year": 1874,
+  "genre": "Love & Society",
+  "level": 5,
+  "tags": [
+   "British",
+   "love",
+   "work"
+  ],
+  "spine": {
+   "color": "#7a3346",
+   "height": 0.89
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2032-01",
+  "gutenberg": 107,
+  "plan": 278,
+  "series": "far-from-the-madding-crowd",
+  "vol": 4,
+  "vols": 4,
+  "source": {
+   "from": "CHAPTER XLV",
+   "nth": 1,
+   "to": "NOTES",
+   "heading": "CHAPTER [IVXL]+ .*|[IV]+|VI{1,2}"
+  }
+ },
+ {
+  "slug": "babbitt-1",
+  "title": "Babbitt",
+  "author": "Sinclair Lewis",
+  "year": 1922,
+  "genre": "Humor & Satire",
+  "level": 5,
+  "tags": [
+   "American",
+   "satire",
+   "city",
+   "money"
+  ],
+  "spine": {
+   "color": "#8f6a1f",
+   "height": 0.87
+  },
+  "cover": {
+   "motif": "mask",
+   "accent": "#f3e2b8"
+  },
+  "month": "2032-02",
+  "gutenberg": 1156,
+  "plan": 279,
+  "series": "babbitt",
+  "vol": 1,
+  "vols": 4,
+  "source": {
+   "from": "CHAPTER I",
+   "nth": 1,
+   "to": "IV",
+   "heading": "CHAPTER [IVXL]+|[IVX]+",
+   "to_nth": 4
+  }
+ },
+ {
+  "slug": "babbitt-2",
+  "title": "Babbitt",
+  "author": "Sinclair Lewis",
+  "year": 1922,
+  "genre": "Humor & Satire",
+  "level": 5,
+  "tags": [
+   "American",
+   "satire",
+   "city",
+   "money"
+  ],
+  "spine": {
+   "color": "#8f6a1f",
+   "height": 0.87
+  },
+  "cover": {
+   "motif": "mask",
+   "accent": "#f3e2b8"
+  },
+  "month": "2032-02",
+  "gutenberg": 1156,
+  "plan": 280,
+  "series": "babbitt",
+  "vol": 2,
+  "vols": 4,
+  "source": {
+   "from": "IV",
+   "nth": 4,
+   "to": "IV",
+   "heading": "CHAPTER [IVXL]+|[IVX]+",
+   "to_nth": 9
+  }
+ },
+ {
+  "slug": "babbitt-3",
+  "title": "Babbitt",
+  "author": "Sinclair Lewis",
+  "year": 1922,
+  "genre": "Humor & Satire",
+  "level": 5,
+  "tags": [
+   "American",
+   "satire",
+   "city",
+   "money"
+  ],
+  "spine": {
+   "color": "#8f6a1f",
+   "height": 0.87
+  },
+  "cover": {
+   "motif": "mask",
+   "accent": "#f3e2b8"
+  },
+  "month": "2032-02",
+  "gutenberg": 1156,
+  "plan": 281,
+  "series": "babbitt",
+  "vol": 3,
+  "vols": 4,
+  "source": {
+   "from": "IV",
+   "nth": 9,
+   "to": "IV",
+   "heading": "CHAPTER [IVXL]+|[IVX]+",
+   "to_nth": 16
+  }
+ },
+ {
+  "slug": "babbitt-4",
+  "title": "Babbitt",
+  "author": "Sinclair Lewis",
+  "year": 1922,
+  "genre": "Humor & Satire",
+  "level": 5,
+  "tags": [
+   "American",
+   "satire",
+   "city",
+   "money"
+  ],
+  "spine": {
+   "color": "#8f6a1f",
+   "height": 0.87
+  },
+  "cover": {
+   "motif": "mask",
+   "accent": "#f3e2b8"
+  },
+  "month": "2032-02",
+  "gutenberg": 1156,
+  "plan": 282,
+  "series": "babbitt",
+  "vol": 4,
+  "vols": 4,
+  "source": {
+   "from": "IV",
+   "nth": 16,
+   "to": null,
+   "heading": "CHAPTER [IVXL]+|[IVX]+"
+  }
+ },
+ {
+  "slug": "jane-eyre-1",
+  "title": "Jane Eyre",
+  "author": "Charlotte Brontë",
+  "year": 1847,
+  "genre": "Love & Society",
+  "level": 5,
+  "tags": [
+   "British",
+   "love",
+   "women"
+  ],
+  "spine": {
+   "color": "#5e3350",
+   "height": 0.87
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2032-03",
+  "gutenberg": 1260,
+  "plan": 283,
+  "series": "jane-eyre",
+  "vol": 1,
+  "vols": 5,
+  "source": {
+   "from": "CHAPTER I",
+   "nth": 1,
+   "to": "CHAPTER XI",
+   "heading": "CHAPTER [IVXLC]+(—CONCLUSION)?",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "jane-eyre-2",
+  "title": "Jane Eyre",
+  "author": "Charlotte Brontë",
+  "year": 1847,
+  "genre": "Love & Society",
+  "level": 5,
+  "tags": [
+   "British",
+   "love",
+   "women"
+  ],
+  "spine": {
+   "color": "#5e3350",
+   "height": 0.87
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2032-03",
+  "gutenberg": 1260,
+  "plan": 284,
+  "series": "jane-eyre",
+  "vol": 2,
+  "vols": 5,
+  "source": {
+   "from": "CHAPTER XI",
+   "nth": 1,
+   "to": "CHAPTER XVIII",
+   "heading": "CHAPTER [IVXLC]+(—CONCLUSION)?",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "jane-eyre-3",
+  "title": "Jane Eyre",
+  "author": "Charlotte Brontë",
+  "year": 1847,
+  "genre": "Love & Society",
+  "level": 5,
+  "tags": [
+   "British",
+   "love",
+   "women"
+  ],
+  "spine": {
+   "color": "#5e3350",
+   "height": 0.87
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2032-03",
+  "gutenberg": 1260,
+  "plan": 285,
+  "series": "jane-eyre",
+  "vol": 3,
+  "vols": 5,
+  "source": {
+   "from": "CHAPTER XVIII",
+   "nth": 1,
+   "to": "CHAPTER XXV",
+   "heading": "CHAPTER [IVXLC]+(—CONCLUSION)?",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "jane-eyre-4",
+  "title": "Jane Eyre",
+  "author": "Charlotte Brontë",
+  "year": 1847,
+  "genre": "Love & Society",
+  "level": 5,
+  "tags": [
+   "British",
+   "love",
+   "women"
+  ],
+  "spine": {
+   "color": "#5e3350",
+   "height": 0.87
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2032-03",
+  "gutenberg": 1260,
+  "plan": 286,
+  "series": "jane-eyre",
+  "vol": 4,
+  "vols": 5,
+  "source": {
+   "from": "CHAPTER XXV",
+   "nth": 1,
+   "to": "CHAPTER XXXII",
+   "heading": "CHAPTER [IVXLC]+(—CONCLUSION)?",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "jane-eyre-5",
+  "title": "Jane Eyre",
+  "author": "Charlotte Brontë",
+  "year": 1847,
+  "genre": "Love & Society",
+  "level": 5,
+  "tags": [
+   "British",
+   "love",
+   "women"
+  ],
+  "spine": {
+   "color": "#5e3350",
+   "height": 0.87
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2032-03",
+  "gutenberg": 1260,
+  "plan": 287,
+  "series": "jane-eyre",
+  "vol": 5,
+  "vols": 5,
+  "source": {
+   "from": "CHAPTER XXXII",
+   "nth": 1,
+   "to": null,
+   "heading": "CHAPTER [IVXLC]+(—CONCLUSION)?"
+  }
+ },
+ {
+  "slug": "last-of-the-mohicans-1",
+  "title": "The Last of the Mohicans",
+  "author": "James Fenimore Cooper",
+  "year": 1826,
+  "genre": "Adventure",
+  "level": 5,
+  "tags": [
+   "American",
+   "forest",
+   "war"
+  ],
+  "spine": {
+   "color": "#8a3b2e",
+   "height": 0.86
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#e3c16f"
+  },
+  "month": "2032-04",
+  "gutenberg": 940,
+  "plan": 288,
+  "series": "last-of-the-mohicans",
+  "vol": 1,
+  "vols": 4,
+  "source": {
+   "from": "CHAPTER I.",
+   "nth": 2,
+   "to": "CHAPTER XI.",
+   "heading": "CHAPTER [IVXLC]+\\.",
+   "to_nth": 2
+  }
+ },
+ {
+  "slug": "last-of-the-mohicans-2",
+  "title": "The Last of the Mohicans",
+  "author": "James Fenimore Cooper",
+  "year": 1826,
+  "genre": "Adventure",
+  "level": 5,
+  "tags": [
+   "American",
+   "forest",
+   "war"
+  ],
+  "spine": {
+   "color": "#8a3b2e",
+   "height": 0.86
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#e3c16f"
+  },
+  "month": "2032-04",
+  "gutenberg": 940,
+  "plan": 289,
+  "series": "last-of-the-mohicans",
+  "vol": 2,
+  "vols": 4,
+  "source": {
+   "from": "CHAPTER XI.",
+   "nth": 2,
+   "to": "CHAPTER XVIII.",
+   "heading": "CHAPTER [IVXLC]+\\.",
+   "to_nth": 2
+  }
+ },
+ {
+  "slug": "last-of-the-mohicans-3",
+  "title": "The Last of the Mohicans",
+  "author": "James Fenimore Cooper",
+  "year": 1826,
+  "genre": "Adventure",
+  "level": 5,
+  "tags": [
+   "American",
+   "forest",
+   "war"
+  ],
+  "spine": {
+   "color": "#8a3b2e",
+   "height": 0.86
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#e3c16f"
+  },
+  "month": "2032-04",
+  "gutenberg": 940,
+  "plan": 290,
+  "series": "last-of-the-mohicans",
+  "vol": 3,
+  "vols": 4,
+  "source": {
+   "from": "CHAPTER XVIII.",
+   "nth": 2,
+   "to": "CHAPTER XXVI.",
+   "heading": "CHAPTER [IVXLC]+\\.",
+   "to_nth": 2
+  }
+ },
+ {
+  "slug": "last-of-the-mohicans-4",
+  "title": "The Last of the Mohicans",
+  "author": "James Fenimore Cooper",
+  "year": 1826,
+  "genre": "Adventure",
+  "level": 5,
+  "tags": [
+   "American",
+   "forest",
+   "war"
+  ],
+  "spine": {
+   "color": "#8a3b2e",
+   "height": 0.86
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#e3c16f"
+  },
+  "month": "2032-04",
+  "gutenberg": 940,
+  "plan": 291,
+  "series": "last-of-the-mohicans",
+  "vol": 4,
+  "vols": 4,
+  "source": {
+   "from": "CHAPTER XXVI.",
+   "nth": 2,
+   "to": null,
+   "heading": "CHAPTER [IVXLC]+\\."
+  }
+ },
+ {
+  "slug": "the-good-soldier-1",
+  "title": "The Good Soldier",
+  "author": "Ford Madox Ford",
+  "year": 1915,
+  "genre": "Love & Society",
+  "level": 5,
+  "tags": [
+   "British",
+   "marriage"
+  ],
+  "spine": {
+   "color": "#6e2f55",
+   "height": 0.86
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2032-05",
+  "gutenberg": 2775,
+  "plan": 292,
+  "series": "the-good-soldier",
+  "vol": 1,
+  "vols": 2,
+  "source": {
+   "from": "PART I",
+   "nth": 2,
+   "to": "II",
+   "heading": "PART [IV]+( [IVX]+)?|[IVX]+",
+   "to_nth": 3
+  }
+ },
+ {
+  "slug": "the-good-soldier-2",
+  "title": "The Good Soldier",
+  "author": "Ford Madox Ford",
+  "year": 1915,
+  "genre": "Love & Society",
+  "level": 5,
+  "tags": [
+   "British",
+   "marriage"
+  ],
+  "spine": {
+   "color": "#6e2f55",
+   "height": 0.86
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2032-05",
+  "gutenberg": 2775,
+  "plan": 293,
+  "series": "the-good-soldier",
+  "vol": 2,
+  "vols": 2,
+  "source": {
+   "from": "II",
+   "nth": 3,
+   "to": null,
+   "heading": "PART [IV]+( [IVX]+)?|[IVX]+"
+  }
+ },
+ {
+  "slug": "great-expectations-1",
+  "title": "Great Expectations",
+  "author": "Charles Dickens",
+  "year": 1861,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "British",
+   "money",
+   "class",
+   "London"
+  ],
+  "spine": {
+   "color": "#5a4a3a",
+   "height": 0.87
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2032-06",
+  "gutenberg": 1400,
+  "plan": 294,
+  "series": "great-expectations",
+  "vol": 1,
+  "vols": 5,
+  "source": {
+   "from": "Chapter I.",
+   "nth": 2,
+   "to": "Chapter XIII.",
+   "heading": "Chapter [IVXL]+\\.",
+   "to_nth": 2
+  }
+ },
+ {
+  "slug": "great-expectations-2",
+  "title": "Great Expectations",
+  "author": "Charles Dickens",
+  "year": 1861,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "British",
+   "money",
+   "class",
+   "London"
+  ],
+  "spine": {
+   "color": "#5a4a3a",
+   "height": 0.87
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2032-06",
+  "gutenberg": 1400,
+  "plan": 295,
+  "series": "great-expectations",
+  "vol": 2,
+  "vols": 5,
+  "source": {
+   "from": "Chapter XIII.",
+   "nth": 2,
+   "to": "Chapter XXIV.",
+   "heading": "Chapter [IVXL]+\\.",
+   "to_nth": 2
+  }
+ },
+ {
+  "slug": "great-expectations-3",
+  "title": "Great Expectations",
+  "author": "Charles Dickens",
+  "year": 1861,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "British",
+   "money",
+   "class",
+   "London"
+  ],
+  "spine": {
+   "color": "#5a4a3a",
+   "height": 0.87
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2032-06",
+  "gutenberg": 1400,
+  "plan": 296,
+  "series": "great-expectations",
+  "vol": 3,
+  "vols": 5,
+  "source": {
+   "from": "Chapter XXIV.",
+   "nth": 2,
+   "to": "Chapter XXXVII.",
+   "heading": "Chapter [IVXL]+\\.",
+   "to_nth": 2
+  }
+ },
+ {
+  "slug": "great-expectations-4",
+  "title": "Great Expectations",
+  "author": "Charles Dickens",
+  "year": 1861,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "British",
+   "money",
+   "class",
+   "London"
+  ],
+  "spine": {
+   "color": "#5a4a3a",
+   "height": 0.87
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2032-06",
+  "gutenberg": 1400,
+  "plan": 297,
+  "series": "great-expectations",
+  "vol": 4,
+  "vols": 5,
+  "source": {
+   "from": "Chapter XXXVII.",
+   "nth": 2,
+   "to": "Chapter XLVIII.",
+   "heading": "Chapter [IVXL]+\\.",
+   "to_nth": 2
+  }
+ },
+ {
+  "slug": "great-expectations-5",
+  "title": "Great Expectations",
+  "author": "Charles Dickens",
+  "year": 1861,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "British",
+   "money",
+   "class",
+   "London"
+  ],
+  "spine": {
+   "color": "#5a4a3a",
+   "height": 0.87
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2032-06",
+  "gutenberg": 1400,
+  "plan": 298,
+  "series": "great-expectations",
+  "vol": 5,
+  "vols": 5,
+  "source": {
+   "from": "Chapter XLVIII.",
+   "nth": 2,
+   "to": null,
+   "heading": "Chapter [IVXL]+\\."
+  }
+ },
+ {
+  "slug": "moon-and-sixpence-1",
+  "title": "The Moon and Sixpence",
+  "author": "W. Somerset Maugham",
+  "year": 1919,
+  "genre": "Realism & Character",
+  "level": 4,
+  "tags": [
+   "British",
+   "art",
+   "Paris"
+  ],
+  "spine": {
+   "color": "#6a5a44",
+   "height": 0.88
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2032-07",
+  "gutenberg": 222,
+  "plan": 299,
+  "series": "moon-and-sixpence",
+  "vol": 1,
+  "vols": 2,
+  "source": {
+   "from": "Chapter I",
+   "nth": 2,
+   "to": "Chapter XXXI",
+   "heading": "Chapter [IVXL]+",
+   "to_nth": 2
+  }
+ },
+ {
+  "slug": "moon-and-sixpence-2",
+  "title": "The Moon and Sixpence",
+  "author": "W. Somerset Maugham",
+  "year": 1919,
+  "genre": "Realism & Character",
+  "level": 4,
+  "tags": [
+   "British",
+   "art",
+   "Paris"
+  ],
+  "spine": {
+   "color": "#6a5a44",
+   "height": 0.88
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2032-07",
+  "gutenberg": 222,
+  "plan": 300,
+  "series": "moon-and-sixpence",
+  "vol": 2,
+  "vols": 2,
+  "source": {
+   "from": "Chapter XXXI",
+   "nth": 2,
+   "to": null,
+   "heading": "Chapter [IVXL]+"
+  }
+ },
+ {
+  "slug": "house-of-mirth-1",
+  "title": "The House of Mirth",
+  "author": "Edith Wharton",
+  "year": 1905,
+  "genre": "Love & Society",
+  "level": 5,
+  "tags": [
+   "American",
+   "money",
+   "class",
+   "women"
+  ],
+  "spine": {
+   "color": "#944a52",
+   "height": 0.89
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2032-07",
+  "gutenberg": 284,
+  "plan": 301,
+  "series": "house-of-mirth",
+  "vol": 1,
+  "vols": 4,
+  "source": {
+   "from": "BOOK ONE",
+   "nth": 1,
+   "to": "Chapter 8",
+   "heading": "BOOK (ONE|TWO)|Chapter \\d+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "house-of-mirth-2",
+  "title": "The House of Mirth",
+  "author": "Edith Wharton",
+  "year": 1905,
+  "genre": "Love & Society",
+  "level": 5,
+  "tags": [
+   "American",
+   "money",
+   "class",
+   "women"
+  ],
+  "spine": {
+   "color": "#944a52",
+   "height": 0.89
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2032-07",
+  "gutenberg": 284,
+  "plan": 302,
+  "series": "house-of-mirth",
+  "vol": 2,
+  "vols": 4,
+  "source": {
+   "from": "Chapter 8",
+   "nth": 1,
+   "to": "Chapter 15",
+   "heading": "BOOK (ONE|TWO)|Chapter \\d+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "house-of-mirth-3",
+  "title": "The House of Mirth",
+  "author": "Edith Wharton",
+  "year": 1905,
+  "genre": "Love & Society",
+  "level": 5,
+  "tags": [
+   "American",
+   "money",
+   "class",
+   "women"
+  ],
+  "spine": {
+   "color": "#944a52",
+   "height": 0.89
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2032-07",
+  "gutenberg": 284,
+  "plan": 303,
+  "series": "house-of-mirth",
+  "vol": 3,
+  "vols": 4,
+  "source": {
+   "from": "Chapter 15",
+   "nth": 1,
+   "to": "Chapter 7",
+   "heading": "BOOK (ONE|TWO)|Chapter \\d+",
+   "to_nth": 2
+  }
+ },
+ {
+  "slug": "house-of-mirth-4",
+  "title": "The House of Mirth",
+  "author": "Edith Wharton",
+  "year": 1905,
+  "genre": "Love & Society",
+  "level": 5,
+  "tags": [
+   "American",
+   "money",
+   "class",
+   "women"
+  ],
+  "spine": {
+   "color": "#944a52",
+   "height": 0.89
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2032-07",
+  "gutenberg": 284,
+  "plan": 304,
+  "series": "house-of-mirth",
+  "vol": 4,
+  "vols": 4,
+  "source": {
+   "from": "Chapter 7",
+   "nth": 2,
+   "to": "THE END",
+   "heading": "BOOK (ONE|TWO)|Chapter \\d+"
+  }
+ },
+ {
+  "slug": "mayor-of-casterbridge-1",
+  "title": "The Mayor of Casterbridge",
+  "author": "Thomas Hardy",
+  "year": 1886,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "British",
+   "guilt",
+   "work"
+  ],
+  "spine": {
+   "color": "#4a4a44",
+   "height": 0.89
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2032-08",
+  "gutenberg": 143,
+  "plan": 305,
+  "series": "mayor-of-casterbridge",
+  "vol": 1,
+  "vols": 3,
+  "source": {
+   "from": "I.",
+   "nth": 1,
+   "to": "XVIII.",
+   "heading": "[IVXL]+\\.",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "mayor-of-casterbridge-2",
+  "title": "The Mayor of Casterbridge",
+  "author": "Thomas Hardy",
+  "year": 1886,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "British",
+   "guilt",
+   "work"
+  ],
+  "spine": {
+   "color": "#4a4a44",
+   "height": 0.89
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2032-08",
+  "gutenberg": 143,
+  "plan": 306,
+  "series": "mayor-of-casterbridge",
+  "vol": 2,
+  "vols": 3,
+  "source": {
+   "from": "XVIII.",
+   "nth": 1,
+   "to": "XXXII.",
+   "heading": "[IVXL]+\\.",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "mayor-of-casterbridge-3",
+  "title": "The Mayor of Casterbridge",
+  "author": "Thomas Hardy",
+  "year": 1886,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "British",
+   "guilt",
+   "work"
+  ],
+  "spine": {
+   "color": "#4a4a44",
+   "height": 0.89
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2032-08",
+  "gutenberg": 143,
+  "plan": 307,
+  "series": "mayor-of-casterbridge",
+  "vol": 3,
+  "vols": 3,
+  "source": {
+   "from": "XXXII.",
+   "nth": 1,
+   "to": null,
+   "heading": "[IVXL]+\\."
+  }
+ },
+ {
+  "slug": "sister-carrie-1",
+  "title": "Sister Carrie",
+  "author": "Theodore Dreiser",
+  "year": 1900,
+  "genre": "Realism & Character",
+  "level": 4,
+  "tags": [
+   "American",
+   "city",
+   "money"
+  ],
+  "spine": {
+   "color": "#5e5040",
+   "height": 0.85
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2032-09",
+  "gutenberg": 233,
+  "plan": 308,
+  "series": "sister-carrie",
+  "vol": 1,
+  "vols": 4,
+  "source": {
+   "from": "Chapter I. THE MAGNET ATTRACTING: A WAIF AMID FORCES",
+   "nth": 2,
+   "to": "Chapter XIII. HIS CREDENTIALS ACCEPTED: A BABEL OF TONGUES",
+   "heading": "Chapter [IVXL]+\\. [A-Z][A-Z ,:’\\x27-]+",
+   "to_nth": 2
+  }
+ },
+ {
+  "slug": "sister-carrie-2",
+  "title": "Sister Carrie",
+  "author": "Theodore Dreiser",
+  "year": 1900,
+  "genre": "Realism & Character",
+  "level": 4,
+  "tags": [
+   "American",
+   "city",
+   "money"
+  ],
+  "spine": {
+   "color": "#5e5040",
+   "height": 0.85
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2032-09",
+  "gutenberg": 233,
+  "plan": 309,
+  "series": "sister-carrie",
+  "vol": 2,
+  "vols": 4,
+  "source": {
+   "from": "Chapter XIII. HIS CREDENTIALS ACCEPTED: A BABEL OF TONGUES",
+   "nth": 2,
+   "to": "Chapter XXVII. WHEN WATERS ENGULF US WE REACH FOR A STAR",
+   "heading": "Chapter [IVXL]+\\. [A-Z][A-Z ,:’\\x27-]+",
+   "to_nth": 2
+  }
+ },
+ {
+  "slug": "sister-carrie-3",
+  "title": "Sister Carrie",
+  "author": "Theodore Dreiser",
+  "year": 1900,
+  "genre": "Realism & Character",
+  "level": 4,
+  "tags": [
+   "American",
+   "city",
+   "money"
+  ],
+  "spine": {
+   "color": "#5e5040",
+   "height": 0.85
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2032-09",
+  "gutenberg": 233,
+  "plan": 310,
+  "series": "sister-carrie",
+  "vol": 3,
+  "vols": 4,
+  "source": {
+   "from": "Chapter XXVII. WHEN WATERS ENGULF US WE REACH FOR A STAR",
+   "nth": 2,
+   "to": "Chapter XXXVIII. IN ELF LAND DISPORTING: THE GRIM WORLD WITHOUT",
+   "heading": "Chapter [IVXL]+\\. [A-Z][A-Z ,:’\\x27-]+",
+   "to_nth": 2
+  }
+ },
+ {
+  "slug": "sister-carrie-4",
+  "title": "Sister Carrie",
+  "author": "Theodore Dreiser",
+  "year": 1900,
+  "genre": "Realism & Character",
+  "level": 4,
+  "tags": [
+   "American",
+   "city",
+   "money"
+  ],
+  "spine": {
+   "color": "#5e5040",
+   "height": 0.85
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2032-09",
+  "gutenberg": 233,
+  "plan": 311,
+  "series": "sister-carrie",
+  "vol": 4,
+  "vols": 4,
+  "source": {
+   "from": "Chapter XXXVIII. IN ELF LAND DISPORTING: THE GRIM WORLD WITHOUT",
+   "nth": 2,
+   "to": null,
+   "heading": "Chapter [IVXL]+\\. [A-Z][A-Z ,:’\\x27-]+"
+  }
+ },
+ {
+  "slug": "emma-1",
+  "title": "Emma",
+  "author": "Jane Austen",
+  "year": 1815,
+  "genre": "Humor & Satire",
+  "level": 5,
+  "tags": [
+   "British",
+   "marriage",
+   "humor"
+  ],
+  "spine": {
+   "color": "#7f6a2e",
+   "height": 0.95
+  },
+  "cover": {
+   "motif": "mask",
+   "accent": "#f3e2b8"
+  },
+  "month": "2032-10",
+  "gutenberg": 158,
+  "plan": 312,
+  "series": "emma",
+  "vol": 1,
+  "vols": 4,
+  "source": {
+   "from": "VOLUME I",
+   "nth": 1,
+   "to": "CHAPTER XV",
+   "heading": "VOLUME I{1,3}|CHAPTER [IVXL]+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "emma-2",
+  "title": "Emma",
+  "author": "Jane Austen",
+  "year": 1815,
+  "genre": "Humor & Satire",
+  "level": 5,
+  "tags": [
+   "British",
+   "marriage",
+   "humor"
+  ],
+  "spine": {
+   "color": "#7f6a2e",
+   "height": 0.95
+  },
+  "cover": {
+   "motif": "mask",
+   "accent": "#f3e2b8"
+  },
+  "month": "2032-10",
+  "gutenberg": 158,
+  "plan": 313,
+  "series": "emma",
+  "vol": 2,
+  "vols": 4,
+  "source": {
+   "from": "CHAPTER XV",
+   "nth": 1,
+   "to": "CHAPTER XI",
+   "heading": "VOLUME I{1,3}|CHAPTER [IVXL]+",
+   "to_nth": 2
+  }
+ },
+ {
+  "slug": "emma-3",
+  "title": "Emma",
+  "author": "Jane Austen",
+  "year": 1815,
+  "genre": "Humor & Satire",
+  "level": 5,
+  "tags": [
+   "British",
+   "marriage",
+   "humor"
+  ],
+  "spine": {
+   "color": "#7f6a2e",
+   "height": 0.95
+  },
+  "cover": {
+   "motif": "mask",
+   "accent": "#f3e2b8"
+  },
+  "month": "2032-10",
+  "gutenberg": 158,
+  "plan": 314,
+  "series": "emma",
+  "vol": 3,
+  "vols": 4,
+  "source": {
+   "from": "CHAPTER XI",
+   "nth": 2,
+   "to": "CHAPTER VII",
+   "heading": "VOLUME I{1,3}|CHAPTER [IVXL]+",
+   "to_nth": 3
+  }
+ },
+ {
+  "slug": "emma-4",
+  "title": "Emma",
+  "author": "Jane Austen",
+  "year": 1815,
+  "genre": "Humor & Satire",
+  "level": 5,
+  "tags": [
+   "British",
+   "marriage",
+   "humor"
+  ],
+  "spine": {
+   "color": "#7f6a2e",
+   "height": 0.95
+  },
+  "cover": {
+   "motif": "mask",
+   "accent": "#f3e2b8"
+  },
+  "month": "2032-10",
+  "gutenberg": 158,
+  "plan": 315,
+  "series": "emma",
+  "vol": 4,
+  "vols": 4,
+  "source": {
+   "from": "CHAPTER VII",
+   "nth": 3,
+   "to": "FINIS",
+   "heading": "VOLUME I{1,3}|CHAPTER [IVXL]+"
+  }
+ },
+ {
+  "slug": "crime-and-punishment-1",
+  "title": "Crime and Punishment",
+  "author": "Fyodor Dostoevsky",
+  "year": 1866,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "Russian",
+   "guilt",
+   "poverty",
+   "city"
+  ],
+  "spine": {
+   "color": "#4e4b3c",
+   "height": 0.94
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2032-11",
+  "gutenberg": 2554,
+  "plan": 316,
+  "series": "crime-and-punishment",
+  "vol": 1,
+  "vols": 6,
+  "source": {
+   "from": "PART I",
+   "nth": 1,
+   "to": "PART II",
+   "heading": "PART [IV]+|EPILOGUE|CHAPTER [IVX]+|II?",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "crime-and-punishment-2",
+  "title": "Crime and Punishment",
+  "author": "Fyodor Dostoevsky",
+  "year": 1866,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "Russian",
+   "guilt",
+   "poverty",
+   "city"
+  ],
+  "spine": {
+   "color": "#4e4b3c",
+   "height": 0.94
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2032-11",
+  "gutenberg": 2554,
+  "plan": 317,
+  "series": "crime-and-punishment",
+  "vol": 2,
+  "vols": 6,
+  "source": {
+   "from": "PART II",
+   "nth": 1,
+   "to": "CHAPTER VII",
+   "heading": "PART [IV]+|EPILOGUE|CHAPTER [IVX]+|II?",
+   "to_nth": 2
+  }
+ },
+ {
+  "slug": "crime-and-punishment-3",
+  "title": "Crime and Punishment",
+  "author": "Fyodor Dostoevsky",
+  "year": 1866,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "Russian",
+   "guilt",
+   "poverty",
+   "city"
+  ],
+  "spine": {
+   "color": "#4e4b3c",
+   "height": 0.94
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2032-11",
+  "gutenberg": 2554,
+  "plan": 318,
+  "series": "crime-and-punishment",
+  "vol": 3,
+  "vols": 6,
+  "source": {
+   "from": "CHAPTER VII",
+   "nth": 2,
+   "to": "CHAPTER VI",
+   "heading": "PART [IV]+|EPILOGUE|CHAPTER [IVX]+|II?",
+   "to_nth": 3
+  }
+ },
+ {
+  "slug": "crime-and-punishment-4",
+  "title": "Crime and Punishment",
+  "author": "Fyodor Dostoevsky",
+  "year": 1866,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "Russian",
+   "guilt",
+   "poverty",
+   "city"
+  ],
+  "spine": {
+   "color": "#4e4b3c",
+   "height": 0.94
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2032-11",
+  "gutenberg": 2554,
+  "plan": 319,
+  "series": "crime-and-punishment",
+  "vol": 4,
+  "vols": 6,
+  "source": {
+   "from": "CHAPTER VI",
+   "nth": 3,
+   "to": "PART V",
+   "heading": "PART [IV]+|EPILOGUE|CHAPTER [IVX]+|II?",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "crime-and-punishment-5",
+  "title": "Crime and Punishment",
+  "author": "Fyodor Dostoevsky",
+  "year": 1866,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "Russian",
+   "guilt",
+   "poverty",
+   "city"
+  ],
+  "spine": {
+   "color": "#4e4b3c",
+   "height": 0.94
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2032-11",
+  "gutenberg": 2554,
+  "plan": 320,
+  "series": "crime-and-punishment",
+  "vol": 5,
+  "vols": 6,
+  "source": {
+   "from": "PART V",
+   "nth": 1,
+   "to": "CHAPTER III",
+   "heading": "PART [IV]+|EPILOGUE|CHAPTER [IVX]+|II?",
+   "to_nth": 6
+  }
+ },
+ {
+  "slug": "crime-and-punishment-6",
+  "title": "Crime and Punishment",
+  "author": "Fyodor Dostoevsky",
+  "year": 1866,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "Russian",
+   "guilt",
+   "poverty",
+   "city"
+  ],
+  "spine": {
+   "color": "#4e4b3c",
+   "height": 0.94
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2032-11",
+  "gutenberg": 2554,
+  "plan": 321,
+  "series": "crime-and-punishment",
+  "vol": 6,
+  "vols": 6,
+  "source": {
+   "from": "CHAPTER III",
+   "nth": 6,
+   "to": null,
+   "heading": "PART [IV]+|EPILOGUE|CHAPTER [IVX]+|II?"
+  }
+ },
+ {
+  "slug": "howards-end-1",
+  "title": "Howards End",
+  "author": "E. M. Forster",
+  "year": 1910,
+  "genre": "Love & Society",
+  "level": 5,
+  "tags": [
+   "British",
+   "class",
+   "money"
+  ],
+  "spine": {
+   "color": "#8a4a5a",
+   "height": 0.96
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2032-12",
+  "gutenberg": 2891,
+  "plan": 322,
+  "series": "howards-end",
+  "vol": 1,
+  "vols": 3,
+  "source": {
+   "from": "Chapter 1",
+   "nth": 1,
+   "to": "Chapter 14",
+   "heading": "Chapter \\d+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "howards-end-2",
+  "title": "Howards End",
+  "author": "E. M. Forster",
+  "year": 1910,
+  "genre": "Love & Society",
+  "level": 5,
+  "tags": [
+   "British",
+   "class",
+   "money"
+  ],
+  "spine": {
+   "color": "#8a4a5a",
+   "height": 0.96
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2032-12",
+  "gutenberg": 2891,
+  "plan": 323,
+  "series": "howards-end",
+  "vol": 2,
+  "vols": 3,
+  "source": {
+   "from": "Chapter 14",
+   "nth": 1,
+   "to": "Chapter 27",
+   "heading": "Chapter \\d+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "howards-end-3",
+  "title": "Howards End",
+  "author": "E. M. Forster",
+  "year": 1910,
+  "genre": "Love & Society",
+  "level": 5,
+  "tags": [
+   "British",
+   "class",
+   "money"
+  ],
+  "spine": {
+   "color": "#8a4a5a",
+   "height": 0.96
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2032-12",
+  "gutenberg": 2891,
+  "plan": 324,
+  "series": "howards-end",
+  "vol": 3,
+  "vols": 3,
+  "source": {
+   "from": "Chapter 27",
+   "nth": 1,
+   "to": "Weybridge, 1908-1910.",
+   "heading": "Chapter \\d+"
+  }
+ },
+ {
+  "slug": "tenant-of-wildfell-hall-1",
+  "title": "The Tenant of Wildfell Hall",
+  "author": "Anne Brontë",
+  "year": 1848,
+  "genre": "Love & Society",
+  "level": 5,
+  "tags": [
+   "British",
+   "marriage",
+   "women"
+  ],
+  "spine": {
+   "color": "#7a3346",
+   "height": 0.86
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2033-01",
+  "gutenberg": 969,
+  "plan": 325,
+  "series": "tenant-of-wildfell-hall",
+  "vol": 1,
+  "vols": 5,
+  "source": {
+   "from": "CHAPTER I",
+   "nth": 1,
+   "to": "CHAPTER XIII",
+   "heading": "CHAPTER [IVXL]+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "tenant-of-wildfell-hall-2",
+  "title": "The Tenant of Wildfell Hall",
+  "author": "Anne Brontë",
+  "year": 1848,
+  "genre": "Love & Society",
+  "level": 5,
+  "tags": [
+   "British",
+   "marriage",
+   "women"
+  ],
+  "spine": {
+   "color": "#7a3346",
+   "height": 0.86
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2033-01",
+  "gutenberg": 969,
+  "plan": 326,
+  "series": "tenant-of-wildfell-hall",
+  "vol": 2,
+  "vols": 5,
+  "source": {
+   "from": "CHAPTER XIII",
+   "nth": 1,
+   "to": "CHAPTER XXIII",
+   "heading": "CHAPTER [IVXL]+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "tenant-of-wildfell-hall-3",
+  "title": "The Tenant of Wildfell Hall",
+  "author": "Anne Brontë",
+  "year": 1848,
+  "genre": "Love & Society",
+  "level": 5,
+  "tags": [
+   "British",
+   "marriage",
+   "women"
+  ],
+  "spine": {
+   "color": "#7a3346",
+   "height": 0.86
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2033-01",
+  "gutenberg": 969,
+  "plan": 327,
+  "series": "tenant-of-wildfell-hall",
+  "vol": 3,
+  "vols": 5,
+  "source": {
+   "from": "CHAPTER XXIII",
+   "nth": 1,
+   "to": "CHAPTER XXXIV",
+   "heading": "CHAPTER [IVXL]+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "tenant-of-wildfell-hall-4",
+  "title": "The Tenant of Wildfell Hall",
+  "author": "Anne Brontë",
+  "year": 1848,
+  "genre": "Love & Society",
+  "level": 5,
+  "tags": [
+   "British",
+   "marriage",
+   "women"
+  ],
+  "spine": {
+   "color": "#7a3346",
+   "height": 0.86
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2033-01",
+  "gutenberg": 969,
+  "plan": 328,
+  "series": "tenant-of-wildfell-hall",
+  "vol": 4,
+  "vols": 5,
+  "source": {
+   "from": "CHAPTER XXXIV",
+   "nth": 1,
+   "to": "CHAPTER XLV",
+   "heading": "CHAPTER [IVXL]+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "tenant-of-wildfell-hall-5",
+  "title": "The Tenant of Wildfell Hall",
+  "author": "Anne Brontë",
+  "year": 1848,
+  "genre": "Love & Society",
+  "level": 5,
+  "tags": [
+   "British",
+   "marriage",
+   "women"
+  ],
+  "spine": {
+   "color": "#7a3346",
+   "height": 0.86
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2033-01",
+  "gutenberg": 969,
+  "plan": 329,
+  "series": "tenant-of-wildfell-hall",
+  "vol": 5,
+  "vols": 5,
+  "source": {
+   "from": "CHAPTER XLV",
+   "nth": 1,
+   "to": "THE END",
+   "heading": "CHAPTER [IVXL]+"
+  }
+ },
+ {
+  "slug": "sons-and-lovers-1",
+  "title": "Sons and Lovers",
+  "author": "D. H. Lawrence",
+  "year": 1913,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "British",
+   "work",
+   "love"
+  ],
+  "spine": {
+   "color": "#5a4a3a",
+   "height": 0.89
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2033-02",
+  "gutenberg": 217,
+  "plan": 330,
+  "series": "sons-and-lovers",
+  "vol": 1,
+  "vols": 5,
+  "source": {
+   "from": "PART ONE",
+   "nth": 2,
+   "to": "CHAPTER V",
+   "heading": "PART (ONE|TWO)|CHAPTER [IVX]+ [A-Z][A-Z ,’\\x27—-]+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "sons-and-lovers-2",
+  "title": "Sons and Lovers",
+  "author": "D. H. Lawrence",
+  "year": 1913,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "British",
+   "work",
+   "love"
+  ],
+  "spine": {
+   "color": "#5a4a3a",
+   "height": 0.89
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2033-02",
+  "gutenberg": 217,
+  "plan": 331,
+  "series": "sons-and-lovers",
+  "vol": 2,
+  "vols": 5,
+  "source": {
+   "from": "CHAPTER V",
+   "nth": 1,
+   "to": "CHAPTER VIII",
+   "heading": "PART (ONE|TWO)|CHAPTER [IVX]+ [A-Z][A-Z ,’\\x27—-]+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "sons-and-lovers-3",
+  "title": "Sons and Lovers",
+  "author": "D. H. Lawrence",
+  "year": 1913,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "British",
+   "work",
+   "love"
+  ],
+  "spine": {
+   "color": "#5a4a3a",
+   "height": 0.89
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2033-02",
+  "gutenberg": 217,
+  "plan": 332,
+  "series": "sons-and-lovers",
+  "vol": 3,
+  "vols": 5,
+  "source": {
+   "from": "CHAPTER VIII",
+   "nth": 1,
+   "to": "CHAPTER X",
+   "heading": "PART (ONE|TWO)|CHAPTER [IVX]+ [A-Z][A-Z ,’\\x27—-]+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "sons-and-lovers-4",
+  "title": "Sons and Lovers",
+  "author": "D. H. Lawrence",
+  "year": 1913,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "British",
+   "work",
+   "love"
+  ],
+  "spine": {
+   "color": "#5a4a3a",
+   "height": 0.89
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2033-02",
+  "gutenberg": 217,
+  "plan": 333,
+  "series": "sons-and-lovers",
+  "vol": 4,
+  "vols": 5,
+  "source": {
+   "from": "CHAPTER X",
+   "nth": 1,
+   "to": "CHAPTER XIII",
+   "heading": "PART (ONE|TWO)|CHAPTER [IVX]+ [A-Z][A-Z ,’\\x27—-]+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "sons-and-lovers-5",
+  "title": "Sons and Lovers",
+  "author": "D. H. Lawrence",
+  "year": 1913,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "British",
+   "work",
+   "love"
+  ],
+  "spine": {
+   "color": "#5a4a3a",
+   "height": 0.89
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2033-02",
+  "gutenberg": 217,
+  "plan": 334,
+  "series": "sons-and-lovers",
+  "vol": 5,
+  "vols": 5,
+  "source": {
+   "from": "CHAPTER XIII",
+   "nth": 1,
+   "to": "THE END",
+   "heading": "PART (ONE|TWO)|CHAPTER [IVX]+ [A-Z][A-Z ,’\\x27—-]+"
+  }
+ },
+ {
+  "slug": "age-of-innocence-1",
+  "title": "The Age of Innocence",
+  "author": "Edith Wharton",
+  "year": 1920,
+  "genre": "Love & Society",
+  "level": 5,
+  "tags": [
+   "American",
+   "marriage",
+   "class"
+  ],
+  "spine": {
+   "color": "#5e3350",
+   "height": 0.89
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2033-03",
+  "gutenberg": 541,
+  "plan": 335,
+  "series": "age-of-innocence",
+  "vol": 1,
+  "vols": 3,
+  "source": {
+   "from": "Book I",
+   "nth": 1,
+   "to": "XIV.",
+   "heading": "Book I{1,2}|[IVXL]+\\.",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "age-of-innocence-2",
+  "title": "The Age of Innocence",
+  "author": "Edith Wharton",
+  "year": 1920,
+  "genre": "Love & Society",
+  "level": 5,
+  "tags": [
+   "American",
+   "marriage",
+   "class"
+  ],
+  "spine": {
+   "color": "#5e3350",
+   "height": 0.89
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2033-03",
+  "gutenberg": 541,
+  "plan": 336,
+  "series": "age-of-innocence",
+  "vol": 2,
+  "vols": 3,
+  "source": {
+   "from": "XIV.",
+   "nth": 1,
+   "to": "XXV.",
+   "heading": "Book I{1,2}|[IVXL]+\\.",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "age-of-innocence-3",
+  "title": "The Age of Innocence",
+  "author": "Edith Wharton",
+  "year": 1920,
+  "genre": "Love & Society",
+  "level": 5,
+  "tags": [
+   "American",
+   "marriage",
+   "class"
+  ],
+  "spine": {
+   "color": "#5e3350",
+   "height": 0.89
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2033-03",
+  "gutenberg": 541,
+  "plan": 337,
+  "series": "age-of-innocence",
+  "vol": 3,
+  "vols": 3,
+  "source": {
+   "from": "XXV.",
+   "nth": 1,
+   "to": "A Note on the Text",
+   "heading": "Book I{1,2}|[IVXL]+\\."
+  }
+ },
+ {
+  "slug": "lord-jim-1",
+  "title": "Lord Jim",
+  "author": "Joseph Conrad",
+  "year": 1900,
+  "genre": "Adventure",
+  "level": 5,
+  "tags": [
+   "British",
+   "sea",
+   "guilt"
+  ],
+  "spine": {
+   "color": "#2e5358",
+   "height": 0.86
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#d8c48a"
+  },
+  "month": "2033-04",
+  "gutenberg": 5658,
+  "plan": 338,
+  "series": "lord-jim",
+  "vol": 1,
+  "vols": 4,
+  "source": {
+   "from": "CHAPTER 1",
+   "nth": 1,
+   "to": "CHAPTER 10",
+   "heading": "CHAPTER \\d+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "lord-jim-2",
+  "title": "Lord Jim",
+  "author": "Joseph Conrad",
+  "year": 1900,
+  "genre": "Adventure",
+  "level": 5,
+  "tags": [
+   "British",
+   "sea",
+   "guilt"
+  ],
+  "spine": {
+   "color": "#2e5358",
+   "height": 0.86
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#d8c48a"
+  },
+  "month": "2033-04",
+  "gutenberg": 5658,
+  "plan": 339,
+  "series": "lord-jim",
+  "vol": 2,
+  "vols": 4,
+  "source": {
+   "from": "CHAPTER 10",
+   "nth": 1,
+   "to": "CHAPTER 20",
+   "heading": "CHAPTER \\d+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "lord-jim-3",
+  "title": "Lord Jim",
+  "author": "Joseph Conrad",
+  "year": 1900,
+  "genre": "Adventure",
+  "level": 5,
+  "tags": [
+   "British",
+   "sea",
+   "guilt"
+  ],
+  "spine": {
+   "color": "#2e5358",
+   "height": 0.86
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#d8c48a"
+  },
+  "month": "2033-04",
+  "gutenberg": 5658,
+  "plan": 340,
+  "series": "lord-jim",
+  "vol": 3,
+  "vols": 4,
+  "source": {
+   "from": "CHAPTER 20",
+   "nth": 1,
+   "to": "CHAPTER 33",
+   "heading": "CHAPTER \\d+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "lord-jim-4",
+  "title": "Lord Jim",
+  "author": "Joseph Conrad",
+  "year": 1900,
+  "genre": "Adventure",
+  "level": 5,
+  "tags": [
+   "British",
+   "sea",
+   "guilt"
+  ],
+  "spine": {
+   "color": "#2e5358",
+   "height": 0.86
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#d8c48a"
+  },
+  "month": "2033-04",
+  "gutenberg": 5658,
+  "plan": 341,
+  "series": "lord-jim",
+  "vol": 4,
+  "vols": 4,
+  "source": {
+   "from": "CHAPTER 33",
+   "nth": 1,
+   "to": "September 1899--July 1900.",
+   "heading": "CHAPTER \\d+"
+  }
+ },
+ {
+  "slug": "north-and-south-1",
+  "title": "North and South",
+  "author": "Elizabeth Gaskell",
+  "year": 1855,
+  "genre": "Love & Society",
+  "level": 5,
+  "tags": [
+   "British",
+   "work",
+   "class",
+   "love"
+  ],
+  "spine": {
+   "color": "#6e2f55",
+   "height": 0.84
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2033-05",
+  "gutenberg": 4276,
+  "plan": 342,
+  "series": "north-and-south",
+  "vol": 1,
+  "vols": 5,
+  "source": {
+   "from": "CHAPTER I.",
+   "nth": 1,
+   "to": "CHAPTER XII.",
+   "heading": "CHAPTER [IVXL]+\\.?|“[A-Z][A-Z ’,!?-]+\\.”|[A-Z][A-Z ’,!?-]+[.?!]?",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "north-and-south-2",
+  "title": "North and South",
+  "author": "Elizabeth Gaskell",
+  "year": 1855,
+  "genre": "Love & Society",
+  "level": 5,
+  "tags": [
+   "British",
+   "work",
+   "class",
+   "love"
+  ],
+  "spine": {
+   "color": "#6e2f55",
+   "height": 0.84
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2033-05",
+  "gutenberg": 4276,
+  "plan": 343,
+  "series": "north-and-south",
+  "vol": 2,
+  "vols": 5,
+  "source": {
+   "from": "CHAPTER XII.",
+   "nth": 1,
+   "to": "CHAPTER XXII.",
+   "heading": "CHAPTER [IVXL]+\\.?|“[A-Z][A-Z ’,!?-]+\\.”|[A-Z][A-Z ’,!?-]+[.?!]?",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "north-and-south-3",
+  "title": "North and South",
+  "author": "Elizabeth Gaskell",
+  "year": 1855,
+  "genre": "Love & Society",
+  "level": 5,
+  "tags": [
+   "British",
+   "work",
+   "class",
+   "love"
+  ],
+  "spine": {
+   "color": "#6e2f55",
+   "height": 0.84
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2033-05",
+  "gutenberg": 4276,
+  "plan": 344,
+  "series": "north-and-south",
+  "vol": 3,
+  "vols": 5,
+  "source": {
+   "from": "CHAPTER XXII.",
+   "nth": 1,
+   "to": "CHAPTER XXXIII.",
+   "heading": "CHAPTER [IVXL]+\\.?|“[A-Z][A-Z ’,!?-]+\\.”|[A-Z][A-Z ’,!?-]+[.?!]?",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "north-and-south-4",
+  "title": "North and South",
+  "author": "Elizabeth Gaskell",
+  "year": 1855,
+  "genre": "Love & Society",
+  "level": 5,
+  "tags": [
+   "British",
+   "work",
+   "class",
+   "love"
+  ],
+  "spine": {
+   "color": "#6e2f55",
+   "height": 0.84
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2033-05",
+  "gutenberg": 4276,
+  "plan": 345,
+  "series": "north-and-south",
+  "vol": 4,
+  "vols": 5,
+  "source": {
+   "from": "CHAPTER XXXIII.",
+   "nth": 1,
+   "to": "CHAPTER XLII.",
+   "heading": "CHAPTER [IVXL]+\\.?|“[A-Z][A-Z ’,!?-]+\\.”|[A-Z][A-Z ’,!?-]+[.?!]?",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "north-and-south-5",
+  "title": "North and South",
+  "author": "Elizabeth Gaskell",
+  "year": 1855,
+  "genre": "Love & Society",
+  "level": 5,
+  "tags": [
+   "British",
+   "work",
+   "class",
+   "love"
+  ],
+  "spine": {
+   "color": "#6e2f55",
+   "height": 0.84
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2033-05",
+  "gutenberg": 4276,
+  "plan": 346,
+  "series": "north-and-south",
+  "vol": 5,
+  "vols": 5,
+  "source": {
+   "from": "CHAPTER XLII.",
+   "nth": 1,
+   "to": "THE END.",
+   "heading": "CHAPTER [IVXL]+\\.?|“[A-Z][A-Z ’,!?-]+\\.”|[A-Z][A-Z ’,!?-]+[.?!]?"
+  }
+ },
+ {
+  "slug": "passage-to-india-1",
+  "title": "A Passage to India",
+  "author": "E. M. Forster",
+  "year": 1924,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "British",
+   "India",
+   "empire",
+   "friendship"
+  ],
+  "spine": {
+   "color": "#6a5a44",
+   "height": 0.89
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2033-06",
+  "gutenberg": 61221,
+  "plan": 347,
+  "series": "passage-to-india",
+  "vol": 1,
+  "vols": 3,
+  "source": {
+   "from": "PART I: MOSQUE",
+   "nth": 1,
+   "to": "CHAPTER X",
+   "heading": "PART I{1,3}: [A-Z]+|CHAPTER [IVXL]+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "passage-to-india-2",
+  "title": "A Passage to India",
+  "author": "E. M. Forster",
+  "year": 1924,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "British",
+   "India",
+   "empire",
+   "friendship"
+  ],
+  "spine": {
+   "color": "#6a5a44",
+   "height": 0.89
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2033-06",
+  "gutenberg": 61221,
+  "plan": 348,
+  "series": "passage-to-india",
+  "vol": 2,
+  "vols": 3,
+  "source": {
+   "from": "CHAPTER X",
+   "nth": 1,
+   "to": "CHAPTER XXIV",
+   "heading": "PART I{1,3}: [A-Z]+|CHAPTER [IVXL]+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "passage-to-india-3",
+  "title": "A Passage to India",
+  "author": "E. M. Forster",
+  "year": 1924,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "British",
+   "India",
+   "empire",
+   "friendship"
+  ],
+  "spine": {
+   "color": "#6a5a44",
+   "height": 0.89
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2033-06",
+  "gutenberg": 61221,
+  "plan": 349,
+  "series": "passage-to-india",
+  "vol": 3,
+  "vols": 3,
+  "source": {
+   "from": "CHAPTER XXIV",
+   "nth": 1,
+   "to": "Weybridge, 1924.",
+   "heading": "PART I{1,3}: [A-Z]+|CHAPTER [IVXL]+"
+  }
+ },
+ {
+  "slug": "mansfield-park-1",
+  "title": "Mansfield Park",
+  "author": "Jane Austen",
+  "year": 1814,
+  "genre": "Love & Society",
+  "level": 5,
+  "tags": [
+   "British",
+   "marriage",
+   "class"
+  ],
+  "spine": {
+   "color": "#944a52",
+   "height": 0.87
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2033-07",
+  "gutenberg": 141,
+  "plan": 350,
+  "series": "mansfield-park",
+  "vol": 1,
+  "vols": 4,
+  "source": {
+   "from": "CHAPTER I",
+   "nth": 2,
+   "to": "CHAPTER XIII",
+   "heading": "CHAPTER [IVXL]+",
+   "to_nth": 2
+  }
+ },
+ {
+  "slug": "mansfield-park-2",
+  "title": "Mansfield Park",
+  "author": "Jane Austen",
+  "year": 1814,
+  "genre": "Love & Society",
+  "level": 5,
+  "tags": [
+   "British",
+   "marriage",
+   "class"
+  ],
+  "spine": {
+   "color": "#944a52",
+   "height": 0.87
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2033-07",
+  "gutenberg": 141,
+  "plan": 351,
+  "series": "mansfield-park",
+  "vol": 2,
+  "vols": 4,
+  "source": {
+   "from": "CHAPTER XIII",
+   "nth": 2,
+   "to": "CHAPTER XXV",
+   "heading": "CHAPTER [IVXL]+",
+   "to_nth": 2
+  }
+ },
+ {
+  "slug": "mansfield-park-3",
+  "title": "Mansfield Park",
+  "author": "Jane Austen",
+  "year": 1814,
+  "genre": "Love & Society",
+  "level": 5,
+  "tags": [
+   "British",
+   "marriage",
+   "class"
+  ],
+  "spine": {
+   "color": "#944a52",
+   "height": 0.87
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2033-07",
+  "gutenberg": 141,
+  "plan": 352,
+  "series": "mansfield-park",
+  "vol": 3,
+  "vols": 4,
+  "source": {
+   "from": "CHAPTER XXV",
+   "nth": 2,
+   "to": "CHAPTER XXXVI",
+   "heading": "CHAPTER [IVXL]+",
+   "to_nth": 2
+  }
+ },
+ {
+  "slug": "mansfield-park-4",
+  "title": "Mansfield Park",
+  "author": "Jane Austen",
+  "year": 1814,
+  "genre": "Love & Society",
+  "level": 5,
+  "tags": [
+   "British",
+   "marriage",
+   "class"
+  ],
+  "spine": {
+   "color": "#944a52",
+   "height": 0.87
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2033-07",
+  "gutenberg": 141,
+  "plan": 353,
+  "series": "mansfield-park",
+  "vol": 4,
+  "vols": 4,
+  "source": {
+   "from": "CHAPTER XXXVI",
+   "nth": 2,
+   "to": "FINIS.",
+   "heading": "CHAPTER [IVXL]+"
+  }
+ },
+ {
+  "slug": "tess-1",
+  "title": "Tess of the d'Urbervilles",
+  "author": "Thomas Hardy",
+  "year": 1891,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "British",
+   "women",
+   "class"
+  ],
+  "spine": {
+   "color": "#4a4a44",
+   "height": 0.84
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2033-08",
+  "gutenberg": 110,
+  "plan": 354,
+  "series": "tess",
+  "vol": 1,
+  "vols": 4,
+  "source": {
+   "from": "Phase the First:",
+   "nth": 1,
+   "to": "Phase the Third:",
+   "heading": "Phase the [A-Z][a-z]+:|The Maiden|Maiden No More|The Rally|The Consequence|The Woman Pays|The Convert|Fulfilment|[IVXL]+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "tess-2",
+  "title": "Tess of the d'Urbervilles",
+  "author": "Thomas Hardy",
+  "year": 1891,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "British",
+   "women",
+   "class"
+  ],
+  "spine": {
+   "color": "#4a4a44",
+   "height": 0.84
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2033-08",
+  "gutenberg": 110,
+  "plan": 355,
+  "series": "tess",
+  "vol": 2,
+  "vols": 4,
+  "source": {
+   "from": "Phase the Third:",
+   "nth": 1,
+   "to": "XXXII",
+   "heading": "Phase the [A-Z][a-z]+:|The Maiden|Maiden No More|The Rally|The Consequence|The Woman Pays|The Convert|Fulfilment|[IVXL]+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "tess-3",
+  "title": "Tess of the d'Urbervilles",
+  "author": "Thomas Hardy",
+  "year": 1891,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "British",
+   "women",
+   "class"
+  ],
+  "spine": {
+   "color": "#4a4a44",
+   "height": 0.84
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2033-08",
+  "gutenberg": 110,
+  "plan": 356,
+  "series": "tess",
+  "vol": 3,
+  "vols": 4,
+  "source": {
+   "from": "XXXII",
+   "nth": 1,
+   "to": "Phase the Sixth:",
+   "heading": "Phase the [A-Z][a-z]+:|The Maiden|Maiden No More|The Rally|The Consequence|The Woman Pays|The Convert|Fulfilment|[IVXL]+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "tess-4",
+  "title": "Tess of the d'Urbervilles",
+  "author": "Thomas Hardy",
+  "year": 1891,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "British",
+   "women",
+   "class"
+  ],
+  "spine": {
+   "color": "#4a4a44",
+   "height": 0.84
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2033-08",
+  "gutenberg": 110,
+  "plan": 357,
+  "series": "tess",
+  "vol": 4,
+  "vols": 4,
+  "source": {
+   "from": "Phase the Sixth:",
+   "nth": 1,
+   "to": null,
+   "heading": "Phase the [A-Z][a-z]+:|The Maiden|Maiden No More|The Rally|The Consequence|The Woman Pays|The Convert|Fulfilment|[IVXL]+"
+  }
+ },
+ {
+  "slug": "portrait-of-the-artist-1",
+  "title": "A Portrait of the Artist as a Young Man",
+  "author": "James Joyce",
+  "year": 1916,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "Irish",
+   "art",
+   "children"
+  ],
+  "spine": {
+   "color": "#5e5040",
+   "height": 0.88
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2033-09",
+  "gutenberg": 4217,
+  "plan": 358,
+  "series": "portrait-of-the-artist",
+  "vol": 1,
+  "vols": 3,
+  "source": {
+   "from": "Chapter I",
+   "nth": 2,
+   "to": "Chapter III",
+   "heading": "Chapter [IVX]+",
+   "to_nth": 2
+  }
+ },
+ {
+  "slug": "portrait-of-the-artist-2",
+  "title": "A Portrait of the Artist as a Young Man",
+  "author": "James Joyce",
+  "year": 1916,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "Irish",
+   "art",
+   "children"
+  ],
+  "spine": {
+   "color": "#5e5040",
+   "height": 0.88
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2033-09",
+  "gutenberg": 4217,
+  "plan": 359,
+  "series": "portrait-of-the-artist",
+  "vol": 2,
+  "vols": 3,
+  "source": {
+   "from": "Chapter III",
+   "nth": 2,
+   "to": "Chapter V",
+   "heading": "Chapter [IVX]+",
+   "to_nth": 2
+  }
+ },
+ {
+  "slug": "portrait-of-the-artist-3",
+  "title": "A Portrait of the Artist as a Young Man",
+  "author": "James Joyce",
+  "year": 1916,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "Irish",
+   "art",
+   "children"
+  ],
+  "spine": {
+   "color": "#5e5040",
+   "height": 0.88
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2033-09",
+  "gutenberg": 4217,
+  "plan": 360,
+  "series": "portrait-of-the-artist",
+  "vol": 3,
+  "vols": 3,
+  "source": {
+   "from": "Chapter V",
+   "nth": 2,
+   "to": "Dublin, 1904.",
+   "heading": "Chapter [IVX]+"
+  }
+ },
+ {
+  "slug": "villette-1",
+  "title": "Villette",
+  "author": "Charlotte Brontë",
+  "year": 1853,
+  "genre": "Love & Society",
+  "level": 5,
+  "tags": [
+   "British",
+   "Europe",
+   "women",
+   "love"
+  ],
+  "spine": {
+   "color": "#8a4a5a",
+   "height": 0.85
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2033-10",
+  "gutenberg": 9182,
+  "plan": 361,
+  "series": "villette",
+  "vol": 1,
+  "vols": 5,
+  "source": {
+   "from": "CHAPTER I.",
+   "nth": 1,
+   "to": "CHAPTER XII.",
+   "heading": "CHAPTER [IVXL]+\\. [^a-z]+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "villette-2",
+  "title": "Villette",
+  "author": "Charlotte Brontë",
+  "year": 1853,
+  "genre": "Love & Society",
+  "level": 5,
+  "tags": [
+   "British",
+   "Europe",
+   "women",
+   "love"
+  ],
+  "spine": {
+   "color": "#8a4a5a",
+   "height": 0.85
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2033-10",
+  "gutenberg": 9182,
+  "plan": 362,
+  "series": "villette",
+  "vol": 2,
+  "vols": 5,
+  "source": {
+   "from": "CHAPTER XII.",
+   "nth": 1,
+   "to": "CHAPTER XIX.",
+   "heading": "CHAPTER [IVXL]+\\. [^a-z]+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "villette-3",
+  "title": "Villette",
+  "author": "Charlotte Brontë",
+  "year": 1853,
+  "genre": "Love & Society",
+  "level": 5,
+  "tags": [
+   "British",
+   "Europe",
+   "women",
+   "love"
+  ],
+  "spine": {
+   "color": "#8a4a5a",
+   "height": 0.85
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2033-10",
+  "gutenberg": 9182,
+  "plan": 363,
+  "series": "villette",
+  "vol": 3,
+  "vols": 5,
+  "source": {
+   "from": "CHAPTER XIX.",
+   "nth": 1,
+   "to": "CHAPTER XXVI.",
+   "heading": "CHAPTER [IVXL]+\\. [^a-z]+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "villette-4",
+  "title": "Villette",
+  "author": "Charlotte Brontë",
+  "year": 1853,
+  "genre": "Love & Society",
+  "level": 5,
+  "tags": [
+   "British",
+   "Europe",
+   "women",
+   "love"
+  ],
+  "spine": {
+   "color": "#8a4a5a",
+   "height": 0.85
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2033-10",
+  "gutenberg": 9182,
+  "plan": 364,
+  "series": "villette",
+  "vol": 4,
+  "vols": 5,
+  "source": {
+   "from": "CHAPTER XXVI.",
+   "nth": 1,
+   "to": "CHAPTER XXXV.",
+   "heading": "CHAPTER [IVXL]+\\. [^a-z]+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "villette-5",
+  "title": "Villette",
+  "author": "Charlotte Brontë",
+  "year": 1853,
+  "genre": "Love & Society",
+  "level": 5,
+  "tags": [
+   "British",
+   "Europe",
+   "women",
+   "love"
+  ],
+  "spine": {
+   "color": "#8a4a5a",
+   "height": 0.85
+  },
+  "cover": {
+   "motif": "rose",
+   "accent": "#ecc9a8"
+  },
+  "month": "2033-10",
+  "gutenberg": 9182,
+  "plan": 365,
+  "series": "villette",
+  "vol": 5,
+  "vols": 5,
+  "source": {
+   "from": "CHAPTER XXXV.",
+   "nth": 1,
+   "to": "THE END.",
+   "heading": "CHAPTER [IVXL]+\\. [^a-z]+"
+  }
+ },
+ {
+  "slug": "moby-dick-1",
+  "title": "Moby-Dick",
+  "author": "Herman Melville",
+  "year": 1851,
+  "genre": "Adventure",
+  "level": 5,
+  "tags": [
+   "American",
+   "sea",
+   "hunting"
+  ],
+  "spine": {
+   "color": "#2f4a3a",
+   "height": 0.9
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#d8c48a"
+  },
+  "month": "2033-11",
+  "gutenberg": 2701,
+  "plan": 366,
+  "series": "moby-dick",
+  "vol": 1,
+  "vols": 6,
+  "source": {
+   "from": "ETYMOLOGY.",
+   "nth": 2,
+   "to": "CHAPTER 18. His Mark.",
+   "heading": "ETYMOLOGY\\.|EXTRACTS\\.( \\(Supplied by a Sub-Sub-Librarian\\)\\.)?|CHAPTER \\d+\\. .+|Epilogue",
+   "to_nth": 2
+  }
+ },
+ {
+  "slug": "moby-dick-2",
+  "title": "Moby-Dick",
+  "author": "Herman Melville",
+  "year": 1851,
+  "genre": "Adventure",
+  "level": 5,
+  "tags": [
+   "American",
+   "sea",
+   "hunting"
+  ],
+  "spine": {
+   "color": "#2f4a3a",
+   "height": 0.9
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#d8c48a"
+  },
+  "month": "2033-11",
+  "gutenberg": 2701,
+  "plan": 367,
+  "series": "moby-dick",
+  "vol": 2,
+  "vols": 6,
+  "source": {
+   "from": "CHAPTER 18. His Mark.",
+   "nth": 2,
+   "to": "CHAPTER 42. The Whiteness of the Whale.",
+   "heading": "ETYMOLOGY\\.|EXTRACTS\\.( \\(Supplied by a Sub-Sub-Librarian\\)\\.)?|CHAPTER \\d+\\. .+|Epilogue",
+   "to_nth": 2
+  }
+ },
+ {
+  "slug": "moby-dick-3",
+  "title": "Moby-Dick",
+  "author": "Herman Melville",
+  "year": 1851,
+  "genre": "Adventure",
+  "level": 5,
+  "tags": [
+   "American",
+   "sea",
+   "hunting"
+  ],
+  "spine": {
+   "color": "#2f4a3a",
+   "height": 0.9
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#d8c48a"
+  },
+  "month": "2033-11",
+  "gutenberg": 2701,
+  "plan": 368,
+  "series": "moby-dick",
+  "vol": 3,
+  "vols": 6,
+  "source": {
+   "from": "CHAPTER 42. The Whiteness of the Whale.",
+   "nth": 2,
+   "to": "CHAPTER 60. The Line.",
+   "heading": "ETYMOLOGY\\.|EXTRACTS\\.( \\(Supplied by a Sub-Sub-Librarian\\)\\.)?|CHAPTER \\d+\\. .+|Epilogue",
+   "to_nth": 2
+  }
+ },
+ {
+  "slug": "moby-dick-4",
+  "title": "Moby-Dick",
+  "author": "Herman Melville",
+  "year": 1851,
+  "genre": "Adventure",
+  "level": 5,
+  "tags": [
+   "American",
+   "sea",
+   "hunting"
+  ],
+  "spine": {
+   "color": "#2f4a3a",
+   "height": 0.9
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#d8c48a"
+  },
+  "month": "2033-11",
+  "gutenberg": 2701,
+  "plan": 369,
+  "series": "moby-dick",
+  "vol": 4,
+  "vols": 6,
+  "source": {
+   "from": "CHAPTER 60. The Line.",
+   "nth": 2,
+   "to": "CHAPTER 86. The Tail.",
+   "heading": "ETYMOLOGY\\.|EXTRACTS\\.( \\(Supplied by a Sub-Sub-Librarian\\)\\.)?|CHAPTER \\d+\\. .+|Epilogue",
+   "to_nth": 2
+  }
+ },
+ {
+  "slug": "moby-dick-5",
+  "title": "Moby-Dick",
+  "author": "Herman Melville",
+  "year": 1851,
+  "genre": "Adventure",
+  "level": 5,
+  "tags": [
+   "American",
+   "sea",
+   "hunting"
+  ],
+  "spine": {
+   "color": "#2f4a3a",
+   "height": 0.9
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#d8c48a"
+  },
+  "month": "2033-11",
+  "gutenberg": 2701,
+  "plan": 370,
+  "series": "moby-dick",
+  "vol": 5,
+  "vols": 6,
+  "source": {
+   "from": "CHAPTER 86. The Tail.",
+   "nth": 2,
+   "to": "CHAPTER 109. Ahab and Starbuck in the Cabin.",
+   "heading": "ETYMOLOGY\\.|EXTRACTS\\.( \\(Supplied by a Sub-Sub-Librarian\\)\\.)?|CHAPTER \\d+\\. .+|Epilogue",
+   "to_nth": 2
+  }
+ },
+ {
+  "slug": "moby-dick-6",
+  "title": "Moby-Dick",
+  "author": "Herman Melville",
+  "year": 1851,
+  "genre": "Adventure",
+  "level": 5,
+  "tags": [
+   "American",
+   "sea",
+   "hunting"
+  ],
+  "spine": {
+   "color": "#2f4a3a",
+   "height": 0.9
+  },
+  "cover": {
+   "motif": "compass",
+   "accent": "#d8c48a"
+  },
+  "month": "2033-11",
+  "gutenberg": 2701,
+  "plan": 371,
+  "series": "moby-dick",
+  "vol": 6,
+  "vols": 6,
+  "source": {
+   "from": "CHAPTER 109. Ahab and Starbuck in the Cabin.",
+   "nth": 2,
+   "to": null,
+   "heading": "ETYMOLOGY\\.|EXTRACTS\\.( \\(Supplied by a Sub-Sub-Librarian\\)\\.)?|CHAPTER \\d+\\. .+|Epilogue"
+  }
+ },
+ {
+  "slug": "jacobs-room-1",
+  "title": "Jacob's Room",
+  "author": "Virginia Woolf",
+  "year": 1922,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "British",
+   "war",
+   "city"
+  ],
+  "spine": {
+   "color": "#4e4b3c",
+   "height": 0.88
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2033-12",
+  "gutenberg": 5670,
+  "plan": 372,
+  "series": "jacobs-room",
+  "vol": 1,
+  "vols": 2,
+  "source": {
+   "from": "CHAPTER ONE",
+   "nth": 1,
+   "to": "CHAPTER EIGHT",
+   "heading": "CHAPTER [A-Z]+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "jacobs-room-2",
+  "title": "Jacob's Room",
+  "author": "Virginia Woolf",
+  "year": 1922,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "British",
+   "war",
+   "city"
+  ],
+  "spine": {
+   "color": "#4e4b3c",
+   "height": 0.88
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2033-12",
+  "gutenberg": 5670,
+  "plan": 373,
+  "series": "jacobs-room",
+  "vol": 2,
+  "vols": 2,
+  "source": {
+   "from": "CHAPTER EIGHT",
+   "nth": 1,
+   "to": null,
+   "heading": "CHAPTER [A-Z]+"
+  }
+ },
+ {
+  "slug": "jude-the-obscure-1",
+  "title": "Jude the Obscure",
+  "author": "Thomas Hardy",
+  "year": 1895,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "British",
+   "class",
+   "marriage"
+  ],
+  "spine": {
+   "color": "#5a4a3a",
+   "height": 0.84
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2033-12",
+  "gutenberg": 153,
+  "plan": 374,
+  "series": "jude-the-obscure",
+  "vol": 1,
+  "vols": 4,
+  "source": {
+   "from": "Part First AT MARYGREEN",
+   "nth": 1,
+   "to": "V",
+   "heading": "Part [A-Z][a-z]+ AT [A-Z ]+|[IVX]+",
+   "to_nth": 2
+  }
+ },
+ {
+  "slug": "jude-the-obscure-2",
+  "title": "Jude the Obscure",
+  "author": "Thomas Hardy",
+  "year": 1895,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "British",
+   "class",
+   "marriage"
+  ],
+  "spine": {
+   "color": "#5a4a3a",
+   "height": 0.84
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2033-12",
+  "gutenberg": 153,
+  "plan": 375,
+  "series": "jude-the-obscure",
+  "vol": 2,
+  "vols": 4,
+  "source": {
+   "from": "V",
+   "nth": 2,
+   "to": "II",
+   "heading": "Part [A-Z][a-z]+ AT [A-Z ]+|[IVX]+",
+   "to_nth": 4
+  }
+ },
+ {
+  "slug": "jude-the-obscure-3",
+  "title": "Jude the Obscure",
+  "author": "Thomas Hardy",
+  "year": 1895,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "British",
+   "class",
+   "marriage"
+  ],
+  "spine": {
+   "color": "#5a4a3a",
+   "height": 0.84
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2033-12",
+  "gutenberg": 153,
+  "plan": 376,
+  "series": "jude-the-obscure",
+  "vol": 3,
+  "vols": 4,
+  "source": {
+   "from": "II",
+   "nth": 4,
+   "to": "VII",
+   "heading": "Part [A-Z][a-z]+ AT [A-Z ]+|[IVX]+",
+   "to_nth": 4
+  }
+ },
+ {
+  "slug": "jude-the-obscure-4",
+  "title": "Jude the Obscure",
+  "author": "Thomas Hardy",
+  "year": 1895,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "British",
+   "class",
+   "marriage"
+  ],
+  "spine": {
+   "color": "#5a4a3a",
+   "height": 0.84
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2033-12",
+  "gutenberg": 153,
+  "plan": 377,
+  "series": "jude-the-obscure",
+  "vol": 4,
+  "vols": 4,
+  "source": {
+   "from": "VII",
+   "nth": 4,
+   "to": null,
+   "heading": "Part [A-Z][a-z]+ AT [A-Z ]+|[IVX]+"
+  }
+ },
+ {
+  "slug": "voyage-out-1",
+  "title": "The Voyage Out",
+  "author": "Virginia Woolf",
+  "year": 1915,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "British",
+   "sea",
+   "love"
+  ],
+  "spine": {
+   "color": "#6a5a44",
+   "height": 0.94
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2034-01",
+  "gutenberg": 144,
+  "plan": 378,
+  "series": "voyage-out",
+  "vol": 1,
+  "vols": 4,
+  "source": {
+   "from": "CHAPTER I",
+   "nth": 1,
+   "to": "CHAPTER IX",
+   "heading": "CHAPTER [IVXLC]+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "voyage-out-2",
+  "title": "The Voyage Out",
+  "author": "Virginia Woolf",
+  "year": 1915,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "British",
+   "sea",
+   "love"
+  ],
+  "spine": {
+   "color": "#6a5a44",
+   "height": 0.94
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2034-01",
+  "gutenberg": 144,
+  "plan": 379,
+  "series": "voyage-out",
+  "vol": 2,
+  "vols": 4,
+  "source": {
+   "from": "CHAPTER IX",
+   "nth": 1,
+   "to": "CHAPTER XV",
+   "heading": "CHAPTER [IVXLC]+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "voyage-out-3",
+  "title": "The Voyage Out",
+  "author": "Virginia Woolf",
+  "year": 1915,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "British",
+   "sea",
+   "love"
+  ],
+  "spine": {
+   "color": "#6a5a44",
+   "height": 0.94
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2034-01",
+  "gutenberg": 144,
+  "plan": 380,
+  "series": "voyage-out",
+  "vol": 3,
+  "vols": 4,
+  "source": {
+   "from": "CHAPTER XV",
+   "nth": 1,
+   "to": "CHAPTER XXII",
+   "heading": "CHAPTER [IVXLC]+",
+   "to_nth": 1
+  }
+ },
+ {
+  "slug": "voyage-out-4",
+  "title": "The Voyage Out",
+  "author": "Virginia Woolf",
+  "year": 1915,
+  "genre": "Realism & Character",
+  "level": 5,
+  "tags": [
+   "British",
+   "sea",
+   "love"
+  ],
+  "spine": {
+   "color": "#6a5a44",
+   "height": 0.94
+  },
+  "cover": {
+   "motif": "quill",
+   "accent": "#e2cfa3"
+  },
+  "month": "2034-01",
+  "gutenberg": 144,
+  "plan": 381,
+  "series": "voyage-out",
+  "vol": 4,
+  "vols": 4,
+  "source": {
+   "from": "CHAPTER XXII",
+   "nth": 1,
+   "to": null,
+   "heading": "CHAPTER [IVXLC]+"
+  }
  }
 ]

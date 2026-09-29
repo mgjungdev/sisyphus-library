@@ -39,7 +39,7 @@ def tokenize(text: str) -> list:
     return out
 
 
-def build_book(meta: dict) -> dict:
+def build_book(meta: dict, nxt: dict | None = None) -> dict:
     slug = meta["slug"]
     paras = load_paragraphs(slug)
     gloss = json.loads((CONTENT / "glossary" / f"{slug}.json").read_text(encoding="utf-8"))
@@ -96,10 +96,16 @@ def build_book(meta: dict) -> dict:
     return {
         "slug": slug, "title": meta["title"], "author": meta["author"], "year": meta["year"],
         "genre": meta.get("genre"), "level": meta.get("level"), "tags": meta.get("tags", []),
+        **volume(meta), **({"next": nxt} if nxt else {}),
         "words": words, "minutes": max(1, round(words / WPM)),
         "chapters": chapters, "paragraphs": out_paras, "cards": cards,
         "order": [e["id"] for e in sorted(entries, key=lambda e: (e["para"], e["id"]))],
     }
+
+
+def volume(meta: dict) -> dict:
+    """series / vol / vols of one volume of a novel split into several books; {} for a single book."""
+    return {k: meta[k] for k in ("series", "vol", "vols")} if meta.get("vol") else {}
 
 
 def century(year: int) -> dict:
@@ -119,10 +125,18 @@ def main():
     catalog = json.loads((CONTENT / "books.json").read_text(encoding="utf-8"))
     (OUT / "books").mkdir(parents=True, exist_ok=True)
     errors, out = [], []
+
+    def is_ready(meta: dict) -> bool:
+        slug = meta["slug"]
+        return (CONTENT / "sources" / f"{slug}.txt").exists() and (CONTENT / "glossary" / f"{slug}.json").exists() and bool(meta.get("reviewed"))
+
+    # The volume that follows each volume, when it is ready: the reader links to it on the last page.
+    vols = {(m["series"], m["vol"]): m for m in catalog if m.get("vol")}
     for meta in catalog:
         slug = meta["slug"]
-        ready = (CONTENT / "sources" / f"{slug}.txt").exists() and (CONTENT / "glossary" / f"{slug}.json").exists() and bool(meta.get("reviewed"))
+        ready = is_ready(meta)
         info = {k: meta.get(k) for k in ("slug", "title", "author", "year", "genre", "tags", "level", "month", "plan", "cover")}
+        info.update(volume(meta))
         info["century"] = century(meta["year"])
         info["status"] = "planned"
         words = None
@@ -131,7 +145,8 @@ def main():
             if errs:
                 errors += [f"{slug}: {e}" for e in errs]
                 continue
-            book = build_book(meta)
+            after = vols.get((meta.get("series"), (meta.get("vol") or 0) + 1))
+            book = build_book(meta, {"slug": after["slug"], "vol": after["vol"]} if after and is_ready(after) else None)
             (OUT / "books" / f"{slug}.json").write_text(json.dumps(book, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
             words = book["words"]
             info.update(status="ready", words=words, minutes=book["minutes"], entries=len(book["cards"]), chapters=len(book["chapters"]))

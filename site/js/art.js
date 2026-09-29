@@ -56,8 +56,15 @@ export const MOTIFS = {
 
 export function coverHTML(book) {
   const motif = MOTIFS[book.cover?.motif] || MOTIFS.leaf;
-  return `<span class="cover-art"><span class="ct">${esc(book.title)}</span>${motif}<span class="ca">${esc(book.author)}</span></span>`;
+  const vol = book.vol ? `<span class="cv">Volume ${roman(book.vol)}</span>` : '';
+  return `<span class="cover-art"><span class="ct">${esc(book.title)}</span>${vol}${motif}<span class="ca">${esc(book.author)}</span></span>`;
 }
+
+export const roman = n => [[10, 'X'], [9, 'IX'], [5, 'V'], [4, 'IV'], [1, 'I']]
+  .reduce((out, [v, r]) => { while (n >= v) { out += r; n -= v; } return out; }, '');
+
+/* "Volume II of IV" for one volume of a novel split into several books; '' for a single book. */
+export const volOf = b => (b.vol ? `Volume ${roman(b.vol)} of ${roman(b.vols)}` : '');
 
 export function initials(name) {
   return name.split(/\s+/).map(p => p[0]).filter(c => /[A-Z]/.test(c)).join('.') + '.';
