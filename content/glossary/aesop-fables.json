@@ -1,0 +1,2275 @@
+{
+  "slug": "aesop-fables",
+  "entries": [
+    {
+      "id": "entreat",
+      "match": "entreated",
+      "para": 2,
+      "headword": "entreat",
+      "pos": "verb",
+      "ipa": "/ɛnˈtrit/",
+      "sense_en": "begged in a serious, emotional way",
+      "sense_ko": "간절히 애원했다",
+      "synonyms": [
+        {
+          "word": "beg",
+          "nuance": "Plainer and more everyday; can sound less dignified than entreat.",
+          "example": "He begged for another chance."
+        },
+        {
+          "word": "implore",
+          "nuance": "Even more desperate and emotional than entreat.",
+          "example": "She implored him to stay."
+        },
+        {
+          "word": "beseech",
+          "nuance": "Very old-fashioned, literary form of the same idea.",
+          "example": "We beseech you, spare us."
+        }
+      ],
+      "modern": "\"entreated\" → \"begged\"",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "ridicule",
+      "match": "ridiculed",
+      "para": 3,
+      "headword": "ridicule",
+      "pos": "verb",
+      "ipa": "/ˈrɪdəkjul/",
+      "sense_en": "laughed at the idea as silly",
+      "sense_ko": "(어리석다며) 조롱했다, 비웃었다",
+      "synonyms": [
+        {
+          "word": "mock",
+          "nuance": "Often copies the person's words or actions to make fun of them.",
+          "example": "The kids mocked his accent."
+        },
+        {
+          "word": "laugh at",
+          "nuance": "Casual; can be friendly or unkind.",
+          "example": "Don't laugh at my plan."
+        },
+        {
+          "word": "deride",
+          "nuance": "Formal; stronger scorn, showing you think something is worthless.",
+          "example": "Critics derided the film."
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "astray",
+      "match": "astray",
+      "para": 5,
+      "headword": "astray",
+      "pos": "adverb",
+      "ipa": "/əˈstreɪ/",
+      "sense_en": "away from the right place or path; lost",
+      "sense_ko": "길을 잃고, 무리에서 벗어나",
+      "synonyms": [
+        {
+          "word": "lost",
+          "nuance": "Simple; you do not know where you are, but not always away from a group.",
+          "example": "a lost sheep"
+        },
+        {
+          "word": "adrift",
+          "nuance": "Drifting without direction or control, often at sea.",
+          "example": "a boat adrift"
+        },
+        {
+          "word": "wandering",
+          "nuance": "Moving about with no goal; not necessarily in trouble.",
+          "example": "a wandering child"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "go astray: 길을 잃다, 잘못되다. lead someone astray는 '~를 잘못된 길로 이끌다'.",
+      "all": true
+    },
+    {
+      "id": "plea",
+      "match": "plea",
+      "para": 5,
+      "headword": "plea",
+      "pos": "noun",
+      "ipa": "/pli/",
+      "sense_en": "a reason offered to make something seem fair",
+      "sense_ko": "구실, 변명거리",
+      "synonyms": [
+        {
+          "word": "excuse",
+          "nuance": "Everyday word for a reason given to avoid blame; less formal.",
+          "example": "a poor excuse"
+        },
+        {
+          "word": "pretext",
+          "nuance": "A false reason given to hide the real purpose.",
+          "example": "on the pretext of illness"
+        },
+        {
+          "word": "justification",
+          "nuance": "Formal; a real reason that shows something is right.",
+          "example": "no justification for violence"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "여기서는 '간청'이 아니라 '(그럴듯한) 구실'의 뜻입니다.",
+      "all": true
+    },
+    {
+      "id": "sirrah",
+      "match": "Sirrah",
+      "para": 5,
+      "headword": "sirrah",
+      "pos": "noun",
+      "ipa": "/ˈsɪrə/",
+      "sense_en": "an old rude way to address a man or boy of lower rank",
+      "sense_ko": "이놈아, 이봐 (아랫사람을 무례하게 부르는 옛말)",
+      "synonyms": [
+        {
+          "word": "fellow",
+          "nuance": "Older, can be friendly or rude depending on tone.",
+          "example": "Listen, my good fellow."
+        },
+        {
+          "word": "boy",
+          "nuance": "Addresses a young male; can be insulting to an adult.",
+          "example": "Come here, boy!"
+        }
+      ],
+      "modern": "\"Sirrah\" → \"Hey, you\" (no direct modern word)",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "imputation",
+      "match": "imputations",
+      "para": 5,
+      "headword": "imputation",
+      "pos": "noun",
+      "ipa": "/ˌɪmpjuˈteɪʃən/",
+      "sense_en": "an accusation that someone has done something bad",
+      "sense_ko": "(근거 없는) 혐의, 비난",
+      "synonyms": [
+        {
+          "word": "accusation",
+          "nuance": "Everyday word; imputation stresses that the blame is placed on someone, often unfairly.",
+          "example": "a false accusation"
+        },
+        {
+          "word": "allegation",
+          "nuance": "Formal claim of wrongdoing, not yet proved.",
+          "example": "allegations of fraud"
+        },
+        {
+          "word": "insinuation",
+          "nuance": "A hint of blame, not stated openly.",
+          "example": "an unkind insinuation"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "refute",
+      "match": "refute",
+      "para": 5,
+      "headword": "refute",
+      "pos": "verb",
+      "ipa": "/rɪˈfjut/",
+      "sense_en": "prove that something is false",
+      "sense_ko": "반박하다, 논파하다",
+      "synonyms": [
+        {
+          "word": "disprove",
+          "nuance": "Show by evidence that something is wrong; refute often means an argument answered point by point.",
+          "example": "to disprove a theory"
+        },
+        {
+          "word": "rebut",
+          "nuance": "Answer an accusation, whether or not you succeed.",
+          "example": "She rebutted the charge."
+        },
+        {
+          "word": "deny",
+          "nuance": "Just say it is not true; no proof needed.",
+          "example": "He denied everything."
+        }
+      ],
+      "modern": null,
+      "tip_ko": "refute는 '증거로 논파'하는 것이고, 단순히 '부인'하는 deny와 다릅니다.",
+      "all": true
+    },
+    {
+      "id": "pretext",
+      "match": "pretext",
+      "para": 5,
+      "headword": "pretext",
+      "pos": "noun",
+      "ipa": "/ˈpritɛkst/",
+      "sense_en": "a false reason given to hide the real one",
+      "sense_ko": "핑계, 구실",
+      "synonyms": [
+        {
+          "word": "excuse",
+          "nuance": "Any reason given for a fault; may be true.",
+          "example": "a good excuse"
+        },
+        {
+          "word": "pretense",
+          "nuance": "A show of something false; wider than a reason.",
+          "example": "under the pretense of friendship"
+        },
+        {
+          "word": "cover",
+          "nuance": "Informal; something that hides the real activity.",
+          "example": "a cover story"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "tyranny",
+      "match": "tyranny",
+      "para": 5,
+      "headword": "tyranny",
+      "pos": "noun",
+      "ipa": "/ˈtɪrəni/",
+      "sense_en": "cruel and unjust use of power",
+      "sense_ko": "폭정, 횡포",
+      "synonyms": [
+        {
+          "word": "oppression",
+          "nuance": "Focuses on the suffering of those ruled.",
+          "example": "the oppression of the poor"
+        },
+        {
+          "word": "despotism",
+          "nuance": "Rule by one all-powerful person; more political.",
+          "example": "an age of despotism"
+        },
+        {
+          "word": "bullying",
+          "nuance": "Everyday, on a small scale, in schools or workplaces.",
+          "example": "bullying at school"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "recompense",
+      "match": "recompense",
+      "para": 7,
+      "headword": "recompense",
+      "pos": "noun",
+      "ipa": "/ˈrɛkəmpɛns/",
+      "sense_en": "payment or reward for work done",
+      "sense_ko": "보수, 보답",
+      "synonyms": [
+        {
+          "word": "reward",
+          "nuance": "Given for good behaviour or a favour, not always owed.",
+          "example": "a reward for honesty"
+        },
+        {
+          "word": "payment",
+          "nuance": "Plain money owed for a service.",
+          "example": "payment for the work"
+        },
+        {
+          "word": "compensation",
+          "nuance": "Given to make up for a loss or harm.",
+          "example": "compensation for the injury"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "exhortation",
+      "match": "exhortations",
+      "para": 10,
+      "headword": "exhortation",
+      "pos": "noun",
+      "ipa": "/ˌɛɡzɔrˈteɪʃən/",
+      "sense_en": "strong urging to do the right thing",
+      "sense_ko": "훈계, 간곡한 권고",
+      "synonyms": [
+        {
+          "word": "urging",
+          "nuance": "Plain word; pushing someone to act.",
+          "example": "at her urging"
+        },
+        {
+          "word": "lecture",
+          "nuance": "Long, often annoying moral talk.",
+          "example": "a lecture on manners"
+        },
+        {
+          "word": "sermon",
+          "nuance": "Religious talk; used jokingly for any preachy speech.",
+          "example": "Don't give me a sermon."
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "faggot",
+      "match": "faggot",
+      "para": 10,
+      "headword": "faggot",
+      "pos": "noun",
+      "ipa": "/ˈfæɡət/",
+      "sense_en": "a bundle of sticks tied together",
+      "sense_ko": "(땔감용) 나뭇단",
+      "synonyms": [
+        {
+          "word": "bundle",
+          "nuance": "General word for things tied together.",
+          "example": "a bundle of letters"
+        },
+        {
+          "word": "bunch",
+          "nuance": "Less tightly tied; used for flowers, keys.",
+          "example": "a bunch of flowers"
+        },
+        {
+          "word": "firewood",
+          "nuance": "The wood itself, not the tied bundle.",
+          "example": "a pile of firewood"
+        }
+      ],
+      "modern": "\"faggot\" (sticks) → \"bundle of sticks\"",
+      "tip_ko": "현대 영어에서 faggot은 심한 모욕어로 쓰이므로, 이 옛 뜻은 책에서만 알아 두세요.",
+      "all": true
+    },
+    {
+      "id": "perish",
+      "match": "perishing",
+      "para": 12,
+      "headword": "perish",
+      "pos": "verb",
+      "ipa": "/ˈpɛrɪʃ/",
+      "sense_en": "dying, or nearly dying, from lack of something",
+      "sense_ko": "(굶주림·갈증으로) 죽어가는",
+      "synonyms": [
+        {
+          "word": "die",
+          "nuance": "Plain, general word; perish is literary and often about a disaster or hardship.",
+          "example": "to die of hunger"
+        },
+        {
+          "word": "starve",
+          "nuance": "Only about lack of food.",
+          "example": "starving children"
+        },
+        {
+          "word": "wither",
+          "nuance": "What plants do; gradual loss of life.",
+          "example": "The flowers withered."
+        }
+      ],
+      "modern": null,
+      "tip_ko": "영국 구어에서 'I'm perishing'은 '너무 추워 죽겠다'는 뜻으로도 씁니다.",
+      "all": true
+    },
+    {
+      "id": "famine",
+      "match": "famine",
+      "para": 12,
+      "headword": "famine",
+      "pos": "noun",
+      "ipa": "/ˈfæmɪn/",
+      "sense_en": "a state of extreme hunger",
+      "sense_ko": "극심한 굶주림, 기근",
+      "synonyms": [
+        {
+          "word": "hunger",
+          "nuance": "Everyday feeling of needing food.",
+          "example": "hunger pangs"
+        },
+        {
+          "word": "starvation",
+          "nuance": "Dying or suffering from having no food at all.",
+          "example": "die of starvation"
+        },
+        {
+          "word": "shortage",
+          "nuance": "Not enough of anything; much weaker.",
+          "example": "a water shortage"
+        }
+      ],
+      "modern": "\"perishing with famine\" → \"starving\"",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "derision",
+      "match": "derision",
+      "para": 12,
+      "headword": "derision",
+      "pos": "noun",
+      "ipa": "/dɪˈrɪʒən/",
+      "sense_en": "scornful laughter that shows contempt",
+      "sense_ko": "비웃음, 조소",
+      "synonyms": [
+        {
+          "word": "mockery",
+          "nuance": "Imitating or teasing someone to make fun.",
+          "example": "Their mockery hurt."
+        },
+        {
+          "word": "scorn",
+          "nuance": "Deep contempt, not necessarily laughter.",
+          "example": "treated with scorn"
+        },
+        {
+          "word": "ridicule",
+          "nuance": "Making fun in words; a little milder than derision.",
+          "example": "open to ridicule"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "in derision: 비웃으며. 전치사 in과 함께 굳어진 표현입니다.",
+      "all": true
+    },
+    {
+      "id": "assent",
+      "match": "assented",
+      "para": 14,
+      "headword": "assent",
+      "pos": "verb",
+      "ipa": "/əˈsɛnt/",
+      "sense_en": "agreed to a plan",
+      "sense_ko": "동의했다, 찬성했다",
+      "synonyms": [
+        {
+          "word": "agree",
+          "nuance": "Everyday word; can be for any opinion.",
+          "example": "I agree with you."
+        },
+        {
+          "word": "consent",
+          "nuance": "Give permission when you are able to refuse.",
+          "example": "She consented to the surgery."
+        },
+        {
+          "word": "acquiesce",
+          "nuance": "Agree without enthusiasm, just to avoid a fight.",
+          "example": "He acquiesced in silence."
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "wily",
+      "match": "wily",
+      "para": 36,
+      "headword": "wily",
+      "pos": "adjective",
+      "ipa": "/ˈwaɪli/",
+      "sense_en": "clever in a sly, tricky way",
+      "sense_ko": "교활한, 꾀 많은",
+      "synonyms": [
+        {
+          "word": "cunning",
+          "nuance": "Clever at getting what you want, often by tricks; general and common.",
+          "example": "a cunning plan"
+        },
+        {
+          "word": "crafty",
+          "nuance": "Like cunning but with a hint of sneakiness in the skill.",
+          "example": "a crafty move"
+        },
+        {
+          "word": "sly",
+          "nuance": "Quietly sneaky and secretive; may be playful.",
+          "example": "a sly smile"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "wily의 강세는 첫 음절: [와일리].",
+      "all": true
+    },
+    {
+      "id": "stratagem",
+      "match": "stratagem",
+      "para": 36,
+      "headword": "stratagem",
+      "pos": "noun",
+      "ipa": "/ˈstrætədʒəm/",
+      "sense_en": "a clever trick used to fool someone",
+      "sense_ko": "책략, 계략",
+      "synonyms": [
+        {
+          "word": "trick",
+          "nuance": "Everyday; may be harmless or playful.",
+          "example": "a card trick"
+        },
+        {
+          "word": "ploy",
+          "nuance": "Short-term move to gain an advantage in a situation.",
+          "example": "a ploy to win time"
+        },
+        {
+          "word": "scheme",
+          "nuance": "A larger, more planned and often secret plan.",
+          "example": "a scheme to get rich"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "upbraid",
+      "match": "upbraided",
+      "para": 19,
+      "headword": "upbraid",
+      "pos": "verb",
+      "ipa": "/ʌpˈbreɪd/",
+      "sense_en": "scolded him for doing wrong",
+      "sense_ko": "꾸짖었다, 책망했다",
+      "synonyms": [
+        {
+          "word": "scold",
+          "nuance": "Everyday; often for children or small faults.",
+          "example": "She scolded the boy."
+        },
+        {
+          "word": "rebuke",
+          "nuance": "Formal and sharp; from someone in authority.",
+          "example": "a public rebuke"
+        },
+        {
+          "word": "reproach",
+          "nuance": "Says you are disappointed rather than angry.",
+          "example": "He looked at her with reproach."
+        }
+      ],
+      "modern": "\"upbraided\" → \"scolded\"",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "guise",
+      "match": "guise",
+      "para": 19,
+      "headword": "guise",
+      "pos": "noun",
+      "ipa": "/ɡaɪz/",
+      "sense_en": "a false outward appearance",
+      "sense_ko": "겉모습, 가장",
+      "synonyms": [
+        {
+          "word": "disguise",
+          "nuance": "Something worn to hide who you are; guise is more about manner or appearance.",
+          "example": "a clever disguise"
+        },
+        {
+          "word": "pretense",
+          "nuance": "A false show of feeling or state.",
+          "example": "a pretense of joy"
+        },
+        {
+          "word": "appearance",
+          "nuance": "Neutral; how something looks, true or false.",
+          "example": "a neat appearance"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "under the guise of ~: ~을 가장하여.",
+      "all": true
+    },
+    {
+      "id": "feign",
+      "match": "feigned",
+      "para": 24,
+      "headword": "feign",
+      "pos": "verb",
+      "ipa": "/feɪn/",
+      "sense_en": "put on a false show of; pretended",
+      "sense_ko": "~인 척했다, 가장했다",
+      "synonyms": [
+        {
+          "word": "pretend",
+          "nuance": "Everyday word; can be a child's game.",
+          "example": "The child pretended to sleep."
+        },
+        {
+          "word": "fake",
+          "nuance": "Informal; often to deceive for gain.",
+          "example": "He faked an injury."
+        },
+        {
+          "word": "simulate",
+          "nuance": "Technical or formal; copy the effect of something.",
+          "example": "simulate a flight"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "jocularly",
+      "match": "jocularly",
+      "para": 24,
+      "headword": "jocularly",
+      "pos": "adverb",
+      "ipa": "/ˈdʒɑkjələrli/",
+      "sense_en": "in a joking, playful way",
+      "sense_ko": "농담조로, 우스갯소리로",
+      "synonyms": [
+        {
+          "word": "jokingly",
+          "nuance": "Everyday word.",
+          "example": "She said it jokingly."
+        },
+        {
+          "word": "playfully",
+          "nuance": "Light-hearted and friendly; not necessarily a joke.",
+          "example": "He playfully pushed me."
+        },
+        {
+          "word": "facetiously",
+          "nuance": "Joking at a bad moment; can be rude.",
+          "example": "He facetiously asked if it hurt."
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "lacerate",
+      "match": "lacerated",
+      "para": 33,
+      "headword": "lacerate",
+      "pos": "verb",
+      "ipa": "/ˈlæsəreɪt/",
+      "sense_en": "tore the flesh of the sheep with his teeth",
+      "sense_ko": "(살을) 찢어발겼다",
+      "synonyms": [
+        {
+          "word": "tear",
+          "nuance": "Plain word; used for cloth as well as flesh.",
+          "example": "to tear paper"
+        },
+        {
+          "word": "mangle",
+          "nuance": "Crush and tear so the body is badly damaged.",
+          "example": "a mangled arm"
+        },
+        {
+          "word": "slash",
+          "nuance": "Cut with a quick sweeping stroke of a blade.",
+          "example": "to slash a tire"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "lacerate는 '살을 찢다'; 상처 자체는 laceration(열상).",
+      "all": true
+    },
+    {
+      "id": "muse",
+      "match": "fell a-musing",
+      "para": 40,
+      "headword": "fall a-musing",
+      "pos": "idiom",
+      "ipa": "/ˈmjuzɪŋ/",
+      "sense_en": "started to think dreamily",
+      "sense_ko": "몽상에 빠졌다",
+      "synonyms": [
+        {
+          "word": "daydream",
+          "nuance": "Pleasant thoughts about unreal things; more modern and common.",
+          "example": "She daydreamed in class."
+        },
+        {
+          "word": "ponder",
+          "nuance": "Think seriously and slowly about something.",
+          "example": "He pondered the question."
+        },
+        {
+          "word": "muse",
+          "nuance": "Think quietly and often dreamily; literary.",
+          "example": "She mused on her future."
+        }
+      ],
+      "modern": "\"fell a-musing\" → \"started daydreaming\"",
+      "tip_ko": "a-musing의 a-는 옛날 진행형 접두사(on)입니다.",
+      "all": true
+    },
+    {
+      "id": "scapegrace",
+      "match": "scapegrace",
+      "para": 45,
+      "headword": "scapegrace",
+      "pos": "noun",
+      "ipa": "/ˈskeɪpɡreɪs/",
+      "sense_en": "a badly behaved, good-for-nothing young person",
+      "sense_ko": "말썽꾸러기, 망나니",
+      "synonyms": [
+        {
+          "word": "rascal",
+          "nuance": "Playful; a naughty but likeable person.",
+          "example": "You little rascal!"
+        },
+        {
+          "word": "scoundrel",
+          "nuance": "Serious; a dishonest and wicked man.",
+          "example": "a lying scoundrel"
+        },
+        {
+          "word": "rogue",
+          "nuance": "Charming trickster; lightly rude.",
+          "example": "a lovable rogue"
+        }
+      ],
+      "modern": "\"scapegrace\" → \"good-for-nothing\"",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "trudge",
+      "match": "trudging",
+      "para": 45,
+      "headword": "trudge",
+      "pos": "verb",
+      "ipa": "/trʌdʒ/",
+      "sense_en": "walking slowly and with effort",
+      "sense_ko": "터벅터벅 걷는",
+      "synonyms": [
+        {
+          "word": "plod",
+          "nuance": "Steady, heavy, slow walking or working.",
+          "example": "to plod up the hill"
+        },
+        {
+          "word": "stroll",
+          "nuance": "Relaxed walk for pleasure; opposite feeling to trudge.",
+          "example": "a stroll in the park"
+        },
+        {
+          "word": "march",
+          "nuance": "Stiff, regular steps, often in a group.",
+          "example": "march to the gate"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "endeavor",
+      "match": "endeavored",
+      "para": 45,
+      "headword": "endeavor",
+      "pos": "verb",
+      "ipa": "/ɪnˈdɛvər/",
+      "sense_en": "tried hard",
+      "sense_ko": "애썼다, 노력했다",
+      "synonyms": [
+        {
+          "word": "try",
+          "nuance": "Everyday word; lighter than endeavor.",
+          "example": "Try to be on time."
+        },
+        {
+          "word": "strive",
+          "nuance": "Long, hard effort toward a big goal.",
+          "example": "strive for success"
+        },
+        {
+          "word": "attempt",
+          "nuance": "Neutral; stresses the try, not the effort.",
+          "example": "an attempt to climb"
+        }
+      ],
+      "modern": "\"endeavored\" → \"tried\"",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "famished",
+      "match": "famished",
+      "para": 52,
+      "headword": "famished",
+      "pos": "adjective",
+      "ipa": "/ˈfæmɪʃt/",
+      "sense_en": "very hungry",
+      "sense_ko": "몹시 배고픈",
+      "synonyms": [
+        {
+          "word": "starving",
+          "nuance": "Everyday exaggeration for very hungry.",
+          "example": "I'm starving!"
+        },
+        {
+          "word": "ravenous",
+          "nuance": "Hungry like a wild animal; eating greedily.",
+          "example": "a ravenous appetite"
+        },
+        {
+          "word": "hungry",
+          "nuance": "Plain word; much weaker.",
+          "example": "I'm a bit hungry."
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "trellised",
+      "match": "trellised",
+      "para": 52,
+      "headword": "trellised",
+      "pos": "adjective",
+      "ipa": "/ˈtrɛlɪst/",
+      "sense_en": "held up on a frame of crossed sticks",
+      "sense_ko": "격자 시렁에 얹힌",
+      "synonyms": [
+        {
+          "word": "latticed",
+          "nuance": "Made of criss-cross strips; not always to hold plants.",
+          "example": "a latticed window"
+        },
+        {
+          "word": "supported",
+          "nuance": "General; held up by anything.",
+          "example": "a supported branch"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "dainty",
+      "match": "dainties",
+      "para": 54,
+      "headword": "dainty",
+      "pos": "noun",
+      "ipa": "/ˈdeɪnti/",
+      "sense_en": "small, delicious foods",
+      "sense_ko": "맛있는 별미, 진미",
+      "synonyms": [
+        {
+          "word": "delicacy",
+          "nuance": "Rare and expensive food; more modern word for the same idea.",
+          "example": "caviar is a delicacy"
+        },
+        {
+          "word": "treat",
+          "nuance": "Everyday food you enjoy now and then.",
+          "example": "a sweet treat"
+        },
+        {
+          "word": "titbit",
+          "nuance": "A small tasty piece; can be gossip too.",
+          "example": "a titbit of cheese"
+        }
+      ],
+      "modern": "\"dainties\" → \"delicacies\"",
+      "tip_ko": "dainty는 형용사로 '앙증맞은'의 뜻도 있지만 여기서는 명사입니다.",
+      "all": true
+    },
+    {
+      "id": "repast",
+      "match": "repast",
+      "para": 54,
+      "headword": "repast",
+      "pos": "noun",
+      "ipa": "/rɪˈpæst/",
+      "sense_en": "a meal",
+      "sense_ko": "식사, 음식",
+      "synonyms": [
+        {
+          "word": "meal",
+          "nuance": "Everyday word for food eaten at a set time.",
+          "example": "a hot meal"
+        },
+        {
+          "word": "feast",
+          "nuance": "Big, rich meal for many people.",
+          "example": "a wedding feast"
+        },
+        {
+          "word": "snack",
+          "nuance": "Small, quick bite between meals.",
+          "example": "a snack at noon"
+        }
+      ],
+      "modern": "\"repast\" → \"meal\"",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "genial",
+      "match": "genial",
+      "para": 56,
+      "headword": "genial",
+      "pos": "adjective",
+      "ipa": "/ˈdʒinjəl/",
+      "sense_en": "pleasantly warm and mild",
+      "sense_ko": "따뜻하고 온화한",
+      "synonyms": [
+        {
+          "word": "mild",
+          "nuance": "Not extreme; can be about weather or people.",
+          "example": "a mild winter"
+        },
+        {
+          "word": "warm",
+          "nuance": "Friendly or not cold; common word.",
+          "example": "a warm smile"
+        },
+        {
+          "word": "cordial",
+          "nuance": "Polite and friendly in a formal way.",
+          "example": "a cordial welcome"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "genial은 '천재의'(genius)가 아니라 '상냥한, 온화한'입니다.",
+      "all": true
+    },
+    {
+      "id": "wayfaring",
+      "match": "wayfaring",
+      "para": 56,
+      "headword": "wayfaring",
+      "pos": "adjective",
+      "ipa": "/ˈweɪˌfɛrɪŋ/",
+      "sense_en": "travelling on foot",
+      "sense_ko": "길을 가는, 도보 여행의",
+      "synonyms": [
+        {
+          "word": "travelling",
+          "nuance": "Any kind of trip, by any means.",
+          "example": "a travelling salesman"
+        },
+        {
+          "word": "roaming",
+          "nuance": "Moving about freely with no set route.",
+          "example": "a roaming dog"
+        },
+        {
+          "word": "itinerant",
+          "nuance": "Formal; moving from place to place for work.",
+          "example": "an itinerant preacher"
+        }
+      ],
+      "modern": "\"a wayfaring man\" → \"a traveler\"",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "beseech",
+      "match": "beseeching",
+      "para": 61,
+      "headword": "beseech",
+      "pos": "verb",
+      "ipa": "/bɪˈsitʃ/",
+      "sense_en": "begging in a serious way",
+      "sense_ko": "간절히 청하는",
+      "synonyms": [
+        {
+          "word": "plead",
+          "nuance": "General; can be to a judge or a friend.",
+          "example": "She pleaded for help."
+        },
+        {
+          "word": "implore",
+          "nuance": "Emotional and urgent.",
+          "example": "I implore you to listen."
+        },
+        {
+          "word": "beg",
+          "nuance": "Everyday; can be for money or favours.",
+          "example": "to beg for food"
+        }
+      ],
+      "modern": "\"beseeching\" → \"begging\"",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "lamentation",
+      "match": "lamentation",
+      "para": 64,
+      "headword": "lamentation",
+      "pos": "noun",
+      "ipa": "/ˌlæmənˈteɪʃən/",
+      "sense_en": "a sad cry of complaint",
+      "sense_ko": "한탄, 탄식",
+      "synonyms": [
+        {
+          "word": "complaint",
+          "nuance": "Everyday word; may be small and annoying.",
+          "example": "a complaint about noise"
+        },
+        {
+          "word": "wail",
+          "nuance": "A long, loud cry of pain or grief.",
+          "example": "a wail of sorrow"
+        },
+        {
+          "word": "grief",
+          "nuance": "Deep sadness itself, not the words.",
+          "example": "overcome by grief"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "bask",
+      "match": "basking",
+      "para": 64,
+      "headword": "bask",
+      "pos": "verb",
+      "ipa": "/bæsk/",
+      "sense_en": "lying in the warmth of the sun",
+      "sense_ko": "(햇볕을) 쬐고 있는",
+      "synonyms": [
+        {
+          "word": "sunbathe",
+          "nuance": "Lying in sunlight to get a tan, usually on purpose.",
+          "example": "to sunbathe on the beach"
+        },
+        {
+          "word": "lounge",
+          "nuance": "Relax lazily anywhere, not only in the sun.",
+          "example": "lounging on the sofa"
+        },
+        {
+          "word": "relax",
+          "nuance": "Simple rest; no sun implied.",
+          "example": "relax at home"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "bask in the sun; 비유로 bask in glory(영광을 만끽하다)도 씁니다.",
+      "all": true
+    },
+    {
+      "id": "inert",
+      "match": "inert",
+      "para": 67,
+      "headword": "inert",
+      "pos": "adjective",
+      "ipa": "/ɪˈnɝt/",
+      "sense_en": "not moving and not acting",
+      "sense_ko": "움직이지 않는, 활기 없는",
+      "synonyms": [
+        {
+          "word": "motionless",
+          "nuance": "Only says there is no movement.",
+          "example": "motionless water"
+        },
+        {
+          "word": "lifeless",
+          "nuance": "Looks dead or without energy.",
+          "example": "a lifeless body"
+        },
+        {
+          "word": "passive",
+          "nuance": "Does not react or resist; can describe a person.",
+          "example": "a passive audience"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "beguile",
+      "match": "beguiled",
+      "para": 74,
+      "headword": "beguile",
+      "pos": "verb",
+      "ipa": "/bɪˈɡaɪl/",
+      "sense_en": "tricked by sweet talk",
+      "sense_ko": "꾐에 넘어간, 속은",
+      "synonyms": [
+        {
+          "word": "deceive",
+          "nuance": "General, can be by lies or actions.",
+          "example": "He deceived his friends."
+        },
+        {
+          "word": "charm",
+          "nuance": "Win someone over pleasantly; not always a trick.",
+          "example": "She charmed the judge."
+        },
+        {
+          "word": "trick",
+          "nuance": "Everyday and blunt.",
+          "example": "They tricked her."
+        }
+      ],
+      "modern": null,
+      "tip_ko": "beguile은 '속이다'뿐 아니라 '매혹하다, 즐겁게 하다'의 좋은 뜻도 있습니다.",
+      "all": true
+    },
+    {
+      "id": "plumage",
+      "match": "plumage",
+      "para": 76,
+      "headword": "plumage",
+      "pos": "noun",
+      "ipa": "/ˈplumɪdʒ/",
+      "sense_en": "all the feathers of a bird",
+      "sense_ko": "(새의) 깃털 전체",
+      "synonyms": [
+        {
+          "word": "feathers",
+          "nuance": "The separate pieces; plumage is the whole covering.",
+          "example": "a bird's feathers"
+        },
+        {
+          "word": "coat",
+          "nuance": "Fur of an animal, not feathers.",
+          "example": "a horse's shiny coat"
+        },
+        {
+          "word": "down",
+          "nuance": "Soft, fluffy under-feathers, as on chicks.",
+          "example": "duck down"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "indignant",
+      "match": "indignantly",
+      "para": 76,
+      "headword": "indignantly",
+      "pos": "adverb",
+      "ipa": "/ɪnˈdɪɡnəntli/",
+      "sense_en": "angrily because it seemed unfair",
+      "sense_ko": "분개하여, 화가 나서",
+      "synonyms": [
+        {
+          "word": "angrily",
+          "nuance": "Simple, any cause for anger.",
+          "example": "He shouted angrily."
+        },
+        {
+          "word": "resentfully",
+          "nuance": "Bitter anger kept inside for a long time.",
+          "example": "She stared resentfully."
+        },
+        {
+          "word": "furiously",
+          "nuance": "Much stronger, wild anger.",
+          "example": "He argued furiously."
+        }
+      ],
+      "modern": null,
+      "tip_ko": "indignant 화는 '부당하다고 느껴서' 나는 화입니다.",
+      "all": true
+    },
+    {
+      "id": "taunt",
+      "match": "taunt",
+      "para": 78,
+      "headword": "taunt",
+      "pos": "verb",
+      "ipa": "/tɔnt/",
+      "sense_en": "to make fun of someone cruelly to make them angry",
+      "sense_ko": "조롱하다, 놀리다",
+      "synonyms": [
+        {
+          "word": "tease",
+          "nuance": "Often playful, between friends.",
+          "example": "Stop teasing your sister."
+        },
+        {
+          "word": "mock",
+          "nuance": "Copies or laughs at someone to show contempt.",
+          "example": "They mocked his accent."
+        },
+        {
+          "word": "jeer",
+          "nuance": "Shout rude remarks, usually in a crowd.",
+          "example": "The crowd jeered."
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "cloven",
+      "match": "cloven",
+      "para": 81,
+      "headword": "cloven",
+      "pos": "adjective",
+      "ipa": "/ˈkloʊvən/",
+      "sense_en": "split into two parts",
+      "sense_ko": "(발굽이) 갈라진",
+      "synonyms": [
+        {
+          "word": "split",
+          "nuance": "Everyday; general.",
+          "example": "a split lip"
+        },
+        {
+          "word": "divided",
+          "nuance": "Separated into parts, not always by a crack.",
+          "example": "a divided road"
+        },
+        {
+          "word": "forked",
+          "nuance": "Branching like a fork.",
+          "example": "a forked tongue"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "cloven hoof: 소, 양 등의 갈라진 발굽. cleave의 과거분사입니다.",
+      "all": true
+    },
+    {
+      "id": "superabundant",
+      "match": "superabundant",
+      "para": 83,
+      "headword": "superabundant",
+      "pos": "adjective",
+      "ipa": "/ˌsupərəˈbʌndənt/",
+      "sense_en": "much more than enough",
+      "sense_ko": "넘칠 만큼 풍성한",
+      "synonyms": [
+        {
+          "word": "plentiful",
+          "nuance": "More than enough; the everyday word.",
+          "example": "a plentiful supply"
+        },
+        {
+          "word": "abundant",
+          "nuance": "Formal; a large amount.",
+          "example": "abundant rainfall"
+        },
+        {
+          "word": "excessive",
+          "nuance": "Too much, in a bad way.",
+          "example": "excessive noise"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "vanquish",
+      "match": "vanquished",
+      "para": 87,
+      "headword": "vanquished",
+      "pos": "adjective",
+      "ipa": "/ˈvæŋkwɪʃt/",
+      "sense_en": "beaten in a fight",
+      "sense_ko": "패배한, 정복당한",
+      "synonyms": [
+        {
+          "word": "defeated",
+          "nuance": "Everyday word for losing.",
+          "example": "a defeated team"
+        },
+        {
+          "word": "conquered",
+          "nuance": "Won by force, often land or a country.",
+          "example": "a conquered city"
+        },
+        {
+          "word": "beaten",
+          "nuance": "Casual; can be a game or a fight.",
+          "example": "beaten in the race"
+        }
+      ],
+      "modern": "\"vanquished\" → \"defeated\"",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "skulk",
+      "match": "skulked",
+      "para": 87,
+      "headword": "skulk",
+      "pos": "verb",
+      "ipa": "/skʌlk/",
+      "sense_en": "crept away secretly, ashamed",
+      "sense_ko": "슬금슬금 몰래 빠져나갔다",
+      "synonyms": [
+        {
+          "word": "sneak",
+          "nuance": "Move quietly to avoid being seen; can be brief.",
+          "example": "sneak out of class"
+        },
+        {
+          "word": "lurk",
+          "nuance": "Wait hidden, for something bad.",
+          "example": "A man lurked outside."
+        },
+        {
+          "word": "slink",
+          "nuance": "Move away guiltily or ashamed.",
+          "example": "The dog slunk out."
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "remonstrance",
+      "match": "remonstrance",
+      "para": 93,
+      "headword": "remonstrance",
+      "pos": "noun",
+      "ipa": "/rɪˈmɑnstrəns/",
+      "sense_en": "a protest that says something is wrong",
+      "sense_ko": "항의, 이의 제기",
+      "synonyms": [
+        {
+          "word": "protest",
+          "nuance": "General; public or private opposition.",
+          "example": "a protest against the plan"
+        },
+        {
+          "word": "objection",
+          "nuance": "A spoken reason against something.",
+          "example": "no objection"
+        },
+        {
+          "word": "complaint",
+          "nuance": "Everyday; says you are unhappy.",
+          "example": "a complaint about food"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "precept",
+      "match": "precept",
+      "para": 94,
+      "headword": "precept",
+      "pos": "noun",
+      "ipa": "/ˈprisɛpt/",
+      "sense_en": "a rule for how to behave",
+      "sense_ko": "가르침, 교훈, 규범",
+      "synonyms": [
+        {
+          "word": "rule",
+          "nuance": "Everyday; any order or guide.",
+          "example": "school rules"
+        },
+        {
+          "word": "maxim",
+          "nuance": "A short wise saying.",
+          "example": "a maxim about work"
+        },
+        {
+          "word": "principle",
+          "nuance": "A basic belief that guides behaviour.",
+          "example": "a moral principle"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "besought",
+      "match": "besought",
+      "para": 96,
+      "headword": "beseech",
+      "pos": "verb",
+      "ipa": "/bɪˈsitʃ/",
+      "sense_en": "begged",
+      "sense_ko": "간청했다",
+      "synonyms": [
+        {
+          "word": "beg",
+          "nuance": "Everyday word.",
+          "example": "He begged her to stay."
+        },
+        {
+          "word": "implore",
+          "nuance": "Urgent, emotional.",
+          "example": "She implored him to wait."
+        },
+        {
+          "word": "petition",
+          "nuance": "Formal; ask an authority.",
+          "example": "petition the court"
+        }
+      ],
+      "modern": "\"besought\" → \"begged\"",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "summons",
+      "match": "summons",
+      "para": 96,
+      "headword": "summons",
+      "pos": "noun",
+      "ipa": "/ˈsʌmənz/",
+      "sense_en": "an order to come",
+      "sense_ko": "소환, 호출",
+      "synonyms": [
+        {
+          "word": "call",
+          "nuance": "Everyday word for asking someone to come.",
+          "example": "a call to arms"
+        },
+        {
+          "word": "invitation",
+          "nuance": "Polite request that can be refused.",
+          "example": "an invitation to dinner"
+        },
+        {
+          "word": "order",
+          "nuance": "A command with no choice.",
+          "example": "orders from the boss"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "brink",
+      "match": "brink",
+      "para": 101,
+      "headword": "brink",
+      "pos": "noun",
+      "ipa": "/brɪŋk/",
+      "sense_en": "the edge of a steep place or of water",
+      "sense_ko": "벼랑·물가의 가장자리",
+      "synonyms": [
+        {
+          "word": "edge",
+          "nuance": "Everyday word for the outside limit.",
+          "example": "the edge of the table"
+        },
+        {
+          "word": "verge",
+          "nuance": "Edge of a road or of a big change.",
+          "example": "on the verge of tears"
+        },
+        {
+          "word": "rim",
+          "nuance": "Edge of a round thing such as a cup.",
+          "example": "the rim of a glass"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "on the brink of ~: ~ 직전에.",
+      "all": true
+    },
+    {
+      "id": "timidity",
+      "match": "timidity",
+      "para": 115,
+      "headword": "timidity",
+      "pos": "noun",
+      "ipa": "/təˈmɪdəti/",
+      "sense_en": "a tendency to be easily frightened",
+      "sense_ko": "소심함, 겁 많음",
+      "synonyms": [
+        {
+          "word": "shyness",
+          "nuance": "Nervous around people; not about danger.",
+          "example": "shyness at parties"
+        },
+        {
+          "word": "cowardice",
+          "nuance": "Failing to act in the face of danger; blame is stronger.",
+          "example": "an act of cowardice"
+        },
+        {
+          "word": "fearfulness",
+          "nuance": "General state of being afraid.",
+          "example": "a child's fearfulness"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "precipice",
+      "match": "precipice",
+      "para": 115,
+      "headword": "precipice",
+      "pos": "noun",
+      "ipa": "/ˈprɛsəpɪs/",
+      "sense_en": "a very steep cliff",
+      "sense_ko": "절벽, 낭떠러지",
+      "synonyms": [
+        {
+          "word": "cliff",
+          "nuance": "Everyday word for a high steep rock face.",
+          "example": "a sea cliff"
+        },
+        {
+          "word": "drop",
+          "nuance": "Neutral; any sudden fall in height.",
+          "example": "a sheer drop"
+        },
+        {
+          "word": "crag",
+          "nuance": "Rough, rocky mountain cliff.",
+          "example": "a rocky crag"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "scamper",
+      "match": "scampered",
+      "para": 115,
+      "headword": "scamper",
+      "pos": "verb",
+      "ipa": "/ˈskæmpər/",
+      "sense_en": "ran quickly with small light steps",
+      "sense_ko": "종종걸음으로 후다닥 달아났다",
+      "synonyms": [
+        {
+          "word": "scurry",
+          "nuance": "Hurry with small steps, often in fear or busyness.",
+          "example": "mice scurried away"
+        },
+        {
+          "word": "dash",
+          "nuance": "Run fast for a short distance.",
+          "example": "dash for the bus"
+        },
+        {
+          "word": "trot",
+          "nuance": "Steady, easy pace like a horse.",
+          "example": "to trot along"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "helter-skelter",
+      "match": "helter-skelter",
+      "para": 115,
+      "headword": "helter-skelter",
+      "pos": "adverb",
+      "ipa": "/ˌhɛltərˈskɛltər/",
+      "sense_en": "in a wild, disorderly hurry",
+      "sense_ko": "허둥지둥, 우왕좌왕",
+      "synonyms": [
+        {
+          "word": "in a panic",
+          "nuance": "Says why; helter-skelter shows the messy movement.",
+          "example": "They ran in a panic."
+        },
+        {
+          "word": "pell-mell",
+          "nuance": "Very close: rushing in disorder.",
+          "example": "They ran pell-mell."
+        },
+        {
+          "word": "headlong",
+          "nuance": "Fast and forward without looking.",
+          "example": "to rush headlong"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "surfeit",
+      "match": "surfeited",
+      "para": 137,
+      "headword": "surfeit",
+      "pos": "verb",
+      "ipa": "/ˈsɝfɪt/",
+      "sense_en": "filled with more than enough",
+      "sense_ko": "물릴 정도로 배부른",
+      "synonyms": [
+        {
+          "word": "stuffed",
+          "nuance": "Informal; so full you cannot eat more.",
+          "example": "I'm stuffed."
+        },
+        {
+          "word": "sated",
+          "nuance": "Fully satisfied; can be pleasant.",
+          "example": "sated with food"
+        },
+        {
+          "word": "glutted",
+          "nuance": "Too full, often with a sense of disgust.",
+          "example": "glutted with sweets"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "tempest",
+      "match": "tempest",
+      "para": 139,
+      "headword": "tempest",
+      "pos": "noun",
+      "ipa": "/ˈtɛmpɪst/",
+      "sense_en": "a violent storm",
+      "sense_ko": "(거센) 폭풍",
+      "synonyms": [
+        {
+          "word": "storm",
+          "nuance": "Everyday; any bad weather with wind or rain.",
+          "example": "a snow storm"
+        },
+        {
+          "word": "gale",
+          "nuance": "Very strong wind; rain is not needed.",
+          "example": "gale-force winds"
+        },
+        {
+          "word": "hurricane",
+          "nuance": "Huge tropical storm with extremely strong winds.",
+          "example": "a Category 3 hurricane"
+        }
+      ],
+      "modern": "\"tempest\" → \"storm\"",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "intrude",
+      "match": "intruded",
+      "para": 141,
+      "headword": "intrude",
+      "pos": "verb",
+      "ipa": "/ɪnˈtrud/",
+      "sense_en": "came in where he was not wanted",
+      "sense_ko": "불쑥 침입했다",
+      "synonyms": [
+        {
+          "word": "trespass",
+          "nuance": "Enter someone's land illegally.",
+          "example": "No trespassing."
+        },
+        {
+          "word": "barge in",
+          "nuance": "Informal; enter rudely.",
+          "example": "He barged in."
+        },
+        {
+          "word": "interrupt",
+          "nuance": "Break into talk or activity, not a place.",
+          "example": "Don't interrupt."
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "contrive",
+      "match": "contrive",
+      "para": 141,
+      "headword": "contrive",
+      "pos": "verb",
+      "ipa": "/kənˈtraɪv/",
+      "sense_en": "to find a clever way to make something",
+      "sense_ko": "고안하다, 꾀해서 만들다",
+      "synonyms": [
+        {
+          "word": "devise",
+          "nuance": "Plan carefully; neutral.",
+          "example": "devise a scheme"
+        },
+        {
+          "word": "invent",
+          "nuance": "Create something new.",
+          "example": "invent a machine"
+        },
+        {
+          "word": "engineer",
+          "nuance": "Arrange secretly and skillfully.",
+          "example": "engineer a meeting"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "mimic",
+      "match": "mimics",
+      "para": 128,
+      "headword": "mimic",
+      "pos": "noun",
+      "ipa": "/ˈmɪmɪk/",
+      "sense_en": "those who copy others' actions",
+      "sense_ko": "흉내쟁이",
+      "synonyms": [
+        {
+          "word": "copycat",
+          "nuance": "Informal, often mocking; copies for no good reason.",
+          "example": "Don't be a copycat."
+        },
+        {
+          "word": "imitator",
+          "nuance": "Neutral; anyone who copies.",
+          "example": "an imitator of Elvis"
+        },
+        {
+          "word": "impersonator",
+          "nuance": "Copies a specific person, often for shows.",
+          "example": "an Elvis impersonator"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "augury",
+      "match": "auguries",
+      "para": 151,
+      "headword": "augury",
+      "pos": "noun",
+      "ipa": "/ˈɔɡjəri/",
+      "sense_en": "signs that tell the future",
+      "sense_ko": "전조, 점괘",
+      "synonyms": [
+        {
+          "word": "omen",
+          "nuance": "Everyday word for a sign of what will happen.",
+          "example": "a good omen"
+        },
+        {
+          "word": "sign",
+          "nuance": "General; not necessarily magical.",
+          "example": "a sign of spring"
+        },
+        {
+          "word": "portent",
+          "nuance": "Formal and serious; often a bad warning.",
+          "example": "a portent of war"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "redress",
+      "match": "redress",
+      "para": 156,
+      "headword": "redress",
+      "pos": "noun",
+      "ipa": "/rɪˈdrɛs/",
+      "sense_en": "a way to make a wrong right",
+      "sense_ko": "보상, 시정",
+      "synonyms": [
+        {
+          "word": "compensation",
+          "nuance": "Money for loss or harm.",
+          "example": "compensation for the delay"
+        },
+        {
+          "word": "remedy",
+          "nuance": "A cure or fix for a problem.",
+          "example": "a legal remedy"
+        },
+        {
+          "word": "justice",
+          "nuance": "Fair treatment in general.",
+          "example": "to seek justice"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "둘째 음절에 강세(re-DRESS). get no redress: 바로잡을 길(보상)을 얻지 못하다. '다시 옷을 입다'의 re-dress와는 다른 단어입니다.",
+      "all": true
+    },
+    {
+      "id": "swoon",
+      "match": "swoon",
+      "para": 158,
+      "headword": "swoon",
+      "pos": "noun",
+      "ipa": "/swun/",
+      "sense_en": "a faint",
+      "sense_ko": "기절, 졸도",
+      "synonyms": [
+        {
+          "word": "faint",
+          "nuance": "Everyday word for a short loss of consciousness.",
+          "example": "to fall in a faint"
+        },
+        {
+          "word": "blackout",
+          "nuance": "Sudden loss of consciousness, medical.",
+          "example": "a brief blackout"
+        },
+        {
+          "word": "collapse",
+          "nuance": "Falling down from weakness; may stay conscious.",
+          "example": "to collapse on the floor"
+        }
+      ],
+      "modern": "\"falling into a swoon\" → \"fainting\"",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "woe",
+      "match": "Woe is me",
+      "para": 158,
+      "headword": "woe is me",
+      "pos": "idiom",
+      "ipa": "/woʊ/",
+      "sense_en": "How sad I am!",
+      "sense_ko": "아, 나는 불행하구나!",
+      "synonyms": [
+        {
+          "word": "alas",
+          "nuance": "Short cry of sadness; more formal.",
+          "example": "Alas, it is over."
+        },
+        {
+          "word": "poor me",
+          "nuance": "Modern, often ironic self-pity.",
+          "example": "Oh, poor me!"
+        },
+        {
+          "word": "oh dear",
+          "nuance": "Mild regret.",
+          "example": "Oh dear, I forgot."
+        }
+      ],
+      "modern": "\"Woe is me!\" → \"Oh, how unhappy I am!\"",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "impartially",
+      "match": "impartially",
+      "para": 160,
+      "headword": "impartially",
+      "pos": "adverb",
+      "ipa": "/ɪmˈpɑrʃəli/",
+      "sense_en": "equally, without favouring one",
+      "sense_ko": "공평하게, 편애 없이",
+      "synonyms": [
+        {
+          "word": "fairly",
+          "nuance": "Everyday word for equal treatment.",
+          "example": "treat everyone fairly"
+        },
+        {
+          "word": "equally",
+          "nuance": "Same amount to each.",
+          "example": "share equally"
+        },
+        {
+          "word": "objectively",
+          "nuance": "Judging by facts, not feelings.",
+          "example": "judge objectively"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "antidote",
+      "match": "antidote",
+      "para": 165,
+      "headword": "antidote",
+      "pos": "noun",
+      "ipa": "/ˈæntɪdoʊt/",
+      "sense_en": "a medicine that stops the effect of poison",
+      "sense_ko": "해독제",
+      "synonyms": [
+        {
+          "word": "remedy",
+          "nuance": "A cure for any illness.",
+          "example": "a home remedy"
+        },
+        {
+          "word": "cure",
+          "nuance": "Ends a disease.",
+          "example": "a cure for cancer"
+        },
+        {
+          "word": "medicine",
+          "nuance": "Any drug.",
+          "example": "cough medicine"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "antidote to ~: ~에 대한 해독제. 비유로 '해결책'도 됩니다.",
+      "all": true
+    },
+    {
+      "id": "slender",
+      "match": "slender",
+      "para": 169,
+      "headword": "slender",
+      "pos": "adjective",
+      "ipa": "/ˈslɛndər/",
+      "sense_en": "thin and weak-looking",
+      "sense_ko": "가느다란, 가냘픈",
+      "synonyms": [
+        {
+          "word": "thin",
+          "nuance": "Plain; can sound negative.",
+          "example": "a thin arm"
+        },
+        {
+          "word": "slim",
+          "nuance": "Thin in an attractive way.",
+          "example": "a slim figure"
+        },
+        {
+          "word": "skinny",
+          "nuance": "Informal; too thin.",
+          "example": "skinny legs"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "underrate",
+      "match": "underrated",
+      "para": 170,
+      "headword": "underrated",
+      "pos": "adjective",
+      "ipa": "/ˌʌndərˈreɪtɪd/",
+      "sense_en": "not valued as much as deserved",
+      "sense_ko": "과소평가된",
+      "synonyms": [
+        {
+          "word": "undervalue",
+          "nuance": "Give too low a price or worth.",
+          "example": "undervalue her work"
+        },
+        {
+          "word": "underestimate",
+          "nuance": "Think something is smaller or weaker than it is.",
+          "example": "Don't underestimate him."
+        },
+        {
+          "word": "belittle",
+          "nuance": "Speak of something as unimportant.",
+          "example": "to belittle others"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "underrated: 실력·가치가 과소평가됨. underestimate는 크기·힘·가능성에 씁니다.",
+      "all": true
+    },
+    {
+      "id": "scruple",
+      "match": "scruple",
+      "para": 183,
+      "headword": "scruple",
+      "pos": "noun",
+      "ipa": "/ˈskrupəl/",
+      "sense_en": "a feeling that something might be wrong",
+      "sense_ko": "(양심상의) 망설임, 거리낌",
+      "synonyms": [
+        {
+          "word": "hesitation",
+          "nuance": "General pause before acting.",
+          "example": "no hesitation"
+        },
+        {
+          "word": "qualm",
+          "nuance": "A sudden bad feeling about doing something.",
+          "example": "no qualms about lying"
+        },
+        {
+          "word": "conscience",
+          "nuance": "Your inner sense of right and wrong.",
+          "example": "a guilty conscience"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "without scruple: 거리낌 없이. 복수형 scruples는 '양심'.",
+      "all": true
+    },
+    {
+      "id": "covetous",
+      "match": "covetous",
+      "para": 186,
+      "headword": "covetous",
+      "pos": "adjective",
+      "ipa": "/ˈkʌvɪtəs/",
+      "sense_en": "greedy for what others have",
+      "sense_ko": "탐내는, 욕심 많은",
+      "synonyms": [
+        {
+          "word": "greedy",
+          "nuance": "Wants too much of anything, incl. food.",
+          "example": "a greedy man"
+        },
+        {
+          "word": "envious",
+          "nuance": "Unhappy that someone else has something; about the feeling, not the grabbing.",
+          "example": "envious of his car"
+        },
+        {
+          "word": "grasping",
+          "nuance": "Greedy for money; unkind.",
+          "example": "a grasping landlord"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "windfall",
+      "match": "windfall",
+      "para": 188,
+      "headword": "windfall",
+      "pos": "noun",
+      "ipa": "/ˈwɪndfɔl/",
+      "sense_en": "an unexpected lucky find",
+      "sense_ko": "뜻밖의 횡재",
+      "synonyms": [
+        {
+          "word": "bonanza",
+          "nuance": "A rich, lucky find; informal.",
+          "example": "a bonanza year"
+        },
+        {
+          "word": "jackpot",
+          "nuance": "A big prize in a game.",
+          "example": "win the jackpot"
+        },
+        {
+          "word": "godsend",
+          "nuance": "Something needed that comes at the right time.",
+          "example": "a godsend"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "원래 바람에 떨어진 과일에서 온 말입니다.",
+      "all": true
+    },
+    {
+      "id": "bell",
+      "match": "bell the Cat",
+      "para": 38,
+      "headword": "bell the cat",
+      "pos": "idiom",
+      "ipa": "/bɛl/",
+      "sense_en": "to take a dangerous task for the group",
+      "sense_ko": "고양이 목에 방울 달기(위험한 일을 떠맡다)",
+      "synonyms": [
+        {
+          "word": "take the risk",
+          "nuance": "General; says nothing of the group.",
+          "example": "take the risk for us"
+        },
+        {
+          "word": "stick one's neck out",
+          "nuance": "Take a risk for others, often for an idea.",
+          "example": "stick your neck out"
+        },
+        {
+          "word": "volunteer",
+          "nuance": "Offer freely; not always risky.",
+          "example": "volunteer for the job"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "말하기는 쉬워도 실행하기 어려운 일이라는 뜻으로도 쓰입니다.",
+      "all": false
+    },
+    {
+      "id": "pains",
+      "match": "for their pains",
+      "para": 33,
+      "headword": "for one's pains",
+      "pos": "idiom",
+      "ipa": "/peɪnz/",
+      "sense_en": "for the trouble they had taken",
+      "sense_ko": "수고한 대가로(반어적)",
+      "synonyms": [
+        {
+          "word": "for nothing",
+          "nuance": "Says the effort had no result.",
+          "example": "all that work for nothing"
+        },
+        {
+          "word": "in return",
+          "nuance": "Neutral; what you get back.",
+          "example": "nothing in return"
+        },
+        {
+          "word": "reward",
+          "nuance": "Positive prize.",
+          "example": "a fair reward"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "여기서 pains는 '고통'이 아니라 '수고, 애씀'입니다.",
+      "all": true
+    },
+    {
+      "id": "in-the-bargain",
+      "match": "in the bargain",
+      "para": 45,
+      "headword": "in the bargain",
+      "pos": "idiom",
+      "ipa": "/ˈbɑrɡɪn/",
+      "sense_en": "as an extra thing, besides",
+      "sense_ko": "덤으로, 게다가",
+      "synonyms": [
+        {
+          "word": "into the bargain",
+          "nuance": "Same meaning; British.",
+          "example": "He lost his job into the bargain."
+        },
+        {
+          "word": "on top of that",
+          "nuance": "Everyday spoken form.",
+          "example": "On top of that, it rained."
+        },
+        {
+          "word": "as well",
+          "nuance": "Plain word for 'also'.",
+          "example": "And a car as well."
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": false
+    },
+    {
+      "id": "make-off",
+      "match": "made off",
+      "para": 19,
+      "headword": "make off",
+      "pos": "phrase",
+      "ipa": "/ˌmeɪk ˈɔf/",
+      "sense_en": "ran away quickly",
+      "sense_ko": "달아났다, 줄행랑을 쳤다",
+      "synonyms": [
+        {
+          "word": "escape",
+          "nuance": "General; get free.",
+          "example": "escape from jail"
+        },
+        {
+          "word": "flee",
+          "nuance": "Run from danger; dramatic.",
+          "example": "flee the country"
+        },
+        {
+          "word": "run off",
+          "nuance": "Everyday spoken form.",
+          "example": "He ran off."
+        }
+      ],
+      "modern": null,
+      "tip_ko": "make off with: ~을 가지고 달아나다(훔쳐서).",
+      "all": true
+    },
+    {
+      "id": "took-to-flight",
+      "match": "took to flight",
+      "para": 169,
+      "headword": "take to flight",
+      "pos": "idiom",
+      "ipa": "/flaɪt/",
+      "sense_en": "ran away in fear",
+      "sense_ko": "도망쳤다",
+      "synonyms": [
+        {
+          "word": "flee",
+          "nuance": "Verb form; shorter.",
+          "example": "flee at once"
+        },
+        {
+          "word": "run away",
+          "nuance": "Everyday.",
+          "example": "run away from home"
+        },
+        {
+          "word": "bolt",
+          "nuance": "Dash off suddenly, like a frightened horse.",
+          "example": "The horse bolted."
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "in-vain",
+      "match": "in vain",
+      "para": 49,
+      "headword": "in vain",
+      "pos": "idiom",
+      "ipa": "/veɪn/",
+      "sense_en": "without success",
+      "sense_ko": "헛되이, 보람 없이",
+      "synonyms": [
+        {
+          "word": "uselessly",
+          "nuance": "Adverb; direct.",
+          "example": "He tried uselessly."
+        },
+        {
+          "word": "fruitlessly",
+          "nuance": "Formal; without result.",
+          "example": "She searched fruitlessly."
+        },
+        {
+          "word": "to no avail",
+          "nuance": "Formal set phrase, same idea.",
+          "example": "to no avail"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "in vain은 vain(헛된)과 관련; vain(허영심 많은)과 뜻이 다릅니다.",
+      "all": true
+    }
+  ]
+}

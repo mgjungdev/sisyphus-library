@@ -1,0 +1,606 @@
+{
+  "slug": "magic-shop",
+  "entries": [
+    {
+      "id": "alluring", "match": "alluring", "para": 1, "headword": "alluring", "pos": "adjective", "ipa": "/əˈlʊrɪŋ/",
+      "sense_en": "attractive in a way that makes you want to come closer and look",
+      "sense_ko": "마음을 끌어당기는, 자꾸 들여다보고 싶게 만드는",
+      "synonyms": [
+        {"word": "tempting", "nuance": "Makes you want to do or have something, often something you should resist.", "example": "a tempting offer"},
+        {"word": "enticing", "nuance": "Draws you in with the promise of pleasure or reward; common for food and displays.", "example": "an enticing smell from the kitchen"},
+        {"word": "charming", "nuance": "Pleasing and delightful, but does not suggest being pulled toward something.", "example": "a charming little shop"}
+      ],
+      "modern": null, "tip_ko": null
+    },
+    {
+      "id": "ventriloquist", "match": "ventriloquist", "para": 1, "headword": "ventriloquist", "pos": "noun", "ipa": "/vɛnˈtrɪləkwɪst/",
+      "sense_en": "a performer who speaks without moving the lips so that a doll seems to talk",
+      "sense_ko": "복화술사 (여기서는 복화술 인형을 꾸미는 말)",
+      "synonyms": [
+        {"word": "puppeteer", "nuance": "Works puppets with strings or hands; does not need to hide that the voice is their own.", "example": "a puppeteer at the fair"},
+        {"word": "conjurer", "nuance": "Performs magic tricks, not voice tricks.", "example": "a conjurer pulling a coin from your ear"}
+      ],
+      "modern": null, "tip_ko": "ven-TRIL-o-quist: 강세는 두 번째 음절 -tril- 에 옵니다."
+    },
+    {
+      "id": "mirage", "match": "mirage", "para": 1, "headword": "mirage", "pos": "noun", "ipa": "/məˈrɑʒ/",
+      "sense_en": "something that seems real and close but cannot be reached, like water seen in a desert",
+      "sense_ko": "신기루 (가까이 보이지만 닿을 수 없는 것)",
+      "synonyms": [
+        {"word": "illusion", "nuance": "A false idea or appearance in general; not limited to something seen in the distance.", "example": "the illusion of safety"},
+        {"word": "hallucination", "nuance": "Something seen or heard that is not there at all, usually from illness or drugs.", "example": "a fever-induced hallucination"},
+        {"word": "phantom", "nuance": "A ghost-like image or an imagined thing; more eerie than a mirage.", "example": "a phantom light in the fog"}
+      ],
+      "modern": null, "tip_ko": "프랑스어에서 온 말이라 끝이 '-ahzh'(/ɑʒ/)로 납니다. '미라지'가 아니라 '미라-쥬'에 가깝게."
+    },
+    {
+      "id": "inaccessible", "match": "inaccessible", "para": 1, "headword": "inaccessible", "pos": "adjective", "ipa": "/ˌɪnækˈsɛsəbəl/",
+      "sense_en": "hard to reach or get to; always seeming just out of reach",
+      "sense_ko": "닿기 어려운, 늘 손이 미치지 않는 곳에 있는",
+      "synonyms": [
+        {"word": "unreachable", "nuance": "Cannot be reached at all; inaccessible can also mean only hard to reach.", "example": "The village is unreachable in winter."},
+        {"word": "remote", "nuance": "Far away from other places; says nothing about whether you can actually get there.", "example": "a remote island"},
+        {"word": "out of reach", "nuance": "Spoken and flexible; works for both places and goals.", "example": "The top shelf is out of reach."}
+      ],
+      "modern": null, "tip_ko": null
+    },
+    {
+      "id": "lug", "match": "lugged", "para": 5, "headword": "lug", "pos": "verb", "ipa": "/lʌɡ/",
+      "sense_en": "pulled or carried something along with effort, as if it were heavy",
+      "sense_ko": "(무거운 것을) 낑낑대며 끌고 가다",
+      "synonyms": [
+        {"word": "drag", "nuance": "Pull along the ground, often unwillingly; lug suggests a heavy load carried or hauled.", "example": "drag a chair across the floor"},
+        {"word": "haul", "nuance": "Move something heavy with force over a distance; more purposeful and stronger than lug.", "example": "haul logs to the river"},
+        {"word": "tow", "nuance": "Pull behind you with a rope or vehicle; playful when used for a child.", "example": "tow a sled up the hill"}
+      ],
+      "modern": null, "tip_ko": null
+    },
+    {
+      "id": "radiance", "match": "radiance", "para": 7, "headword": "radiance", "pos": "noun", "ipa": "/ˈreɪdiəns/",
+      "sense_en": "a bright, glowing happiness that shows on a person's face",
+      "sense_ko": "(얼굴에 드러나는) 환한 기쁨, 빛나는 표정",
+      "synonyms": [
+        {"word": "glow", "nuance": "Softer and warmer; often used for a healthy or happy look on the skin.", "example": "a healthy glow"},
+        {"word": "brightness", "nuance": "Plain word for light or a cheerful look; lacks the sense of shining outward.", "example": "the brightness of her smile"},
+        {"word": "beam", "nuance": "A wide, happy smile itself rather than the general shine of a face.", "example": "a beam of pride"}
+      ],
+      "modern": null, "tip_ko": null
+    },
+    {
+      "id": "burthen", "match": "burthen", "para": 11, "headword": "burthen", "pos": "noun", "ipa": "/ˈbɝðən/",
+      "sense_en": "the main load or responsibility; here, the job of doing most of the talking",
+      "sense_ko": "짐, 부담 (여기서는 대화를 이끌어 갈 몫)",
+      "synonyms": [
+        {"word": "burden", "nuance": "The normal modern spelling of the same word; burthen is old-fashioned.", "example": "carry a heavy burden"},
+        {"word": "responsibility", "nuance": "A duty that belongs to you; less heavy and negative than a burden.", "example": "take responsibility for the plan"},
+        {"word": "load", "nuance": "Everyday word for something carried; in speech also a workload.", "example": "a heavy workload"}
+      ],
+      "modern": "burden", "tip_ko": null
+    },
+    {
+      "id": "plaintive", "match": "plaintive", "para": 12, "headword": "plaintive", "pos": "adjective", "ipa": "/ˈpleɪntɪv/",
+      "sense_en": "sounding sad and a little complaining, like a soft cry",
+      "sense_ko": "구슬픈, 애처롭게 호소하는 듯한",
+      "synonyms": [
+        {"word": "mournful", "nuance": "Full of grief, as if for a death or a great loss; heavier than plaintive.", "example": "a mournful song"},
+        {"word": "wistful", "nuance": "Sad because of longing for something past or out of reach; quieter and dreamy.", "example": "a wistful smile"},
+        {"word": "whiny", "nuance": "Annoying, childish complaining; negative, while plaintive draws sympathy.", "example": "a whiny voice"}
+      ],
+      "modern": null, "tip_ko": null
+    },
+    {
+      "id": "sallow", "match": "sallow", "para": 13, "headword": "sallow", "pos": "adjective", "ipa": "/ˈsæloʊ/",
+      "sense_en": "having a yellowish, unhealthy-looking skin colour",
+      "sense_ko": "(피부가) 누르스름하고 병약해 보이는",
+      "synonyms": [
+        {"word": "pale", "nuance": "Lacking colour in general; not specifically yellow.", "example": "pale from the flu"},
+        {"word": "pasty", "nuance": "Whitish and dull, like dough; suggests too little sun or bad health.", "example": "a pasty face"},
+        {"word": "jaundiced", "nuance": "Yellow because of illness, especially of the liver; a medical term.", "example": "jaundiced skin"}
+      ],
+      "modern": null, "tip_ko": null
+    },
+    {
+      "id": "legerdemain", "match": "Legerdemain", "para": 16, "headword": "legerdemain", "pos": "noun", "ipa": "/ˌlɛdʒərdəˈmeɪn/",
+      "sense_en": "clever tricks done with the hands, as by a magician",
+      "sense_ko": "손재주로 하는 마술, 요술",
+      "synonyms": [
+        {"word": "sleight of hand", "nuance": "The everyday phrase for the same skill; used for both magic and sneaky tricks.", "example": "a card trick using sleight of hand"},
+        {"word": "conjuring", "nuance": "The art of doing magic tricks in general, not only with the hands.", "example": "a night of conjuring"},
+        {"word": "trickery", "nuance": "Deceiving people, often dishonestly; not a stage art.", "example": "won through trickery"}
+      ],
+      "modern": "sleight of hand", "tip_ko": "프랑스어 기원으로, 가운데 -de-는 약하게 /də/로 읽고 강세는 마지막 -main에 옵니다: '레저더메인'."
+    },
+    {
+      "id": "scrutiny", "match": "scrutiny", "para": 25, "headword": "scrutiny", "pos": "noun", "ipa": "/ˈskrutəni/",
+      "sense_en": "a careful, close look at something to understand it",
+      "sense_ko": "꼼꼼히 살펴봄, 세밀한 관찰",
+      "synonyms": [
+        {"word": "inspection", "nuance": "A formal, official check of something, often against a standard.", "example": "a safety inspection"},
+        {"word": "stare", "nuance": "A long fixed look, often rude; not necessarily thoughtful.", "example": "a rude stare"},
+        {"word": "examination", "nuance": "A careful study to find facts, in science or medicine as well as everyday life.", "example": "a medical examination"}
+      ],
+      "modern": null, "tip_ko": null
+    },
+    {
+      "id": "sagely", "match": "sagely", "para": 25, "headword": "sagely", "pos": "adverb", "ipa": "/ˈseɪdʒli/",
+      "sense_en": "in a wise, thoughtful way, as if understanding everything",
+      "sense_ko": "현명한 듯, 사려 깊게",
+      "synonyms": [
+        {"word": "wisely", "nuance": "Ordinary word for acting with good judgment; sagely also suggests a serious, knowing air.", "example": "She wisely kept quiet."},
+        {"word": "knowingly", "nuance": "Shows you understand a hidden meaning; can be a little smug.", "example": "He smiled knowingly."},
+        {"word": "gravely", "nuance": "Seriously, with a solemn face; does not imply wisdom.", "example": "He nodded gravely."}
+      ],
+      "modern": null, "tip_ko": null
+    },
+    {
+      "id": "nerve-oneself", "match": "nerved himself", "para": 27, "headword": "nerve oneself", "pos": "idiom", "ipa": "/nɝv/",
+      "sense_en": "made himself brave and ready for something frightening or uncertain",
+      "sense_ko": "마음을 다잡다, 용기를 내다",
+      "synonyms": [
+        {"word": "brace oneself", "nuance": "Get ready for something unpleasant that you know is coming.", "example": "brace yourself for bad news"},
+        {"word": "steel oneself", "nuance": "Make yourself hard and firm against fear or feeling; stronger than nerve.", "example": "She steeled herself to say goodbye."},
+        {"word": "psych oneself up", "nuance": "Casual and modern; build energy before a challenge.", "example": "psych yourself up for the test"}
+      ],
+      "modern": "steel himself / brace himself", "tip_ko": null
+    },
+    {
+      "id": "affability", "match": "affability", "para": 32, "headword": "affability", "pos": "noun", "ipa": "/ˌæfəˈbɪlɪti/",
+      "sense_en": "a friendly, easy manner that makes people feel welcome",
+      "sense_ko": "상냥하고 붙임성 있는 태도",
+      "synonyms": [
+        {"word": "friendliness", "nuance": "Plain, warm word for being kind to others; less polished than affability.", "example": "the friendliness of the staff"},
+        {"word": "geniality", "nuance": "Cheerful, hearty good humour, often in a host or older man.", "example": "the geniality of the old innkeeper"},
+        {"word": "warmth", "nuance": "Sincere kindness that comes from feeling, not just good manners.", "example": "a smile full of warmth"}
+      ],
+      "modern": null, "tip_ko": null
+    },
+    {
+      "id": "unflinching", "match": "unflinching", "para": 33, "headword": "unflinching", "pos": "adjective", "ipa": "/ʌnˈflɪntʃɪŋ/",
+      "sense_en": "not showing any fear or surprise; staying calm and firm",
+      "sense_ko": "움찔하지 않는, 겁내거나 놀란 기색 없는",
+      "synonyms": [
+        {"word": "steady", "nuance": "Calm and not shaking; a general everyday word.", "example": "a steady gaze"},
+        {"word": "fearless", "nuance": "Truly without fear; unflinching only means you do not show it.", "example": "a fearless climber"},
+        {"word": "stoic", "nuance": "Accepts pain or trouble without complaint; suggests long-term self-control.", "example": "a stoic patient"}
+      ],
+      "modern": null, "tip_ko": null
+    },
+    {
+      "id": "steadfast", "match": "steadfast", "para": 33, "headword": "steadfast", "pos": "adjective", "ipa": "/ˈstɛdfæst/",
+      "sense_en": "fixed and not moving or changing; keeping firmly on one thing",
+      "sense_ko": "흔들림 없는, 한결같이 고정된",
+      "synonyms": [
+        {"word": "fixed", "nuance": "Neutral: not moving. Steadfast adds a sense of determination.", "example": "a fixed stare"},
+        {"word": "unwavering", "nuance": "Never shaking or doubting; used for beliefs and loyalty as well as looks.", "example": "unwavering support"},
+        {"word": "loyal", "nuance": "Faithful to a person or cause; steadfast can also describe a look, loyal cannot.", "example": "a loyal friend"}
+      ],
+      "modern": null, "tip_ko": null
+    },
+    {
+      "id": "pallid", "match": "pallid", "para": 37, "headword": "pallid", "pos": "adjective", "ipa": "/ˈpælɪd/",
+      "sense_en": "unhealthily pale, lacking colour",
+      "sense_ko": "핏기 없이 창백한",
+      "synonyms": [
+        {"word": "pale", "nuance": "The everyday word; can be natural or from fear or illness.", "example": "pale skin"},
+        {"word": "ashen", "nuance": "Grey-white, from shock or fear; more dramatic than pale.", "example": "ashen with fear"},
+        {"word": "wan", "nuance": "Pale and tired-looking, often from illness or sadness; literary.", "example": "a wan smile"}
+      ],
+      "modern": null, "tip_ko": null
+    },
+    {
+      "id": "ruthless", "match": "ruthless", "para": 37, "headword": "ruthless", "pos": "adjective", "ipa": "/ˈruθləs/",
+      "sense_en": "showing no pity when trying to get what one wants",
+      "sense_ko": "인정사정없는, 냉혹한",
+      "synonyms": [
+        {"word": "merciless", "nuance": "Refusing to spare someone; focuses on how one treats a victim.", "example": "a merciless critic"},
+        {"word": "cruel", "nuance": "Enjoys or does not mind causing pain; ruthless is about single-minded goals.", "example": "a cruel joke"},
+        {"word": "heartless", "nuance": "Lacking kindness or feeling; a more emotional, everyday word.", "example": "a heartless answer"}
+      ],
+      "modern": null, "tip_ko": null
+    },
+    {
+      "id": "egotist", "match": "egotist", "para": 37, "headword": "egotist", "pos": "noun", "ipa": "/ˈiɡətɪst/",
+      "sense_en": "a selfish person who thinks only of themselves and their own wants",
+      "sense_ko": "자기중심적인 사람, 자아도취형 인간",
+      "synonyms": [
+        {"word": "egoist", "nuance": "Close in meaning; egoist can be someone who acts only for self-interest, egotist mostly boasts.", "example": "a pure egoist"},
+        {"word": "narcissist", "nuance": "Obsessed with one's own image; also a psychological term.", "example": "a narcissist who loves mirrors"},
+        {"word": "show-off", "nuance": "Casual; one who displays skills to win attention.", "example": "a show-off at parties"}
+      ],
+      "modern": null, "tip_ko": null
+    },
+    {
+      "id": "dexterously", "match": "dexterously", "para": 45, "headword": "dexterously", "pos": "adverb", "ipa": "/ˈdɛkstrəsli/",
+      "sense_en": "with quick, skilful movements of the hands",
+      "sense_ko": "손놀림이 능숙하게, 솜씨 좋게",
+      "synonyms": [
+        {"word": "deftly", "nuance": "Quick and neat with the hands; almost the same, slightly more common.", "example": "She deftly folded the napkin."},
+        {"word": "skilfully", "nuance": "General for any expert action, not only hand movements.", "example": "skilfully handled the crisis"},
+        {"word": "nimbly", "nuance": "Light and quick on the feet or fingers; stresses lightness.", "example": "nimbly climbed the rocks"}
+      ],
+      "modern": null, "tip_ko": null
+    },
+    {
+      "id": "semblance", "match": "semblance", "para": 46, "headword": "semblance", "pos": "noun", "ipa": "/ˈsɛmbləns/",
+      "sense_en": "the outward appearance of something, which may hide what is really inside",
+      "sense_ko": "겉모습, 외양 (속과 다를 수 있는)",
+      "synonyms": [
+        {"word": "appearance", "nuance": "Neutral word for how something looks.", "example": "an air of calm appearance"},
+        {"word": "facade", "nuance": "A front put up to hide the truth; more clearly false.", "example": "a facade of politeness"},
+        {"word": "guise", "nuance": "A false or disguised form used for a purpose.", "example": "in the guise of a friend"}
+      ],
+      "modern": null, "tip_ko": null
+    },
+    {
+      "id": "whited-sepulchre", "match": "whited sepulchres", "para": 46, "headword": "whited sepulchre", "pos": "idiom", "ipa": "/ˈsɛpəlkɝ/",
+      "sense_en": "a person who looks good on the outside but is bad or rotten inside",
+      "sense_ko": "겉은 깨끗하나 속은 썩은 사람, 위선자",
+      "synonyms": [
+        {"word": "hypocrite", "nuance": "Says one thing and does another; the everyday word for such a person.", "example": "a hypocrite who preaches honesty"},
+        {"word": "wolf in sheep's clothing", "nuance": "Someone harmful pretending to be harmless.", "example": "He was a wolf in sheep's clothing."},
+        {"word": "phoney", "nuance": "Casual; a fake person or thing, not necessarily evil inside.", "example": "a phoney smile"}
+      ],
+      "modern": "hypocrite", "tip_ko": "성경(마태복음)에서 온 표현으로, '회칠한 무덤'이라고 번역됩니다."
+    },
+    {
+      "id": "rum", "match": "rum", "para": 50, "headword": "rum", "pos": "adjective", "ipa": "/rʌm/",
+      "sense_en": "odd, strange and slightly uncomfortable (old British slang)",
+      "sense_ko": "묘하게 이상한, 좀 수상쩍은 (옛 영국 속어)",
+      "synonyms": [
+        {"word": "peculiar", "nuance": "Odd in a way that draws attention; a mild, slightly formal word.", "example": "a peculiar smell"},
+        {"word": "weird", "nuance": "Modern and casual; can be stronger and more unsettling.", "example": "a weird dream"},
+        {"word": "queer", "nuance": "Old-fashioned for strange; today mostly used with another meaning, so avoid it for oddness.", "example": "a queer feeling"}
+      ],
+      "modern": "weird / odd", "tip_ko": "술 이름 '럼'과 철자가 같지만, 여기서는 '이상한'이라는 뜻의 옛 영국 속어입니다."
+    },
+    {
+      "id": "lollop", "match": "lolloped", "para": 55, "headword": "lollop", "pos": "verb", "ipa": "/ˈlɑləp/",
+      "sense_en": "moved with a loose, clumsy, bouncing walk",
+      "sense_ko": "(토끼 등이) 느릿느릿 어설프게 깡충거리다",
+      "synonyms": [
+        {"word": "hop", "nuance": "A neat jump on one or two feet; lollop is looser and more awkward.", "example": "The rabbit hopped away."},
+        {"word": "bound", "nuance": "Long, energetic leaps; more powerful and graceful than lollop.", "example": "a deer bounding across the field"},
+        {"word": "lope", "nuance": "A long, easy, relaxed stride, smoother than lollop.", "example": "a dog loping along the beach"}
+      ],
+      "modern": null, "tip_ko": null
+    },
+    {
+      "id": "suavity", "match": "suavity", "para": 59, "headword": "suavity", "pos": "noun", "ipa": "/ˈswɑvɪti/",
+      "sense_en": "smooth, polite charm, sometimes hiding a hidden purpose",
+      "sense_ko": "세련되고 매끄러운 공손함 (속셈이 있을 수도 있는)",
+      "synonyms": [
+        {"word": "charm", "nuance": "Natural attractiveness in manner; more sincere than suavity.", "example": "a man of great charm"},
+        {"word": "smoothness", "nuance": "Casual; can suggest slickness or insincerity.", "example": "the smoothness of a salesman"},
+        {"word": "polish", "nuance": "Refined manners from training or experience.", "example": "a diplomat's polish"}
+      ],
+      "modern": null, "tip_ko": "suave는 '스웨이브'가 아니라 /swɑv/, 즉 '스와브'로 읽습니다."
+    },
+    {
+      "id": "vermin", "match": "vermin", "para": 61, "headword": "vermin", "pos": "noun", "ipa": "/ˈvɝmɪn/",
+      "sense_en": "small harmful animals or insects that are hard to control, such as rats and fleas",
+      "sense_ko": "해충·해로운 작은 동물 (쥐, 벼룩 등)",
+      "synonyms": [
+        {"word": "pest", "nuance": "Any animal or insect that damages crops or homes; the common everyday word.", "example": "a garden pest"},
+        {"word": "rodent", "nuance": "A biological group (rats, mice); not all rodents are vermin.", "example": "a small rodent"},
+        {"word": "bug", "nuance": "Casual for any small insect, harmful or not.", "example": "a bug in the kitchen"}
+      ],
+      "modern": null, "tip_ko": null
+    },
+    {
+      "id": "panoply", "match": "panoplies", "para": 65, "headword": "panoply", "pos": "noun", "ipa": "/ˈpænəpli/",
+      "sense_en": "a complete set of armour and weapons; here, a play set of them",
+      "sense_ko": "갑옷과 무기의 완전한 한 벌",
+      "synonyms": [
+        {"word": "armour", "nuance": "Protective metal covering worn by a knight; panoply also includes weapons and looks impressive.", "example": "a suit of armour"},
+        {"word": "regalia", "nuance": "Full ceremonial dress and symbols of an office.", "example": "the king's regalia"},
+        {"word": "array", "nuance": "A wide, impressive display of things of one kind.", "example": "an array of colours"}
+      ],
+      "modern": null, "tip_ko": null
+    },
+    {
+      "id": "invincible", "match": "invincible", "para": 65, "headword": "invincible", "pos": "adjective", "ipa": "/ɪnˈvɪnsəbəl/",
+      "sense_en": "impossible to defeat",
+      "sense_ko": "무적의, 이길 수 없는",
+      "synonyms": [
+        {"word": "unbeatable", "nuance": "Common, everyday word, especially in sports and prices.", "example": "an unbeatable team"},
+        {"word": "unconquerable", "nuance": "Cannot be taken over, even by a large force; used for armies, spirit and mountains.", "example": "an unconquerable spirit"},
+        {"word": "indestructible", "nuance": "Cannot be broken or destroyed, a matter of material strength.", "example": "an indestructible phone"}
+      ],
+      "modern": null, "tip_ko": null
+    },
+    {
+      "id": "qualm", "match": "qualm", "para": 67, "headword": "qualm", "pos": "noun", "ipa": "/kwɑm/",
+      "sense_en": "a sudden feeling of doubt or unease",
+      "sense_ko": "갑작스러운 불안감, 께름칙함",
+      "synonyms": [
+        {"word": "misgiving", "nuance": "A worry about whether something is wise; mostly plural, more formal.", "example": "I have misgivings about the plan."},
+        {"word": "doubt", "nuance": "General, plain word for being unsure.", "example": "There is no doubt."},
+        {"word": "scruple", "nuance": "A moral hesitation that stops you from acting; about right and wrong.", "example": "no scruples about lying"}
+      ],
+      "modern": null, "tip_ko": "l은 발음하지 않습니다. '퀄름'이 아니라 '쾀'(/kwɑm/)입니다."
+    },
+    {
+      "id": "prestidigital", "match": "prestidigital", "para": 68, "headword": "prestidigital", "pos": "adjective", "ipa": "/ˌprɛstɪˈdɪdʒɪtəl/",
+      "sense_en": "skilled at quick tricks with the fingers, like a conjurer (a joking word)",
+      "sense_ko": "손재주로 요술을 부리는, 마술사 같은 (익살스러운 표현)",
+      "synonyms": [
+        {"word": "nimble-fingered", "nuance": "Quick with the hands; can describe a pickpocket or a piano player.", "example": "a nimble-fingered thief"},
+        {"word": "dexterous", "nuance": "Skilful and neat with the hands; not tied to magic.", "example": "dexterous hands"}
+      ],
+      "modern": "conjuring / sleight-of-hand", "tip_ko": "'prestidigitator(마술사)'에서 온 말장난 같은 형용사로, 실제 대화에서는 거의 쓰지 않습니다."
+    },
+    {
+      "id": "perplexing", "match": "perplexing", "para": 69, "headword": "perplexing", "pos": "adjective", "ipa": "/pərˈplɛksɪŋ/",
+      "sense_en": "confusing in a way that makes you unable to find your way or understand",
+      "sense_ko": "당혹스럽게 하는, 갈피를 잡을 수 없게 하는",
+      "synonyms": [
+        {"word": "confusing", "nuance": "Everyday word for something hard to follow.", "example": "a confusing map"},
+        {"word": "baffling", "nuance": "So puzzling that you cannot find any answer.", "example": "a baffling mystery"},
+        {"word": "bewildering", "nuance": "Confusing because there is too much or too much going on at once.", "example": "a bewildering choice of menus"}
+      ],
+      "modern": null, "tip_ko": null
+    },
+    {
+      "id": "askew", "match": "askew", "para": 78, "headword": "askew", "pos": "adverb", "ipa": "/əˈskju/",
+      "sense_en": "not straight; a little turned or tilted to one side",
+      "sense_ko": "비뚤어진, 한쪽으로 기울어진",
+      "synonyms": [
+        {"word": "crooked", "nuance": "Bent or not straight; often permanent.", "example": "a crooked picture frame"},
+        {"word": "lopsided", "nuance": "Uneven, with one side higher or heavier.", "example": "a lopsided grin"},
+        {"word": "off-centre", "nuance": "Not in the middle; does not suggest tilting.", "example": "an off-centre logo"}
+      ],
+      "modern": null, "tip_ko": "'go askew'는 '틀어지다, 제자리에서 벗어나다'로 자주 쓰입니다."
+    },
+    {
+      "id": "serpentine", "match": "serpentine", "para": 78, "headword": "serpentine", "pos": "adjective", "ipa": "/ˈsɝpəntin/",
+      "sense_en": "twisting and curving like a snake",
+      "sense_ko": "뱀처럼 구불구불한",
+      "synonyms": [
+        {"word": "winding", "nuance": "Everyday word for a road or river with many bends.", "example": "a winding road"},
+        {"word": "sinuous", "nuance": "Smoothly curving and graceful, often about bodies or lines.", "example": "sinuous dance moves"},
+        {"word": "twisting", "nuance": "Turning sharply and repeatedly; less graceful.", "example": "a twisting path"}
+      ],
+      "modern": null, "tip_ko": null
+    },
+    {
+      "id": "inundate", "match": "inundated", "para": 78, "headword": "inundate", "pos": "verb", "ipa": "/ˈɪnəndeɪt/",
+      "sense_en": "filled completely, as if flooded, with a feeling",
+      "sense_ko": "(감정 등이) 넘쳐 흐르듯 가득 차다",
+      "synonyms": [
+        {"word": "flood", "nuance": "Plain word for water or, figuratively, too much of something arriving.", "example": "flooded with emails"},
+        {"word": "swamp", "nuance": "Overwhelm with too much work or too many things; a heavier feeling of being unable to cope.", "example": "swamped with orders"},
+        {"word": "overwhelm", "nuance": "Too strong or too much for someone to handle, often emotionally.", "example": "overwhelmed by grief"}
+      ],
+      "modern": null, "tip_ko": "'be inundated with ~'(~이 쇄도하다) 형태로 자주 쓰입니다."
+    },
+    {
+      "id": "flourish", "match": "flourished", "para": 79, "headword": "flourish", "pos": "verb", "ipa": "/ˈflɝɪʃ/",
+      "sense_en": "waved something about in a showy way",
+      "sense_ko": "과시하듯 휘두르다",
+      "synonyms": [
+        {"word": "wave", "nuance": "Plain word for moving something back and forth.", "example": "wave a flag"},
+        {"word": "brandish", "nuance": "Wave a weapon or object threateningly or proudly.", "example": "brandish a sword"},
+        {"word": "swing", "nuance": "Move in a wide arc; no sense of showing off.", "example": "swing a bat"}
+      ],
+      "modern": null, "tip_ko": "'꽃피다, 번창하다'라는 뜻이 더 흔한 단어지만, 여기서는 '휘두르다'입니다."
+    },
+    {
+      "id": "preoccupied", "match": "preoccupied", "para": 80, "headword": "preoccupied", "pos": "adjective", "ipa": "/priˈɑkjəpaɪd/",
+      "sense_en": "so busy thinking about or doing one thing that you notice nothing else",
+      "sense_ko": "한 가지에 정신이 팔려 있는",
+      "synonyms": [
+        {"word": "absorbed", "nuance": "Deeply and pleasantly interested in something.", "example": "absorbed in a book"},
+        {"word": "distracted", "nuance": "Attention pulled away, often by worry; can seem confused.", "example": "a distracted look"},
+        {"word": "engrossed", "nuance": "Completely taken up by an interesting activity.", "example": "engrossed in a game"}
+      ],
+      "modern": null, "tip_ko": null
+    },
+    {
+      "id": "sinister", "match": "sinister", "para": 84, "headword": "sinister", "pos": "adjective", "ipa": "/ˈsɪnɪstɝ/",
+      "sense_en": "suggesting that something evil or harmful is about to happen",
+      "sense_ko": "불길한, 사악한 기운이 감도는",
+      "synonyms": [
+        {"word": "ominous", "nuance": "Warns that something bad is coming; about the future.", "example": "ominous black clouds"},
+        {"word": "menacing", "nuance": "Threatening, as if someone could hurt you now.", "example": "a menacing look"},
+        {"word": "creepy", "nuance": "Casual; causes an uneasy shiver, not necessarily danger.", "example": "a creepy old house"}
+      ],
+      "modern": null, "tip_ko": null
+    },
+    {
+      "id": "elude", "match": "eluded", "para": 88, "headword": "elude", "pos": "verb", "ipa": "/ɪˈlud/",
+      "sense_en": "escaped from, by being quick or clever",
+      "sense_ko": "(재빠르게) 피하다, 붙잡히지 않고 빠져나가다",
+      "synonyms": [
+        {"word": "evade", "nuance": "Avoid on purpose, often a duty, a question or the police.", "example": "evade taxes"},
+        {"word": "dodge", "nuance": "Casual; move quickly aside to avoid a blow or a question.", "example": "dodge a ball"},
+        {"word": "escape", "nuance": "Get away from a place or danger; general term.", "example": "escape from prison"}
+      ],
+      "modern": null, "tip_ko": "'The answer eluded me.'처럼 '생각이 나지 않는다'는 뜻으로도 씁니다."
+    },
+    {
+      "id": "at-a-loss", "match": "at a loss", "para": 94, "headword": "at a loss", "pos": "idiom", "ipa": null,
+      "sense_en": "not knowing what to do or say",
+      "sense_ko": "어찌할 바를 모르는, 당황한",
+      "synonyms": [
+        {"word": "puzzled", "nuance": "Confused about something you want to understand.", "example": "a puzzled expression"},
+        {"word": "at sea", "nuance": "Confused and lost in an unfamiliar situation; more informal.", "example": "I'm completely at sea with this software."},
+        {"word": "stumped", "nuance": "Unable to answer a question or solve a problem.", "example": "The riddle stumped everyone."}
+      ],
+      "modern": null, "tip_ko": "'at a loss for words'(말문이 막히다) 형태로 자주 나옵니다."
+    },
+    {
+      "id": "petulant", "match": "petulant", "para": 97, "headword": "petulant", "pos": "adjective", "ipa": "/ˈpɛtʃələnt/",
+      "sense_en": "bad-tempered in a childish way, like someone annoyed over a small thing",
+      "sense_ko": "사소한 일에 짜증 내는, 토라진",
+      "synonyms": [
+        {"word": "sulky", "nuance": "Silent and moody after being upset.", "example": "a sulky teenager"},
+        {"word": "peevish", "nuance": "Easily irritated and complaining; a bit weak and old-fashioned.", "example": "a peevish old man"},
+        {"word": "grumpy", "nuance": "Casual for a mood of the moment; milder.", "example": "grumpy in the morning"}
+      ],
+      "modern": null, "tip_ko": null
+    },
+    {
+      "id": "unhinged", "match": "unhinged", "para": 101, "headword": "unhinged", "pos": "adjective", "ipa": "/ʌnˈhɪndʒd/",
+      "sense_en": "mentally upset or unbalanced",
+      "sense_ko": "정신이 이상해진, 균형을 잃은",
+      "synonyms": [
+        {"word": "disturbed", "nuance": "Upset or mentally troubled; milder and more clinical.", "example": "a disturbed child"},
+        {"word": "deranged", "nuance": "Seriously insane, often violent.", "example": "a deranged killer"},
+        {"word": "rattled", "nuance": "Casual; made nervous, but only for a short time.", "example": "He seemed rattled after the news."}
+      ],
+      "modern": null, "tip_ko": "문 경첩(hinge)이 빠진 모습에서 온 표현입니다."
+    },
+    {
+      "id": "stoicism", "match": "stoicism", "para": 104, "headword": "stoicism", "pos": "noun", "ipa": "/ˈstoʊɪsɪzəm/",
+      "sense_en": "calm acceptance of pain or disappointment without complaining",
+      "sense_ko": "불평 없이 참고 견디는 태도, 극기",
+      "synonyms": [
+        {"word": "endurance", "nuance": "Ability to last through hardship; not about showing calm.", "example": "marathon endurance"},
+        {"word": "composure", "nuance": "Staying calm and in control in a difficult moment.", "example": "kept her composure"},
+        {"word": "resignation", "nuance": "Accepting something bad because nothing can be done; more passive and sad.", "example": "a sigh of resignation"}
+      ],
+      "modern": null, "tip_ko": null
+    },
+    {
+      "id": "provisional", "match": "provisional", "para": 106, "headword": "provisional", "pos": "adjective", "ipa": "/prəˈvɪʒənəl/",
+      "sense_en": "not yet certain or final; may change later",
+      "sense_ko": "임시의, 아직 확정되지 않은",
+      "synonyms": [
+        {"word": "temporary", "nuance": "Lasting for a limited time.", "example": "a temporary job"},
+        {"word": "tentative", "nuance": "Not fully sure; often used for plans and steps.", "example": "a tentative agreement"},
+        {"word": "interim", "nuance": "Coming between two periods, formal.", "example": "an interim report"}
+      ],
+      "modern": null, "tip_ko": null
+    },
+    {
+      "id": "unconscionable", "match": "unconscionable", "para": 106, "headword": "unconscionable", "pos": "adjective", "ipa": "/ʌnˈkɑnʃənəbəl/",
+      "sense_en": "far more than is reasonable, especially in time or amount",
+      "sense_ko": "터무니없이 긴, 도를 넘는",
+      "synonyms": [
+        {"word": "excessive", "nuance": "More than is needed or wanted; general, neutral.", "example": "excessive noise"},
+        {"word": "outrageous", "nuance": "Shocking and unfair, usually about behaviour or prices.", "example": "outrageous prices"},
+        {"word": "inexcusable", "nuance": "Wrong and impossible to forgive; about morality more than amount.", "example": "an inexcusable mistake"}
+      ],
+      "modern": null, "tip_ko": "원래 '양심에 어긋나는'이라는 뜻이며, 여기서는 과장된 용법으로 '터무니없이 긴'의 의미입니다."
+    },
+    {
+      "id": "unawares", "match": "unawares", "para": 62, "headword": "unawares", "pos": "adverb", "ipa": "/ˌʌnəˈwɛrz/",
+      "sense_en": "without knowing or noticing",
+      "sense_ko": "모르는 사이에, 자기도 모르게",
+      "synonyms": [
+        {"word": "unknowingly", "nuance": "Neutral; a person does not realise what they are doing.", "example": "He unknowingly broke the rule."},
+        {"word": "unintentionally", "nuance": "Not on purpose; focus on intention, not on awareness.", "example": "unintentionally rude"},
+        {"word": "by surprise", "nuance": "Suddenly, before someone is ready.", "example": "take someone by surprise"}
+      ],
+      "modern": null, "tip_ko": "'catch someone unawares'(~의 허를 찌르다)로 자주 씁니다."
+    },
+    {
+      "id": "eloquent", "match": "eloquent", "para": 44, "headword": "eloquent", "pos": "adjective", "ipa": "/ˈɛləkwənt/",
+      "sense_en": "showing feeling clearly without words",
+      "sense_ko": "말없이도 감정을 분명히 드러내는, 표정으로 말하는",
+      "synonyms": [
+        {"word": "expressive", "nuance": "Shows thoughts and feelings clearly; about faces, voices and music.", "example": "expressive eyes"},
+        {"word": "articulate", "nuance": "Able to put ideas into clear words; needs speech.", "example": "an articulate speaker"},
+        {"word": "telling", "nuance": "Reveals the truth, often unintentionally.", "example": "a telling pause"}
+      ],
+      "modern": null, "tip_ko": "보통은 '말을 잘하는'의 뜻이지만, 여기서는 '눈빛이 말을 대신하는' 뜻입니다."
+    },
+    {
+      "id": "confederate", "match": "confederate", "para": 44, "headword": "confederate", "pos": "noun", "ipa": "/kənˈfɛdərɪt/",
+      "sense_en": "a secret helper who works with someone in a trick",
+      "sense_ko": "공범, 한패 (몰래 돕는 사람)",
+      "synonyms": [
+        {"word": "accomplice", "nuance": "A helper in a crime; the common word for a partner in wrongdoing.", "example": "The thief and his accomplice ran off."},
+        {"word": "accessory", "nuance": "Legal term for one who helps a crime without being present.", "example": "an accessory to the crime"},
+        {"word": "sidekick", "nuance": "Friendly helper of a hero; not criminal.", "example": "a superhero and his sidekick"}
+      ],
+      "modern": "accomplice", "tip_ko": null
+    },
+    {
+      "id": "unceremoniously", "match": "unceremoniously", "para": 70, "headword": "unceremoniously", "pos": "adverb", "ipa": "/ˌʌnˌsɛrəˈmoʊniəsli/",
+      "sense_en": "in a sudden, careless way, without polite manners",
+      "sense_ko": "격식 없이, 거칠고 갑작스럽게",
+      "synonyms": [
+        {"word": "abruptly", "nuance": "Suddenly and without warning; neutral about manners.", "example": "He stopped abruptly."},
+        {"word": "brusquely", "nuance": "Short and rude in speech or manner.", "example": "answered brusquely"},
+        {"word": "roughly", "nuance": "With force; stresses the lack of gentleness, not politeness.", "example": "pushed roughly aside"}
+      ],
+      "modern": null, "tip_ko": null
+    },
+    {
+      "id": "gallant", "match": "gallant", "para": 41, "headword": "gallant", "pos": "adjective", "ipa": "/ˈɡælənt/",
+      "sense_en": "brave and determined despite fear or difficulty",
+      "sense_ko": "용감한, 씩씩하게 애쓰는",
+      "synonyms": [
+        {"word": "brave", "nuance": "Everyday word; facing danger or pain without fear.", "example": "a brave child"},
+        {"word": "valiant", "nuance": "Brave and noble, often in a losing struggle.", "example": "a valiant effort"},
+        {"word": "plucky", "nuance": "Casual; small but full of spirit.", "example": "a plucky little dog"}
+      ],
+      "modern": null, "tip_ko": "'gallant'가 '(남성이 여성에게) 정중한'의 뜻일 때는 /gəˈlænt/로 강세가 뒤에 옵니다."
+    },
+    {
+      "id": "wholesale", "match": "wholesale", "para": 29, "headword": "wholesale", "pos": "adjective", "ipa": "/ˈhoʊlseɪl/",
+      "sense_en": "selling goods in large amounts, usually to shops, at lower prices",
+      "sense_ko": "도매의",
+      "synonyms": [
+        {"word": "bulk", "nuance": "Large quantity; not tied to who is buying.", "example": "bulk orders"},
+        {"word": "trade", "nuance": "Selling to businesses instead of customers, as in trade price.", "example": "a trade discount"}
+      ],
+      "modern": null, "tip_ko": "반대말은 retail(소매)입니다."
+    },
+    {
+      "id": "disengaged", "match": "disengaged", "para": 22, "headword": "disengaged", "pos": "adjective", "ipa": "/ˌdɪsɪnˈɡeɪdʒd/",
+      "sense_en": "free and not holding anything",
+      "sense_ko": "비어 있는, 아무것도 잡지 않은",
+      "synonyms": [
+        {"word": "free", "nuance": "Plain word; not occupied or held.", "example": "one hand free"},
+        {"word": "unoccupied", "nuance": "Not being used or filled.", "example": "an unoccupied seat"},
+        {"word": "loose", "nuance": "Not tied or held tightly.", "example": "a loose rope"}
+      ],
+      "modern": null, "tip_ko": null
+    },
+    {
+      "id": "accumulate", "match": "accumulate", "para": 46, "headword": "accumulate", "pos": "verb", "ipa": "/əˈkjumjəleɪt/",
+      "sense_en": "slowly gather in larger and larger amounts over time",
+      "sense_ko": "조금씩 쌓이다, 축적되다",
+      "synonyms": [
+        {"word": "pile up", "nuance": "Casual and physical; things build up in a heap.", "example": "Dishes pile up in the sink."},
+        {"word": "build up", "nuance": "Grow gradually; can describe pressure or muscles.", "example": "build up strength"},
+        {"word": "gather", "nuance": "Come together, quickly or slowly; general.", "example": "dust gathers"}
+      ],
+      "modern": null, "tip_ko": null
+    },
+    {
+      "id": "confounded", "match": "confounded", "para": 67, "headword": "confounded", "pos": "adjective", "ipa": "/kənˈfaʊndɪd/",
+      "sense_en": "annoying; a mild word used to show irritation",
+      "sense_ko": "지긋지긋한, 망할 (가벼운 짜증 표현)",
+      "synonyms": [
+        {"word": "blasted", "nuance": "Mildly angry, old-fashioned; used before a noun.", "example": "this blasted rain"},
+        {"word": "darn", "nuance": "Very mild, avoids swearing.", "example": "this darn phone"},
+        {"word": "wretched", "nuance": "Miserable or very bad; less humorous.", "example": "a wretched cold"}
+      ],
+      "modern": "damn / darn", "tip_ko": null
+    },
+    {
+      "id": "knights-errant", "match": "knights-errant", "para": 65, "headword": "knight-errant", "pos": "noun", "ipa": "/ˌnaɪtˈɛrənt/",
+      "sense_en": "knights in old stories who travel about looking for adventures to help people",
+      "sense_ko": "모험을 찾아 떠도는 (중세) 편력 기사",
+      "synonyms": [
+        {"word": "knight", "nuance": "A medieval soldier of high rank; knight-errant wanders freely.", "example": "a knight in armour"},
+        {"word": "adventurer", "nuance": "A modern person who seeks excitement; not tied to chivalry.", "example": "a young adventurer"}
+      ],
+      "modern": null, "tip_ko": null
+    },
+    {
+      "id": "heed", "match": "heed", "para": 67, "headword": "heed", "pos": "verb", "ipa": "/hid/",
+      "sense_en": "paid attention to what someone said",
+      "sense_ko": "귀담아듣다, 주의를 기울이다",
+      "synonyms": [
+        {"word": "listen to", "nuance": "Everyday; hear and think about it.", "example": "listen to advice"},
+        {"word": "mind", "nuance": "Pay attention and follow, as in a warning.", "example": "mind the gap"},
+        {"word": "take notice of", "nuance": "Become aware of something and react.", "example": "take notice of the sign"}
+      ],
+      "modern": null, "tip_ko": "'heed a warning'(경고를 새겨듣다)처럼 주로 조언·경고와 함께 씁니다."
+    }
+  ]
+}

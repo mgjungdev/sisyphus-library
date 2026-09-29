@@ -1,0 +1,231 @@
+{
+  "slug": "last-leaf",
+  "entries": [
+    {"id": "traverse", "match": "traversing", "para": 1, "headword": "traverse", "pos": "verb", "ipa": "/trəˈvɝs/", "sense_en": "travelling across or along a place", "sense_ko": "가로질러 지나가다, 통과하다",
+      "synonyms": [
+        {"word": "cross", "nuance": "Everyday and general; traverse is formal and suggests covering a long or difficult stretch.", "example": "cross the river"},
+        {"word": "travel through", "nuance": "Plain wording; says nothing about going from one side to the other.", "example": "travel through the forest"},
+        {"word": "pass over", "nuance": "Neutral; often a quick movement over something rather than a whole route.", "example": "pass over the bridge"}
+      ], "modern": "cross / walk along", "tip_ko": null},
+    {"id": "gable", "match": "gables", "para": 2, "headword": "gable", "pos": "noun", "ipa": "/ˈɡeɪbəl/", "sense_en": "the triangular upper part of a wall at the end of a sloping roof", "sense_ko": "박공(지붕 끝의 삼각형 벽면)",
+      "synonyms": [
+        {"word": "pediment", "nuance": "A triangular part above a door or columns in classical buildings; more decorative than a gable.", "example": "a pediment over the temple entrance"},
+        {"word": "roof peak", "nuance": "Everyday phrase for the top point of a roof, not the whole triangular wall.", "example": "birds sitting on the roof peak"}
+      ], "modern": null, "tip_ko": null},
+    {"id": "prowl", "match": "prowling", "para": 2, "headword": "prowl", "pos": "verb", "ipa": "/praʊl/", "sense_en": "moving around a place quietly and watchfully, looking for something", "sense_ko": "무언가를 찾아 어슬렁거리다",
+      "synonyms": [
+        {"word": "roam", "nuance": "Wandering freely with no purpose; prowl suggests searching or hunting.", "example": "roam the streets"},
+        {"word": "lurk", "nuance": "Waiting hidden, often with bad intent; prowl keeps moving.", "example": "lurk in the shadows"},
+        {"word": "stroll", "nuance": "Relaxed, happy walking; prowl is tense and purposeful.", "example": "stroll along the beach"}
+      ], "modern": null, "tip_ko": null},
+    {"id": "quaint", "match": "quaint", "para": 2, "headword": "quaint", "pos": "adjective", "ipa": "/kweɪnt/", "sense_en": "attractive in an old-fashioned, unusual way", "sense_ko": "예스럽고 아기자기한, 고풍스러운",
+      "synonyms": [
+        {"word": "charming", "nuance": "Pleasing in general; not necessarily old-fashioned.", "example": "a charming café"},
+        {"word": "picturesque", "nuance": "Looks like a painting; about scenery or views more than small old details.", "example": "a picturesque village"},
+        {"word": "old-fashioned", "nuance": "Just out of date; can be neutral or negative, while quaint is warm.", "example": "old-fashioned manners"}
+      ], "modern": null, "tip_ko": null},
+    {"id": "congenial", "match": "congenial", "para": 3, "headword": "congenial", "pos": "adjective", "ipa": "/kənˈdʒinjəl/", "sense_en": "sharing the same interests and easy to be with", "sense_ko": "취향이 맞아 마음이 잘 통하는",
+      "synonyms": [
+        {"word": "compatible", "nuance": "Able to work or live together without conflict; more neutral, also used for things.", "example": "compatible roommates"},
+        {"word": "agreeable", "nuance": "Pleasant and easy to please; does not stress shared tastes.", "example": "an agreeable companion"},
+        {"word": "friendly", "nuance": "Everyday word for warm behavior; congenial is more formal and about being a good match.", "example": "a friendly neighbor"}
+      ], "modern": null, "tip_ko": "‘지니얼’에 가깝게 /dʒ/ 소리가 나는 점에 주의."},
+    {"id": "stalk", "match": "stalked", "para": 4, "headword": "stalk", "pos": "verb", "ipa": "/stɔk/", "sense_en": "walked slowly and threateningly, like a hunter or an evil figure", "sense_ko": "위협적으로 성큼성큼 돌아다니다, 휩쓸고 다니다",
+      "synonyms": [
+        {"word": "stride", "nuance": "Long, confident steps; not necessarily menacing.", "example": "stride into the room"},
+        {"word": "creep", "nuance": "Slow and quiet, often frightening; stalk is more deliberate and powerful.", "example": "creep down the hall"},
+        {"word": "haunt", "nuance": "Keep appearing in a place, like a ghost; stalk moves with purpose.", "example": "haunt an old house"}
+      ], "modern": null, "tip_ko": "l은 소리 나지 않는다: /stɔk/."},
+    {"id": "chivalric", "match": "chivalric", "para": 5, "headword": "chivalric", "pos": "adjective", "ipa": "/ʃɪˈvælrɪk/", "sense_en": "polite and generous toward women and the weak, like a knight", "sense_ko": "기사도적인, 약자를 배려하는",
+      "synonyms": [
+        {"word": "gallant", "nuance": "Brave, and courteous to women; slightly old-fashioned.", "example": "a gallant offer of help"},
+        {"word": "gentlemanly", "nuance": "Everyday word for polite, respectful male behavior.", "example": "gentlemanly conduct"},
+        {"word": "courteous", "nuance": "Politeness in general; not tied to gender or honor.", "example": "a courteous reply"}
+      ], "modern": "gentlemanly", "tip_ko": "ch가 /ʃ/로 소리 난다."},
+    {"id": "zephyr", "match": "zephyrs", "para": 5, "headword": "zephyr", "pos": "noun", "ipa": "/ˈzɛfɚ/", "sense_en": "a soft, gentle wind", "sense_ko": "산들바람, 미풍",
+      "synonyms": [
+        {"word": "breeze", "nuance": "The ordinary word for a light wind; zephyr is poetic.", "example": "a cool sea breeze"},
+        {"word": "gust", "nuance": "A sudden, stronger burst of wind, the opposite of a zephyr.", "example": "a gust of wind"}
+      ], "modern": "breeze", "tip_ko": null},
+    {"id": "duffer", "match": "duffer", "para": 5, "headword": "duffer", "pos": "noun", "ipa": "/ˈdʌfɚ/", "sense_en": "a foolish or useless person, here said half-jokingly of an old man", "sense_ko": "쓸모없는 늙은이, 얼간이(농담조)",
+      "synonyms": [
+        {"word": "fool", "nuance": "Stronger and more general insult for a stupid person.", "example": "Don’t be a fool."},
+        {"word": "old fogey", "nuance": "Specifically an old person with outdated ideas.", "example": "a grumpy old fogey"},
+        {"word": "blunderer", "nuance": "Someone who keeps making clumsy mistakes.", "example": "a hopeless blunderer"}
+      ], "modern": "old fool", "tip_ko": null},
+    {"id": "smite", "match": "smote", "para": 5, "headword": "smite", "pos": "verb", "ipa": "/smaɪt/", "sense_en": "struck down with a serious illness (past tense: smote)", "sense_ko": "(병 등이) 덮치다, 쓰러뜨리다",
+      "synonyms": [
+        {"word": "strike", "nuance": "Common word for hitting or a sudden bad event; smite is literary and forceful.", "example": "Disease struck the town."},
+        {"word": "afflict", "nuance": "Cause long suffering, usually by illness; the effect lasts.", "example": "afflicted with fever"},
+        {"word": "hit", "nuance": "Plain, everyday word; lacks the feeling of fate or punishment.", "example": "The flu hit her hard."}
+      ], "modern": "struck", "tip_ko": "불규칙 변화: smite–smote–smitten."},
+    {"id": "pharmacopeia", "match": "pharmacopeia", "para": 7, "headword": "pharmacopoeia", "pos": "noun", "ipa": "/ˌfɑrməkəˈpiə/", "sense_en": "the whole collection of medicines a doctor can use", "sense_ko": "약전, (의사가 쓸 수 있는) 약물 전체",
+      "synonyms": [
+        {"word": "medicine", "nuance": "Everyday word for drugs or the science of treating illness.", "example": "modern medicine"},
+        {"word": "remedies", "nuance": "Treatments of any kind, including home cures.", "example": "traditional remedies"}
+      ], "modern": "all available medicines", "tip_ko": null},
+    {"id": "made-up-her-mind", "match": "made up her mind", "para": 7, "headword": "make up one’s mind", "pos": "idiom", "ipa": null, "sense_en": "has firmly decided something", "sense_ko": "마음을 굳히다, 결심하다",
+      "synonyms": [
+        {"word": "decide", "nuance": "Plain verb; make up one’s mind stresses that the choice is settled after thought.", "example": "I decided to leave."},
+        {"word": "be determined", "nuance": "Stronger: a decision one will stubbornly act on.", "example": "She is determined to win."},
+        {"word": "resolve", "nuance": "Formal; a firm decision, often about future action.", "example": "He resolved to quit."}
+      ], "modern": null, "tip_ko": null},
+    {"id": "bosh", "match": "bosh", "para": 9, "headword": "bosh", "pos": "interjection", "ipa": "/bɑʃ/", "sense_en": "nonsense! (an old-fashioned exclamation)", "sense_ko": "헛소리! (예스러운 감탄)",
+      "synonyms": [
+        {"word": "nonsense", "nuance": "Standard word; works in any register.", "example": "That’s nonsense."},
+        {"word": "rubbish", "nuance": "British, informal; rejects an idea as worthless.", "example": "What rubbish!"},
+        {"word": "baloney", "nuance": "Informal, American; often for exaggerated or untrue talk.", "example": "That’s a lot of baloney."}
+      ], "modern": "nonsense", "tip_ko": null},
+    {"id": "swagger", "match": "swaggered", "para": 12, "headword": "swagger", "pos": "verb", "ipa": "/ˈswæɡɚ/", "sense_en": "walked in a boldly confident way, hiding her worry", "sense_ko": "일부러 당당한 척 걸어 들어가다",
+      "synonyms": [
+        {"word": "strut", "nuance": "Stiff, proud walk to show off; swagger is looser and more careless.", "example": "The rooster strutted."},
+        {"word": "stride", "nuance": "Long, purposeful steps without any show-off feeling.", "example": "stride across the room"},
+        {"word": "saunter", "nuance": "Slow, relaxed walk with no hurry.", "example": "saunter down the street"}
+      ], "modern": null, "tip_ko": null},
+    {"id": "pave-their-way", "match": "pave their way", "para": 14, "headword": "pave the way", "pos": "idiom", "ipa": null, "sense_en": "make a path to future success by doing early, smaller work", "sense_ko": "성공의 길을 닦다",
+      "synonyms": [
+        {"word": "prepare the ground", "nuance": "Do the groundwork so something can happen later.", "example": "prepare the ground for reform"},
+        {"word": "open the door", "nuance": "Create a chance; less about slow, step-by-step work.", "example": "It opened the door to a career."},
+        {"word": "lay the foundation", "nuance": "Build the basic base for something bigger.", "example": "lay the foundation for success"}
+      ], "modern": null, "tip_ko": null},
+    {"id": "solicitous", "match": "solicitously", "para": 18, "headword": "solicitously", "pos": "adverb", "ipa": "/səˈlɪsətəsli/", "sense_en": "in a caring, worried way", "sense_ko": "걱정스럽게, 염려하며",
+      "synonyms": [
+        {"word": "anxiously", "nuance": "Stresses fear or nervousness, not care for another.", "example": "waited anxiously"},
+        {"word": "caringly", "nuance": "Simple and warm; solicitously adds a worried, attentive tone.", "example": "looked at him caringly"},
+        {"word": "tenderly", "nuance": "Gentle and loving in touch or voice.", "example": "spoke tenderly"}
+      ], "modern": "with concern", "tip_ko": "solicit(청하다)와 헷갈리기 쉽지만 여기서는 ‘염려하는’ 뜻."},
+    {"id": "gnarled", "match": "gnarled", "para": 18, "headword": "gnarled", "pos": "adjective", "ipa": "/nɑrld/", "sense_en": "twisted and rough with age, like an old tree", "sense_ko": "(나무 등이) 울퉁불퉁 뒤틀린",
+      "synonyms": [
+        {"word": "twisted", "nuance": "Bent out of shape; no idea of age or roughness.", "example": "a twisted branch"},
+        {"word": "knotty", "nuance": "Full of knots; describes wood texture more than age.", "example": "knotty pine"},
+        {"word": "weathered", "nuance": "Worn by sun and rain; smoother than gnarled.", "example": "a weathered face"}
+      ], "modern": null, "tip_ko": "g는 묵음: /nɑrld/."},
+    {"id": "scorn", "match": "scorn", "para": 23, "headword": "scorn", "pos": "noun", "ipa": "/skɔrn/", "sense_en": "a strong feeling that something is silly or worthless", "sense_ko": "경멸, 코웃음",
+      "synonyms": [
+        {"word": "contempt", "nuance": "Deep, serious feeling that someone or something is worthless.", "example": "look at him with contempt"},
+        {"word": "disdain", "nuance": "Cool, proud dislike, often from feeling superior.", "example": "treated with disdain"},
+        {"word": "mockery", "nuance": "Openly making fun; scorn can stay silent.", "example": "a cruel mockery"}
+      ], "modern": null, "tip_ko": null},
+    {"id": "turn-loose", "match": "turn loose", "para": 28, "headword": "turn loose", "pos": "phrase", "ipa": null, "sense_en": "let go of something completely", "sense_ko": "손을 놓아버리다, 놓아주다",
+      "synonyms": [
+        {"word": "let go", "nuance": "The everyday form; also used for feelings.", "example": "let go of the rope"},
+        {"word": "release", "nuance": "Formal; free something that was held.", "example": "release the bird"},
+        {"word": "give up", "nuance": "Stop trying; suggests defeat, not just loosening the grip.", "example": "give up hope"}
+      ], "modern": "let go of", "tip_ko": "loose /lus/는 lose /luz/와 다르다."},
+    {"id": "wield", "match": "wielded", "para": 30, "headword": "wield", "pos": "verb", "ipa": "/wild/", "sense_en": "held and used (a tool) skillfully", "sense_ko": "(도구를) 능숙하게 다루다",
+      "synonyms": [
+        {"word": "use", "nuance": "Everyday and general; wield suggests skill or force.", "example": "use a brush"},
+        {"word": "handle", "nuance": "Manage by hand; less dramatic, works for many things.", "example": "handle a tool"},
+        {"word": "brandish", "nuance": "Wave threateningly or to show off, not to work with.", "example": "brandish a sword"}
+      ], "modern": null, "tip_ko": null},
+    {"id": "daub", "match": "daub", "para": 30, "headword": "daub", "pos": "noun", "ipa": "/dɔb/", "sense_en": "a clumsy, poorly made painting", "sense_ko": "서툴게 그린 그림, 덕지덕지 칠한 그림",
+      "synonyms": [
+        {"word": "scribble", "nuance": "Careless writing or drawing with a pen or pencil.", "example": "a child’s scribble"},
+        {"word": "smear", "nuance": "A dirty mark spread on a surface; not a picture.", "example": "a smear of paint"},
+        {"word": "sketch", "nuance": "A quick drawing, not necessarily bad.", "example": "a quick sketch"}
+      ], "modern": null, "tip_ko": null},
+    {"id": "mastiff", "match": "mastiff", "para": 30, "headword": "mastiff", "pos": "noun", "ipa": "/ˈmæstɪf/", "sense_en": "a big, strong guard dog", "sense_ko": "마스티프(덩치 큰 경비견)",
+      "synonyms": [
+        {"word": "watchdog", "nuance": "Any dog kept to guard a place; also a person who protects.", "example": "a loyal watchdog"},
+        {"word": "guard dog", "nuance": "Trained to protect; common everyday phrase.", "example": "a fierce guard dog"},
+        {"word": "bulldog", "nuance": "A different breed, short and stubborn; used for tough people.", "example": "a bulldog spirit"}
+      ], "modern": null, "tip_ko": "mastiff-in-waiting은 lady-in-waiting(시녀)을 비튼 농담: 두 화가를 곁에서 지키는 충견 노릇."},
+    {"id": "fragile", "match": "fragile", "para": 31, "headword": "fragile", "pos": "adjective", "ipa": "/ˈfrædʒəl/", "sense_en": "easily broken or harmed", "sense_ko": "깨지기 쉬운, 연약한",
+      "synonyms": [
+        {"word": "delicate", "nuance": "Fine and easily damaged; often positive, about beauty or care.", "example": "a delicate flower"},
+        {"word": "frail", "nuance": "Weak in body, mostly said of old or sick people.", "example": "a frail old man"},
+        {"word": "flimsy", "nuance": "Badly made and weak; negative.", "example": "a flimsy chair"}
+      ], "modern": null, "tip_ko": null},
+    {"id": "fancy", "match": "fancy", "para": 31, "headword": "fancy", "pos": "noun", "ipa": "/ˈfænsi/", "sense_en": "a strange idea that one imagines", "sense_ko": "공상, 터무니없는 생각",
+      "synonyms": [
+        {"word": "notion", "nuance": "A vague idea or belief, often a little odd.", "example": "a silly notion"},
+        {"word": "delusion", "nuance": "A false belief that one truly holds; stronger and more serious.", "example": "a dangerous delusion"},
+        {"word": "whim", "nuance": "A sudden wish with no reason.", "example": "on a whim"}
+      ], "modern": "idea / imagination", "tip_ko": "‘화려한’ 뜻의 fancy와 구별."},
+    {"id": "derision", "match": "derision", "para": 32, "headword": "derision", "pos": "noun", "ipa": "/dɪˈrɪʒən/", "sense_en": "open laughter or mockery showing something is foolish", "sense_ko": "조롱, 비웃음",
+      "synonyms": [
+        {"word": "ridicule", "nuance": "Making fun of someone in words; very close, more common.", "example": "hold up to ridicule"},
+        {"word": "mockery", "nuance": "Copying or teasing to make fun.", "example": "the mockery of the crowd"},
+        {"word": "contempt", "nuance": "An inner feeling of no respect, not necessarily shown by laughing.", "example": "look with contempt"}
+      ], "modern": "ridicule", "tip_ko": null},
+    {"id": "confounded", "match": "confounded", "para": 33, "headword": "confounded", "pos": "adjective", "ipa": "/kənˈfaʊndɪd/", "sense_en": "annoying (a mild, old-fashioned swear word)", "sense_ko": "지긋지긋한, 빌어먹을(순한 욕)",
+      "synonyms": [
+        {"word": "blasted", "nuance": "Old-fashioned mild curse; angry and informal.", "example": "this blasted rain"},
+        {"word": "damned", "nuance": "Stronger curse word.", "example": "this damned door"},
+        {"word": "annoying", "nuance": "Neutral, polite description of what bothers you.", "example": "an annoying noise"}
+      ], "modern": "blasted / damned", "tip_ko": null},
+    {"id": "morbid", "match": "morbid", "para": 34, "headword": "morbid", "pos": "adjective", "ipa": "/ˈmɔrbɪd/", "sense_en": "unhealthily fixed on sad or dark thoughts, especially death", "sense_ko": "병적인, 죽음 같은 어두운 생각에 사로잡힌",
+      "synonyms": [
+        {"word": "gloomy", "nuance": "Sad or dark in mood; less extreme, not necessarily about death.", "example": "a gloomy day"},
+        {"word": "macabre", "nuance": "Frightening because of death or horror; about things, not minds.", "example": "a macabre painting"},
+        {"word": "unhealthy", "nuance": "General; morbid points to the mind’s dark focus.", "example": "an unhealthy obsession"}
+      ], "modern": null, "tip_ko": null},
+    {"id": "flibbertigibbet", "match": "flibbertigibbet", "para": 34, "headword": "flibbertigibbet", "pos": "noun", "ipa": "/ˌflɪbərtiˈdʒɪbɪt/", "sense_en": "a silly, chattering person who cannot be serious", "sense_ko": "경박하고 수다스러운 사람",
+      "synonyms": [
+        {"word": "scatterbrain", "nuance": "Someone forgetful and unable to focus.", "example": "a bit of a scatterbrain"},
+        {"word": "chatterbox", "nuance": "A person who talks too much; not necessarily silly.", "example": "a little chatterbox"},
+        {"word": "airhead", "nuance": "Modern slang for a foolish person; ruder.", "example": "Don’t be an airhead."}
+      ], "modern": "scatterbrain", "tip_ko": null},
+    {"id": "peer", "match": "peered", "para": 36, "headword": "peer", "pos": "verb", "ipa": "/pɪr/", "sense_en": "looked closely and carefully, because it was hard to see or scary", "sense_ko": "유심히 내다보다, 자세히 들여다보다",
+      "synonyms": [
+        {"word": "gaze", "nuance": "Long, steady look, often with wonder or feeling.", "example": "gaze at the stars"},
+        {"word": "glance", "nuance": "A very quick look.", "example": "glance at the clock"},
+        {"word": "squint", "nuance": "Look with half-closed eyes, from bright light or poor eyesight.", "example": "squint at the sign"},
+        {"word": "stare", "nuance": "Look fixedly and openly, sometimes rudely.", "example": "stare at a stranger"}
+      ], "modern": null, "tip_ko": null},
+    {"id": "lo", "match": "lo!", "para": 40, "headword": "lo", "pos": "interjection", "ipa": "/loʊ/", "sense_en": "look! (used to introduce something surprising)", "sense_ko": "보라! (놀라운 것을 알리는 옛말)",
+      "synonyms": [
+        {"word": "behold", "nuance": "Also archaic and solemn; a verb meaning ‘look at’.", "example": "Behold the king!"},
+        {"word": "look", "nuance": "Everyday way to draw attention.", "example": "Look! It’s snowing."},
+        {"word": "lo and behold", "nuance": "Fixed phrase still used today, often humorously, to introduce a surprise.", "example": "And lo and behold, it worked!"}
+      ], "modern": "look! / to everyone’s surprise", "tip_ko": null},
+    {"id": "gust", "match": "gusts", "para": 40, "headword": "gust", "pos": "noun", "ipa": "/ɡʌst/", "sense_en": "sudden strong rushes of wind", "sense_ko": "돌풍, 세찬 바람",
+      "synonyms": [
+        {"word": "breeze", "nuance": "Light, steady, pleasant wind.", "example": "a warm breeze"},
+        {"word": "blast", "nuance": "A very strong burst of wind or air.", "example": "a blast of cold air"},
+        {"word": "squall", "nuance": "A sudden storm with wind and rain.", "example": "a sudden squall at sea"}
+      ], "modern": null, "tip_ko": null},
+    {"id": "livelong", "match": "livelong", "para": 40, "headword": "livelong", "pos": "adjective", "ipa": "/ˈlɪvlɔŋ/", "sense_en": "whole, from beginning to end (used for emphasis)", "sense_ko": "기나긴, 온(꼬박 ~ 내내)",
+      "synonyms": [
+        {"word": "entire", "nuance": "Plain word for the whole thing; no feeling of a slow, long time.", "example": "the entire night"},
+        {"word": "whole", "nuance": "Everyday; livelong stresses how long it feels.", "example": "the whole day"},
+        {"word": "all-night", "nuance": "Describes an event that lasts all night.", "example": "an all-night party"}
+      ], "modern": "whole", "tip_ko": "live는 /lɪv/로 발음(‘라이브’ 아님)."},
+    {"id": "serrated", "match": "serrated", "para": 40, "headword": "serrated", "pos": "adjective", "ipa": "/ˈsɛreɪtɪd/", "sense_en": "having a jagged edge like a saw", "sense_ko": "톱니 모양의",
+      "synonyms": [
+        {"word": "jagged", "nuance": "Rough and uneven with sharp points; not regular like teeth.", "example": "jagged rocks"},
+        {"word": "toothed", "nuance": "Plain description of edges with small points.", "example": "a toothed leaf"},
+        {"word": "notched", "nuance": "Cut with small V-shaped nicks.", "example": "a notched stick"}
+      ], "modern": null, "tip_ko": null},
+    {"id": "dissolution", "match": "dissolution", "para": 40, "headword": "dissolution", "pos": "noun", "ipa": "/ˌdɪsəˈluʃən/", "sense_en": "the process of breaking down and falling apart", "sense_ko": "분해, 소멸",
+      "synonyms": [
+        {"word": "decay", "nuance": "Slow rotting or wearing away; the most common word here.", "example": "tooth decay"},
+        {"word": "disintegration", "nuance": "Breaking into small pieces.", "example": "the disintegration of the rock"},
+        {"word": "collapse", "nuance": "Sudden falling down or failing.", "example": "the collapse of the bridge"}
+      ], "modern": "decay", "tip_ko": null},
+    {"id": "flutter", "match": "fluttered", "para": 55, "headword": "flutter", "pos": "verb", "ipa": "/ˈflʌtɚ/", "sense_en": "moved lightly and quickly, like a bird’s wings", "sense_ko": "펄럭이다, 파르르 흔들리다",
+      "synonyms": [
+        {"word": "flap", "nuance": "Bigger, louder movement, often of wings or cloth.", "example": "flags flapping"},
+        {"word": "quiver", "nuance": "Tiny, fast trembling, often from feeling.", "example": "her lip quivered"},
+        {"word": "wave", "nuance": "Slow back-and-forth movement.", "example": "the flag waved"}
+      ], "modern": null, "tip_ko": null},
+    {"id": "wear-away", "match": "wore away", "para": 44, "headword": "wear away", "pos": "phrase", "ipa": null, "sense_en": "(of time) slowly passed", "sense_ko": "(시간이) 서서히 흘러가다",
+      "synonyms": [
+        {"word": "pass", "nuance": "Plain word for time moving on.", "example": "The hours passed."},
+        {"word": "drag on", "nuance": "Time feels slow and boring.", "example": "The meeting dragged on."},
+        {"word": "go by", "nuance": "Time passes, often without notice.", "example": "The years went by."}
+      ], "modern": "went by", "tip_ko": null},
+    {"id": "patter", "match": "pattered", "para": 44, "headword": "patter", "pos": "verb", "ipa": "/ˈpætɚ/", "sense_en": "made quick, light tapping sounds as it fell", "sense_ko": "(빗방울이) 후두둑 떨어지다",
+      "synonyms": [
+        {"word": "drip", "nuance": "Falls in single drops; no repeated tapping sound.", "example": "water dripping"},
+        {"word": "drum", "nuance": "Heavier, louder, regular beat.", "example": "rain drumming on the roof"},
+        {"word": "tap", "nuance": "One knock at a time, often by a person.", "example": "tap on the window"}
+      ], "modern": null, "tip_ko": null},
+    {"id": "acute", "match": "acute", "para": 52, "headword": "acute", "pos": "adjective", "ipa": "/əˈkjut/", "sense_en": "(of an illness) sudden and severe", "sense_ko": "(병이) 급성의, 심각한",
+      "synonyms": [
+        {"word": "severe", "nuance": "Very serious; does not say the illness came suddenly.", "example": "a severe cold"},
+        {"word": "sudden", "nuance": "Happening quickly; does not say how serious.", "example": "a sudden fever"},
+        {"word": "critical", "nuance": "Life may be in danger.", "example": "in critical condition"}
+      ], "modern": null, "tip_ko": "‘만성(chronic)’의 반대말."}
+  ]
+}

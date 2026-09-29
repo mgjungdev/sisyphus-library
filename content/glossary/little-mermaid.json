@@ -1,0 +1,2355 @@
+{
+  "slug": "little-mermaid",
+  "entries": [
+    {
+      "id": "fathom",
+      "match": "fathom",
+      "para": 1,
+      "headword": "fathom",
+      "pos": "verb",
+      "ipa": "/ˈfæðəm/",
+      "sense_en": "to measure how deep water is by lowering a line",
+      "sense_ko": "(물의) 깊이를 재다",
+      "synonyms": [
+        {
+          "word": "sound",
+          "nuance": "Technical sailors' word for measuring depth with a weighted line; fathom also means understand.",
+          "example": "They sounded the channel before entering."
+        },
+        {
+          "word": "measure",
+          "nuance": "General word for finding any size; says nothing about depth or water.",
+          "example": "measure the length of the room"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "'이해하다'라는 비유 뜻으로도 자주 쓰입니다: I can't fathom why he left.",
+      "all": true
+    },
+    {
+      "id": "pliant",
+      "match": "pliant",
+      "para": 1,
+      "headword": "pliant",
+      "pos": "adjective",
+      "ipa": "/ˈplaɪənt/",
+      "sense_en": "bending easily without breaking",
+      "sense_ko": "잘 휘는, 유연한",
+      "synonyms": [
+        {
+          "word": "flexible",
+          "nuance": "Most common word; used for materials, plans and people alike.",
+          "example": "a flexible schedule"
+        },
+        {
+          "word": "supple",
+          "nuance": "Suggests smooth, graceful bending, as in skin, leather or a body.",
+          "example": "supple leather gloves"
+        },
+        {
+          "word": "pliable",
+          "nuance": "Almost the same, but also often means easily influenced.",
+          "example": "pliable clay"
+        }
+      ],
+      "modern": "flexible",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "agitation",
+      "match": "agitation",
+      "para": 1,
+      "headword": "agitation",
+      "pos": "noun",
+      "ipa": "/ˌædʒɪˈteɪʃən/",
+      "sense_en": "a stirring or shaking movement, here of the water",
+      "sense_ko": "(물의) 흔들림, 동요",
+      "synonyms": [
+        {
+          "word": "disturbance",
+          "nuance": "Broader: any interruption of calm, physical or social.",
+          "example": "a disturbance in the water"
+        },
+        {
+          "word": "commotion",
+          "nuance": "Noisy, confused activity, usually among people.",
+          "example": "a commotion in the street"
+        }
+      ],
+      "modern": "movement",
+      "tip_ko": "사람에게는 '불안, 초조'라는 뜻으로 더 자주 쓰입니다.",
+      "all": true
+    },
+    {
+      "id": "diadem",
+      "match": "diadem",
+      "para": 1,
+      "headword": "diadem",
+      "pos": "noun",
+      "ipa": "/ˈdaɪəˌdɛm/",
+      "sense_en": "a jeweled headband worn by a queen or king",
+      "sense_ko": "보석 박힌 왕관, 머리띠 장식",
+      "synonyms": [
+        {
+          "word": "crown",
+          "nuance": "The everyday word; a diadem is a lighter, band-like or jeweled ornament.",
+          "example": "the queen's gold crown"
+        },
+        {
+          "word": "tiara",
+          "nuance": "A jeweled half-circle worn by women at formal events, not a sign of rule.",
+          "example": "a diamond tiara"
+        }
+      ],
+      "modern": "crown",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "singular",
+      "match": "singular",
+      "para": 1,
+      "headword": "singular",
+      "pos": "adjective",
+      "ipa": "/ˈsɪŋɡjələr/",
+      "sense_en": "unusual and strange; unlike anything else",
+      "sense_ko": "특이한, 기이한",
+      "synonyms": [
+        {
+          "word": "peculiar",
+          "nuance": "Strange in an odd or slightly uncomfortable way.",
+          "example": "a peculiar smell"
+        },
+        {
+          "word": "remarkable",
+          "nuance": "Worth noticing, usually in a good way.",
+          "example": "a remarkable talent"
+        },
+        {
+          "word": "unusual",
+          "nuance": "Plain, neutral word for not common.",
+          "example": "an unusual name"
+        }
+      ],
+      "modern": "unusual",
+      "tip_ko": "문법의 '단수'와 다른, 문어체의 '기이한' 뜻입니다.",
+      "all": true
+    },
+    {
+      "id": "glide",
+      "match": "glide",
+      "para": 1,
+      "headword": "glide",
+      "pos": "verb",
+      "ipa": "/ɡlaɪd/",
+      "sense_en": "to move smoothly and quietly",
+      "sense_ko": "미끄러지듯 움직이다",
+      "synonyms": [
+        {
+          "word": "slide",
+          "nuance": "Moves across a surface, often with contact and friction.",
+          "example": "slide across the ice"
+        },
+        {
+          "word": "drift",
+          "nuance": "Moves slowly without control or aim.",
+          "example": "drift down the river"
+        },
+        {
+          "word": "swim",
+          "nuance": "Just describes moving through water; glide adds smoothness and ease.",
+          "example": "fish swim in the pond"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "kept-house",
+      "match": "kept house",
+      "para": 2,
+      "headword": "keep house",
+      "pos": "idiom",
+      "ipa": null,
+      "sense_en": "to manage a home: cooking, cleaning and running daily life",
+      "sense_ko": "살림을 하다",
+      "synonyms": [
+        {
+          "word": "run the household",
+          "nuance": "More modern and formal; stresses being in charge.",
+          "example": "She runs the household alone."
+        },
+        {
+          "word": "do the housework",
+          "nuance": "Only the chores, not the managing.",
+          "example": "He does the housework."
+        }
+      ],
+      "modern": "ran the household",
+      "tip_ko": "keep house는 관사 없이 씁니다.",
+      "all": true
+    },
+    {
+      "id": "on-that-account",
+      "match": "on that account",
+      "para": 2,
+      "headword": "on that account",
+      "pos": "phrase",
+      "ipa": null,
+      "sense_en": "for that reason",
+      "sense_ko": "그 이유로, 그 때문에",
+      "synonyms": [
+        {
+          "word": "for that reason",
+          "nuance": "Plain, current wording of the same idea.",
+          "example": "For that reason, we left early."
+        },
+        {
+          "word": "therefore",
+          "nuance": "One-word, more formal link between cause and result.",
+          "example": "It rained; therefore we stayed."
+        }
+      ],
+      "modern": "for that reason",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "to-and-fro",
+      "match": "to and fro",
+      "para": 2,
+      "headword": "to and fro",
+      "pos": "phrase",
+      "ipa": null,
+      "sense_en": "back and forth, moving one way then the other",
+      "sense_ko": "이리저리, 왔다 갔다",
+      "synonyms": [
+        {
+          "word": "back and forth",
+          "nuance": "Everyday modern equivalent.",
+          "example": "He paced back and forth."
+        },
+        {
+          "word": "up and down",
+          "nuance": "Vertical movement, not sideways.",
+          "example": "The boat bobbed up and down."
+        }
+      ],
+      "modern": "back and forth",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "radiance",
+      "match": "radiance",
+      "para": 2,
+      "headword": "radiance",
+      "pos": "noun",
+      "ipa": "/ˈreɪdiəns/",
+      "sense_en": "a soft, glowing light",
+      "sense_ko": "(부드러운) 빛, 광채",
+      "synonyms": [
+        {
+          "word": "glow",
+          "nuance": "Softer and warmer; common in speech.",
+          "example": "the glow of a candle"
+        },
+        {
+          "word": "brilliance",
+          "nuance": "Very strong, dazzling light.",
+          "example": "the brilliance of the sun"
+        },
+        {
+          "word": "gleam",
+          "nuance": "A small, brief flash of light.",
+          "example": "a gleam in his eye"
+        }
+      ],
+      "modern": "glow",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "calyx",
+      "match": "calyx",
+      "para": 2,
+      "headword": "calyx",
+      "pos": "noun",
+      "ipa": "/ˈkeɪlɪks/",
+      "sense_en": "the green outer cup that holds a flower's petals",
+      "sense_ko": "꽃받침",
+      "synonyms": [
+        {
+          "word": "sepal",
+          "nuance": "One leaf-like piece of the calyx; the calyx is all of them together.",
+          "example": "each green sepal"
+        },
+        {
+          "word": "petal",
+          "nuance": "The colored inner part, not the green cup around it.",
+          "example": "a rose petal"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "식물학 용어로 일상 영어에서는 거의 안 씁니다.",
+      "all": true
+    },
+    {
+      "id": "tint",
+      "match": "tint",
+      "para": 2,
+      "headword": "tint",
+      "pos": "noun",
+      "ipa": "/tɪnt/",
+      "sense_en": "a light or faint shade of a color",
+      "sense_ko": "옅은 색조",
+      "synonyms": [
+        {
+          "word": "shade",
+          "nuance": "Any variety of one color, darker or lighter.",
+          "example": "a darker shade of blue"
+        },
+        {
+          "word": "hue",
+          "nuance": "More literary; the basic color quality.",
+          "example": "a golden hue"
+        },
+        {
+          "word": "tinge",
+          "nuance": "A slight trace of color or feeling.",
+          "example": "a tinge of pink"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "keel",
+      "match": "keel",
+      "para": 4,
+      "headword": "keel",
+      "pos": "noun",
+      "ipa": "/kil/",
+      "sense_en": "the long beam along the bottom of a ship",
+      "sense_ko": "(배의) 용골",
+      "synonyms": [
+        {
+          "word": "hull",
+          "nuance": "The whole body of the ship, not just the bottom beam.",
+          "example": "a damaged hull"
+        },
+        {
+          "word": "bottom",
+          "nuance": "Everyday word; less technical.",
+          "example": "the bottom of the boat"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "gaze",
+      "match": "gaze",
+      "para": 5,
+      "headword": "gaze",
+      "pos": "verb",
+      "ipa": "/ɡeɪz/",
+      "sense_en": "to look steadily for a long time, with wonder",
+      "sense_ko": "(감탄하며) 응시하다",
+      "synonyms": [
+        {
+          "word": "stare",
+          "nuance": "Also long, but often rude or blank; gaze feels admiring or dreamy.",
+          "example": "Don't stare at strangers."
+        },
+        {
+          "word": "glance",
+          "nuance": "One quick look, the opposite of a gaze.",
+          "example": "She glanced at her watch."
+        },
+        {
+          "word": "peer",
+          "nuance": "Look closely, usually because it is hard to see.",
+          "example": "He peered through the fog."
+        }
+      ],
+      "modern": null,
+      "tip_ko": "gaze at/on 뒤에 대상을 씁니다.",
+      "all": true
+    },
+    {
+      "id": "peal",
+      "match": "peal",
+      "para": 5,
+      "headword": "peal",
+      "pos": "verb",
+      "ipa": "/pil/",
+      "sense_en": "to ring loudly, as bells do",
+      "sense_ko": "(종이) 크게 울리다",
+      "synonyms": [
+        {
+          "word": "ring",
+          "nuance": "Plain word for any bell sound.",
+          "example": "The phone rang."
+        },
+        {
+          "word": "chime",
+          "nuance": "Softer, musical, usually in a clear tone.",
+          "example": "The clock chimed noon."
+        },
+        {
+          "word": "toll",
+          "nuance": "Slow, solemn ring, as for a funeral.",
+          "example": "The bell tolled."
+        }
+      ],
+      "modern": "ring out",
+      "tip_ko": "peel(껍질 벗기다)과 발음이 같습니다.",
+      "all": true
+    },
+    {
+      "id": "bustle",
+      "match": "bustle",
+      "para": 5,
+      "headword": "bustle",
+      "pos": "noun",
+      "ipa": "/ˈbʌsəl/",
+      "sense_en": "busy, noisy activity",
+      "sense_ko": "북적거림, 번잡함",
+      "synonyms": [
+        {
+          "word": "hustle",
+          "nuance": "Fast, pushy energy; often followed by 'and bustle'.",
+          "example": "the hustle of the market"
+        },
+        {
+          "word": "commotion",
+          "nuance": "Noisy disorder, often sudden.",
+          "example": "a commotion at the gate"
+        },
+        {
+          "word": "activity",
+          "nuance": "Neutral and calm; has no noise or crowding.",
+          "example": "a lot of activity"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "t는 발음하지 않습니다: /ˈbʌsəl/.",
+      "all": true
+    },
+    {
+      "id": "creek",
+      "match": "creek",
+      "para": 7,
+      "headword": "creek",
+      "pos": "noun",
+      "ipa": "/krik/",
+      "sense_en": "a small narrow inlet of water",
+      "sense_ko": "작은 만, 개울",
+      "synonyms": [
+        {
+          "word": "stream",
+          "nuance": "Small flowing river; a creek can be an inlet from the sea.",
+          "example": "a mountain stream"
+        },
+        {
+          "word": "inlet",
+          "nuance": "Narrow bay running into the land.",
+          "example": "a quiet inlet"
+        },
+        {
+          "word": "brook",
+          "nuance": "Small, pretty stream, mostly British or poetic.",
+          "example": "a babbling brook"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "/krik/이며 '크릭'으로 발음합니다.",
+      "all": true
+    },
+    {
+      "id": "sport",
+      "match": "sporting",
+      "para": 7,
+      "headword": "sport",
+      "pos": "verb",
+      "ipa": "/spɔrt/",
+      "sense_en": "to play happily and freely",
+      "sense_ko": "즐겁게 뛰놀다",
+      "synonyms": [
+        {
+          "word": "frolic",
+          "nuance": "Lively, joyful play, like children or animals.",
+          "example": "lambs frolic in the field"
+        },
+        {
+          "word": "romp",
+          "nuance": "Rough, noisy fun.",
+          "example": "kids romping in the yard"
+        },
+        {
+          "word": "play",
+          "nuance": "Plain everyday word, without extra joy.",
+          "example": "children play outside"
+        }
+      ],
+      "modern": "playing",
+      "tip_ko": "운동 종목이 아니라 '뛰놀다'라는 옛 동사 뜻입니다.",
+      "all": true
+    },
+    {
+      "id": "reef",
+      "match": "reefed",
+      "para": 9,
+      "headword": "reef",
+      "pos": "verb",
+      "ipa": "/rif/",
+      "sense_en": "to roll up part of a sail to make it smaller in strong wind",
+      "sense_ko": "(강풍에) 돛을 줄이다",
+      "synonyms": [
+        {
+          "word": "furl",
+          "nuance": "Roll up a sail completely and tie it.",
+          "example": "furl the sails"
+        },
+        {
+          "word": "lower",
+          "nuance": "Bring down; reefing keeps the sail up but smaller.",
+          "example": "lower the flag"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "명사 reef는 '암초'입니다.",
+      "all": true
+    },
+    {
+      "id": "lofty",
+      "match": "loftier",
+      "para": 9,
+      "headword": "lofty",
+      "pos": "adjective",
+      "ipa": "/ˈlɔfti/",
+      "sense_en": "very tall and impressive",
+      "sense_ko": "우뚝 솟은, 높은",
+      "synonyms": [
+        {
+          "word": "towering",
+          "nuance": "Suggests looming over you; more dramatic.",
+          "example": "towering cliffs"
+        },
+        {
+          "word": "tall",
+          "nuance": "Plain measurement of height.",
+          "example": "a tall tree"
+        },
+        {
+          "word": "high",
+          "nuance": "Everyday, wide use; lofty adds grandeur.",
+          "example": "a high mountain"
+        }
+      ],
+      "modern": "taller",
+      "tip_ko": "'고상한(lofty ideals)'의 뜻으로도 씁니다.",
+      "all": true
+    },
+    {
+      "id": "indifferent",
+      "match": "indifferent",
+      "para": 10,
+      "headword": "indifferent",
+      "pos": "adjective",
+      "ipa": "/ɪnˈdɪfrənt/",
+      "sense_en": "not interested any more; not caring",
+      "sense_ko": "무관심한, 시큰둥한",
+      "synonyms": [
+        {
+          "word": "uninterested",
+          "nuance": "Simply lacks interest; milder.",
+          "example": "He seemed uninterested."
+        },
+        {
+          "word": "apathetic",
+          "nuance": "Stronger: no feeling or energy at all.",
+          "example": "apathetic voters"
+        },
+        {
+          "word": "unconcerned",
+          "nuance": "Not worried about a possible problem.",
+          "example": "She was unconcerned about the risk."
+        }
+      ],
+      "modern": null,
+      "tip_ko": "indifferent about/to ~: '~에 무관심한'.",
+      "all": true
+    },
+    {
+      "id": "twine",
+      "match": "twine",
+      "para": 10,
+      "headword": "twine",
+      "pos": "verb",
+      "ipa": "/twaɪn/",
+      "sense_en": "to wind or wrap around something",
+      "sense_ko": "휘감다, 꼬다",
+      "synonyms": [
+        {
+          "word": "entwine",
+          "nuance": "Almost the same; two things woven together.",
+          "example": "entwined fingers"
+        },
+        {
+          "word": "wrap",
+          "nuance": "Cover something all around; not necessarily spiral.",
+          "example": "wrap a scarf"
+        },
+        {
+          "word": "coil",
+          "nuance": "Wind in rings, like a rope or snake.",
+          "example": "the snake coiled up"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "명사로는 '노끈'입니다.",
+      "all": true
+    },
+    {
+      "id": "dowager",
+      "match": "dowager",
+      "para": 12,
+      "headword": "dowager",
+      "pos": "noun",
+      "ipa": "/ˈdaʊədʒər/",
+      "sense_en": "an elderly widow of high rank",
+      "sense_ko": "지체 높은 미망인, 대부인",
+      "synonyms": [
+        {
+          "word": "widow",
+          "nuance": "Any woman whose husband has died; no rank implied.",
+          "example": "a young widow"
+        },
+        {
+          "word": "matriarch",
+          "nuance": "Female head of a family, whether widowed or not.",
+          "example": "the family matriarch"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "여기서는 왕의 어머니인 노부인을 가리킵니다.",
+      "all": true
+    },
+    {
+      "id": "adorn",
+      "match": "adorn",
+      "para": 12,
+      "headword": "adorn",
+      "pos": "verb",
+      "ipa": "/əˈdɔrn/",
+      "sense_en": "to decorate to make more beautiful",
+      "sense_ko": "장식하다, 꾸미다",
+      "synonyms": [
+        {
+          "word": "decorate",
+          "nuance": "Everyday and general, for rooms, cakes, trees.",
+          "example": "decorate the tree"
+        },
+        {
+          "word": "embellish",
+          "nuance": "Adds extra details, also to stories.",
+          "example": "embellish a story"
+        },
+        {
+          "word": "deck",
+          "nuance": "Cover with festive decorations; often 'deck out'.",
+          "example": "deck the halls"
+        }
+      ],
+      "modern": "decorate",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "grandeur",
+      "match": "grandeur",
+      "para": 14,
+      "headword": "grandeur",
+      "pos": "noun",
+      "ipa": "/ˈɡrændʒər/",
+      "sense_en": "impressive, rich splendor and show",
+      "sense_ko": "웅장함, 화려함",
+      "synonyms": [
+        {
+          "word": "splendor",
+          "nuance": "Bright beauty and richness.",
+          "example": "the splendor of the palace"
+        },
+        {
+          "word": "pomp",
+          "nuance": "Showy ceremony, sometimes empty.",
+          "example": "royal pomp"
+        },
+        {
+          "word": "magnificence",
+          "nuance": "Excellent, awe-inspiring beauty.",
+          "example": "the magnificence of the view"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "shaken-off",
+      "match": "shaken off",
+      "para": 14,
+      "headword": "shake off",
+      "pos": "phrase",
+      "ipa": null,
+      "sense_en": "to get rid of something",
+      "sense_ko": "떨쳐 내다, 벗어던지다",
+      "synonyms": [
+        {
+          "word": "get rid of",
+          "nuance": "General and neutral.",
+          "example": "get rid of old clothes"
+        },
+        {
+          "word": "cast off",
+          "nuance": "Literary; throw aside something unwanted.",
+          "example": "cast off the chains"
+        },
+        {
+          "word": "throw off",
+          "nuance": "Quickly free yourself from a burden or illness.",
+          "example": "throw off a cold"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "help-herself",
+      "match": "help herself",
+      "para": 14,
+      "headword": "cannot help oneself",
+      "pos": "idiom",
+      "ipa": null,
+      "sense_en": "had no choice; could not do anything else",
+      "sense_ko": "어쩔 도리가 없다",
+      "synonyms": [
+        {
+          "word": "have no choice",
+          "nuance": "Plain modern phrase.",
+          "example": "I had no choice but to go."
+        },
+        {
+          "word": "cannot help it",
+          "nuance": "Says the action is out of your control.",
+          "example": "Sorry, I can't help it."
+        }
+      ],
+      "modern": "had no choice",
+      "tip_ko": "요즘은 주로 '(하고 싶은 충동을) 참지 못하다'라는 뜻으로 씁니다: I ate the whole cake; I couldn't help myself.",
+      "all": true
+    },
+    {
+      "id": "becalmed",
+      "match": "becalmed",
+      "para": 14,
+      "headword": "becalmed",
+      "pos": "adjective",
+      "ipa": "/bɪˈkɑmd/",
+      "sense_en": "unable to move because there is no wind",
+      "sense_ko": "무풍으로 꼼짝 못 하는",
+      "synonyms": [
+        {
+          "word": "stranded",
+          "nuance": "Stuck anywhere, for any reason.",
+          "example": "stranded on an island"
+        },
+        {
+          "word": "motionless",
+          "nuance": "Not moving; gives no reason.",
+          "example": "a motionless boat"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "l은 발음하지 않습니다.",
+      "all": true
+    },
+    {
+      "id": "rigging",
+      "match": "rigging",
+      "para": 14,
+      "headword": "rigging",
+      "pos": "noun",
+      "ipa": "/ˈrɪɡɪŋ/",
+      "sense_en": "the ropes and chains that hold up a ship's masts and sails",
+      "sense_ko": "(배의) 삭구, 돛 밧줄",
+      "synonyms": [
+        {
+          "word": "ropes",
+          "nuance": "Everyday, general word.",
+          "example": "tie it with ropes"
+        },
+        {
+          "word": "tackle",
+          "nuance": "Ropes and pulleys for lifting or moving loads.",
+          "example": "block and tackle"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "rig(조작하다)의 -ing형과 혼동하지 마세요.",
+      "all": true
+    },
+    {
+      "id": "startled",
+      "match": "startled",
+      "para": 14,
+      "headword": "startled",
+      "pos": "adjective",
+      "ipa": "/ˈstɑrtəld/",
+      "sense_en": "suddenly surprised and a little frightened",
+      "sense_ko": "깜짝 놀란",
+      "synonyms": [
+        {
+          "word": "surprised",
+          "nuance": "Milder; no fear needed.",
+          "example": "I was surprised by the gift."
+        },
+        {
+          "word": "shocked",
+          "nuance": "Stronger; upset or offended.",
+          "example": "She was shocked by the news."
+        },
+        {
+          "word": "alarmed",
+          "nuance": "Sudden worry about danger.",
+          "example": "alarmed by the noise"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "unfurl",
+      "match": "unfurled",
+      "para": 15,
+      "headword": "unfurl",
+      "pos": "verb",
+      "ipa": "/ʌnˈfɜrl/",
+      "sense_en": "to unroll and spread out a sail",
+      "sense_ko": "(돛을) 펼치다",
+      "synonyms": [
+        {
+          "word": "unfold",
+          "nuance": "Open something folded, like paper.",
+          "example": "unfold a map"
+        },
+        {
+          "word": "unroll",
+          "nuance": "Open something rolled.",
+          "example": "unroll a scroll"
+        },
+        {
+          "word": "spread",
+          "nuance": "Open wide; general word.",
+          "example": "spread a blanket"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "gave-way",
+      "match": "gave way",
+      "para": 15,
+      "headword": "give way",
+      "pos": "phrase",
+      "ipa": null,
+      "sense_en": "to break or collapse under pressure",
+      "sense_ko": "무너지다, 부서지다",
+      "synonyms": [
+        {
+          "word": "collapse",
+          "nuance": "Fall down completely.",
+          "example": "the roof collapsed"
+        },
+        {
+          "word": "break",
+          "nuance": "Just split; no idea of pressure.",
+          "example": "the branch broke"
+        },
+        {
+          "word": "yield",
+          "nuance": "Often for people who give in.",
+          "example": "yield to pressure"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "'양보하다'라는 뜻도 있습니다: give way to traffic.",
+      "all": true
+    },
+    {
+      "id": "asunder",
+      "match": "asunder",
+      "para": 15,
+      "headword": "asunder",
+      "pos": "adverb",
+      "ipa": "/əˈsʌndər/",
+      "sense_en": "apart, into pieces",
+      "sense_ko": "산산이, 둘로 갈라져",
+      "synonyms": [
+        {
+          "word": "apart",
+          "nuance": "Everyday word for separated.",
+          "example": "The book fell apart."
+        },
+        {
+          "word": "in two",
+          "nuance": "Exactly two pieces.",
+          "example": "cut it in two"
+        }
+      ],
+      "modern": "in two",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "strew",
+      "match": "strewed",
+      "para": 15,
+      "headword": "strew",
+      "pos": "verb",
+      "ipa": "/stru/",
+      "sense_en": "to lie scattered over a surface",
+      "sense_ko": "(~ 위에) 흩어져 있다, 뒤덮다",
+      "synonyms": [
+        {
+          "word": "scatter",
+          "nuance": "Throw in different directions; everyday.",
+          "example": "scatter seeds"
+        },
+        {
+          "word": "litter",
+          "nuance": "Leave things untidily around.",
+          "example": "litter the floor"
+        },
+        {
+          "word": "spread",
+          "nuance": "Cover an area widely; not necessarily messy.",
+          "example": "spread the papers"
+        }
+      ],
+      "modern": "littered",
+      "tip_ko": "'스트루'로 발음합니다.",
+      "all": true
+    },
+    {
+      "id": "crest",
+      "match": "crests",
+      "para": 15,
+      "headword": "crest",
+      "pos": "noun",
+      "ipa": "/krɛst/",
+      "sense_en": "the top of a wave",
+      "sense_ko": "(파도의) 마루, 꼭대기",
+      "synonyms": [
+        {
+          "word": "peak",
+          "nuance": "Highest point of a mountain or pattern.",
+          "example": "the mountain peak"
+        },
+        {
+          "word": "summit",
+          "nuance": "Top of a mountain only.",
+          "example": "reach the summit"
+        },
+        {
+          "word": "top",
+          "nuance": "Plain word.",
+          "example": "the top of the wave"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "convent",
+      "match": "convent",
+      "para": 16,
+      "headword": "convent",
+      "pos": "noun",
+      "ipa": "/ˈkɑnvɛnt/",
+      "sense_en": "a building where nuns live",
+      "sense_ko": "수녀원",
+      "synonyms": [
+        {
+          "word": "monastery",
+          "nuance": "Traditionally for monks.",
+          "example": "a mountain monastery"
+        },
+        {
+          "word": "abbey",
+          "nuance": "Large church community for monks or nuns.",
+          "example": "the old abbey"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "ripen",
+      "match": "ripen",
+      "para": 16,
+      "headword": "ripen",
+      "pos": "verb",
+      "ipa": "/ˈraɪpən/",
+      "sense_en": "to become ready to eat",
+      "sense_ko": "익다",
+      "synonyms": [
+        {
+          "word": "mature",
+          "nuance": "Fully develop; also people, wine.",
+          "example": "the wine matured"
+        },
+        {
+          "word": "mellow",
+          "nuance": "Become softer and sweeter.",
+          "example": "the fruit mellowed"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "gave-up",
+      "match": "gave up",
+      "para": 16,
+      "headword": "give up",
+      "pos": "phrase",
+      "ipa": null,
+      "sense_en": "to stop doing something",
+      "sense_ko": "포기하다, 그만두다",
+      "synonyms": [
+        {
+          "word": "quit",
+          "nuance": "Stop a job or habit; stronger.",
+          "example": "quit smoking"
+        },
+        {
+          "word": "abandon",
+          "nuance": "Leave or stop completely, often for good.",
+          "example": "abandon the plan"
+        },
+        {
+          "word": "stop",
+          "nuance": "Neutral; no idea of defeat.",
+          "example": "stop talking"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "give up 뒤에는 동명사(-ing)가 옵니다.",
+      "all": true
+    },
+    {
+      "id": "saloon",
+      "match": "saloon",
+      "para": 17,
+      "headword": "saloon",
+      "pos": "noun",
+      "ipa": "/səˈlun/",
+      "sense_en": "a large formal room in a palace",
+      "sense_ko": "(궁전의) 큰 홀, 응접실",
+      "synonyms": [
+        {
+          "word": "hall",
+          "nuance": "Large public or grand room.",
+          "example": "the great hall"
+        },
+        {
+          "word": "drawing room",
+          "nuance": "Room to receive guests.",
+          "example": "in the drawing room"
+        }
+      ],
+      "modern": "hall",
+      "tip_ko": "미국식 '술집(bar)' 뜻이 아닙니다.",
+      "all": true
+    },
+    {
+      "id": "cupola",
+      "match": "cupolas",
+      "para": 17,
+      "headword": "cupola",
+      "pos": "noun",
+      "ipa": "/ˈkjupələ/",
+      "sense_en": "a small round dome on a roof",
+      "sense_ko": "작은 둥근 지붕",
+      "synonyms": [
+        {
+          "word": "dome",
+          "nuance": "General word, larger.",
+          "example": "the dome of the cathedral"
+        },
+        {
+          "word": "turret",
+          "nuance": "Small tower on a building.",
+          "example": "a castle turret"
+        }
+      ],
+      "modern": "dome",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "tapestry",
+      "match": "tapestry",
+      "para": 17,
+      "headword": "tapestry",
+      "pos": "noun",
+      "ipa": "/ˈtæpəstri/",
+      "sense_en": "a heavy cloth with pictures woven into it, hung on walls",
+      "sense_ko": "(벽걸이) 태피스트리",
+      "synonyms": [
+        {
+          "word": "hanging",
+          "nuance": "Any cloth hung on a wall.",
+          "example": "a silk hanging"
+        },
+        {
+          "word": "embroidery",
+          "nuance": "Stitched decoration, not woven.",
+          "example": "fine embroidery"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "applied-to",
+      "match": "applied to",
+      "para": 17,
+      "headword": "apply to",
+      "pos": "phrase",
+      "ipa": null,
+      "sense_en": "to ask someone for help or information",
+      "sense_ko": "~에게 문의하다, 청하다",
+      "synonyms": [
+        {
+          "word": "turn to",
+          "nuance": "Go to someone for help.",
+          "example": "turn to a friend"
+        },
+        {
+          "word": "ask",
+          "nuance": "Simpler; less formal.",
+          "example": "ask the teacher"
+        },
+        {
+          "word": "appeal to",
+          "nuance": "Beg or urge, often for help.",
+          "example": "appeal to the king"
+        }
+      ],
+      "modern": "turned to",
+      "tip_ko": "요즘은 'apply to + 학교·회사(~에 지원하다)'의 뜻으로 더 자주 씁니다.",
+      "all": true
+    },
+    {
+      "id": "bosom",
+      "match": "bosom",
+      "para": 17,
+      "headword": "bosom",
+      "pos": "noun",
+      "ipa": "/ˈbʊzəm/",
+      "sense_en": "a person's chest, where you hold someone dear",
+      "sense_ko": "가슴",
+      "synonyms": [
+        {
+          "word": "chest",
+          "nuance": "Plain everyday word.",
+          "example": "a pain in the chest"
+        },
+        {
+          "word": "breast",
+          "nuance": "More formal; also used poetically for the heart and feelings.",
+          "example": "a hand on the breast"
+        }
+      ],
+      "modern": "chest",
+      "tip_ko": "/ˈbʊzəm/. 'bosom friend'는 절친이라는 뜻.",
+      "all": true
+    },
+    {
+      "id": "retain",
+      "match": "retain",
+      "para": 23,
+      "headword": "retain",
+      "pos": "verb",
+      "ipa": "/rɪˈteɪn/",
+      "sense_en": "to keep something and not lose it",
+      "sense_ko": "간직하다, 유지하다",
+      "synonyms": [
+        {
+          "word": "keep",
+          "nuance": "Everyday, general word.",
+          "example": "keep the change"
+        },
+        {
+          "word": "hold",
+          "nuance": "Physical or lasting grip.",
+          "example": "hold the rope"
+        },
+        {
+          "word": "preserve",
+          "nuance": "Protect from damage.",
+          "example": "preserve the old house"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "stout",
+      "match": "stout",
+      "para": 23,
+      "headword": "stout",
+      "pos": "adjective",
+      "ipa": "/staʊt/",
+      "sense_en": "strong and thick",
+      "sense_ko": "굵고 튼튼한",
+      "synonyms": [
+        {
+          "word": "sturdy",
+          "nuance": "Solidly built and durable.",
+          "example": "a sturdy chair"
+        },
+        {
+          "word": "thick",
+          "nuance": "Wide; no idea of strength.",
+          "example": "a thick rope"
+        },
+        {
+          "word": "robust",
+          "nuance": "Healthy and strong, often for people or systems.",
+          "example": "a robust economy"
+        }
+      ],
+      "modern": "sturdy",
+      "tip_ko": "사람에게는 '뚱뚱한'을 완곡하게 말할 때 씁니다.",
+      "all": true
+    },
+    {
+      "id": "colossal",
+      "match": "colossal",
+      "para": 25,
+      "headword": "colossal",
+      "pos": "adjective",
+      "ipa": "/kəˈlɑsəl/",
+      "sense_en": "extremely large",
+      "sense_ko": "거대한",
+      "synonyms": [
+        {
+          "word": "huge",
+          "nuance": "Everyday word.",
+          "example": "a huge house"
+        },
+        {
+          "word": "gigantic",
+          "nuance": "Stronger; giant-like.",
+          "example": "a gigantic wave"
+        },
+        {
+          "word": "enormous",
+          "nuance": "Very large, also for abstract things.",
+          "example": "an enormous problem"
+        }
+      ],
+      "modern": "huge",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "innumerable",
+      "match": "innumerable",
+      "para": 25,
+      "headword": "innumerable",
+      "pos": "adjective",
+      "ipa": "/ɪˈnumərəbəl/",
+      "sense_en": "too many to count",
+      "sense_ko": "셀 수 없이 많은",
+      "synonyms": [
+        {
+          "word": "countless",
+          "nuance": "Everyday version.",
+          "example": "countless stars"
+        },
+        {
+          "word": "numerous",
+          "nuance": "Just many; can be counted.",
+          "example": "numerous errors"
+        },
+        {
+          "word": "endless",
+          "nuance": "Never stopping, in time or size.",
+          "example": "endless rain"
+        }
+      ],
+      "modern": "countless",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "bugle",
+      "match": "bugle",
+      "para": 25,
+      "headword": "bugle",
+      "pos": "noun",
+      "ipa": "/ˈbjuɡəl/",
+      "sense_en": "a small brass horn used for signals",
+      "sense_ko": "나팔",
+      "synonyms": [
+        {
+          "word": "trumpet",
+          "nuance": "Larger, with valves; used in bands.",
+          "example": "a jazz trumpet"
+        },
+        {
+          "word": "horn",
+          "nuance": "General word for brass instruments.",
+          "example": "a hunting horn"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "counsel",
+      "match": "counsel",
+      "para": 25,
+      "headword": "counsel",
+      "pos": "noun",
+      "ipa": "/ˈkaʊnsəl/",
+      "sense_en": "advice",
+      "sense_ko": "조언",
+      "synonyms": [
+        {
+          "word": "advice",
+          "nuance": "Everyday word.",
+          "example": "ask for advice"
+        },
+        {
+          "word": "guidance",
+          "nuance": "Ongoing help.",
+          "example": "with your guidance"
+        },
+        {
+          "word": "recommendation",
+          "nuance": "Specific suggestion.",
+          "example": "on the doctor's recommendation"
+        }
+      ],
+      "modern": "advice",
+      "tip_ko": "council(위원회)과 발음이 같습니다.",
+      "all": true
+    },
+    {
+      "id": "whirlpool",
+      "match": "whirlpools",
+      "para": 26,
+      "headword": "whirlpool",
+      "pos": "noun",
+      "ipa": "/ˈwɜrlˌpul/",
+      "sense_en": "water that spins fast and pulls things down",
+      "sense_ko": "소용돌이",
+      "synonyms": [
+        {
+          "word": "vortex",
+          "nuance": "Spinning flow of any fluid or air.",
+          "example": "a vortex of wind"
+        },
+        {
+          "word": "eddy",
+          "nuance": "Small, weak spinning water.",
+          "example": "an eddy by the rock"
+        },
+        {
+          "word": "maelstrom",
+          "nuance": "Huge, violent whirlpool.",
+          "example": "swallowed by a maelstrom"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "mire",
+      "match": "mire",
+      "para": 26,
+      "headword": "mire",
+      "pos": "noun",
+      "ipa": "/maɪr/",
+      "sense_en": "wet, sticky mud",
+      "sense_ko": "진창, 늪",
+      "synonyms": [
+        {
+          "word": "mud",
+          "nuance": "Everyday and general.",
+          "example": "boots covered in mud"
+        },
+        {
+          "word": "bog",
+          "nuance": "Soft wet ground.",
+          "example": "a peat bog"
+        },
+        {
+          "word": "swamp",
+          "nuance": "Large area of wet land.",
+          "example": "a crocodile swamp"
+        }
+      ],
+      "modern": "mud",
+      "tip_ko": "'~에 빠지다'는 be mired in.",
+      "all": true
+    },
+    {
+      "id": "polypi",
+      "match": "polypi",
+      "para": 26,
+      "headword": "polyp",
+      "pos": "noun",
+      "ipa": "/ˈpɑləp/",
+      "sense_en": "sea creatures like plants with grasping arms",
+      "sense_ko": "폴립(말미잘 같은 해양 생물)",
+      "synonyms": [
+        {
+          "word": "anemone",
+          "nuance": "A common polyp with flower-like arms.",
+          "example": "a sea anemone"
+        },
+        {
+          "word": "coral",
+          "nuance": "Colony of polyps with a hard skeleton.",
+          "example": "a coral reef"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "복수형 polypi는 그리스·라틴식입니다.",
+      "all": true
+    },
+    {
+      "id": "supple",
+      "match": "supple",
+      "para": 26,
+      "headword": "supple",
+      "pos": "adjective",
+      "ipa": "/ˈsʌpəl/",
+      "sense_en": "bending easily and gracefully",
+      "sense_ko": "유연한, 나긋나긋한",
+      "synonyms": [
+        {
+          "word": "flexible",
+          "nuance": "Bends easily; not always graceful.",
+          "example": "a flexible pipe"
+        },
+        {
+          "word": "pliant",
+          "nuance": "Bends and yields under pressure.",
+          "example": "pliant branches"
+        },
+        {
+          "word": "graceful",
+          "nuance": "Beautiful movement, not physical bend.",
+          "example": "a graceful dancer"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "clutches",
+      "match": "clutches",
+      "para": 26,
+      "headword": "clutch",
+      "pos": "noun",
+      "ipa": "/klʌtʃ/",
+      "sense_en": "a tight, controlling hold",
+      "sense_ko": "손아귀, 마수",
+      "synonyms": [
+        {
+          "word": "grasp",
+          "nuance": "Reach or hold; less threatening, and can also mean understanding.",
+          "example": "within my grasp"
+        },
+        {
+          "word": "grip",
+          "nuance": "Firm hold, neutral.",
+          "example": "a tight grip"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "in one's clutches는 '~의 손아귀에'.",
+      "all": true
+    },
+    {
+      "id": "dominions",
+      "match": "dominions",
+      "para": 26,
+      "headword": "dominion",
+      "pos": "noun",
+      "ipa": "/dəˈmɪnjən/",
+      "sense_en": "land ruled by one ruler",
+      "sense_ko": "영토, 지배 영역",
+      "synonyms": [
+        {
+          "word": "realm",
+          "nuance": "Kingdom; also a field of activity.",
+          "example": "the realm of art"
+        },
+        {
+          "word": "territory",
+          "nuance": "Any area belonging to someone.",
+          "example": "enemy territory"
+        },
+        {
+          "word": "domain",
+          "nuance": "Area of control or expertise.",
+          "example": "her domain"
+        }
+      ],
+      "modern": "realm",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "draught",
+      "match": "draught",
+      "para": 28,
+      "headword": "draught",
+      "pos": "noun",
+      "ipa": "/dræft/",
+      "sense_en": "a portion of liquid medicine or magic drink",
+      "sense_ko": "(약, 마법의) 물약 한 모금",
+      "synonyms": [
+        {
+          "word": "potion",
+          "nuance": "A magical drink.",
+          "example": "a love potion"
+        },
+        {
+          "word": "dose",
+          "nuance": "Measured amount of medicine.",
+          "example": "a dose of medicine"
+        },
+        {
+          "word": "drink",
+          "nuance": "Everyday word.",
+          "example": "a cold drink"
+        }
+      ],
+      "modern": "potion",
+      "tip_ko": "미국 철자는 draft이고 발음은 같습니다.",
+      "all": true
+    },
+    {
+      "id": "for-your-sake",
+      "match": "for your sake",
+      "para": 30,
+      "headword": "for someone's sake",
+      "pos": "idiom",
+      "ipa": null,
+      "sense_en": "for the benefit of someone",
+      "sense_ko": "~을 위해서",
+      "synonyms": [
+        {
+          "word": "for your benefit",
+          "nuance": "Neutral, businesslike.",
+          "example": "for your benefit"
+        },
+        {
+          "word": "because of you",
+          "nuance": "Simple cause, not always positive.",
+          "example": "because of you"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "'sake'는 /seɪk/입니다.",
+      "all": true
+    },
+    {
+      "id": "enchain",
+      "match": "enchain",
+      "para": 34,
+      "headword": "enchain",
+      "pos": "verb",
+      "ipa": "/ɪnˈtʃeɪn/",
+      "sense_en": "to hold captive or bind",
+      "sense_ko": "사로잡다, 묶어 두다",
+      "synonyms": [
+        {
+          "word": "captivate",
+          "nuance": "Fascinate by charm.",
+          "example": "captivate the audience"
+        },
+        {
+          "word": "enthrall",
+          "nuance": "Hold in delight.",
+          "example": "enthralled by the story"
+        },
+        {
+          "word": "bind",
+          "nuance": "Literally tie together.",
+          "example": "bind with rope"
+        }
+      ],
+      "modern": "captivate",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "cauldron",
+      "match": "cauldron",
+      "para": 36,
+      "headword": "cauldron",
+      "pos": "noun",
+      "ipa": "/ˈkɔldrən/",
+      "sense_en": "a large round pot for boiling over a fire",
+      "sense_ko": "큰 솥, 가마솥",
+      "synonyms": [
+        {
+          "word": "pot",
+          "nuance": "Everyday and general.",
+          "example": "a cooking pot"
+        },
+        {
+          "word": "kettle",
+          "nuance": "For heating water.",
+          "example": "boil the kettle"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "scour",
+      "match": "scouring",
+      "para": 37,
+      "headword": "scour",
+      "pos": "verb",
+      "ipa": "/ˈskaʊər/",
+      "sense_en": "to clean by rubbing hard",
+      "sense_ko": "박박 문질러 닦다",
+      "synonyms": [
+        {
+          "word": "scrub",
+          "nuance": "Everyday hard rubbing.",
+          "example": "scrub the floor"
+        },
+        {
+          "word": "polish",
+          "nuance": "Rub to make shiny.",
+          "example": "polish shoes"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "'샅샅이 뒤지다'의 뜻도 있습니다.",
+      "all": true
+    },
+    {
+      "id": "potion",
+      "match": "potion",
+      "para": 37,
+      "headword": "potion",
+      "pos": "noun",
+      "ipa": "/ˈpoʊʃən/",
+      "sense_en": "a magic drink",
+      "sense_ko": "(마법의) 물약",
+      "synonyms": [
+        {
+          "word": "elixir",
+          "nuance": "A wonder-working liquid.",
+          "example": "an elixir of life"
+        },
+        {
+          "word": "brew",
+          "nuance": "Any prepared drink, magic or not.",
+          "example": "a witch's brew"
+        },
+        {
+          "word": "medicine",
+          "nuance": "Non-magic, healing.",
+          "example": "cough medicine"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "swoon",
+      "match": "swoon",
+      "para": 38,
+      "headword": "swoon",
+      "pos": "noun",
+      "ipa": "/swun/",
+      "sense_en": "a faint; a sudden loss of consciousness",
+      "sense_ko": "기절",
+      "synonyms": [
+        {
+          "word": "faint",
+          "nuance": "Everyday word.",
+          "example": "she fell in a faint"
+        },
+        {
+          "word": "blackout",
+          "nuance": "Medical, brief.",
+          "example": "a brief blackout"
+        }
+      ],
+      "modern": "faint",
+      "tip_ko": "동사로는 '황홀해서 기절할 듯하다'.",
+      "all": true
+    },
+    {
+      "id": "arrayed",
+      "match": "arrayed",
+      "para": 38,
+      "headword": "array",
+      "pos": "verb",
+      "ipa": "/əˈreɪ/",
+      "sense_en": "to dress in fine or splendid clothes",
+      "sense_ko": "(화려하게) 차려입히다",
+      "synonyms": [
+        {
+          "word": "dress",
+          "nuance": "Everyday.",
+          "example": "dress the child"
+        },
+        {
+          "word": "attire",
+          "nuance": "Formal verb, mostly passive: 'attired in'.",
+          "example": "attired in silk"
+        },
+        {
+          "word": "clothe",
+          "nuance": "Provide clothing.",
+          "example": "clothe the poor"
+        }
+      ],
+      "modern": "dressed",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "muslin",
+      "match": "muslin",
+      "para": 38,
+      "headword": "muslin",
+      "pos": "noun",
+      "ipa": "/ˈmʌzlɪn/",
+      "sense_en": "a thin, light cotton cloth",
+      "sense_ko": "모슬린(얇은 면직물)",
+      "synonyms": [
+        {
+          "word": "cotton",
+          "nuance": "General fabric.",
+          "example": "a cotton shirt"
+        },
+        {
+          "word": "gauze",
+          "nuance": "Even thinner; used in bandages.",
+          "example": "gauze bandage"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "foundling",
+      "match": "foundling",
+      "para": 40,
+      "headword": "foundling",
+      "pos": "noun",
+      "ipa": "/ˈfaʊndlɪŋ/",
+      "sense_en": "a child found with no known parents",
+      "sense_ko": "주워 온 아이, 기아(棄兒)",
+      "synonyms": [
+        {
+          "word": "orphan",
+          "nuance": "A child whose parents have died.",
+          "example": "a war orphan"
+        },
+        {
+          "word": "stray",
+          "nuance": "Lost animal or person.",
+          "example": "a stray cat"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "beckon",
+      "match": "beckoned",
+      "para": 42,
+      "headword": "beckon",
+      "pos": "verb",
+      "ipa": "/ˈbɛkən/",
+      "sense_en": "to signal someone to come with a hand",
+      "sense_ko": "손짓으로 부르다",
+      "synonyms": [
+        {
+          "word": "wave",
+          "nuance": "Move the hand to greet.",
+          "example": "wave goodbye"
+        },
+        {
+          "word": "signal",
+          "nuance": "Any sign.",
+          "example": "signal to the driver"
+        },
+        {
+          "word": "summon",
+          "nuance": "Order to come.",
+          "example": "summon the servant"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "devoted",
+      "match": "devoted",
+      "para": 45,
+      "headword": "devoted",
+      "pos": "adjective",
+      "ipa": "/dɪˈvoʊtɪd/",
+      "sense_en": "very loyal and loving",
+      "sense_ko": "헌신적인",
+      "synonyms": [
+        {
+          "word": "loyal",
+          "nuance": "Faithful and true.",
+          "example": "a loyal friend"
+        },
+        {
+          "word": "dedicated",
+          "nuance": "Committed to a cause or work.",
+          "example": "a dedicated nurse"
+        },
+        {
+          "word": "faithful",
+          "nuance": "Never abandoning.",
+          "example": "a faithful dog"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "oblige",
+      "match": "oblige",
+      "para": 48,
+      "headword": "oblige",
+      "pos": "verb",
+      "ipa": "/əˈblaɪdʒ/",
+      "sense_en": "to force someone to do something",
+      "sense_ko": "강요하다",
+      "synonyms": [
+        {
+          "word": "force",
+          "nuance": "Strong pressure.",
+          "example": "force him to go"
+        },
+        {
+          "word": "require",
+          "nuance": "By a rule.",
+          "example": "require a ticket"
+        },
+        {
+          "word": "compel",
+          "nuance": "Strong, formal.",
+          "example": "compelled to leave"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "'도움을 주다'의 뜻도 있습니다.",
+      "all": true
+    },
+    {
+      "id": "helm",
+      "match": "helm",
+      "para": 49,
+      "headword": "helm",
+      "pos": "noun",
+      "ipa": "/hɛlm/",
+      "sense_en": "the wheel or handle used to steer a ship",
+      "sense_ko": "(배의) 키, 조타 장치",
+      "synonyms": [
+        {
+          "word": "wheel",
+          "nuance": "Round steering device.",
+          "example": "at the wheel"
+        },
+        {
+          "word": "rudder",
+          "nuance": "The blade under the ship.",
+          "example": "turn the rudder"
+        },
+        {
+          "word": "tiller",
+          "nuance": "Lever on small boats.",
+          "example": "hold the tiller"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "'at the helm'은 '지휘하고 있는'.",
+      "all": true
+    },
+    {
+      "id": "flourish",
+      "match": "flourish",
+      "para": 50,
+      "headword": "flourish",
+      "pos": "noun",
+      "ipa": "/ˈflɜrɪʃ/",
+      "sense_en": "a fanfare of loud trumpet music",
+      "sense_ko": "(트럼펫의) 화려한 팡파르",
+      "synonyms": [
+        {
+          "word": "fanfare",
+          "nuance": "Short loud music for arrivals.",
+          "example": "a royal fanfare"
+        },
+        {
+          "word": "blast",
+          "nuance": "One loud sound.",
+          "example": "a trumpet blast"
+        }
+      ],
+      "modern": "fanfare",
+      "tip_ko": "동사로는 '번창하다'로 흔히 씁니다.",
+      "all": true
+    },
+    {
+      "id": "betrothal",
+      "match": "betrothal",
+      "para": 53,
+      "headword": "betrothal",
+      "pos": "noun",
+      "ipa": "/bɪˈtroʊðəl/",
+      "sense_en": "a formal promise to marry",
+      "sense_ko": "약혼",
+      "synonyms": [
+        {
+          "word": "engagement",
+          "nuance": "Common word.",
+          "example": "an engagement ring"
+        },
+        {
+          "word": "wedding",
+          "nuance": "The ceremony itself.",
+          "example": "a spring wedding"
+        }
+      ],
+      "modern": "engagement",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "censer",
+      "match": "censers",
+      "para": 53,
+      "headword": "censer",
+      "pos": "noun",
+      "ipa": "/ˈsɛnsər/",
+      "sense_en": "a container for burning incense in church",
+      "sense_ko": "향로",
+      "synonyms": [
+        {
+          "word": "thurible",
+          "nuance": "Technical name.",
+          "example": "swing the thurible"
+        },
+        {
+          "word": "incense burner",
+          "nuance": "Plain description.",
+          "example": "an incense burner"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "forsake",
+      "match": "forsaken",
+      "para": 53,
+      "headword": "forsake",
+      "pos": "verb",
+      "ipa": "/fərˈseɪk/",
+      "sense_en": "to leave for good; to give up",
+      "sense_ko": "버리다, 저버리다",
+      "synonyms": [
+        {
+          "word": "abandon",
+          "nuance": "Common; leave completely.",
+          "example": "abandon the ship"
+        },
+        {
+          "word": "desert",
+          "nuance": "Leave a duty.",
+          "example": "desert the army"
+        },
+        {
+          "word": "renounce",
+          "nuance": "Formally give up.",
+          "example": "renounce the throne"
+        }
+      ],
+      "modern": "abandoned",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "pang",
+      "match": "pang",
+      "para": 53,
+      "headword": "pang",
+      "pos": "noun",
+      "ipa": "/pæŋ/",
+      "sense_en": "a sudden sharp pain, often of emotion",
+      "sense_ko": "(갑작스러운) 극심한 고통",
+      "synonyms": [
+        {
+          "word": "twinge",
+          "nuance": "Brief and milder.",
+          "example": "a twinge of guilt"
+        },
+        {
+          "word": "stab",
+          "nuance": "Sharp, like a knife.",
+          "example": "a stab of pain"
+        },
+        {
+          "word": "ache",
+          "nuance": "Dull, lasting.",
+          "example": "an ache in the heart"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "unheard-of",
+      "match": "unheard-of",
+      "para": 53,
+      "headword": "unheard-of",
+      "pos": "adjective",
+      "ipa": null,
+      "sense_en": "never known before; extreme",
+      "sense_ko": "전례 없는, 유례없는",
+      "synonyms": [
+        {
+          "word": "unprecedented",
+          "nuance": "Never happened before.",
+          "example": "unprecedented growth"
+        },
+        {
+          "word": "extraordinary",
+          "nuance": "Beyond ordinary.",
+          "example": "an extraordinary effort"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "plunge",
+      "match": "plunge",
+      "para": 54,
+      "headword": "plunge",
+      "pos": "verb",
+      "ipa": "/plʌndʒ/",
+      "sense_en": "to push something deep and hard into",
+      "sense_ko": "깊이 찔러 넣다",
+      "synonyms": [
+        {
+          "word": "thrust",
+          "nuance": "Sudden strong push.",
+          "example": "thrust the sword"
+        },
+        {
+          "word": "stab",
+          "nuance": "Pierce with a point.",
+          "example": "stab him"
+        },
+        {
+          "word": "dive",
+          "nuance": "Go head first into water.",
+          "example": "dive in"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "moan",
+      "match": "moans",
+      "para": 54,
+      "headword": "moan",
+      "pos": "verb",
+      "ipa": "/moʊn/",
+      "sense_en": "to make a low sound of grief",
+      "sense_ko": "신음하며 슬퍼하다",
+      "synonyms": [
+        {
+          "word": "groan",
+          "nuance": "Deeper, from pain.",
+          "example": "groan in pain"
+        },
+        {
+          "word": "wail",
+          "nuance": "Loud, long crying.",
+          "example": "wail with grief"
+        },
+        {
+          "word": "complain",
+          "nuance": "Speak of grievance.",
+          "example": "complain about it"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "구어로 '투덜대다'도 됩니다.",
+      "all": true
+    },
+    {
+      "id": "ethereal",
+      "match": "ethereal",
+      "para": 55,
+      "headword": "ethereal",
+      "pos": "adjective",
+      "ipa": "/ɪˈθɪriəl/",
+      "sense_en": "light and delicate, almost not of this world",
+      "sense_ko": "천상의, 가냘프고 영묘한",
+      "synonyms": [
+        {
+          "word": "heavenly",
+          "nuance": "Of heaven or lovely.",
+          "example": "a heavenly voice"
+        },
+        {
+          "word": "delicate",
+          "nuance": "Fine and easily broken.",
+          "example": "delicate lace"
+        },
+        {
+          "word": "airy",
+          "nuance": "Light like air.",
+          "example": "airy curtains"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "lingering",
+      "match": "lingering",
+      "para": 55,
+      "headword": "lingering",
+      "pos": "adjective",
+      "ipa": "/ˈlɪŋɡərɪŋ/",
+      "sense_en": "slow to end or leave; long-held",
+      "sense_ko": "오래 머무는, 미련이 남은",
+      "synonyms": [
+        {
+          "word": "prolonged",
+          "nuance": "Lasting longer than expected.",
+          "example": "a prolonged stay"
+        },
+        {
+          "word": "lasting",
+          "nuance": "Continuing for a long time.",
+          "example": "a lasting effect"
+        },
+        {
+          "word": "wistful",
+          "nuance": "Sadly longing.",
+          "example": "a wistful look"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "pestilence",
+      "match": "pestilence",
+      "para": 56,
+      "headword": "pestilence",
+      "pos": "noun",
+      "ipa": "/ˈpɛstələns/",
+      "sense_en": "a deadly widespread disease",
+      "sense_ko": "전염병, 역병",
+      "synonyms": [
+        {
+          "word": "plague",
+          "nuance": "Deadly epidemic.",
+          "example": "the plague"
+        },
+        {
+          "word": "epidemic",
+          "nuance": "Common word for spreading disease.",
+          "example": "a flu epidemic"
+        },
+        {
+          "word": "disease",
+          "nuance": "Any illness.",
+          "example": "a heart disease"
+        }
+      ],
+      "modern": "plague",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "sultry",
+      "match": "sultry",
+      "para": 56,
+      "headword": "sultry",
+      "pos": "adjective",
+      "ipa": "/ˈsʌltri/",
+      "sense_en": "hot and humid",
+      "sense_ko": "무더운",
+      "synonyms": [
+        {
+          "word": "humid",
+          "nuance": "Moist air.",
+          "example": "a humid day"
+        },
+        {
+          "word": "muggy",
+          "nuance": "Informal, unpleasantly humid.",
+          "example": "a muggy night"
+        },
+        {
+          "word": "stifling",
+          "nuance": "So hot you can hardly breathe.",
+          "example": "stifling heat"
+        }
+      ],
+      "modern": "muggy",
+      "tip_ko": "사람에게는 '요염한'의 뜻이 됩니다.",
+      "all": true
+    },
+    {
+      "id": "procure",
+      "match": "procure",
+      "para": 56,
+      "headword": "procure",
+      "pos": "verb",
+      "ipa": "/proʊˈkjʊr/",
+      "sense_en": "to get by effort",
+      "sense_ko": "(노력해서) 얻다",
+      "synonyms": [
+        {
+          "word": "obtain",
+          "nuance": "Formal, get.",
+          "example": "obtain a visa"
+        },
+        {
+          "word": "acquire",
+          "nuance": "Gain over time.",
+          "example": "acquire a skill"
+        },
+        {
+          "word": "earn",
+          "nuance": "Deserve by work.",
+          "example": "earn respect"
+        }
+      ],
+      "modern": "get",
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "aether",
+      "match": "aether",
+      "para": 57,
+      "headword": "aether",
+      "pos": "noun",
+      "ipa": "/ˈiθər/",
+      "sense_en": "the clear upper sky",
+      "sense_ko": "창공, 상층 대기",
+      "synonyms": [
+        {
+          "word": "heavens",
+          "nuance": "Poetic sky.",
+          "example": "the heavens above"
+        },
+        {
+          "word": "sky",
+          "nuance": "Plain word.",
+          "example": "a blue sky"
+        }
+      ],
+      "modern": "sky",
+      "tip_ko": "ether의 옛 철자입니다.",
+      "all": true
+    },
+    {
+      "id": "probation",
+      "match": "probation",
+      "para": 58,
+      "headword": "probation",
+      "pos": "noun",
+      "ipa": "/proʊˈbeɪʃən/",
+      "sense_en": "a test period to prove your worth",
+      "sense_ko": "시험 기간, 수습 기간",
+      "synonyms": [
+        {
+          "word": "trial",
+          "nuance": "Test period.",
+          "example": "a trial period"
+        },
+        {
+          "word": "test",
+          "nuance": "Any check.",
+          "example": "a driving test"
+        },
+        {
+          "word": "apprenticeship",
+          "nuance": "Learning a trade.",
+          "example": "a carpenter's apprenticeship"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "법률에서는 '집행유예'입니다.",
+      "all": true
+    }
+  ]
+}

@@ -21,7 +21,8 @@
   },
   "month": "2026-10",
   "plan": 1,
-  "gutenberg": 701
+  "gutenberg": 701,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "gift-of-the-magi",
@@ -70,7 +71,8 @@
   },
   "month": "2026-10",
   "plan": 3,
-  "gutenberg": 18811
+  "gutenberg": 18811,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "rikki-tikki-tavi",
@@ -169,7 +171,8 @@
   },
   "month": "2026-11",
   "plan": 7,
-  "gutenberg": 1597
+  "gutenberg": 1597,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "little-mermaid",
@@ -193,7 +196,8 @@
   },
   "month": "2026-11",
   "plan": 8,
-  "gutenberg": 27200
+  "gutenberg": 27200,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "marsh-kings-daughter",
@@ -217,7 +221,8 @@
   },
   "month": "2026-12",
   "plan": 9,
-  "gutenberg": 27200
+  "gutenberg": 27200,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "two-brothers",
@@ -241,7 +246,8 @@
   },
   "month": "2026-12",
   "plan": 10,
-  "gutenberg": 5314
+  "gutenberg": 5314,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "enchanted-horse",
@@ -265,7 +271,8 @@
   },
   "month": "2026-12",
   "plan": 11,
-  "gutenberg": 128
+  "gutenberg": 128,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "beauty-and-the-beast",
@@ -289,7 +296,8 @@
   },
   "month": "2026-12",
   "plan": 12,
-  "gutenberg": 503
+  "gutenberg": 503,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "camaralzaman",
@@ -313,7 +321,8 @@
   },
   "month": "2027-01",
   "plan": 13,
-  "gutenberg": 128
+  "gutenberg": 128,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "aesop-fables",
@@ -337,7 +346,8 @@
   },
   "month": "2027-01",
   "plan": 14,
-  "gutenberg": 21
+  "gutenberg": 21,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "light-princess",
@@ -361,7 +371,8 @@
   },
   "month": "2027-01",
   "plan": 15,
-  "gutenberg": 697
+  "gutenberg": 697,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "racketty-packetty-house",
@@ -385,7 +396,8 @@
   },
   "month": "2027-01",
   "plan": 16,
-  "gutenberg": 8574
+  "gutenberg": 8574,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "kaas-hunting",
@@ -409,7 +421,8 @@
   },
   "month": "2027-02",
   "plan": 17,
-  "gutenberg": 236
+  "gutenberg": 236,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "what-men-live-by",
@@ -433,7 +446,8 @@
   },
   "month": "2027-02",
   "plan": 18,
-  "gutenberg": 6157
+  "gutenberg": 6157,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "fisherman-and-his-soul",
@@ -457,7 +471,8 @@
   },
   "month": "2027-02",
   "plan": 19,
-  "gutenberg": 873
+  "gutenberg": 873,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "to-build-a-fire",
@@ -481,7 +496,8 @@
   },
   "month": "2027-02",
   "plan": 20,
-  "gutenberg": 2429
+  "gutenberg": 2429,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "tell-tale-heart",
@@ -504,7 +520,8 @@
   },
   "month": "2027-03",
   "plan": 21,
-  "gutenberg": 2148
+  "gutenberg": 2148,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "canterville-ghost",
@@ -528,7 +545,8 @@
   },
   "month": "2027-03",
   "plan": 22,
-  "gutenberg": 14522
+  "gutenberg": 14522,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "magic-shop",
@@ -552,7 +570,8 @@
   },
   "month": "2027-03",
   "plan": 23,
-  "gutenberg": 1743
+  "gutenberg": 1743,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "last-leaf",
@@ -576,7 +595,8 @@
   },
   "month": "2027-03",
   "plan": 24,
-  "gutenberg": 3707
+  "gutenberg": 3707,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "ransom-of-red-chief",
@@ -622,7 +642,8 @@
   },
   "month": "2027-04",
   "plan": 26,
-  "gutenberg": 128
+  "gutenberg": 128,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "most-dangerous-game",
@@ -827,7 +848,8 @@
   },
   "month": "2027-06",
   "plan": 35,
-  "gutenberg": 51708
+  "gutenberg": 51708,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "pair-of-silk-stockings",
