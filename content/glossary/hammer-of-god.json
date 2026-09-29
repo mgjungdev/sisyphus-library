@@ -1,0 +1,202 @@
+{
+  "slug": "hammer-of-god",
+  "entries": [
+    {"id": "smithy", "match": "smithy", "para": 1, "headword": "smithy", "pos": "noun", "ipa": "/ˈsmɪθi/", "sense_en": "the workshop where a blacksmith heats and shapes iron", "sense_ko": "대장간", "synonyms": [
+      {"word": "forge", "nuance": "The fire or hearth itself; also used for the whole workshop, a bit more technical.", "example": "The forge glowed red."},
+      {"word": "workshop", "nuance": "General place for making things; says nothing about metal or fire.", "example": "a carpenter’s workshop"}], "modern": null, "tip_ko": null},
+    {"id": "cobbled", "match": "cobbled", "para": 1, "headword": "cobbled", "pos": "adjective", "ipa": "/ˈkɑbəld/", "sense_en": "paved with small rounded stones", "sense_ko": "둥근 자갈돌로 포장된", "synonyms": [
+      {"word": "paved", "nuance": "Covered with any hard surface, such as stone, concrete or brick.", "example": "a paved road"},
+      {"word": "stony", "nuance": "Full of stones, not deliberately laid as a road surface.", "example": "a stony path"}], "modern": null, "tip_ko": null},
+    {"id": "austere", "match": "austere", "para": 1, "headword": "austere", "pos": "adjective", "ipa": "/ɔˈstɪr/", "sense_en": "strict, plain and severe, with no comfort or pleasure", "sense_ko": "엄격하고 금욕적인, 꾸밈없이 소박한", "synonyms": [
+      {"word": "strict", "nuance": "Demanding that rules be followed; about behavior, not lifestyle.", "example": "a strict teacher"},
+      {"word": "stern", "nuance": "Serious and disapproving in manner or face.", "example": "a stern look"},
+      {"word": "plain", "nuance": "Simple and undecorated; neutral, not necessarily religious or severe.", "example": "a plain room"}], "modern": null, "tip_ko": null},
+    {"id": "devout", "match": "devout", "para": 1, "headword": "devout", "pos": "adjective", "ipa": "/dɪˈvaʊt/", "sense_en": "deeply and sincerely religious", "sense_ko": "독실한, 신앙심이 깊은", "synonyms": [
+      {"word": "pious", "nuance": "Also shows religious devotion, but can hint at showy or self-satisfied holiness.", "example": "a pious old lady"},
+      {"word": "religious", "nuance": "Plain, general word; does not say how strong the faith is.", "example": "a religious family"},
+      {"word": "faithful", "nuance": "Loyal to a belief or person, not only in religion.", "example": "a faithful friend"}], "modern": null, "tip_ko": null},
+    {"id": "leaden", "match": "leaden", "para": 1, "headword": "leaden", "pos": "adjective", "ipa": "/ˈlɛdn̩/", "sense_en": "dull grey in colour, like the metal lead", "sense_ko": "납빛의, 우중충한 회색의", "synonyms": [
+      {"word": "grey", "nuance": "Neutral colour word; leaden adds heaviness and gloom.", "example": "a grey sky"},
+      {"word": "dull", "nuance": "Lacking brightness; does not point to a heavy grey colour.", "example": "a dull morning"}], "modern": null, "tip_ko": "lead(납)는 /lɛd/로 발음하고 ‘리드’가 아닙니다."},
+    {"id": "pennon", "match": "pennon", "para": 2, "headword": "pennon", "pos": "noun", "ipa": "/ˈpɛnən/", "sense_en": "a long narrow flag carried on a knight’s lance", "sense_ko": "(기사의 창에 다는) 길쭉한 작은 깃발", "synonyms": [
+      {"word": "banner", "nuance": "A large flag, often with a family or group emblem.", "example": "the royal banner"},
+      {"word": "streamer", "nuance": "Any long narrow strip that flutters, including party decorations.", "example": "paper streamers"}], "modern": null, "tip_ko": null},
+    {"id": "dandy", "match": "dandy", "para": 2, "headword": "dandy", "pos": "noun", "ipa": "/ˈdændi/", "sense_en": "a man who is very proud of his fashionable clothes and looks", "sense_ko": "멋쟁이, 겉멋 든 남자", "synonyms": [
+      {"word": "fop", "nuance": "More mocking: a man silly and vain about clothes.", "example": "a fop in a silk vest"},
+      {"word": "playboy", "nuance": "A rich man who chases pleasure and women; clothes are not the point.", "example": "a rich playboy"}], "modern": "“dandy” → “fashionista” (for a man, a bit ironic)", "tip_ko": null},
+    {"id": "degenerate", "match": "degenerates", "para": 2, "headword": "degenerate", "pos": "noun", "ipa": "/dɪˈdʒɛnərət/", "sense_en": "a person who has sunk to immoral or corrupt habits", "sense_ko": "타락한 사람", "synonyms": [
+      {"word": "reprobate", "nuance": "Someone shameless in sin, often said half-jokingly.", "example": "a lovable old reprobate"},
+      {"word": "libertine", "nuance": "Specifically a man free from moral limits in sex and pleasure.", "example": "a wealthy libertine"}], "modern": null, "tip_ko": "명사·형용사는 /dɪˈdʒɛnərət/, 동사는 /dɪˈdʒɛnəreɪt/로 끝소리가 다릅니다."},
+    {"id": "leonine", "match": "leonine", "para": 2, "headword": "leonine", "pos": "adjective", "ipa": "/ˈliənaɪn/", "sense_en": "like a lion, with a proud look and thick mane-like hair", "sense_ko": "사자 같은, 사자 갈기 같은 머리에 위풍당당한", "synonyms": [
+      {"word": "lionlike", "nuance": "Plain, literal word; leonine is more literary and about looks.", "example": "a lionlike roar"},
+      {"word": "majestic", "nuance": "Grand and impressive, with no link to lions.", "example": "a majestic mountain"}], "modern": null, "tip_ko": null},
+    {"id": "incongruous", "match": "incongruous", "para": 2, "headword": "incongruous", "pos": "adjective", "ipa": "/ɪnˈkɑŋɡruəs/", "sense_en": "strange because it does not fit together with its surroundings", "sense_ko": "어울리지 않는, 조화되지 않는", "synonyms": [
+      {"word": "out of place", "nuance": "Everyday phrase for one thing that does not belong in a setting.", "example": "I felt out of place there."},
+      {"word": "mismatched", "nuance": "Two things that do not go together, e.g. clothes or socks.", "example": "mismatched shoes"},
+      {"word": "inappropriate", "nuance": "Wrong for the occasion or manners, more a moral or social judgment.", "example": "an inappropriate joke"}], "modern": null, "tip_ko": null},
+    {"id": "chronic", "match": "chronic", "para": 2, "headword": "chronic", "pos": "adjective", "ipa": "/ˈkrɑnɪk/", "sense_en": "lasting a long time and hard to get rid of", "sense_ko": "만성적인, 고질적인", "synonyms": [
+      {"word": "habitual", "nuance": "Done again and again by custom or habit, not an illness.", "example": "a habitual liar"},
+      {"word": "persistent", "nuance": "Continuing without stopping, but may not be a long-term condition.", "example": "a persistent cough"},
+      {"word": "constant", "nuance": "Never stopping; no idea of being a lasting problem.", "example": "constant noise"}], "modern": null, "tip_ko": "‘만성적인’의 반대말은 acute(급성의)입니다."},
+    {"id": "curate", "match": "curate", "para": 3, "headword": "curate", "pos": "noun", "ipa": "/ˈkjʊrət/", "sense_en": "a junior Church of England priest who helps the parish priest", "sense_ko": "(영국 국교회의) 보좌 사제", "synonyms": [
+      {"word": "vicar", "nuance": "The priest in charge of a parish; higher than a curate.", "example": "the village vicar"},
+      {"word": "priest", "nuance": "General word for an ordained clergyman of any rank.", "example": "a parish priest"}], "modern": null, "tip_ko": "동사 curate(전시를 기획하다, /ˈkjʊreɪt/)와 끝소리가 다릅니다: 명사는 ‘큐어릿’."},
+    {"id": "indubitable", "match": "indubitable", "para": 3, "headword": "indubitable", "pos": "adjective", "ipa": "/ɪnˈdubɪtəbəl/", "sense_en": "so clearly true that it cannot be doubted", "sense_ko": "의심의 여지가 없는, 확실한", "synonyms": [
+      {"word": "undeniable", "nuance": "True even when people would like to deny it.", "example": "an undeniable fact"},
+      {"word": "certain", "nuance": "Everyday word; less formal and less emphatic.", "example": "It is certain."},
+      {"word": "unquestionable", "nuance": "Beyond any question, often used of quality or authority.", "example": "unquestionable skill"}], "modern": null, "tip_ko": null},
+    {"id": "morbid", "match": "morbid", "para": 3, "headword": "morbid", "pos": "adjective", "ipa": "/ˈmɔrbɪd/", "sense_en": "unhealthily fixed on gloomy or unpleasant things", "sense_ko": "병적인, 음울한 것에 집착하는", "synonyms": [
+      {"word": "gloomy", "nuance": "Sad and dark in mood; not necessarily unhealthy.", "example": "a gloomy mood"},
+      {"word": "macabre", "nuance": "Horrible because it is about death; used of things, not of a general attitude.", "example": "a macabre painting"},
+      {"word": "unhealthy", "nuance": "Plain word; morbid says the mind is drawn to disturbing things.", "example": "an unhealthy interest"}], "modern": null, "tip_ko": null},
+    {"id": "crypt", "match": "crypts", "para": 3, "headword": "crypt", "pos": "noun", "ipa": "/krɪpt/", "sense_en": "a room under a church, often used for burials", "sense_ko": "(교회 지하의) 납골당, 지하 예배실", "synonyms": [
+      {"word": "vault", "nuance": "Any arched underground room, e.g. a bank vault or tomb.", "example": "a family vault"},
+      {"word": "tomb", "nuance": "The grave or burial chamber itself; a crypt can be a whole room in a church.", "example": "an ancient tomb"}], "modern": null, "tip_ko": null},
+    {"id": "belfry", "match": "belfry", "para": 3, "headword": "belfry", "pos": "noun", "ipa": "/ˈbɛlfri/", "sense_en": "the part of a church tower where the bells hang", "sense_ko": "종루, 종탑", "synonyms": [
+      {"word": "bell tower", "nuance": "Everyday term; the whole tower, not just the bell room.", "example": "the old bell tower"},
+      {"word": "steeple", "nuance": "The pointed top of a church tower, not the space for bells.", "example": "a tall white steeple"}], "modern": null, "tip_ko": null},
+    {"id": "blasphemy", "match": "blasphemy", "para": 11, "headword": "blasphemy", "pos": "noun", "ipa": "/ˈblæsfəmi/", "sense_en": "speech that insults God or sacred things", "sense_ko": "신성모독", "synonyms": [
+      {"word": "sacrilege", "nuance": "An act (not only words) that violates something holy.", "example": "It is sacrilege to burn a Bible."},
+      {"word": "profanity", "nuance": "Rude or swearing words, often without religious meaning today.", "example": "a speech full of profanity"}], "modern": null, "tip_ko": "강세는 첫 음절(‘블래스퍼미’)이고, 형용사는 blasphemous입니다."},
+    {"id": "airily", "match": "airily", "para": 16, "headword": "airily", "pos": "adverb", "ipa": "/ˈɛrəli/", "sense_en": "in a light, careless way, as if the matter were not serious", "sense_ko": "가볍고 태평하게, 대수롭지 않은 듯", "synonyms": [
+      {"word": "casually", "nuance": "Relaxed and unworried; neutral in tone.", "example": "He casually shrugged."},
+      {"word": "flippantly", "nuance": "Disrespectful about something that deserves seriousness.", "example": "She answered flippantly."},
+      {"word": "breezily", "nuance": "Cheerful and confident, with a lively, easy manner.", "example": "She breezily waved goodbye."}], "modern": null, "tip_ko": null},
+    {"id": "slouching", "match": "slouching", "para": 18, "headword": "slouch", "pos": "verb", "ipa": "/slaʊtʃ/", "sense_en": "having a lazy, drooping way of standing or walking", "sense_ko": "구부정하고 축 늘어진", "synonyms": [
+      {"word": "stooping", "nuance": "Bending forward, often from age or to reach something.", "example": "a stooping old man"},
+      {"word": "hunched", "nuance": "Shoulders pulled up and forward, from cold, fear or work.", "example": "hunched over a desk"}], "modern": null, "tip_ko": null},
+    {"id": "dissolute", "match": "dissolute", "para": 19, "headword": "dissolute", "pos": "adjective", "ipa": "/ˈdɪsəlut/", "sense_en": "living a wild life of drink and pleasure with no moral limits", "sense_ko": "방탕한, 타락한", "synonyms": [
+      {"word": "debauched", "nuance": "Stronger: damaged by heavy drinking and sex.", "example": "a debauched party"},
+      {"word": "immoral", "nuance": "Any wrong behavior; dissolute is about wasting oneself on pleasure.", "example": "an immoral act"},
+      {"word": "wild", "nuance": "Everyday and mild; can even sound fun.", "example": "a wild youth"}], "modern": null, "tip_ko": null},
+    {"id": "avuncular", "match": "avuncular", "para": 19, "headword": "avuncular", "pos": "adjective", "ipa": "/əˈvʌŋkjələr/", "sense_en": "like a friendly, playful uncle", "sense_ko": "삼촌 같은, 친근하고 너그러운", "synonyms": [
+      {"word": "genial", "nuance": "Warm and cheerful with anyone; not tied to an uncle’s role.", "example": "a genial host"},
+      {"word": "fatherly", "nuance": "Protective and caring like a father, more serious than avuncular.", "example": "fatherly advice"}], "modern": null, "tip_ko": null},
+    {"id": "ascetic", "match": "ascetic", "para": 20, "headword": "ascetic", "pos": "noun", "ipa": "/əˈsɛtɪk/", "sense_en": "a person who lives very simply and denies himself pleasures for religion", "sense_ko": "금욕주의자, 수도자", "synonyms": [
+      {"word": "hermit", "nuance": "Lives alone away from society; asceticism is about self-denial, not loneliness.", "example": "a hermit in the hills"},
+      {"word": "monk", "nuance": "Member of a religious community with vows; not always extreme.", "example": "a Buddhist monk"}], "modern": null, "tip_ko": null},
+    {"id": "livid", "match": "livid", "para": 20, "headword": "livid", "pos": "adjective", "ipa": "/ˈlɪvɪd/", "sense_en": "of a bluish-grey, deathly pale colour", "sense_ko": "납빛의, 창백한(푸르죽죽한)", "synonyms": [
+      {"word": "pallid", "nuance": "Pale, as from illness, without the blue-grey tint.", "example": "a pallid face"},
+      {"word": "ashen", "nuance": "Grey-white, like ashes, often from shock.", "example": "ashen with fear"}], "modern": "In modern speech “livid” usually means “very angry”: “She was livid.”", "tip_ko": "요즘 영어에서는 주로 ‘몹시 화난’의 뜻으로 쓰입니다."},
+    {"id": "promptitude", "match": "promptitude", "para": 21, "headword": "promptitude", "pos": "noun", "ipa": "/ˈprɑmptətud/", "sense_en": "quickness in acting; readiness to act at once", "sense_ko": "신속함, 민첩함", "synonyms": [
+      {"word": "promptness", "nuance": "Everyday word for being on time or quick.", "example": "thanks for your promptness"},
+      {"word": "haste", "nuance": "Speed that may be careless or hurried.", "example": "in great haste"}], "modern": "“promptitude” → “promptness” / “quickly”", "tip_ko": null},
+    {"id": "hoarse", "match": "hoarse", "para": 24, "headword": "hoarse", "pos": "adjective", "ipa": "/hɔrs/", "sense_en": "rough and low in voice, as when the throat is sore or upset", "sense_ko": "쉰 목소리의", "synonyms": [
+      {"word": "husky", "nuance": "Low and rough, often in a pleasant or attractive way.", "example": "a husky singer’s voice"},
+      {"word": "croaky", "nuance": "Informal; a frog-like voice from a cold.", "example": "a croaky voice"}], "modern": null, "tip_ko": "horse(말)와 발음이 같습니다."},
+    {"id": "done-for", "match": "done for", "para": 26, "headword": "done for", "pos": "idiom", "ipa": null, "sense_en": "dead, ruined or finished", "sense_ko": "죽은, 끝장난", "synonyms": [
+      {"word": "finished", "nuance": "Neutral; ends an activity or a career, not necessarily a life.", "example": "His career is finished."},
+      {"word": "doomed", "nuance": "Certain to fail or die soon; about the future, not the present.", "example": "a doomed plan"},
+      {"word": "dead and buried", "nuance": "Completely over, said of plans or of a person.", "example": "The idea is dead and buried."}], "modern": null, "tip_ko": "여기서는 ‘~을 위해’가 아니라 ‘끝장난’이라는 관용구입니다."},
+    {"id": "corroborate", "match": "corroborate", "para": 31, "headword": "corroborate", "pos": "verb", "ipa": "/kəˈrɑbəreɪt/", "sense_en": "to support a statement with further evidence", "sense_ko": "(증거로) 뒷받침하다, 확증하다", "synonyms": [
+      {"word": "confirm", "nuance": "General: say something is true; needs no separate evidence.", "example": "Please confirm the date."},
+      {"word": "back up", "nuance": "Informal; support someone’s story or a claim.", "example": "My friend backed up my story."},
+      {"word": "verify", "nuance": "Check and prove that something is true, usually by testing.", "example": "verify the facts"}], "modern": null, "tip_ko": null},
+    {"id": "prejudge", "match": "prejudge", "para": 31, "headword": "prejudge", "pos": "verb", "ipa": "/priˈdʒʌdʒ/", "sense_en": "to form a judgment about something before knowing all the facts", "sense_ko": "(사실을 알기 전에) 미리 판단하다", "synonyms": [
+      {"word": "presume", "nuance": "Assume something is true without proof; not always negative.", "example": "I presume you are tired."},
+      {"word": "jump to conclusions", "nuance": "Informal: decide too fast from few facts.", "example": "Don’t jump to conclusions."}], "modern": null, "tip_ko": null},
+    {"id": "acquit", "match": "acquitted", "para": 34, "headword": "acquit", "pos": "verb", "ipa": "/əˈkwɪt/", "sense_en": "to declare in court that someone is not guilty", "sense_ko": "무죄를 선고하다", "synonyms": [
+      {"word": "clear", "nuance": "Everyday: remove blame, in court or otherwise.", "example": "The tests cleared him."},
+      {"word": "exonerate", "nuance": "Show or say someone was not to blame, often after evidence appears.", "example": "DNA evidence exonerated him."},
+      {"word": "pardon", "nuance": "Officially forgive a person found guilty; unlike acquit, it assumes guilt.", "example": "The king pardoned him."}], "modern": null, "tip_ko": "acquit은 ‘무죄’, pardon은 유죄이지만 ‘사면’입니다."},
+    {"id": "obstinately", "match": "obstinately", "para": 35, "headword": "obstinately", "pos": "adverb", "ipa": "/ˈɑbstɪnətli/", "sense_en": "in a stubborn way, refusing to change one’s mind", "sense_ko": "고집스럽게", "synonyms": [
+      {"word": "stubbornly", "nuance": "Everyday word; can be mild or even admiring.", "example": "She stubbornly kept trying."},
+      {"word": "obdurately", "nuance": "Harder and colder: unmoved by pity or argument.", "example": "He obdurately refused."},
+      {"word": "mulishly", "nuance": "Like a mule: silly, sulky stubbornness.", "example": "He mulishly stayed put."}], "modern": null, "tip_ko": null},
+    {"id": "sinister", "match": "sinister", "para": 39, "headword": "sinister", "pos": "adjective", "ipa": "/ˈsɪnɪstər/", "sense_en": "seeming evil or threatening", "sense_ko": "불길한, 사악해 보이는", "synonyms": [
+      {"word": "menacing", "nuance": "Openly threatening; suggests danger coming right now.", "example": "a menacing growl"},
+      {"word": "ominous", "nuance": "Warning of bad things to come; about signs, not people.", "example": "ominous clouds"},
+      {"word": "evil", "nuance": "Actually bad; sinister only seems bad or hides something.", "example": "an evil plan"}], "modern": null, "tip_ko": null},
+    {"id": "officious", "match": "officious", "para": 48, "headword": "officious", "pos": "adjective", "ipa": "/əˈfɪʃəs/", "sense_en": "eager to give orders or advice nobody asked for", "sense_ko": "쓸데없이 참견하는, 나서기 좋아하는", "synonyms": [
+      {"word": "meddlesome", "nuance": "Interfering in other people’s private business.", "example": "a meddlesome neighbour"},
+      {"word": "bossy", "nuance": "Informal: likes ordering people around.", "example": "a bossy older sister"},
+      {"word": "official", "nuance": "Held by authority; a neutral word that looks similar.", "example": "an official letter"}], "modern": null, "tip_ko": "official(공식적인)과 혼동하지 마세요. officious는 부정적입니다."},
+    {"id": "wont-wash", "match": "won’t wash", "para": 49, "headword": "won’t wash", "pos": "idiom", "ipa": null, "sense_en": "will not be believed or accepted as an excuse", "sense_ko": "(그 수법은) 통하지 않는다", "synonyms": [
+      {"word": "won’t fly", "nuance": "Informal US: an idea or excuse that will not be accepted.", "example": "That excuse won’t fly."},
+      {"word": "doesn’t hold water", "nuance": "Says the argument has logical holes.", "example": "The story doesn’t hold water."}], "modern": null, "tip_ko": "‘씻다’가 아니라 ‘(변명이) 먹히다’라는 뜻입니다."},
+    {"id": "august", "match": "august", "para": 53, "headword": "august", "pos": "adjective", "ipa": "/ɔˈɡʌst/", "sense_en": "grand and impressive, commanding respect", "sense_ko": "위엄 있는, 존엄한", "synonyms": [
+      {"word": "majestic", "nuance": "Beautiful and grand in a powerful way, often of scenery.", "example": "a majestic view"},
+      {"word": "dignified", "nuance": "Calm and self-respecting; less grand.", "example": "a dignified reply"},
+      {"word": "noble", "nuance": "High in character or birth; moral or class sense.", "example": "a noble family"}], "modern": null, "tip_ko": "달 이름 August(/ˈɔɡəst/)와 강세가 다릅니다: 형용사는 뒤에 강세."},
+    {"id": "infidel", "match": "infidels", "para": 54, "headword": "infidel", "pos": "noun", "ipa": "/ˈɪnfɪdəl/", "sense_en": "an unbeliever; someone who rejects the speaker’s religion", "sense_ko": "불신자, 이교도", "synonyms": [
+      {"word": "unbeliever", "nuance": "Neutral description of someone without faith.", "example": "a polite unbeliever"},
+      {"word": "heathen", "nuance": "Old word for non-Christians; often scornful.", "example": "the heathen tribes"},
+      {"word": "atheist", "nuance": "Someone who believes there is no God; a chosen position, not an insult.", "example": "a committed atheist"}], "modern": "“infidel” → “non-believer”", "tip_ko": null},
+    {"id": "alibi", "match": "alibi", "para": 61, "headword": "alibi", "pos": "noun", "ipa": "/ˈæləbaɪ/", "sense_en": "proof that you were somewhere else when a crime happened", "sense_ko": "알리바이, 현장 부재 증명", "synonyms": [
+      {"word": "excuse", "nuance": "Any reason given to avoid blame; not proof of being elsewhere.", "example": "a poor excuse"},
+      {"word": "cover story", "nuance": "A made-up account to hide the truth.", "example": "He invented a cover story."}], "modern": null, "tip_ko": "한국어 ‘알리바이’와 달리 영어에서는 넓게 ‘핑계’로도 쓰입니다."},
+    {"id": "ponderous", "match": "ponderous", "para": 61, "headword": "ponderous", "pos": "adjective", "ipa": "/ˈpɑndərəs/", "sense_en": "slow, heavy and serious in manner", "sense_ko": "묵직하고 느릿한, 진지한", "synonyms": [
+      {"word": "heavy", "nuance": "Plain word for weight or mood; less about slowness.", "example": "a heavy silence"},
+      {"word": "laboured", "nuance": "Done with obvious effort; stiff rather than natural.", "example": "a laboured explanation"},
+      {"word": "solemn", "nuance": "Serious and dignified, without the dull, plodding sense.", "example": "a solemn voice"}], "modern": null, "tip_ko": null},
+    {"id": "heathen", "match": "heathen", "para": 61, "headword": "heathen", "pos": "noun", "ipa": "/ˈhiðən/", "sense_en": "a person with no belief in the speaker’s (Christian) religion", "sense_ko": "이교도", "synonyms": [
+      {"word": "pagan", "nuance": "Follower of an old nature or many-gods religion; more neutral, historical.", "example": "a pagan festival"},
+      {"word": "infidel", "nuance": "Unbeliever seen from within a specific faith; also strongly hostile.", "example": "a crusader’s word for an infidel"}], "modern": null, "tip_ko": null},
+    {"id": "turn-a-hair", "match": "turn a hair", "para": 69, "headword": "turn a hair", "pos": "idiom", "ipa": null, "sense_en": "to show any sign of fear or surprise", "sense_ko": "눈 하나 깜짝하다(주로 부정문: 눈 하나 깜짝 안 하다)", "synonyms": [
+      {"word": "bat an eye", "nuance": "US version of the same idea: show no reaction.", "example": "She didn’t bat an eye."},
+      {"word": "flinch", "nuance": "A quick physical jerk of fear or pain.", "example": "He didn’t flinch."}], "modern": "“without turning a hair” → “without batting an eye” (US)", "tip_ko": "보통 never/without과 함께 ‘전혀 동요하지 않다’는 뜻으로 씁니다."},
+    {"id": "febrile", "match": "febrile", "para": 79, "headword": "febrile", "pos": "adjective", "ipa": "/ˈfɛbraɪl/", "sense_en": "nervous, restless and overexcited, as if feverish", "sense_ko": "열에 들뜬 듯한, 신경질적으로 흥분한", "synonyms": [
+      {"word": "feverish", "nuance": "Everyday word; can mean a real fever or fierce excitement.", "example": "feverish activity"},
+      {"word": "frantic", "nuance": "Wild with worry or hurry.", "example": "a frantic search"},
+      {"word": "restless", "nuance": "Unable to stay still; calmer than febrile.", "example": "a restless night"}], "modern": null, "tip_ko": null},
+    {"id": "gallows", "match": "gallows", "para": 80, "headword": "gallows", "pos": "noun", "ipa": "/ˈɡæloʊz/", "sense_en": "a wooden frame used to hang criminals; here, death by hanging", "sense_ko": "교수대", "synonyms": [
+      {"word": "noose", "nuance": "The loop of rope itself, not the frame.", "example": "a hangman’s noose"},
+      {"word": "scaffold", "nuance": "The raised platform for executions; also used for building sites.", "example": "walk to the scaffold"}], "modern": null, "tip_ko": "복수형 모양이지만 단수 취급하는 경우가 많습니다."},
+    {"id": "denounce", "match": "denounce", "para": 81, "headword": "denounce", "pos": "verb", "ipa": "/dɪˈnaʊns/", "sense_en": "to publicly accuse someone of a crime or wrong", "sense_ko": "고발하다, 공개적으로 비난하다", "synonyms": [
+      {"word": "accuse", "nuance": "Say that someone did wrong; need not be public or formal.", "example": "She accused him of lying."},
+      {"word": "condemn", "nuance": "Strongly say something is wrong, often in moral terms.", "example": "Leaders condemned the attack."},
+      {"word": "report", "nuance": "Tell the authorities; neutral and without anger.", "example": "report a crime to the police"}], "modern": null, "tip_ko": null},
+    {"id": "paroxysm", "match": "paroxysm", "para": 84, "headword": "paroxysm", "pos": "noun", "ipa": "/ˈpærəksɪzəm/", "sense_en": "a sudden violent fit of anger, madness or pain", "sense_ko": "(감정·병의) 발작, 격발", "synonyms": [
+      {"word": "fit", "nuance": "Everyday, short word for a sudden attack or outburst.", "example": "a fit of rage"},
+      {"word": "outburst", "nuance": "A sudden release of strong feeling in words or action.", "example": "an angry outburst"},
+      {"word": "seizure", "nuance": "Medical: a sudden attack, e.g. of epilepsy.", "example": "an epileptic seizure"}], "modern": null, "tip_ko": null},
+    {"id": "propound", "match": "propounded", "para": 86, "headword": "propound", "pos": "verb", "ipa": "/prəˈpaʊnd/", "sense_en": "to put forward an idea or theory for others to consider", "sense_ko": "(이론·설을) 제시하다, 제안하다", "synonyms": [
+      {"word": "propose", "nuance": "More general: suggest a plan, idea or marriage.", "example": "propose a solution"},
+      {"word": "put forward", "nuance": "Everyday phrasal form of propound.", "example": "put forward a theory"},
+      {"word": "advance", "nuance": "Offer an argument or idea in a formal, careful way.", "example": "advance a theory"}], "modern": "“propound a theory” → “put forward a theory”", "tip_ko": null},
+    {"id": "holds-water", "match": "holds water", "para": 86, "headword": "hold water", "pos": "idiom", "ipa": null, "sense_en": "to be logical and stand up to a test or challenge", "sense_ko": "(이론·주장이) 이치에 맞다, 타당하다", "synonyms": [
+      {"word": "stands up", "nuance": "Survives checking; often used in the question ‘Does it stand up?’", "example": "The story doesn’t stand up."},
+      {"word": "makes sense", "nuance": "Everyday and weaker: seems reasonable.", "example": "That makes sense."},
+      {"word": "is sound", "nuance": "Formal: an argument built without mistakes.", "example": "a sound argument"}], "modern": null, "tip_ko": "보통 부정문·의문문에서 ‘(주장이) 말이 안 된다’는 뜻으로 씁니다."},
+    {"id": "peevishly", "match": "peevishly", "para": 87, "headword": "peevishly", "pos": "adverb", "ipa": "/ˈpivɪʃli/", "sense_en": "in a bad-tempered, complaining way over small things", "sense_ko": "짜증스럽게, 투덜대며", "synonyms": [
+      {"word": "irritably", "nuance": "Easily annoyed; more general and not always complaining.", "example": "He replied irritably."},
+      {"word": "petulantly", "nuance": "Childishly sulky, like a spoiled person.", "example": "She petulantly folded her arms."},
+      {"word": "grumpily", "nuance": "Informal: in a low, bad mood, often from tiredness.", "example": "He grumpily got up."}], "modern": null, "tip_ko": null},
+    {"id": "snigger", "match": "snigger", "para": 97, "headword": "snigger", "pos": "verb", "ipa": "/ˈsnɪɡər/", "sense_en": "to laugh in a quiet, mean way at someone", "sense_ko": "킥킥거리며 비웃다", "synonyms": [
+      {"word": "giggle", "nuance": "Silly, light laughter, often nervous or innocent.", "example": "The girls giggled."},
+      {"word": "chuckle", "nuance": "Quiet, warm laugh to oneself.", "example": "He chuckled at the joke."},
+      {"word": "sneer", "nuance": "Open scorn shown by the face or words, not by laughing.", "example": "She sneered at his clothes."}], "modern": null, "tip_ko": null},
+    {"id": "smite", "match": "smote", "para": 97, "headword": "smite", "pos": "verb", "ipa": "/smaɪt/", "sense_en": "(past tense smote) to strike or destroy with great force, especially as divine punishment", "sense_ko": "(smote는 smite의 과거형) 강타하다, (신이) 벌하다", "synonyms": [
+      {"word": "strike", "nuance": "Everyday word for hit; smite is Biblical or literary.", "example": "Lightning struck the tree."},
+      {"word": "strike down", "nuance": "Kill or destroy with a sudden blow, often by fate or God.", "example": "struck down by illness"}], "modern": "“smote” → “struck”", "tip_ko": "smite–smote–smitten으로 변합니다."},
+    {"id": "reticent", "match": "reticent", "para": 105, "headword": "reticent", "pos": "adjective", "ipa": "/ˈrɛtəsənt/", "sense_en": "keeping one’s thoughts and knowledge to oneself", "sense_ko": "말을 아끼는, 과묵한", "synonyms": [
+      {"word": "reserved", "nuance": "Shy and unshowy about feelings, mainly a personality trait.", "example": "a reserved man"},
+      {"word": "secretive", "nuance": "Hiding things on purpose, often suspiciously.", "example": "a secretive child"},
+      {"word": "tight-lipped", "nuance": "Refusing to say anything about a topic.", "example": "The police stayed tight-lipped."}], "modern": null, "tip_ko": "reluctant(마지못한)와 헷갈리기 쉽습니다."},
+    {"id": "illimitable", "match": "illimitable", "para": 114, "headword": "illimitable", "pos": "adjective", "ipa": "/ɪˈlɪmɪtəbəl/", "sense_en": "so vast that no limit can be seen", "sense_ko": "끝없는, 무한한", "synonyms": [
+      {"word": "boundless", "nuance": "Common, often positive word for having no limit.", "example": "boundless energy"},
+      {"word": "limitless", "nuance": "Plain and common; no upper limit.", "example": "limitless possibilities"},
+      {"word": "infinite", "nuance": "Strictly without end; also mathematical.", "example": "infinite space"}], "modern": "“illimitable” → “limitless”", "tip_ko": null},
+    {"id": "topsy-turvydom", "match": "topsy-turvydom", "para": 117, "headword": "topsy-turvydom", "pos": "noun", "ipa": "/ˌtɑpsiˈtɜrvidəm/", "sense_en": "a state where everything is upside down and confused", "sense_ko": "뒤죽박죽, 거꾸로 뒤집힌 상태", "synonyms": [
+      {"word": "chaos", "nuance": "Total disorder with no sense; topsy-turvy is reversal.", "example": "The room was in chaos."},
+      {"word": "upheaval", "nuance": "A big sudden change or disturbance.", "example": "political upheaval"}], "modern": null, "tip_ko": "topsy-turvy(거꾸로 된)에서 나온 말입니다."},
+    {"id": "cataract", "match": "cataract", "para": 117, "headword": "cataract", "pos": "noun", "ipa": "/ˈkætərækt/", "sense_en": "a large waterfall or violent rush of water", "sense_ko": "큰 폭포, 거센 물줄기", "synonyms": [
+      {"word": "waterfall", "nuance": "Everyday word; cataract is large, powerful and poetic.", "example": "a tall waterfall"},
+      {"word": "torrent", "nuance": "A fast, strong stream of water, or of words or feelings.", "example": "a torrent of rain"}], "modern": null, "tip_ko": "의학에서는 ‘백내장’의 뜻이니, 문맥으로 구별하세요."},
+    {"id": "imperious", "match": "imperious", "para": 122, "headword": "imperious", "pos": "adjective", "ipa": "/ɪmˈpɪriəs/", "sense_en": "arrogantly giving orders, as if one ruled others", "sense_ko": "오만하게 명령하는, 위압적인", "synonyms": [
+      {"word": "domineering", "nuance": "Always trying to control other people.", "example": "a domineering boss"},
+      {"word": "overbearing", "nuance": "Forcing one’s views on others in a heavy, annoying way.", "example": "an overbearing parent"},
+      {"word": "imperial", "nuance": "Belonging to an emperor or empire; a different, neutral meaning.", "example": "the imperial palace"}], "modern": null, "tip_ko": "imperial(제국의)과 다른 단어입니다."},
+    {"id": "strutting", "match": "strutting", "para": 127, "headword": "strut", "pos": "verb", "ipa": "/strʌt/", "sense_en": "walking in a proud, showy way, as if important", "sense_ko": "뽐내며 걷다, 으스대며 활보하다", "synonyms": [
+      {"word": "swagger", "nuance": "Bold, rolling walk that shows confidence or insolence.", "example": "He swaggered into the room."},
+      {"word": "parade", "nuance": "Walk to be seen, or show something off in public.", "example": "parading in new clothes"},
+      {"word": "stride", "nuance": "Long, purposeful steps; not necessarily proud.", "example": "He strode across the yard."}], "modern": null, "tip_ko": null},
+    {"id": "recoil", "match": "recoiling", "para": 134, "headword": "recoil", "pos": "verb", "ipa": "/rɪˈkɔɪl/", "sense_en": "to jump back or turn away suddenly in fear or disgust", "sense_ko": "움찔 뒤로 물러서다, 뒷걸음질 치다", "synonyms": [
+      {"word": "flinch", "nuance": "A small, quick body movement from pain or fear.", "example": "She flinched at the noise."},
+      {"word": "shrink", "nuance": "Draw back slowly out of fear or shyness.", "example": "shrink from danger"},
+      {"word": "cringe", "nuance": "Pull back from fear or embarrassment; often humble.", "example": "He cringed at the memory."}], "modern": null, "tip_ko": null},
+    {"id": "imbecile", "match": "imbecile", "para": 136, "headword": "imbecile", "pos": "noun", "ipa": "/ˈɪmbəsəl/", "sense_en": "a person of very low intelligence (now an offensive word)", "sense_ko": "저능아, 바보 (현재는 모욕적인 말)", "synonyms": [
+      {"word": "idiot", "nuance": "Common insult for a foolish person; now used casually.", "example": "Don’t be an idiot."},
+      {"word": "fool", "nuance": "Someone who acts unwisely; milder and not about mental ability.", "example": "I was a fool to trust him."}], "modern": "“imbecile” → “person with an intellectual disability” (medical, avoid as an insult)", "tip_ko": null}
+  ]
+}

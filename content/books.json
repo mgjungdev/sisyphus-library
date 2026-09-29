@@ -1396,7 +1396,9 @@
    "accent": "#c9a24a"
   },
   "month": "2027-12",
-  "plan": 57
+  "plan": 57,
+  "gutenberg": 2148,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "upper-berth",
@@ -1418,7 +1420,9 @@
    "accent": "#d6cfb8"
   },
   "month": "2027-12",
-  "plan": 58
+  "plan": 58,
+  "gutenberg": 22246,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "door-in-the-wall",
@@ -1440,7 +1444,9 @@
    "accent": "#e0cf94"
   },
   "month": "2027-12",
-  "plan": 59
+  "plan": 59,
+  "gutenberg": 456,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "tobermory",
@@ -1462,7 +1468,9 @@
    "accent": "#f3e2b8"
   },
   "month": "2027-12",
-  "plan": 60
+  "plan": 60,
+  "gutenberg": 3688,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "great-stone-face",
@@ -1485,7 +1493,9 @@
    "accent": "#e2cfa3"
   },
   "month": "2028-01",
-  "plan": 61
+  "plan": 61,
+  "gutenberg": 513,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "bride-comes-to-yellow-sky",
@@ -1508,7 +1518,9 @@
    "accent": "#d8c48a"
   },
   "month": "2028-01",
-  "plan": 62
+  "plan": 62,
+  "gutenberg": 45524,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "blue-carbuncle",
@@ -1531,7 +1543,9 @@
    "accent": "#d9c08a"
   },
   "month": "2028-01",
-  "plan": 63
+  "plan": 63,
+  "gutenberg": 1661,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "yellow-wallpaper",
@@ -1553,7 +1567,9 @@
    "accent": "#c9a24a"
   },
   "month": "2028-01",
-  "plan": 64
+  "plan": 64,
+  "gutenberg": 1952,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "rip-van-winkle",
@@ -1575,7 +1591,9 @@
    "accent": "#e0cf94"
   },
   "month": "2028-02",
-  "plan": 65
+  "plan": 65,
+  "gutenberg": 2048,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "blue-cross",
@@ -1597,7 +1615,9 @@
    "accent": "#d9c08a"
   },
   "month": "2028-02",
-  "plan": 66
+  "plan": 66,
+  "gutenberg": 204,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "hammer-of-god",
@@ -1619,7 +1639,9 @@
    "accent": "#d9c08a"
   },
   "month": "2028-02",
-  "plan": 67
+  "plan": 67,
+  "gutenberg": 204,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "jury-of-her-peers",
@@ -1641,7 +1663,9 @@
    "accent": "#d9c08a"
   },
   "month": "2028-02",
-  "plan": 68
+  "plan": 68,
+  "gutenberg": 20872,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "man-who-would-be-king",
