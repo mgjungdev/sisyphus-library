@@ -23,6 +23,7 @@ body[data-view="reader"] .topbar { display: none; }
 .ereader.phone .folio { bottom: 8px; }
 
 .clip { position: absolute; overflow: hidden; }
+.clip-end { position: absolute; top: 0; width: 1px; height: 1px; }
 .flow {
   column-fill: auto;
   font-family: var(--font-read); font-size: var(--fs); line-height: var(--lh);
@@ -30,8 +31,6 @@ body[data-view="reader"] .topbar { display: none; }
   font-kerning: normal; font-variant-ligatures: common-ligatures;
   orphans: 2; widows: 2;
 }
-/* A pre-built layer makes slides smoother on touch screens, but with a mouse every hover would re-layerize the whole chapter. */
-@media (hover: none) { .flow { will-change: transform; } }
 .flow p { margin: 0; text-indent: 1.5em; }
 .flow p[data-p="1"] { text-indent: 0; }
 .flow p[data-p="1"]::first-line { font-variant: small-caps; letter-spacing: .03em; }

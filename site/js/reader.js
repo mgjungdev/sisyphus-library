@@ -75,6 +75,7 @@ export function renderReader(root, book, startPara) {
       <div class="hover-mark" aria-hidden="true"><i></i><i></i></div>
       <div class="clip">
         <div class="flow"></div>
+        <i class="clip-end"></i>
       </div>
       <button class="turn prev" aria-label="Previous page">${ICON.prev}</button>
       <button class="turn next" aria-label="Next page">${ICON.next}</button>
@@ -169,6 +170,7 @@ export function renderReader(root, book, startPara) {
   function layout(anchorPara, atEnd = false) {
     if (anchorPara && segOf(anchorPara) !== si) renderSeg(segOf(anchorPara));
     else if (si < 0) renderSeg(0);
+    stopSlide();
     L = measure();
     R.classList.toggle('is-spread', L.spread);
     R.classList.toggle('phone', L.phone);
@@ -184,6 +186,8 @@ export function renderReader(root, book, startPara) {
     Object.assign(flow.style, { transform: 'none', width: clip.style.width, height: L.textH + 'px', columnCount: L.per, columnGap: 2 * L.m + 'px' });
     L.pages = pageOf(flow.querySelector('.flow-end')) + 1;
     if (L.pages % L.per) L.pages += L.per - (L.pages % L.per);
+    // The clip can only scroll as far as its content: stretch it to the padded last spread.
+    R.querySelector('.clip-end').style.left = L.pages * L.pageW - 2 * L.m - 1 + 'px';
     mapPages();
     scrub.max = String(L.pages / L.per);
     const anchorEl = anchorPara ? flow.querySelector(`[data-p="${anchorPara}"]`) : null;
@@ -215,10 +219,12 @@ export function renderReader(root, book, startPara) {
   }
   const firstParaOnPage = pg => pageFirst[pg] ?? segs[si].end;
 
-  function show(pg) {
+  // Pages move by scrolling the clip, never by transforming the flow: a transform moves every word span,
+  // and with accessibility on (common on Windows) the browser reports each one's new place, freezing for seconds.
+  function show(pg, scroll = true) {
     page = Math.max(0, Math.min(pg, L.pages - L.per));
     markHover(null);
-    flow.style.transform = `translateX(${-page * L.pageW}px)`;
+    if (scroll) { stopSlide(); clip.scrollLeft = page * L.pageW; }
     sheets[0].querySelector('.folio').textContent = page ? page + 1 : '';
     sheets[1].querySelector('.folio').textContent = L.spread && page + 1 < L.pages ? page + 2 : '';
     scrub.value = String(page / L.per + 1);
@@ -236,31 +242,53 @@ export function renderReader(root, book, startPara) {
   }
 
   /* ---------- page turning ---------- */
-  async function turn(dir) {
+  // A turn during a slide retargets it from where it is, so quick presses each count.
+  function turn(dir) {
     if (!L) return;
-    if (busy) return;
     const target = page + dir * L.per;
     if (target < 0 || target > L.pages - L.per) {
       const next = si + dir;
       if (next < 0 || next >= segs.length) return;
       closeCard(true);
+      stopSlide();
       renderSeg(next);
       layout(null, dir < 0);
-      if (!reduceMotion()) clip.animate([{ opacity: 0, transform: `translateX(${dir * 24}px)` }, { opacity: 1, transform: 'none' }], { duration: 320, easing: 'ease-out' });
+      if (!reduceMotion()) clip.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 260, easing: 'ease-out' });
       return;
     }
     closeCard(true);
     if (reduceMotion() || o.turn === 'none') return show(target);
-    busy = true;
-    try { await slide(target); } finally { busy = false; }
+    slide(target);
   }
 
+  let raf = 0;
   function slide(target) {
-    const from = -page * L.pageW, to = -target * L.pageW;
-    show(target);
-    return flow.animate([{ transform: `translateX(${from}px)` }, { transform: `translateX(${to}px)` }],
-      { duration: 380, easing: 'cubic-bezier(.3,.7,.2,1)' }).finished.catch(() => {});
+    cancelAnimationFrame(raf);
+    const from = clip.scrollLeft;
+    show(target, false);
+    const to = page * L.pageW, t0 = performance.now();
+    busy = true;
+    const step = now => {
+      const t = Math.min(1, (now - t0) / 380);
+      clip.scrollLeft = from + (to - from) * (1 - (1 - t) ** 3);
+      if (t < 1) raf = requestAnimationFrame(step); else { raf = 0; busy = false; }
+    };
+    raf = requestAnimationFrame(step);
   }
+  function stopSlide() {
+    if (!raf) return;
+    cancelAnimationFrame(raf);
+    raf = 0; busy = false;
+    clip.scrollLeft = page * L.pageW;
+  }
+
+  // Focus (Tab onto a word) or find-in-page can scroll the clip itself: follow it to that page.
+  clip.addEventListener('scroll', () => {
+    if (busy || !L || Math.abs(clip.scrollLeft - page * L.pageW) < 2) return;
+    const a = document.activeElement;
+    const pg = flow.contains(a) ? pageOf(a) : Math.round(clip.scrollLeft / L.pageW);
+    show(pg - (pg % L.per));
+  }, { passive: true });
 
   /* ---------- chrome ---------- */
   let chromeShown = true;
