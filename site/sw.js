@@ -1,5 +1,5 @@
-// Offline support: app shell and book data served from cache and refreshed in the background, dictionary lookups cache-first.
-const VERSION = 'v4';
+// Offline support: app shell and book data network-first (revalidated past the HTTP cache), dictionary lookups cache-first.
+const VERSION = 'v5';
 const SHELL = `shell-${VERSION}`, DATA = `data-${VERSION}`, LOOKUP = 'lookup-v1', FONTS = 'fonts-v1';
 const SHELL_FILES = [
   './', 'index.html', 'manifest.webmanifest', 'img/icon.svg',
@@ -8,7 +8,7 @@ const SHELL_FILES = [
 ];
 
 self.addEventListener('install', e => {
-  e.waitUntil(caches.open(SHELL).then(c => c.addAll(SHELL_FILES)).then(() => self.skipWaiting()));
+  e.waitUntil(caches.open(SHELL).then(c => c.addAll(SHELL_FILES.map(u => new Request(u, { cache: 'reload' })))).then(() => self.skipWaiting()));
 });
 self.addEventListener('activate', e => {
   const keep = new Set([SHELL, DATA, LOOKUP, FONTS]);
@@ -22,14 +22,18 @@ async function cacheFirst(req, name) {
   if (res.ok || res.type === 'opaque') (await caches.open(name)).put(req, res.clone());
   return res;
 }
-// Answer from the cache at once and update it for next time; wait on the network only on a miss.
-async function staleWhileRevalidate(e, name) {
-  const req = e.request;
-  const cache = await caches.open(name);
-  const hit = await cache.match(req);
-  const fresh = fetch(req).then(res => { if (res.ok) return cache.put(req, res.clone()).then(() => res); return res; });
-  if (hit) { e.waitUntil(fresh.catch(() => {})); return hit; }
-  return fresh;
+// Ask the server whether the copy is still current (a cheap 304 when it is), so a deploy shows on the next load;
+// fall back to the cache offline.
+async function networkFirst(req, name) {
+  try {
+    const res = await fetch(req, { cache: 'no-cache' });
+    if (res.ok) (await caches.open(name)).put(req, res.clone());
+    return res;
+  } catch {
+    const hit = await caches.match(req);
+    if (hit) return hit;
+    throw new Error('offline');
+  }
 }
 
 self.addEventListener('fetch', e => {
@@ -40,6 +44,6 @@ self.addEventListener('fetch', e => {
   if (url.hostname === 'api.datamuse.com' || url.hostname === 'en.wiktionary.org') return e.respondWith(cacheFirst(req, LOOKUP));
   if (url.hostname.endsWith('fonts.googleapis.com') || url.hostname.endsWith('fonts.gstatic.com')) return e.respondWith(cacheFirst(req, FONTS));
   if (url.origin !== location.origin) return;
-  if (url.pathname.includes('/data/')) return e.respondWith(staleWhileRevalidate(e, DATA));
-  e.respondWith(staleWhileRevalidate(e, SHELL));
+  if (url.pathname.includes('/data/')) return e.respondWith(networkFirst(req, DATA));
+  e.respondWith(networkFirst(req, SHELL));
 });

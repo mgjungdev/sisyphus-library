@@ -69,5 +69,10 @@ updateBadge();
 route();
 
 if ('serviceWorker' in navigator && location.protocol === 'https:') {
+  // A new worker replacing an old one means a deploy: reload once so the page runs the new code and data.
+  if (navigator.serviceWorker.controller) {
+    let reloaded = false;
+    navigator.serviceWorker.addEventListener('controllerchange', () => { if (!reloaded) { reloaded = true; location.reload(); } });
+  }
   navigator.serviceWorker.register('sw.js').catch(() => {});
 }
