@@ -167,7 +167,9 @@ export function renderReader(root, book, startPara) {
     return { W, H, phone, spread, top, bottom, m, vpad, pageW, pageH, colW, textH, x0, per: spread ? 2 : 1 };
   }
 
-  function layout(anchorPara, atEnd = false) {
+  // anchor: a paragraph number, or an element of the current chapter to keep in view
+  function layout(anchor, atEnd = false) {
+    const anchorPara = typeof anchor === 'number' ? anchor : null;
     if (anchorPara && segOf(anchorPara) !== si) renderSeg(segOf(anchorPara));
     else if (si < 0) renderSeg(0);
     stopSlide();
@@ -190,7 +192,7 @@ export function renderReader(root, book, startPara) {
     R.querySelector('.clip-end').style.left = L.pages * L.pageW - 2 * L.m - 1 + 'px';
     mapPages();
     scrub.max = String(L.pages / L.per);
-    const anchorEl = anchorPara ? flow.querySelector(`[data-p="${anchorPara}"]`) : null;
+    const anchorEl = anchorPara ? flow.querySelector(`[data-p="${anchorPara}"]`) : anchor?.isConnected ? anchor : null;
     let pg = atEnd ? L.pages - 1 : anchorEl ? pageOf(anchorEl) : Math.min(page, L.pages - 1);
     pg -= pg % L.per;
     show(pg);
@@ -218,6 +220,17 @@ export function renderReader(root, book, startPara) {
     }
   }
   const firstParaOnPage = pg => pageFirst[pg] ?? segs[si].end;
+  // The first word on the current page. Relayouts return to it, not to the start of a paragraph
+  // carried over from the page before, which moved the reader back a page or two each time.
+  // It is held until the reader moves, so a run of resizes keeps returning to the same word.
+  let held = null;
+  const hold = () => (held ||= page === 0 ? null : firstWordOnPage());
+  function firstWordOnPage() {
+    const p = flow.querySelector(`[data-p="${firstParaOnPage(page)}"]`);
+    if (!p) return null;
+    for (const w of p.querySelectorAll('.w, .g')) if (pageOf(w) >= page) return w;
+    return p;
+  }
 
   // Pages move by scrolling the clip, never by transforming the flow: a transform moves every word span,
   // and with accessibility on (common on Windows) the browser reports each one's new place, freezing for seconds.
@@ -245,6 +258,7 @@ export function renderReader(root, book, startPara) {
   // A turn during a slide retargets it from where it is, so quick presses each count.
   function turn(dir) {
     if (!L) return;
+    held = null;
     const target = page + dir * L.per;
     if (target < 0 || target > L.pages - L.per) {
       const next = si + dir;
@@ -287,6 +301,7 @@ export function renderReader(root, book, startPara) {
     if (busy || !L || Math.abs(clip.scrollLeft - page * L.pageW) < 2) return;
     const a = document.activeElement;
     const pg = flow.contains(a) ? pageOf(a) : Math.round(clip.scrollLeft / L.pageW);
+    held = null;
     show(pg - (pg % L.per));
   }, { passive: true });
 
@@ -310,6 +325,7 @@ export function renderReader(root, book, startPara) {
     closeCard(true);
     closePanels();
     const pg = pageOf(span);
+    held = null;
     show(pg - (pg % L.per));
     setTimeout(() => openFor(span), 60);
   };
@@ -357,7 +373,7 @@ export function renderReader(root, book, startPara) {
     wheelAt = Date.now(); turn(e.deltaY > 0 ? 1 : -1);
   }, { passive: true });
 
-  scrub.addEventListener('input', () => { closeCard(true); show((+scrub.value - 1) * L.per); });
+  scrub.addEventListener('input', () => { closeCard(true); held = null; show((+scrub.value - 1) * L.per); });
 
   /* ---------- panels ---------- */
   const panels = { aa: R.querySelector('.panel-aa'), words: R.querySelector('.panel-words') };
@@ -392,12 +408,12 @@ export function renderReader(root, book, startPara) {
     const g = e.target.closest('[data-goto]');
     if (g) gotoEntry(g.dataset.goto);
     const sgb = e.target.closest('[data-seg]');
-    if (sgb) { closePanels(); renderSeg(+sgb.dataset.seg); layout(null); show(0); }
+    if (sgb) { closePanels(); held = null; renderSeg(+sgb.dataset.seg); layout(null); show(0); }
   });
 
   panels.aa.addEventListener('click', e => {
     const b = e.target.closest('button'); if (!b) return;
-    const anchor = firstParaOnPage(page);
+    const anchor = hold();
     if (b.dataset.fs) { o.fs = Math.min(30, Math.max(15, o.fs + +b.dataset.fs)); panels.aa.querySelector('.fs-val').textContent = o.fs; }
     else if (b.dataset.set) {
       const v = b.dataset.val;
@@ -409,7 +425,7 @@ export function renderReader(root, book, startPara) {
       return;
     } else return;
     saveOpt(o);
-    layout(page === 0 ? null : anchor);
+    layout(anchor);
   });
 
   /* ---------- saved highlight ---------- */
@@ -423,7 +439,7 @@ export function renderReader(root, book, startPara) {
 
   /* ---------- start ---------- */
   let rz;
-  const onResize = () => { clearTimeout(rz); rz = setTimeout(() => layout(page === 0 ? null : firstParaOnPage(page)), 150); };
+  const onResize = () => { clearTimeout(rz); rz = setTimeout(() => layout(hold()), 150); };
   addEventListener('resize', onResize);
   const saved = getProgress(book.slug);
   const startAt = startPara || (saved && !saved.done ? saved.para : null);
