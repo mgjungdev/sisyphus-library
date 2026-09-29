@@ -618,7 +618,9 @@
    "accent": "#f3e2b8"
   },
   "month": "2027-04",
-  "plan": 25
+  "plan": 25,
+  "gutenberg": 1595,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "sindbad",
@@ -688,7 +690,9 @@
    "accent": "#c9a24a"
   },
   "month": "2027-04",
-  "plan": 28
+  "plan": 28,
+  "gutenberg": 12122,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "necklace",
@@ -711,7 +715,9 @@
    "accent": "#ecc9a8"
   },
   "month": "2027-05",
-  "plan": 29
+  "plan": 29,
+  "gutenberg": 3090,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "open-window",
@@ -733,7 +739,9 @@
    "accent": "#f3e2b8"
   },
   "month": "2027-05",
-  "plan": 30
+  "plan": 30,
+  "gutenberg": 269,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "reluctant-dragon",
@@ -779,7 +787,9 @@
    "accent": "#d8c48a"
   },
   "month": "2027-05",
-  "plan": 32
+  "plan": 32,
+  "gutenberg": 1477,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "story-of-an-hour",

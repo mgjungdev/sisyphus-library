@@ -1,0 +1,491 @@
+{
+  "slug": "open-window",
+  "entries": [
+    {
+      "id": "presently",
+      "match": "presently",
+      "para": 1,
+      "headword": "presently",
+      "pos": "adverb",
+      "ipa": "/ˈprɛzəntli/",
+      "sense_en": "before long; in a short while",
+      "sense_ko": "곧, 잠시 후에",
+      "synonyms": [
+        {"word": "shortly", "nuance": "Formal and common in announcements; a short time from now.", "example": "The train will depart shortly."},
+        {"word": "soon", "nuance": "The everyday word; presently sounds more formal and old-fashioned.", "example": "She'll be here soon."},
+        {"word": "currently", "nuance": "Means 'now', not 'soon'. American speakers use presently this way too, so context matters.", "example": "He is currently abroad."}
+      ],
+      "modern": "soon / in a moment",
+      "tip_ko": "특히 미국 영어에서는 '현재'라는 뜻으로도 쓰이지만, 이 글에서는 '곧'이라는 뜻이에요.",
+      "all": true
+    },
+    {
+      "id": "put-up-with",
+      "match": "put up with",
+      "para": 1,
+      "headword": "put up with",
+      "pos": "phrase",
+      "ipa": null,
+      "sense_en": "to accept someone or something annoying without complaining",
+      "sense_ko": "참고 견디다, 감수하다",
+      "synonyms": [
+        {"word": "tolerate", "nuance": "More formal; accepting something you do not like, without implying real suffering.", "example": "The school does not tolerate bullying."},
+        {"word": "endure", "nuance": "Stronger; suffering something painful or difficult over a long time.", "example": "They endured months of hardship."},
+        {"word": "stand", "nuance": "Informal; usually negative ('I can't stand him'), about what you cannot bear.", "example": "I can't stand the noise."}
+      ],
+      "modern": null,
+      "tip_ko": "put up with 뒤에는 사람이나 사물이 바로 옵니다: put up with the noise.",
+      "all": true
+    },
+    {
+      "id": "self-possessed",
+      "match": "self-possessed",
+      "para": 1,
+      "headword": "self-possessed",
+      "pos": "adjective",
+      "ipa": "/ˌsɛlf pəˈzɛst/",
+      "sense_en": "calm and confident, in control of yourself even in an awkward situation",
+      "sense_ko": "침착하고 자신감 있는, 당황하지 않는",
+      "synonyms": [
+        {"word": "composed", "nuance": "Calm and controlled, often after or despite stress; less about confidence.", "example": "She stayed composed during the interview."},
+        {"word": "poised", "nuance": "Graceful as well as calm; suggests elegant, balanced manners.", "example": "a poised young speaker"},
+        {"word": "confident", "nuance": "Broader: believing in your own ability; does not imply calm manners.", "example": "He felt confident about the test."}
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "endeavour",
+      "match": "endeavoured",
+      "para": 2,
+      "headword": "endeavour",
+      "pos": "verb",
+      "ipa": "/ɪnˈdɛvɚ/",
+      "sense_en": "tried hard to do something",
+      "sense_ko": "애쓰다, 노력하다",
+      "synonyms": [
+        {"word": "try", "nuance": "The plain everyday word; no sense of effort or formality.", "example": "Try to relax."},
+        {"word": "strive", "nuance": "Suggests long, determined effort toward a goal.", "example": "They strive for perfection."},
+        {"word": "attempt", "nuance": "Neutral and formal; focuses on the try, which may fail.", "example": "He attempted to climb the wall."}
+      ],
+      "modern": "tried",
+      "tip_ko": "영국식 철자 endeavour, 미국식은 endeavor입니다. 뒤에 to + 동사가 옵니다.",
+      "all": true
+    },
+    {
+      "id": "duly",
+      "match": "duly",
+      "para": 2,
+      "headword": "duly",
+      "pos": "adverb",
+      "ipa": "/ˈduli/",
+      "sense_en": "in the proper or expected way",
+      "sense_ko": "마땅히, 적절하게",
+      "synonyms": [
+        {"word": "properly", "nuance": "Everyday word for 'in the right way'; does not suggest duty or convention.", "example": "Cook the meat properly."},
+        {"word": "appropriately", "nuance": "Fitting for the situation; stresses suitability.", "example": "dressed appropriately for the funeral"},
+        {"word": "rightly", "nuance": "Stresses that something is correct or justified.", "example": "She was rightly proud."}
+      ],
+      "modern": "properly",
+      "tip_ko": "formal한 글에서 'duly noted', 'duly paid'처럼 자주 나옵니다. due에서 e가 빠진 철자(duly)에 주의하세요.",
+      "all": true
+    },
+    {
+      "id": "migrate",
+      "match": "migrate",
+      "para": 3,
+      "headword": "migrate",
+      "pos": "verb",
+      "ipa": "/ˈmaɪɡreɪt/",
+      "sense_en": "to move to another place to live; here used a little grandly for moving to the country for a rest cure",
+      "sense_ko": "이주하다, 옮겨 가다",
+      "synonyms": [
+        {"word": "move", "nuance": "The everyday word; any change of home, big or small.", "example": "We moved to Busan last year."},
+        {"word": "relocate", "nuance": "Business-like; often for a job or company.", "example": "She relocated for work."},
+        {"word": "emigrate", "nuance": "Leaving your own country for good.", "example": "Many emigrated to America."}
+      ],
+      "modern": null,
+      "tip_ko": "철새·동물의 이동이나 사람들의 대규모 이주에 흔히 쓰는 말이라, 한 사람이 시골로 내려가는 데 쓰면 약간 거창한 느낌이 납니다.",
+      "all": true
+    },
+    {
+      "id": "moping",
+      "match": "moping",
+      "para": 3,
+      "headword": "mope",
+      "pos": "verb",
+      "ipa": "/moʊp/",
+      "sense_en": "spending time feeling sad and sorry for yourself, doing nothing",
+      "sense_ko": "우울해하며 시무룩하게 지내다",
+      "synonyms": [
+        {"word": "brood", "nuance": "Thinking deeply and unhappily about something, often with anger or worry.", "example": "He brooded over his failure."},
+        {"word": "sulk", "nuance": "Silent bad temper because you are annoyed at someone.", "example": "The child sulked in his room."},
+        {"word": "pine", "nuance": "Longing sadly for someone or something you miss.", "example": "She pined for her home."}
+      ],
+      "modern": null,
+      "tip_ko": "mope around(어슬렁거리며 시무룩하게 지내다)의 형태로도 자주 씁니다.",
+      "all": true
+    },
+    {
+      "id": "retreat",
+      "match": "retreat",
+      "para": 3,
+      "headword": "retreat",
+      "pos": "noun",
+      "ipa": "/rɪˈtrit/",
+      "sense_en": "a quiet place where you go to rest and get away from busy life",
+      "sense_ko": "은거지, 조용히 쉬러 가는 곳",
+      "synonyms": [
+        {"word": "refuge", "nuance": "A place of safety from danger or trouble, not just quiet.", "example": "The cave was a refuge from the storm."},
+        {"word": "hideaway", "nuance": "Secret or private place, often small and cosy.", "example": "a mountain hideaway"},
+        {"word": "sanctuary", "nuance": "Holy or protected place; strong sense of safety and peace.", "example": "a bird sanctuary"}
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": false
+    },
+    {
+      "id": "engulf",
+      "match": "engulfed",
+      "para": 14,
+      "headword": "engulf",
+      "pos": "verb",
+      "ipa": "/ɪnˈɡʌlf/",
+      "sense_en": "swallowed up completely and covered",
+      "sense_ko": "집어삼켜진, 완전히 빠져든",
+      "synonyms": [
+        {"word": "swallow", "nuance": "Everyday word; take something completely inside, often quickly.", "example": "The mud swallowed his boots."},
+        {"word": "swamp", "nuance": "Fill or cover with water or too much of something.", "example": "The boat was swamped by waves."},
+        {"word": "overwhelm", "nuance": "Overpower with force or feeling; often figurative.", "example": "Grief overwhelmed her."}
+      ],
+      "modern": null,
+      "tip_ko": "불길·파도·감정 등이 '집어삼키다'라는 강한 표현입니다.",
+      "all": true
+    },
+    {
+      "id": "treacherous",
+      "match": "treacherous",
+      "para": 14,
+      "headword": "treacherous",
+      "pos": "adjective",
+      "ipa": "/ˈtrɛtʃərəs/",
+      "sense_en": "looking safe but actually very dangerous",
+      "sense_ko": "겉보기엔 안전하지만 위험한, 믿을 수 없는",
+      "synonyms": [
+        {"word": "dangerous", "nuance": "General word; danger may be obvious. Treacherous hides its danger.", "example": "a dangerous road"},
+        {"word": "unsafe", "nuance": "Plain, mild; not protected from harm.", "example": "The bridge is unsafe."},
+        {"word": "perilous", "nuance": "Literary; full of great danger and risk.", "example": "a perilous journey"}
+      ],
+      "modern": null,
+      "tip_ko": "사람에게 쓰면 '배신하는'이라는 뜻이고, 길·날씨·바다에 쓰면 '겉은 멀쩡하나 위험한'이라는 뜻입니다.",
+      "all": true
+    },
+    {
+      "id": "bog",
+      "match": "bog",
+      "para": 14,
+      "headword": "bog",
+      "pos": "noun",
+      "ipa": "/bɑɡ/",
+      "sense_en": "soft, wet ground that a person can sink into",
+      "sense_ko": "늪, 습지",
+      "synonyms": [
+        {"word": "marsh", "nuance": "Wet grassland, often near water; usually easier to walk through than a bog.", "example": "birds nesting in the marsh"},
+        {"word": "swamp", "nuance": "Wetland with standing water and trees or bushes.", "example": "a swamp full of crocodiles"},
+        {"word": "quagmire", "nuance": "Soft, boggy ground that sucks you in; also used figuratively for a hopeless situation.", "example": "The field became a quagmire."}
+      ],
+      "modern": null,
+      "tip_ko": "영국 속어로 화장실을 뜻하기도 하지만 여기서는 '늪'입니다.",
+      "all": true
+    },
+    {
+      "id": "falteringly",
+      "match": "falteringly",
+      "para": 14,
+      "headword": "falteringly",
+      "pos": "adverb",
+      "ipa": "/ˈfɔltərɪŋli/",
+      "sense_en": "in a weak, unsteady way, with pauses",
+      "sense_ko": "더듬거리며, 머뭇거리며",
+      "synonyms": [
+        {"word": "hesitantly", "nuance": "Slowly because unsure what to do or say.", "example": "She answered hesitantly."},
+        {"word": "haltingly", "nuance": "With many stops and starts; close to faltering.", "example": "He spoke haltingly in French."},
+        {"word": "unsteadily", "nuance": "Shaky in movement or voice, from weakness or emotion.", "example": "He walked unsteadily to the door."}
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "get-on-nerves",
+      "match": "got on her nerves",
+      "para": 14,
+      "headword": "get on someone’s nerves",
+      "pos": "idiom",
+      "ipa": null,
+      "sense_en": "to annoy or irritate someone, often by something done again and again",
+      "sense_ko": "신경을 건드리다, 짜증나게 하다",
+      "synonyms": [
+        {"word": "annoy", "nuance": "General word; mild to moderate irritation.", "example": "His humming annoys me."},
+        {"word": "irritate", "nuance": "Slightly more formal; also used for skin or throat.", "example": "The noise irritated her."},
+        {"word": "drive someone up the wall", "nuance": "Informal and stronger; makes you nearly crazy.", "example": "The constant noise drives me up the wall."}
+      ],
+      "modern": null,
+      "tip_ko": "nerves는 복수형으로 씁니다. 같은 글의 'nerve cure'(신경 쇠약 치료)와 연결해서 기억하세요.",
+      "all": true
+    },
+    {
+      "id": "break-off",
+      "match": "broke off",
+      "para": 15,
+      "headword": "break off",
+      "pos": "phrase",
+      "ipa": null,
+      "sense_en": "to stop speaking suddenly, in the middle of a sentence",
+      "sense_ko": "말을 갑자기 멈추다",
+      "synonyms": [
+        {"word": "stop", "nuance": "Plain word; does not suggest a sudden halt in the middle.", "example": "She stopped talking."},
+        {"word": "trail off", "nuance": "Voice slowly fades away instead of stopping suddenly.", "example": "His voice trailed off."},
+        {"word": "cut short", "nuance": "Someone or something ends it before its natural end.", "example": "The call was cut short."}
+      ],
+      "modern": null,
+      "tip_ko": "break off은 '뚝 끊다'라는 느낌이고, 관계나 협상을 '끝내다'라는 뜻으로도 씁니다.",
+      "all": true
+    },
+    {
+      "id": "bustle",
+      "match": "bustled",
+      "para": 15,
+      "headword": "bustle",
+      "pos": "verb",
+      "ipa": "/ˈbʌsəl/",
+      "sense_en": "moved in a quick, busy, energetic way",
+      "sense_ko": "분주하게 움직이다, 부산하게 들어오다",
+      "synonyms": [
+        {"word": "hurry", "nuance": "Move fast because of little time; no sense of busy energy.", "example": "She hurried to the station."},
+        {"word": "rush", "nuance": "Faster and more hurried, sometimes careless.", "example": "He rushed out of the room."},
+        {"word": "hustle", "nuance": "Push forward energetically; informal and often American.", "example": "They hustled through the crowd."}
+      ],
+      "modern": null,
+      "tip_ko": "bustle in / bustle about처럼 방향 부사와 함께 씁니다.",
+      "all": true
+    },
+    {
+      "id": "briskly",
+      "match": "briskly",
+      "para": 18,
+      "headword": "briskly",
+      "pos": "adverb",
+      "ipa": "/ˈbrɪskli/",
+      "sense_en": "in a quick, lively, businesslike way",
+      "sense_ko": "활기차게, 기운차게",
+      "synonyms": [
+        {"word": "quickly", "nuance": "Only speed; nothing about energy or manner.", "example": "He ate quickly."},
+        {"word": "energetically", "nuance": "Stresses effort and vigour rather than a crisp, efficient manner.", "example": "She cleaned energetically."},
+        {"word": "promptly", "nuance": "Right on time or without delay.", "example": "He replied promptly."}
+      ],
+      "modern": null,
+      "tip_ko": "brisk walk(활기찬 걷기), brisk wind(상쾌하게 부는 바람)도 함께 알아 두세요.",
+      "all": true
+    },
+    {
+      "id": "rattle-on",
+      "match": "rattled on",
+      "para": 19,
+      "headword": "rattle on",
+      "pos": "phrase",
+      "ipa": null,
+      "sense_en": "to talk continuously and quickly, without much thought or interest in the listener",
+      "sense_ko": "쉴 새 없이 떠들다",
+      "synonyms": [
+        {"word": "chatter", "nuance": "Fast, light talk, often about unimportant things.", "example": "The kids chattered all the way home."},
+        {"word": "ramble on", "nuance": "Talk at length, wandering from topic to topic.", "example": "He rambled on about his trip."},
+        {"word": "go on", "nuance": "Plain phrase; talk for too long, often annoyingly.", "example": "She went on and on about her cat."}
+      ],
+      "modern": null,
+      "tip_ko": "rattled(당황한)와는 뜻이 다릅니다. rattle on은 '수다를 떨다'입니다.",
+      "all": true
+    },
+    {
+      "id": "ghastly",
+      "match": "ghastly",
+      "para": 19,
+      "headword": "ghastly",
+      "pos": "adjective",
+      "ipa": "/ˈɡæstli/",
+      "sense_en": "causing horror; shockingly terrible (here, about the men's deaths)",
+      "sense_ko": "끔찍한, 소름 끼치는",
+      "synonyms": [
+        {"word": "horrible", "nuance": "General word for very unpleasant; not necessarily about death.", "example": "a horrible smell"},
+        {"word": "gruesome", "nuance": "Disgusting because of blood, injury or death.", "example": "a gruesome murder scene"},
+        {"word": "grim", "nuance": "Serious, gloomy and depressing; less shocking.", "example": "The news was grim."}
+      ],
+      "modern": null,
+      "tip_ko": "철자의 gh는 ghost의 영향을 받은 것입니다. 영국식 구어에서는 '아주 나쁜'이라는 가벼운 표현으로도 씁니다.",
+      "all": true
+    },
+    {
+      "id": "infirmity",
+      "match": "infirmities",
+      "para": 20,
+      "headword": "infirmity",
+      "pos": "noun",
+      "ipa": "/ɪnˈfɜrməti/",
+      "sense_en": "a weakness or illness of the body, especially a lasting one",
+      "sense_ko": "허약함, 지병",
+      "synonyms": [
+        {"word": "ailment", "nuance": "A minor or ordinary illness; lighter than infirmity.", "example": "a common childhood ailment"},
+        {"word": "illness", "nuance": "Everyday word for being sick; could be short or serious.", "example": "a long illness"},
+        {"word": "frailty", "nuance": "Weakness of body from age or delicate health.", "example": "the frailty of old age"}
+      ],
+      "modern": null,
+      "tip_ko": "infirm(노쇠한)의 명사형입니다. 격식 있는 글에서 쓰고, 일상 대화에서는 잘 안 씁니다.",
+      "all": true
+    },
+    {
+      "id": "delusion",
+      "match": "delusion",
+      "para": 20,
+      "headword": "delusion",
+      "pos": "noun",
+      "ipa": "/dɪˈluʒən/",
+      "sense_en": "a false belief that someone holds firmly, even against the evidence",
+      "sense_ko": "착각, 잘못된 믿음",
+      "synonyms": [
+        {"word": "illusion", "nuance": "A false idea or appearance; may be pleasant and known to be false.", "example": "the illusion of safety"},
+        {"word": "misconception", "nuance": "A wrong idea from misunderstanding; milder, correctable with facts.", "example": "a common misconception about sharks"},
+        {"word": "fantasy", "nuance": "Imagined thing; may be enjoyed knowingly.", "example": "a fantasy of winning the lottery"}
+      ],
+      "modern": null,
+      "tip_ko": "delusion은 사실을 알려 줘도 안 바뀌는 강한 착각(의학 용어로는 '망상')이지만, 여기서는 Framton의 흔한 착각을 비꼬는 가벼운 표현입니다.",
+      "all": true
+    },
+    {
+      "id": "dazed",
+      "match": "dazed",
+      "para": 23,
+      "headword": "dazed",
+      "pos": "adjective",
+      "ipa": "/deɪzd/",
+      "sense_en": "shocked and unable to think or react clearly",
+      "sense_ko": "멍한, 정신이 얼떨떨한",
+      "synonyms": [
+        {"word": "stunned", "nuance": "Shocked into silence or stillness, often by news.", "example": "She was stunned by the result."},
+        {"word": "confused", "nuance": "Unable to understand; no sense of shock.", "example": "I was confused by the map."},
+        {"word": "numb", "nuance": "Unable to feel emotion after shock or grief.", "example": "He felt numb after the news."}
+      ],
+      "modern": null,
+      "tip_ko": null,
+      "all": true
+    },
+    {
+      "id": "dusk",
+      "match": "dusk",
+      "para": 24,
+      "headword": "dusk",
+      "pos": "noun",
+      "ipa": "/dʌsk/",
+      "sense_en": "the time in the evening when light is fading and it is almost dark",
+      "sense_ko": "해질녘, 땅거미",
+      "synonyms": [
+        {"word": "twilight", "nuance": "The soft light itself, just after sunset; slightly more poetic.", "example": "the blue light of twilight"},
+        {"word": "nightfall", "nuance": "The moment night arrives; darker than dusk.", "example": "We arrived at nightfall."},
+        {"word": "sunset", "nuance": "The moment the sun goes down; earlier than dusk.", "example": "We watched the sunset."}
+      ],
+      "modern": null,
+      "tip_ko": "dawn(새벽)과 짝으로 기억하세요: dawn은 아침, dusk는 저녁입니다.",
+      "all": true
+    },
+    {
+      "id": "hoarse",
+      "match": "hoarse",
+      "para": 24,
+      "headword": "hoarse",
+      "pos": "adjective",
+      "ipa": "/hɔrs/",
+      "sense_en": "rough and dry, as a voice after shouting or a sore throat",
+      "sense_ko": "쉰 목소리의",
+      "synonyms": [
+        {"word": "husky", "nuance": "Low and slightly rough, often attractively so.", "example": "a husky singing voice"},
+        {"word": "gruff", "nuance": "Rough and unfriendly in manner or tone.", "example": "a gruff reply"},
+        {"word": "croaky", "nuance": "Informal; like a frog, usually because of a cold.", "example": "I'm croaky this morning."}
+      ],
+      "modern": null,
+      "tip_ko": "horse(말)와 발음이 같습니다 (/hɔrs/).",
+      "all": true
+    },
+    {
+      "id": "headlong",
+      "match": "headlong",
+      "para": 25,
+      "headword": "headlong",
+      "pos": "adjective",
+      "ipa": "/ˈhɛdlɔŋ/",
+      "sense_en": "very fast and without stopping to think",
+      "sense_ko": "곤두박질치는, 앞뒤 안 가리고 허둥대는",
+      "synonyms": [
+        {"word": "hasty", "nuance": "Done too quickly without enough care.", "example": "a hasty decision"},
+        {"word": "reckless", "nuance": "Ignoring danger; stresses risk more than speed.", "example": "reckless driving"},
+        {"word": "hurried", "nuance": "Done in a hurry; neutral, no sense of panic.", "example": "a hurried breakfast"}
+      ],
+      "modern": null,
+      "tip_ko": "원래 '머리부터 (head first)'라는 뜻에서 왔습니다. 부사로도 씁니다: fall headlong.",
+      "all": true
+    },
+    {
+      "id": "bolt",
+      "match": "bolted",
+      "para": 26,
+      "headword": "bolt",
+      "pos": "verb",
+      "ipa": "/boʊlt/",
+      "sense_en": "ran away suddenly and very fast",
+      "sense_ko": "쏜살같이 달아나다",
+      "synonyms": [
+        {"word": "dash", "nuance": "Run quickly for a short distance; not necessarily out of fear.", "example": "She dashed to the bus stop."},
+        {"word": "flee", "nuance": "Formal; run away from danger.", "example": "People fled the flood."},
+        {"word": "scarper", "nuance": "British slang; run off to avoid trouble.", "example": "The boys scarpered when the police came."}
+      ],
+      "modern": null,
+      "tip_ko": "bolt은 '볼트, 빗장'이라는 뜻도 있지만, 여기서는 말이 놀라 뛰쳐나가듯 '도망치다'입니다.",
+      "all": true
+    },
+    {
+      "id": "mackintosh",
+      "match": "mackintosh",
+      "para": 26,
+      "headword": "mackintosh",
+      "pos": "noun",
+      "ipa": "/ˈmækɪntɑʃ/",
+      "sense_en": "a waterproof coat, a raincoat",
+      "sense_ko": "방수 외투, 레인코트",
+      "synonyms": [
+        {"word": "raincoat", "nuance": "The everyday word for any coat that keeps out rain.", "example": "Take your raincoat."},
+        {"word": "mac", "nuance": "Short informal British form of mackintosh.", "example": "He wore a beige mac."},
+        {"word": "trench coat", "nuance": "Belted raincoat with a military-style look.", "example": "a detective in a trench coat"}
+      ],
+      "modern": "raincoat",
+      "tip_ko": "발명가 Charles Macintosh의 이름에서 온 말로, 애플의 Mac과는 관계가 없습니다.",
+      "all": true
+    },
+    {
+      "id": "lose-nerve",
+      "match": "lose their nerve",
+      "para": 28,
+      "headword": "lose your nerve",
+      "pos": "idiom",
+      "ipa": null,
+      "sense_en": "to suddenly lose your courage or calm and become frightened",
+      "sense_ko": "겁에 질려 평정을 잃다, 용기를 잃다",
+      "synonyms": [
+        {"word": "chicken out", "nuance": "Informal; decide not to do something because you are afraid.", "example": "He chickened out of the jump."},
+        {"word": "panic", "nuance": "Sudden wild fear that stops clear thinking.", "example": "Don't panic in the exam."},
+        {"word": "get cold feet", "nuance": "Become nervous just before a big step such as a wedding.", "example": "She got cold feet before the wedding."}
+      ],
+      "modern": null,
+      "tip_ko": "이 표현에서 nerve는 '신경'이 아니라 '용기, 배짱'이라는 뜻입니다. 'What a nerve!'는 '뻔뻔하기도 하지!'.",
+      "all": true
+    }
+  ]
+}
