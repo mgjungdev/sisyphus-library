@@ -7,3 +7,4 @@ PIPELINE.md
 logs/
 PAUSE
 .pipeline.lock
+pipeline.config.json
