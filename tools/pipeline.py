@@ -20,6 +20,7 @@ import json
 import re
 import subprocess
 import sys
+import time
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
@@ -178,6 +179,18 @@ def run(*cmd: str) -> None:
         sys.exit(f"failed: {' '.join(cmd)}")
 
 
+def push(tries: int = 4, wait: int = 30) -> None:
+    """git push origin main, retried a few times: a brief network outage should not strand the wave."""
+    for n in range(1, tries + 1):
+        print("$ git push origin main", flush=True)
+        if not subprocess.run(["git", "push", "origin", "main"], cwd=ROOT).returncode:
+            return
+        if n < tries:
+            print(f"push failed; retrying in {wait * n}s", flush=True)
+            time.sleep(wait * n)
+    sys.exit("failed: git push origin main")
+
+
 def deploy(dry: bool) -> None:
     wave = next_wave(states())
     books = [b for b, s in wave if s == "reviewed"]
@@ -196,8 +209,12 @@ def deploy(dry: bool) -> None:
         print("dry run; would commit", paths, "\n" + msg)
         return
     run("git", "add", "--", *paths)
-    run("git", "commit", "-m", msg)
-    run("git", "push", "origin", "main")
+    # A deploy whose push failed left its commit behind; on the retry there is nothing new to commit.
+    if subprocess.run(["git", "diff", "--cached", "--quiet", "--", *paths], cwd=ROOT).returncode:
+        run("git", "commit", "-m", msg)
+    else:
+        print("nothing new to commit; pushing the existing commit", flush=True)
+    push()
     # PIPELINE.md is local (git-ignored): record the deploy and the new status.
     p = ROOT / "PIPELINE.md"
     try:
