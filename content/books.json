@@ -1688,7 +1688,9 @@
    "accent": "#d8c48a"
   },
   "month": "2028-03",
-  "plan": 69
+  "plan": 69,
+  "gutenberg": 8147,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "murders-in-the-rue-morgue",
@@ -1733,7 +1735,9 @@
    "accent": "#c9a24a"
   },
   "month": "2028-03",
-  "plan": 71
+  "plan": 71,
+  "gutenberg": 43,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "sleepy-hollow",
@@ -1755,7 +1759,9 @@
    "accent": "#d6cfb8"
   },
   "month": "2028-03",
-  "plan": 72
+  "plan": 72,
+  "gutenberg": 41,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "time-machine",
@@ -1777,7 +1783,9 @@
    "accent": "#e0cf94"
   },
   "month": "2028-04",
-  "plan": 73
+  "plan": 73,
+  "gutenberg": 35,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "lady-with-the-dog",
@@ -1799,7 +1807,9 @@
    "accent": "#ecc9a8"
   },
   "month": "2028-04",
-  "plan": 74
+  "plan": 74,
+  "gutenberg": 13415,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "hadleyburg",
@@ -1821,7 +1831,9 @@
    "accent": "#f3e2b8"
   },
   "month": "2028-04",
-  "plan": 75
+  "plan": 75,
+  "gutenberg": 1213,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "araby",
@@ -1843,7 +1855,9 @@
    "accent": "#e2cfa3"
   },
   "month": "2028-04",
-  "plan": 76
+  "plan": 76,
+  "gutenberg": 2814,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "descent-into-the-maelstrom",
@@ -1866,7 +1880,9 @@
    "accent": "#d8c48a"
   },
   "month": "2028-05",
-  "plan": 77
+  "plan": 77,
+  "gutenberg": 2148,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "purloined-letter",
@@ -1888,7 +1904,9 @@
    "accent": "#d9c08a"
   },
   "month": "2028-05",
-  "plan": 78
+  "plan": 78,
+  "gutenberg": 2148,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "young-goodman-brown",
@@ -1910,7 +1928,9 @@
    "accent": "#c9a24a"
   },
   "month": "2028-05",
-  "plan": 79
+  "plan": 79,
+  "gutenberg": 512,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "whistle-and-ill-come",
@@ -1932,7 +1952,9 @@
    "accent": "#d6cfb8"
   },
   "month": "2028-05",
-  "plan": 80
+  "plan": 80,
+  "gutenberg": 8486,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "diamond-lens",

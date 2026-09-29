@@ -1,0 +1,346 @@
+{
+  "slug": "purloined-letter",
+  "entries": [
+    {"id": "meerschaum", "match": "meerschaum", "para": 2, "headword": "meerschaum", "pos": "noun", "ipa": "/ˈmɪrʃɔm/",
+     "sense_en": "a pipe for smoking tobacco, made from a soft white mineral",
+     "sense_ko": "해포석(海泡石)으로 만든 담배 파이프",
+     "synonyms": [
+       {"word": "pipe", "nuance": "General word for any tobacco pipe; meerschaum names one specific, prized material.", "example": "He lit his pipe."},
+       {"word": "briar", "nuance": "Pipe made of briar wood, the most common kind; meerschaum is softer, whiter and more costly.", "example": "an old briar pipe"}
+     ], "modern": null, "tip_ko": null},
+    {"id": "contemptible", "match": "contemptible", "para": 3, "headword": "contemptible", "pos": "adjective", "ipa": "/kənˈtɛmptəbəl/",
+     "sense_en": "deserving to be looked down on; worthless or low",
+     "sense_ko": "경멸할 만한, 한심한",
+     "synonyms": [
+       {"word": "despicable", "nuance": "Stronger and morally hateful; contemptible can mean merely pathetic or petty.", "example": "a despicable crime"},
+       {"word": "pathetic", "nuance": "Suggests weakness that causes pity or scorn, less moral blame.", "example": "a pathetic excuse"}
+     ], "modern": null, "tip_ko": "contemptible(경멸할 만한)과 contemptuous(경멸하는)를 혼동하기 쉽다."},
+    {"id": "forebear", "match": "forebore", "para": 4, "headword": "forbear", "pos": "verb", "ipa": "/fɔrˈbɛr/",
+     "sense_en": "held back from doing something; refrained",
+     "sense_ko": "삼가다, 자제하다",
+     "synonyms": [
+       {"word": "refrain", "nuance": "Everyday choice; used with 'from'. Forbear is formal and slightly literary.", "example": "She refrained from comment."},
+       {"word": "abstain", "nuance": "Deliberately going without something, often on principle (drink, voting).", "example": "abstain from alcohol"}
+     ], "modern": "\"forbore\" is the usual spelling; today people say \"refrained from\".", "tip_ko": null},
+    {"id": "enkindle", "match": "enkindle", "para": 4, "headword": "enkindle", "pos": "verb", "ipa": "/ɪnˈkɪndəl/",
+     "sense_en": "to set a flame alight; to light a lamp wick",
+     "sense_ko": "불을 붙이다, 점화하다",
+     "synonyms": [
+       {"word": "light", "nuance": "Plain everyday word for making a lamp, fire or candle burn.", "example": "light a candle"},
+       {"word": "kindle", "nuance": "Often for starting a fire from small material, or figuratively for feelings.", "example": "kindle a fire"}
+     ], "modern": "\"enkindle\" → \"light\" or \"kindle\"", "tip_ko": null},
+    {"id": "baffle", "match": "baffles", "para": 10, "headword": "baffle", "pos": "verb", "ipa": "/ˈbæfəl/",
+     "sense_en": "to confuse someone so completely that they cannot understand or solve something",
+     "sense_ko": "당황하게 하다, 도저히 갈피를 못 잡게 하다",
+     "synonyms": [
+       {"word": "puzzle", "nuance": "Milder; you can puzzle over something and still solve it.", "example": "The clue puzzled me."},
+       {"word": "bewilder", "nuance": "Suggests being mentally lost or dazed by too much or too strange.", "example": "bewildered by the crowd"},
+       {"word": "stump", "nuance": "Informal: a question or problem you cannot answer at all.", "example": "The last question stumped me."}
+     ], "modern": null, "tip_ko": null},
+    {"id": "purloin", "match": "purloined", "para": 21, "headword": "purloin", "pos": "verb", "ipa": "/pɝˈlɔɪn/",
+     "sense_en": "stolen, especially by someone who abused a position of trust",
+     "sense_ko": "훔치다, 슬쩍 가로채다",
+     "synonyms": [
+       {"word": "steal", "nuance": "Neutral, everyday word; purloin is formal, old-fashioned or jokingly grand.", "example": "steal a wallet"},
+       {"word": "pilfer", "nuance": "Stealing small things, bit by bit.", "example": "pilfer pens from the office"},
+       {"word": "filch", "nuance": "Informal: quickly and sneakily taking something small.", "example": "filch a cookie"}
+     ], "modern": "\"purloin\" → \"steal\"", "tip_ko": null},
+    {"id": "ascendancy", "match": "ascendancy", "para": 27, "headword": "ascendancy", "pos": "noun", "ipa": "/əˈsɛndənsi/",
+     "sense_en": "power and control over another person",
+     "sense_ko": "우위, 지배력",
+     "synonyms": [
+       {"word": "dominance", "nuance": "Most common; can be physical, social or natural.", "example": "the dominance of one team"},
+       {"word": "hold", "nuance": "Informal: a strong influence over someone, as in 'a hold over him'.", "example": "She has a hold over him."},
+       {"word": "supremacy", "nuance": "Being the highest of all; stronger and more formal.", "example": "naval supremacy"}
+     ], "modern": null, "tip_ko": null},
+    {"id": "jeopardize", "match": "jeopardized", "para": 27, "headword": "jeopardize", "pos": "verb", "ipa": "/ˈdʒɛpɝdaɪz/",
+     "sense_en": "put in danger of being lost or harmed",
+     "sense_ko": "위태롭게 하다",
+     "synonyms": [
+       {"word": "endanger", "nuance": "Puts people, animals or things in physical danger.", "example": "endanger lives"},
+       {"word": "risk", "nuance": "You may choose to put something at risk yourself.", "example": "risk your job"},
+       {"word": "threaten", "nuance": "Suggests a coming danger, not necessarily one already at work.", "example": "threaten the peace"}
+     ], "modern": null, "tip_ko": "발음은 [제퍼다이즈]. 'jeo'를 '지오'로 읽지 않는다."},
+    {"id": "perusal", "match": "perusal", "para": 29, "headword": "perusal", "pos": "noun", "ipa": "/pəˈruzəl/",
+     "sense_en": "the act of reading something, usually with attention",
+     "sense_ko": "정독, 꼼꼼히 읽기",
+     "synonyms": [
+       {"word": "reading", "nuance": "Plain, neutral word for the act of reading.", "example": "a careful reading"},
+       {"word": "study", "nuance": "Implies learning or analysing, not just reading.", "example": "study the report"}
+     ], "modern": null, "tip_ko": "peruse는 '대충 훑다'가 아니라 원래 '꼼꼼히 읽다'라는 뜻이다(현대에는 두 뜻이 섞임)."},
+    {"id": "juxtaposition", "match": "juxtaposition", "para": 29, "headword": "juxtaposition", "pos": "noun", "ipa": "/ˌdʒʌkstəpəˈzɪʃən/",
+     "sense_en": "the placing of two things right next to each other",
+     "sense_ko": "나란히 놓기, 병치",
+     "synonyms": [
+       {"word": "proximity", "nuance": "Simply closeness in space or time, without the idea of comparing.", "example": "in close proximity"},
+       {"word": "contrast", "nuance": "Emphasises difference between things placed together.", "example": "a sharp contrast"}
+     ], "modern": null, "tip_ko": null},
+    {"id": "fathom", "match": "fathoms", "para": 29, "headword": "fathom", "pos": "verb", "ipa": "/ˈfæðəm/",
+     "sense_en": "to understand something hidden or difficult after thinking about it",
+     "sense_ko": "(깊이 헤아려) 간파하다, 이해하다",
+     "synonyms": [
+       {"word": "figure out", "nuance": "Everyday and informal; solving by thinking.", "example": "I can't figure it out."},
+       {"word": "grasp", "nuance": "Understand an idea; less about uncovering something secret.", "example": "grasp the point"},
+       {"word": "penetrate", "nuance": "Formal: see into something hidden or deep, like a secret or disguise.", "example": "penetrate the mystery"}
+     ], "modern": null, "tip_ko": "보통 부정문 'can't fathom'으로 많이 쓰인다."},
+    {"id": "decamp", "match": "decamped", "para": 29, "headword": "decamp", "pos": "verb", "ipa": "/dɪˈkæmp/",
+     "sense_en": "left suddenly and quickly, often after doing something wrong",
+     "sense_ko": "서둘러 떠나다, 자리를 뜨다",
+     "synonyms": [
+       {"word": "flee", "nuance": "Running away from danger; not necessarily secret.", "example": "flee the country"},
+       {"word": "abscond", "nuance": "Formal: leaving in secret with stolen money or to avoid arrest.", "example": "abscond with the funds"},
+       {"word": "bolt", "nuance": "Informal: running off suddenly.", "example": "bolt for the door"}
+     ], "modern": null, "tip_ko": null},
+    {"id": "wield", "match": "wielded", "para": 31, "headword": "wield", "pos": "verb", "ipa": "/wild/",
+     "sense_en": "used power or influence",
+     "sense_ko": "(권력·영향력을) 휘두르다, 행사하다",
+     "synonyms": [
+       {"word": "exercise", "nuance": "Neutral and formal for using power, a right or influence.", "example": "exercise control"},
+       {"word": "exert", "nuance": "Applying force or influence actively, with effort.", "example": "exert pressure"},
+       {"word": "brandish", "nuance": "Waving a weapon in a threatening way; literal, not about power.", "example": "brandish a knife"}
+     ], "modern": null, "tip_ko": null},
+    {"id": "sagacious", "match": "sagacious", "para": 32, "headword": "sagacious", "pos": "adjective", "ipa": "/səˈɡeɪʃəs/",
+     "sense_en": "wise and quick to see what is true or what to do",
+     "sense_ko": "현명한, 통찰력 있는",
+     "synonyms": [
+       {"word": "shrewd", "nuance": "Sharp about practical matters like money or people, sometimes calculating.", "example": "a shrewd investor"},
+       {"word": "wise", "nuance": "Everyday word; suggests good judgement from experience.", "example": "a wise choice"},
+       {"word": "astute", "nuance": "Quick to notice what is to one's advantage; used of business and politics.", "example": "an astute observer"}
+     ], "modern": null, "tip_ko": null},
+    {"id": "au-fait", "match": "au fait", "para": 36, "headword": "au fait", "pos": "phrase", "ipa": null,
+     "sense_en": "fully familiar with something and skilled at it",
+     "sense_ko": "능숙한, 잘 알고 있는",
+     "synonyms": [
+       {"word": "familiar with", "nuance": "Plain everyday phrase; only means you know it, not that you are expert.", "example": "familiar with the rules"},
+       {"word": "well versed in", "nuance": "Suggests deep knowledge from study or practice.", "example": "well versed in law"}
+     ], "modern": "\"au fait\" (French) → \"well acquainted with\"", "tip_ko": "프랑스어 표현으로 [오 페]라고 읽는다."},
+    {"id": "ransack", "match": "ransacking", "para": 37, "headword": "ransack", "pos": "verb", "ipa": "/ˈrænsæk/",
+     "sense_en": "searching a place very thoroughly, turning everything over",
+     "sense_ko": "샅샅이 뒤지다",
+     "synonyms": [
+       {"word": "rummage", "nuance": "Searching through things in a messy way, usually harmlessly.", "example": "rummage through a drawer"},
+       {"word": "comb", "nuance": "Searching carefully, section by section; tidy, not destructive.", "example": "comb the area"},
+       {"word": "plunder", "nuance": "Stealing goods by force, as in war.", "example": "plunder a village"}
+     ], "modern": null, "tip_ko": null},
+    {"id": "astute", "match": "astute", "para": 37, "headword": "astute", "pos": "adjective", "ipa": "/əˈstut/",
+     "sense_en": "clever and quick to understand people and situations",
+     "sense_ko": "빈틈없는, 예리한",
+     "synonyms": [
+       {"word": "shrewd", "nuance": "Adds a hint of cunning and self-interest.", "example": "a shrewd bargainer"},
+       {"word": "smart", "nuance": "Very general; means intelligent, not necessarily perceptive.", "example": "a smart student"},
+       {"word": "perceptive", "nuance": "Good at noticing feelings and details that others miss.", "example": "a perceptive remark"}
+     ], "modern": null, "tip_ko": null},
+    {"id": "waylay", "match": "waylaid", "para": 43, "headword": "waylay", "pos": "verb", "ipa": "/ˈweɪleɪ/",
+     "sense_en": "stopped and attacked by people hiding along the way",
+     "sense_ko": "길목에서 습격하다, 매복해 덮치다",
+     "synonyms": [
+       {"word": "ambush", "nuance": "Attack from a hiding place; more military, and the usual modern word.", "example": "ambushed by rebels"},
+       {"word": "mug", "nuance": "Attack and rob in a street; no hiding or waiting is implied.", "example": "get mugged at night"}
+     ], "modern": "\"waylay\" → \"ambush\"", "tip_ko": "현대 영어에서 'waylay'는 '(말을 걸려고) 도중에 붙잡다'는 가벼운 뜻으로도 쓰인다."},
+    {"id": "dolt", "match": "dolt", "para": 48, "headword": "dolt", "pos": "noun", "ipa": "/doʊlt/",
+     "sense_en": "a stupid, slow-witted person",
+     "sense_ko": "멍청이, 얼간이",
+     "synonyms": [
+       {"word": "fool", "nuance": "Most general word for someone who acts unwisely.", "example": "I was a fool to trust him."},
+       {"word": "blockhead", "nuance": "Old-fashioned, humorous insult for someone thick-headed.", "example": "You blockhead!"},
+       {"word": "idiot", "nuance": "Stronger and rude in modern speech.", "example": "Don't be an idiot."}
+     ], "modern": null, "tip_ko": null},
+    {"id": "scrutinize", "match": "scrutinized", "para": 56, "headword": "scrutinize", "pos": "verb", "ipa": "/ˈskrutənaɪz/",
+     "sense_en": "examined very closely and carefully",
+     "sense_ko": "면밀히 조사하다",
+     "synonyms": [
+       {"word": "inspect", "nuance": "Check officially or carefully for faults.", "example": "inspect the engine"},
+       {"word": "examine", "nuance": "General word for looking carefully; less intense than scrutinize.", "example": "examine the evidence"},
+       {"word": "study", "nuance": "Looking to learn from something over time.", "example": "study a map"}
+     ], "modern": null, "tip_ko": null},
+    {"id": "prodigious", "match": "prodigious", "para": 58, "headword": "prodigious", "pos": "adjective", "ipa": "/prəˈdɪdʒəs/",
+     "sense_en": "very large or impressive in amount",
+     "sense_ko": "엄청난, 어마어마한",
+     "synonyms": [
+       {"word": "enormous", "nuance": "Everyday word for very large size or amount.", "example": "an enormous sum"},
+       {"word": "immense", "nuance": "Very large, often with a sense of vast scale.", "example": "immense wealth"},
+       {"word": "phenomenal", "nuance": "Amazing and unusually good.", "example": "phenomenal success"}
+     ], "modern": null, "tip_ko": null},
+    {"id": "spunge", "match": "spunging", "para": 84, "headword": "sponge", "pos": "verb", "ipa": "/spʌndʒ/",
+     "sense_en": "trying to get something for free from someone",
+     "sense_ko": "빌붙다, 공짜로 얻어 내려 하다",
+     "synonyms": [
+       {"word": "freeload", "nuance": "Informal: living off others' food or money without giving back.", "example": "freeload off friends"},
+       {"word": "scrounge", "nuance": "Informal: getting small items by asking around.", "example": "scrounge a cigarette"},
+       {"word": "cadge", "nuance": "Getting something by begging or clever asking.", "example": "cadge a lift"}
+     ], "modern": "\"spunging\" is an old spelling of \"sponging\"; \"sponge off someone\"", "tip_ko": "'sponge off/on someone' 형태로 자주 쓴다."},
+    {"id": "discomposed", "match": "discomposed", "para": 87, "headword": "discomposed", "pos": "adjective", "ipa": "/ˌdɪskəmˈpoʊzd/",
+     "sense_en": "made slightly upset or unsettled, losing calm",
+     "sense_ko": "평정을 잃은, 당황한",
+     "synonyms": [
+       {"word": "flustered", "nuance": "Nervous and confused, especially when rushed.", "example": "She looked flustered."},
+       {"word": "disconcerted", "nuance": "Thrown off balance by something unexpected.", "example": "disconcerted by the question"},
+       {"word": "upset", "nuance": "General; can be mild or deep, and often about sadness.", "example": "upset by the news"}
+     ], "modern": null, "tip_ko": null},
+    {"id": "thunder-stricken", "match": "thunder-stricken", "para": 89, "headword": "thunderstruck", "pos": "adjective", "ipa": "/ˈθʌndɝstrʌk/",
+     "sense_en": "so shocked or amazed that one cannot speak or move",
+     "sense_ko": "벼락 맞은 듯 놀란",
+     "synonyms": [
+       {"word": "astounded", "nuance": "Greatly amazed; may still speak.", "example": "astounded by the news"},
+       {"word": "dumbfounded", "nuance": "Too shocked to say anything.", "example": "He stood dumbfounded."},
+       {"word": "stunned", "nuance": "Shocked into stillness, often by bad news.", "example": "stunned silence"}
+     ], "modern": "\"thunder-stricken\" → \"thunderstruck\"", "tip_ko": null},
+    {"id": "escritoire", "match": "escritoire", "para": 89, "headword": "escritoire", "pos": "noun", "ipa": "/ˌɛskriˈtwɑr/",
+     "sense_en": "a writing desk with drawers and compartments",
+     "sense_ko": "서랍 달린 필기용 책상",
+     "synonyms": [
+       {"word": "writing desk", "nuance": "Plain modern term for the same kind of furniture.", "example": "an antique writing desk"},
+       {"word": "bureau", "nuance": "British: a desk with a fold-down front; American: a chest of drawers.", "example": "a walnut bureau"}
+     ], "modern": "\"escritoire\" → \"writing desk\"", "tip_ko": null},
+    {"id": "arrant", "match": "arrant", "para": 95, "headword": "arrant", "pos": "adjective", "ipa": "/ˈærənt/",
+     "sense_en": "complete and utter, used of something bad, such as a fool",
+     "sense_ko": "지독한, 순전한(나쁜 뜻)",
+     "synonyms": [
+       {"word": "utter", "nuance": "Neutral intensifier meaning complete.", "example": "utter nonsense"},
+       {"word": "downright", "nuance": "Informal: frankly and plainly so.", "example": "downright rude"},
+       {"word": "out-and-out", "nuance": "Emphasises being a complete example of a bad type.", "example": "an out-and-out liar"}
+     ], "modern": "\"arrant simpleton\" → \"complete fool\"", "tip_ko": null},
+    {"id": "simpleton", "match": "simpleton", "para": 95, "headword": "simpleton", "pos": "noun", "ipa": "/ˈsɪmpəltən/",
+     "sense_en": "a person who is easily fooled and lacks common sense",
+     "sense_ko": "어수룩한 사람, 바보",
+     "synonyms": [
+       {"word": "fool", "nuance": "General; does not stress being gullible.", "example": "He's no fool."},
+       {"word": "sucker", "nuance": "Informal: someone easily cheated.", "example": "Only a sucker would pay that."},
+       {"word": "dunce", "nuance": "Someone slow at learning, especially at school.", "example": "the class dunce"}
+     ], "modern": null, "tip_ko": null},
+    {"id": "foil", "match": "foils", "para": 99, "headword": "foil", "pos": "verb", "ipa": "/fɔɪl/",
+     "sense_en": "defeats someone's plan by outwitting them",
+     "sense_ko": "(계획을) 좌절시키다, 허를 찌르다",
+     "synonyms": [
+       {"word": "thwart", "nuance": "Blocks someone's plan or wish; slightly more formal.", "example": "thwart an attack"},
+       {"word": "frustrate", "nuance": "Prevents success; can also mean the feeling of annoyance.", "example": "frustrate their hopes"},
+       {"word": "outwit", "nuance": "Beat someone by being cleverer, not just by stopping them.", "example": "outwit the police"}
+     ], "modern": null, "tip_ko": "'알루미늄 포일'의 foil과 같은 철자지만 여기서는 동사로 '좌절시키다'."},
+    {"id": "egregious", "match": "egregious", "para": 105, "headword": "egregious", "pos": "adjective", "ipa": "/ɪˈɡridʒəs/",
+     "sense_en": "shockingly bad and obvious",
+     "sense_ko": "지독한, 어처구니없는",
+     "synonyms": [
+       {"word": "glaring", "nuance": "Very obvious, especially of a mistake.", "example": "a glaring error"},
+       {"word": "flagrant", "nuance": "Openly breaking rules with no shame.", "example": "a flagrant violation"},
+       {"word": "outrageous", "nuance": "Shocking or unacceptable; stronger emotion.", "example": "an outrageous price"}
+     ], "modern": null, "tip_ko": null},
+    {"id": "clandestinely", "match": "clandestinely", "para": 105, "headword": "clandestinely", "pos": "adverb", "ipa": "/klænˈdɛstɪnli/",
+     "sense_en": "secretly, without admitting it",
+     "sense_ko": "은밀하게, 몰래",
+     "synonyms": [
+       {"word": "secretly", "nuance": "Everyday, neutral word.", "example": "They met secretly."},
+       {"word": "covertly", "nuance": "Formal; hiding one's actions, as in spying.", "example": "covertly filmed"},
+       {"word": "furtively", "nuance": "In a nervous, sneaky way, looking around.", "example": "glanced furtively"}
+     ], "modern": null, "tip_ko": null},
+    {"id": "ruse", "match": "ruses", "para": 106, "headword": "ruse", "pos": "noun", "ipa": "/ruz/",
+     "sense_en": "a trick meant to make someone believe something false",
+     "sense_ko": "계략, 속임수",
+     "synonyms": [
+       {"word": "trick", "nuance": "General; may be playful.", "example": "a card trick"},
+       {"word": "ploy", "nuance": "A clever move to gain an advantage.", "example": "a clever ploy"},
+       {"word": "subterfuge", "nuance": "Formal: secret deceit used to hide one's aim.", "example": "get in by subterfuge"}
+     ], "modern": null, "tip_ko": null},
+    {"id": "dint", "match": "by dint of", "para": 110, "headword": "by dint of", "pos": "phrase", "ipa": null,
+     "sense_en": "by means of; because of",
+     "sense_ko": "~에 의해, ~ 때문에",
+     "synonyms": [
+       {"word": "by means of", "nuance": "Neutral, formal way to name the method.", "example": "by means of a key"},
+       {"word": "thanks to", "nuance": "Says who or what caused a good result.", "example": "thanks to your help"},
+       {"word": "by virtue of", "nuance": "Because of a quality or position one has.", "example": "by virtue of his rank"}
+     ], "modern": null, "tip_ko": "'by dint of hard work'처럼 노력·수단을 나타낼 때 주로 쓴다."},
+    {"id": "ennui", "match": "ennui", "para": 112, "headword": "ennui", "pos": "noun", "ipa": "/ɑnˈwi/",
+     "sense_en": "a tired, bored feeling from having nothing interesting to do",
+     "sense_ko": "권태, 지루함",
+     "synonyms": [
+       {"word": "boredom", "nuance": "Everyday word; simple lack of interest.", "example": "die of boredom"},
+       {"word": "listlessness", "nuance": "Lack of energy as well as interest.", "example": "a mood of listlessness"},
+       {"word": "tedium", "nuance": "Boredom caused by dull, repeated tasks.", "example": "the tedium of paperwork"}
+     ], "modern": null, "tip_ko": "프랑스어에서 온 말로 [안위]에 가깝게 읽는다."},
+    {"id": "dawdle", "match": "dawdling", "para": 112, "headword": "dawdle", "pos": "verb", "ipa": "/ˈdɔdəl/",
+     "sense_en": "wasting time in a slow, lazy way",
+     "sense_ko": "빈둥거리다, 꾸물거리다",
+     "synonyms": [
+       {"word": "linger", "nuance": "Staying longer than needed, often from reluctance to leave.", "example": "linger over coffee"},
+       {"word": "loiter", "nuance": "Standing around a place with no clear purpose; can seem suspicious.", "example": "loiter outside"},
+       {"word": "procrastinate", "nuance": "Putting off a task you should do.", "example": "procrastinate on homework"}
+     ], "modern": null, "tip_ko": null},
+    {"id": "trumpery", "match": "trumpery", "para": 115, "headword": "trumpery", "pos": "adjective", "ipa": "/ˈtrʌmpɝi/",
+     "sense_en": "showy but cheap and worthless",
+     "sense_ko": "겉만 번지르르한, 값싼",
+     "synonyms": [
+       {"word": "tawdry", "nuance": "Cheap and showy with a shabby look.", "example": "tawdry decorations"},
+       {"word": "gaudy", "nuance": "Too bright and flashy, in poor taste.", "example": "a gaudy tie"},
+       {"word": "worthless", "nuance": "Plainly has no value; no idea of showiness.", "example": "worthless paper"}
+     ], "modern": null, "tip_ko": null},
+    {"id": "corroborate", "match": "corroborative", "para": 116, "headword": "corroborative", "pos": "adjective", "ipa": "/kəˈrɑbəˌreɪtɪv/",
+     "sense_en": "giving extra support to a belief or claim",
+     "sense_ko": "(주장·의심을) 뒷받침하는",
+     "synonyms": [
+       {"word": "confirming", "nuance": "Plain word: shows that something is true.", "example": "confirming evidence"},
+       {"word": "supporting", "nuance": "Backs up an idea, but may not prove it.", "example": "supporting details"},
+       {"word": "substantiating", "nuance": "Formal: giving solid proof for a claim.", "example": "substantiating documents"}
+     ], "modern": null, "tip_ko": null},
+    {"id": "riveted", "match": "riveted", "para": 117, "headword": "rivet", "pos": "verb", "ipa": "/ˈrɪvɪt/",
+     "sense_en": "held fixed on one thing, unable to look away",
+     "sense_ko": "(시선·주의가) 고정된, 못 박힌",
+     "synonyms": [
+       {"word": "fixed", "nuance": "Simply not moving; no strong emotion.", "example": "eyes fixed on the screen"},
+       {"word": "glued", "nuance": "Informal: unable to stop looking.", "example": "glued to the TV"},
+       {"word": "fascinated", "nuance": "Interest is the cause; no idea of physically staring.", "example": "fascinated by the story"}
+     ], "modern": null, "tip_ko": null},
+    {"id": "chafed", "match": "chafed", "para": 117, "headword": "chafed", "pos": "adjective", "ipa": "/tʃeɪft/",
+     "sense_en": "worn and rough from rubbing",
+     "sense_ko": "쓸려서 닳은",
+     "synonyms": [
+       {"word": "frayed", "nuance": "Threads coming loose at cloth or rope edges.", "example": "frayed cuffs"},
+       {"word": "worn", "nuance": "General: damaged by use.", "example": "worn carpet"},
+       {"word": "scuffed", "nuance": "Scratched on the surface, as shoes or floors.", "example": "scuffed shoes"}
+     ], "modern": null, "tip_ko": null},
+    {"id": "casement", "match": "casement", "para": 118, "headword": "casement", "pos": "noun", "ipa": "/ˈkeɪsmənt/",
+     "sense_en": "a window that opens outward or inward on hinges like a door",
+     "sense_ko": "여닫이 창",
+     "synonyms": [
+       {"word": "window", "nuance": "General word for any window.", "example": "open the window"},
+       {"word": "sash window", "nuance": "Slides up and down instead of swinging on hinges.", "example": "an old sash window"}
+     ], "modern": "\"casement\" → \"window\"", "tip_ko": null},
+    {"id": "precipitate", "match": "precipitate", "para": 121, "headword": "precipitate", "pos": "adjective", "ipa": "/prɪˈsɪpɪtɪt/",
+     "sense_en": "very sudden and quick, often too hasty",
+     "sense_ko": "급격한, 성급한",
+     "synonyms": [
+       {"word": "sudden", "nuance": "Plain word for something unexpected and fast.", "example": "a sudden fall"},
+       {"word": "hasty", "nuance": "Done too quickly, without care.", "example": "a hasty decision"},
+       {"word": "abrupt", "nuance": "Sharply sudden, often sounding rough or ending sharply.", "example": "an abrupt end"}
+     ], "modern": null, "tip_ko": "형용사는 [프리시피팃], 동사는 [프리시피테이트]로 발음이 다르다."},
+    {"id": "outwit", "match": "outwitted", "para": 123, "headword": "outwit", "pos": "verb", "ipa": "/aʊtˈwɪt/",
+     "sense_en": "beat someone by being cleverer than they are",
+     "sense_ko": "지혜로 이기다, 한 수 앞서다",
+     "synonyms": [
+       {"word": "outsmart", "nuance": "Informal, American; same meaning as outwit.", "example": "outsmart the opponent"},
+       {"word": "outmaneuver", "nuance": "Beat by clever moves in a contest or plan.", "example": "outmaneuver rivals"},
+       {"word": "trick", "nuance": "Deceive; outwit doesn't require lying.", "example": "trick him into signing"}
+     ], "modern": null, "tip_ko": null},
+    {"id": "in-fine", "match": "in fine", "para": 31, "headword": "in fine", "pos": "idiom", "ipa": null,
+     "sense_en": "in short; to sum up",
+     "sense_ko": "요컨대, 한마디로",
+     "synonyms": [
+       {"word": "in short", "nuance": "Common modern way to sum up.", "example": "In short, we lost."},
+       {"word": "in sum", "nuance": "Formal, used in writing.", "example": "In sum, the plan failed."},
+       {"word": "finally", "nuance": "Says last in a series; in fine is a summary, not a sequence.", "example": "Finally, we left."}
+     ], "modern": "\"in fine\" → \"in short\"", "tip_ko": "fine의 '좋은' 뜻이 아니라 라틴어 '끝'에서 온 표현이다."},
+    {"id": "at-fault", "match": "at fault", "para": 11, "headword": "at fault", "pos": "idiom", "ipa": null,
+     "sense_en": "stopped or confused, unable to find the way (old hunting sense)",
+     "sense_ko": "갈피를 못 잡는, 막힌",
+     "synonyms": [
+       {"word": "at a loss", "nuance": "Not knowing what to do or say.", "example": "at a loss for words"},
+       {"word": "stumped", "nuance": "Informal: unable to answer.", "example": "completely stumped"},
+       {"word": "to blame", "nuance": "Modern meaning of 'at fault': responsible for a mistake.", "example": "Who is to blame?"}
+     ], "modern": "Today \"at fault\" means \"responsible for a mistake\".", "tip_ko": "현대 영어에서는 '잘못한, 책임이 있는'의 뜻이 훨씬 흔하다."},
+    {"id": "death-of-me", "match": "be the death of me", "para": 16, "headword": "be the death of someone", "pos": "idiom", "ipa": null,
+     "sense_en": "to make me laugh so much (or worry so much) that I can hardly bear it",
+     "sense_ko": "웃겨 죽겠다, 나를 죽이겠다(과장 표현)",
+     "synonyms": [
+       {"word": "crack me up", "nuance": "Informal: make me laugh hard.", "example": "You crack me up."},
+       {"word": "kill me", "nuance": "Casual exaggeration for amusement or frustration.", "example": "This is killing me."}
+     ], "modern": null, "tip_ko": "웃길 때도, 애태울 때도 쓴다. 문맥으로 구분한다."}
+  ]
+}

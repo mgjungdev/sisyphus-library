@@ -1,0 +1,2527 @@
+{
+ "slug": "sleepy-hollow",
+ "entries": [
+  {
+   "id": "implore",
+   "match": "implored",
+   "para": 2,
+   "occurrence": 1,
+   "headword": "implore",
+   "pos": "verb",
+   "ipa": "/ɪmˈplɔr/",
+   "sense_en": "begged for something in a very serious, emotional way",
+   "sense_ko": "간절히 애원했다",
+   "synonyms": [
+    {
+     "word": "beg",
+     "nuance": "Plainer and more common; can sound less dignified.",
+     "example": "beg for help"
+    },
+    {
+     "word": "beseech",
+     "nuance": "Very formal or literary; deeply pleading.",
+     "example": "beseech him to stay"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "vouch",
+   "match": "vouch",
+   "para": 2,
+   "occurrence": 1,
+   "headword": "vouch",
+   "pos": "verb",
+   "ipa": "/vaʊtʃ/",
+   "sense_en": "say that something is true and take responsibility for it",
+   "sense_ko": "보증하다, 단언하다",
+   "synonyms": [
+    {
+     "word": "guarantee",
+     "nuance": "Stronger; promises a result, not just that something is true.",
+     "example": "guarantee the quality"
+    },
+    {
+     "word": "attest",
+     "nuance": "Formal; give evidence that something is true.",
+     "example": "attest to his honesty"
+    }
+   ],
+   "modern": null,
+   "tip_ko": "보통 vouch for 형태로 쓴다.",
+   "all": true
+  },
+  {
+   "id": "reverberate",
+   "match": "reverberated",
+   "para": 3,
+   "occurrence": 1,
+   "headword": "reverberate",
+   "pos": "verb",
+   "ipa": "/rɪˈvɝbəreɪt/",
+   "sense_en": "echoed back again and again",
+   "sense_ko": "메아리쳐 울렸다",
+   "synonyms": [
+    {
+     "word": "echo",
+     "nuance": "Everyday word; a sound comes back once or more.",
+     "example": "voices echo in a cave"
+    },
+    {
+     "word": "resound",
+     "nuance": "Sound fills a place and rings loudly.",
+     "example": "the bell resounded"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "sequester",
+   "match": "sequestered",
+   "para": 4,
+   "occurrence": 1,
+   "headword": "sequestered",
+   "pos": "adjective",
+   "ipa": "/sɪˈkwɛstərd/",
+   "sense_en": "quiet, hidden away and far from other people",
+   "sense_ko": "외딴, 한적한",
+   "synonyms": [
+    {
+     "word": "secluded",
+     "nuance": "Most common; private and away from people.",
+     "example": "a secluded beach"
+    },
+    {
+     "word": "remote",
+     "nuance": "Far away; does not say the place is peaceful.",
+     "example": "a remote village"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "gambol",
+   "match": "gambols",
+   "para": 4,
+   "occurrence": 1,
+   "headword": "gambol",
+   "pos": "noun",
+   "ipa": "/ˈɡæmbəl/",
+   "sense_en": "playful jumping and running about",
+   "sense_ko": "뛰어노는 장난",
+   "synonyms": [
+    {
+     "word": "frolic",
+     "nuance": "Lively, cheerful play; more common.",
+     "example": "the frolic of children"
+    },
+    {
+     "word": "romp",
+     "nuance": "Noisy, rough play.",
+     "example": "a romp in the yard"
+    }
+   ],
+   "modern": "\"gambols\" → \"playful games\"",
+   "tip_ko": "b는 발음하고 l은 약하게: /ˈɡæmbəl/.",
+   "all": true
+  },
+  {
+   "id": "allege",
+   "match": "allege",
+   "para": 5,
+   "occurrence": 1,
+   "headword": "allege",
+   "pos": "verb",
+   "ipa": "/əˈlɛdʒ/",
+   "sense_en": "claim that something is true, without proof",
+   "sense_ko": "(증거 없이) 주장하다",
+   "synonyms": [
+    {
+     "word": "claim",
+     "nuance": "Neutral; may or may not be true.",
+     "example": "claim he was late"
+    },
+    {
+     "word": "assert",
+     "nuance": "Firm, confident statement.",
+     "example": "assert his innocence"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "imbibe",
+   "match": "imbibed",
+   "para": 7,
+   "occurrence": 1,
+   "headword": "imbibe",
+   "pos": "verb",
+   "ipa": "/ɪmˈbaɪb/",
+   "sense_en": "absorbed (an idea or feeling) without noticing",
+   "sense_ko": "(생각·분위기를) 흡수했다",
+   "synonyms": [
+    {
+     "word": "absorb",
+     "nuance": "General word for taking in ideas or liquid.",
+     "example": "absorb new ideas"
+    },
+    {
+     "word": "soak up",
+     "nuance": "Informal; take in eagerly.",
+     "example": "soak up the culture"
+    }
+   ],
+   "modern": null,
+   "tip_ko": "원래 '마시다'라는 뜻이며 여기서는 비유적으로 쓰였다.",
+   "all": true
+  },
+  {
+   "id": "lank",
+   "match": "lank",
+   "para": 9,
+   "occurrence": 1,
+   "headword": "lank",
+   "pos": "adjective",
+   "ipa": "/læŋk/",
+   "sense_en": "thin and tall in an ungainly way",
+   "sense_ko": "깡마르고 길쭉한",
+   "synonyms": [
+    {
+     "word": "lanky",
+     "nuance": "Everyday; tall, thin and awkward.",
+     "example": "a lanky teenager"
+    },
+    {
+     "word": "gaunt",
+     "nuance": "Thin from illness or hunger; looks grim.",
+     "example": "a gaunt face"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "dangle",
+   "match": "dangled",
+   "para": 9,
+   "occurrence": 1,
+   "headword": "dangle",
+   "pos": "verb",
+   "ipa": "/ˈdæŋɡəl/",
+   "sense_en": "hung loosely and swung",
+   "sense_ko": "대롱대롱 매달려 있었다",
+   "synonyms": [
+    {
+     "word": "swing",
+     "nuance": "Moves back and forth, hanging or not.",
+     "example": "legs swing"
+    },
+    {
+     "word": "hang",
+     "nuance": "Plain word; no idea of loose movement.",
+     "example": "hang from a hook"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "peradventure",
+   "match": "peradventure",
+   "para": 10,
+   "occurrence": 1,
+   "headword": "peradventure",
+   "pos": "adverb",
+   "ipa": "/ˌpɛrədˈvɛntʃər/",
+   "sense_en": "perhaps, or by chance",
+   "sense_ko": "어쩌면, 혹시",
+   "synonyms": [
+    {
+     "word": "perhaps",
+     "nuance": "Common everyday word.",
+     "example": "perhaps later"
+    },
+    {
+     "word": "perchance",
+     "nuance": "Also archaic and poetic.",
+     "example": "perchance to dream"
+    }
+   ],
+   "modern": "\"peradventure\" → \"perhaps\"",
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "tardy",
+   "match": "tardy",
+   "para": 10,
+   "occurrence": 1,
+   "headword": "tardy",
+   "pos": "adjective",
+   "ipa": "/ˈtɑrdi/",
+   "sense_en": "late or slow to arrive",
+   "sense_ko": "굼뜬, 늦은",
+   "synonyms": [
+    {
+     "word": "late",
+     "nuance": "Everyday word.",
+     "example": "late for class"
+    },
+    {
+     "word": "belated",
+     "nuance": "Later than it should have been.",
+     "example": "a belated apology"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "wince",
+   "match": "winced",
+   "para": 11,
+   "occurrence": 1,
+   "headword": "wince",
+   "pos": "verb",
+   "ipa": "/wɪns/",
+   "sense_en": "made a small movement of the face from pain or fear",
+   "sense_ko": "움찔했다",
+   "synonyms": [
+    {
+     "word": "flinch",
+     "nuance": "Sudden body movement away from danger.",
+     "example": "flinch at the noise"
+    },
+    {
+     "word": "cringe",
+     "nuance": "Shrink in fear or embarrassment.",
+     "example": "cringe at the memory"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "sulk",
+   "match": "sulked",
+   "para": 11,
+   "occurrence": 1,
+   "headword": "sulk",
+   "pos": "verb",
+   "ipa": "/sʌlk/",
+   "sense_en": "stayed silent and moody because of anger",
+   "sense_ko": "부루퉁해 있었다",
+   "synonyms": [
+    {
+     "word": "brood",
+     "nuance": "Think about troubles for a long time.",
+     "example": "brood over a loss"
+    },
+    {
+     "word": "pout",
+     "nuance": "Push out the lips to show displeasure.",
+     "example": "pout like a child"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "chastisement",
+   "match": "chastisement",
+   "para": 11,
+   "occurrence": 1,
+   "headword": "chastisement",
+   "pos": "noun",
+   "ipa": "/tʃæsˈtaɪzmənt/",
+   "sense_en": "punishment, especially a beating",
+   "sense_ko": "징계, 체벌",
+   "synonyms": [
+    {
+     "word": "punishment",
+     "nuance": "General word.",
+     "example": "harsh punishment"
+    },
+    {
+     "word": "scolding",
+     "nuance": "Only angry words, not physical.",
+     "example": "a scolding from mom"
+    }
+   ],
+   "modern": null,
+   "tip_ko": "강세는 -tise- 에 온다.",
+   "all": true
+  },
+  {
+   "id": "behoove",
+   "match": "behooved",
+   "para": 12,
+   "occurrence": 1,
+   "headword": "behoove",
+   "pos": "verb",
+   "ipa": "/bɪˈhuv/",
+   "sense_en": "was necessary or wise for",
+   "sense_ko": "~해야 마땅했다",
+   "synonyms": [
+    {
+     "word": "be necessary",
+     "nuance": "Neutral, modern.",
+     "example": "it's necessary to go"
+    },
+    {
+     "word": "be advisable",
+     "nuance": "Milder; a good idea only.",
+     "example": "it is advisable to wait"
+    }
+   ],
+   "modern": "\"it behooved him to\" → \"he had to\"",
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "ingratiate",
+   "match": "ingratiating",
+   "para": 13,
+   "occurrence": 1,
+   "headword": "ingratiating",
+   "pos": "adjective",
+   "ipa": "/ɪnˈɡreɪʃieɪtɪŋ/",
+   "sense_en": "trying too hard to win someone's favor",
+   "sense_ko": "비위를 맞추려는",
+   "synonyms": [
+    {
+     "word": "flattering",
+     "nuance": "Praises to please.",
+     "example": "a flattering remark"
+    },
+    {
+     "word": "obsequious",
+     "nuance": "More extreme; servile and fawning.",
+     "example": "an obsequious waiter"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "magnanimously",
+   "match": "magnanimously",
+   "para": 13,
+   "occurrence": 1,
+   "headword": "magnanimously",
+   "pos": "adverb",
+   "ipa": "/mæɡˈnænəməsli/",
+   "sense_en": "in a generous, forgiving way toward someone weaker",
+   "sense_ko": "아량 있게",
+   "synonyms": [
+    {
+     "word": "generously",
+     "nuance": "Everyday; giving freely.",
+     "example": "he gave generously"
+    },
+    {
+     "word": "graciously",
+     "nuance": "Polite and kind in manner.",
+     "example": "she graciously accepted"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "by-hook-or-crook",
+   "match": "by hook and by crook",
+   "para": 14,
+   "occurrence": 1,
+   "headword": "by hook or by crook",
+   "pos": "idiom",
+   "ipa": null,
+   "sense_en": "by any means possible, fair or not",
+   "sense_ko": "수단과 방법을 가리지 않고",
+   "synonyms": [
+    {
+     "word": "by any means",
+     "nuance": "Neutral; any method.",
+     "example": "win by any means"
+    },
+    {
+     "word": "at all costs",
+     "nuance": "Stresses the sacrifice, not the trickiness.",
+     "example": "succeed at all costs"
+    }
+   ],
+   "modern": null,
+   "tip_ko": "보통 by hook or by crook 이라고 한다.",
+   "all": true
+  },
+  {
+   "id": "pedagogue",
+   "match": "pedagogue",
+   "para": 14,
+   "occurrence": 1,
+   "headword": "pedagogue",
+   "pos": "noun",
+   "ipa": "/ˈpɛdəɡɑɡ/",
+   "sense_en": "a teacher (often humorous or suggesting pomposity)",
+   "sense_ko": "훈장, 선생",
+   "synonyms": [
+    {
+     "word": "teacher",
+     "nuance": "Neutral everyday.",
+     "example": "a math teacher"
+    },
+    {
+     "word": "schoolmaster",
+     "nuance": "Old-fashioned; male head teacher.",
+     "example": "the village schoolmaster"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "saunter",
+   "match": "sauntering",
+   "para": 15,
+   "occurrence": 1,
+   "headword": "saunter",
+   "pos": "verb",
+   "ipa": "/ˈsɔntər/",
+   "sense_en": "walking slowly and happily",
+   "sense_ko": "느긋하게 거닐며",
+   "synonyms": [
+    {
+     "word": "stroll",
+     "nuance": "Most common; relaxed walk.",
+     "example": "stroll in the park"
+    },
+    {
+     "word": "amble",
+     "nuance": "Slow steady walk, less showy.",
+     "example": "amble along"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "bevy",
+   "match": "bevy",
+   "para": 15,
+   "occurrence": 1,
+   "headword": "bevy",
+   "pos": "noun",
+   "ipa": "/ˈbɛvi/",
+   "sense_en": "a lively group, especially of young women",
+   "sense_ko": "(젊은 여성들의) 무리",
+   "synonyms": [
+    {
+     "word": "group",
+     "nuance": "Neutral.",
+     "example": "a group of friends"
+    },
+    {
+     "word": "flock",
+     "nuance": "Birds or followers together.",
+     "example": "a flock of girls"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "bashful",
+   "match": "bashful",
+   "para": 15,
+   "occurrence": 1,
+   "headword": "bashful",
+   "pos": "adjective",
+   "ipa": "/ˈbæʃfəl/",
+   "sense_en": "shy and embarrassed around others",
+   "sense_ko": "수줍은",
+   "synonyms": [
+    {
+     "word": "shy",
+     "nuance": "Everyday and general.",
+     "example": "a shy child"
+    },
+    {
+     "word": "timid",
+     "nuance": "Fearful and lacking courage.",
+     "example": "a timid voice"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "bumpkin",
+   "match": "bumpkins",
+   "para": 15,
+   "occurrence": 1,
+   "headword": "bumpkin",
+   "pos": "noun",
+   "ipa": "/ˈbʌmpkɪn/",
+   "sense_en": "an awkward, unsophisticated country person",
+   "sense_ko": "시골뜨기",
+   "synonyms": [
+    {
+     "word": "hick",
+     "nuance": "Rude slang.",
+     "example": "a hick town"
+    },
+    {
+     "word": "yokel",
+     "nuance": "Mocking; simple rural fellow.",
+     "example": "a village yokel"
+    }
+   ],
+   "modern": null,
+   "tip_ko": "놀리는 말이므로 조심.",
+   "all": true
+  },
+  {
+   "id": "shrewdness",
+   "match": "shrewdness",
+   "para": 17,
+   "occurrence": 1,
+   "headword": "shrewdness",
+   "pos": "noun",
+   "ipa": "/ˈʃrudnəs/",
+   "sense_en": "sharp, practical cleverness",
+   "sense_ko": "약삭빠름",
+   "synonyms": [
+    {
+     "word": "cunning",
+     "nuance": "Suggests trickery.",
+     "example": "animal cunning"
+    },
+    {
+     "word": "astuteness",
+     "nuance": "Formal; good judgment.",
+     "example": "business astuteness"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "give-up-the-ghost",
+   "match": "give up the ghost",
+   "para": 17,
+   "occurrence": 1,
+   "headword": "give up the ghost",
+   "pos": "idiom",
+   "ipa": null,
+   "sense_en": "die (here: nearly die of fright)",
+   "sense_ko": "숨이 넘어가다, 죽다",
+   "synonyms": [
+    {
+     "word": "kick the bucket",
+     "nuance": "Informal and joking; die.",
+     "example": "the old car finally kicked the bucket"
+    },
+    {
+     "word": "expire",
+     "nuance": "Formal; die.",
+     "example": "the patient expired"
+    }
+   ],
+   "modern": null,
+   "tip_ko": "여기서는 겁에 질려 죽을 것 같다는 과장.",
+   "all": true
+  },
+  {
+   "id": "wend",
+   "match": "wended",
+   "para": 17,
+   "occurrence": 1,
+   "headword": "wend",
+   "pos": "verb",
+   "ipa": "/wɛnd/",
+   "sense_en": "went on his way (literary)",
+   "sense_ko": "발걸음을 옮겼다, (길을) 갔다",
+   "synonyms": [
+    {
+     "word": "make one's way",
+     "nuance": "Common everyday phrase.",
+     "example": "make one's way home"
+    },
+    {
+     "word": "trudge",
+     "nuance": "Heavy, tired walking.",
+     "example": "trudge up the hill"
+    }
+   ],
+   "modern": "\"wend his way\" → \"make his way\"",
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "portentous",
+   "match": "portentous",
+   "para": 18,
+   "occurrence": 1,
+   "headword": "portentous",
+   "pos": "adjective",
+   "ipa": "/pɔrˈtɛntəs/",
+   "sense_en": "seeming to warn of something bad to come",
+   "sense_ko": "불길한 징조의",
+   "synonyms": [
+    {
+     "word": "ominous",
+     "nuance": "Very common; threatens bad.",
+     "example": "ominous clouds"
+    },
+    {
+     "word": "foreboding",
+     "nuance": "Feeling of coming evil.",
+     "example": "a foreboding silence"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "topsy-turvy",
+   "match": "topsy-turvy",
+   "para": 18,
+   "occurrence": 1,
+   "headword": "topsy-turvy",
+   "pos": "adjective",
+   "ipa": "/ˌtɑpsi ˈtɝvi/",
+   "sense_en": "upside down, in complete disorder",
+   "sense_ko": "거꾸로 된, 뒤죽박죽인",
+   "synonyms": [
+    {
+     "word": "upside down",
+     "nuance": "Literal position.",
+     "example": "hang upside down"
+    },
+    {
+     "word": "chaotic",
+     "nuance": "Disorder but not turned over.",
+     "example": "a chaotic room"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "curdle",
+   "match": "curdling",
+   "para": 19,
+   "occurrence": 1,
+   "headword": "curdling",
+   "pos": "adjective",
+   "ipa": "/ˈkɝdlɪŋ/",
+   "sense_en": "making the blood run cold",
+   "sense_ko": "(공포로) 오싹하게 하는",
+   "synonyms": [
+    {
+     "word": "chilling",
+     "nuance": "Cold feeling of fear.",
+     "example": "a chilling scream"
+    },
+    {
+     "word": "bloodcurdling",
+     "nuance": "Stronger; terrifying.",
+     "example": "a bloodcurdling shriek"
+    }
+   ],
+   "modern": null,
+   "tip_ko": "blood-curdling 으로 자주 쓴다.",
+   "all": true
+  },
+  {
+   "id": "coquette",
+   "match": "coquette",
+   "para": 21,
+   "occurrence": 1,
+   "headword": "coquette",
+   "pos": "noun",
+   "ipa": "/koʊˈkɛt/",
+   "sense_en": "a woman who flirts to win attention",
+   "sense_ko": "교태 부리는 여자",
+   "synonyms": [
+    {
+     "word": "flirt",
+     "nuance": "Everyday; either sex.",
+     "example": "a shameless flirt"
+    },
+    {
+     "word": "tease",
+     "nuance": "Playful; may not mean romance.",
+     "example": "a tease"
+    }
+   ],
+   "modern": null,
+   "tip_ko": "프랑스어 계열이라 끝의 -tte 는 /t/.",
+   "all": true
+  },
+  {
+   "id": "pique",
+   "match": "piqued",
+   "para": 22,
+   "occurrence": 1,
+   "headword": "pique",
+   "pos": "verb",
+   "ipa": "/pik/",
+   "sense_en": "took pride in something",
+   "sense_ko": "자랑스러워했다",
+   "synonyms": [
+    {
+     "word": "pride oneself on",
+     "nuance": "More common phrasing.",
+     "example": "pride oneself on skill"
+    },
+    {
+     "word": "boast",
+     "nuance": "Says it aloud.",
+     "example": "boast about his farm"
+    }
+   ],
+   "modern": null,
+   "tip_ko": "원뜻 '자극하다, 짜증나게 하다'와 다르다.",
+   "all": true
+  },
+  {
+   "id": "nestle",
+   "match": "nestling",
+   "para": 22,
+   "occurrence": 1,
+   "headword": "nestle",
+   "pos": "verb",
+   "ipa": "/ˈnɛsəl/",
+   "sense_en": "settling comfortably in a sheltered spot",
+   "sense_ko": "포근히 자리 잡다",
+   "synonyms": [
+    {
+     "word": "settle",
+     "nuance": "General.",
+     "example": "settle in a valley"
+    },
+    {
+     "word": "snuggle",
+     "nuance": "For people; warm and close.",
+     "example": "snuggle up"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "peevish",
+   "match": "peevish",
+   "para": 22,
+   "occurrence": 1,
+   "headword": "peevish",
+   "pos": "adjective",
+   "ipa": "/ˈpivɪʃ/",
+   "sense_en": "easily annoyed and complaining",
+   "sense_ko": "짜증 잘 내는",
+   "synonyms": [
+    {
+     "word": "irritable",
+     "nuance": "General; easily upset.",
+     "example": "an irritable mood"
+    },
+    {
+     "word": "petulant",
+     "nuance": "Childish sulky annoyance.",
+     "example": "a petulant tone"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "burnish",
+   "match": "burnished",
+   "para": 22,
+   "occurrence": 1,
+   "headword": "burnished",
+   "pos": "adjective",
+   "ipa": "/ˈbɝnɪʃt/",
+   "sense_en": "polished and shining",
+   "sense_ko": "윤이 나는",
+   "synonyms": [
+    {
+     "word": "polished",
+     "nuance": "Rubbed to shine.",
+     "example": "polished silver"
+    },
+    {
+     "word": "gleaming",
+     "nuance": "Bright by reflection.",
+     "example": "gleaming wings"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "chivalrous",
+   "match": "chivalrous",
+   "para": 23,
+   "occurrence": 1,
+   "headword": "chivalrous",
+   "pos": "adjective",
+   "ipa": "/ˈʃɪvəlrəs/",
+   "sense_en": "brave and courteous like a knight",
+   "sense_ko": "기사도적인",
+   "synonyms": [
+    {
+     "word": "gallant",
+     "nuance": "Brave and courteous, esp. to women.",
+     "example": "a gallant gesture"
+    },
+    {
+     "word": "courteous",
+     "nuance": "Polite, no bravery meant.",
+     "example": "courteous staff"
+    }
+   ],
+   "modern": null,
+   "tip_ko": "ch 는 /ʃ/ 로 발음.",
+   "all": true
+  },
+  {
+   "id": "daintily",
+   "match": "daintily",
+   "para": 23,
+   "occurrence": 1,
+   "headword": "daintily",
+   "pos": "adverb",
+   "ipa": "/ˈdeɪntəli/",
+   "sense_en": "neatly and delicately",
+   "sense_ko": "앙증맞게, 깔끔하게",
+   "synonyms": [
+    {
+     "word": "delicately",
+     "nuance": "Careful and fine.",
+     "example": "delicately carved"
+    },
+    {
+     "word": "neatly",
+     "nuance": "Tidy.",
+     "example": "neatly folded"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "trumpery",
+   "match": "trumpery",
+   "para": 24,
+   "occurrence": 1,
+   "headword": "trumpery",
+   "pos": "noun",
+   "ipa": "/ˈtrʌmpəri/",
+   "sense_en": "worthless showy things",
+   "sense_ko": "값싼 잡동사니",
+   "synonyms": [
+    {
+     "word": "junk",
+     "nuance": "Informal; worthless things.",
+     "example": "attic junk"
+    },
+    {
+     "word": "trinkets",
+     "nuance": "Small cheap ornaments.",
+     "example": "tourist trinkets"
+    }
+   ],
+   "modern": "\"household trumpery\" → \"household junk\"",
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "festoon",
+   "match": "festoons",
+   "para": 25,
+   "occurrence": 1,
+   "headword": "festoon",
+   "pos": "noun",
+   "ipa": "/fɛˈstun/",
+   "sense_en": "a hanging chain of decoration",
+   "sense_ko": "줄줄이 늘어뜨린 장식",
+   "synonyms": [
+    {
+     "word": "garland",
+     "nuance": "Flowers or leaves in a ring or chain.",
+     "example": "a garland of flowers"
+    },
+    {
+     "word": "string",
+     "nuance": "Plain word.",
+     "example": "a string of lights"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "glisten",
+   "match": "glistened",
+   "para": 25,
+   "occurrence": 1,
+   "headword": "glisten",
+   "pos": "verb",
+   "ipa": "/ˈɡlɪsən/",
+   "sense_en": "shone softly with a wet or polished surface",
+   "sense_ko": "반짝였다",
+   "synonyms": [
+    {
+     "word": "glitter",
+     "nuance": "Bright flashes like metal or jewels.",
+     "example": "glitter in the sun"
+    },
+    {
+     "word": "gleam",
+     "nuance": "Steady clean light.",
+     "example": "gleam like silver"
+    }
+   ],
+   "modern": null,
+   "tip_ko": "t 는 발음하지 않는다: /ˈɡlɪsən/.",
+   "all": true
+  },
+  {
+   "id": "peerless",
+   "match": "peerless",
+   "para": 26,
+   "occurrence": 1,
+   "headword": "peerless",
+   "pos": "adjective",
+   "ipa": "/ˈpɪrləs/",
+   "sense_en": "better than any other",
+   "sense_ko": "비할 데 없는",
+   "synonyms": [
+    {
+     "word": "unrivaled",
+     "nuance": "Has no competitor.",
+     "example": "an unrivaled talent"
+    },
+    {
+     "word": "matchless",
+     "nuance": "Nothing equals it.",
+     "example": "matchless beauty"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "yore",
+   "match": "yore",
+   "para": 26,
+   "occurrence": 1,
+   "headword": "yore",
+   "pos": "noun",
+   "ipa": "/jɔr/",
+   "sense_en": "a long time ago (in of yore)",
+   "sense_ko": "옛날",
+   "synonyms": [
+    {
+     "word": "the past",
+     "nuance": "Neutral.",
+     "example": "in the past"
+    },
+    {
+     "word": "olden days",
+     "nuance": "Warm, storytelling tone.",
+     "example": "the olden days"
+    }
+   ],
+   "modern": "\"of yore\" → \"long ago\"",
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "knight-errant",
+   "match": "knight-errant",
+   "para": 26,
+   "occurrence": 1,
+   "headword": "knight-errant",
+   "pos": "noun",
+   "ipa": "/ˌnaɪt ˈɛrənt/",
+   "sense_en": "a wandering knight in old stories",
+   "sense_ko": "편력 기사",
+   "synonyms": [
+    {
+     "word": "knight",
+     "nuance": "General.",
+     "example": "a medieval knight"
+    },
+    {
+     "word": "cavalier",
+     "nuance": "Gallant horseman, also a gentleman.",
+     "example": "a dashing cavalier"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "dexterous",
+   "match": "dexterous",
+   "para": 27,
+   "occurrence": 1,
+   "headword": "dexterous",
+   "pos": "adjective",
+   "ipa": "/ˈdɛkstrəs/",
+   "sense_en": "skilled, quick and neat with hands or body",
+   "sense_ko": "솜씨 좋은",
+   "synonyms": [
+    {
+     "word": "skillful",
+     "nuance": "General.",
+     "example": "a skillful driver"
+    },
+    {
+     "word": "adroit",
+     "nuance": "Quick and clever, also mentally.",
+     "example": "an adroit reply"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "waggish",
+   "match": "waggish",
+   "para": 27,
+   "occurrence": 1,
+   "headword": "waggish",
+   "pos": "adjective",
+   "ipa": "/ˈwæɡɪʃ/",
+   "sense_en": "playfully humorous",
+   "sense_ko": "익살스러운",
+   "synonyms": [
+    {
+     "word": "playful",
+     "nuance": "Friendly fun.",
+     "example": "a playful puppy"
+    },
+    {
+     "word": "jocular",
+     "nuance": "Formal; joking.",
+     "example": "a jocular tone"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "descry",
+   "match": "descried",
+   "para": 27,
+   "occurrence": 1,
+   "headword": "descry",
+   "pos": "verb",
+   "ipa": "/dɪˈskraɪ/",
+   "sense_en": "managed to see from far away",
+   "sense_ko": "(멀리서) 알아보았다",
+   "synonyms": [
+    {
+     "word": "spot",
+     "nuance": "Everyday; notice.",
+     "example": "spot a friend"
+    },
+    {
+     "word": "make out",
+     "nuance": "See with effort.",
+     "example": "make out a shape"
+    }
+   ],
+   "modern": "\"descried\" → \"spotted\"",
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "prank",
+   "match": "prank",
+   "para": 27,
+   "occurrence": 1,
+   "headword": "prank",
+   "pos": "noun",
+   "ipa": "/præŋk/",
+   "sense_en": "a playful trick",
+   "sense_ko": "짓궂은 장난",
+   "synonyms": [
+    {
+     "word": "trick",
+     "nuance": "May be harmful.",
+     "example": "a cruel trick"
+    },
+    {
+     "word": "practical joke",
+     "nuance": "Trick with physical action.",
+     "example": "play a practical joke"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "brawl",
+   "match": "brawl",
+   "para": 27,
+   "occurrence": 1,
+   "headword": "brawl",
+   "pos": "noun",
+   "ipa": "/brɔl/",
+   "sense_en": "a noisy rough fight",
+   "sense_ko": "난투극",
+   "synonyms": [
+    {
+     "word": "fight",
+     "nuance": "General.",
+     "example": "a fight in the street"
+    },
+    {
+     "word": "scuffle",
+     "nuance": "Small, short fight.",
+     "example": "a scuffle broke out"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "insomuch",
+   "match": "insomuch",
+   "para": 28,
+   "occurrence": 1,
+   "headword": "insomuch that",
+   "pos": "conjunction",
+   "ipa": "/ˌɪnsoʊˈmʌtʃ/",
+   "sense_en": "to such a degree that",
+   "sense_ko": "~할 정도로",
+   "synonyms": [
+    {
+     "word": "so much so that",
+     "nuance": "Modern and clear.",
+     "example": "so much so that we left"
+    },
+    {
+     "word": "to the point that",
+     "nuance": "Everyday.",
+     "example": "to the point that he cried"
+    }
+   ],
+   "modern": "\"insomuch that\" → \"so much so that\"",
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "pliability",
+   "match": "pliability",
+   "para": 29,
+   "occurrence": 1,
+   "headword": "pliability",
+   "pos": "noun",
+   "ipa": "/ˌplaɪəˈbɪləti/",
+   "sense_en": "the ability to bend or adapt easily",
+   "sense_ko": "유연함",
+   "synonyms": [
+    {
+     "word": "flexibility",
+     "nuance": "General.",
+     "example": "job flexibility"
+    },
+    {
+     "word": "adaptability",
+     "nuance": "Ability to change to new situations.",
+     "example": "adaptability to change"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "insinuate",
+   "match": "insinuating",
+   "para": 30,
+   "occurrence": 1,
+   "headword": "insinuating",
+   "pos": "adjective",
+   "ipa": "/ɪnˈsɪnjuˌeɪtɪŋ/",
+   "sense_en": "gradually and subtly winning someone's favor",
+   "sense_ko": "은근히 환심을 사는",
+   "synonyms": [
+    {
+     "word": "subtle",
+     "nuance": "Not obvious.",
+     "example": "a subtle approach"
+    },
+    {
+     "word": "sly",
+     "nuance": "Secretive and clever.",
+     "example": "a sly smile"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "meddlesome",
+   "match": "meddlesome",
+   "para": 30,
+   "occurrence": 1,
+   "headword": "meddlesome",
+   "pos": "adjective",
+   "ipa": "/ˈmɛdəlsəm/",
+   "sense_en": "interfering in others' business",
+   "sense_ko": "참견하기 좋아하는",
+   "synonyms": [
+    {
+     "word": "interfering",
+     "nuance": "Neutral description.",
+     "example": "interfering neighbors"
+    },
+    {
+     "word": "nosy",
+     "nuance": "Informal; asking too much.",
+     "example": "a nosy neighbor"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "redoubtable",
+   "match": "redoubtable",
+   "para": 31,
+   "occurrence": 1,
+   "headword": "redoubtable",
+   "pos": "adjective",
+   "ipa": "/rɪˈdaʊtəbəl/",
+   "sense_en": "causing respect or fear",
+   "sense_ko": "만만찮은",
+   "synonyms": [
+    {
+     "word": "formidable",
+     "nuance": "Very common; hard to face.",
+     "example": "a formidable rival"
+    },
+    {
+     "word": "fearsome",
+     "nuance": "Frightening to look at.",
+     "example": "a fearsome beast"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "boorish",
+   "match": "boorish",
+   "para": 32,
+   "occurrence": 1,
+   "headword": "boorish",
+   "pos": "adjective",
+   "ipa": "/ˈbʊrɪʃ/",
+   "sense_en": "rude, rough and lacking manners",
+   "sense_ko": "무례하고 촌스러운",
+   "synonyms": [
+    {
+     "word": "rude",
+     "nuance": "General.",
+     "example": "rude behavior"
+    },
+    {
+     "word": "uncouth",
+     "nuance": "Rough, uncultured.",
+     "example": "uncouth manners"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "ferule",
+   "match": "ferule",
+   "para": 33,
+   "occurrence": 1,
+   "headword": "ferule",
+   "pos": "noun",
+   "ipa": "/ˈfɛrəl/",
+   "sense_en": "a flat ruler or stick used to punish pupils",
+   "sense_ko": "(체벌용) 자, 막대",
+   "synonyms": [
+    {
+     "word": "cane",
+     "nuance": "Thin stick for beating.",
+     "example": "a school cane"
+    },
+    {
+     "word": "rod",
+     "nuance": "General stick.",
+     "example": "spare the rod"
+    }
+   ],
+   "modern": null,
+   "tip_ko": "ferrule(금속 고리)과 철자가 헷갈린다.",
+   "all": true
+  },
+  {
+   "id": "halter",
+   "match": "halter",
+   "para": 33,
+   "occurrence": 1,
+   "headword": "halter",
+   "pos": "noun",
+   "ipa": "/ˈhɔltər/",
+   "sense_en": "a rope or strap put around a horse's head",
+   "sense_ko": "(말의) 굴레, 고삐줄",
+   "synonyms": [
+    {
+     "word": "bridle",
+     "nuance": "Full head gear with bit.",
+     "example": "a leather bridle"
+    },
+    {
+     "word": "rein",
+     "nuance": "Strap held by the rider.",
+     "example": "pull the reins"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "choleric",
+   "match": "choleric",
+   "para": 35,
+   "occurrence": 1,
+   "headword": "choleric",
+   "pos": "adjective",
+   "ipa": "/ˈkɑlərɪk/",
+   "sense_en": "easily angered",
+   "sense_ko": "성마른, 화를 잘 내는",
+   "synonyms": [
+    {
+     "word": "irritable",
+     "nuance": "Milder.",
+     "example": "irritable with kids"
+    },
+    {
+     "word": "hot-tempered",
+     "nuance": "Common and informal.",
+     "example": "a hot-tempered boss"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "mettle",
+   "match": "mettle",
+   "para": 35,
+   "occurrence": 1,
+   "headword": "mettle",
+   "pos": "noun",
+   "ipa": "/ˈmɛtl/",
+   "sense_en": "spirit and courage",
+   "sense_ko": "기개, 용기",
+   "synonyms": [
+    {
+     "word": "spirit",
+     "nuance": "General.",
+     "example": "team spirit"
+    },
+    {
+     "word": "courage",
+     "nuance": "Bravery only.",
+     "example": "show courage"
+    }
+   ],
+   "modern": null,
+   "tip_ko": "metal 과 발음이 같다.",
+   "all": true
+  },
+  {
+   "id": "lurk",
+   "match": "lurking",
+   "para": 35,
+   "occurrence": 1,
+   "headword": "lurking",
+   "pos": "adjective",
+   "ipa": "/ˈlɝkɪŋ/",
+   "sense_en": "hidden and ready to show up",
+   "sense_ko": "숨어 있는",
+   "synonyms": [
+    {
+     "word": "hide",
+     "nuance": "No idea of threat.",
+     "example": "hide behind"
+    },
+    {
+     "word": "skulk",
+     "nuance": "Sneaky, guilty.",
+     "example": "skulk around"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "shamble",
+   "match": "shambled",
+   "para": 36,
+   "occurrence": 1,
+   "headword": "shamble",
+   "pos": "verb",
+   "ipa": "/ˈʃæmbəl/",
+   "sense_en": "walked slowly and awkwardly",
+   "sense_ko": "터덜터덜 걸었다",
+   "synonyms": [
+    {
+     "word": "shuffle",
+     "nuance": "Feet drag along.",
+     "example": "shuffle along"
+    },
+    {
+     "word": "plod",
+     "nuance": "Heavy tired steps.",
+     "example": "plod home"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "querulous",
+   "match": "querulous",
+   "para": 38,
+   "occurrence": 1,
+   "headword": "querulous",
+   "pos": "adjective",
+   "ipa": "/ˈkwɛrələs/",
+   "sense_en": "complaining in a whining voice",
+   "sense_ko": "투덜거리는",
+   "synonyms": [
+    {
+     "word": "whining",
+     "nuance": "Informal.",
+     "example": "a whining voice"
+    },
+    {
+     "word": "plaintive",
+     "nuance": "Sad and mournful.",
+     "example": "a plaintive cry"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "coxcomb",
+   "match": "coxcomb",
+   "para": 38,
+   "occurrence": 1,
+   "headword": "coxcomb",
+   "pos": "noun",
+   "ipa": "/ˈkɑkskoʊm/",
+   "sense_en": "a vain, showy person",
+   "sense_ko": "허세 부리는 멋쟁이",
+   "synonyms": [
+    {
+     "word": "dandy",
+     "nuance": "Elegant dresser.",
+     "example": "a Victorian dandy"
+    },
+    {
+     "word": "show-off",
+     "nuance": "Informal.",
+     "example": "a total show-off"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "opulence",
+   "match": "opulence",
+   "para": 39,
+   "occurrence": 1,
+   "headword": "opulence",
+   "pos": "noun",
+   "ipa": "/ˈɑpjələns/",
+   "sense_en": "great richness and abundance",
+   "sense_ko": "풍요, 호사",
+   "synonyms": [
+    {
+     "word": "abundance",
+     "nuance": "Plenty, not necessarily luxury.",
+     "example": "abundance of food"
+    },
+    {
+     "word": "luxury",
+     "nuance": "Expensive comfort.",
+     "example": "live in luxury"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "undulation",
+   "match": "undulation",
+   "para": 40,
+   "occurrence": 1,
+   "headword": "undulation",
+   "pos": "noun",
+   "ipa": "/ˌʌndʒəˈleɪʃən/",
+   "sense_en": "a gentle wave-like motion",
+   "sense_ko": "완만한 물결",
+   "synonyms": [
+    {
+     "word": "ripple",
+     "nuance": "Small wave.",
+     "example": "ripples on a pond"
+    },
+    {
+     "word": "swell",
+     "nuance": "Large, smooth rise of water.",
+     "example": "ocean swell"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "delectable",
+   "match": "delectable",
+   "para": 43,
+   "occurrence": 1,
+   "headword": "delectable",
+   "pos": "adjective",
+   "ipa": "/dɪˈlɛktəbəl/",
+   "sense_en": "very tasty and pleasing",
+   "sense_ko": "맛있는, 아주 먹음직스러운",
+   "synonyms": [
+    {
+     "word": "delicious",
+     "nuance": "Everyday.",
+     "example": "delicious pie"
+    },
+    {
+     "word": "scrumptious",
+     "nuance": "Informal.",
+     "example": "a scrumptious meal"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "niggardly",
+   "match": "niggardly",
+   "para": 44,
+   "occurrence": 1,
+   "headword": "niggardly",
+   "pos": "adjective",
+   "ipa": "/ˈnɪɡərdli/",
+   "sense_en": "stingy and unwilling to pay",
+   "sense_ko": "인색한",
+   "synonyms": [
+    {
+     "word": "stingy",
+     "nuance": "Everyday.",
+     "example": "a stingy boss"
+    },
+    {
+     "word": "miserly",
+     "nuance": "Extremely tight with money.",
+     "example": "a miserly old man"
+    }
+   ],
+   "modern": null,
+   "tip_ko": "발음이 불쾌한 단어와 비슷해 요즘엔 잘 안 쓴다.",
+   "all": true
+  },
+  {
+   "id": "ogle",
+   "match": "oglings",
+   "para": 47,
+   "occurrence": 1,
+   "headword": "ogling",
+   "pos": "noun",
+   "ipa": "/ˈoʊɡəlɪŋ/",
+   "sense_en": "staring looks of desire",
+   "sense_ko": "추파, 흘끔거림",
+   "synonyms": [
+    {
+     "word": "leer",
+     "nuance": "Nasty, suggestive.",
+     "example": "a leering grin"
+    },
+    {
+     "word": "gaze",
+     "nuance": "Neutral long look.",
+     "example": "gaze at the stars"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "maraud",
+   "match": "marauding",
+   "para": 49,
+   "occurrence": 1,
+   "headword": "marauding",
+   "pos": "noun",
+   "ipa": "/məˈrɔdɪŋ/",
+   "sense_en": "raiding and stealing during war",
+   "sense_ko": "약탈",
+   "synonyms": [
+    {
+     "word": "looting",
+     "nuance": "Taking goods in chaos.",
+     "example": "looting shops"
+    },
+    {
+     "word": "plunder",
+     "nuance": "Violent taking of goods.",
+     "example": "plunder a town"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "whiz",
+   "match": "whiz",
+   "para": 50,
+   "occurrence": 1,
+   "headword": "whiz",
+   "pos": "verb",
+   "ipa": "/wɪz/",
+   "sense_en": "move fast with a humming sound",
+   "sense_ko": "윙 하고 지나가다",
+   "synonyms": [
+    {
+     "word": "zoom",
+     "nuance": "Quick and loud.",
+     "example": "zoom past"
+    },
+    {
+     "word": "whistle",
+     "nuance": "High sound as it flies.",
+     "example": "whistle through the air"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "tether",
+   "match": "tethered",
+   "para": 52,
+   "occurrence": 1,
+   "headword": "tether",
+   "pos": "verb",
+   "ipa": "/ˈtɛðər/",
+   "sense_en": "tied an animal to a fixed place",
+   "sense_ko": "(말뚝에) 매었다",
+   "synonyms": [
+    {
+     "word": "tie",
+     "nuance": "General.",
+     "example": "tie a boat"
+    },
+    {
+     "word": "hitch",
+     "nuance": "Fasten to a post or wagon.",
+     "example": "hitch the horse"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "foray",
+   "match": "foray",
+   "para": 53,
+   "occurrence": 1,
+   "headword": "foray",
+   "pos": "noun",
+   "ipa": "/ˈfɔreɪ/",
+   "sense_en": "a short raid or trip",
+   "sense_ko": "급습, 짧은 원정",
+   "synonyms": [
+    {
+     "word": "raid",
+     "nuance": "Sudden attack.",
+     "example": "a police raid"
+    },
+    {
+     "word": "excursion",
+     "nuance": "A pleasant trip.",
+     "example": "a day excursion"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "make-light-of",
+   "match": "made light of",
+   "para": 54,
+   "occurrence": 1,
+   "headword": "make light of",
+   "pos": "idiom",
+   "ipa": null,
+   "sense_en": "treat as unimportant",
+   "sense_ko": "대수롭지 않게 여기다",
+   "synonyms": [
+    {
+     "word": "brush off",
+     "nuance": "Dismiss casually.",
+     "example": "brush off a warning"
+    },
+    {
+     "word": "laugh off",
+     "nuance": "Treat with a joke.",
+     "example": "laugh off an injury"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "arrant",
+   "match": "arrant",
+   "para": 54,
+   "occurrence": 1,
+   "headword": "arrant",
+   "pos": "adjective",
+   "ipa": "/ˈɛrənt/",
+   "sense_en": "complete and unquestionable (bad sense)",
+   "sense_ko": "순전한, 지독한",
+   "synonyms": [
+    {
+     "word": "utter",
+     "nuance": "Total, neutral.",
+     "example": "utter nonsense"
+    },
+    {
+     "word": "downright",
+     "nuance": "Plain and blunt.",
+     "example": "a downright lie"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "undertone",
+   "match": "undertone",
+   "para": 55,
+   "occurrence": 1,
+   "headword": "undertone",
+   "pos": "noun",
+   "ipa": "/ˈʌndərtoʊn/",
+   "sense_en": "a quiet voice",
+   "sense_ko": "낮은 목소리",
+   "synonyms": [
+    {
+     "word": "whisper",
+     "nuance": "Almost no voice.",
+     "example": "talk in a whisper"
+    },
+    {
+     "word": "murmur",
+     "nuance": "Soft, continuous sound.",
+     "example": "a murmur of voices"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "chapfallen",
+   "match": "chapfallen",
+   "para": 56,
+   "occurrence": 1,
+   "headword": "chapfallen",
+   "pos": "adjective",
+   "ipa": "/ˈtʃæpˌfɔlən/",
+   "sense_en": "sad and discouraged",
+   "sense_ko": "풀이 죽은",
+   "synonyms": [
+    {
+     "word": "dejected",
+     "nuance": "Low in spirits.",
+     "example": "dejected fans"
+    },
+    {
+     "word": "downcast",
+     "nuance": "Looking sad, eyes down.",
+     "example": "downcast eyes"
+    }
+   ],
+   "modern": "\"chapfallen\" → \"downcast\"",
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "gloat",
+   "match": "gloated",
+   "para": 56,
+   "occurrence": 1,
+   "headword": "gloat",
+   "pos": "verb",
+   "ipa": "/ɡloʊt/",
+   "sense_en": "looked with greedy pleasure",
+   "sense_ko": "탐욕스럽게 바라보았다",
+   "synonyms": [
+    {
+     "word": "relish",
+     "nuance": "Enjoy deeply.",
+     "example": "relish victory"
+    },
+    {
+     "word": "revel",
+     "nuance": "Take delight in.",
+     "example": "revel in success"
+    }
+   ],
+   "modern": null,
+   "tip_ko": "보통 남의 불행을 고소해할 때 쓴다.",
+   "all": true
+  },
+  {
+   "id": "crestfallen",
+   "match": "crestfallen",
+   "para": 57,
+   "occurrence": 1,
+   "headword": "crestfallen",
+   "pos": "adjective",
+   "ipa": "/ˈkrɛstˌfɔlən/",
+   "sense_en": "suddenly sad after disappointment",
+   "sense_ko": "의기소침한",
+   "synonyms": [
+    {
+     "word": "dejected",
+     "nuance": "Low spirits.",
+     "example": "a dejected look"
+    },
+    {
+     "word": "disappointed",
+     "nuance": "General.",
+     "example": "disappointed fans"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "guttural",
+   "match": "guttural",
+   "para": 57,
+   "occurrence": 1,
+   "headword": "guttural",
+   "pos": "adjective",
+   "ipa": "/ˈɡʌtərəl/",
+   "sense_en": "made deep in the throat",
+   "sense_ko": "목구멍에서 나는",
+   "synonyms": [
+    {
+     "word": "husky",
+     "nuance": "Rough and low.",
+     "example": "a husky voice"
+    },
+    {
+     "word": "throaty",
+     "nuance": "Deep from the throat.",
+     "example": "a throaty laugh"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "gnarl",
+   "match": "gnarled",
+   "para": 58,
+   "occurrence": 1,
+   "headword": "gnarled",
+   "pos": "adjective",
+   "ipa": "/nɑrld/",
+   "sense_en": "twisted and rough like old wood",
+   "sense_ko": "울퉁불퉁 뒤틀린",
+   "synonyms": [
+    {
+     "word": "twisted",
+     "nuance": "General bent shape.",
+     "example": "a twisted branch"
+    },
+    {
+     "word": "knotted",
+     "nuance": "With knots.",
+     "example": "knotted rope"
+    }
+   ],
+   "modern": null,
+   "tip_ko": "g 는 묵음.",
+   "all": true
+  },
+  {
+   "id": "doleful",
+   "match": "doleful",
+   "para": 58,
+   "occurrence": 1,
+   "headword": "doleful",
+   "pos": "adjective",
+   "ipa": "/ˈdoʊlfəl/",
+   "sense_en": "sad and mournful",
+   "sense_ko": "구슬픈",
+   "synonyms": [
+    {
+     "word": "mournful",
+     "nuance": "Sad, like grieving.",
+     "example": "a mournful cry"
+    },
+    {
+     "word": "woeful",
+     "nuance": "Deep sorrow or bad quality.",
+     "example": "a woeful tale"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "scathe",
+   "match": "scathed",
+   "para": 59,
+   "occurrence": 1,
+   "headword": "scathe",
+   "pos": "verb",
+   "ipa": "/skeɪð/",
+   "sense_en": "burned or damaged (by lightning)",
+   "sense_ko": "(번개에) 그슬린",
+   "synonyms": [
+    {
+     "word": "scorch",
+     "nuance": "Burn the surface.",
+     "example": "scorch the cloth"
+    },
+    {
+     "word": "blast",
+     "nuance": "Destroy by force.",
+     "example": "blasted by lightning"
+    }
+   ],
+   "modern": "\"scathed\" → \"scorched\"",
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "lustily",
+   "match": "lustily",
+   "para": 61,
+   "occurrence": 1,
+   "headword": "lustily",
+   "pos": "adverb",
+   "ipa": "/ˈlʌstəli/",
+   "sense_en": "with great energy",
+   "sense_ko": "힘차게",
+   "synonyms": [
+    {
+     "word": "vigorously",
+     "nuance": "Energetic.",
+     "example": "shake vigorously"
+    },
+    {
+     "word": "heartily",
+     "nuance": "Enthusiastic.",
+     "example": "eat heartily"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "misshapen",
+   "match": "misshapen",
+   "para": 61,
+   "occurrence": 1,
+   "headword": "misshapen",
+   "pos": "adjective",
+   "ipa": "/mɪsˈʃeɪpən/",
+   "sense_en": "having a strange, wrong shape",
+   "sense_ko": "기형의, 흉하게 일그러진",
+   "synonyms": [
+    {
+     "word": "deformed",
+     "nuance": "Strong and hurtful.",
+     "example": "a deformed hand"
+    },
+    {
+     "word": "distorted",
+     "nuance": "Twisted out of shape.",
+     "example": "a distorted image"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "stammer",
+   "match": "stammering",
+   "para": 62,
+   "occurrence": 1,
+   "headword": "stammering",
+   "pos": "adjective",
+   "ipa": "/ˈstæmərɪŋ/",
+   "sense_en": "speaking with pauses and repeated sounds from nervousness",
+   "sense_ko": "더듬거리는",
+   "synonyms": [
+    {
+     "word": "stutter",
+     "nuance": "Similar; often a habit.",
+     "example": "a stutter"
+    },
+    {
+     "word": "falter",
+     "nuance": "Voice weakens.",
+     "example": "his voice faltered"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "cudgel",
+   "match": "cudgelled",
+   "para": 62,
+   "occurrence": 1,
+   "headword": "cudgel",
+   "pos": "verb",
+   "ipa": "/ˈkʌdʒəl/",
+   "sense_en": "beat with a heavy stick",
+   "sense_ko": "(몽둥이로) 두들겼다",
+   "synonyms": [
+    {
+     "word": "beat",
+     "nuance": "General.",
+     "example": "beat a drum"
+    },
+    {
+     "word": "thrash",
+     "nuance": "Hit hard repeatedly.",
+     "example": "thrash a horse"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "pertinacious",
+   "match": "pertinacious",
+   "para": 63,
+   "occurrence": 1,
+   "headword": "pertinacious",
+   "pos": "adjective",
+   "ipa": "/ˌpɝtnˈeɪʃəs/",
+   "sense_en": "stubbornly persistent",
+   "sense_ko": "끈질긴",
+   "synonyms": [
+    {
+     "word": "persistent",
+     "nuance": "Neutral.",
+     "example": "a persistent cough"
+    },
+    {
+     "word": "tenacious",
+     "nuance": "Holds on strongly, often positive.",
+     "example": "a tenacious fighter"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "parch",
+   "match": "parched",
+   "para": 63,
+   "occurrence": 1,
+   "headword": "parched",
+   "pos": "adjective",
+   "ipa": "/pɑrtʃt/",
+   "sense_en": "very dry",
+   "sense_ko": "바싹 마른",
+   "synonyms": [
+    {
+     "word": "dry",
+     "nuance": "General.",
+     "example": "dry lips"
+    },
+    {
+     "word": "dehydrated",
+     "nuance": "Body short of water.",
+     "example": "a dehydrated runner"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "muffle",
+   "match": "muffled",
+   "para": 63,
+   "occurrence": 1,
+   "headword": "muffled",
+   "pos": "adjective",
+   "ipa": "/ˈmʌfəld/",
+   "sense_en": "wrapped up",
+   "sense_ko": "몸을 감싼",
+   "synonyms": [
+    {
+     "word": "wrapped",
+     "nuance": "General.",
+     "example": "wrapped in a blanket"
+    },
+    {
+     "word": "cloaked",
+     "nuance": "Covered by a cloak.",
+     "example": "a cloaked figure"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "hard-on-his-haunches",
+   "match": "hard on his haunches",
+   "para": 65,
+   "occurrence": 1,
+   "headword": "hard on someone's heels",
+   "pos": "idiom",
+   "ipa": null,
+   "sense_en": "following very closely behind",
+   "sense_ko": "바로 뒤를 바짝 쫓는",
+   "synonyms": [
+    {
+     "word": "hot on his heels",
+     "nuance": "Common form.",
+     "example": "hot on his heels"
+    },
+    {
+     "word": "close behind",
+     "nuance": "Plain.",
+     "example": "close behind us"
+    }
+   ],
+   "modern": "\"hard on his haunches\" → \"hard on his heels\"",
+   "tip_ko": "보통 hard on someone's heels 라고 한다. haunches 는 '엉덩이, 뒷다리'.",
+   "all": true
+  },
+  {
+   "id": "brimstone",
+   "match": "brimstone",
+   "para": 66,
+   "occurrence": 1,
+   "headword": "brimstone",
+   "pos": "noun",
+   "ipa": "/ˈbrɪmstoʊn/",
+   "sense_en": "sulfur, the burning stone of hell",
+   "sense_ko": "유황",
+   "synonyms": [
+    {
+     "word": "sulfur",
+     "nuance": "Scientific name.",
+     "example": "the smell of sulfur"
+    },
+    {
+     "word": "fire and brimstone",
+     "nuance": "Fixed phrase for hell.",
+     "example": "a fire-and-brimstone sermon"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "scrawl",
+   "match": "scrawl",
+   "para": 68,
+   "occurrence": 1,
+   "headword": "scrawl",
+   "pos": "noun",
+   "ipa": "/skrɔl/",
+   "sense_en": "messy handwriting",
+   "sense_ko": "갈겨쓴 글씨",
+   "synonyms": [
+    {
+     "word": "scribble",
+     "nuance": "Quick, meaningless marks.",
+     "example": "a child's scribble"
+    },
+    {
+     "word": "scratch",
+     "nuance": "Rough marks.",
+     "example": "chicken scratch"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "consign",
+   "match": "consigned",
+   "para": 68,
+   "occurrence": 1,
+   "headword": "consign",
+   "pos": "verb",
+   "ipa": "/kənˈsaɪn/",
+   "sense_en": "handed over or sent away to a final place",
+   "sense_ko": "(처분으로) 넘기다",
+   "synonyms": [
+    {
+     "word": "commit",
+     "nuance": "Formal; entrust to.",
+     "example": "commit to memory"
+    },
+    {
+     "word": "relegate",
+     "nuance": "Send to lower position.",
+     "example": "relegated to the attic"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "electioneer",
+   "match": "electioneered",
+   "para": 70,
+   "occurrence": 1,
+   "headword": "electioneer",
+   "pos": "verb",
+   "ipa": "/ɪˌlɛkʃəˈnɪr/",
+   "sense_en": "campaign for votes",
+   "sense_ko": "선거 운동을 했다",
+   "synonyms": [
+    {
+     "word": "campaign",
+     "nuance": "Common general.",
+     "example": "campaign for mayor"
+    },
+    {
+     "word": "canvass",
+     "nuance": "Go door to door.",
+     "example": "canvass voters"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "burgher",
+   "match": "burghers",
+   "para": 74,
+   "occurrence": 1,
+   "headword": "burgher",
+   "pos": "noun",
+   "ipa": "/ˈbɝɡər/",
+   "sense_en": "a respectable citizen of a town",
+   "sense_ko": "(도시의) 시민",
+   "synonyms": [
+    {
+     "word": "citizen",
+     "nuance": "General.",
+     "example": "a citizen"
+    },
+    {
+     "word": "townsman",
+     "nuance": "Man of a town.",
+     "example": "a townsman"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "akimbo",
+   "match": "akimbo",
+   "para": 74,
+   "occurrence": 1,
+   "headword": "akimbo",
+   "pos": "adverb",
+   "ipa": "/əˈkɪmboʊ/",
+   "sense_en": "with hand on hip and elbow out",
+   "sense_ko": "손을 허리에 짚고 팔꿈치를 벌려",
+   "synonyms": [
+    {
+     "word": "hands on hips",
+     "nuance": "Modern.",
+     "example": "stood with hands on hips"
+    },
+    {
+     "word": "elbows out",
+     "nuance": "Plain description.",
+     "example": "sat with elbows out"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "leer",
+   "match": "leer",
+   "para": 79,
+   "occurrence": 1,
+   "headword": "leer",
+   "pos": "noun",
+   "ipa": "/lɪr/",
+   "sense_en": "an unpleasant or sly look",
+   "sense_ko": "능글맞은 곁눈질",
+   "synonyms": [
+    {
+     "word": "smirk",
+     "nuance": "Self-satisfied smile.",
+     "example": "a smirk"
+    },
+    {
+     "word": "sneer",
+     "nuance": "Contemptuous.",
+     "example": "a sneer"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "methought",
+   "match": "methought",
+   "para": 79,
+   "occurrence": 1,
+   "headword": "methought",
+   "pos": "verb",
+   "ipa": "/miˈθɔt/",
+   "sense_en": "it seemed to me",
+   "sense_ko": "내 생각에는 ~인 듯했다",
+   "synonyms": [
+    {
+     "word": "it seemed to me",
+     "nuance": "Modern.",
+     "example": "it seemed to me"
+    },
+    {
+     "word": "I thought",
+     "nuance": "Plain.",
+     "example": "I thought"
+    }
+   ],
+   "modern": "\"methought\" → \"it seemed to me\"",
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "preferment",
+   "match": "preferment",
+   "para": 78,
+   "occurrence": 1,
+   "headword": "preferment",
+   "pos": "noun",
+   "ipa": "/prɪˈfɝmənt/",
+   "sense_en": "promotion to a higher position",
+   "sense_ko": "승진, 출세",
+   "synonyms": [
+    {
+     "word": "promotion",
+     "nuance": "Common.",
+     "example": "gain promotion"
+    },
+    {
+     "word": "advancement",
+     "nuance": "Progress in career.",
+     "example": "career advancement"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  }
+ ]
+}

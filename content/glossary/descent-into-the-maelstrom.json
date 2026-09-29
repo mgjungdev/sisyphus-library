@@ -1,0 +1,295 @@
+{
+  "slug": "descent-into-the-maelstrom",
+  "entries": [
+    {"id": "commensurate", "match": "commensurate", "para": 1, "headword": "commensurate", "pos": "adjective", "ipa": "/kəˈmɛnsərət/", "sense_en": "equal in size or measure to something; matching it", "sense_ko": "(~에) 걸맞은, 같은 크기의", "synonyms": [
+      {"word": "proportionate", "nuance": "In the right proportion to something else; a more common word.", "example": "a punishment proportionate to the crime"},
+      {"word": "equal", "nuance": "Plain word for the same amount; commensurate is formal and needs 'to' or 'with'.", "example": "Their strength is equal."},
+      {"word": "adequate", "nuance": "Just enough for a need, without saying it matches exactly.", "example": "an adequate reply"}
+    ], "modern": "equal to, in proportion to", "tip_ko": "commensurate with/to ~ 형태로 '~에 상응하는'이라는 뜻으로 자주 씁니다."},
+    {"id": "profundity", "match": "profundity", "para": 1, "headword": "profundity", "pos": "noun", "ipa": "/prəˈfʌndəti/", "sense_en": "great depth, both of thought and of physical space", "sense_ko": "깊이, 심오함", "synonyms": [
+      {"word": "depth", "nuance": "The everyday word for how deep something is, literally or of ideas.", "example": "the depth of the lake"},
+      {"word": "profoundness", "nuance": "Rarer form of the same word; sounds heavy and abstract.", "example": "the profoundness of his grief"},
+      {"word": "insight", "nuance": "Clear understanding of something hidden; about the mind only, never physical depth.", "example": "a book full of insight"}
+    ], "modern": "depth", "tip_ko": "profound(심오한)의 명사형입니다."},
+    {"id": "exhausted", "match": "exhausted", "para": 3, "headword": "exhausted", "pos": "adjective", "ipa": "/ɪɡˈzɔstɪd/", "sense_en": "extremely tired, with no strength left", "sense_ko": "기진맥진한", "synonyms": [
+      {"word": "tired", "nuance": "The general word; much weaker than exhausted.", "example": "I'm a little tired."},
+      {"word": "worn out", "nuance": "Tired from long effort or work, like a used-up tool.", "example": "She was worn out after the trip."},
+      {"word": "drained", "nuance": "Emptied of energy or feeling, often after stress.", "example": "He felt drained after the meeting."}
+    ], "modern": null, "tip_ko": "h는 소리 나지 않고 /ɪɡˈzɔstɪd/로 읽습니다."},
+    {"id": "giddy", "match": "giddy", "para": 4, "headword": "giddy", "pos": "adjective", "ipa": "/ˈɡɪdi/", "sense_en": "dizzy, feeling that you might fall", "sense_ko": "현기증이 나는, 어질어질한", "synonyms": [
+      {"word": "dizzy", "nuance": "The usual word for a spinning head; giddy also means silly or excited.", "example": "I felt dizzy on the ladder."},
+      {"word": "light-headed", "nuance": "Faint and unsteady, often from hunger or standing up too fast.", "example": "She felt light-headed."},
+      {"word": "woozy", "nuance": "Casual: dizzy and slightly sick or drugged.", "example": "The medicine made him woozy."}
+    ], "modern": null, "tip_ko": "'giddy with joy'처럼 기뻐서 들뜬 뜻으로도 씁니다.", "all": true},
+    {"id": "precipice", "match": "precipice", "para": 5, "headword": "precipice", "pos": "noun", "ipa": "/ˈprɛsəpɪs/", "sense_en": "a very steep, high cliff face", "sense_ko": "절벽, 낭떠러지", "synonyms": [
+      {"word": "cliff", "nuance": "The everyday word for a steep rock edge; precipice sounds more dangerous.", "example": "a cliff above the sea"},
+      {"word": "crag", "nuance": "A rough, rocky peak or cliff, not necessarily sheer.", "example": "a crag on the hillside"},
+      {"word": "drop", "nuance": "Plain word for any sudden fall in height.", "example": "a sheer drop of a hundred feet"}
+    ], "modern": "cliff", "tip_ko": null},
+    {"id": "brink", "match": "brink", "para": 5, "headword": "brink", "pos": "noun", "ipa": "/brɪŋk/", "sense_en": "the very edge of a high or dangerous place", "sense_ko": "(절벽 등의) 가장자리", "synonyms": [
+      {"word": "edge", "nuance": "General word for where something ends.", "example": "the edge of the table"},
+      {"word": "verge", "nuance": "Edge, and also the point just before something happens.", "example": "on the verge of tears"},
+      {"word": "rim", "nuance": "Edge of a round thing such as a cup or crater.", "example": "the rim of the cup"}
+    ], "modern": null, "tip_ko": "'on the brink of ~'는 '~ 직전에'라는 뜻으로 자주 씁니다."},
+    {"id": "divest", "match": "divest", "para": 5, "headword": "divest", "pos": "verb", "ipa": "/daɪˈvɛst/", "sense_en": "to get rid of an idea or feeling; to free yourself from it", "sense_ko": "(생각 등을) 떨쳐내다", "synonyms": [
+      {"word": "shake off", "nuance": "Everyday phrase for getting rid of a feeling or illness.", "example": "He couldn't shake off the fear."},
+      {"word": "rid", "nuance": "Free yourself of something unwanted; used as 'rid oneself of'.", "example": "She tried to rid herself of doubt."},
+      {"word": "strip", "nuance": "Take away by force, often clothes or rights.", "example": "They stripped him of his title."}
+    ], "modern": "get rid of", "tip_ko": "divest oneself of ~ 형태로 씁니다."},
+    {"id": "dreary", "match": "dreary", "para": 7, "headword": "dreary", "pos": "adjective", "ipa": "/ˈdrɪri/", "sense_en": "dull, gloomy and depressing to look at", "sense_ko": "음울한, 을씨년스러운", "synonyms": [
+      {"word": "gloomy", "nuance": "Dark and sad; often about weather or mood.", "example": "a gloomy afternoon"},
+      {"word": "bleak", "nuance": "Bare, cold and hopeless-looking, like an empty windy place.", "example": "a bleak hillside"},
+      {"word": "dull", "nuance": "Merely boring; without the feeling of sadness.", "example": "a dull speech"}
+    ], "modern": null, "tip_ko": null},
+    {"id": "beheld", "match": "beheld", "para": 8, "headword": "behold", "pos": "verb", "ipa": "/bɪˈhoʊld/", "sense_en": "saw something impressive", "sense_ko": "(눈앞에 펼쳐진 것을) 보았다", "synonyms": [
+      {"word": "see", "nuance": "The plain word; behold suggests something striking, in solemn writing.", "example": "I saw a huge wave."},
+      {"word": "gaze at", "nuance": "Look for a long time, usually with wonder.", "example": "She gazed at the stars."},
+      {"word": "witness", "nuance": "See an event happen, often an important one.", "example": "We witnessed the storm."}
+    ], "modern": "saw", "tip_ko": "behold - beheld - beheld로 변하는 불규칙 동사입니다."},
+    {"id": "desolate", "match": "desolate", "para": 8, "headword": "desolate", "pos": "adjective", "ipa": "/ˈdɛsələt/", "sense_en": "empty, lifeless and bleak", "sense_ko": "황량한, 쓸쓸한", "synonyms": [
+      {"word": "barren", "nuance": "Unable to grow anything; about land.", "example": "barren rock"},
+      {"word": "deserted", "nuance": "Empty because people have left.", "example": "a deserted street"},
+      {"word": "bleak", "nuance": "Cold, bare and without comfort or hope.", "example": "a bleak coastline"}
+    ], "modern": null, "tip_ko": "동사 /ˈdɛsəleɪt/(황폐하게 하다)와 형용사 /ˈdɛsələt/의 발음이 다릅니다."},
+    {"id": "beetling", "match": "beetling", "para": 8, "headword": "beetling", "pos": "adjective", "ipa": "/ˈbitəlɪŋ/", "sense_en": "sticking out and hanging over, like a heavy brow", "sense_ko": "(절벽이) 불쑥 튀어나온", "synonyms": [
+      {"word": "overhanging", "nuance": "Plain description of something that juts out above you.", "example": "an overhanging rock"},
+      {"word": "jutting", "nuance": "Sticking out sharply, in any direction.", "example": "jutting cliffs"},
+      {"word": "towering", "nuance": "Very tall; says nothing about leaning over.", "example": "towering cliffs"}
+    ], "modern": "overhanging", "tip_ko": "beetle-browed(눈썹이 짙게 튀어나온)에서 나온 말로, 주로 절벽이나 바위에 씁니다."},
+    {"id": "promontory", "match": "promontory", "para": 8, "headword": "promontory", "pos": "noun", "ipa": "/ˈprɑməntɔri/", "sense_en": "a high point of land that sticks out into the sea", "sense_ko": "곶, 돌출한 갑", "synonyms": [
+      {"word": "headland", "nuance": "Very close in meaning; the more common word for a high land jutting into the sea.", "example": "a rocky headland"},
+      {"word": "cape", "nuance": "Larger stretch of land into the sea, and used in names.", "example": "Cape Cod"},
+      {"word": "point", "nuance": "Everyday word for any tip of land.", "example": "the southern point of the island"}
+    ], "modern": "headland", "tip_ko": null},
+    {"id": "discernible", "match": "discernible", "para": 8, "headword": "discernible", "pos": "adjective", "ipa": "/dɪˈsɝnəbəl/", "sense_en": "able to be seen or recognized, though not easily", "sense_ko": "식별할 수 있는, 알아볼 수 있는", "synonyms": [
+      {"word": "visible", "nuance": "Can be seen; says nothing about difficulty.", "example": "The island is visible today."},
+      {"word": "noticeable", "nuance": "Easy to notice; discernible often needs effort.", "example": "a noticeable change"},
+      {"word": "detectable", "nuance": "Can be found with care or with tools.", "example": "detectable traces"}
+    ], "modern": null, "tip_ko": "discern은 '(어렴풋이) 분간하다'입니다."},
+    {"id": "gale", "match": "gale", "para": 9, "headword": "gale", "pos": "noun", "ipa": "/ɡeɪl/", "sense_en": "a very strong wind", "sense_ko": "강풍, 돌풍", "synonyms": [
+      {"word": "breeze", "nuance": "A gentle, pleasant wind; the opposite of a gale.", "example": "a light breeze"},
+      {"word": "storm", "nuance": "Bad weather with wind plus rain or snow; gale is only about wind.", "example": "a snow storm"},
+      {"word": "hurricane", "nuance": "The strongest storm wind, 74 mph or more.", "example": "a hurricane warning"}
+    ], "modern": null, "tip_ko": null, "all": true},
+    {"id": "in-the-teeth-of-the-wind", "match": "in the teeth of the wind", "para": 9, "headword": "in the teeth of", "pos": "idiom", "ipa": null, "sense_en": "straight against the wind, facing it directly", "sense_ko": "바람을 정면으로 맞으며", "synonyms": [
+      {"word": "against the wind", "nuance": "Plain version of the same idea.", "example": "We walked against the wind."},
+      {"word": "into the wind", "nuance": "Moving directly toward where the wind comes from.", "example": "The boat sailed into the wind."},
+      {"word": "in the face of", "nuance": "Facing a danger or opposition, not only wind.", "example": "in the face of danger"}
+    ], "modern": "against the wind", "tip_ko": "'in the teeth of ~'는 '~에 정면으로 맞서'라는 뜻입니다."},
+    {"id": "impetuosity", "match": "impetuosity", "para": 11, "headword": "impetuosity", "pos": "noun", "ipa": "/ɪmˌpɛtʃuˈɑsəti/", "sense_en": "wild, rushing force", "sense_ko": "맹렬한 기세", "synonyms": [
+      {"word": "force", "nuance": "General word for power.", "example": "the force of the water"},
+      {"word": "violence", "nuance": "Rough, destructive power.", "example": "the violence of the storm"},
+      {"word": "haste", "nuance": "Speed without care; usually about people.", "example": "He left in haste."}
+    ], "modern": null, "tip_ko": "사람에게는 '성급함, 충동적임'이라는 뜻입니다."},
+    {"id": "gyrating", "match": "gyrating", "para": 11, "headword": "gyrate", "pos": "verb", "ipa": "/ˈdʒaɪreɪt/", "sense_en": "spinning round and round in circles", "sense_ko": "빙글빙글 돌다", "synonyms": [
+      {"word": "spin", "nuance": "The everyday word for turning round fast.", "example": "The top spun."},
+      {"word": "whirl", "nuance": "Fast, wild turning, often with wind or water.", "example": "Leaves whirled in the wind."},
+      {"word": "revolve", "nuance": "Go around a fixed centre or point.", "example": "The earth revolves around the sun."}
+    ], "modern": null, "tip_ko": "g는 /dʒ/ 소리입니다.", "all": true},
+    {"id": "vortices", "match": "vortices", "para": 11, "headword": "vortex", "pos": "noun", "ipa": "/ˈvɔrtɛks/", "sense_en": "spinning masses of water that pull things toward the centre", "sense_ko": "소용돌이", "synonyms": [
+      {"word": "whirlpool", "nuance": "Water only; the everyday word.", "example": "The boat was caught in a whirlpool."},
+      {"word": "eddy", "nuance": "A small circling current, much weaker than a vortex.", "example": "an eddy by the rocks"},
+      {"word": "whirlwind", "nuance": "A spinning column of air, not water.", "example": "a dusty whirlwind"}
+    ], "modern": null, "tip_ko": "복수형은 vortexes 또는 vortices입니다."},
+    {"id": "prodigious", "match": "prodigious", "para": 12, "headword": "prodigious", "pos": "adjective", "ipa": "/prəˈdɪdʒəs/", "sense_en": "extremely large and amazing", "sense_ko": "엄청난, 거대한", "synonyms": [
+      {"word": "enormous", "nuance": "Very big; no sense of wonder.", "example": "an enormous wave"},
+      {"word": "colossal", "nuance": "Huge, like a giant statue.", "example": "a colossal mistake"},
+      {"word": "remarkable", "nuance": "Worth noticing, not necessarily big.", "example": "a remarkable talent"}
+    ], "modern": "huge", "tip_ko": "prodigy(신동)와 어원이 같습니다."},
+    {"id": "appalling", "match": "appalling", "para": 12, "headword": "appalling", "pos": "adjective", "ipa": "/əˈpɔlɪŋ/", "sense_en": "so terrible that it shocks and frightens you", "sense_ko": "소름 끼치는, 끔찍한", "synonyms": [
+      {"word": "terrible", "nuance": "General word for very bad.", "example": "terrible weather"},
+      {"word": "dreadful", "nuance": "Causing fear or great unpleasantness.", "example": "a dreadful sound"},
+      {"word": "shocking", "nuance": "Surprising and upsetting, often morally.", "example": "shocking news"}
+    ], "modern": null, "tip_ko": "'appalling'은 일상에서 '형편없는'이라는 가벼운 뜻으로도 씁니다."},
+    {"id": "cataract", "match": "cataract", "para": 12, "headword": "cataract", "pos": "noun", "ipa": "/ˈkætərækt/", "sense_en": "a large, powerful waterfall", "sense_ko": "큰 폭포", "synonyms": [
+      {"word": "waterfall", "nuance": "The ordinary word, any size.", "example": "a tall waterfall"},
+      {"word": "cascade", "nuance": "A series of falls or a gentle waterfall; prettier.", "example": "a cascade of water"},
+      {"word": "rapids", "nuance": "Fast, rough water in a river, not a drop.", "example": "white-water rapids"}
+    ], "modern": "waterfall", "tip_ko": "의학에서는 '백내장'입니다."},
+    {"id": "circumstantial", "match": "circumstantial", "para": 16, "headword": "circumstantial", "pos": "adjective", "ipa": "/ˌsɝkəmˈstænʃəl/", "sense_en": "giving many small details about something", "sense_ko": "상세한, 세부까지 다룬", "synonyms": [
+      {"word": "detailed", "nuance": "The plain word for full of details.", "example": "a detailed report"},
+      {"word": "thorough", "nuance": "Covering everything carefully.", "example": "a thorough search"},
+      {"word": "indirect", "nuance": "The legal sense of circumstantial evidence: proof by hints.", "example": "indirect evidence"}
+    ], "modern": "detailed", "tip_ko": "법에서는 circumstantial evidence가 '정황 증거'입니다."},
+    {"id": "boisterous", "match": "boisterous", "para": 17, "headword": "boisterous", "pos": "adjective", "ipa": "/ˈbɔɪstərəs/", "sense_en": "rough, wild and noisy (of the sea)", "sense_ko": "(바다가) 거칠고 사나운", "synonyms": [
+      {"word": "rough", "nuance": "General word for not calm.", "example": "a rough sea"},
+      {"word": "stormy", "nuance": "With storms; about weather or sea.", "example": "stormy waters"},
+      {"word": "rowdy", "nuance": "Noisy and badly behaved, about people.", "example": "a rowdy crowd"}
+    ], "modern": null, "tip_ko": "사람에게는 '떠들썩한'이라는 뜻입니다."},
+    {"id": "abyss", "match": "abyss", "para": 18, "headword": "abyss", "pos": "noun", "ipa": "/əˈbɪs/", "sense_en": "a huge, deep hole that seems to have no bottom", "sense_ko": "심연, 깊은 구렁", "synonyms": [
+      {"word": "chasm", "nuance": "A deep crack in the earth, seen from side to side.", "example": "a chasm in the ice"},
+      {"word": "gulf", "nuance": "A wide gap or difference; also a large bay.", "example": "a gulf between them"},
+      {"word": "pit", "nuance": "Any hole in the ground; less dramatic.", "example": "a coal pit"}
+    ], "modern": null, "tip_ko": "강세는 두 번째 음절입니다: /əˈbɪs/.", "all": true},
+    {"id": "plausible", "match": "plausible", "para": 19, "headword": "plausible", "pos": "adjective", "ipa": "/ˈplɔzəbəl/", "sense_en": "seeming likely to be true", "sense_ko": "그럴듯한", "synonyms": [
+      {"word": "believable", "nuance": "Easy to believe; neutral.", "example": "a believable story"},
+      {"word": "credible", "nuance": "Deserving trust, especially a source or claim.", "example": "a credible witness"},
+      {"word": "probable", "nuance": "Likely to happen; not about how convincing it sounds.", "example": "the probable result"}
+    ], "modern": null, "tip_ko": "plausible은 '그럴듯하지만 사실은 아닐 수도' 있다는 느낌을 줍니다."},
+    {"id": "lee", "match": "lee", "para": 20, "headword": "lee", "pos": "noun", "ipa": "/li/", "sense_en": "the side sheltered from the wind", "sense_ko": "바람이 불어오지 않는 쪽, 바람막이", "synonyms": [
+      {"word": "shelter", "nuance": "Any protection from wind, rain or danger.", "example": "shelter from the storm"},
+      {"word": "cover", "nuance": "Something that hides or protects you.", "example": "take cover behind a rock"},
+      {"word": "leeward", "nuance": "Adjective or adverb form: facing away from the wind.", "example": "the leeward side"}
+    ], "modern": null, "tip_ko": "'in the lee of ~'는 '~의 바람막이 쪽에'라는 뜻입니다."},
+    {"id": "burthen", "match": "burthen", "para": 22, "headword": "burthen", "pos": "noun", "ipa": "/ˈbɝðən/", "sense_en": "a ship's carrying capacity, measured in tons", "sense_ko": "(배의) 적재량", "synonyms": [
+      {"word": "tonnage", "nuance": "The modern word for a ship's size or cargo space.", "example": "a ship of large tonnage"},
+      {"word": "capacity", "nuance": "How much anything can hold.", "example": "a hall with a capacity of 500"},
+      {"word": "load", "nuance": "What is actually carried, not what could be.", "example": "a heavy load"}
+    ], "modern": "tonnage", "tip_ko": "burthen은 burden의 옛 철자입니다."},
+    {"id": "eddies", "match": "eddies", "para": 22, "headword": "eddy", "pos": "noun", "ipa": "/ˈɛdi/", "sense_en": "circling currents of water; whirlpools", "sense_ko": "소용돌이", "synonyms": [
+      {"word": "whirlpool", "nuance": "A strong circling current that pulls things down; eddy is the general word and is often small.", "example": "The whirlpool sucked in the log."},
+      {"word": "swirl", "nuance": "A gentle twisting movement, also of smoke or cream.", "example": "a swirl of water"},
+      {"word": "current", "nuance": "Water moving in one direction, not circling.", "example": "a strong current"}
+    ], "modern": null, "tip_ko": null, "all": true},
+    {"id": "weighed", "match": "weighed", "para": 23, "headword": "weigh anchor", "pos": "verb", "ipa": "/weɪ/", "sense_en": "lifted the anchor to leave; set sail", "sense_ko": "닻을 올리다, 출항하다", "synonyms": [
+      {"word": "set sail", "nuance": "Begin a voyage.", "example": "They set sail at dawn."},
+      {"word": "cast off", "nuance": "Untie the ropes that hold a boat to land.", "example": "We cast off from the dock."},
+      {"word": "depart", "nuance": "Formal word for leaving, on any transport.", "example": "The ship departs at noon."}
+    ], "modern": "set sail", "tip_ko": "weigh anchor는 '닻을 올리다'로, 'anchor'가 생략되기도 합니다."},
+    {"id": "made-shift", "match": "made shift", "para": 24, "headword": "make shift", "pos": "idiom", "ipa": null, "sense_en": "managed to do something with what we had, with difficulty", "sense_ko": "어떻게든 해내다", "synonyms": [
+      {"word": "manage", "nuance": "The everyday word for succeeding despite difficulty.", "example": "We managed to cross."},
+      {"word": "get by", "nuance": "Survive with barely enough.", "example": "They get by on little money."},
+      {"word": "make do", "nuance": "Accept something less than ideal.", "example": "We made do with old tools."}
+    ], "modern": "managed", "tip_ko": "makeshift(임시변통의)와 같은 어원입니다."},
+    {"id": "run-the-gauntlet", "match": "run the gauntlet", "para": 24, "headword": "run the gauntlet", "pos": "idiom", "ipa": "/ˈɡɔntlət/", "sense_en": "to pass through a place of danger or attack", "sense_ko": "위험한 곳을 통과하다, 시련을 겪다", "synonyms": [
+      {"word": "brave", "nuance": "Face a danger without showing fear.", "example": "They braved the storm."},
+      {"word": "face", "nuance": "Meet a problem; no idea of passing through.", "example": "She faced her critics."},
+      {"word": "endure", "nuance": "Suffer something hard for a long time.", "example": "He endured many hardships."}
+    ], "modern": null, "tip_ko": "gauntlet은 '/ˈɡɔntlət/'로 읽으며 gauntlet 대신 gantlet으로 쓰기도 합니다."},
+    {"id": "heart-in-my-mouth", "match": "heart has been in my mouth", "para": 24, "headword": "have one's heart in one's mouth", "pos": "idiom", "ipa": null, "sense_en": "to feel great fear or nervous excitement", "sense_ko": "간이 콩알만 해지다, 조마조마하다", "synonyms": [
+      {"word": "be terrified", "nuance": "Plain word for great fear.", "example": "I was terrified."},
+      {"word": "be on edge", "nuance": "Tense and nervous for a long time.", "example": "We were on edge all day."},
+      {"word": "hold one's breath", "nuance": "Wait anxiously to see what happens.", "example": "We held our breath."}
+    ], "modern": null, "tip_ko": "'심장이 목까지 올라오다'와 비슷한 표현입니다."},
+    {"id": "stout", "match": "stout", "para": 24, "headword": "stout", "pos": "adjective", "ipa": "/staʊt/", "sense_en": "strong and sturdy", "sense_ko": "튼튼한, 건장한", "synonyms": [
+      {"word": "sturdy", "nuance": "Strongly built, of people or things.", "example": "a sturdy boy"},
+      {"word": "strong", "nuance": "General word for having power.", "example": "a strong man"},
+      {"word": "plump", "nuance": "Modern stout often means rather fat; plump is softer.", "example": "a plump baby"}
+    ], "modern": null, "tip_ko": "요즘은 '뚱뚱한'이라는 뜻으로 더 자주 쓰입니다."},
+    {"id": "hurricane", "match": "hurricane", "para": 25, "headword": "hurricane", "pos": "noun", "ipa": "/ˈhɝəkeɪn/", "sense_en": "a violent storm with extremely strong wind", "sense_ko": "허리케인, 폭풍", "synonyms": [
+      {"word": "typhoon", "nuance": "Same storm in the western Pacific.", "example": "a typhoon over Japan"},
+      {"word": "tempest", "nuance": "Literary word for a wild storm.", "example": "a tempest at sea"},
+      {"word": "tornado", "nuance": "A narrow spinning column of air over land.", "example": "a tornado in Kansas"}
+    ], "modern": null, "tip_ko": null, "all": true},
+    {"id": "taken-aback", "match": "taken aback", "para": 27, "headword": "take aback", "pos": "phrase", "ipa": null, "sense_en": "hit from the front by a wind that pushed the sails backward (also: shocked)", "sense_ko": "(돛이 역풍을 받아) 뒤로 밀린; 깜짝 놀란", "synonyms": [
+      {"word": "surprised", "nuance": "General word for not expecting something.", "example": "I was surprised by the news."},
+      {"word": "startled", "nuance": "Suddenly surprised for a moment.", "example": "He was startled by the noise."},
+      {"word": "shocked", "nuance": "Surprised and upset.", "example": "We were shocked to hear it."}
+    ], "modern": null, "tip_ko": "보통은 be taken aback(깜짝 놀라다)로 쓰지만 여기서는 항해 용어입니다."},
+    {"id": "overcast", "match": "overcast", "para": 28, "headword": "overcast", "pos": "adjective", "ipa": "/ˈoʊvɚkæst/", "sense_en": "covered with clouds", "sense_ko": "구름이 뒤덮은, 흐린", "synonyms": [
+      {"word": "cloudy", "nuance": "Some or many clouds.", "example": "a cloudy day"},
+      {"word": "gray", "nuance": "Colour word for a dull, cloud-covered sky.", "example": "a gray morning"},
+      {"word": "gloomy", "nuance": "Dark and sad; a mood as well as weather.", "example": "gloomy weather"}
+    ], "modern": null, "tip_ko": "overcast는 하늘 전체가 구름으로 덮였다는 강한 표현입니다."},
+    {"id": "by-the-board", "match": "went by the board", "para": 29, "headword": "go by the board", "pos": "idiom", "ipa": null, "sense_en": "fell over the side of the ship and was lost", "sense_ko": "(배 밖으로) 떨어져 나가다, 버려지다", "synonyms": [
+      {"word": "fall overboard", "nuance": "Literally drop off a ship into the water.", "example": "A sailor fell overboard."},
+      {"word": "be swept away", "nuance": "Carried off by wind or water.", "example": "The mast was swept away."},
+      {"word": "be abandoned", "nuance": "Figurative sense: a plan is dropped.", "example": "The plan was abandoned."}
+    ], "modern": null, "tip_ko": "현대 영어에서는 '(계획 등이) 무시되어 버려지다'라는 비유로 씁니다."},
+    {"id": "foundered", "match": "foundered", "para": 30, "headword": "founder", "pos": "verb", "ipa": "/ˈfaʊndɚ/", "sense_en": "to fill with water and sink", "sense_ko": "(배가) 침수되어 가라앉다", "synonyms": [
+      {"word": "sink", "nuance": "The general word for going under water.", "example": "The boat sank."},
+      {"word": "capsize", "nuance": "Turn upside down without sinking at once.", "example": "The canoe capsized."},
+      {"word": "go down", "nuance": "Casual phrase for a ship sinking.", "example": "The ship went down."}
+    ], "modern": null, "tip_ko": "founder(설립자)와 철자는 같지만 다른 단어입니다."},
+    {"id": "flurried", "match": "flurried", "para": 30, "headword": "flurried", "pos": "adjective", "ipa": "/ˈflɝid/", "sense_en": "nervous and confused because of being rushed", "sense_ko": "허둥대는, 당황한", "synonyms": [
+      {"word": "flustered", "nuance": "Almost the same; more common.", "example": "She got flustered."},
+      {"word": "agitated", "nuance": "Strongly upset and unable to be calm.", "example": "an agitated crowd"},
+      {"word": "panicked", "nuance": "In sudden great fear.", "example": "He panicked."}
+    ], "modern": "flustered", "tip_ko": null},
+    {"id": "ascertaining", "match": "ascertaining", "para": 30, "headword": "ascertain", "pos": "verb", "ipa": "/ˌæsɚˈteɪn/", "sense_en": "finding out for sure", "sense_ko": "확인하다, 알아내다", "synonyms": [
+      {"word": "find out", "nuance": "Everyday phrase.", "example": "I found out the truth."},
+      {"word": "determine", "nuance": "Establish after study.", "example": "determine the cause"},
+      {"word": "verify", "nuance": "Check that something already claimed is true.", "example": "verify the facts"}
+    ], "modern": "finding out", "tip_ko": "강세는 -tain에 있습니다."},
+    {"id": "deluged", "match": "deluged", "para": 31, "headword": "deluge", "pos": "verb", "ipa": "/ˈdɛljudʒ/", "sense_en": "completely covered with water", "sense_ko": "물에 완전히 잠기다", "synonyms": [
+      {"word": "flood", "nuance": "Cover land or places with water.", "example": "The river flooded the fields."},
+      {"word": "drench", "nuance": "Make completely wet, especially by rain.", "example": "We were drenched."},
+      {"word": "swamp", "nuance": "Fill a boat with water, so that it may sink.", "example": "The waves swamped the boat."}
+    ], "modern": "flooded", "tip_ko": "'be deluged with ~'는 '~가 쏟아지다'라는 비유로도 씁니다."},
+    {"id": "stupor", "match": "stupor", "para": 31, "headword": "stupor", "pos": "noun", "ipa": "/ˈstupɚ/", "sense_en": "a dazed state in which you cannot think clearly", "sense_ko": "멍한 상태, 혼미", "synonyms": [
+      {"word": "daze", "nuance": "Short confusion, after a shock or blow.", "example": "He walked around in a daze."},
+      {"word": "trance", "nuance": "Half-conscious, as if in a dream.", "example": "She stared in a trance."},
+      {"word": "shock", "nuance": "Sudden physical or emotional blow.", "example": "He was in shock."}
+    ], "modern": null, "tip_ko": null},
+    {"id": "ague", "match": "ague", "para": 32, "headword": "ague", "pos": "noun", "ipa": "/ˈeɪɡju/", "sense_en": "a fever with fits of shaking", "sense_ko": "오한, 학질", "synonyms": [
+      {"word": "fever", "nuance": "High body temperature.", "example": "a high fever"},
+      {"word": "chill", "nuance": "Cold shaking feeling.", "example": "a chill ran through him"},
+      {"word": "shivers", "nuance": "Shaking from cold or fear.", "example": "It gave me the shivers."}
+    ], "modern": "shaking fever, chills", "tip_ko": "끝의 e는 소리 나지 않고 /ˈeɪɡju/('에이규')로 두 음절로 읽습니다."},
+    {"id": "doomed", "match": "doomed", "para": 33, "headword": "doomed", "pos": "adjective", "ipa": "/dumd/", "sense_en": "certain to die or fail", "sense_ko": "파멸할 운명의", "synonyms": [
+      {"word": "condemned", "nuance": "Judged or sentenced to a bad end.", "example": "a condemned man"},
+      {"word": "hopeless", "nuance": "Having no chance of improving.", "example": "a hopeless case"},
+      {"word": "fated", "nuance": "Destined, good or bad.", "example": "They were fated to meet."}
+    ], "modern": null, "tip_ko": null},
+    {"id": "lustre", "match": "lustre", "para": 34, "headword": "lustre", "pos": "noun", "ipa": "/ˈlʌstɚ/", "sense_en": "a soft, bright shine", "sense_ko": "광택, 빛남", "synonyms": [
+      {"word": "shine", "nuance": "General word for light reflected.", "example": "the shine of the moon"},
+      {"word": "gleam", "nuance": "A small, bright light.", "example": "a gleam in the dark"},
+      {"word": "brilliance", "nuance": "Very strong, dazzling light.", "example": "the brilliance of the sun"}
+    ], "modern": "luster", "tip_ko": "lustre는 영국식, luster는 미국식 철자입니다."},
+    {"id": "din", "match": "din", "para": 35, "headword": "din", "pos": "noun", "ipa": "/dɪn/", "sense_en": "a loud, unpleasant noise that goes on and on", "sense_ko": "시끄러운 소음", "synonyms": [
+      {"word": "noise", "nuance": "Any sound, usually unwanted.", "example": "a loud noise"},
+      {"word": "racket", "nuance": "Casual: annoying loud noise.", "example": "What a racket!"},
+      {"word": "uproar", "nuance": "Noise plus excitement of a crowd.", "example": "The room was in an uproar."}
+    ], "modern": null, "tip_ko": null},
+    {"id": "composed", "match": "composed", "para": 40, "headword": "composed", "pos": "adjective", "ipa": "/kəmˈpoʊzd/", "sense_en": "calm and in control of your feelings", "sense_ko": "침착한, 차분한", "synonyms": [
+      {"word": "calm", "nuance": "Not upset; general word.", "example": "She stayed calm."},
+      {"word": "collected", "nuance": "Calm and in control under pressure.", "example": "cool and collected"},
+      {"word": "relaxed", "nuance": "At ease; not tense.", "example": "a relaxed mood"}
+    ], "modern": null, "tip_ko": null},
+    {"id": "unmanned", "match": "unmanned", "para": 40, "headword": "unman", "pos": "verb", "ipa": "/ʌnˈmæn/", "sense_en": "made weak and helpless; took away one's courage", "sense_ko": "용기를 잃게 하다, 기죽게 하다", "synonyms": [
+      {"word": "unnerve", "nuance": "Make someone lose confidence, often suddenly.", "example": "The noise unnerved him."},
+      {"word": "demoralize", "nuance": "Destroy someone's hope and spirit.", "example": "Defeat demoralized the team."},
+      {"word": "terrify", "nuance": "Fill with great fear.", "example": "The storm terrified us."}
+    ], "modern": "unnerved", "tip_ko": "'무인의(unmanned spacecraft)' 뜻과 다른 옛 용법입니다."},
+    {"id": "paltry", "match": "paltry", "para": 41, "headword": "paltry", "pos": "adjective", "ipa": "/ˈpɔltri/", "sense_en": "so small it is not worth caring about", "sense_ko": "하찮은, 보잘것없는", "synonyms": [
+      {"word": "trivial", "nuance": "Unimportant; neutral in tone.", "example": "a trivial matter"},
+      {"word": "meager", "nuance": "Too small in amount.", "example": "a meager meal"},
+      {"word": "petty", "nuance": "Small-minded.", "example": "petty quarrels"}
+    ], "modern": null, "tip_ko": null},
+    {"id": "light-headed", "match": "light-headed", "para": 41, "headword": "light-headed", "pos": "adjective", "ipa": "/ˌlaɪtˈhɛdɪd/", "sense_en": "slightly dizzy and not thinking clearly", "sense_ko": "머리가 어질어질한, 정신이 몽롱한", "synonyms": [
+      {"word": "dizzy", "nuance": "Spinning feeling; more common.", "example": "I feel dizzy."},
+      {"word": "faint", "nuance": "About to lose consciousness.", "example": "She felt faint."},
+      {"word": "giddy", "nuance": "Dizzy, also silly or excited.", "example": "giddy with joy"}
+    ], "modern": null, "tip_ko": "light-hearted(마음이 가벼운)와 구별하세요."},
+    {"id": "careered", "match": "careered", "para": 43, "headword": "career", "pos": "verb", "ipa": "/kəˈrɪr/", "sense_en": "moved fast and out of control", "sense_ko": "질주하다, 마구 돌진하다", "synonyms": [
+      {"word": "rush", "nuance": "Move quickly; can be under control.", "example": "He rushed home."},
+      {"word": "hurtle", "nuance": "Move at great speed, dangerously.", "example": "The car hurtled down the road."},
+      {"word": "speed", "nuance": "Go fast, by choice.", "example": "The train sped past."}
+    ], "modern": null, "tip_ko": "명사 career(경력)와 철자와 발음이 같지만, 동사로는 '질주하다'라는 뜻입니다."},
+    {"id": "lurch", "match": "lurch", "para": 43, "headword": "lurch", "pos": "noun", "ipa": "/lɝtʃ/", "sense_en": "a sudden, unsteady movement to one side", "sense_ko": "갑작스레 한쪽으로 기우뚱함", "synonyms": [
+      {"word": "sway", "nuance": "Slow swinging from side to side.", "example": "The boat swayed."},
+      {"word": "jolt", "nuance": "A quick, hard bump.", "example": "a jolt of the car"},
+      {"word": "stagger", "nuance": "Walk unsteadily, of people.", "example": "He staggered home."}
+    ], "modern": null, "tip_ko": null},
+    {"id": "delirious", "match": "delirious", "para": 49, "headword": "delirious", "pos": "adjective", "ipa": "/dɪˈlɪriəs/", "sense_en": "confused and not thinking clearly, as in a fever", "sense_ko": "정신이 혼미한, 헛소리하는", "synonyms": [
+      {"word": "feverish", "nuance": "Hot and confused from fever.", "example": "a feverish child"},
+      {"word": "mad", "nuance": "Insane or foolish; less tied to sickness.", "example": "a mad idea"},
+      {"word": "ecstatic", "nuance": "Wildly happy.", "example": "an ecstatic crowd"}
+    ], "modern": null, "tip_ko": null},
+    {"id": "buoyant", "match": "buoyant", "para": 50, "headword": "buoyant", "pos": "adjective", "ipa": "/ˈbɔɪənt/", "sense_en": "able to float", "sense_ko": "물에 뜨는", "synonyms": [
+      {"word": "floating", "nuance": "Currently on the surface.", "example": "floating wood"},
+      {"word": "light", "nuance": "Not heavy, so it stays up.", "example": "a light boat"},
+      {"word": "cheerful", "nuance": "The figurative sense: lively.", "example": "a cheerful mood"}
+    ], "modern": null, "tip_ko": "buoy(부표)는 /ˈbui/ 또는 /bɔɪ/로 읽습니다."},
+    {"id": "chafed", "match": "chafed", "para": 50, "headword": "chafe", "pos": "verb", "ipa": "/tʃeɪf/", "sense_en": "rubbed rough and worn by rubbing", "sense_ko": "마찰로 닳고 거칠어진", "synonyms": [
+      {"word": "scrape", "nuance": "Rub against something hard.", "example": "He scraped his knee."},
+      {"word": "wear down", "nuance": "Slowly make thinner by use.", "example": "The waves wore down the rocks."},
+      {"word": "rub", "nuance": "Press and move against.", "example": "The shoe rubs my heel."}
+    ], "modern": null, "tip_ko": null},
+    {"id": "emergency", "match": "emergency", "para": 52, "headword": "emergency", "pos": "noun", "ipa": "/ɪˈmɝdʒənsi/", "sense_en": "a sudden dangerous situation that needs action at once", "sense_ko": "비상사태, 위급한 상황", "synonyms": [
+      {"word": "crisis", "nuance": "A time of serious difficulty or danger, often lasting a while.", "example": "a financial crisis"},
+      {"word": "danger", "nuance": "The risk itself, not the need to act.", "example": "in great danger"},
+      {"word": "accident", "nuance": "Something bad that happens by chance.", "example": "a car accident"}
+    ], "modern": null, "tip_ko": null},
+    {"id": "precipitated", "match": "precipitated", "para": 52, "headword": "precipitate", "pos": "verb", "ipa": "/prɪˈsɪpɪteɪt/", "sense_en": "threw oneself suddenly and forcefully", "sense_ko": "(몸을) 내던지다", "synonyms": [
+      {"word": "hurl", "nuance": "Throw hard.", "example": "He hurled the ball."},
+      {"word": "plunge", "nuance": "Jump or fall suddenly into something.", "example": "She plunged into the pool."},
+      {"word": "fling", "nuance": "Throw carelessly, quickly.", "example": "He flung his bag down."}
+    ], "modern": "threw myself", "tip_ko": "'precipitate oneself'는 '몸을 던지다'로 쓰이는 옛 표현입니다."},
+    {"id": "countenance", "match": "countenance", "para": 53, "headword": "countenance", "pos": "noun", "ipa": "/ˈkaʊntənəns/", "sense_en": "the look on a person's face", "sense_ko": "안색, 얼굴 표정", "synonyms": [
+      {"word": "expression", "nuance": "The everyday word for a look on the face.", "example": "a sad expression"},
+      {"word": "face", "nuance": "The physical face.", "example": "a round face"},
+      {"word": "features", "nuance": "The parts of the face together.", "example": "fine features"}
+    ], "modern": "face, expression", "tip_ko": "동사로는 '허용하다'라는 뜻도 있습니다."}
+  ]
+}
