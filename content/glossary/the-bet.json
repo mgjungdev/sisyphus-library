@@ -1,0 +1,1325 @@
+{
+  "slug": "the-bet",
+  "entries": [
+    {
+      "id": "capital-punishment",
+      "match": "capital punishment",
+      "para": 2,
+      "headword": "capital punishment",
+      "pos": "phrase",
+      "ipa": null,
+      "sense_en": "the legal punishment of death for a crime",
+      "sense_ko": "사형",
+      "synonyms": [
+        {
+          "word": "death penalty",
+          "nuance": "The everyday, most common term; same meaning, less formal.",
+          "example": "a country with the death penalty"
+        },
+        {
+          "word": "execution",
+          "nuance": "The act of killing the condemned person, not the punishment as a system.",
+          "example": "the execution took place at dawn"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "obsolete",
+      "match": "obsolete",
+      "para": 2,
+      "headword": "obsolete",
+      "pos": "adjective",
+      "ipa": "/ˌɑbsəˈlit/",
+      "sense_en": "no longer used because something newer or better exists",
+      "sense_ko": "구식이 된, 더 이상 쓰이지 않는",
+      "synonyms": [
+        {
+          "word": "outdated",
+          "nuance": "Milder; old-fashioned but may still be in use.",
+          "example": "outdated software"
+        },
+        {
+          "word": "old-fashioned",
+          "nuance": "Casual; about style or habits, not only tools or rules.",
+          "example": "an old-fashioned idea"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "강세는 세 번째 음절 -lete에 있습니다."
+    },
+    {
+      "id": "a-priori",
+      "match": "a priori",
+      "para": 3,
+      "headword": "a priori",
+      "pos": "adverb",
+      "ipa": "/ˌeɪ praɪˈɔraɪ/",
+      "sense_en": "by reasoning alone, before any experience or evidence",
+      "sense_ko": "경험 없이 이론적으로, 선험적으로",
+      "synonyms": [
+        {
+          "word": "in theory",
+          "nuance": "Everyday; suggests practice may differ.",
+          "example": "In theory, it should work."
+        },
+        {
+          "word": "by reasoning",
+          "nuance": "Plain phrase; says how the conclusion is reached.",
+          "example": "He reached it by reasoning alone."
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "incessantly",
+      "match": "incessantly",
+      "para": 3,
+      "headword": "incessantly",
+      "pos": "adverb",
+      "ipa": "/ɪnˈsɛsəntli/",
+      "sense_en": "without stopping, continuously",
+      "sense_ko": "끊임없이, 쉴 새 없이",
+      "synonyms": [
+        {
+          "word": "constantly",
+          "nuance": "Neutral; can include short breaks.",
+          "example": "She talks constantly."
+        },
+        {
+          "word": "endlessly",
+          "nuance": "Stresses that it seems to have no end.",
+          "example": "They argued endlessly."
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "ensue",
+      "match": "ensued",
+      "para": 7,
+      "headword": "ensue",
+      "pos": "verb",
+      "ipa": "/ɪnˈsu/",
+      "sense_en": "happened afterward as a result",
+      "sense_ko": "뒤이어 일어나다",
+      "synonyms": [
+        {
+          "word": "follow",
+          "nuance": "Everyday word; simply comes after, with less sense of result.",
+          "example": "Silence followed."
+        },
+        {
+          "word": "result",
+          "nuance": "Stresses cause and effect rather than order in time.",
+          "example": "Chaos resulted from the delay."
+        }
+      ],
+      "modern": null,
+      "tip_ko": "'There ensued ~' 형태로 자주 쓰이는 문어체 표현입니다."
+    },
+    {
+      "id": "lose-temper",
+      "match": "lost his temper",
+      "para": 7,
+      "headword": "lose one's temper",
+      "pos": "idiom",
+      "ipa": null,
+      "sense_en": "suddenly became very angry",
+      "sense_ko": "화를 벌컥 내다",
+      "synonyms": [
+        {
+          "word": "fly off the handle",
+          "nuance": "More informal and more sudden and explosive.",
+          "example": "He flew off the handle at the noise."
+        },
+        {
+          "word": "blow up",
+          "nuance": "Casual; suggests a loud outburst.",
+          "example": "She blew up at her brother."
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "stake",
+      "match": "stake",
+      "para": 10,
+      "headword": "stake",
+      "pos": "verb",
+      "ipa": "/steɪk/",
+      "sense_en": "to risk money on the result of a bet",
+      "sense_ko": "(돈을) 걸다",
+      "synonyms": [
+        {
+          "word": "bet",
+          "nuance": "The general word; can be used for any wager.",
+          "example": "I bet ten dollars."
+        },
+        {
+          "word": "wager",
+          "nuance": "More formal and literary; a serious bet.",
+          "example": "He wagered his fortune."
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "capricious",
+      "match": "capricious",
+      "para": 12,
+      "headword": "capricious",
+      "pos": "adjective",
+      "ipa": "/kəˈprɪʃəs/",
+      "sense_en": "changing moods or wishes suddenly and without good reason",
+      "sense_ko": "변덕스러운",
+      "synonyms": [
+        {
+          "word": "fickle",
+          "nuance": "Mainly about loyalty or feelings that keep changing.",
+          "example": "a fickle friend"
+        },
+        {
+          "word": "moody",
+          "nuance": "About emotional states, not about whims and desires.",
+          "example": "a moody teenager"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "rapture",
+      "match": "rapture",
+      "para": 12,
+      "headword": "rapture",
+      "pos": "noun",
+      "ipa": "/ˈræptʃər/",
+      "sense_en": "a feeling of extreme joy and excitement",
+      "sense_ko": "황홀, 열광적인 기쁨",
+      "synonyms": [
+        {
+          "word": "delight",
+          "nuance": "Milder and more common.",
+          "example": "She squealed with delight."
+        },
+        {
+          "word": "ecstasy",
+          "nuance": "Equally intense; suggests being carried away.",
+          "example": "in ecstasy over the win"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "beside-himself",
+      "match": "beside himself",
+      "para": 12,
+      "headword": "beside oneself",
+      "pos": "idiom",
+      "ipa": null,
+      "sense_en": "unable to control oneself because of a strong emotion",
+      "sense_ko": "이성을 잃을 만큼 흥분한",
+      "synonyms": [
+        {
+          "word": "overcome",
+          "nuance": "Neutral; the emotion can be quiet, like grief.",
+          "example": "overcome with joy"
+        },
+        {
+          "word": "carried away",
+          "nuance": "Suggests losing self-control through excitement, often in a mild way.",
+          "example": "Don't get carried away."
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "come-to-senses",
+      "match": "Come to your senses",
+      "para": 13,
+      "headword": "come to one's senses",
+      "pos": "idiom",
+      "ipa": null,
+      "sense_en": "start thinking sensibly again",
+      "sense_ko": "정신 차리다",
+      "synonyms": [
+        {
+          "word": "wake up",
+          "nuance": "Casual; often means realizing the truth of a situation.",
+          "example": "Wake up and see what is happening."
+        },
+        {
+          "word": "see reason",
+          "nuance": "More formal; accept a sensible argument.",
+          "example": "He finally saw reason."
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "stick-it-out",
+      "match": "stick it out",
+      "para": 13,
+      "headword": "stick it out",
+      "pos": "idiom",
+      "ipa": null,
+      "sense_en": "to keep going until the end of something unpleasant",
+      "sense_ko": "끝까지 버티다",
+      "synonyms": [
+        {
+          "word": "endure",
+          "nuance": "Formal; suffering over a long time.",
+          "example": "She endured years of pain."
+        },
+        {
+          "word": "tough it out",
+          "nuance": "Very informal; suggests hard, brave effort.",
+          "example": "We toughed it out until spring."
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "caprice",
+      "match": "caprice",
+      "para": 15,
+      "headword": "caprice",
+      "pos": "noun",
+      "ipa": "/kəˈpris/",
+      "sense_en": "a sudden, unreasonable whim",
+      "sense_ko": "변덕, 일시적 기분",
+      "synonyms": [
+        {
+          "word": "whim",
+          "nuance": "Everyday word; a small sudden wish.",
+          "example": "a sudden whim to travel"
+        },
+        {
+          "word": "impulse",
+          "nuance": "A quick urge to act, not always unreasonable.",
+          "example": "He bought it on impulse."
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "undergo",
+      "match": "undergo",
+      "para": 16,
+      "headword": "undergo",
+      "pos": "verb",
+      "ipa": "/ˌʌndərˈɡoʊ/",
+      "sense_en": "to go through something difficult or unpleasant",
+      "sense_ko": "(힘든 일을) 겪다, 받다",
+      "synonyms": [
+        {
+          "word": "go through",
+          "nuance": "Everyday and informal.",
+          "example": "She went through a hard time."
+        },
+        {
+          "word": "endure",
+          "nuance": "Stresses lasting or bearing the pain over time.",
+          "example": "He endured the cold."
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "deprive",
+      "match": "deprived",
+      "para": 16,
+      "headword": "deprive",
+      "pos": "verb",
+      "ipa": "/dɪˈpraɪv/",
+      "sense_en": "to take away something from someone; here, his rights",
+      "sense_ko": "(권리 등을) 박탈하다",
+      "synonyms": [
+        {
+          "word": "strip",
+          "nuance": "Stronger; take away completely and often publicly.",
+          "example": "stripped of his title"
+        },
+        {
+          "word": "deny",
+          "nuance": "Refuse to give, rather than take away what one had.",
+          "example": "denied the right to vote"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "deprive A of B 구조로 씁니다."
+    },
+    {
+      "id": "threshold",
+      "match": "threshold",
+      "para": 16,
+      "headword": "threshold",
+      "pos": "noun",
+      "ipa": "/ˈθrɛʃhoʊld/",
+      "sense_en": "the floor at the bottom of a doorway",
+      "sense_ko": "문지방, 문턱",
+      "synonyms": [
+        {
+          "word": "doorstep",
+          "nuance": "The step outside the door.",
+          "example": "She waited on the doorstep."
+        },
+        {
+          "word": "entrance",
+          "nuance": "The whole way in, not just the strip of floor.",
+          "example": "the main entrance"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "thresh-hold로 발음하며 [ʃh]가 이어집니다."
+    },
+    {
+      "id": "violate",
+      "match": "violate",
+      "para": 16,
+      "headword": "violate",
+      "pos": "verb",
+      "ipa": "/ˈvaɪəleɪt/",
+      "sense_en": "to break an agreement or rule",
+      "sense_ko": "(약속·규칙을) 어기다",
+      "synonyms": [
+        {
+          "word": "break",
+          "nuance": "Everyday, plain word.",
+          "example": "break a promise"
+        },
+        {
+          "word": "breach",
+          "nuance": "Formal; used for contracts, laws, or security.",
+          "example": "breach the contract"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "confinement",
+      "match": "confinement",
+      "para": 16,
+      "headword": "confinement",
+      "pos": "noun",
+      "ipa": "/kənˈfaɪnmənt/",
+      "sense_en": "the state of being kept in a closed place",
+      "sense_ko": "감금, 갇혀 있음",
+      "synonyms": [
+        {
+          "word": "imprisonment",
+          "nuance": "Legal; being put in prison as punishment.",
+          "example": "five years of imprisonment"
+        },
+        {
+          "word": "captivity",
+          "nuance": "Being held by force, often by an enemy or as an animal.",
+          "example": "born in captivity"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "solitary",
+      "match": "solitary",
+      "para": 16,
+      "headword": "solitary",
+      "pos": "adjective",
+      "ipa": "/ˈsɑləˌtɛri/",
+      "sense_en": "alone, with no other people",
+      "sense_ko": "혼자 지내는, 독거의",
+      "synonyms": [
+        {
+          "word": "lonely",
+          "nuance": "Suggests sad feelings; solitary can be neutral or chosen.",
+          "example": "a lonely child"
+        },
+        {
+          "word": "isolated",
+          "nuance": "Cut off from others, often by place.",
+          "example": "an isolated village"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "foe",
+      "match": "foes",
+      "para": 17,
+      "headword": "foe",
+      "pos": "noun",
+      "ipa": "/foʊ/",
+      "sense_en": "an enemy or opponent",
+      "sense_ko": "적, 원수",
+      "synonyms": [
+        {
+          "word": "enemy",
+          "nuance": "Ordinary word; foe is literary.",
+          "example": "a dangerous enemy"
+        },
+        {
+          "word": "opponent",
+          "nuance": "Someone on the other side of a contest.",
+          "example": "a political opponent"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "gaoler",
+      "match": "gaoler",
+      "para": 19,
+      "headword": "gaoler",
+      "pos": "noun",
+      "ipa": "/ˈdʒeɪlər/",
+      "sense_en": "a person in charge of prisoners",
+      "sense_ko": "간수, 교도관",
+      "synonyms": [
+        {
+          "word": "jailer",
+          "nuance": "The modern American spelling of the same word.",
+          "example": "the jailer unlocked the cell"
+        },
+        {
+          "word": "warden",
+          "nuance": "The chief official of a prison.",
+          "example": "the prison warden"
+        }
+      ],
+      "modern": "\"gaoler\" → \"jailer\"",
+      "tip_ko": "gaol은 jail의 옛 영국식 철자로 발음도 같습니다."
+    },
+    {
+      "id": "zealously",
+      "match": "zealously",
+      "para": 19,
+      "headword": "zealously",
+      "pos": "adverb",
+      "ipa": "/ˈzɛləsli/",
+      "sense_en": "with great energy and eager devotion",
+      "sense_ko": "열성적으로",
+      "synonyms": [
+        {
+          "word": "eagerly",
+          "nuance": "Milder; simply wanting very much.",
+          "example": "He eagerly opened the box."
+        },
+        {
+          "word": "fervently",
+          "nuance": "Emphasizes deep passion, often in belief or prayer.",
+          "example": "She fervently hoped for peace."
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "erudite",
+      "match": "erudite",
+      "para": 20,
+      "headword": "erudite",
+      "pos": "adjective",
+      "ipa": "/ˈɛrjuˌdaɪt/",
+      "sense_en": "showing or needing deep learning; scholarly",
+      "sense_ko": "학식이 깊은, 학술적인",
+      "synonyms": [
+        {
+          "word": "learned",
+          "nuance": "Common word for well-educated; erudite suggests more bookish depth.",
+          "example": "a learned professor"
+        },
+        {
+          "word": "scholarly",
+          "nuance": "About academic style or habits.",
+          "example": "a scholarly article"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "immovable",
+      "match": "immovable",
+      "para": 20,
+      "headword": "immovable",
+      "pos": "adjective",
+      "ipa": "/ɪˈmuvəbəl/",
+      "sense_en": "not moving at all",
+      "sense_ko": "꼼짝도 하지 않는",
+      "synonyms": [
+        {
+          "word": "motionless",
+          "nuance": "Simply not moving, for any reason.",
+          "example": "stood motionless"
+        },
+        {
+          "word": "stationary",
+          "nuance": "Not moving, usually of vehicles or objects.",
+          "example": "a stationary car"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "haphazard",
+      "match": "haphazard",
+      "para": 21,
+      "headword": "haphazard",
+      "pos": "adverb",
+      "ipa": "/hæpˈhæzərd/",
+      "sense_en": "without order or plan",
+      "sense_ko": "무계획적으로, 닥치는 대로",
+      "synonyms": [
+        {
+          "word": "randomly",
+          "nuance": "Neutral; simply by chance, with no pattern.",
+          "example": "She picked a card randomly."
+        },
+        {
+          "word": "indiscriminately",
+          "nuance": "Without choosing carefully; often critical.",
+          "example": "He read indiscriminately."
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "treatise",
+      "match": "treatise",
+      "para": 21,
+      "headword": "treatise",
+      "pos": "noun",
+      "ipa": "/ˈtritɪs/",
+      "sense_en": "a long formal book on one subject",
+      "sense_ko": "논문, 학술서",
+      "synonyms": [
+        {
+          "word": "essay",
+          "nuance": "Shorter and less systematic.",
+          "example": "an essay on love"
+        },
+        {
+          "word": "monograph",
+          "nuance": "A scholarly study of a single narrow topic.",
+          "example": "a monograph on bees"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "wreckage",
+      "match": "wreckage",
+      "para": 21,
+      "headword": "wreckage",
+      "pos": "noun",
+      "ipa": "/ˈrɛkɪdʒ/",
+      "sense_en": "broken pieces of a ship or other destroyed thing",
+      "sense_ko": "잔해",
+      "synonyms": [
+        {
+          "word": "debris",
+          "nuance": "Scattered fragments of anything broken.",
+          "example": "debris after the storm"
+        },
+        {
+          "word": "ruins",
+          "nuance": "What is left of a building or place.",
+          "example": "the ruins of a castle"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "ruined",
+      "match": "ruined",
+      "para": 24,
+      "headword": "ruined",
+      "pos": "adjective",
+      "ipa": "/ˈruɪnd/",
+      "sense_en": "having lost all one's money",
+      "sense_ko": "파산한, 몰락한",
+      "synonyms": [
+        {
+          "word": "bankrupt",
+          "nuance": "Legal state of being unable to pay debts.",
+          "example": "the bankrupt company"
+        },
+        {
+          "word": "broke",
+          "nuance": "Very informal; simply has no money now.",
+          "example": "I'm broke until Friday."
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "recklessness",
+      "match": "recklessness",
+      "para": 25,
+      "headword": "recklessness",
+      "pos": "noun",
+      "ipa": "/ˈrɛkləsnəs/",
+      "sense_en": "taking risks without thinking of the danger",
+      "sense_ko": "무모함",
+      "synonyms": [
+        {
+          "word": "rashness",
+          "nuance": "Acting too quickly without thought.",
+          "example": "the rashness of youth"
+        },
+        {
+          "word": "carelessness",
+          "nuance": "Not paying attention; less about facing risk.",
+          "example": "a mistake of carelessness"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "speculation",
+      "match": "speculation",
+      "para": 25,
+      "headword": "speculation",
+      "pos": "noun",
+      "ipa": "/ˌspɛkjəˈleɪʃən/",
+      "sense_en": "risky buying in hope of a large profit",
+      "sense_ko": "투기",
+      "synonyms": [
+        {
+          "word": "gambling",
+          "nuance": "Betting on chance, not on business judgment.",
+          "example": "gambling in casinos"
+        },
+        {
+          "word": "investment",
+          "nuance": "Usually safer and longer term.",
+          "example": "a long-term investment"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "farthing",
+      "match": "farthing",
+      "para": 26,
+      "headword": "farthing",
+      "pos": "noun",
+      "ipa": "/ˈfɑrðɪŋ/",
+      "sense_en": "a very small amount of money; the last penny",
+      "sense_ko": "아주 적은 돈, 마지막 한 푼",
+      "synonyms": [
+        {
+          "word": "penny",
+          "nuance": "Small coin; farthing was worth even less.",
+          "example": "not a penny left"
+        },
+        {
+          "word": "cent",
+          "nuance": "American small coin; same idea.",
+          "example": "not a cent to his name"
+        }
+      ],
+      "modern": "\"my last farthing\" → \"my last penny\"",
+      "tip_ko": null
+    },
+    {
+      "id": "clutch",
+      "match": "clutching",
+      "para": 26,
+      "headword": "clutch",
+      "pos": "verb",
+      "ipa": "/klʌtʃ/",
+      "sense_en": "holding tightly, here from strong feeling",
+      "sense_ko": "꽉 움켜쥐다",
+      "synonyms": [
+        {
+          "word": "grip",
+          "nuance": "Firm hold; more neutral.",
+          "example": "She gripped the rail."
+        },
+        {
+          "word": "clasp",
+          "nuance": "Holding closely, often gently and with hands together.",
+          "example": "clasped her hands"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "keen",
+      "match": "keen",
+      "para": 27,
+      "headword": "keen",
+      "pos": "adjective",
+      "ipa": "/kin/",
+      "sense_en": "very cold and cutting, of wind",
+      "sense_ko": "(바람이) 살을 에는",
+      "synonyms": [
+        {
+          "word": "bitter",
+          "nuance": "Painfully cold or harsh.",
+          "example": "a bitter wind"
+        },
+        {
+          "word": "biting",
+          "nuance": "Cold that seems to bite the skin.",
+          "example": "a biting frost"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "'열정적인'이라는 뜻(keen on)과 다른 쓰임입니다."
+    },
+    {
+      "id": "grope",
+      "match": "groped",
+      "para": 29,
+      "headword": "grope",
+      "pos": "verb",
+      "ipa": "/ɡroʊp/",
+      "sense_en": "searched for something with the hands in the dark",
+      "sense_ko": "더듬어 찾다",
+      "synonyms": [
+        {
+          "word": "fumble",
+          "nuance": "Search clumsily.",
+          "example": "fumbled for the keys"
+        },
+        {
+          "word": "feel",
+          "nuance": "Plain word for touching to find.",
+          "example": "feel around in the dark"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "agitation",
+      "match": "agitation",
+      "para": 30,
+      "headword": "agitation",
+      "pos": "noun",
+      "ipa": "/ˌædʒəˈteɪʃən/",
+      "sense_en": "nervous excitement and worry",
+      "sense_ko": "동요, 불안",
+      "synonyms": [
+        {
+          "word": "anxiety",
+          "nuance": "Deeper worry, often lasting.",
+          "example": "anxiety about the exam"
+        },
+        {
+          "word": "turmoil",
+          "nuance": "Confusion and disturbance, also in groups.",
+          "example": "the country was in turmoil"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "peep",
+      "match": "peeped",
+      "para": 30,
+      "headword": "peep",
+      "pos": "verb",
+      "ipa": "/pip/",
+      "sense_en": "looked quickly and secretly through a small opening",
+      "sense_ko": "살짝 들여다보다",
+      "synonyms": [
+        {
+          "word": "peek",
+          "nuance": "Nearly the same, slightly more casual.",
+          "example": "peek through the door"
+        },
+        {
+          "word": "glance",
+          "nuance": "A quick look, but openly.",
+          "example": "glance at the clock"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "strew",
+      "match": "strewn",
+      "para": 31,
+      "headword": "strew",
+      "pos": "verb",
+      "ipa": "/stru/",
+      "sense_en": "spread about in a messy way",
+      "sense_ko": "흩어져 있다",
+      "synonyms": [
+        {
+          "word": "scatter",
+          "nuance": "Throw or spread widely; can be deliberate.",
+          "example": "scatter seeds"
+        },
+        {
+          "word": "litter",
+          "nuance": "Leave things lying untidily.",
+          "example": "papers littered the floor"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "hoarse",
+      "match": "hoarse",
+      "para": 32,
+      "headword": "hoarse",
+      "pos": "adjective",
+      "ipa": "/hɔrs/",
+      "sense_en": "rough and low in sound",
+      "sense_ko": "쉰 듯한, 거친",
+      "synonyms": [
+        {
+          "word": "husky",
+          "nuance": "Rough in a pleasant, low way.",
+          "example": "a husky voice"
+        },
+        {
+          "word": "raspy",
+          "nuance": "Scratchy, like something rubbing.",
+          "example": "a raspy cough"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "shaggy",
+      "match": "shaggy",
+      "para": 32,
+      "headword": "shaggy",
+      "pos": "adjective",
+      "ipa": "/ˈʃæɡi/",
+      "sense_en": "long, thick and untidy",
+      "sense_ko": "텁수룩한",
+      "synonyms": [
+        {
+          "word": "bushy",
+          "nuance": "Thick and full, not necessarily messy.",
+          "example": "bushy eyebrows"
+        },
+        {
+          "word": "unkempt",
+          "nuance": "Untidy from lack of care.",
+          "example": "unkempt hair"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "emaciation",
+      "match": "emaciation",
+      "para": 32,
+      "headword": "emaciation",
+      "pos": "noun",
+      "ipa": "/ɪˌmeɪʃiˈeɪʃən/",
+      "sense_en": "extreme thinness from hunger or illness",
+      "sense_ko": "심한 수척함",
+      "synonyms": [
+        {
+          "word": "thinness",
+          "nuance": "Plain and neutral.",
+          "example": "her thinness worried us"
+        },
+        {
+          "word": "gauntness",
+          "nuance": "Thin with hollow cheeks; a look of suffering.",
+          "example": "the gauntness of his face"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "senile",
+      "match": "senile",
+      "para": 32,
+      "headword": "senile",
+      "pos": "adjective",
+      "ipa": "/ˈsinaɪl/",
+      "sense_en": "showing the weakness of very old age",
+      "sense_ko": "노쇠한",
+      "synonyms": [
+        {
+          "word": "elderly",
+          "nuance": "Polite; only says old.",
+          "example": "an elderly man"
+        },
+        {
+          "word": "decrepit",
+          "nuance": "Weak and worn out by age.",
+          "example": "a decrepit building"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "smother",
+      "match": "smother",
+      "para": 33,
+      "headword": "smother",
+      "pos": "verb",
+      "ipa": "/ˈsmʌðər/",
+      "sense_en": "to kill by covering the face so one cannot breathe",
+      "sense_ko": "질식시키다",
+      "synonyms": [
+        {
+          "word": "suffocate",
+          "nuance": "Any way of stopping breath.",
+          "example": "suffocate in the smoke"
+        },
+        {
+          "word": "stifle",
+          "nuance": "Also for stopping feelings or sounds.",
+          "example": "stifle a yawn"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "poor-devil",
+      "match": "Poor devil",
+      "para": 33,
+      "headword": "poor devil",
+      "pos": "idiom",
+      "ipa": null,
+      "sense_en": "an unlucky person one feels pity for",
+      "sense_ko": "불쌍한 녀석",
+      "synonyms": [
+        {
+          "word": "poor soul",
+          "nuance": "Gentler and warmer.",
+          "example": "the poor soul was lost"
+        },
+        {
+          "word": "poor fellow",
+          "nuance": "Neutral, a bit old-fashioned.",
+          "example": "the poor fellow was ill"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "ethereal",
+      "match": "ethereal",
+      "para": 36,
+      "headword": "ethereal",
+      "pos": "adjective",
+      "ipa": "/ɪˈθɪriəl/",
+      "sense_en": "very light and delicate, as if not of this world",
+      "sense_ko": "천상의, 영묘한",
+      "synonyms": [
+        {
+          "word": "airy",
+          "nuance": "Light like air; less spiritual.",
+          "example": "an airy fabric"
+        },
+        {
+          "word": "heavenly",
+          "nuance": "Belonging to heaven; also just delightful.",
+          "example": "heavenly music"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "abyss",
+      "match": "abysses",
+      "para": 36,
+      "headword": "abyss",
+      "pos": "noun",
+      "ipa": "/əˈbɪs/",
+      "sense_en": "a very deep hole with no visible bottom",
+      "sense_ko": "심연",
+      "synonyms": [
+        {
+          "word": "chasm",
+          "nuance": "A deep gap in the ground, with sides.",
+          "example": "a chasm between the cliffs"
+        },
+        {
+          "word": "pit",
+          "nuance": "A hole, not necessarily so deep.",
+          "example": "a pit in the road"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "frail",
+      "match": "frail",
+      "para": 38,
+      "headword": "frail",
+      "pos": "adjective",
+      "ipa": "/freɪl/",
+      "sense_en": "weak and not lasting; easily destroyed",
+      "sense_ko": "덧없는, 약한",
+      "synonyms": [
+        {
+          "word": "fragile",
+          "nuance": "Easily broken, of objects.",
+          "example": "fragile glass"
+        },
+        {
+          "word": "fleeting",
+          "nuance": "Stresses lasting only a short time.",
+          "example": "a fleeting moment"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "delusive",
+      "match": "delusive",
+      "para": 38,
+      "headword": "delusive",
+      "pos": "adjective",
+      "ipa": "/dɪˈlusɪv/",
+      "sense_en": "giving a false idea; misleading",
+      "sense_ko": "기만적인, 착각을 일으키는",
+      "synonyms": [
+        {
+          "word": "illusory",
+          "nuance": "Formal; based on an illusion.",
+          "example": "illusory hopes"
+        },
+        {
+          "word": "deceptive",
+          "nuance": "Everyday word; gives a false impression, not always on purpose.",
+          "example": "deceptive appearances"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "mirage",
+      "match": "mirage",
+      "para": 38,
+      "headword": "mirage",
+      "pos": "noun",
+      "ipa": "/məˈrɑʒ/",
+      "sense_en": "something that seems real but is not",
+      "sense_ko": "신기루",
+      "synonyms": [
+        {
+          "word": "illusion",
+          "nuance": "General false impression.",
+          "example": "an optical illusion"
+        },
+        {
+          "word": "fantasy",
+          "nuance": "Imagined, not mistaken for real.",
+          "example": "a fantasy world"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "posterity",
+      "match": "posterity",
+      "para": 38,
+      "headword": "posterity",
+      "pos": "noun",
+      "ipa": "/pɑˈstɛrəti/",
+      "sense_en": "all the people who will live after us",
+      "sense_ko": "후손, 후세",
+      "synonyms": [
+        {
+          "word": "descendants",
+          "nuance": "Only family members born later.",
+          "example": "her descendants"
+        },
+        {
+          "word": "future generations",
+          "nuance": "Plain phrase for all later people.",
+          "example": "for future generations"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "prosperity(번영)와 혼동하지 마세요."
+    },
+    {
+      "id": "slag",
+      "match": "slag",
+      "para": 38,
+      "headword": "slag",
+      "pos": "noun",
+      "ipa": "/slæɡ/",
+      "sense_en": "waste left after metal is melted from rock",
+      "sense_ko": "광재, 쇠찌꺼기",
+      "synonyms": [
+        {
+          "word": "dross",
+          "nuance": "Waste on melted metal; also worthless things.",
+          "example": "the dross of life"
+        },
+        {
+          "word": "cinder",
+          "nuance": "Burnt coal or wood not fully turned to ash.",
+          "example": "a cinder from the fire"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "barter",
+      "match": "bartered",
+      "para": 39,
+      "headword": "barter",
+      "pos": "verb",
+      "ipa": "/ˈbɑrtər/",
+      "sense_en": "gave one thing in exchange for another",
+      "sense_ko": "교환하다, 맞바꾸다",
+      "synonyms": [
+        {
+          "word": "trade",
+          "nuance": "General exchange, often with money too.",
+          "example": "trade cars"
+        },
+        {
+          "word": "swap",
+          "nuance": "Casual; exchange like for like.",
+          "example": "swap seats"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "waive",
+      "match": "waive",
+      "para": 40,
+      "headword": "waive",
+      "pos": "verb",
+      "ipa": "/weɪv/",
+      "sense_en": "to give up a right or claim on purpose",
+      "sense_ko": "(권리를) 포기하다",
+      "synonyms": [
+        {
+          "word": "relinquish",
+          "nuance": "Formal; give up something held.",
+          "example": "relinquish the throne"
+        },
+        {
+          "word": "forgo",
+          "nuance": "Go without something one could have.",
+          "example": "forgo dessert"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "stipulated",
+      "match": "stipulated",
+      "para": 40,
+      "headword": "stipulate",
+      "pos": "verb",
+      "ipa": "/ˈstɪpjəleɪt/",
+      "sense_en": "stated clearly as a condition of an agreement",
+      "sense_ko": "(계약으로) 명시된",
+      "synonyms": [
+        {
+          "word": "specified",
+          "nuance": "Stated exactly, in any context.",
+          "example": "the specified time"
+        },
+        {
+          "word": "agreed",
+          "nuance": "Accepted by both sides, without a formal rule.",
+          "example": "at the agreed time"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "contempt",
+      "match": "contempt",
+      "para": 40,
+      "headword": "contempt",
+      "pos": "noun",
+      "ipa": "/kənˈtɛmpt/",
+      "sense_en": "a strong feeling that someone or something is worthless",
+      "sense_ko": "경멸",
+      "synonyms": [
+        {
+          "word": "scorn",
+          "nuance": "Contempt openly shown, often in words.",
+          "example": "laugh with scorn"
+        },
+        {
+          "word": "disdain",
+          "nuance": "Cool, proud contempt.",
+          "example": "look with disdain"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "renunciation",
+      "match": "renunciation",
+      "para": 42,
+      "headword": "renunciation",
+      "pos": "noun",
+      "ipa": "/rɪˌnʌnsiˈeɪʃən/",
+      "sense_en": "a formal statement giving up a right",
+      "sense_ko": "포기 선언, 포기 문서",
+      "synonyms": [
+        {
+          "word": "resignation",
+          "nuance": "Giving up a job or position.",
+          "example": "letter of resignation"
+        },
+        {
+          "word": "abandonment",
+          "nuance": "Leaving something behind, not always formally.",
+          "example": "the abandonment of the plan"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    }
+  ]
+}

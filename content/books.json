@@ -937,7 +937,8 @@
   },
   "month": "2027-07",
   "plan": 38,
-  "gutenberg": 2776
+  "gutenberg": 2776,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "call-of-the-wild",
@@ -961,7 +962,8 @@
   },
   "month": "2027-07",
   "plan": 39,
-  "gutenberg": 215
+  "gutenberg": 215,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "scandal-in-bohemia",
@@ -984,7 +986,8 @@
   },
   "month": "2027-07",
   "plan": 40,
-  "gutenberg": 1661
+  "gutenberg": 1661,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "cask-of-amontillado",
@@ -1007,7 +1010,8 @@
   },
   "month": "2027-08",
   "plan": 41,
-  "gutenberg": 2148
+  "gutenberg": 2148,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "christmas-carol",
@@ -1031,7 +1035,8 @@
   },
   "month": "2027-08",
   "plan": 42,
-  "gutenberg": 46
+  "gutenberg": 46,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "country-of-the-blind",
@@ -1054,7 +1059,8 @@
   },
   "month": "2027-08",
   "plan": 43,
-  "gutenberg": 11870
+  "gutenberg": 11870,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "desirees-baby",
@@ -1078,7 +1084,8 @@
   },
   "month": "2027-08",
   "plan": 44,
-  "gutenberg": 46650
+  "gutenberg": 46650,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "jumping-frog",
@@ -1102,7 +1109,8 @@
   },
   "month": "2027-09",
   "plan": 45,
-  "gutenberg": 10947
+  "gutenberg": 10947,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "garden-party",
@@ -1125,7 +1133,8 @@
   },
   "month": "2027-09",
   "plan": 46,
-  "gutenberg": 1429
+  "gutenberg": 1429,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "outcasts-of-poker-flat",
@@ -1148,7 +1157,8 @@
   },
   "month": "2027-09",
   "plan": 47,
-  "gutenberg": 6373
+  "gutenberg": 6373,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "red-headed-league",
@@ -1171,7 +1181,8 @@
   },
   "month": "2027-09",
   "plan": 48,
-  "gutenberg": 1661
+  "gutenberg": 1661,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "masque-of-the-red-death",
@@ -1194,7 +1205,8 @@
   },
   "month": "2027-10",
   "plan": 49,
-  "gutenberg": 1064
+  "gutenberg": 1064,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "signal-man",
@@ -1217,7 +1229,8 @@
   },
   "month": "2027-10",
   "plan": 50,
-  "gutenberg": 27924
+  "gutenberg": 27924,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "the-star",
@@ -1262,7 +1275,8 @@
   },
   "month": "2027-10",
   "plan": 52,
-  "gutenberg": 2776
+  "gutenberg": 2776,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "million-pound-bank-note",
@@ -1286,7 +1300,8 @@
   },
   "month": "2027-11",
   "plan": 53,
-  "gutenberg": 61522
+  "gutenberg": 61522,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "the-bet",
@@ -1309,7 +1324,8 @@
   },
   "month": "2027-11",
   "plan": 54,
-  "gutenberg": 55283
+  "gutenberg": 55283,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "luck-of-roaring-camp",
@@ -1332,7 +1348,8 @@
   },
   "month": "2027-11",
   "plan": 55,
-  "gutenberg": 6373
+  "gutenberg": 6373,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "speckled-band",
@@ -1355,7 +1372,8 @@
   },
   "month": "2027-11",
   "plan": 56,
-  "gutenberg": 1661
+  "gutenberg": 1661,
+  "reviewed": "2026-09-29"
  },
  {
   "slug": "black-cat",

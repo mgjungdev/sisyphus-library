@@ -1,0 +1,1480 @@
+{
+ "slug": "signal-man",
+ "entries": [
+  {
+   "id": "furl",
+   "match": "furled",
+   "para": 2,
+   "headword": "furl",
+   "pos": "verb",
+   "ipa": "/fɝl/",
+   "sense_en": "rolled up tightly and fastened around its pole",
+   "sense_ko": "(깃발 등을) 돌돌 말아 감은",
+   "synonyms": [
+    {
+     "word": "roll up",
+     "nuance": "Everyday and general; no sense of fastening to a pole or mast.",
+     "example": "roll up a map"
+    },
+    {
+     "word": "fold",
+     "nuance": "Bends flat material over itself; furling rolls it tight.",
+     "example": "fold a flag"
+    },
+    {
+     "word": "wrap",
+     "nuance": "Covers something all around; furling wraps flag or sail on its own pole.",
+     "example": "wrap a scarf"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "foreshorten",
+   "match": "foreshortened",
+   "para": 2,
+   "headword": "foreshorten",
+   "pos": "verb",
+   "ipa": "/fɔrˈʃɔrtn̩/",
+   "sense_en": "looking shorter than it really is because seen from a steep angle",
+   "sense_ko": "(비스듬히 보아) 짧아 보이는",
+   "synonyms": [
+    {
+     "word": "shorten",
+     "nuance": "Plain word for making shorter; no idea of viewing angle.",
+     "example": "shorten a skirt"
+    },
+    {
+     "word": "compress",
+     "nuance": "Squeeze into less space; suggests pressure, not perspective.",
+     "example": "compressed air"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "steeped",
+   "match": "steeped",
+   "para": 2,
+   "headword": "steep",
+   "pos": "verb",
+   "ipa": "/stip/",
+   "sense_en": "completely filled or covered with (a colour or light)",
+   "sense_ko": "(빛·색에) 흠뻑 잠긴",
+   "synonyms": [
+    {
+     "word": "soaked",
+     "nuance": "Wet all through; usually liquid, literal.",
+     "example": "soaked in rain"
+    },
+    {
+     "word": "bathed",
+     "nuance": "Lit gently all over; a softer, more pleasant image.",
+     "example": "bathed in moonlight"
+    },
+    {
+     "word": "immersed",
+     "nuance": "Deeply involved or covered; often used for activities and study.",
+     "example": "immersed in a book"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "by-dint-of",
+   "match": "by dint of",
+   "para": 7,
+   "headword": "by dint of",
+   "pos": "idiom",
+   "ipa": null,
+   "sense_en": "by means of; through the effort of",
+   "sense_ko": "~의 힘으로, ~에 힘입어",
+   "synonyms": [
+    {
+     "word": "by means of",
+     "nuance": "Neutral; does not stress effort.",
+     "example": "by means of a key"
+    },
+    {
+     "word": "thanks to",
+     "nuance": "Gives credit, often for a lucky or helpful cause.",
+     "example": "thanks to your help"
+    },
+    {
+     "word": "through",
+     "nuance": "Plainer and shorter; no note of hard effort.",
+     "example": "through hard work"
+    }
+   ],
+   "modern": null,
+   "tip_ko": "dint /dɪnt/는 원래 '힘, 타격'이란 뜻으로, 'by dint of hard work'처럼 노력을 강조할 때 자주 씁니다.",
+   "all": true
+  },
+  {
+   "id": "precipitate",
+   "match": "precipitate",
+   "para": 8,
+   "headword": "precipitate",
+   "pos": "adjective",
+   "ipa": "/prɪˈsɪpɪtət/",
+   "sense_en": "very steep, like a sudden drop",
+   "sense_ko": "가파른, 깎아지른 듯한",
+   "synonyms": [
+    {
+     "word": "steep",
+     "nuance": "Everyday word for any sharp slope.",
+     "example": "a steep hill"
+    },
+    {
+     "word": "sheer",
+     "nuance": "Vertical or nearly so, like a cliff face.",
+     "example": "a sheer cliff"
+    },
+    {
+     "word": "abrupt",
+     "nuance": "Sudden; used for change or stops more than for slopes.",
+     "example": "an abrupt drop"
+    }
+   ],
+   "modern": null,
+   "tip_ko": "동사 precipitate는 /-teɪt/, 형용사는 /-tət/로 발음이 다릅니다.",
+   "all": true
+  },
+  {
+   "id": "clammy",
+   "match": "clammy",
+   "para": 8,
+   "headword": "clammy",
+   "pos": "adjective",
+   "ipa": "/ˈklæmi/",
+   "sense_en": "unpleasantly cold, damp and slightly sticky",
+   "sense_ko": "축축하고 차가워 불쾌한",
+   "synonyms": [
+    {
+     "word": "damp",
+     "nuance": "Slightly wet; can be pleasant or neutral.",
+     "example": "damp towels"
+    },
+    {
+     "word": "dank",
+     "nuance": "Cold, wet and smelling of decay, like a cellar.",
+     "example": "a dank cave"
+    },
+    {
+     "word": "moist",
+     "nuance": "Pleasantly wet, often of food like cake.",
+     "example": "a moist cake"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "oozy",
+   "match": "oozier",
+   "para": 8,
+   "headword": "oozy",
+   "pos": "adjective",
+   "ipa": "/ˈuzi/",
+   "sense_en": "soft and wet, with water slowly seeping out",
+   "sense_ko": "질척하게 물이 배어 나오는",
+   "synonyms": [
+    {
+     "word": "muddy",
+     "nuance": "Covered in or full of mud; more ordinary.",
+     "example": "muddy boots"
+    },
+    {
+     "word": "slimy",
+     "nuance": "Slippery and disgusting, like slime.",
+     "example": "a slimy pond"
+    },
+    {
+     "word": "soggy",
+     "nuance": "Soaked and heavy; often bread or ground after rain.",
+     "example": "soggy ground"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "sallow",
+   "match": "sallow",
+   "para": 10,
+   "headword": "sallow",
+   "pos": "adjective",
+   "ipa": "/ˈsæloʊ/",
+   "sense_en": "(of skin) a sickly yellowish colour",
+   "sense_ko": "(안색이) 누르스름하고 병약해 보이는",
+   "synonyms": [
+    {
+     "word": "pale",
+     "nuance": "Lacking colour; not necessarily unhealthy or yellow.",
+     "example": "a pale face"
+    },
+    {
+     "word": "pallid",
+     "nuance": "Unhealthily pale, more formal and stronger than pale.",
+     "example": "a pallid look"
+    },
+    {
+     "word": "wan",
+     "nuance": "Pale and tired-looking, often from grief or illness.",
+     "example": "a wan smile"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "dismal",
+   "match": "dismal",
+   "para": 10,
+   "headword": "dismal",
+   "pos": "adjective",
+   "ipa": "/ˈdɪzməl/",
+   "sense_en": "causing gloom; bleak and depressing",
+   "sense_ko": "음산하고 우울한",
+   "synonyms": [
+    {
+     "word": "gloomy",
+     "nuance": "Dark or sad; the most common word.",
+     "example": "a gloomy room"
+    },
+    {
+     "word": "dreary",
+     "nuance": "Dull and boring as well as sad.",
+     "example": "a dreary Monday"
+    },
+    {
+     "word": "bleak",
+     "nuance": "Empty and cold, with no hope or comfort.",
+     "example": "a bleak landscape"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "jagged",
+   "match": "jagged",
+   "para": 10,
+   "headword": "jagged",
+   "pos": "adjective",
+   "ipa": "/ˈdʒæɡɪd/",
+   "sense_en": "having sharp, uneven points and edges",
+   "sense_ko": "들쭉날쭉 뾰족한",
+   "synonyms": [
+    {
+     "word": "rough",
+     "nuance": "General; any uneven surface, not necessarily pointed.",
+     "example": "a rough wall"
+    },
+    {
+     "word": "serrated",
+     "nuance": "Regular small teeth like a saw or bread knife.",
+     "example": "a serrated blade"
+    },
+    {
+     "word": "craggy",
+     "nuance": "Rocky, steep and rugged, used of cliffs and faces.",
+     "example": "a craggy cliff"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "dungeon",
+   "match": "dungeon",
+   "para": 10,
+   "headword": "dungeon",
+   "pos": "noun",
+   "ipa": "/ˈdʌndʒən/",
+   "sense_en": "a dark underground prison; here, the deep gloomy railway cutting",
+   "sense_ko": "지하 감옥 (여기서는 감옥 같은 깊은 철도 골짜기)",
+   "synonyms": [
+    {
+     "word": "prison",
+     "nuance": "Ordinary word for a place of punishment.",
+     "example": "a prison cell"
+    },
+    {
+     "word": "cell",
+     "nuance": "A single small room for one prisoner.",
+     "example": "a locked cell"
+    },
+    {
+     "word": "pit",
+     "nuance": "Deep hole; no idea of imprisonment.",
+     "example": "a dark pit"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "forbidding",
+   "match": "forbidding",
+   "para": 10,
+   "headword": "forbidding",
+   "pos": "adjective",
+   "ipa": "/fɔrˈbɪdɪŋ/",
+   "sense_en": "looking unfriendly and frightening, warning you to stay away",
+   "sense_ko": "다가가기 어려울 만큼 험악한",
+   "synonyms": [
+    {
+     "word": "menacing",
+     "nuance": "Suggests a real threat of harm.",
+     "example": "a menacing look"
+    },
+    {
+     "word": "grim",
+     "nuance": "Stern and joyless, not always threatening.",
+     "example": "a grim face"
+    },
+    {
+     "word": "daunting",
+     "nuance": "Makes a task feel too hard rather than a place unfriendly.",
+     "example": "a daunting climb"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "rivet",
+   "match": "riveted",
+   "para": 12,
+   "headword": "rivet",
+   "pos": "verb",
+   "ipa": "/ˈrɪvɪt/",
+   "sense_en": "held (my attention) completely",
+   "sense_ko": "(관심을) 완전히 사로잡다",
+   "synonyms": [
+    {
+     "word": "grab",
+     "nuance": "Quick and informal; may not last.",
+     "example": "grab attention"
+    },
+    {
+     "word": "fascinate",
+     "nuance": "Interest that is pleasant and deep.",
+     "example": "fascinated by the story"
+    },
+    {
+     "word": "hold",
+     "nuance": "Neutral; keeps attention without the strong pull of rivet.",
+     "example": "hold his gaze"
+    }
+   ],
+   "modern": null,
+   "tip_ko": "be riveted to/by ~ 는 '~에 시선이 꽂히다'라는 뜻으로 자주 씁니다.",
+   "all": true
+  },
+  {
+   "id": "yonder",
+   "match": "up yonder",
+   "para": 12,
+   "headword": "yonder",
+   "pos": "adverb",
+   "ipa": "/ˈjɑndɚ/",
+   "sense_en": "over there, at a distance",
+   "sense_ko": "저기 저쪽에",
+   "synonyms": [
+    {
+     "word": "over there",
+     "nuance": "What people say today; neutral.",
+     "example": "over there by the tree"
+    },
+    {
+     "word": "far away",
+     "nuance": "Stresses distance, not pointing at a place.",
+     "example": "far away in the hills"
+    }
+   ],
+   "modern": "\"yonder\" → \"over there\"",
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "daunt",
+   "match": "daunted",
+   "para": 12,
+   "headword": "daunt",
+   "pos": "verb",
+   "ipa": "/dɔnt/",
+   "sense_en": "made me feel nervous and unsure",
+   "sense_ko": "기를 죽이다, 주눅 들게 하다",
+   "synonyms": [
+    {
+     "word": "intimidate",
+     "nuance": "Frighten by power or manner, usually on purpose.",
+     "example": "intimidated by the boss"
+    },
+    {
+     "word": "unnerve",
+     "nuance": "Make suddenly uneasy and lose confidence.",
+     "example": "an unnerving silence"
+    },
+    {
+     "word": "discourage",
+     "nuance": "Take away hope or the wish to try.",
+     "example": "discouraged by failure"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "peruse",
+   "match": "perused",
+   "para": 16,
+   "headword": "peruse",
+   "pos": "verb",
+   "ipa": "/pəˈruz/",
+   "sense_en": "looked at carefully and studied",
+   "sense_ko": "(꼼꼼히) 살펴보다",
+   "synonyms": [
+    {
+     "word": "examine",
+     "nuance": "Look closely to find details or faults.",
+     "example": "examine the map"
+    },
+    {
+     "word": "scrutinize",
+     "nuance": "Even more careful; often suspicious.",
+     "example": "scrutinize the contract"
+    },
+    {
+     "word": "skim",
+     "nuance": "Look quickly without care; nearly the opposite.",
+     "example": "skim the news"
+    }
+   ],
+   "modern": null,
+   "tip_ko": "현대 영어에서는 '대충 훑어보다'로도 쓰여 뜻이 엇갈립니다.",
+   "all": true
+  },
+  {
+   "id": "saturnine",
+   "match": "saturnine",
+   "para": 16,
+   "headword": "saturnine",
+   "pos": "adjective",
+   "ipa": "/ˈsætɚnaɪn/",
+   "sense_en": "gloomy, serious and cold in manner",
+   "sense_ko": "우울하고 음침한",
+   "synonyms": [
+    {
+     "word": "gloomy",
+     "nuance": "Everyday; can describe weather or mood.",
+     "example": "a gloomy mood"
+    },
+    {
+     "word": "morose",
+     "nuance": "Bad-tempered and silent as well as sad.",
+     "example": "a morose old man"
+    },
+    {
+     "word": "dour",
+     "nuance": "Stern, humourless and unsmiling.",
+     "example": "a dour expression"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "latent",
+   "match": "latent",
+   "para": 17,
+   "headword": "latent",
+   "pos": "adjective",
+   "ipa": "/ˈleɪtnt/",
+   "sense_en": "present but hidden, not yet showing",
+   "sense_ko": "잠재된, 숨어 있는",
+   "synonyms": [
+    {
+     "word": "hidden",
+     "nuance": "General; may be hidden on purpose.",
+     "example": "a hidden door"
+    },
+    {
+     "word": "dormant",
+     "nuance": "Sleeping now but able to wake, like a volcano.",
+     "example": "a dormant volcano"
+    },
+    {
+     "word": "underlying",
+     "nuance": "Lies beneath the surface as a base cause.",
+     "example": "an underlying cause"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "for-my-life",
+   "match": "for my life",
+   "para": 2,
+   "headword": "for the life of me",
+   "pos": "idiom",
+   "ipa": null,
+   "sense_en": "however hard I tried (I could not say)",
+   "sense_ko": "아무리 해도, 도저히",
+   "synonyms": [
+    {
+     "word": "to save my life",
+     "nuance": "Same idea; dramatic exaggeration.",
+     "example": "I couldn't remember, to save my life"
+    },
+    {
+     "word": "no matter how hard I try",
+     "nuance": "Plain modern wording; no exaggeration.",
+     "example": "I can't remember, no matter how hard I try"
+    }
+   ],
+   "modern": "\"for my life\" → \"for the life of me\"",
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "start-back",
+   "match": "start back",
+   "para": 6,
+   "headword": "start back",
+   "pos": "phrase",
+   "ipa": null,
+   "sense_en": "move backwards suddenly in surprise or fear",
+   "sense_ko": "놀라서 움찔 뒤로 물러서다",
+   "synonyms": [
+    {
+     "word": "recoil",
+     "nuance": "Move away in fear or disgust; a stronger, more formal word.",
+     "example": "recoil in horror"
+    },
+    {
+     "word": "flinch",
+     "nuance": "Small quick movement from fear or pain.",
+     "example": "flinch at the noise"
+    },
+    {
+     "word": "step back",
+     "nuance": "Deliberate and calm, with no shock.",
+     "example": "step back from the edge"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "crude",
+   "match": "crude",
+   "para": 26,
+   "headword": "crude",
+   "pos": "adjective",
+   "ipa": "/krud/",
+   "sense_en": "simple and rough, not skilled or complete",
+   "sense_ko": "조잡한, 서투른",
+   "synonyms": [
+    {
+     "word": "rough",
+     "nuance": "Not exact or finished; can be neutral.",
+     "example": "a rough sketch"
+    },
+    {
+     "word": "primitive",
+     "nuance": "Very simple and early in development.",
+     "example": "primitive tools"
+    },
+    {
+     "word": "unrefined",
+     "nuance": "Lacking polish or refinement; a little more formal.",
+     "example": "unrefined manners"
+    }
+   ],
+   "modern": null,
+   "tip_ko": "'crude'는 '저속한'(a crude joke), '가공하지 않은'(crude oil)이란 뜻도 있어 문맥으로 구분하세요.",
+   "all": true
+  },
+  {
+   "id": "incongruity",
+   "match": "incongruity",
+   "para": 27,
+   "headword": "incongruity",
+   "pos": "noun",
+   "ipa": "/ˌɪnkənˈɡruɪti/",
+   "sense_en": "a mismatch between a person and their surroundings",
+   "sense_ko": "어울리지 않음, 부조화",
+   "synonyms": [
+    {
+     "word": "mismatch",
+     "nuance": "Everyday word for things that do not fit together.",
+     "example": "a mismatch of skills"
+    },
+    {
+     "word": "discrepancy",
+     "nuance": "A difference between facts or figures that should agree.",
+     "example": "a discrepancy in the accounts"
+    },
+    {
+     "word": "inconsistency",
+     "nuance": "Parts that contradict each other, in logic or behaviour.",
+     "example": "an inconsistency in the story"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "run-wild",
+   "match": "run wild",
+   "para": 27,
+   "headword": "run wild",
+   "pos": "idiom",
+   "ipa": null,
+   "sense_en": "live without discipline and waste one's chances",
+   "sense_ko": "제멋대로 굴다, 방탕하게 지내다",
+   "synonyms": [
+    {
+     "word": "go astray",
+     "nuance": "Leave the right path; less about lack of control.",
+     "example": "go astray in youth"
+    },
+    {
+     "word": "misbehave",
+     "nuance": "Simply act badly; no long-term waste of life.",
+     "example": "children misbehave"
+    },
+    {
+     "word": "rebel",
+     "nuance": "Deliberately fight against rules and authority.",
+     "example": "rebel against parents"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "made-his-bed",
+   "match": "made his bed, and he lay upon it",
+   "para": 27,
+   "headword": "make one's bed and lie in it",
+   "pos": "idiom",
+   "ipa": null,
+   "sense_en": "he accepted the results of his own choices",
+   "sense_ko": "자기가 저지른 일은 자기가 책임진다",
+   "synonyms": [
+    {
+     "word": "reap what you sow",
+     "nuance": "Bad actions bring bad results; more moral warning.",
+     "example": "you reap what you sow"
+    },
+    {
+     "word": "face the music",
+     "nuance": "Accept punishment or criticism for what you did.",
+     "example": "he had to face the music"
+    }
+   ],
+   "modern": null,
+   "tip_ko": "보통 'You've made your bed, now lie in it.'으로 씁니다.",
+   "all": true
+  },
+  {
+   "id": "vigilant",
+   "match": "vigilant",
+   "para": 28,
+   "headword": "vigilant",
+   "pos": "adjective",
+   "ipa": "/ˈvɪdʒələnt/",
+   "sense_en": "always watching carefully for danger",
+   "sense_ko": "(위험에) 늘 경계하는",
+   "synonyms": [
+    {
+     "word": "watchful",
+     "nuance": "Everyday word for keeping an eye on things.",
+     "example": "a watchful guard"
+    },
+    {
+     "word": "alert",
+     "nuance": "Quick to notice and react; can be brief.",
+     "example": "stay alert"
+    },
+    {
+     "word": "wary",
+     "nuance": "Careful because you distrust; less about duty.",
+     "example": "wary of strangers"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "asunder",
+   "match": "asunder",
+   "para": 29,
+   "headword": "asunder",
+   "pos": "adverb",
+   "ipa": "/əˈsʌndɚ/",
+   "sense_en": "far apart",
+   "sense_ko": "서로 멀리 떨어져",
+   "synonyms": [
+    {
+     "word": "apart",
+     "nuance": "Everyday, general word.",
+     "example": "far apart"
+    },
+    {
+     "word": "separately",
+     "nuance": "In different places or ways, with no sense of distance.",
+     "example": "live separately"
+    }
+   ],
+   "modern": "\"asunder\" → \"apart\"",
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "inexplicable",
+   "match": "inexplicable",
+   "para": 29,
+   "headword": "inexplicable",
+   "pos": "adjective",
+   "ipa": "/ˌɪnɪkˈsplɪkəbəl/",
+   "sense_en": "impossible to explain or understand",
+   "sense_ko": "설명할 수 없는",
+   "synonyms": [
+    {
+     "word": "mysterious",
+     "nuance": "Strange and hard to know; often exciting.",
+     "example": "a mysterious noise"
+    },
+    {
+     "word": "unaccountable",
+     "nuance": "No reason or cause can be found; a little formal.",
+     "example": "an unaccountable fear"
+    },
+    {
+     "word": "baffling",
+     "nuance": "So confusing that you cannot work it out.",
+     "example": "a baffling case"
+    }
+   ],
+   "modern": null,
+   "tip_ko": "stress는 -plic- 에 옵니다: in-ex-PLIC-a-ble.",
+   "all": true
+  },
+  {
+   "id": "lead-on",
+   "match": "lead him on",
+   "para": 31,
+   "headword": "lead someone on",
+   "pos": "phrase",
+   "ipa": null,
+   "sense_en": "to encourage him to keep talking, or to trust me",
+   "sense_ko": "(상대가) 계속 말하도록 유도하다",
+   "synonyms": [
+    {
+     "word": "coax",
+     "nuance": "Gently persuade someone to do or say something.",
+     "example": "coax him to speak"
+    },
+    {
+     "word": "draw out",
+     "nuance": "Get someone to reveal thoughts or feelings.",
+     "example": "draw out a shy child"
+    },
+    {
+     "word": "string along",
+     "nuance": "Keep misleading someone for your own benefit; dishonest.",
+     "example": "string him along"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "impart",
+   "match": "impart",
+   "para": 35,
+   "headword": "impart",
+   "pos": "verb",
+   "ipa": "/ɪmˈpɑrt/",
+   "sense_en": "tell (a secret or information) to someone",
+   "sense_ko": "(비밀·정보를) 전하다, 알리다",
+   "synonyms": [
+    {
+     "word": "convey",
+     "nuance": "Get across ideas or feelings, by any means.",
+     "example": "convey a message"
+    },
+    {
+     "word": "disclose",
+     "nuance": "Reveal something secret or hidden.",
+     "example": "disclose the details"
+    },
+    {
+     "word": "tell",
+     "nuance": "Plain everyday word; less formal.",
+     "example": "tell a secret"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "gesticulate",
+   "match": "gesticulating",
+   "para": 58,
+   "headword": "gesticulate",
+   "pos": "verb",
+   "ipa": "/dʒɛˈstɪkjəleɪt/",
+   "sense_en": "waving arms and hands wildly to express something",
+   "sense_ko": "(격하게) 손짓 몸짓을 하다",
+   "synonyms": [
+    {
+     "word": "gesture",
+     "nuance": "Any movement of the hand to show meaning; can be calm.",
+     "example": "gesture at the door"
+    },
+    {
+     "word": "wave",
+     "nuance": "Move the hand or arm back and forth.",
+     "example": "wave goodbye"
+    },
+    {
+     "word": "flail",
+     "nuance": "Move arms wildly without control or purpose.",
+     "example": "flail in the water"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "vehemence",
+   "match": "vehemence",
+   "para": 58,
+   "headword": "vehemence",
+   "pos": "noun",
+   "ipa": "/ˈviəməns/",
+   "sense_en": "very strong, forceful feeling",
+   "sense_ko": "격렬함, 열렬함",
+   "synonyms": [
+    {
+     "word": "passion",
+     "nuance": "Strong feeling, can be love or joy.",
+     "example": "speak with passion"
+    },
+    {
+     "word": "fury",
+     "nuance": "Wild anger, more violent than vehemence.",
+     "example": "in a fury"
+    },
+    {
+     "word": "force",
+     "nuance": "Power in action or words; not always emotional.",
+     "example": "the force of his words"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "hoarse",
+   "match": "hoarse",
+   "para": 59,
+   "headword": "hoarse",
+   "pos": "adjective",
+   "ipa": "/hɔrs/",
+   "sense_en": "(voice) rough and weak, as after long shouting",
+   "sense_ko": "목이 쉰",
+   "synonyms": [
+    {
+     "word": "husky",
+     "nuance": "Rough in a low, often attractive way.",
+     "example": "a husky voice"
+    },
+    {
+     "word": "gruff",
+     "nuance": "Rough and unfriendly in manner.",
+     "example": "a gruff reply"
+    },
+    {
+     "word": "croaky",
+     "nuance": "Weak and scratchy, like a frog, from a cold.",
+     "example": "a croaky voice"
+    }
+   ],
+   "modern": null,
+   "tip_ko": "horse(말)와 발음이 같습니다.",
+   "all": true
+  },
+  {
+   "id": "abhorrence",
+   "match": "abhorrence",
+   "para": 61,
+   "headword": "abhorrence",
+   "pos": "noun",
+   "ipa": "/əbˈhɔrəns/",
+   "sense_en": "very strong hatred and disgust",
+   "sense_ko": "극심한 혐오",
+   "synonyms": [
+    {
+     "word": "loathing",
+     "nuance": "Deep hate mixed with disgust; also common.",
+     "example": "a loathing of lies"
+    },
+    {
+     "word": "disgust",
+     "nuance": "Feeling sick at something unpleasant.",
+     "example": "a look of disgust"
+    },
+    {
+     "word": "dislike",
+     "nuance": "Much weaker, ordinary word.",
+     "example": "a dislike of crowds"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "shudder",
+   "match": "shudder",
+   "para": 66,
+   "headword": "shudder",
+   "pos": "noun",
+   "ipa": "/ˈʃʌdɚ/",
+   "sense_en": "a sudden shaking movement of the body from fear",
+   "sense_ko": "(공포로 인한) 몸서리, 전율",
+   "synonyms": [
+    {
+     "word": "shiver",
+     "nuance": "Small shaking from cold or fear; more general.",
+     "example": "a shiver of cold"
+    },
+    {
+     "word": "tremble",
+     "nuance": "Longer, continuous shaking, from fear or weakness.",
+     "example": "tremble with fear"
+    },
+    {
+     "word": "quiver",
+     "nuance": "Quick light shaking, of body parts or voice.",
+     "example": "her lip quivered"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "take-into-account",
+   "match": "taken into account",
+   "para": 66,
+   "headword": "take into account",
+   "pos": "phrase",
+   "ipa": null,
+   "sense_en": "considered when judging or deciding",
+   "sense_ko": "고려하다, 참작하다",
+   "synonyms": [
+    {
+     "word": "consider",
+     "nuance": "General; think about carefully.",
+     "example": "consider the cost"
+    },
+    {
+     "word": "allow for",
+     "nuance": "Add extra to cover something you expect.",
+     "example": "allow for delays"
+    },
+    {
+     "word": "factor in",
+     "nuance": "Informal; include as one part of a calculation.",
+     "example": "factor in the price"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "spectre",
+   "match": "spectre",
+   "para": 69,
+   "headword": "spectre",
+   "pos": "noun",
+   "ipa": "/ˈspɛktɚ/",
+   "sense_en": "a ghost, especially a frightening one",
+   "sense_ko": "유령, 망령",
+   "synonyms": [
+    {
+     "word": "ghost",
+     "nuance": "Everyday word for a dead person's spirit.",
+     "example": "a ghost story"
+    },
+    {
+     "word": "phantom",
+     "nuance": "A ghost or illusion, often seen briefly.",
+     "example": "a phantom ship"
+    },
+    {
+     "word": "apparition",
+     "nuance": "Sudden ghostly appearance; formal.",
+     "example": "a strange apparition"
+    }
+   ],
+   "modern": null,
+   "tip_ko": "영국식 철자이며 미국식은 specter입니다.",
+   "all": true
+  },
+  {
+   "id": "ghastly",
+   "match": "ghastly",
+   "para": 78,
+   "headword": "ghastly",
+   "pos": "adjective",
+   "ipa": "/ˈɡæstli/",
+   "sense_en": "frightening in a deathlike, horrible way",
+   "sense_ko": "섬뜩한, 송장 같은",
+   "synonyms": [
+    {
+     "word": "horrible",
+     "nuance": "General bad; no idea of death.",
+     "example": "a horrible noise"
+    },
+    {
+     "word": "gruesome",
+     "nuance": "Bloody and shocking to see.",
+     "example": "a gruesome scene"
+    },
+    {
+     "word": "deathly",
+     "nuance": "Like death, especially of pale colour or silence.",
+     "example": "a deathly pale face"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "wail",
+   "match": "wail",
+   "para": 82,
+   "headword": "wail",
+   "pos": "noun",
+   "ipa": "/weɪl/",
+   "sense_en": "a long, sad, high crying sound",
+   "sense_ko": "길게 우는 듯한 소리, 통곡 소리",
+   "synonyms": [
+    {
+     "word": "moan",
+     "nuance": "Low sound of pain or complaint.",
+     "example": "a low moan"
+    },
+    {
+     "word": "howl",
+     "nuance": "Loud long cry, of animals, wind or grief.",
+     "example": "the howl of wolves"
+    },
+    {
+     "word": "sob",
+     "nuance": "Crying with short catching breaths.",
+     "example": "a quiet sob"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "by-fits-and-starts",
+   "match": "by fits and starts",
+   "para": 83,
+   "headword": "by fits and starts",
+   "pos": "idiom",
+   "ipa": null,
+   "sense_en": "stopping and starting again and again, not steadily",
+   "sense_ko": "드문드문, 끊겼다 이어졌다 하며",
+   "synonyms": [
+    {
+     "word": "on and off",
+     "nuance": "Everyday; an irregular pattern over time.",
+     "example": "rain on and off"
+    },
+    {
+     "word": "intermittently",
+     "nuance": "Formal; happening with gaps.",
+     "example": "worked intermittently"
+    },
+    {
+     "word": "sporadically",
+     "nuance": "Occasionally and unpredictably.",
+     "example": "fighting broke out sporadically"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "ruminate",
+   "match": "ruminating",
+   "para": 105,
+   "headword": "ruminate",
+   "pos": "verb",
+   "ipa": "/ˈrumɪneɪt/",
+   "sense_en": "thinking deeply and slowly about something",
+   "sense_ko": "곰곰이 생각하다",
+   "synonyms": [
+    {
+     "word": "ponder",
+     "nuance": "Weigh something carefully; can be short.",
+     "example": "ponder the question"
+    },
+    {
+     "word": "brood",
+     "nuance": "Think unhappily for a long time.",
+     "example": "brood over failure"
+    },
+    {
+     "word": "muse",
+     "nuance": "Think dreamily, often speaking aloud.",
+     "example": "muse on life"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "calamity",
+   "match": "calamity",
+   "para": 105,
+   "headword": "calamity",
+   "pos": "noun",
+   "ipa": "/kəˈlæməti/",
+   "sense_en": "a sudden terrible disaster",
+   "sense_ko": "큰 재난, 참사",
+   "synonyms": [
+    {
+     "word": "disaster",
+     "nuance": "General for any very bad event.",
+     "example": "a natural disaster"
+    },
+    {
+     "word": "catastrophe",
+     "nuance": "Larger, with lasting ruin.",
+     "example": "an economic catastrophe"
+    },
+    {
+     "word": "misfortune",
+     "nuance": "Milder bad luck.",
+     "example": "a run of misfortune"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "avert",
+   "match": "averted",
+   "para": 109,
+   "headword": "avert",
+   "pos": "verb",
+   "ipa": "/əˈvɝt/",
+   "sense_en": "prevented (something bad) from happening",
+   "sense_ko": "(나쁜 일을) 막다, 피하다",
+   "synonyms": [
+    {
+     "word": "prevent",
+     "nuance": "General; stop anything happening.",
+     "example": "prevent an accident"
+    },
+    {
+     "word": "avoid",
+     "nuance": "Keep away from something, or keep it from happening to you.",
+     "example": "avoid trouble"
+    },
+    {
+     "word": "ward off",
+     "nuance": "Keep back a threat, often for a time.",
+     "example": "ward off illness"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "conscientious",
+   "match": "conscientious",
+   "para": 108,
+   "headword": "conscientious",
+   "pos": "adjective",
+   "ipa": "/ˌkɑnʃiˈɛnʃəs/",
+   "sense_en": "careful to do one's duty well",
+   "sense_ko": "양심적인, 성실한",
+   "synonyms": [
+    {
+     "word": "diligent",
+     "nuance": "Hard-working over time.",
+     "example": "a diligent student"
+    },
+    {
+     "word": "dutiful",
+     "nuance": "Does what is expected out of duty.",
+     "example": "a dutiful son"
+    },
+    {
+     "word": "meticulous",
+     "nuance": "Very careful about small details.",
+     "example": "meticulous notes"
+    }
+   ],
+   "modern": null,
+   "tip_ko": "conscious(의식하는)와 혼동하지 마세요.",
+   "all": true
+  },
+  {
+   "id": "discharge",
+   "match": "discharged",
+   "para": 110,
+   "headword": "discharge",
+   "pos": "verb",
+   "ipa": "/dɪsˈtʃɑrdʒ/",
+   "sense_en": "carried out (a duty) fully",
+   "sense_ko": "(의무를) 이행하다",
+   "synonyms": [
+    {
+     "word": "perform",
+     "nuance": "Do a task; general.",
+     "example": "perform a duty"
+    },
+    {
+     "word": "fulfil",
+     "nuance": "Do what was promised or needed.",
+     "example": "fulfil a promise"
+    },
+    {
+     "word": "carry out",
+     "nuance": "Everyday phrase for do a plan or order.",
+     "example": "carry out orders"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "treacherous",
+   "match": "treacherous",
+   "para": 113,
+   "headword": "treacherous",
+   "pos": "adjective",
+   "ipa": "/ˈtrɛtʃərəs/",
+   "sense_en": "betraying someone's trust",
+   "sense_ko": "배신하는 듯한, 믿음을 저버리는",
+   "synonyms": [
+    {
+     "word": "disloyal",
+     "nuance": "Not faithful; milder than treacherous.",
+     "example": "a disloyal friend"
+    },
+    {
+     "word": "deceitful",
+     "nuance": "Lying in order to trick.",
+     "example": "a deceitful smile"
+    },
+    {
+     "word": "unfaithful",
+     "nuance": "Breaking a promise, esp. in love.",
+     "example": "an unfaithful partner"
+    }
+   ],
+   "modern": null,
+   "tip_ko": "'위험한(treacherous roads)'의 뜻도 있습니다.",
+   "all": true
+  },
+  {
+   "id": "apprise",
+   "match": "apprised",
+   "para": 113,
+   "headword": "apprise",
+   "pos": "verb",
+   "ipa": "/əˈpraɪz/",
+   "sense_en": "informed; told",
+   "sense_ko": "알려 주다",
+   "synonyms": [
+    {
+     "word": "inform",
+     "nuance": "General, neutral word.",
+     "example": "inform the police"
+    },
+    {
+     "word": "notify",
+     "nuance": "Officially tell, often in writing.",
+     "example": "notify the owner"
+    },
+    {
+     "word": "advise",
+     "nuance": "Formal 'let know'; also means give advice.",
+     "example": "advise them of changes"
+    }
+   ],
+   "modern": null,
+   "tip_ko": "appraise(평가하다)와 혼동하지 마세요.",
+   "all": true
+  },
+  {
+   "id": "brink",
+   "match": "brink",
+   "para": 115,
+   "headword": "brink",
+   "pos": "noun",
+   "ipa": "/brɪŋk/",
+   "sense_en": "the very edge of a steep place",
+   "sense_ko": "(낭떠러지 등의) 가장자리",
+   "synonyms": [
+    {
+     "word": "edge",
+     "nuance": "Everyday word for any side or limit.",
+     "example": "the edge of the table"
+    },
+    {
+     "word": "verge",
+     "nuance": "Edge of a road, or point before something happens.",
+     "example": "on the verge of tears"
+    },
+    {
+     "word": "rim",
+     "nuance": "Round edge of a cup or hole.",
+     "example": "the rim of a glass"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "tarpaulin",
+   "match": "tarpaulin",
+   "para": 116,
+   "headword": "tarpaulin",
+   "pos": "noun",
+   "ipa": "/tɑrˈpɔlɪn/",
+   "sense_en": "heavy waterproof cloth used as a cover",
+   "sense_ko": "방수포",
+   "synonyms": [
+    {
+     "word": "tarp",
+     "nuance": "Short, casual form.",
+     "example": "cover it with a tarp"
+    },
+    {
+     "word": "canvas",
+     "nuance": "Strong cloth; not always waterproof.",
+     "example": "a canvas tent"
+    },
+    {
+     "word": "sheet",
+     "nuance": "Any thin flat cover.",
+     "example": "a plastic sheet"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "composed",
+   "match": "composed",
+   "para": 123,
+   "headword": "composed",
+   "pos": "adjective",
+   "ipa": "/kəmˈpoʊzd/",
+   "sense_en": "calm and peaceful",
+   "sense_ko": "평온한, 차분한",
+   "synonyms": [
+    {
+     "word": "calm",
+     "nuance": "Quiet and not upset; general.",
+     "example": "stay calm"
+    },
+    {
+     "word": "serene",
+     "nuance": "Peaceful and untroubled, almost beautiful.",
+     "example": "a serene face"
+    },
+    {
+     "word": "collected",
+     "nuance": "Self-controlled in a difficult moment.",
+     "example": "cool and collected"
+    }
+   ],
+   "modern": null,
+   "tip_ko": null,
+   "all": true
+  },
+  {
+   "id": "heed",
+   "match": "take heed",
+   "para": 127,
+   "headword": "take heed",
+   "pos": "phrase",
+   "ipa": null,
+   "sense_en": "to pay attention and act on a warning",
+   "sense_ko": "주의를 기울이다, 경고에 귀 기울이다",
+   "synonyms": [
+    {
+     "word": "pay attention",
+     "nuance": "Everyday; only listening or watching.",
+     "example": "pay attention to me"
+    },
+    {
+     "word": "notice",
+     "nuance": "See or hear something; no need to act.",
+     "example": "notice a sign"
+    },
+    {
+     "word": "obey",
+     "nuance": "Do as told; heed suggests choice, not order.",
+     "example": "obey the rules"
+    }
+   ],
+   "modern": "\"take heed\" → \"pay attention\"",
+   "tip_ko": null,
+   "all": true
+  }
+ ]
+}

@@ -1,0 +1,394 @@
+{
+  "slug": "cask-of-amontillado",
+  "entries": [
+    {"id": "preclude", "match": "precluded", "para": 1, "headword": "preclude", "pos": "verb", "ipa": "/prɪˈkluːd/",
+      "sense_en": "made impossible; ruled out ahead of time", "sense_ko": "미리 불가능하게 만들었다, 배제했다",
+      "synonyms": [
+        {"word": "rule out", "nuance": "Everyday phrasal verb: decide something will not be considered or cannot happen.", "example": "The doctor ruled out a broken bone."},
+        {"word": "prevent", "nuance": "Stops an action from happening; preclude removes the possibility beforehand and is more formal.", "example": "Rain prevented the game."},
+        {"word": "exclude", "nuance": "Keeps a person or thing out of a group; less about making an outcome impossible.", "example": "She was excluded from the list."}
+      ], "modern": null, "tip_ko": null},
+    {"id": "impunity", "match": "impunity", "para": 1, "headword": "impunity", "pos": "noun", "ipa": "/ɪmˈpjuːnəti/",
+      "sense_en": "freedom from any punishment for what you do", "sense_ko": "처벌을 받지 않음, 벌을 면함",
+      "synonyms": [
+        {"word": "immunity", "nuance": "Legal or official protection from punishment or a duty; impunity is the fact of escaping it.", "example": "diplomatic immunity"},
+        {"word": "exemption", "nuance": "Formal permission not to follow a rule or pay a cost; not about avoiding revenge.", "example": "a tax exemption"},
+        {"word": "scot-free", "nuance": "Informal, used with 'get off': escaping punishment or cost, often unfairly.", "example": "He got off scot-free."}
+      ], "modern": null, "tip_ko": "'with impunity'(처벌받지 않고)의 형태로 자주 쓰입니다."},
+    {"id": "retribution", "match": "retribution", "para": 1, "headword": "retribution", "pos": "noun", "ipa": "/ˌrɛtrɪˈbjuːʃən/",
+      "sense_en": "punishment given as payback for a wrong", "sense_ko": "잘못에 대한 보복성 응징",
+      "synonyms": [
+        {"word": "revenge", "nuance": "Personal, emotional payback; retribution sounds more formal and moral.", "example": "He wanted revenge for the insult."},
+        {"word": "vengeance", "nuance": "Stronger and more literary than revenge; fierce and intense.", "example": "They swore vengeance."},
+        {"word": "punishment", "nuance": "Neutral and general; may be fair or official, without the sense of payback.", "example": "a light punishment"}
+      ], "modern": null, "tip_ko": null},
+    {"id": "avenge", "match": "avenged", "para": 1, "headword": "avenge", "pos": "verb", "ipa": "/əˈvɛndʒ/",
+      "sense_en": "get justice or payback for a wrong done to you", "sense_ko": "복수하다, 앙갚음하다",
+      "synonyms": [
+        {"word": "revenge", "nuance": "Usually 'take revenge' or 'revenge oneself'; more openly personal and spiteful.", "example": "She revenged herself on him."},
+        {"word": "retaliate", "nuance": "Hit back against an attack, often at once; no sense of justice.", "example": "They retaliated with force."},
+        {"word": "get even", "nuance": "Casual idiom: make someone suffer as you did.", "example": "I'll get even with you."}
+      ], "modern": null, "tip_ko": "avenge는 억울한 일에 대한 정의로운 복수, revenge는 개인적 감정의 복수 느낌이 강합니다."},
+    {"id": "as-was-my-wont", "match": "as was my wont", "para": 2, "headword": "as is one's wont", "pos": "idiom", "ipa": null,
+      "sense_en": "as I usually did; as was my habit", "sense_ko": "내가 늘 하던 대로",
+      "synonyms": [
+        {"word": "as usual", "nuance": "Plain everyday phrase with the same meaning.", "example": "He was late, as usual."},
+        {"word": "as was his habit", "nuance": "Same meaning in ordinary English; wont is old-fashioned and literary.", "example": "She walked, as was her habit."},
+        {"word": "customarily", "nuance": "Formal adverb for what is normally done.", "example": "He customarily rose at six."}
+      ], "modern": "\"as was my wont\" → \"as I usually did\"", "tip_ko": null},
+    {"id": "immolation", "match": "immolation", "para": 2, "headword": "immolation", "pos": "noun", "ipa": "/ˌɪməˈleɪʃən/",
+      "sense_en": "the act of killing someone or something as a sacrifice", "sense_ko": "희생물로 바침, 제물로 죽임",
+      "synonyms": [
+        {"word": "sacrifice", "nuance": "Common word for giving up or killing something for a purpose; immolation is formal and grim.", "example": "an animal sacrifice"},
+        {"word": "slaughter", "nuance": "Killing in large numbers or brutally; no ritual meaning.", "example": "the slaughter of cattle"},
+        {"word": "destruction", "nuance": "General ruin of something; not linked to sacrifice.", "example": "the destruction of the town"}
+      ], "modern": null, "tip_ko": null},
+    {"id": "connoisseurship", "match": "connoisseurship", "para": 3, "headword": "connoisseurship", "pos": "noun", "ipa": "/ˌkɑːnəˈsɜːrʃɪp/",
+      "sense_en": "expert knowledge and taste, especially in wine or art", "sense_ko": "(와인·미술 등에 대한) 감식안",
+      "synonyms": [
+        {"word": "expertise", "nuance": "Skill or knowledge in any field; connoisseurship stresses refined taste.", "example": "legal expertise"},
+        {"word": "taste", "nuance": "Personal sense of what is good; can be untrained.", "example": "a man of taste"},
+        {"word": "discernment", "nuance": "Good judgement in telling quality apart; broader than wine or art.", "example": "She showed discernment."}
+      ], "modern": null, "tip_ko": "connoisseur는 프랑스어에서 온 말로, '카너서'처럼 끝음절에 강세를 두어 발음합니다."},
+    {"id": "virtuoso", "match": "virtuoso", "para": 3, "headword": "virtuoso", "pos": "adjective", "ipa": "/ˌvɜːrtʃuˈoʊsoʊ/",
+      "sense_en": "of a true connoisseur: loving and knowing fine art and rare things", "sense_ko": "진정한 감식가다운, 미술품·진귀한 것을 아끼고 알아보는",
+      "synonyms": [
+        {"word": "discerning", "nuance": "Able to judge quality well; stresses judgement, not passion.", "example": "a discerning collector"},
+        {"word": "cultivated", "nuance": "Having refined taste from education and experience.", "example": "a cultivated reader"},
+        {"word": "expert", "nuance": "Having skilled knowledge in any field; no sense of love for fine things.", "example": "an expert opinion"}
+      ], "modern": "\"the true virtuoso spirit\" → \"the true connoisseur's spirit\"", "tip_ko": "오늘날 virtuoso는 주로 '거장, 명연주자'를 뜻하지만, 여기서는 '미술품·골동품 애호가, 감식가'라는 옛 뜻입니다."},
+    {"id": "imposture", "match": "imposture", "para": 3, "headword": "imposture", "pos": "noun", "ipa": "/ɪmˈpɑːstʃər/",
+      "sense_en": "pretending to be someone or something you are not, to cheat people", "sense_ko": "사기, 남을 속이는 행위",
+      "synonyms": [
+        {"word": "fraud", "nuance": "Any crime of cheating for gain; not necessarily pretending to be someone.", "example": "tax fraud"},
+        {"word": "deception", "nuance": "General act of misleading; the most neutral term.", "example": "a clever deception"},
+        {"word": "sham", "nuance": "Something fake presented as real; refers to the thing, not the act.", "example": "The trial was a sham."}
+      ], "modern": null, "tip_ko": "impostor(사기꾼)와 같은 뿌리의 단어입니다."},
+    {"id": "quack", "match": "quack", "para": 3, "headword": "quack", "pos": "noun", "ipa": "/kwæk/",
+      "sense_en": "a fake expert who pretends to have skill or knowledge", "sense_ko": "돌팔이, 사이비 전문가",
+      "synonyms": [
+        {"word": "charlatan", "nuance": "Someone who falsely claims special skill to gain money or praise; more formal.", "example": "The healer was a charlatan."},
+        {"word": "fake", "nuance": "Informal and broad: anyone or anything not genuine.", "example": "He's a fake."},
+        {"word": "fraud", "nuance": "Stresses deliberate cheating, not just lack of skill.", "example": "The artist was a fraud."}
+      ], "modern": null, "tip_ko": "오리 울음소리 외에 '돌팔이 의사'라는 뜻이 있습니다."},
+    {"id": "prided-himself-on", "match": "prided himself on", "para": 3, "headword": "pride oneself on", "pos": "phrase", "ipa": null,
+      "sense_en": "felt proud of a skill or quality he had", "sense_ko": "~을 자랑스러워하다, 자부하다",
+      "synonyms": [
+        {"word": "boast about", "nuance": "Talk about it proudly to others, often too much.", "example": "He boasted about his car."},
+        {"word": "take pride in", "nuance": "Feel pleased about it; more positive and quiet.", "example": "She takes pride in her work."},
+        {"word": "brag about", "nuance": "Informal and negative: showing off.", "example": "He bragged about his score."}
+      ], "modern": null, "tip_ko": null},
+    {"id": "accost", "match": "accosted", "para": 4, "headword": "accost", "pos": "verb", "ipa": "/əˈkɔːst/",
+      "sense_en": "approached and spoke to me first, boldly", "sense_ko": "다가와서 말을 걸다",
+      "synonyms": [
+        {"word": "approach", "nuance": "Neutral: come near to someone, with or without speaking.", "example": "A man approached me."},
+        {"word": "greet", "nuance": "Say hello politely; accost may feel forward or unwelcome.", "example": "She greeted me warmly."},
+        {"word": "hail", "nuance": "Call out to get someone's attention, often from a distance.", "example": "He hailed a friend across the street."}
+      ], "modern": null, "tip_ko": null},
+    {"id": "motley", "match": "motley", "para": 4, "headword": "motley", "pos": "noun", "ipa": "/ˈmɑːtli/",
+      "sense_en": "the many-colored costume of a court jester", "sense_ko": "어릿광대의 알록달록한 옷",
+      "synonyms": [
+        {"word": "costume", "nuance": "Any clothes worn for a role or party; no color meaning.", "example": "a pirate costume"},
+        {"word": "livery", "nuance": "Uniform of a servant or company, not a fool's dress.", "example": "the footman's livery"},
+        {"word": "colorful", "nuance": "Adjective for bright colors; motley also suggests a clash of mixed colors.", "example": "a colorful shirt"}
+      ], "modern": null, "tip_ko": "'a motley crew'처럼 형용사로는 '제각각 뒤섞인'이라는 뜻입니다."},
+    {"id": "surmount", "match": "surmounted", "para": 4, "headword": "surmount", "pos": "verb", "ipa": "/sərˈmaʊnt/",
+      "sense_en": "was topped by; had something placed on top", "sense_ko": "꼭대기에 ~이 얹혀 있다",
+      "synonyms": [
+        {"word": "top", "nuance": "Everyday word: be on top of, or cover the top of.", "example": "A flag topped the tower."},
+        {"word": "crown", "nuance": "Sits on top like a crown; suggests something special or final.", "example": "Snow crowned the peak."},
+        {"word": "overcome", "nuance": "Other sense of surmount: beat a difficulty, not physical position.", "example": "She overcame her fear."}
+      ], "modern": null, "tip_ko": null},
+    {"id": "what-passes-for", "match": "what passes for", "para": 5, "headword": "pass for", "pos": "phrase", "ipa": null,
+      "sense_en": "what is accepted as; what people call, though it may not be real", "sense_ko": "~로 통하는 것, ~라고 여겨지는 것",
+      "synonyms": [
+        {"word": "pass as", "nuance": "Almost the same; often used with a person appearing to be something.", "example": "He could pass as a local."},
+        {"word": "be taken for", "nuance": "Be mistaken for something else by accident.", "example": "She was taken for her sister."},
+        {"word": "so-called", "nuance": "Adjective showing doubt that the name is deserved.", "example": "his so-called friends"}
+      ], "modern": null, "tip_ko": null},
+    {"id": "pipe", "match": "pipe", "para": 5, "headword": "pipe", "pos": "noun", "ipa": "/paɪp/",
+      "sense_en": "a large wine cask holding about 126 gallons", "sense_ko": "큰 포도주 통(약 480리터)",
+      "synonyms": [
+        {"word": "cask", "nuance": "General word for a wooden barrel for wine or beer.", "example": "a cask of ale"},
+        {"word": "barrel", "nuance": "Everyday word for a round container; not tied to wine.", "example": "a barrel of oil"},
+        {"word": "keg", "nuance": "Small barrel, mostly for beer.", "example": "a keg of beer"}
+      ], "modern": null, "tip_ko": "여기서는 담뱃대나 관이 아니라 '술통'입니다."},
+    {"id": "whither", "match": "Whither", "para": 17, "headword": "whither", "pos": "adverb", "ipa": "/ˈwɪðər/",
+      "sense_en": "to what place; where to", "sense_ko": "어디로",
+      "synonyms": [
+        {"word": "where", "nuance": "Everyday word; 'where to' is needed to match whither's meaning of direction.", "example": "Where are you going?"},
+        {"word": "where to", "nuance": "Modern spoken form for direction.", "example": "Where to now?"}
+      ], "modern": "\"Whither?\" → \"Where to?\"", "tip_ko": null},
+    {"id": "impose-upon", "match": "impose upon", "para": 19, "headword": "impose upon", "pos": "phrase", "ipa": null,
+      "sense_en": "take unfair advantage of someone's kindness", "sense_ko": "폐를 끼치다, 호의를 이용하다",
+      "synonyms": [
+        {"word": "trouble", "nuance": "Bother someone a little; milder.", "example": "I hate to trouble you."},
+        {"word": "inconvenience", "nuance": "Formal: cause someone difficulty or extra effort.", "example": "I don't want to inconvenience you."},
+        {"word": "take advantage of", "nuance": "Stronger and often negative: use someone for your gain.", "example": "He took advantage of her."}
+      ], "modern": null, "tip_ko": "이 대화에서는 상대의 호의에 폐를 끼친다는 정중한 표현입니다."},
+    {"id": "afflict", "match": "afflicted", "para": 21, "headword": "afflict", "pos": "verb", "ipa": "/əˈflɪkt/",
+      "sense_en": "troubled or made to suffer, especially by illness", "sense_ko": "(병 등으로) 괴로움을 겪는",
+      "synonyms": [
+        {"word": "suffer from", "nuance": "Everyday phrase for having an illness or problem.", "example": "He suffers from asthma."},
+        {"word": "plague", "nuance": "Troubled again and again over a long time.", "example": "plagued by headaches"},
+        {"word": "trouble", "nuance": "Milder and more general than afflict.", "example": "A cough troubled him."}
+      ], "modern": null, "tip_ko": null},
+    {"id": "encrust", "match": "encrusted", "para": 21, "headword": "encrust", "pos": "verb", "ipa": "/ɪnˈkrʌst/",
+      "sense_en": "covered with a hard outer layer", "sense_ko": "겉이 딱딱한 층으로 뒤덮인",
+      "synonyms": [
+        {"word": "coated", "nuance": "Covered with a layer, hard or soft.", "example": "coated in dust"},
+        {"word": "caked", "nuance": "Covered thickly with something dried, like mud.", "example": "boots caked with mud"},
+        {"word": "crusted", "nuance": "Almost the same; simpler word.", "example": "crusted with salt"}
+      ], "modern": null, "tip_ko": null},
+    {"id": "nitre", "match": "nitre", "para": 21, "headword": "nitre", "pos": "noun", "ipa": "/ˈnaɪtər/",
+      "sense_en": "a white salty mineral that forms on damp walls", "sense_ko": "초석(젖은 벽에 생기는 흰 광물 결정)",
+      "synonyms": [
+        {"word": "saltpeter", "nuance": "American spelling and the common name for the same mineral.", "example": "saltpeter in gunpowder"},
+        {"word": "mineral deposit", "nuance": "Plain description of any such crust.", "example": "a mineral deposit on the wall"}
+      ], "modern": "\"nitre\" → \"niter / saltpeter\"", "tip_ko": "영국식 철자 nitre, 미국식은 niter입니다."},
+    {"id": "palazzo", "match": "palazzo", "para": 23, "headword": "palazzo", "pos": "noun", "ipa": "/pəˈlɑːtsoʊ/",
+      "sense_en": "a grand town house in Italy", "sense_ko": "(이탈리아의) 저택, 궁전 같은 큰 집",
+      "synonyms": [
+        {"word": "mansion", "nuance": "Very large private house in any country.", "example": "a mansion on the hill"},
+        {"word": "palace", "nuance": "Home of a king or ruler; palazzo can be a rich family's home.", "example": "the royal palace"},
+        {"word": "villa", "nuance": "Large country or seaside house.", "example": "a villa in Tuscany"}
+      ], "modern": null, "tip_ko": null},
+    {"id": "possessed-himself-of", "match": "possessed himself of", "para": 23, "headword": "possess oneself of", "pos": "phrase", "ipa": null,
+      "sense_en": "took hold of; seized", "sense_ko": "~을 붙잡다, 차지하다",
+      "synonyms": [
+        {"word": "seize", "nuance": "Grab quickly and firmly.", "example": "He seized my arm."},
+        {"word": "take hold of", "nuance": "Plain everyday phrase.", "example": "She took hold of the rope."},
+        {"word": "grasp", "nuance": "Hold tightly with the hand; may be gentle or desperate.", "example": "He grasped my hand."}
+      ], "modern": "\"possessed himself of my arm\" → \"took hold of my arm\"", "tip_ko": null},
+    {"id": "abscond", "match": "absconded", "para": 24, "headword": "abscond", "pos": "verb", "ipa": "/æbˈskɑːnd/",
+      "sense_en": "left quickly and secretly", "sense_ko": "몰래 달아나다, 자취를 감추다",
+      "synonyms": [
+        {"word": "flee", "nuance": "Run away from danger; not necessarily secret.", "example": "They fled the city."},
+        {"word": "slip away", "nuance": "Leave quietly without being noticed; lighter, no crime.", "example": "She slipped away early."},
+        {"word": "escape", "nuance": "Get free from a place or control.", "example": "The prisoner escaped."}
+      ], "modern": null, "tip_ko": null},
+    {"id": "make-merry", "match": "make merry", "para": 24, "headword": "make merry", "pos": "idiom", "ipa": null,
+      "sense_en": "to celebrate and enjoy themselves noisily", "sense_ko": "즐겁게 떠들며 놀다",
+      "synonyms": [
+        {"word": "celebrate", "nuance": "Plain word for marking an occasion.", "example": "We celebrated all night."},
+        {"word": "revel", "nuance": "Party wildly and noisily; more intense.", "example": "The crowd reveled in the streets."},
+        {"word": "have fun", "nuance": "Everyday and casual.", "example": "Have fun tonight!"}
+      ], "modern": "\"make merry\" → \"have a good time\"", "tip_ko": null},
+    {"id": "sconce", "match": "sconces", "para": 25, "headword": "sconce", "pos": "noun", "ipa": "/skɑːns/",
+      "sense_en": "a holder fixed to a wall for a candle or torch", "sense_ko": "벽에 다는 촛대·횃불 받침",
+      "synonyms": [
+        {"word": "candlestick", "nuance": "Stands on a table or floor; sconce is on a wall.", "example": "a brass candlestick"},
+        {"word": "bracket", "nuance": "Any wall support; not specifically for light.", "example": "a shelf bracket"},
+        {"word": "wall light", "nuance": "Modern word for an electric sconce.", "example": "a wall light in the hall"}
+      ], "modern": null, "tip_ko": null},
+    {"id": "flambeau", "match": "flambeaux", "para": 25, "headword": "flambeau", "pos": "noun", "ipa": "/ˈflæmboʊ/",
+      "sense_en": "burning torches", "sense_ko": "횃불",
+      "synonyms": [
+        {"word": "torch", "nuance": "Common word; in British English also a flashlight.", "example": "a burning torch"},
+        {"word": "lantern", "nuance": "Light inside a glass case; not open flame.", "example": "a paper lantern"},
+        {"word": "candle", "nuance": "Wax stick with a wick; small light.", "example": "a lit candle"}
+      ], "modern": null, "tip_ko": "프랑스어에서 온 말로 복수형은 flambeaux이며, 영어에서는 끝을 [z]로 발음합니다(/ˈflæmboʊz/)."},
+    {"id": "catacomb", "match": "catacombs", "para": 25, "headword": "catacomb", "pos": "noun", "ipa": "/ˈkætəkoʊm/",
+      "sense_en": "underground tunnels and rooms where the dead are buried", "sense_ko": "지하 묘지, 지하 무덤 터널",
+      "synonyms": [
+        {"word": "crypt", "nuance": "One burial room, often under a church.", "example": "the crypt beneath the church"},
+        {"word": "tomb", "nuance": "A single grave or burial building, above or below ground.", "example": "an ancient tomb"},
+        {"word": "vault", "nuance": "Arched underground room; may hold wine, money or the dead.", "example": "a wine vault"}
+      ], "modern": null, "tip_ko": null},
+    {"id": "gait", "match": "gait", "para": 26, "headword": "gait", "pos": "noun", "ipa": "/ɡeɪt/",
+      "sense_en": "the way a person walks", "sense_ko": "걸음걸이",
+      "synonyms": [
+        {"word": "walk", "nuance": "General word; also means a trip on foot.", "example": "I know him by his walk."},
+        {"word": "stride", "nuance": "A long, confident step.", "example": "a quick stride"},
+        {"word": "step", "nuance": "One movement of the foot; gait is the overall pattern.", "example": "with a heavy step"}
+      ], "modern": null, "tip_ko": "gate(문)와 발음이 같습니다."},
+    {"id": "orb", "match": "orbs", "para": 29, "headword": "orb", "pos": "noun", "ipa": "/ɔːrb/",
+      "sense_en": "eyes (a poetic word for round things)", "sense_ko": "눈(시적 표현, 둥근 것)",
+      "synonyms": [
+        {"word": "eyes", "nuance": "Ordinary word; orb is poetic and slightly strange.", "example": "bright eyes"},
+        {"word": "eyeballs", "nuance": "The physical round part; sounds blunt or funny.", "example": "rolling his eyeballs"},
+        {"word": "sphere", "nuance": "Scientific word for any ball shape.", "example": "a glass sphere"}
+      ], "modern": null, "tip_ko": null},
+    {"id": "rheum", "match": "rheum", "para": 29, "headword": "rheum", "pos": "noun", "ipa": "/ruːm/",
+      "sense_en": "watery liquid from the eyes or nose", "sense_ko": "눈이나 코에서 나오는 물 같은 분비물",
+      "synonyms": [
+        {"word": "mucus", "nuance": "Slimy fluid from the nose or throat; the medical word.", "example": "nose mucus"},
+        {"word": "discharge", "nuance": "Medical word for fluid coming from the body.", "example": "eye discharge"},
+        {"word": "tears", "nuance": "Clear liquid from crying; rheum is thicker, from drink or illness.", "example": "tears in her eyes"}
+      ], "modern": null, "tip_ko": null},
+    {"id": "draught", "match": "draught", "para": 37, "headword": "draught", "pos": "noun", "ipa": "/dræft/",
+      "sense_en": "a drink taken in one go; a gulp of a liquid", "sense_ko": "(한 번에 마시는) 한 모금, 한 잔",
+      "synonyms": [
+        {"word": "swallow", "nuance": "One act of moving liquid down the throat; small.", "example": "a swallow of water"},
+        {"word": "gulp", "nuance": "Large, hasty mouthful.", "example": "He drank it in one gulp."},
+        {"word": "sip", "nuance": "A small, slow taste.", "example": "a sip of tea"}
+      ], "modern": "\"draught\" → \"drink / swig\"", "tip_ko": "미국식 철자는 draft이며 발음이 같습니다."},
+    {"id": "leer", "match": "leer", "para": 40, "headword": "leer", "pos": "noun", "ipa": "/lɪr/",
+      "sense_en": "an unpleasant sideways look showing bad or sly thoughts", "sense_ko": "음흉한 눈초리, 곁눈질",
+      "synonyms": [
+        {"word": "smirk", "nuance": "A smug smile; the mouth, not the eyes.", "example": "a smug smirk"},
+        {"word": "glare", "nuance": "Angry, direct stare.", "example": "She gave him a glare."},
+        {"word": "ogle", "nuance": "Stare in a rude, sexual way.", "example": "He ogled the passersby."}
+      ], "modern": null, "tip_ko": null},
+    {"id": "puncheon", "match": "puncheons", "para": 51, "headword": "puncheon", "pos": "noun", "ipa": "/ˈpʌntʃən/",
+      "sense_en": "large barrels for wine or spirits", "sense_ko": "큰 술통",
+      "synonyms": [
+        {"word": "cask", "nuance": "General word for a barrel.", "example": "a cask of wine"},
+        {"word": "barrel", "nuance": "Everyday term; usually smaller than a puncheon.", "example": "a barrel of beer"},
+        {"word": "keg", "nuance": "Small barrel.", "example": "a keg of beer"}
+      ], "modern": null, "tip_ko": null},
+    {"id": "recess", "match": "recesses", "para": 51, "headword": "recess", "pos": "noun", "ipa": "/ˈriːsɛs/",
+      "sense_en": "hidden inner parts of a place", "sense_ko": "깊숙한 안쪽 부분",
+      "synonyms": [
+        {"word": "corner", "nuance": "Where two walls meet; less deep or hidden.", "example": "a dark corner"},
+        {"word": "depths", "nuance": "The deepest part of something large.", "example": "the depths of the cave"},
+        {"word": "alcove", "nuance": "Small nook set into a wall of a room.", "example": "a bed in an alcove"}
+      ], "modern": null, "tip_ko": "학교의 '쉬는 시간'이라는 뜻도 있습니다."},
+    {"id": "made-bold", "match": "made bold", "para": 51, "headword": "make bold", "pos": "idiom", "ipa": null,
+      "sense_en": "was brave or rude enough (to do something)", "sense_ko": "대담하게 ~하다",
+      "synonyms": [
+        {"word": "dare", "nuance": "Have the courage to do something risky.", "example": "I dared to ask."},
+        {"word": "venture", "nuance": "Do something risky, with some care.", "example": "He ventured a question."},
+        {"word": "presume", "nuance": "Do something bold that maybe you have no right to do.", "example": "I presume to disagree."}
+      ], "modern": "\"made bold to seize\" → \"dared to grab\"", "tip_ko": null},
+    {"id": "flagon", "match": "flagon", "para": 54, "headword": "flagon", "pos": "noun", "ipa": "/ˈflæɡən/",
+      "sense_en": "a large bottle or jug for wine", "sense_ko": "포도주를 담는 큰 병이나 주전자",
+      "synonyms": [
+        {"word": "jug", "nuance": "Container with a handle and a lip for pouring.", "example": "a jug of water"},
+        {"word": "bottle", "nuance": "Common word; narrow neck, usually no handle.", "example": "a bottle of wine"},
+        {"word": "pitcher", "nuance": "American word for a jug.", "example": "a pitcher of juice"}
+      ], "modern": null, "tip_ko": null},
+    {"id": "gesticulation", "match": "gesticulation", "para": 54, "headword": "gesticulation", "pos": "noun", "ipa": "/dʒɛˌstɪkjuˈleɪʃən/",
+      "sense_en": "a lively movement of the hands or arms made to express something", "sense_ko": "손짓, 몸짓",
+      "synonyms": [
+        {"word": "gesture", "nuance": "One clear movement with a meaning; gesticulation is bigger and more animated.", "example": "a friendly gesture"},
+        {"word": "signal", "nuance": "Movement with a planned message.", "example": "a hand signal"},
+        {"word": "wave", "nuance": "Moving the hand to and fro to greet or call.", "example": "a wave goodbye"}
+      ], "modern": null, "tip_ko": null},
+    {"id": "grotesque", "match": "grotesque", "para": 55, "headword": "grotesque", "pos": "adjective", "ipa": "/ɡroʊˈtɛsk/",
+      "sense_en": "strange and ugly in a way that seems unnatural or comic", "sense_ko": "기괴한, 괴상한",
+      "synonyms": [
+        {"word": "bizarre", "nuance": "Very strange; not necessarily ugly.", "example": "a bizarre story"},
+        {"word": "hideous", "nuance": "Very ugly and horrifying.", "example": "a hideous mask"},
+        {"word": "absurd", "nuance": "Silly and ridiculous, often funny.", "example": "an absurd idea"}
+      ], "modern": null, "tip_ko": null},
+    {"id": "recoil", "match": "recoiling", "para": 66, "headword": "recoil", "pos": "verb", "ipa": "/rɪˈkɔɪl/",
+      "sense_en": "jumping back in surprise or fear", "sense_ko": "움찔하며 뒤로 물러서다",
+      "synonyms": [
+        {"word": "flinch", "nuance": "A quick small jerk from fear or pain, without moving away.", "example": "He flinched at the noise."},
+        {"word": "shrink back", "nuance": "Draw back slowly in fear or dislike.", "example": "She shrank back."},
+        {"word": "step back", "nuance": "Neutral action; no emotion implied.", "example": "Please step back."}
+      ], "modern": null, "tip_ko": null},
+    {"id": "crypt", "match": "crypt", "para": 67, "headword": "crypt", "pos": "noun", "ipa": "/krɪpt/",
+      "sense_en": "an underground room used for burial", "sense_ko": "지하 납골실",
+      "synonyms": [
+        {"word": "tomb", "nuance": "Any grave or burial building above or below ground.", "example": "a stone tomb"},
+        {"word": "vault", "nuance": "Arched room; may store wine or valuables.", "example": "a bank vault"},
+        {"word": "cellar", "nuance": "Underground room for storage, not burial.", "example": "a wine cellar"}
+      ], "modern": null, "tip_ko": null},
+    {"id": "promiscuously", "match": "promiscuously", "para": 68, "headword": "promiscuously", "pos": "adverb", "ipa": "/prəˈmɪskjuəsli/",
+      "sense_en": "mixed together in a messy, random way", "sense_ko": "뒤죽박죽 아무렇게나",
+      "synonyms": [
+        {"word": "randomly", "nuance": "By chance, with no plan.", "example": "scattered randomly"},
+        {"word": "haphazardly", "nuance": "Without care or order; slightly negative.", "example": "piled haphazardly"},
+        {"word": "indiscriminately", "nuance": "Without choosing or caring which.", "example": "shot indiscriminately"}
+      ], "modern": null, "tip_ko": "현대 영어에서는 주로 '성적으로 문란하게'라는 뜻으로 쓰이니, 여기의 옛 뜻과 구별하세요."},
+    {"id": "pry-into", "match": "pry into", "para": 69, "headword": "pry into", "pos": "phrase", "ipa": null,
+      "sense_en": "look closely and with effort into something hidden", "sense_ko": "(안을) 자세히 들여다보려 애쓰다",
+      "synonyms": [
+        {"word": "peer into", "nuance": "Look hard at something hard to see; polite.", "example": "He peered into the dark."},
+        {"word": "peek", "nuance": "Look quickly, often in secret.", "example": "She peeked inside."},
+        {"word": "snoop", "nuance": "Look into other people's private things.", "example": "Stop snooping!"}
+      ], "modern": null, "tip_ko": null},
+    {"id": "fetter", "match": "fettered", "para": 71, "headword": "fetter", "pos": "verb", "ipa": "/ˈfɛtər/",
+      "sense_en": "chained so he could not move", "sense_ko": "사슬로 묶었다",
+      "synonyms": [
+        {"word": "chain", "nuance": "Common word: hold with a chain.", "example": "The dog was chained."},
+        {"word": "shackle", "nuance": "Bind wrists or ankles with metal rings.", "example": "shackled prisoners"},
+        {"word": "tie up", "nuance": "Use rope; casual.", "example": "They tied him up."}
+      ], "modern": null, "tip_ko": null},
+    {"id": "astound", "match": "astounded", "para": 71, "headword": "astound", "pos": "verb", "ipa": "/əˈstaʊnd/",
+      "sense_en": "extremely surprised or shocked", "sense_ko": "몹시 놀란, 아연실색한",
+      "synonyms": [
+        {"word": "amazed", "nuance": "Surprised, often pleasantly.", "example": "I was amazed by the view."},
+        {"word": "stunned", "nuance": "Shocked into silence or stillness.", "example": "She sat stunned."},
+        {"word": "shocked", "nuance": "Upset as well as surprised.", "example": "He was shocked by the news."}
+      ], "modern": null, "tip_ko": null},
+    {"id": "implore", "match": "implore", "para": 72, "headword": "implore", "pos": "verb", "ipa": "/ɪmˈplɔːr/",
+      "sense_en": "beg someone strongly and emotionally", "sense_ko": "간절히 애원하다",
+      "synonyms": [
+        {"word": "beg", "nuance": "Common word, sometimes desperate or humble.", "example": "He begged for help."},
+        {"word": "plead", "nuance": "Make an emotional appeal, often to be spared.", "example": "She pleaded for mercy."},
+        {"word": "urge", "nuance": "Push someone to act; less pleading.", "example": "I urged him to go."}
+      ], "modern": null, "tip_ko": null},
+    {"id": "ejaculate", "match": "ejaculated", "para": 73, "headword": "ejaculate", "pos": "verb", "ipa": "/ɪˈdʒækjuleɪt/",
+      "sense_en": "said suddenly and loudly, in surprise", "sense_ko": "갑자기 외치다",
+      "synonyms": [
+        {"word": "exclaim", "nuance": "Cry out from surprise or strong feeling; the normal word today.", "example": "\"Look!\" she exclaimed."},
+        {"word": "blurt", "nuance": "Say something suddenly without thinking.", "example": "He blurted out the secret."},
+        {"word": "cry", "nuance": "Shout something out loud.", "example": "\"Stop!\" he cried."}
+      ], "modern": "\"ejaculated\" → \"exclaimed\"", "tip_ko": "현대 영어에서는 주로 '사정하다'라는 뜻이므로 '외치다'의 의미로는 exclaim을 쓰세요."},
+    {"id": "wall-up", "match": "wall up", "para": 75, "headword": "wall up", "pos": "phrase", "ipa": null,
+      "sense_en": "close an opening completely with a wall of stone", "sense_ko": "벽을 쌓아 막다",
+      "synonyms": [
+        {"word": "seal", "nuance": "Close tightly so nothing gets in or out.", "example": "They sealed the door."},
+        {"word": "block up", "nuance": "Fill an opening; any material.", "example": "block up the hole"},
+        {"word": "brick up", "nuance": "Close with bricks; near in meaning.", "example": "The window was bricked up."}
+      ], "modern": null, "tip_ko": null},
+    {"id": "tier", "match": "tier", "para": 76, "headword": "tier", "pos": "noun", "ipa": "/tɪr/",
+      "sense_en": "one layer or row of stones in a wall", "sense_ko": "(쌓아 올린) 한 층, 한 줄",
+      "synonyms": [
+        {"word": "layer", "nuance": "Any level lying on or under another.", "example": "a layer of paint"},
+        {"word": "row", "nuance": "Things in a line side by side.", "example": "a row of houses"},
+        {"word": "level", "nuance": "Any height or step; general word.", "example": "the top level"}
+      ], "modern": null, "tip_ko": "tear(눈물)와 발음이 같습니다. '타이어'가 아니라 '티어'입니다.", "all": false},
+    {"id": "hearken", "match": "hearken", "para": 76, "headword": "hearken", "pos": "verb", "ipa": "/ˈhɑːrkən/",
+      "sense_en": "listen carefully", "sense_ko": "귀 기울여 듣다",
+      "synonyms": [
+        {"word": "listen", "nuance": "Everyday word for hearing on purpose.", "example": "Listen to me."},
+        {"word": "heed", "nuance": "Pay attention and follow advice.", "example": "He didn't heed the warning."},
+        {"word": "eavesdrop", "nuance": "Listen secretly to others.", "example": "She eavesdropped on them."}
+      ], "modern": "\"hearken\" → \"listen\"", "tip_ko": null},
+    {"id": "obstinate", "match": "obstinate", "para": 76, "headword": "obstinate", "pos": "adjective", "ipa": "/ˈɑːbstɪnət/",
+      "sense_en": "stubborn and unchanging; refusing to give way", "sense_ko": "고집스러운, 끈질긴",
+      "synonyms": [
+        {"word": "stubborn", "nuance": "Everyday word; refusing to change your mind or action.", "example": "a stubborn child"},
+        {"word": "persistent", "nuance": "Continuing without stopping; often positive.", "example": "a persistent cough"},
+        {"word": "headstrong", "nuance": "Wilful and hard to control.", "example": "a headstrong girl"}
+      ], "modern": null, "tip_ko": null},
+    {"id": "grope", "match": "grope", "para": 77, "headword": "grope", "pos": "verb", "ipa": "/ɡroʊp/",
+      "sense_en": "feel about blindly in the dark (here, with his sword)", "sense_ko": "(어둠 속에서) 더듬다, 더듬어 찾다",
+      "synonyms": [
+        {"word": "fumble", "nuance": "Search clumsily, often for a small thing.", "example": "He fumbled for his keys."},
+        {"word": "feel around", "nuance": "Plain phrase; no clumsiness implied.", "example": "She felt around in the dark."},
+        {"word": "probe", "nuance": "Search deeply with a tool or finger.", "example": "probe the hole with a stick"}
+      ], "modern": null, "tip_ko": "현대 영어에서는 '성적으로 더듬다'라는 뜻으로도 쓰이니 주의하세요."},
+    {"id": "clamor", "match": "clamored", "para": 77, "headword": "clamor", "pos": "verb", "ipa": "/ˈklæmər/",
+      "sense_en": "shouted loudly and continuously", "sense_ko": "시끄럽게 외치다",
+      "synonyms": [
+        {"word": "shout", "nuance": "General word for speaking very loudly.", "example": "He shouted for help."},
+        {"word": "yell", "nuance": "Loud, often angry or excited.", "example": "She yelled at him."},
+        {"word": "scream", "nuance": "High and sharp, from fear or pain.", "example": "She screamed."}
+      ], "modern": null, "tip_ko": null},
+    {"id": "aperture", "match": "aperture", "para": 89, "headword": "aperture", "pos": "noun", "ipa": "/ˈæpərtʃər/",
+      "sense_en": "a small opening", "sense_ko": "작은 틈, 구멍",
+      "synonyms": [
+        {"word": "gap", "nuance": "Everyday word for a space between things.", "example": "a gap in the fence"},
+        {"word": "slit", "nuance": "Long, narrow cut or opening.", "example": "a slit in the door"},
+        {"word": "hole", "nuance": "General empty space in a surface.", "example": "a hole in the wall"}
+      ], "modern": null, "tip_ko": "카메라의 '조리개'라는 뜻도 있습니다."},
+    {"id": "rampart", "match": "rampart", "para": 89, "headword": "rampart", "pos": "noun", "ipa": "/ˈræmpɑːrt/",
+      "sense_en": "a wall built for defense", "sense_ko": "방벽, 성벽",
+      "synonyms": [
+        {"word": "wall", "nuance": "Everyday word.", "example": "a stone wall"},
+        {"word": "barrier", "nuance": "Anything that blocks the way.", "example": "a barrier across the road"},
+        {"word": "bulwark", "nuance": "Strong wall or protection, also figurative.", "example": "a bulwark against attack"}
+      ], "modern": null, "tip_ko": null},
+    {"id": "in-pace-requiescat", "match": "In pace requiescat", "para": 89, "headword": "in pace requiescat", "pos": "phrase", "ipa": null,
+      "sense_en": "Latin for \"may he rest in peace\"", "sense_ko": "라틴어로 '평안히 잠들기를'",
+      "synonyms": [
+        {"word": "rest in peace", "nuance": "English form, often written R.I.P. on graves.", "example": "May he rest in peace."},
+        {"word": "requiescat in pace", "nuance": "The usual Latin word order; Poe reverses it.", "example": "Requiescat in pace."}
+      ], "modern": "\"In pace requiescat\" → \"Rest in peace\"", "tip_ko": null}
+  ]
+}
