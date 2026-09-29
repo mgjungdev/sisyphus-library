@@ -46,7 +46,7 @@ body[data-view="library"] { background: var(--wall); }
   .month { grid-template-columns: 1fr; padding: 28px 0 40px; }
   .month-head {
     top: 56px; z-index: 5; margin: 0 calc(-1 * clamp(16px, 4vw, 48px)); padding: 12px clamp(16px, 4vw, 48px) 14px;
-    background: color-mix(in srgb, var(--wall) 88%, transparent); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+    background: color-mix(in srgb, var(--wall) 96%, transparent);
     display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap;
   }
   .month-head h2 { display: flex; align-items: baseline; gap: 12px; }
@@ -191,7 +191,6 @@ body[data-view="library"] { background: var(--wall); }
 .flight-backdrop {
   position: absolute; inset: 0;
   background: var(--scrim);
-  backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
   opacity: 0; transition: opacity .5s ease;
 }
 #flight-layer.active .flight-backdrop { opacity: 1; }
@@ -267,6 +266,6 @@ body[data-view="library"] { background: var(--wall); }
 .month.long .month-head .m { font-size: clamp(40px, 4.4vw, 62px); line-height: .98; letter-spacing: -.025em; text-wrap: balance; }
 @media (max-width: 860px) { .month.long .month-head .m { font-size: 34px; } }
 .ledge-wrap + .ledge-wrap { margin-top: 30px; }
-.book { transition: opacity .35s ease, filter .35s ease; }
-.book.dim { opacity: .16; filter: grayscale(.6); pointer-events: none; }
+.book { transition: opacity .35s ease; }
+.book.dim { opacity: .12; pointer-events: none; }
 .book-index li.off { display: none; }

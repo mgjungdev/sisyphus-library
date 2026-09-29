@@ -3,11 +3,15 @@ import { openCard, closeCard, cardOpen } from './card.js';
 import { getProgress, setProgress, savedAt, isSaved, prefs, subscribe } from './store.js';
 
 /* ---------- reading preferences ---------- */
-const DEFAULTS = { fs: 20, lh: 'normal', margin: 'normal', layout: 'auto', align: 'justify', turn: 'flip', marks: true };
+const DEFAULTS = { fs: 20, lh: 'normal', margin: 'normal', layout: 'auto', align: 'justify', turn: 'slide', marks: true };
 const LH = { compact: 1.42, normal: 1.6, relaxed: 1.85 };
 const MARGIN = { narrow: [22, 16], normal: [40, 24], wide: [64, 36] }; // [wide screens, phones]
 const THEMES = [['auto', 'Auto'], ['white', 'White'], ['paper', 'Paper'], ['gray', 'Gray'], ['night', 'Night']];
-const opt = () => ({ ...DEFAULTS, align: innerWidth < 600 ? 'left' : 'justify', ...prefs.get('reader', {}) });
+const opt = () => {
+  const o = { ...DEFAULTS, align: innerWidth < 600 ? 'left' : 'justify', ...prefs.get('reader', {}) };
+  if (o.turn === 'flip') o.turn = 'slide'; // flip was removed
+  return o;
+};
 const saveOpt = o => prefs.set('reader', o);
 const reduceMotion = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -68,6 +72,7 @@ export function renderReader(root, book, startPara) {
     <div class="stage">
       <div class="sheet s1"><span class="folio"></span></div>
       <div class="sheet s2"><span class="folio"></span></div>
+      <div class="hover-mark" aria-hidden="true"><i></i><i></i></div>
       <div class="clip">
         <div class="flow"></div>
       </div>
@@ -76,7 +81,11 @@ export function renderReader(root, book, startPara) {
     </div>
 
     <footer class="r-bottom chrome">
-      <input class="scrub" type="range" min="1" max="1" value="1" aria-label="Page">
+      <div class="r-scrub">
+        <button class="foot-turn prev" aria-label="Previous page">${ICON.prev}</button>
+        <input class="scrub" type="range" min="1" max="1" value="1" aria-label="Page">
+        <button class="foot-turn next" aria-label="Next page">${ICON.next}</button>
+      </div>
       <div class="r-pos"><span class="pos"></span><span class="left"></span></div>
     </footer>
 
@@ -87,7 +96,7 @@ export function renderReader(root, book, startPara) {
       <div class="row"><span class="lbl">Margins</span>${seg('margin', [['narrow', 'Narrow'], ['normal', 'Normal'], ['wide', 'Wide']], o.margin)}</div>
       <div class="row"><span class="lbl">Layout</span>${seg('layout', [['auto', 'Auto'], ['single', 'One page'], ['double', 'Two pages']], o.layout)}</div>
       <div class="row"><span class="lbl">Alignment</span>${seg('align', [['left', 'Left'], ['justify', 'Justified']], o.align)}</div>
-      <div class="row"><span class="lbl">Page turn</span>${seg('turn', [['flip', 'Flip'], ['slide', 'Slide'], ['none', 'None']], o.turn)}</div>
+      <div class="row"><span class="lbl">Page turn</span>${seg('turn', [['slide', 'Slide'], ['none', 'None']], o.turn)}</div>
       <div class="row"><span class="lbl">Theme</span>
         <div class="swatches">${THEMES.map(([v, l]) => `<button class="swatch" data-theme-set="${v}" data-t="${v}" aria-pressed="${currentTheme() === v}"><i></i>${l}</button>`).join('')}</div></div>
       <div class="row"><span class="lbl">Glossary underlines</span>${seg('marks', [[true, 'Show'], [false, 'Hide']], o.marks)}</div>
@@ -107,7 +116,24 @@ export function renderReader(root, book, startPara) {
   const sheets = [...R.querySelectorAll('.sheet')];
   const scrub = R.querySelector('.scrub');
   let paras = [];
-  let si = -1;              // current segment (chapter)
+  let si = -1;
+
+  // Word hover: two pre-composited 1px boxes under the text, moved and sized only with transform/opacity.
+  // Restyling a span inside the columns would repaint and re-layerize the whole chapter.
+  const marks = [...R.querySelectorAll('.hover-mark i')];
+  let hovEl = null;
+  function markHover(el) {
+    if (el === hovEl) return;
+    hovEl = el;
+    const rs = el ? el.getClientRects() : [];
+    const sr = rs.length ? stage.getBoundingClientRect() : null;
+    marks.forEach((m, n) => {
+      const r = rs[n];
+      if (!r) { m.style.opacity = '0'; return; }
+      m.style.transform = `translate(${r.left - sr.left}px, ${r.top - sr.top}px) scale(${r.width}, ${r.height})`;
+      m.style.opacity = '1';
+    });
+  }              // current segment (chapter)
   function renderSeg(n) {
     si = n;
     page = 0;
@@ -158,6 +184,7 @@ export function renderReader(root, book, startPara) {
     Object.assign(flow.style, { transform: 'none', width: clip.style.width, height: L.textH + 'px', columnCount: L.per, columnGap: 2 * L.m + 'px' });
     L.pages = pageOf(flow.querySelector('.flow-end')) + 1;
     if (L.pages % L.per) L.pages += L.per - (L.pages % L.per);
+    mapPages();
     scrub.max = String(L.pages / L.per);
     const anchorEl = anchorPara ? flow.querySelector(`[data-p="${anchorPara}"]`) : null;
     let pg = atEnd ? L.pages - 1 : anchorEl ? pageOf(anchorEl) : Math.min(page, L.pages - 1);
@@ -172,18 +199,25 @@ export function renderReader(root, book, startPara) {
     return Math.max(0, Math.floor((r.left - fr.left + 2) / L.pageW));
   }
 
-  function firstParaOnPage(pg) {
+  // One pass per layout: the first paragraph that reaches each page. Turning pages only looks it up.
+  let pageFirst = [];
+  function mapPages() {
     const fl = flow.getBoundingClientRect().left;
+    pageFirst = new Array(L.pages).fill(segs[si].end);
+    let pg = 0;
     for (const p of paras) {
-      for (const r of p.getClientRects()) {
-        if (Math.floor((r.left - fl + 2) / L.pageW) >= pg) return +p.dataset.p;
-      }
+      const rs = p.getClientRects();
+      if (!rs.length) continue;
+      const last = Math.floor((rs[rs.length - 1].left - fl + 2) / L.pageW);
+      for (; pg <= last && pg < L.pages; pg++) pageFirst[pg] = +p.dataset.p;
+      if (pg >= L.pages) break;
     }
-    return segs[si].end;
   }
+  const firstParaOnPage = pg => pageFirst[pg] ?? segs[si].end;
 
   function show(pg) {
     page = Math.max(0, Math.min(pg, L.pages - L.per));
+    markHover(null);
     flow.style.transform = `translateX(${-page * L.pageW}px)`;
     sheets[0].querySelector('.folio').textContent = page ? page + 1 : '';
     sheets[1].querySelector('.folio').textContent = L.spread && page + 1 < L.pages ? page + 2 : '';
@@ -196,58 +230,29 @@ export function renderReader(root, book, startPara) {
     const para = page === 0 ? segs[si].start : firstParaOnPage(page);
     const left = Math.max(0, Math.round(book.minutes * (1 - para / total)));
     R.querySelector('.left').textContent = end ? 'End of story' : left <= 1 ? 'Less than a minute left' : `${left} min left`;
-    R.querySelector('.turn.prev').disabled = page === 0 && si === 0;
-    R.querySelector('.turn.next').disabled = end;
+    R.querySelectorAll('.prev').forEach(b => { b.disabled = page === 0 && si === 0; });
+    R.querySelectorAll('.next').forEach(b => { b.disabled = end; });
     setProgress(book.slug, end ? total : para, end ? 100 : (para / total) * 100, total);
   }
 
   /* ---------- page turning ---------- */
-  function face(pg, cls) {
-    const f = document.createElement('div');
-    f.className = 'leaf-face ' + (cls || '');
-    Object.assign(f.style, { width: L.pageW + 'px', height: L.pageH + 'px' });
-    if (pg >= 0 && pg < L.pages) {
-      const c = document.createElement('div');
-      c.className = 'leaf-clip';
-      Object.assign(c.style, { left: L.m + 'px', top: L.vpad + 'px', width: L.colW + 'px', height: L.textH + 'px' });
-      const fc = flow.cloneNode(true);
-      fc.style.transform = `translateX(${-pg * L.pageW}px)`;
-      fc.querySelectorAll('[id]').forEach(n => n.removeAttribute('id'));
-      c.append(fc);
-      f.append(c);
-      if (pg > 0) { const n = document.createElement('span'); n.className = 'folio'; n.textContent = pg + 1; f.append(n); }
-    }
-    return f;
-  }
-  function place(el, x) {
-    Object.assign(el.style, { left: x + 'px', top: L.top + 'px', width: L.pageW + 'px', height: L.pageH + 'px' });
-    stage.append(el);
-    return el;
-  }
-
   async function turn(dir) {
+    if (!L) return;
     if (busy) return;
     const target = page + dir * L.per;
     if (target < 0 || target > L.pages - L.per) {
       const next = si + dir;
       if (next < 0 || next >= segs.length) return;
       closeCard(true);
-      hideChrome();
       renderSeg(next);
       layout(null, dir < 0);
       if (!reduceMotion()) clip.animate([{ opacity: 0, transform: `translateX(${dir * 24}px)` }, { opacity: 1, transform: 'none' }], { duration: 320, easing: 'ease-out' });
       return;
     }
     closeCard(true);
-    hideChrome();
-    const mode = reduceMotion() ? 'none' : o.turn;
-    if (mode === 'none') return show(target);
+    if (reduceMotion() || o.turn === 'none') return show(target);
     busy = true;
-    try {
-      if (mode === 'slide') await slide(target);
-      else if (L.spread) await flipSpread(dir, target);
-      else await flipSingle(dir, target);
-    } finally { busy = false; }
+    try { await slide(target); } finally { busy = false; }
   }
 
   function slide(target) {
@@ -257,49 +262,9 @@ export function renderReader(root, book, startPara) {
       { duration: 380, easing: 'cubic-bezier(.3,.7,.2,1)' }).finished.catch(() => {});
   }
 
-  async function flipSpread(dir, target) {
-    const x1 = L.x0, x2 = L.x0 + L.pageW;
-    const leaf = document.createElement('div');
-    leaf.className = 'leaf';
-    let under, angle;
-    if (dir > 0) {
-      under = place(face(page, 'static'), x1);
-      place(leaf, x2); leaf.style.transformOrigin = '0 50%';
-      leaf.append(face(page + 1, 'front'), face(page + 2, 'back'));
-      angle = -180;
-    } else {
-      under = place(face(page + 1, 'static'), x2);
-      place(leaf, x1); leaf.style.transformOrigin = '100% 50%';
-      leaf.append(face(page, 'front'), face(page - 1, 'back'));
-      angle = 180;
-    }
-    show(target);
-    await leaf.animate([{ transform: 'rotateY(0deg)' }, { transform: `rotateY(${angle}deg)` }],
-      { duration: 720, easing: 'cubic-bezier(.45,.1,.25,1)' }).finished.catch(() => {});
-    leaf.remove(); under.remove();
-  }
-
-  async function flipSingle(dir, target) {
-    const leaf = place(document.createElement('div'), L.x0);
-    leaf.className = 'leaf single';
-    leaf.style.transformOrigin = '0 50%';
-    const out = [{ transform: 'rotateY(0deg)', opacity: 1 }, { transform: 'rotateY(-70deg)', opacity: 1, offset: .7 }, { transform: 'rotateY(-100deg)', opacity: 0 }];
-    if (dir > 0) {
-      leaf.append(face(page, 'front'));
-      show(target);
-      await leaf.animate(out, { duration: 560, easing: 'cubic-bezier(.4,.1,.3,1)' }).finished.catch(() => {});
-    } else {
-      leaf.append(face(target, 'front'));
-      await leaf.animate(out.slice().reverse().map((k, i) => ({ ...k, offset: [0, .3, 1][i] })), { duration: 560, easing: 'cubic-bezier(.4,.1,.3,1)' }).finished.catch(() => {});
-      show(target);
-    }
-    leaf.remove();
-  }
-
   /* ---------- chrome ---------- */
   let chromeShown = true;
   const setChrome = on => { chromeShown = on; R.classList.toggle('chrome-hidden', !on); };
-  const hideChrome = () => { if (panels.aa.hidden && panels.words.hidden) setChrome(false); };
 
   /* ---------- input ---------- */
   const openFor = span => {
@@ -338,9 +303,16 @@ export function renderReader(root, book, startPara) {
     if (span && !(sel && !sel.isCollapsed && sel.toString().trim().length > 1)) return openFor(span);
     if (cardOpen()) return closeCard();
     if (!panels.aa.hidden || !panels.words.hidden) return closePanels();
-    const x = e.clientX / innerWidth;
-    if (x < 0.3) turn(-1); else if (x > 0.7) turn(1); else setChrome(!chromeShown);
+    setChrome(!chromeShown);
   });
+  R.querySelector('.r-scrub').addEventListener('click', e => {
+    const b = e.target.closest('.foot-turn');
+    if (b) turn(b.classList.contains('next') ? 1 : -1);
+  });
+  if (matchMedia('(hover: hover)').matches) {
+    clip.addEventListener('pointerover', e => { if (!busy) markHover(e.target.closest('.w, .g')); });
+    clip.addEventListener('pointerleave', () => markHover(null));
+  }
   stage.addEventListener('keydown', e => {
     if ((e.key === 'Enter' || e.key === ' ') && e.target.classList?.contains('g')) { e.preventDefault(); e.stopPropagation(); openFor(e.target); }
   });
@@ -413,7 +385,10 @@ export function renderReader(root, book, startPara) {
   });
 
   /* ---------- saved highlight ---------- */
-  const unsub = subscribe(() => {
+  let wordsRev = -1;
+  const unsub = subscribe(st => {
+    if (st.wordsRev === wordsRev) return;
+    wordsRev = st.wordsRev;
     flow.querySelectorAll('.g, .w').forEach(s => s.classList.toggle('saved', savedAt(s.dataset.h || s.dataset.l, book.slug, +s.parentElement.dataset.p)));
     if (!panels.words.hidden) drawWords();
   });

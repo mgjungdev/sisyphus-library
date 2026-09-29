@@ -174,7 +174,11 @@ export function renderLibrary(root, lib, { go }) {
       if (el && el !== root.querySelector('.month')) el.scrollIntoView({ block: 'start' });
     }
   });
-  const onScroll = () => { try { sessionStorage.setItem('sl.libScroll', String(scrollY)); } catch { /* ignore */ } };
+  let scrollT;
+  const onScroll = () => {
+    clearTimeout(scrollT);
+    scrollT = setTimeout(() => { try { sessionStorage.setItem('sl.libScroll', String(scrollY)); } catch { /* ignore */ } }, 150);
+  };
   addEventListener('scroll', onScroll, { passive: true });
   let rz, lastW = innerWidth;
   const onResize = () => { if (innerWidth === lastW) return; lastW = innerWidth; clearTimeout(rz); rz = setTimeout(draw, 200); };
@@ -204,6 +208,7 @@ export function renderLibrary(root, lib, { go }) {
     spy?.disconnect();
     bar.innerHTML = '';
     removeEventListener('scroll', onScroll);
+    if (scrollT) { clearTimeout(scrollT); try { sessionStorage.setItem('sl.libScroll', String(scrollY)); } catch { /* ignore */ } }
     removeEventListener('resize', onResize);
     if (flight && !flight.opening) closeFlight(true);
   };
@@ -225,9 +230,9 @@ function bookHTML(b, shelfH, groupLabel) {
     style="--h:${h}px;--t:${t}px;--w:${w}px;--fs:${fs}px;--c:${b.spine?.color};--a:${b.cover?.accent}"
     aria-label="${esc(label)}" ${ready ? '' : 'aria-disabled="true"'}>
     <span class="book-3d">
-      <span class="face back"></span>
+      ${ready ? `<span class="face back"></span>
       <span class="face top"></span>
-      <span class="face cover">${coverHTML(b)}</span>
+      <span class="face cover">${coverHTML(b)}</span>` : ''}
       <span class="face spine"><span class="spine-title">${esc(b.title)}</span><span class="spine-author">${esc(initials(b.author))}</span></span>
       ${p && !p.done ? '<span class="face ribbon"></span>' : ''}
       ${p && p.done ? '<span class="face done-mark"></span>' : ''}

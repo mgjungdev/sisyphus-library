@@ -14,6 +14,7 @@ const state = {
   progress: LS.get('sl.progress', {}),  // slug -> {para, pct, done, updated}
   sync: LS.get('sl.sync', null),        // {owner, repo, token}
   shas: LS.get('sl.shas', {}),
+  wordsRev: 0,                          // bumped whenever the word bank changes
   status: 'local',                      // local | synced | pending | syncing | offline | error
   error: '',
 };
@@ -45,6 +46,7 @@ export function toggleWord(rec) {
   } else {
     state.words[k] = { ...rec, saved: now(), updated: now(), removed: false };
   }
+  state.wordsRev++;
   LS.set('sl.words', state.words);
   schedule('words');
   emit();
@@ -54,6 +56,7 @@ export function removeWord(key) {
   const cur = state.words[key];
   if (!cur) return;
   state.words[key] = { ...cur, removed: true, updated: now() };
+  state.wordsRev++;
   LS.set('sl.words', state.words);
   schedule('words');
   emit();
@@ -61,13 +64,21 @@ export function removeWord(key) {
 
 /* ---------- progress ---------- */
 export function getProgress(slug) { return state.progress[slug] || null; }
-let progressTimer = null;
+let progressTimer = null, progressWrite = null;
+const flushProgress = () => {
+  if (!progressWrite) return;
+  clearTimeout(progressWrite); progressWrite = null;
+  LS.set('sl.progress', state.progress);
+};
+addEventListener('pagehide', flushProgress);
+document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden') flushProgress(); });
 export function setProgress(slug, para, pct, total) {
   const prev = state.progress[slug] || {};
   const done = prev.done || para >= total;
   if (prev.para === para && prev.done === done) return;
   state.progress[slug] = { para, pct: Math.max(prev.done ? 100 : 0, Math.round(pct)), done, updated: now() };
-  LS.set('sl.progress', state.progress);
+  clearTimeout(progressWrite);
+  progressWrite = setTimeout(flushProgress, 1000);
   clearTimeout(progressTimer);
   progressTimer = setTimeout(() => schedule('progress'), 4000);
 }
@@ -126,6 +137,7 @@ async function syncOne(kind) {
     const remote = await pull(kind);
     const merged = merge(remote.data, state[kind]);
     state[kind] = merge(state[kind], merged);
+    if (kind === 'words') state.wordsRev++;
     LS.set('sl.' + kind, state[kind]);
     const body = JSON.stringify(merged, null, 1);
     if (remote.sha && body === JSON.stringify(remote.data, null, 1)) { state.shas[kind] = remote.sha; return; }
