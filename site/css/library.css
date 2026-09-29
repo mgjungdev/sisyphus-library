@@ -19,7 +19,6 @@ body[data-view="library"] { background: var(--wall); }
 .shelf-row {
   position: relative; height: 262px;
   display: flex; align-items: flex-end; gap: 4px; padding: 0 18px;
-  perspective: 1300px; perspective-origin: 40% -20%;
   overflow: visible;
 }
 .ledge {
@@ -62,6 +61,9 @@ body[data-view="library"] { background: var(--wall); }
   position: relative; flex: 0 0 auto;
   width: var(--t); height: var(--h);
   padding: 0; border: 0; background: none; cursor: pointer;
+  /* Each book is seen from just above its own spine, so only its top edge shows and none spills onto a neighbour
+     (one viewpoint for the whole row showed the far books' sides and tops across the next spine). */
+  perspective: 1300px; perspective-origin: 50% -20%;
   transform-style: preserve-3d;
   -webkit-tap-highlight-color: transparent;
 }

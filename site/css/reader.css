@@ -49,7 +49,7 @@ body[data-view="reader"] .topbar { display: none; }
 .g { text-decoration: underline dotted var(--gloss-line); text-decoration-thickness: 1.3px; text-underline-offset: .2em; }
 .hover-mark { position: absolute; inset: 0; pointer-events: none; }
 .hover-mark i {
-  position: absolute; left: 0; top: 0; width: 1px; height: 1px; transform-origin: 0 0; opacity: 0;
+  position: absolute; left: 0; top: 0; opacity: 0;
   background: color-mix(in srgb, var(--page-ink) 8%, transparent); will-change: transform, opacity;
 }
 .no-marks .g { text-decoration: none; }

@@ -119,7 +119,7 @@ export function renderReader(root, book, startPara) {
   let paras = [];
   let si = -1;
 
-  // Word hover: two pre-composited 1px boxes under the text, moved and sized only with transform/opacity.
+  // Word hover: two pre-composited boxes under the text, moved with transform and shown with opacity.
   // Restyling a span inside the columns would repaint and re-layerize the whole chapter.
   const marks = [...R.querySelectorAll('.hover-mark i')];
   let hovEl = null;
@@ -131,7 +131,8 @@ export function renderReader(root, book, startPara) {
     marks.forEach((m, n) => {
       const r = rs[n];
       if (!r) { m.style.opacity = '0'; return; }
-      m.style.transform = `translate(${r.left - sr.left}px, ${r.top - sr.top}px) scale(${r.width}, ${r.height})`;
+      // Sized directly: scaling a 1px box up stretched its texture past the word's edge.
+      Object.assign(m.style, { width: r.width + 'px', height: r.height + 'px', transform: `translate(${r.left - sr.left}px, ${r.top - sr.top}px)` });
       m.style.opacity = '1';
     });
   }              // current segment (chapter)
