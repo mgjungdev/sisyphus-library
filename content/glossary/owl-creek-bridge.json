@@ -1,0 +1,1657 @@
+{
+  "slug": "owl-creek-bridge",
+  "entries": [
+    {
+      "id": "stout",
+      "match": "stout",
+      "para": 2,
+      "headword": "stout",
+      "pos": "adjective",
+      "ipa": "/staʊt/",
+      "sense_en": "thick and strong, able to bear heavy weight",
+      "sense_ko": "굵고 튼튼한",
+      "synonyms": [
+        {
+          "word": "sturdy",
+          "nuance": "Everyday word for well-built things; suggests solid construction rather than thickness.",
+          "example": "a sturdy table"
+        },
+        {
+          "word": "thick",
+          "nuance": "Only describes width; says nothing about strength.",
+          "example": "a thick rope"
+        },
+        {
+          "word": "strong",
+          "nuance": "Most general; no idea of bulk or solidity.",
+          "example": "a strong rope"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "사람에게 쓰면 '뚱뚱한'이라는 뜻이 되기도 하니 주의하세요."
+    },
+    {
+      "id": "slack",
+      "match": "slack",
+      "para": 2,
+      "headword": "slack",
+      "pos": "noun",
+      "ipa": "/slæk/",
+      "sense_en": "the loose part of a rope that is not pulled tight",
+      "sense_ko": "밧줄의 느슨하게 늘어진 부분",
+      "synonyms": [
+        {
+          "word": "looseness",
+          "nuance": "Abstract state of not being tight; 'slack' is the actual hanging part.",
+          "example": "the looseness of the belt"
+        },
+        {
+          "word": "play",
+          "nuance": "Small free movement in a mechanism or cord.",
+          "example": "a little play in the cable"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "sentinel",
+      "match": "sentinel",
+      "para": 2,
+      "headword": "sentinel",
+      "pos": "noun",
+      "ipa": "/ˈsɛntənəl/",
+      "sense_en": "a soldier who stands guard",
+      "sense_ko": "보초병",
+      "synonyms": [
+        {
+          "word": "sentry",
+          "nuance": "Common military word; more everyday than 'sentinel'.",
+          "example": "a sentry at the gate"
+        },
+        {
+          "word": "guard",
+          "nuance": "Broadest word; any person who protects a place or person.",
+          "example": "a prison guard"
+        },
+        {
+          "word": "lookout",
+          "nuance": "Watches for danger, not necessarily armed or posted officially.",
+          "example": "a lookout on the ship"
+        }
+      ],
+      "modern": "\"sentinel\" → \"sentry\" or \"guard\"",
+      "tip_ko": null
+    },
+    {
+      "id": "stockade",
+      "match": "stockade",
+      "para": 3,
+      "headword": "stockade",
+      "pos": "noun",
+      "ipa": "/stɑˈkeɪd/",
+      "sense_en": "a defensive wall made of tall wooden posts",
+      "sense_ko": "통나무 울타리 방어벽",
+      "synonyms": [
+        {
+          "word": "palisade",
+          "nuance": "Nearly the same; a fence of pointed stakes, often a literary or historical word.",
+          "example": "a wooden palisade"
+        },
+        {
+          "word": "fort",
+          "nuance": "A whole military building, not just the wall.",
+          "example": "an old fort"
+        },
+        {
+          "word": "barricade",
+          "nuance": "A quick barrier of any material, to block a way.",
+          "example": "a barricade across the road"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "embrasure",
+      "match": "embrasure",
+      "para": 3,
+      "headword": "embrasure",
+      "pos": "noun",
+      "ipa": "/ɪmˈbreɪʒər/",
+      "sense_en": "an opening in a wall through which a gun is fired",
+      "sense_ko": "(성벽의) 포안, 총안",
+      "synonyms": [
+        {
+          "word": "loophole",
+          "nuance": "A narrow slit for firing or looking out; smaller than an embrasure.",
+          "example": "a loophole in the wall"
+        },
+        {
+          "word": "gunport",
+          "nuance": "Opening for a cannon, especially on a ship.",
+          "example": "a gunport on the deck"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "'-sure'는 '쉬어'가 아니라 /ʒər/(저)로 발음해요."
+    },
+    {
+      "id": "stonily",
+      "match": "stonily",
+      "para": 3,
+      "headword": "stonily",
+      "pos": "adverb",
+      "ipa": "/ˈstoʊnəli/",
+      "sense_en": "without any expression or feeling, like stone",
+      "sense_ko": "돌처럼 무표정하게",
+      "synonyms": [
+        {
+          "word": "coldly",
+          "nuance": "Shows lack of warmth or friendliness, not just a blank face.",
+          "example": "She looked at him coldly."
+        },
+        {
+          "word": "blankly",
+          "nuance": "Empty of expression, often from confusion.",
+          "example": "He stared blankly at the page."
+        },
+        {
+          "word": "impassively",
+          "nuance": "Calm and unmoved on purpose; more formal.",
+          "example": "He listened impassively."
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "deference",
+      "match": "deference",
+      "para": 3,
+      "headword": "deference",
+      "pos": "noun",
+      "ipa": "/ˈdɛfərəns/",
+      "sense_en": "polite respect shown to someone of higher rank",
+      "sense_ko": "(윗사람에 대한) 존경, 경의",
+      "synonyms": [
+        {
+          "word": "respect",
+          "nuance": "General word for admiration or regard, not necessarily submissive.",
+          "example": "She has my respect."
+        },
+        {
+          "word": "submission",
+          "nuance": "Giving in to another's power; stronger and less polite.",
+          "example": "forced into submission"
+        },
+        {
+          "word": "homage",
+          "nuance": "Public, formal honor shown to a great person or thing.",
+          "example": "pay homage to the king"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "'in deference to ~'(~를 존중하여)의 형태로 자주 쓰입니다."
+    },
+    {
+      "id": "dignitary",
+      "match": "dignitary",
+      "para": 3,
+      "headword": "dignitary",
+      "pos": "noun",
+      "ipa": "/ˈdɪɡnəˌtɛri/",
+      "sense_en": "an important person of high rank",
+      "sense_ko": "고위 인사, 귀빈",
+      "synonyms": [
+        {
+          "word": "VIP",
+          "nuance": "Casual and modern; any important guest.",
+          "example": "a VIP lounge"
+        },
+        {
+          "word": "official",
+          "nuance": "Holds a public job; not necessarily very high.",
+          "example": "a city official"
+        },
+        {
+          "word": "notable",
+          "nuance": "Well-known person; fame rather than rank.",
+          "example": "local notables"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "hemp",
+      "match": "hemp",
+      "para": 4,
+      "headword": "hemp",
+      "pos": "noun",
+      "ipa": "/hɛmp/",
+      "sense_en": "rope made from hemp; here, the hangman's rope",
+      "sense_ko": "삼밧줄 (여기서는 교수형 밧줄)",
+      "synonyms": [
+        {
+          "word": "rope",
+          "nuance": "Plain everyday word; no link to hanging.",
+          "example": "a coil of rope"
+        },
+        {
+          "word": "noose",
+          "nuance": "The loop that tightens round the neck.",
+          "example": "a hangman's noose"
+        }
+      ],
+      "modern": "\"in the hemp\" → \"with a rope round his neck\"",
+      "tip_ko": null
+    },
+    {
+      "id": "vulgar",
+      "match": "vulgar",
+      "para": 4,
+      "headword": "vulgar",
+      "pos": "adjective",
+      "ipa": "/ˈvʌlɡər/",
+      "sense_en": "ordinary and of the low, common sort",
+      "sense_ko": "평범한, 흔해 빠진",
+      "synonyms": [
+        {
+          "word": "common",
+          "nuance": "Closest to this old sense: ordinary and low in rank, with a snobbish tone.",
+          "example": "a common thief"
+        },
+        {
+          "word": "ordinary",
+          "nuance": "Neutral; just not special, with no looking down.",
+          "example": "an ordinary man"
+        },
+        {
+          "word": "crude",
+          "nuance": "The modern sense of 'vulgar': rough and rude in speech or behavior.",
+          "example": "a crude joke"
+        }
+      ],
+      "modern": "\"vulgar\" → \"common\" or \"ordinary\"",
+      "tip_ko": "여기서는 '평범한, 흔한'이라는 옛 의미입니다. 현대 영어의 '저속한, 상스러운'과 구별하세요."
+    },
+    {
+      "id": "tilt",
+      "match": "tilt",
+      "para": 5,
+      "headword": "tilt",
+      "pos": "verb",
+      "ipa": "/tɪlt/",
+      "sense_en": "lean to one side; slope",
+      "sense_ko": "기울다",
+      "synonyms": [
+        {
+          "word": "lean",
+          "nuance": "Slopes but stays supported; often a person or tall object.",
+          "example": "lean against the wall"
+        },
+        {
+          "word": "slant",
+          "nuance": "Slopes in one direction, often as a fixed shape.",
+          "example": "slanting writing"
+        },
+        {
+          "word": "tip",
+          "nuance": "Falls or turns over, often by accident.",
+          "example": "The cup tipped over."
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "sluggish",
+      "match": "sluggish",
+      "para": 5,
+      "headword": "sluggish",
+      "pos": "adjective",
+      "ipa": "/ˈslʌɡɪʃ/",
+      "sense_en": "moving very slowly",
+      "sense_ko": "느릿느릿한",
+      "synonyms": [
+        {
+          "word": "slow",
+          "nuance": "General word for low speed.",
+          "example": "a slow river"
+        },
+        {
+          "word": "lazy",
+          "nuance": "Of water, a gentle, pleasant slowness; of people, unwilling to work.",
+          "example": "a lazy river"
+        },
+        {
+          "word": "lethargic",
+          "nuance": "Tired, without energy; more medical or formal.",
+          "example": "feel lethargic"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "brooding",
+      "match": "brooding",
+      "para": 6,
+      "headword": "brooding",
+      "pos": "adjective",
+      "ipa": "/ˈbrudɪŋ/",
+      "sense_en": "dark and gloomy, as if hiding something sad or threatening",
+      "sense_ko": "음침하게 드리운",
+      "synonyms": [
+        {
+          "word": "gloomy",
+          "nuance": "Simply dark or sad; less threatening.",
+          "example": "a gloomy sky"
+        },
+        {
+          "word": "sullen",
+          "nuance": "Bad-tempered and silent; usually of people.",
+          "example": "a sullen face"
+        },
+        {
+          "word": "ominous",
+          "nuance": "Warning of something bad about to happen.",
+          "example": "ominous clouds"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "shriek",
+      "match": "shriek",
+      "para": 6,
+      "headword": "shriek",
+      "pos": "verb",
+      "ipa": "/ʃrik/",
+      "sense_en": "cry out in a sharp, high voice from fear or pain",
+      "sense_ko": "비명을 지르다",
+      "synonyms": [
+        {
+          "word": "scream",
+          "nuance": "Most common; loud cry of fear, pain or excitement.",
+          "example": "She screamed for help."
+        },
+        {
+          "word": "screech",
+          "nuance": "Harsh and unpleasant, like tires or a bird.",
+          "example": "The brakes screeched."
+        },
+        {
+          "word": "yell",
+          "nuance": "Loud shout, not always high or frightened.",
+          "example": "He yelled at the dog."
+        }
+      ],
+      "modern": null,
+      "tip_ko": "'shriek'은 한 음절 /ʃrik/이며 '슈리크'처럼 늘여 읽지 않습니다."
+    },
+    {
+      "id": "noose",
+      "match": "noose",
+      "para": 7,
+      "headword": "noose",
+      "pos": "noun",
+      "ipa": "/nus/",
+      "sense_en": "a loop of rope that tightens round the neck",
+      "sense_ko": "올가미",
+      "synonyms": [
+        {
+          "word": "loop",
+          "nuance": "Any ring of rope or wire; no tightening idea.",
+          "example": "a loop of string"
+        },
+        {
+          "word": "snare",
+          "nuance": "A trap that catches animals; not for hanging.",
+          "example": "a rabbit snare"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "evade",
+      "match": "evade",
+      "para": 7,
+      "headword": "evade",
+      "pos": "verb",
+      "ipa": "/ɪˈveɪd/",
+      "sense_en": "escape from something by being clever or quick",
+      "sense_ko": "(교묘히) 피하다",
+      "synonyms": [
+        {
+          "word": "dodge",
+          "nuance": "Quick sideways move to avoid a blow; informal.",
+          "example": "dodge a ball"
+        },
+        {
+          "word": "escape",
+          "nuance": "General; may involve any way of getting free.",
+          "example": "escape from prison"
+        },
+        {
+          "word": "elude",
+          "nuance": "Slip away and stay hard to catch or find.",
+          "example": "elude the police"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "invader",
+      "match": "invader’s",
+      "para": 7,
+      "headword": "invader",
+      "pos": "noun",
+      "ipa": "/ɪnˈveɪdər/",
+      "sense_en": "a soldier or enemy who enters a country by force",
+      "sense_ko": "침략자",
+      "synonyms": [
+        {
+          "word": "intruder",
+          "nuance": "Enters a place without permission, usually on a small scale.",
+          "example": "a burglar and intruder"
+        },
+        {
+          "word": "occupier",
+          "nuance": "Stays and controls the land after entering.",
+          "example": "the occupier's army"
+        },
+        {
+          "word": "aggressor",
+          "nuance": "The side that starts the attack.",
+          "example": "the aggressor nation"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "ardently",
+      "match": "ardently",
+      "para": 10,
+      "headword": "ardently",
+      "pos": "adverb",
+      "ipa": "/ˈɑrdntli/",
+      "sense_en": "with strong, burning enthusiasm",
+      "sense_ko": "열렬히",
+      "synonyms": [
+        {
+          "word": "passionately",
+          "nuance": "Very close and more everyday; also used for love and anger.",
+          "example": "argue passionately"
+        },
+        {
+          "word": "eagerly",
+          "nuance": "Excited to get or do something soon.",
+          "example": "wait eagerly"
+        },
+        {
+          "word": "fervently",
+          "nuance": "Very close in meaning; often of belief or prayer.",
+          "example": "fervently believe"
+        }
+      ],
+      "modern": "\"ardently\" → \"passionately\"",
+      "tip_ko": null
+    },
+    {
+      "id": "chafed",
+      "match": "chafed",
+      "para": 10,
+      "headword": "chafe",
+      "pos": "verb",
+      "ipa": "/tʃeɪf/",
+      "sense_en": "felt annoyed and restless because of limits",
+      "sense_ko": "(제약 때문에) 짜증내다, 초조해하다",
+      "synonyms": [
+        {
+          "word": "fret",
+          "nuance": "Worry and be unhappy about small things.",
+          "example": "fret about the delay"
+        },
+        {
+          "word": "fume",
+          "nuance": "Show silent anger.",
+          "example": "fume in traffic"
+        },
+        {
+          "word": "rebel",
+          "nuance": "Actively resist the limit.",
+          "example": "rebel against rules"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "피부가 쓸린다는 뜻도 있습니다: 'chafed skin'."
+    },
+    {
+      "id": "imperious",
+      "match": "imperious",
+      "para": 10,
+      "headword": "imperious",
+      "pos": "adjective",
+      "ipa": "/ɪmˈpɪriəs/",
+      "sense_en": "urgent and impossible to ignore",
+      "sense_ko": "긴급하고 거스를 수 없는",
+      "synonyms": [
+        {
+          "word": "pressing",
+          "nuance": "Needing quick action; neutral.",
+          "example": "a pressing need"
+        },
+        {
+          "word": "urgent",
+          "nuance": "Everyday word for requiring immediate attention.",
+          "example": "an urgent call"
+        },
+        {
+          "word": "domineering",
+          "nuance": "Modern usual sense: bossy toward people.",
+          "example": "a domineering boss"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "현대 영어에서는 주로 '고압적인'이라는 뜻으로 쓰입니다."
+    },
+    {
+      "id": "get-the-better-of",
+      "match": "get the better of",
+      "para": 17,
+      "headword": "get the better of",
+      "pos": "idiom",
+      "ipa": null,
+      "sense_en": "defeat or outwit someone",
+      "sense_ko": "~를 이기다, 따돌리다",
+      "synonyms": [
+        {
+          "word": "outwit",
+          "nuance": "Win by cleverness only.",
+          "example": "outwit the guards"
+        },
+        {
+          "word": "beat",
+          "nuance": "Win in any contest.",
+          "example": "beat the champion"
+        },
+        {
+          "word": "overcome",
+          "nuance": "Deal with a difficulty or enemy successfully.",
+          "example": "overcome fear"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "elude",
+      "match": "elude",
+      "para": 17,
+      "headword": "elude",
+      "pos": "verb",
+      "ipa": "/ɪˈlud/",
+      "sense_en": "escape notice or capture",
+      "sense_ko": "(붙잡히지 않고) 피하다",
+      "synonyms": [
+        {
+          "word": "evade",
+          "nuance": "Avoid by cleverness or effort; more active.",
+          "example": "evade tax"
+        },
+        {
+          "word": "escape",
+          "nuance": "General; may be by luck.",
+          "example": "escape danger"
+        },
+        {
+          "word": "dodge",
+          "nuance": "Informal; a quick, sudden avoiding move.",
+          "example": "dodge questions"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "tinder",
+      "match": "tinder",
+      "para": 18,
+      "headword": "tinder",
+      "pos": "noun",
+      "ipa": "/ˈtɪndər/",
+      "sense_en": "very dry material that catches fire easily",
+      "sense_ko": "불쏘시개",
+      "synonyms": [
+        {
+          "word": "kindling",
+          "nuance": "Small sticks used to start a bigger fire.",
+          "example": "split kindling"
+        },
+        {
+          "word": "fuel",
+          "nuance": "Anything burned for energy; no idea of easy ignition.",
+          "example": "run out of fuel"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "'burn like tinder'는 '아주 잘 탄다'는 표현입니다."
+    },
+    {
+      "id": "ceremoniously",
+      "match": "ceremoniously",
+      "para": 19,
+      "headword": "ceremoniously",
+      "pos": "adverb",
+      "ipa": "/ˌsɛrəˈmoʊniəsli/",
+      "sense_en": "in a very formal and polite way",
+      "sense_ko": "격식을 갖추어, 정중하게",
+      "synonyms": [
+        {
+          "word": "formally",
+          "nuance": "Following rules; not necessarily elaborate.",
+          "example": "formally dressed"
+        },
+        {
+          "word": "politely",
+          "nuance": "Good manners only; less stiff.",
+          "example": "speak politely"
+        },
+        {
+          "word": "solemnly",
+          "nuance": "Serious and grave, as at a funeral.",
+          "example": "solemnly promise"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "summarily",
+      "match": "summarily",
+      "para": 12,
+      "headword": "summarily",
+      "pos": "adverb",
+      "ipa": "/səˈmɛrəli/",
+      "sense_en": "immediately, without a proper trial or delay",
+      "sense_ko": "즉결로, 절차 없이 바로",
+      "synonyms": [
+        {
+          "word": "immediately",
+          "nuance": "Only about time; no sense of skipping process.",
+          "example": "reply immediately"
+        },
+        {
+          "word": "promptly",
+          "nuance": "Quickly and on time.",
+          "example": "paid promptly"
+        },
+        {
+          "word": "without trial",
+          "nuance": "The plain phrase; it explains what 'summarily' hides.",
+          "example": "punished without trial"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "'briefly'가 아니라 '약식으로 즉시'라는 뜻입니다."
+    },
+    {
+      "id": "poignant",
+      "match": "poignant",
+      "para": 21,
+      "headword": "poignant",
+      "pos": "adjective",
+      "ipa": "/ˈpɔɪnjənt/",
+      "sense_en": "sharp and deeply felt (of pain)",
+      "sense_ko": "(고통이) 사무치는, 날카로운",
+      "synonyms": [
+        {
+          "word": "sharp",
+          "nuance": "Cutting; used for physical pain as well.",
+          "example": "a sharp pain"
+        },
+        {
+          "word": "intense",
+          "nuance": "Very strong; no cutting feeling.",
+          "example": "intense heat"
+        },
+        {
+          "word": "acute",
+          "nuance": "Sudden and severe; medical tone.",
+          "example": "acute pain"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "현대에서는 '가슴 뭉클한'이라는 감정적 의미가 더 흔합니다."
+    },
+    {
+      "id": "congestion",
+      "match": "congestion",
+      "para": 21,
+      "headword": "congestion",
+      "pos": "noun",
+      "ipa": "/kənˈdʒɛstʃən/",
+      "sense_en": "a blocked, over-full feeling caused by too much blood",
+      "sense_ko": "(혈액이 몰린) 충혈, 답답한 팽만감",
+      "synonyms": [
+        {
+          "word": "fullness",
+          "nuance": "Plain feeling of being packed.",
+          "example": "a fullness in the chest"
+        },
+        {
+          "word": "blockage",
+          "nuance": "Something stopping the flow.",
+          "example": "a blockage in the pipe"
+        },
+        {
+          "word": "swelling",
+          "nuance": "Visible enlargement of a body part.",
+          "example": "swelling in the ankle"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "교통 체증(traffic congestion)에도 쓰입니다."
+    },
+    {
+      "id": "effaced",
+      "match": "effaced",
+      "para": 21,
+      "headword": "efface",
+      "pos": "verb",
+      "ipa": "/ɪˈfeɪs/",
+      "sense_en": "wiped out completely",
+      "sense_ko": "지워진",
+      "synonyms": [
+        {
+          "word": "erase",
+          "nuance": "Rub out; the everyday word.",
+          "example": "erase the board"
+        },
+        {
+          "word": "obliterate",
+          "nuance": "Destroy so nothing remains; stronger.",
+          "example": "obliterate the town"
+        },
+        {
+          "word": "wipe out",
+          "nuance": "Informal; remove completely.",
+          "example": "wipe out the file"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "ludicrous",
+      "match": "ludicrous",
+      "para": 21,
+      "headword": "ludicrous",
+      "pos": "adjective",
+      "ipa": "/ˈludəkrəs/",
+      "sense_en": "so strange that it is almost funny",
+      "sense_ko": "우스꽝스러운, 터무니없는",
+      "synonyms": [
+        {
+          "word": "ridiculous",
+          "nuance": "Everyday; may just be silly.",
+          "example": "a ridiculous idea"
+        },
+        {
+          "word": "absurd",
+          "nuance": "Against reason or common sense.",
+          "example": "an absurd rule"
+        },
+        {
+          "word": "laughable",
+          "nuance": "So poor it deserves laughter.",
+          "example": "a laughable excuse"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "apprised",
+      "match": "apprised",
+      "para": 22,
+      "headword": "apprise",
+      "pos": "verb",
+      "ipa": "/əˈpraɪz/",
+      "sense_en": "told or informed",
+      "sense_ko": "알려주었다",
+      "synonyms": [
+        {
+          "word": "inform",
+          "nuance": "Neutral, common.",
+          "example": "inform the police"
+        },
+        {
+          "word": "notify",
+          "nuance": "Official or formal message.",
+          "example": "notify the owner"
+        },
+        {
+          "word": "brief",
+          "nuance": "Give short instructions before an event.",
+          "example": "brief the team"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "'appraise'(평가하다)와 혼동하기 쉽습니다."
+    },
+    {
+      "id": "pounced",
+      "match": "pounced",
+      "para": 22,
+      "headword": "pounce",
+      "pos": "verb",
+      "ipa": "/paʊns/",
+      "sense_en": "jumped on suddenly and quickly",
+      "sense_ko": "덮치듯 잡았다",
+      "synonyms": [
+        {
+          "word": "leap",
+          "nuance": "Any big jump; no target implied.",
+          "example": "leap over a puddle"
+        },
+        {
+          "word": "swoop",
+          "nuance": "Come down fast from above, like a bird.",
+          "example": "swoop on the mouse"
+        },
+        {
+          "word": "seize",
+          "nuance": "Take hold of firmly.",
+          "example": "seize the rope"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "insupportable",
+      "match": "insupportable",
+      "para": 22,
+      "headword": "insupportable",
+      "pos": "adjective",
+      "ipa": "/ˌɪnsəˈpɔrtəbəl/",
+      "sense_en": "too painful to bear",
+      "sense_ko": "견딜 수 없는",
+      "synonyms": [
+        {
+          "word": "unbearable",
+          "nuance": "Everyday word for something impossible to stand.",
+          "example": "unbearable heat"
+        },
+        {
+          "word": "intolerable",
+          "nuance": "Too bad to accept.",
+          "example": "intolerable noise"
+        },
+        {
+          "word": "excruciating",
+          "nuance": "Extremely painful; the strongest, mostly of pain but also of embarrassment or boredom.",
+          "example": "excruciating pain"
+        }
+      ],
+      "modern": "\"insupportable\" → \"unbearable\"",
+      "tip_ko": null
+    },
+    {
+      "id": "engulfed",
+      "match": "engulfed",
+      "para": 22,
+      "headword": "engulf",
+      "pos": "verb",
+      "ipa": "/ɪnˈɡʌlf/",
+      "sense_en": "swallowed up; took in greedily",
+      "sense_ko": "집어삼켰다, 들이마셨다",
+      "synonyms": [
+        {
+          "word": "swallow",
+          "nuance": "Take down through the throat; smaller scale.",
+          "example": "swallow water"
+        },
+        {
+          "word": "gulp",
+          "nuance": "Swallow quickly in large amounts.",
+          "example": "gulp air"
+        },
+        {
+          "word": "inhale",
+          "nuance": "The plain word for breathing in; no sense of greed or force.",
+          "example": "inhale deeply"
+        }
+      ],
+      "modern": "\"his lungs engulfed a great draught of air\" → \"he gulped in a big breath of air\"",
+      "tip_ko": null
+    },
+    {
+      "id": "preternaturally",
+      "match": "preternaturally",
+      "para": 23,
+      "headword": "preternaturally",
+      "pos": "adverb",
+      "ipa": "/ˌpritərˈnætʃərəli/",
+      "sense_en": "in a way that goes beyond what is natural",
+      "sense_ko": "비정상적일 만큼, 이상하리만치",
+      "synonyms": [
+        {
+          "word": "unnaturally",
+          "nuance": "Not normal; often negative.",
+          "example": "unnaturally quiet"
+        },
+        {
+          "word": "extraordinarily",
+          "nuance": "Very unusually; no supernatural feel.",
+          "example": "extraordinarily kind"
+        },
+        {
+          "word": "supernaturally",
+          "nuance": "Suggests ghosts or magic.",
+          "example": "supernaturally strong"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "silhouette",
+      "match": "silhouette",
+      "para": 24,
+      "headword": "silhouette",
+      "pos": "noun",
+      "ipa": "/ˌsɪluˈɛt/",
+      "sense_en": "dark outline of a shape against light",
+      "sense_ko": "(밝은 배경의) 검은 윤곽",
+      "synonyms": [
+        {
+          "word": "outline",
+          "nuance": "Just the edge line; may be drawn on anything.",
+          "example": "the outline of a hill"
+        },
+        {
+          "word": "shadow",
+          "nuance": "Dark shape cast by an object on a surface.",
+          "example": "a long shadow"
+        },
+        {
+          "word": "profile",
+          "nuance": "Side view of a face or shape.",
+          "example": "a profile portrait"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "gesticulated",
+      "match": "gesticulated",
+      "para": 24,
+      "headword": "gesticulate",
+      "pos": "verb",
+      "ipa": "/dʒɛˈstɪkjəˌleɪt/",
+      "sense_en": "made wild movements with the arms while speaking or shouting",
+      "sense_ko": "손짓 몸짓을 크게 했다",
+      "synonyms": [
+        {
+          "word": "gesture",
+          "nuance": "Single meaningful movement of the hand; calmer.",
+          "example": "gesture toward the door"
+        },
+        {
+          "word": "wave",
+          "nuance": "Move the hand back and forth.",
+          "example": "wave goodbye"
+        },
+        {
+          "word": "signal",
+          "nuance": "Movement meant to send a message.",
+          "example": "signal the driver"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "grotesque",
+      "match": "grotesque",
+      "para": 24,
+      "headword": "grotesque",
+      "pos": "adjective",
+      "ipa": "/ɡroʊˈtɛsk/",
+      "sense_en": "strangely distorted and ugly",
+      "sense_ko": "기괴한",
+      "synonyms": [
+        {
+          "word": "bizarre",
+          "nuance": "Very odd; no ugliness needed.",
+          "example": "a bizarre dream"
+        },
+        {
+          "word": "hideous",
+          "nuance": "Very ugly, shocking to see.",
+          "example": "a hideous mask"
+        },
+        {
+          "word": "monstrous",
+          "nuance": "Huge or evil, like a monster.",
+          "example": "a monstrous shape"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "volley",
+      "match": "volley",
+      "para": 28,
+      "headword": "volley",
+      "pos": "noun",
+      "ipa": "/ˈvɑli/",
+      "sense_en": "many shots fired together",
+      "sense_ko": "일제 사격",
+      "synonyms": [
+        {
+          "word": "salvo",
+          "nuance": "Guns fired together, often ships; formal.",
+          "example": "a salvo of cannon fire"
+        },
+        {
+          "word": "barrage",
+          "nuance": "Long, heavy stream of fire or questions.",
+          "example": "a barrage of shells"
+        },
+        {
+          "word": "burst",
+          "nuance": "Short quick series.",
+          "example": "a burst of gunfire"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "martinet",
+      "match": "martinet’s",
+      "para": 31,
+      "headword": "martinet",
+      "pos": "noun",
+      "ipa": "/ˌmɑrtnˈɛt/",
+      "sense_en": "a person who forces strict obedience to rules",
+      "sense_ko": "규율에 매우 엄격한 사람",
+      "synonyms": [
+        {
+          "word": "disciplinarian",
+          "nuance": "Strict with punishment; neutral tone.",
+          "example": "a strict disciplinarian"
+        },
+        {
+          "word": "stickler",
+          "nuance": "Insists on details, not always harsh.",
+          "example": "a stickler for rules"
+        },
+        {
+          "word": "tyrant",
+          "nuance": "Cruel ruler with unlimited power; stronger.",
+          "example": "a petty tyrant"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "여기서는 '규정대로만 총을 쏘는 융통성 없는 장교'라는 뜻입니다."
+    },
+    {
+      "id": "fire-at-will",
+      "match": "fire at will",
+      "para": 31,
+      "headword": "fire at will",
+      "pos": "idiom",
+      "ipa": null,
+      "sense_en": "shoot whenever each man chooses, not on a single command",
+      "sense_ko": "자유 사격(각자 알아서 발사)하다",
+      "synonyms": [
+        {
+          "word": "open fire",
+          "nuance": "Begin shooting; not about who decides.",
+          "example": "open fire on the enemy"
+        },
+        {
+          "word": "shoot freely",
+          "nuance": "Plain paraphrase; less military.",
+          "example": "shoot freely at targets"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "took-a-hand",
+      "match": "taken an hand in the game",
+      "para": 32,
+      "headword": "take a hand in",
+      "pos": "idiom",
+      "ipa": null,
+      "sense_en": "join in and take part",
+      "sense_ko": "(일에) 끼어들다, 참여하다",
+      "synonyms": [
+        {
+          "word": "join in",
+          "nuance": "Everyday way to become part of an activity.",
+          "example": "join in the game"
+        },
+        {
+          "word": "get involved",
+          "nuance": "Take part, often in something serious.",
+          "example": "get involved in a fight"
+        },
+        {
+          "word": "step in",
+          "nuance": "Enter to help or take control.",
+          "example": "step in to help"
+        }
+      ],
+      "modern": "\"taken an hand\" → \"taken a hand\"",
+      "tip_ko": null
+    },
+    {
+      "id": "vortex",
+      "match": "vortex",
+      "para": 34,
+      "headword": "vortex",
+      "pos": "noun",
+      "ipa": "/ˈvɔrtɛks/",
+      "sense_en": "a fast spinning flow of water that pulls things in",
+      "sense_ko": "소용돌이",
+      "synonyms": [
+        {
+          "word": "whirlpool",
+          "nuance": "Water only; the everyday word.",
+          "example": "caught in a whirlpool"
+        },
+        {
+          "word": "eddy",
+          "nuance": "Small circling current, weaker.",
+          "example": "eddies in the stream"
+        },
+        {
+          "word": "maelstrom",
+          "nuance": "Huge, violent whirlpool; also chaos.",
+          "example": "a maelstrom of emotion"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "abrasion",
+      "match": "abrasion",
+      "para": 34,
+      "headword": "abrasion",
+      "pos": "noun",
+      "ipa": "/əˈbreɪʒən/",
+      "sense_en": "the scraping or rubbing of skin against a rough surface",
+      "sense_ko": "(거친 면에) 쓸림, 긁힘",
+      "synonyms": [
+        {
+          "word": "scraping",
+          "nuance": "Everyday word for the act of rubbing hard against something rough.",
+          "example": "the scraping of his knee on the road"
+        },
+        {
+          "word": "graze",
+          "nuance": "A light rub or scratch that barely breaks the skin.",
+          "example": "a graze on the arm"
+        },
+        {
+          "word": "friction",
+          "nuance": "The physical force of rubbing; technical, no injury implied.",
+          "example": "friction between the surfaces"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "의학 용어로는 '찰과상'이지만, 여기서는 손이 자갈에 쓸리는 동작 자체를 가리킵니다."
+    },
+    {
+      "id": "roseate",
+      "match": "roseate",
+      "para": 34,
+      "headword": "roseate",
+      "pos": "adjective",
+      "ipa": "/ˈroʊziət/",
+      "sense_en": "pink and rosy",
+      "sense_ko": "장밋빛의",
+      "synonyms": [
+        {
+          "word": "rosy",
+          "nuance": "Everyday word; pink, healthy or hopeful.",
+          "example": "rosy cheeks"
+        },
+        {
+          "word": "pink",
+          "nuance": "Plain color word.",
+          "example": "a pink sky"
+        },
+        {
+          "word": "rose-colored",
+          "nuance": "Also 'optimistic' as in rose-colored glasses.",
+          "example": "rose-colored glasses"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "laying-his-course",
+      "match": "laying his course",
+      "para": 36,
+      "headword": "lay a course",
+      "pos": "idiom",
+      "ipa": null,
+      "sense_en": "choosing and following a direction of travel",
+      "sense_ko": "진로를 정하다",
+      "synonyms": [
+        {
+          "word": "set a course",
+          "nuance": "The usual modern phrase.",
+          "example": "set a course for home"
+        },
+        {
+          "word": "steer",
+          "nuance": "Guide a vehicle or one's path.",
+          "example": "steer by the stars"
+        },
+        {
+          "word": "head",
+          "nuance": "Go in a direction.",
+          "example": "head north"
+        }
+      ],
+      "modern": "\"lay a course\" → \"set a course\"",
+      "tip_ko": null
+    },
+    {
+      "id": "interminable",
+      "match": "interminable",
+      "para": 36,
+      "headword": "interminable",
+      "pos": "adjective",
+      "ipa": "/ɪnˈtɜrmɪnəbəl/",
+      "sense_en": "seeming never to end",
+      "sense_ko": "끝이 없어 보이는",
+      "synonyms": [
+        {
+          "word": "endless",
+          "nuance": "Plain everyday word; literal or exaggerated, less formal.",
+          "example": "endless fields"
+        },
+        {
+          "word": "never-ending",
+          "nuance": "Informal, often annoyed.",
+          "example": "a never-ending story"
+        },
+        {
+          "word": "tedious",
+          "nuance": "Long and boring.",
+          "example": "a tedious speech"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "uncanny",
+      "match": "uncanny",
+      "para": 36,
+      "headword": "uncanny",
+      "pos": "adjective",
+      "ipa": "/ʌnˈkæni/",
+      "sense_en": "strange in a way that is slightly frightening",
+      "sense_ko": "으스스한, 기묘한",
+      "synonyms": [
+        {
+          "word": "eerie",
+          "nuance": "Frightening because quiet and strange.",
+          "example": "an eerie silence"
+        },
+        {
+          "word": "weird",
+          "nuance": "Just strange; casual.",
+          "example": "a weird noise"
+        },
+        {
+          "word": "spooky",
+          "nuance": "Informal; ghostly.",
+          "example": "a spooky house"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "famished",
+      "match": "famished",
+      "para": 37,
+      "headword": "famished",
+      "pos": "adjective",
+      "ipa": "/ˈfæmɪʃt/",
+      "sense_en": "extremely hungry",
+      "sense_ko": "몹시 배고픈",
+      "synonyms": [
+        {
+          "word": "starving",
+          "nuance": "Very common; often exaggeration.",
+          "example": "I'm starving!"
+        },
+        {
+          "word": "ravenous",
+          "nuance": "So hungry one eats greedily.",
+          "example": "ravenous appetite"
+        },
+        {
+          "word": "hungry",
+          "nuance": "Plain; less strong.",
+          "example": "hungry children"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "footsore",
+      "match": "footsore",
+      "para": 37,
+      "headword": "footsore",
+      "pos": "adjective",
+      "ipa": "/ˈfʊtˌsɔr/",
+      "sense_en": "with sore feet from walking",
+      "sense_ko": "오래 걸어 발이 아픈",
+      "synonyms": [
+        {
+          "word": "tired",
+          "nuance": "Any weariness; not specific to feet.",
+          "example": "tired legs"
+        },
+        {
+          "word": "weary",
+          "nuance": "Deeply tired; slightly literary.",
+          "example": "weary travelers"
+        },
+        {
+          "word": "exhausted",
+          "nuance": "Completely without energy.",
+          "example": "exhausted runners"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "malign",
+      "match": "malign",
+      "para": 37,
+      "headword": "malign",
+      "pos": "adjective",
+      "ipa": "/məˈlaɪn/",
+      "sense_en": "evil and harmful",
+      "sense_ko": "악의적인, 해로운",
+      "synonyms": [
+        {
+          "word": "evil",
+          "nuance": "Plain, strong word for bad.",
+          "example": "an evil plan"
+        },
+        {
+          "word": "sinister",
+          "nuance": "Threatening; seems to hide something bad.",
+          "example": "a sinister smile"
+        },
+        {
+          "word": "harmful",
+          "nuance": "Causes damage; no evil intent.",
+          "example": "harmful chemicals"
+        }
+      ],
+      "modern": null,
+      "tip_ko": "'g'는 소리 나지 않습니다: /məˈlaɪn/."
+    },
+    {
+      "id": "ineffable",
+      "match": "ineffable",
+      "para": 39,
+      "headword": "ineffable",
+      "pos": "adjective",
+      "ipa": "/ɪnˈɛfəbəl/",
+      "sense_en": "too great to be put into words",
+      "sense_ko": "말로 다 할 수 없는",
+      "synonyms": [
+        {
+          "word": "indescribable",
+          "nuance": "Can't be described; everyday.",
+          "example": "indescribable beauty"
+        },
+        {
+          "word": "inexpressible",
+          "nuance": "Cannot be shown in words or gesture.",
+          "example": "inexpressible grief"
+        },
+        {
+          "word": "unspeakable",
+          "nuance": "Often bad: too terrible to say.",
+          "example": "unspeakable crimes"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "delirium",
+      "match": "delirium",
+      "para": 39,
+      "headword": "delirium",
+      "pos": "noun",
+      "ipa": "/dɪˈlɪriəm/",
+      "sense_en": "a confused state of mind from fever or shock",
+      "sense_ko": "(열 등으로 인한) 정신착란, 헛소리 상태",
+      "synonyms": [
+        {
+          "word": "madness",
+          "nuance": "Serious mental illness; more general.",
+          "example": "driven to madness"
+        },
+        {
+          "word": "frenzy",
+          "nuance": "Wild excitement or activity.",
+          "example": "a frenzy of shopping"
+        },
+        {
+          "word": "hallucination",
+          "nuance": "A false thing seen or heard.",
+          "example": "a fever hallucination"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "at-heart",
+      "match": "at heart",
+      "para": 10,
+      "headword": "at heart",
+      "pos": "idiom",
+      "ipa": null,
+      "sense_en": "in one's real, inner character",
+      "sense_ko": "마음속으로는, 본질적으로",
+      "synonyms": [
+        {
+          "word": "deep down",
+          "nuance": "Casual; hidden feelings.",
+          "example": "Deep down, he was afraid."
+        },
+        {
+          "word": "basically",
+          "nuance": "About the main point, no emotion.",
+          "example": "basically a good person"
+        },
+        {
+          "word": "inwardly",
+          "nuance": "Not shown outside.",
+          "example": "inwardly he smiled"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "gave-no-heed",
+      "match": "gave no heed",
+      "para": 22,
+      "headword": "give heed",
+      "pos": "idiom",
+      "ipa": null,
+      "sense_en": "pay attention to; here, 'gave no heed' means did not obey",
+      "sense_ko": "주의를 기울이다 (여기서는 '말을 듣지 않았다')",
+      "synonyms": [
+        {
+          "word": "ignore",
+          "nuance": "Everyday word for 'give no heed'; deliberately not notice.",
+          "example": "ignore the warning"
+        },
+        {
+          "word": "pay attention",
+          "nuance": "The everyday equivalent of 'give heed'.",
+          "example": "pay attention to the teacher"
+        },
+        {
+          "word": "take notice",
+          "nuance": "Formal; notice and react.",
+          "example": "take notice of the sign"
+        }
+      ],
+      "modern": "\"give heed\" → \"pay attention\"",
+      "tip_ko": null
+    },
+    {
+      "id": "commended-itself",
+      "match": "commended itself to",
+      "para": 5,
+      "headword": "commend oneself to",
+      "pos": "idiom",
+      "ipa": null,
+      "sense_en": "seemed good or acceptable to someone",
+      "sense_ko": "~에게 마음에 들다, 받아들여지다",
+      "synonyms": [
+        {
+          "word": "appeal to",
+          "nuance": "Attract or please.",
+          "example": "appeal to children"
+        },
+        {
+          "word": "suit",
+          "nuance": "Fit one's needs.",
+          "example": "The plan suits me."
+        },
+        {
+          "word": "recommend",
+          "nuance": "Speak well of something to others.",
+          "example": "recommend a book"
+        }
+      ],
+      "modern": "\"commended itself to\" → \"appealed to\"",
+      "tip_ko": null
+    },
+    {
+      "id": "well-to-do",
+      "match": "well to do",
+      "para": 10,
+      "headword": "well-to-do",
+      "pos": "adjective",
+      "ipa": null,
+      "sense_en": "rich enough to live comfortably",
+      "sense_ko": "유복한, 부유한",
+      "synonyms": [
+        {
+          "word": "wealthy",
+          "nuance": "Very rich; stronger.",
+          "example": "a wealthy family"
+        },
+        {
+          "word": "comfortable",
+          "nuance": "Enough money without luxury.",
+          "example": "a comfortable life"
+        },
+        {
+          "word": "prosperous",
+          "nuance": "Doing well, especially in business.",
+          "example": "a prosperous town"
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "take-to-the-woods",
+      "match": "take to the woods",
+      "para": 7,
+      "headword": "take to the woods",
+      "pos": "idiom",
+      "ipa": null,
+      "sense_en": "run into the forest to hide",
+      "sense_ko": "숲으로 달아나다",
+      "synonyms": [
+        {
+          "word": "flee",
+          "nuance": "Run away from danger.",
+          "example": "flee the city"
+        },
+        {
+          "word": "hide out",
+          "nuance": "Stay somewhere hidden.",
+          "example": "hide out in a cabin"
+        },
+        {
+          "word": "run for it",
+          "nuance": "Informal; escape fast.",
+          "example": "We ran for it."
+        }
+      ],
+      "modern": null,
+      "tip_ko": null
+    },
+    {
+      "id": "lost-to-view",
+      "match": "lost to view",
+      "para": 3,
+      "headword": "lost to view",
+      "pos": "idiom",
+      "ipa": null,
+      "sense_en": "no longer visible",
+      "sense_ko": "시야에서 사라진",
+      "synonyms": [
+        {
+          "word": "out of sight",
+          "nuance": "The common everyday phrase.",
+          "example": "out of sight"
+        },
+        {
+          "word": "hidden",
+          "nuance": "Covered on purpose or by chance.",
+          "example": "hidden by trees"
+        },
+        {
+          "word": "vanish",
+          "nuance": "Disappear suddenly.",
+          "example": "vanish in the fog"
+        }
+      ],
+      "modern": "\"lost to view\" → \"out of sight\"",
+      "tip_ko": null
+    }
+  ]
+}

@@ -1,0 +1,561 @@
+{
+  "slug": "phantom-rickshaw",
+  "entries": [
+    {"id": "blunt", "match": "blunted", "para": 3, "headword": "blunt", "pos": "verb", "ipa": "/blʌnt/",
+     "sense_en": "made something weaker or less sharp, here the old open-hearted welcome",
+     "sense_ko": "무디게 하다, 약화시키다",
+     "synonyms": [
+       {"word": "dull", "nuance": "Plainer word; makes a feeling or edge less strong, often by time or habit.", "example": "Time dulled the pain."},
+       {"word": "weaken", "nuance": "General; reduces strength of any kind, not only sharpness.", "example": "The illness weakened him."},
+       {"word": "dampen", "nuance": "Reduces enthusiasm or spirits, like adding water to a fire.", "example": "Rain dampened our spirits."}
+     ], "modern": null, "tip_ko": null},
+    {"id": "black-sheep", "match": "Black Sheep", "para": 3, "headword": "black sheep", "pos": "idiom", "ipa": null,
+     "sense_en": "a person who is disliked or shamed by a group or family",
+     "sense_ko": "(집단의) 골칫덩이, 평판 나쁜 사람",
+     "synonyms": [
+       {"word": "outcast", "nuance": "Someone driven out by society, stronger than a family embarrassment.", "example": "a social outcast"},
+       {"word": "misfit", "nuance": "Someone who simply does not fit in, without any shame implied.", "example": "a misfit at school"}
+     ], "modern": null, "tip_ko": null},
+    {"id": "sultry", "match": "sultry", "para": 5, "headword": "sultry", "pos": "adjective", "ipa": "/ˈsʌltri/",
+     "sense_en": "hot and humid, so that you feel uncomfortable",
+     "sense_ko": "무더운, 찌는 듯한",
+     "synonyms": [
+       {"word": "muggy", "nuance": "Informal; warm, damp and unpleasant air.", "example": "a muggy afternoon"},
+       {"word": "sweltering", "nuance": "Very hot; stresses the heat, not the dampness.", "example": "a sweltering day"},
+       {"word": "humid", "nuance": "Neutral, scientific; simply full of moisture.", "example": "humid air"}
+     ], "modern": null, "tip_ko": "사람에게 쓰면 '관능적인'이라는 뜻도 됩니다."},
+    {"id": "go-off-the-handle", "match": "went off the handle", "para": 6, "headword": "go off the handle", "pos": "idiom", "ipa": null,
+     "sense_en": "suddenly lost control of himself, broke down mentally",
+     "sense_ko": "정신적으로 무너지다, 이성을 잃다",
+     "synonyms": [
+       {"word": "crack up", "nuance": "Informal; break down mentally under pressure.", "example": "He cracked up under the strain."},
+       {"word": "fly off the handle", "nuance": "The usual form today, but it means only a sudden burst of anger, not a breakdown.", "example": "He flies off the handle over nothing."},
+       {"word": "snap", "nuance": "Short, sudden loss of control after long pressure.", "example": "She finally snapped."}
+     ], "modern": "old slang; today \"cracked up\" or \"had a breakdown\"", "tip_ko": "오늘날의 fly off the handle(발끈 화내다)과 달리, 여기서는 '정신이 무너졌다'는 뜻입니다."},
+    {"id": "blackguard", "match": "blackguard", "para": 6, "headword": "blackguard", "pos": "noun", "ipa": "/ˈblæɡɚd/",
+     "sense_en": "a man with no honour who treats others badly",
+     "sense_ko": "악당, 비열한 놈",
+     "synonyms": [
+       {"word": "scoundrel", "nuance": "Old-fashioned; a dishonest man who cheats or harms people.", "example": "a lying scoundrel"},
+       {"word": "cad", "nuance": "Dated; a man who treats women without honour.", "example": "He was a cad to leave her."},
+       {"word": "villain", "nuance": "A truly wicked person, as in stories.", "example": "the villain of the film"}
+     ], "modern": "old-fashioned; today people say \"jerk\" or \"scumbag\"", "tip_ko": "[블랙가드]가 아니라 [블래거드]로 발음합니다."},
+    {"id": "brood", "match": "brooding", "para": 6, "headword": "brood", "pos": "verb", "ipa": "/brud/",
+     "sense_en": "thinking for a long time about something that makes you unhappy",
+     "sense_ko": "(우울하게) 골똘히 생각하다, 곱씹다",
+     "synonyms": [
+       {"word": "dwell on", "nuance": "Keep thinking or talking about something unpleasant.", "example": "Don't dwell on the past."},
+       {"word": "mope", "nuance": "Informal; be sad and listless, doing nothing.", "example": "He moped around the house."},
+       {"word": "ponder", "nuance": "Neutral; think carefully, not necessarily sadly.", "example": "She pondered the question."}
+     ], "modern": null, "tip_ko": null},
+    {"id": "run-off-legs", "match": "ran him off his legs", "para": 6, "headword": "run someone off his legs", "pos": "idiom", "ipa": null,
+     "sense_en": "gave him so much work that he became exhausted",
+     "sense_ko": "녹초가 되도록 일을 시키다",
+     "synonyms": [
+       {"word": "wear out", "nuance": "General; make someone very tired by any effort.", "example": "The trip wore me out."},
+       {"word": "overwork", "nuance": "Give too much work; focuses on the workload.", "example": "They overwork their staff."}
+     ], "modern": "\"run off one's feet\" is the usual British form today", "tip_ko": null},
+    {"id": "write-off", "match": "Write him off", "para": 6, "headword": "write off", "pos": "phrase", "ipa": null,
+     "sense_en": "count him as lost, and blame his death on something",
+     "sense_ko": "(손실로) 처리하다, 탓으로 돌리다",
+     "synonyms": [
+       {"word": "put down to", "nuance": "Give something as the cause of a result.", "example": "I put it down to stress."},
+       {"word": "chalk up", "nuance": "Informal; record a thing as a loss or a gain.", "example": "Chalk it up to experience."},
+       {"word": "give up on", "nuance": "Stop believing someone can succeed or be saved.", "example": "Don't give up on him."}
+     ], "modern": null, "tip_ko": null},
+    {"id": "hag-ridden", "match": "hag-ridden", "para": 8, "headword": "hag-ridden", "pos": "adjective", "ipa": "/ˈhæɡˌrɪdn/",
+     "sense_en": "tormented by nightmares or fears, as if a witch sat on you",
+     "sense_ko": "악몽·공포에 시달리는",
+     "synonyms": [
+       {"word": "haunted", "nuance": "Troubled by ghosts or by memories that will not leave.", "example": "a haunted man"},
+       {"word": "tormented", "nuance": "General; suffering greatly in mind or body.", "example": "tormented by guilt"},
+       {"word": "obsessed", "nuance": "Unable to stop thinking of one thing; not always fearful.", "example": "obsessed with money"}
+     ], "modern": "very old word; today people say \"haunted\" or \"tormented\"", "tip_ko": null},
+    {"id": "ere-long", "match": "ere long", "para": 9, "headword": "ere long", "pos": "phrase", "ipa": null,
+     "sense_en": "before much time has passed; soon",
+     "sense_ko": "머지않아, 곧",
+     "synonyms": [
+       {"word": "soon", "nuance": "The everyday word.", "example": "We will meet again soon."},
+       {"word": "before long", "nuance": "The modern equivalent, with the same meaning.", "example": "Before long, it was dark."},
+       {"word": "shortly", "nuance": "Slightly formal; in a short time.", "example": "The doctor will see you shortly."}
+     ], "modern": "\"ere long\" → \"before long\"", "tip_ko": "ere는 [에어]에 가깝게 읽으며 before의 옛말입니다."},
+    {"id": "malady", "match": "malady", "para": 9, "headword": "malady", "pos": "noun", "ipa": "/ˈmælədi/",
+     "sense_en": "an illness, especially one that lasts or is hard to explain",
+     "sense_ko": "병, 질환",
+     "synonyms": [
+       {"word": "ailment", "nuance": "A minor or ordinary illness.", "example": "a minor ailment"},
+       {"word": "disease", "nuance": "A medical condition with a name and cause.", "example": "heart disease"},
+       {"word": "affliction", "nuance": "A cause of suffering, bodily or mental; more literary.", "example": "a painful affliction"}
+     ], "modern": "literary; today people say \"illness\"", "tip_ko": null},
+    {"id": "in-flat-defiance-of", "match": "in flat defiance of", "para": 9, "headword": "in flat defiance of", "pos": "phrase", "ipa": null,
+     "sense_en": "openly and completely refusing to obey",
+     "sense_ko": "노골적으로 거역하여",
+     "synonyms": [
+       {"word": "in direct opposition to", "nuance": "Neutral; going against something plainly.", "example": "in direct opposition to the rules"},
+       {"word": "in spite of", "nuance": "Much weaker; only means 'despite'.", "example": "in spite of the rain"},
+       {"word": "flouting", "nuance": "Shows open disrespect for a rule.", "example": "flouting the law"}
+     ], "modern": null, "tip_ko": null},
+    {"id": "scout", "match": "scouted", "para": 10, "headword": "scout", "pos": "verb", "ipa": "/skaʊt/",
+     "sense_en": "rejected with scorn as foolish; dismissed",
+     "sense_ko": "일축하다, 코웃음 치다",
+     "synonyms": [
+       {"word": "dismiss", "nuance": "Neutral; decide something is not worth considering.", "example": "She dismissed the idea."},
+       {"word": "scoff at", "nuance": "Mock something openly.", "example": "They scoffed at his plan."},
+       {"word": "ridicule", "nuance": "Make fun of; stronger and more public.", "example": "They ridiculed the theory."}
+     ], "modern": "dated; today \"dismiss\" or \"scoff at\"", "tip_ko": "'정찰하다'의 scout와 다른 옛 용법입니다."},
+    {"id": "credence", "match": "credence", "para": 10, "headword": "credence", "pos": "noun", "ipa": "/ˈkridns/",
+     "sense_en": "belief that something is true",
+     "sense_ko": "믿음, 신빙성",
+     "synonyms": [
+       {"word": "belief", "nuance": "The everyday word.", "example": "belief in ghosts"},
+       {"word": "credit", "nuance": "Used in 'give credit to'; accepting a claim as true.", "example": "I give no credit to the rumor."},
+       {"word": "trust", "nuance": "About people; belief that someone is honest.", "example": "I put my trust in him."}
+     ], "modern": null, "tip_ko": "give credence to ~ (~을 믿다) 형태로 자주 씁니다."},
+    {"id": "bland", "match": "bland", "para": 10, "headword": "bland", "pos": "adjective", "ipa": "/blænd/",
+     "sense_en": "calm and polite in manner, showing no strong feeling",
+     "sense_ko": "온화하고 부드러운, 감정을 드러내지 않는",
+     "synonyms": [
+       {"word": "unemotional", "nuance": "Shows no feelings; not necessarily polite.", "example": "an unemotional reply"},
+       {"word": "smooth", "nuance": "Pleasant, but perhaps hiding real feelings.", "example": "a smooth manner"},
+       {"word": "suave", "nuance": "Polished and charming, sometimes too polished to trust.", "example": "a suave salesman"}
+     ], "modern": null, "tip_ko": "음식에 쓰면 '맛이 밋밋한'이라는 뜻입니다."},
+    {"id": "ill-omened", "match": "ill-omened", "para": 11, "headword": "ill-omened", "pos": "adjective", "ipa": "/ˌɪl ˈoʊmənd/",
+     "sense_en": "marked by signs that something bad will happen",
+     "sense_ko": "불길한, 불행한 결말이 예고된",
+     "synonyms": [
+       {"word": "ominous", "nuance": "Suggests something bad is about to happen.", "example": "ominous clouds"},
+       {"word": "ill-fated", "nuance": "Doomed to end badly, seen looking back.", "example": "an ill-fated voyage"},
+       {"word": "unlucky", "nuance": "Plain word; bad luck without any sense of doom.", "example": "an unlucky number"}
+     ], "modern": null, "tip_ko": null},
+    {"id": "fire-of-straw", "match": "fire of straw", "para": 12, "headword": "fire of straw", "pos": "idiom", "ipa": null,
+     "sense_en": "a passion that flares up brightly but burns out quickly",
+     "sense_ko": "금세 식는 불꽃 같은 열정",
+     "synonyms": [
+       {"word": "passing fancy", "nuance": "A brief liking, less intense.", "example": "It was just a passing fancy."},
+       {"word": "flash in the pan", "nuance": "A sudden success or effort that does not last.", "example": "a flash in the pan"},
+       {"word": "infatuation", "nuance": "Strong but shallow love, often short-lived.", "example": "a teenage infatuation"}
+     ], "modern": null, "tip_ko": null},
+    {"id": "aversion", "match": "aversion", "para": 12, "headword": "aversion", "pos": "noun", "ipa": "/əˈvɝʒn/",
+     "sense_en": "a strong dislike of someone or something",
+     "sense_ko": "강한 혐오, 반감",
+     "synonyms": [
+       {"word": "dislike", "nuance": "Plain and mild.", "example": "a dislike of crowds"},
+       {"word": "loathing", "nuance": "Much stronger; deep hatred and disgust.", "example": "a loathing for liars"},
+       {"word": "repugnance", "nuance": "Formal; strong disgust, almost physical.", "example": "a feeling of repugnance"}
+     ], "modern": null, "tip_ko": "have an aversion to ~ 형태로 씁니다."},
+    {"id": "garnish", "match": "garnished", "para": 12, "headword": "garnish", "pos": "verb", "ipa": "/ˈɡɑrnɪʃ/",
+     "sense_en": "added something to make it more striking, here cruel remarks",
+     "sense_ko": "(말·행동에) 곁들이다, 장식하다",
+     "synonyms": [
+       {"word": "embellish", "nuance": "Make more interesting with extra details, sometimes untrue.", "example": "He embellished the story."},
+       {"word": "adorn", "nuance": "Decorate with something beautiful.", "example": "adorned with flowers"},
+       {"word": "season", "nuance": "Add flavor; used of food or speech.", "example": "a speech seasoned with jokes"}
+     ], "modern": null, "tip_ko": "요리에서는 '고명을 얹다'라는 뜻입니다."},
+    {"id": "avenge", "match": "avenged", "para": 12, "headword": "avenge", "pos": "verb", "ipa": "/əˈvɛndʒ/",
+     "sense_en": "punish someone for a wrong done to you",
+     "sense_ko": "복수하다, 앙갚음하다",
+     "synonyms": [
+       {"word": "revenge", "nuance": "Used with 'oneself' or 'be revenged'; more personal and bitter.", "example": "He revenged himself on them."},
+       {"word": "retaliate", "nuance": "Hit back, usually at once and in kind.", "example": "They retaliated with force."},
+       {"word": "get even", "nuance": "Informal; make the other person pay.", "example": "I'll get even with you."}
+     ], "modern": null, "tip_ko": "보통 avenge는 정당한 응징, revenge는 개인적 앙갚음의 느낌이 강합니다. 여기서는 avenge oneself(스스로 앙갚음하다) 형태입니다."},
+    {"id": "wan", "match": "wan", "para": 15, "headword": "wan", "pos": "adjective", "ipa": "/wɑn/",
+     "sense_en": "pale and looking ill or tired",
+     "sense_ko": "창백하고 핼쑥한",
+     "synonyms": [
+       {"word": "pale", "nuance": "General; light in color of the skin.", "example": "a pale face"},
+       {"word": "pallid", "nuance": "Unhealthy paleness; more literary.", "example": "a pallid complexion"},
+       {"word": "haggard", "nuance": "Thin and worn out by worry or lack of sleep.", "example": "a haggard look"}
+     ], "modern": null, "tip_ko": "발음은 [완]이며 숫자 one([원])과 다릅니다."},
+    {"id": "uncalled-for", "match": "uncalled for", "para": 15, "headword": "uncalled for", "pos": "adjective", "ipa": null,
+     "sense_en": "unfair or unnecessary, especially when it hurts someone",
+     "sense_ko": "부당한, 불필요한",
+     "synonyms": [
+       {"word": "unnecessary", "nuance": "Simply not needed; no blame implied.", "example": "an unnecessary risk"},
+       {"word": "unjustified", "nuance": "Without good reason; a formal criticism.", "example": "unjustified anger"},
+       {"word": "out of line", "nuance": "Informal; behaving in a way that is not acceptable.", "example": "That comment was out of line."}
+     ], "modern": null, "tip_ko": null},
+    {"id": "avowal", "match": "avowal", "para": 16, "headword": "avowal", "pos": "noun", "ipa": "/əˈvaʊəl/",
+     "sense_en": "an open statement of a feeling",
+     "sense_ko": "공공연한 고백, 공언",
+     "synonyms": [
+       {"word": "declaration", "nuance": "A formal or firm statement.", "example": "a declaration of love"},
+       {"word": "confession", "nuance": "Admitting something wrong or private.", "example": "a confession of guilt"},
+       {"word": "admission", "nuance": "Accepting that something is true, often unwillingly.", "example": "an admission of failure"}
+     ], "modern": "literary; today people say \"declaration\"", "tip_ko": null},
+    {"id": "irksome", "match": "irksome", "para": 16, "headword": "irksome", "pos": "adjective", "ipa": "/ˈɝksəm/",
+     "sense_en": "annoying and tiresome, especially because it keeps happening",
+     "sense_ko": "성가신, 짜증스러운",
+     "synonyms": [
+       {"word": "annoying", "nuance": "The everyday word.", "example": "an annoying habit"},
+       {"word": "tedious", "nuance": "Boring and long, more than irritating.", "example": "a tedious task"},
+       {"word": "tiresome", "nuance": "Makes you weary by repetition.", "example": "a tiresome person"}
+     ], "modern": null, "tip_ko": null},
+    {"id": "accursed", "match": "accursed", "para": 16, "headword": "accursed", "pos": "adjective", "ipa": "/əˈkɝsɪd/",
+     "sense_en": "hateful; under a curse",
+     "sense_ko": "저주받은, 지긋지긋한",
+     "synonyms": [
+       {"word": "cursed", "nuance": "The plain form; under a curse or very annoying.", "example": "a cursed house"},
+       {"word": "damned", "nuance": "Stronger; condemned to hell, or a mild oath.", "example": "that damned noise"},
+       {"word": "wretched", "nuance": "Miserable or contemptible, without the curse.", "example": "a wretched place"}
+     ], "modern": "literary; today \"cursed\"", "tip_ko": "형용사일 때 [어커-시드]처럼 -ed를 [ɪd]로 읽습니다."},
+    {"id": "wince", "match": "wince", "para": 18, "headword": "wince", "pos": "verb", "ipa": "/wɪns/",
+     "sense_en": "make a small movement of the face showing pain or shock",
+     "sense_ko": "움찔하다, 얼굴을 찡그리다",
+     "synonyms": [
+       {"word": "flinch", "nuance": "Pull back suddenly, out of fear or pain.", "example": "He flinched at the noise."},
+       {"word": "cringe", "nuance": "Shrink in fear or embarrassment.", "example": "I cringed at his joke."},
+       {"word": "grimace", "nuance": "Twist the face, but not necessarily in reaction to a shock.", "example": "She grimaced at the taste."}
+     ], "modern": null, "tip_ko": null},
+    {"id": "sodden", "match": "sodden", "para": 20, "headword": "sodden", "pos": "adjective", "ipa": "/ˈsɑdn/",
+     "sense_en": "completely wet and heavy with water",
+     "sense_ko": "흠뻑 젖은",
+     "synonyms": [
+       {"word": "soaked", "nuance": "Everyday; very wet.", "example": "I got soaked in the rain."},
+       {"word": "soggy", "nuance": "Wet and soft, often of food or ground; a bit unpleasant.", "example": "soggy bread"},
+       {"word": "waterlogged", "nuance": "Filled with so much water it cannot hold more.", "example": "waterlogged fields"}
+     ], "modern": null, "tip_ko": null},
+    {"id": "livery", "match": "liveries", "para": 20, "headword": "livery", "pos": "noun", "ipa": "/ˈlɪvəri/",
+     "sense_en": "the special uniform worn by servants of a household",
+     "sense_ko": "(하인들의) 제복",
+     "synonyms": [
+       {"word": "uniform", "nuance": "General; official clothes for any group.", "example": "a school uniform"},
+       {"word": "costume", "nuance": "Clothes worn for a role or an occasion.", "example": "a stage costume"},
+       {"word": "regalia", "nuance": "Grand clothes of an office or ceremony.", "example": "royal regalia"}
+     ], "modern": null, "tip_ko": null},
+    {"id": "disinter", "match": "disinterred", "para": 21, "headword": "disinter", "pos": "verb", "ipa": "/ˌdɪsɪnˈtɝ/",
+     "sense_en": "dug up from where it was hidden, as if from a grave",
+     "sense_ko": "(묻혀 있던 것을) 끄집어내다, 파내다",
+     "synonyms": [
+       {"word": "dig up", "nuance": "Everyday; take out of the ground, or find hidden facts.", "example": "dig up old letters"},
+       {"word": "unearth", "nuance": "Find something buried or hidden; can be figurative.", "example": "unearth a secret"},
+       {"word": "exhume", "nuance": "Formal; take a body out of a grave.", "example": "exhume the body"}
+     ], "modern": null, "tip_ko": null},
+    {"id": "bygone", "match": "bygone", "para": 21, "headword": "bygone", "pos": "adjective", "ipa": "/ˈbaɪɡɔn/",
+     "sense_en": "belonging to the past",
+     "sense_ko": "지나간, 과거의",
+     "synonyms": [
+       {"word": "past", "nuance": "Plain word for earlier time.", "example": "past events"},
+       {"word": "former", "nuance": "Used for a previous state or holder.", "example": "my former boss"},
+       {"word": "olden", "nuance": "Poetic; of times long ago.", "example": "in olden days"}
+     ], "modern": null, "tip_ko": "a bygone era(지나간 시대)처럼 주로 씁니다."},
+    {"id": "forthwith", "match": "forthwith", "para": 22, "headword": "forthwith", "pos": "adverb", "ipa": "/ˌfɔrθˈwɪθ/",
+     "sense_en": "immediately, without delay",
+     "sense_ko": "즉시, 지체 없이",
+     "synonyms": [
+       {"word": "at once", "nuance": "Everyday and natural.", "example": "Come at once."},
+       {"word": "immediately", "nuance": "Standard, neutral.", "example": "Call me immediately."},
+       {"word": "straightaway", "nuance": "Informal, British-leaning.", "example": "I'll do it straightaway."}
+     ], "modern": "formal or legal; today \"right away\"", "tip_ko": null},
+    {"id": "solecism", "match": "solecism", "para": 23, "headword": "solecism", "pos": "noun", "ipa": "/ˈsɑləˌsɪzəm/",
+     "sense_en": "a mistake in manners or behavior",
+     "sense_ko": "실례, 예의 없는 행동",
+     "synonyms": [
+       {"word": "faux pas", "nuance": "A social blunder that embarrasses people.", "example": "a terrible faux pas"},
+       {"word": "gaffe", "nuance": "A careless public mistake, often something said.", "example": "a political gaffe"},
+       {"word": "blunder", "nuance": "Any stupid mistake, not only social.", "example": "a costly blunder"}
+     ], "modern": "rare; today \"faux pas\"", "tip_ko": "원래는 문법·어법상의 오류를 뜻하는 말입니다."},
+    {"id": "evoke", "match": "evoked", "para": 23, "headword": "evoke", "pos": "verb", "ipa": "/ɪˈvoʊk/",
+     "sense_en": "brought a memory or feeling into the mind",
+     "sense_ko": "(기억·감정을) 불러일으키다",
+     "synonyms": [
+       {"word": "recall", "nuance": "Bring back to mind a specific memory.", "example": "It recalls my childhood."},
+       {"word": "arouse", "nuance": "Wake a feeling such as anger or interest.", "example": "arouse suspicion"},
+       {"word": "conjure up", "nuance": "Bring an image to mind as if by magic.", "example": "conjure up a picture"}
+     ], "modern": null, "tip_ko": null},
+    {"id": "upbraid", "match": "upbraid", "para": 32, "headword": "upbraid", "pos": "verb", "ipa": "/ʌpˈbreɪd/",
+     "sense_en": "scold someone strongly for something they did wrong",
+     "sense_ko": "호되게 꾸짖다",
+     "synonyms": [
+       {"word": "scold", "nuance": "Everyday; tell off, often a child.", "example": "She scolded the boy."},
+       {"word": "reprimand", "nuance": "Formal; official criticism by someone in authority.", "example": "reprimanded by his boss"},
+       {"word": "reproach", "nuance": "Express disappointment more than anger.", "example": "She reproached him gently."}
+     ], "modern": "literary; today \"tell off\"", "tip_ko": null},
+    {"id": "peg", "match": "pegs", "para": 32, "headword": "peg", "pos": "noun", "ipa": "/pɛɡ/",
+     "sense_en": "a drink of strong alcohol, in old British India",
+     "sense_ko": "(위스키 등의) 독한 술 한 잔",
+     "synonyms": [
+       {"word": "shot", "nuance": "A small glass of strong drink, in modern English.", "example": "a shot of whisky"},
+       {"word": "tot", "nuance": "British; a small amount of spirits.", "example": "a tot of rum"},
+       {"word": "nip", "nuance": "A very small drink of spirits.", "example": "a nip of brandy"}
+     ], "modern": "Anglo-Indian; today \"a shot\" or \"a drink\"", "tip_ko": "'나무못·말뚝'의 peg와 다른 뜻으로, 영국령 인도에서 쓰던 말입니다."},
+    {"id": "apparition", "match": "apparition", "para": 34, "headword": "apparition", "pos": "noun", "ipa": "/ˌæpəˈrɪʃn/",
+     "sense_en": "a ghost, or the sudden appearance of one",
+     "sense_ko": "유령, 환영",
+     "synonyms": [
+       {"word": "ghost", "nuance": "Everyday word.", "example": "the ghost of a girl"},
+       {"word": "specter", "nuance": "Literary; a frightening ghost.", "example": "a specter in the hall"},
+       {"word": "phantom", "nuance": "Something like a ghost, seen but not real.", "example": "a phantom ship"}
+     ], "modern": null, "tip_ko": null},
+    {"id": "blink", "match": "blink", "para": 34, "headword": "blink", "pos": "verb", "ipa": "/blɪŋk/",
+     "sense_en": "refuse to see or face something",
+     "sense_ko": "(사실을) 외면하다",
+     "synonyms": [
+       {"word": "ignore", "nuance": "Deliberately pay no attention.", "example": "ignore the warning"},
+       {"word": "overlook", "nuance": "Fail to notice, or choose not to punish.", "example": "overlook a mistake"},
+       {"word": "shirk", "nuance": "Avoid a duty or responsibility, not a fact.", "example": "shirk his duty"}
+     ], "modern": "dated; today \"ignore\" or \"shut one's eyes to\"", "tip_ko": "'눈을 깜박이다'가 아니라 blink a fact(사실을 외면하다)라는 타동사 용법입니다."},
+    {"id": "treadmill", "match": "treadmill", "para": 35, "headword": "treadmill", "pos": "noun", "ipa": "/ˈtrɛdmɪl/",
+     "sense_en": "a tiring round of thought or work that leads nowhere",
+     "sense_ko": "쳇바퀴, 제자리걸음",
+     "synonyms": [
+       {"word": "rut", "nuance": "A dull routine you cannot escape.", "example": "stuck in a rut"},
+       {"word": "vicious circle", "nuance": "A problem that causes itself again and again.", "example": "a vicious circle of debt"},
+       {"word": "grind", "nuance": "Hard, boring work.", "example": "the daily grind"}
+     ], "modern": null, "tip_ko": null},
+    {"id": "penitent", "match": "penitent", "para": 36, "headword": "penitent", "pos": "adjective", "ipa": "/ˈpɛnɪtnt/",
+     "sense_en": "feeling sorry for a wrong you have done",
+     "sense_ko": "뉘우치는, 참회하는",
+     "synonyms": [
+       {"word": "sorry", "nuance": "Everyday; may be mild.", "example": "I'm sorry."},
+       {"word": "remorseful", "nuance": "Deeply guilty and sad.", "example": "a remorseful look"},
+       {"word": "contrite", "nuance": "Formal; sincerely sorry and ready to make amends.", "example": "a contrite apology"}
+     ], "modern": null, "tip_ko": null},
+    {"id": "wroth", "match": "wroth", "para": 36, "headword": "wroth", "pos": "adjective", "ipa": "/rɔθ/",
+     "sense_en": "very angry",
+     "sense_ko": "격노한",
+     "synonyms": [
+       {"word": "angry", "nuance": "The ordinary word.", "example": "an angry reply"},
+       {"word": "furious", "nuance": "Extremely angry, stronger than angry.", "example": "furious at the delay"},
+       {"word": "wrathful", "nuance": "Literary; full of wrath.", "example": "a wrathful king"}
+     ], "modern": "archaic; today \"angry\"", "tip_ko": "[로쓰]로 읽고 wrath와 같은 어근입니다."},
+    {"id": "palpitation", "match": "palpitation", "para": 36, "headword": "palpitation", "pos": "noun", "ipa": "/ˌpælpɪˈteɪʃn/",
+     "sense_en": "a fast, uneven beating of the heart",
+     "sense_ko": "심계항진, 두근거림",
+     "synonyms": [
+       {"word": "heartbeat", "nuance": "Normal beating; not a symptom.", "example": "a steady heartbeat"},
+       {"word": "flutter", "nuance": "Light, quick movement; can be heart or nerves.", "example": "a flutter of nerves"},
+       {"word": "tremor", "nuance": "A small shake of the body.", "example": "a tremor in his hand"}
+     ], "modern": null, "tip_ko": "보통 복수형 palpitations로 씁니다."},
+    {"id": "unstrung", "match": "unstrung", "para": 37, "headword": "unstrung", "pos": "adjective", "ipa": "/ʌnˈstrʌŋ/",
+     "sense_en": "nervous and shaken, unable to stay calm",
+     "sense_ko": "(신경이) 흐트러진, 몹시 동요된",
+     "synonyms": [
+       {"word": "shaken", "nuance": "Upset by a shock.", "example": "still shaken by the news"},
+       {"word": "rattled", "nuance": "Informal; made nervous and confused.", "example": "He was rattled by the question."},
+       {"word": "on edge", "nuance": "Tense and easily upset.", "example": "She's on edge today."}
+     ], "modern": null, "tip_ko": null},
+    {"id": "iniquity", "match": "iniquity", "para": 37, "headword": "iniquity", "pos": "noun", "ipa": "/ɪˈnɪkwɪti/",
+     "sense_en": "great wickedness or injustice",
+     "sense_ko": "죄악, 사악한 행위",
+     "synonyms": [
+       {"word": "wickedness", "nuance": "Everyday word for evil behavior.", "example": "the wickedness of war"},
+       {"word": "sin", "nuance": "A wrong against religious law.", "example": "a mortal sin"},
+       {"word": "injustice", "nuance": "Unfair treatment; less about moral evil.", "example": "a great injustice"}
+     ], "modern": "biblical; today \"wickedness\"", "tip_ko": null},
+    {"id": "banter", "match": "bantered", "para": 39, "headword": "banter", "pos": "verb", "ipa": "/ˈbæntɚ/",
+     "sense_en": "teased playfully",
+     "sense_ko": "농담 삼아 놀리다",
+     "synonyms": [
+       {"word": "tease", "nuance": "General; make fun of someone, kindly or not.", "example": "They teased him about it."},
+       {"word": "joke", "nuance": "Say funny things; no target needed.", "example": "He joked with us."},
+       {"word": "rib", "nuance": "Informal; tease in a friendly way.", "example": "They ribbed him about his hat."}
+     ], "modern": "\"banter someone\" is dated; today \"tease someone\"", "tip_ko": null},
+    {"id": "hold-tongue", "match": "held my tongue", "para": 39, "headword": "hold one's tongue", "pos": "idiom", "ipa": null,
+     "sense_en": "stayed silent and said nothing",
+     "sense_ko": "입을 다물다",
+     "synonyms": [
+       {"word": "keep quiet", "nuance": "Plain; say nothing.", "example": "Keep quiet about it."},
+       {"word": "bite one's tongue", "nuance": "Stop yourself from saying something you want to say.", "example": "I bit my tongue."},
+       {"word": "keep mum", "nuance": "Informal British; stay silent on purpose.", "example": "Keep mum about the plan."}
+     ], "modern": null, "tip_ko": null},
+    {"id": "morbid", "match": "morbid", "para": 40, "headword": "morbid", "pos": "adjective", "ipa": "/ˈmɔrbɪd/",
+     "sense_en": "unhealthily interested in death or unpleasant things",
+     "sense_ko": "병적인, 음침한",
+     "synonyms": [
+       {"word": "gloomy", "nuance": "Sad and dark in mood; not about death.", "example": "a gloomy mood"},
+       {"word": "ghoulish", "nuance": "Enjoying death or suffering; stronger.", "example": "ghoulish curiosity"},
+       {"word": "macabre", "nuance": "Disturbing because it involves death.", "example": "a macabre tale"}
+     ], "modern": null, "tip_ko": null},
+    {"id": "jar", "match": "jarred", "para": 40, "headword": "jar", "pos": "verb", "ipa": "/dʒɑr/",
+     "sense_en": "sounded harsh and unpleasant, shocking the nerves",
+     "sense_ko": "거슬리다, 불쾌한 충격을 주다",
+     "synonyms": [
+       {"word": "grate", "nuance": "Annoy like a scraping noise.", "example": "His voice grates on me."},
+       {"word": "clash", "nuance": "Not go together; colors or opinions.", "example": "The colors clash."},
+       {"word": "irk", "nuance": "Annoy mildly.", "example": "It irked me."}
+     ], "modern": null, "tip_ko": "jar on ~ (~에 거슬리다)로 자주 씁니다."},
+    {"id": "malignant", "match": "malignant", "para": 41, "headword": "malignant", "pos": "adjective", "ipa": "/məˈlɪɡnənt/",
+     "sense_en": "full of a wish to do harm",
+     "sense_ko": "악의에 찬, 해로운",
+     "synonyms": [
+       {"word": "malicious", "nuance": "Done deliberately to hurt.", "example": "malicious gossip"},
+       {"word": "evil", "nuance": "General; deeply wicked.", "example": "an evil plan"},
+       {"word": "spiteful", "nuance": "Petty wish to hurt or annoy.", "example": "a spiteful remark"}
+     ], "modern": null, "tip_ko": "의학에서는 '악성(종양)'을 뜻합니다. g는 발음합니다."},
+    {"id": "mad-as-a-hatter", "match": "Mad as a hatter", "para": 42, "headword": "mad as a hatter", "pos": "idiom", "ipa": null,
+     "sense_en": "completely crazy",
+     "sense_ko": "완전히 미친",
+     "synonyms": [
+       {"word": "crazy", "nuance": "Everyday; can be affectionate.", "example": "a crazy idea"},
+       {"word": "bonkers", "nuance": "Informal, British; wildly silly.", "example": "You're bonkers!"},
+       {"word": "out of one's mind", "nuance": "Suggests real loss of reason.", "example": "He's out of his mind."}
+     ], "modern": null, "tip_ko": "'이상한 나라의 앨리스'의 모자 장수(Mad Hatter)도 이 관용구에서 나온 인물입니다."},
+    {"id": "rebuke", "match": "rebuked", "para": 43, "headword": "rebuke", "pos": "verb", "ipa": "/rɪˈbjuk/",
+     "sense_en": "spoke sharply to someone to show disapproval",
+     "sense_ko": "꾸짖다, 책망하다",
+     "synonyms": [
+       {"word": "scold", "nuance": "More everyday, often at children.", "example": "She scolded him."},
+       {"word": "reprimand", "nuance": "Formal, official.", "example": "reprimanded by the captain"},
+       {"word": "criticize", "nuance": "Point out faults; can be milder.", "example": "criticized for being late"}
+     ], "modern": null, "tip_ko": null},
+    {"id": "tardiness", "match": "tardiness", "para": 43, "headword": "tardiness", "pos": "noun", "ipa": "/ˈtɑrdinəs/",
+     "sense_en": "being late",
+     "sense_ko": "지각, 늦음",
+     "synonyms": [
+       {"word": "lateness", "nuance": "Everyday word.", "example": "his constant lateness"},
+       {"word": "delay", "nuance": "A wait caused by something else.", "example": "a delay of an hour"},
+       {"word": "unpunctuality", "nuance": "Formal; habit of not being on time.", "example": "a fault of unpunctuality"}
+     ], "modern": null, "tip_ko": "학교·직장에서 '지각'을 뜻하는 격식 있는 말입니다."},
+    {"id": "prone", "match": "prone", "para": 57, "headword": "prone", "pos": "adjective", "ipa": "/proʊn/",
+     "sense_en": "lying flat on the ground (of a person, face downward)",
+     "sense_ko": "납작 쓰러진, 엎드린",
+     "synonyms": [
+       {"word": "prostrate", "nuance": "Lying flat, often helpless or in respect.", "example": "prostrate on the floor"},
+       {"word": "flat", "nuance": "Plain word; level, any position.", "example": "lie flat"},
+       {"word": "supine", "nuance": "The opposite: lying face upward.", "example": "lying supine"}
+     ], "modern": null, "tip_ko": "prone to ~ (~하기 쉬운)와 뜻이 다릅니다."},
+    {"id": "fall-in-with", "match": "fall in with", "para": 59, "headword": "fall in with", "pos": "phrase", "ipa": null,
+     "sense_en": "come to agree with or accept someone's idea",
+     "sense_ko": "~에 동조하다, 따르다",
+     "synonyms": [
+       {"word": "go along with", "nuance": "Accept a plan, sometimes without much enthusiasm.", "example": "I'll go along with your plan."},
+       {"word": "agree to", "nuance": "Plain word.", "example": "He agreed to the terms."},
+       {"word": "conform to", "nuance": "Follow a rule or habit.", "example": "conform to the rules"}
+     ], "modern": null, "tip_ko": "'~와 우연히 어울리게 되다'라는 뜻도 있습니다."},
+    {"id": "brusquely", "match": "brusquely", "para": 61, "headword": "brusquely", "pos": "adverb", "ipa": "/ˈbrʌskli/",
+     "sense_en": "in a short, rather rude way",
+     "sense_ko": "퉁명스럽게",
+     "synonyms": [
+       {"word": "curtly", "nuance": "Using very few, cold words.", "example": "He answered curtly."},
+       {"word": "abruptly", "nuance": "Suddenly; not necessarily rude.", "example": "She stopped abruptly."},
+       {"word": "bluntly", "nuance": "Honestly and directly, with no softening.", "example": "He spoke bluntly."}
+     ], "modern": null, "tip_ko": "[브러스클리]로 읽고 brusque는 [브러스크]입니다."},
+    {"id": "benediction", "match": "benediction", "para": 61, "headword": "benediction", "pos": "noun", "ipa": "/ˌbɛnəˈdɪkʃn/",
+     "sense_en": "a blessing; here used humorously for the doctor's gruff parting words",
+     "sense_ko": "축복의 말 (여기서는 의사의 퉁명스러운 작별 인사를 익살스럽게 이른 말)",
+     "synonyms": [
+       {"word": "blessing", "nuance": "Everyday; good wishes or approval.", "example": "They gave us their blessing."},
+       {"word": "farewell", "nuance": "Words said on parting.", "example": "a fond farewell"},
+       {"word": "invocation", "nuance": "A prayer asking for help at the start.", "example": "an opening invocation"}
+     ], "modern": null, "tip_ko": null},
+    {"id": "lakh", "match": "lakh", "para": 63, "headword": "lakh", "pos": "noun", "ipa": "/lɑk/",
+     "sense_en": "one hundred thousand, especially rupees in India",
+     "sense_ko": "라크(10만, 인도의 수 단위)",
+     "synonyms": [
+       {"word": "hundred thousand", "nuance": "The plain English number.", "example": "a hundred thousand rupees"},
+       {"word": "crore", "nuance": "Another Indian unit; ten million.", "example": "ten crore rupees"}
+     ], "modern": null, "tip_ko": "인도·남아시아에서 쓰는 수 단위이며 1 lakh = 100,000입니다."},
+    {"id": "wantonness", "match": "wantonness", "para": 67, "headword": "wantonness", "pos": "noun", "ipa": "/ˈwɑntənnəs/",
+     "sense_en": "reckless, playful behavior with no good reason",
+     "sense_ko": "제멋대로 구는 것, 들뜬 장난기",
+     "synonyms": [
+       {"word": "recklessness", "nuance": "Not caring about danger.", "example": "the recklessness of youth"},
+       {"word": "playfulness", "nuance": "Harmless fun, without any hint of harm.", "example": "childish playfulness"},
+       {"word": "willfulness", "nuance": "Stubborn wish to do what you want.", "example": "a child's willfulness"}
+     ], "modern": null, "tip_ko": "from sheer wantonness: 순전히 장난기로/충동적으로."},
+    {"id": "implore", "match": "implored", "para": 74, "headword": "implore", "pos": "verb", "ipa": "/ɪmˈplɔr/",
+     "sense_en": "begged someone in an emotional way",
+     "sense_ko": "간청하다, 애원하다",
+     "synonyms": [
+       {"word": "beg", "nuance": "Everyday; ask in a desperate way.", "example": "I beg you to stay."},
+       {"word": "plead", "nuance": "Make an emotional appeal, often before a decision.", "example": "She pleaded for mercy."},
+       {"word": "beseech", "nuance": "Literary; ask with great feeling.", "example": "I beseech you to listen."}
+     ], "modern": null, "tip_ko": null},
+    {"id": "betrothed", "match": "betrothed", "para": 74, "headword": "betrothed", "pos": "adjective", "ipa": "/bɪˈtroʊðd/",
+     "sense_en": "formally promised to marry",
+     "sense_ko": "약혼한",
+     "synonyms": [
+       {"word": "engaged", "nuance": "Everyday word.", "example": "engaged to be married"},
+       {"word": "affianced", "nuance": "Very formal, old-fashioned.", "example": "his affianced bride"}
+     ], "modern": "\"betrothed\" → \"engaged\"", "tip_ko": "th는 유성음 [ð]이라 [비트로우드]처럼 부드럽게 읽습니다."},
+    {"id": "livid", "match": "livid", "para": 76, "headword": "livid", "pos": "adjective", "ipa": "/ˈlɪvɪd/",
+     "sense_en": "dark bluish-grey, like a bruise",
+     "sense_ko": "검푸른, 멍든 빛의",
+     "synonyms": [
+       {"word": "bruised", "nuance": "Discolored by a blow.", "example": "a bruised arm"},
+       {"word": "purple", "nuance": "Plain color word, no sign of injury.", "example": "a purple mark"},
+       {"word": "ashen", "nuance": "Grey-pale from shock; not bruised.", "example": "an ashen face"}
+     ], "modern": null, "tip_ko": "현대 구어에서는 '몹시 화난'이라는 뜻으로도 씁니다."},
+    {"id": "entreat", "match": "entreating", "para": 76, "headword": "entreat", "pos": "verb", "ipa": "/ɛnˈtrit/",
+     "sense_en": "begging seriously",
+     "sense_ko": "간청하다",
+     "synonyms": [
+       {"word": "beg", "nuance": "Everyday and strong.", "example": "beg for help"},
+       {"word": "urge", "nuance": "Press someone strongly; less humble.", "example": "urge him to go"},
+       {"word": "appeal to", "nuance": "Ask, often to someone's feelings.", "example": "appeal to her pity"}
+     ], "modern": null, "tip_ko": null},
+    {"id": "abject", "match": "abject", "para": 78, "headword": "abject", "pos": "adjective", "ipa": "/ˈæbdʒɛkt/",
+     "sense_en": "extremely bad and without hope",
+     "sense_ko": "비참한, 절망적인",
+     "synonyms": [
+       {"word": "wretched", "nuance": "Very unhappy or of poor quality.", "example": "a wretched life"},
+       {"word": "miserable", "nuance": "Very unhappy, everyday word.", "example": "a miserable night"},
+       {"word": "pitiful", "nuance": "Deserving pity or contempt.", "example": "a pitiful sight"}
+     ], "modern": null, "tip_ko": "abject poverty(극빈), abject failure(완전한 실패)처럼 부정적 명사와 씁니다."},
+    {"id": "virago", "match": "virago", "para": 85, "headword": "virago", "pos": "noun", "ipa": "/vɪˈrɑɡoʊ/",
+     "sense_en": "a loud, fierce, quarrelsome woman",
+     "sense_ko": "사나운 여자, 억센 여자",
+     "synonyms": [
+       {"word": "shrew", "nuance": "A bad-tempered woman who nags.", "example": "a nagging shrew"},
+       {"word": "termagant", "nuance": "Old word for a violent, scolding woman.", "example": "a termagant wife"},
+       {"word": "spitfire", "nuance": "A fiery, quick-tempered woman, sometimes admired.", "example": "a little spitfire"}
+     ], "modern": "insulting and old-fashioned", "tip_ko": null},
+    {"id": "impotent", "match": "impotent", "para": 97, "headword": "impotent", "pos": "adjective", "ipa": "/ˈɪmpətənt/",
+     "sense_en": "having no power to change things",
+     "sense_ko": "무력한",
+     "synonyms": [
+       {"word": "powerless", "nuance": "Everyday word for having no control.", "example": "powerless to stop it"},
+       {"word": "helpless", "nuance": "Unable to help oneself; often weak.", "example": "a helpless child"},
+       {"word": "ineffectual", "nuance": "Tries but does not work.", "example": "ineffectual efforts"}
+     ], "modern": null, "tip_ko": "의학적으로는 '발기부전'을 뜻하기도 하므로 문맥에 주의하세요."},
+    {"id": "single-out", "match": "singled out", "para": 97, "headword": "single out", "pos": "phrase", "ipa": null,
+     "sense_en": "chosen from a group, especially for something bad",
+     "sense_ko": "(여럿 중) 골라내다, 지목하다",
+     "synonyms": [
+       {"word": "pick out", "nuance": "Choose from a group, neutral.", "example": "pick out the best one"},
+       {"word": "target", "nuance": "Choose as an object of attack.", "example": "targeted by critics"},
+       {"word": "select", "nuance": "Formal; choose carefully.", "example": "selected for the team"}
+     ], "modern": null, "tip_ko": null},
+    {"id": "impalpable", "match": "impalpable", "para": 102, "headword": "impalpable", "pos": "adjective", "ipa": "/ɪmˈpælpəbl/",
+     "sense_en": "not able to be touched; like a shadow with no body",
+     "sense_ko": "손으로 만질 수 없는, 실체 없는",
+     "synonyms": [
+       {"word": "intangible", "nuance": "Cannot be touched; also abstract.", "example": "intangible benefits"},
+       {"word": "insubstantial", "nuance": "Weak or thin, lacking solid form.", "example": "an insubstantial ghost"},
+       {"word": "ethereal", "nuance": "Light and delicate, almost heavenly.", "example": "ethereal beauty"}
+     ], "modern": null, "tip_ko": null},
+    {"id": "chimera", "match": "chimera", "para": 102, "headword": "chimera", "pos": "noun", "ipa": "/kaɪˈmɪrə/",
+     "sense_en": "an unreal thing you imagine, like a monster",
+     "sense_ko": "망상, 허깨비 (원래는 신화 속 괴물 키메라)",
+     "synonyms": [
+       {"word": "illusion", "nuance": "Something that seems real but is not.", "example": "an optical illusion"},
+       {"word": "fantasy", "nuance": "A pleasant imagined idea.", "example": "a childhood fantasy"},
+       {"word": "delusion", "nuance": "A false belief held despite evidence.", "example": "under a delusion"}
+     ], "modern": null, "tip_ko": "[카이미러]로 발음합니다. 그리스 신화의 괴물에서 왔습니다."},
+    {"id": "indefatigable", "match": "indefatigable", "para": 107, "headword": "indefatigable", "pos": "adjective", "ipa": "/ˌɪndɪˈfætɪɡəbl/",
+     "sense_en": "never getting tired; always working hard",
+     "sense_ko": "지칠 줄 모르는",
+     "synonyms": [
+       {"word": "tireless", "nuance": "Everyday; never tired.", "example": "a tireless worker"},
+       {"word": "untiring", "nuance": "Same meaning, plain.", "example": "untiring efforts"},
+       {"word": "persistent", "nuance": "Keeps going despite difficulty; about will, not strength.", "example": "persistent questions"}
+     ], "modern": null, "tip_ko": null},
+    {"id": "phantasm", "match": "phantasm", "para": 108, "headword": "phantasm", "pos": "noun", "ipa": "/ˈfæntæzəm/",
+     "sense_en": "a ghost or an unreal figure seen by the mind",
+     "sense_ko": "환영, 유령",
+     "synonyms": [
+       {"word": "phantom", "nuance": "A ghost, or something feared but not real.", "example": "a phantom in the dark"},
+       {"word": "specter", "nuance": "A frightening ghost.", "example": "the specter of war"},
+       {"word": "hallucination", "nuance": "Something you see that isn't there, caused by illness.", "example": "a fever hallucination"}
+     ], "modern": null, "tip_ko": null},
+    {"id": "allegiance", "match": "allegiance", "para": 108, "headword": "allegiance", "pos": "noun", "ipa": "/əˈlidʒəns/",
+     "sense_en": "loyalty to a person or cause; here, his former love for Agnes",
+     "sense_ko": "충성, 의리 (여기서는 옛 연인에 대한 애정)",
+     "synonyms": [
+       {"word": "loyalty", "nuance": "Everyday word for faithfulness.", "example": "loyalty to a friend"},
+       {"word": "fidelity", "nuance": "Faithfulness, especially in love or duty.", "example": "marital fidelity"},
+       {"word": "devotion", "nuance": "Deep love and commitment.", "example": "devotion to duty"}
+     ], "modern": null, "tip_ko": "pledge allegiance to ~ (~에 충성을 맹세하다)로 자주 씁니다."}
+  ]
+}

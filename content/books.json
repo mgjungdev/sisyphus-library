@@ -1999,7 +1999,9 @@
    "accent": "#e2cfa3"
   },
   "month": "2028-06",
-  "plan": 82
+  "plan": 82,
+  "gutenberg": 375,
+  "reviewed": "2026-09-30"
  },
  {
   "slug": "open-boat",
@@ -2022,7 +2024,9 @@
    "accent": "#d8c48a"
   },
   "month": "2028-06",
-  "plan": 83
+  "plan": 83,
+  "gutenberg": 45524,
+  "reviewed": "2026-09-30"
  },
  {
   "slug": "gold-bug",
@@ -2045,7 +2049,9 @@
    "accent": "#d9c08a"
   },
   "month": "2028-06",
-  "plan": 84
+  "plan": 84,
+  "gutenberg": 2147,
+  "reviewed": "2026-09-30"
  },
  {
   "slug": "body-snatcher",
@@ -2067,7 +2073,9 @@
    "accent": "#c9a24a"
   },
   "month": "2028-07",
-  "plan": 85
+  "plan": 85,
+  "gutenberg": 426,
+  "reviewed": "2026-09-30"
  },
  {
   "slug": "phantom-rickshaw",
@@ -2089,7 +2097,9 @@
    "accent": "#d6cfb8"
   },
   "month": "2028-07",
-  "plan": 86
+  "plan": 86,
+  "gutenberg": 2806,
+  "reviewed": "2026-09-30"
  },
  {
   "slug": "birth-mark",
@@ -2112,7 +2122,9 @@
    "accent": "#e0cf94"
   },
   "month": "2028-07",
-  "plan": 87
+  "plan": 87,
+  "gutenberg": 512,
+  "reviewed": "2026-09-30"
  },
  {
   "slug": "overcoat",
@@ -2135,7 +2147,9 @@
    "accent": "#e2cfa3"
   },
   "month": "2028-07",
-  "plan": 88
+  "plan": 88,
+  "gutenberg": 36238,
+  "reviewed": "2026-09-30"
  },
  {
   "slug": "ministers-black-veil",
