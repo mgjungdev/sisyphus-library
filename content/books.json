@@ -913,7 +913,9 @@
    "accent": "#f3e2b8"
   },
   "month": "2027-07",
-  "plan": 37
+  "plan": 37,
+  "gutenberg": 57333,
+  "reviewed": "2026-09-30"
  },
  {
   "slug": "romance-of-a-busy-broker",
@@ -1252,7 +1254,9 @@
    "accent": "#e0cf94"
   },
   "month": "2027-10",
-  "plan": 51
+  "plan": 51,
+  "gutenberg": 11870,
+  "reviewed": "2026-09-30"
  },
  {
   "slug": "furnished-room",
@@ -1712,7 +1716,9 @@
    "accent": "#d9c08a"
   },
   "month": "2028-03",
-  "plan": 70
+  "plan": 70,
+  "gutenberg": 2147,
+  "reviewed": "2026-09-30"
  },
  {
   "slug": "jekyll-and-hyde",
@@ -1976,7 +1982,9 @@
    "accent": "#e0cf94"
   },
   "month": "2028-06",
-  "plan": 81
+  "plan": 81,
+  "gutenberg": 23169,
+  "reviewed": "2026-09-30"
  },
  {
   "slug": "owl-creek-bridge",
@@ -2171,7 +2179,9 @@
    "accent": "#c9a24a"
   },
   "month": "2028-08",
-  "plan": 89
+  "plan": 89,
+  "gutenberg": 508,
+  "reviewed": "2026-09-30"
  },
  {
   "slug": "machine-stops",
@@ -2193,7 +2203,9 @@
    "accent": "#e0cf94"
   },
   "month": "2028-08",
-  "plan": 90
+  "plan": 90,
+  "gutenberg": 72890,
+  "reviewed": "2026-09-30"
  },
  {
   "slug": "pauls-case",
@@ -2216,7 +2228,9 @@
    "accent": "#e2cfa3"
   },
   "month": "2028-08",
-  "plan": 91
+  "plan": 91,
+  "gutenberg": 13555,
+  "reviewed": "2026-09-30"
  },
  {
   "slug": "diamond-as-big-as-the-ritz",
@@ -2238,7 +2252,9 @@
    "accent": "#e0cf94"
   },
   "month": "2028-08",
-  "plan": 92
+  "plan": 92,
+  "gutenberg": 6695,
+  "reviewed": "2026-09-30"
  },
  {
   "slug": "micromegas",
