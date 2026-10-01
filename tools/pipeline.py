@@ -7,10 +7,13 @@ Usage:
   python tools/pipeline.py feed                   JSON: the jobs the wave needs now (read by the control queue)
   python tools/pipeline.py panel                  JSON: waves and book stages for the control dashboard
   python tools/pipeline.py deploy [--dry-run]     check, build, commit and push every reviewed book of the wave
+  python tools/pipeline.py start [<wave>]         open a PIPELINE.md wave now, alongside the current one (default: the first not begun)
 
 Stages: no-source → no-glossary → failing → unreviewed → reviewed → deployed.
 A wave is every book already in progress; when none is, the next shelf-months without sources
-(`months_per_wave` in pipeline.config.json, default 2).
+(`months_per_wave` in pipeline.config.json, default 2). A wave of the PIPELINE.md table can also be opened early
+with `start` (recorded under "started" in pipeline.config.json); the dashboard offers it as a button (the panel's
+"actions").
 The control queue (~/sisyphus/control) runs one job per book and stage — import, glossary, check —
 and one deploy job once every book of the wave is reviewed.
 """
@@ -43,6 +46,16 @@ def config() -> dict:
         return {**DEFAULTS, **json.loads(CONFIG.read_text(encoding="utf-8"))}
     except (OSError, ValueError):
         return dict(DEFAULTS)
+
+
+def save_started(started: dict) -> None:
+    """Record the waves opened with `start` in pipeline.config.json, keeping its other keys."""
+    try:
+        raw = json.loads(CONFIG.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        raw = {}
+    raw["started"] = started
+    CONFIG.write_text(json.dumps(raw, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
 
 def catalog() -> list[dict]:
@@ -85,8 +98,9 @@ def next_wave(st: list[tuple[dict, str]]) -> list[tuple[dict, str]]:
     todo = [(b, s) for b, s in st if s != "deployed"]
     if not todo:
         return []
-    # Finish books already in progress before starting new ones.
-    started = [(b, s) for b, s in todo if s != "no-source"]
+    # Finish books already in progress before starting new ones; waves opened with `start` count as in progress.
+    early = {s for w in wave_table() if w["name"] in (config().get("started") or {}) for s in w["slugs"]}
+    started = [(b, s) for b, s in todo if s != "no-source" or b["slug"] in early]
     if started:
         return started
     months = sorted({b["month"] for b, _ in todo})[: max(1, int(config()["months_per_wave"]))]
@@ -163,6 +177,22 @@ def wave_table() -> list[dict]:
             for m in re.finditer(r"^\|\s*(W\d+)\s*\|([^|]*)\|([^|]*)\|", text, re.M)]
 
 
+def closed(st: list[tuple[dict, str]]) -> dict[str, list[str]]:
+    """PIPELINE.md waves with books not yet begun, and those books: what `start` can open."""
+    nxt = {b["slug"] for b, _ in next_wave(st)}
+    fresh = {b["slug"] for b, s in st if s == "no-source"} - nxt
+    return {w["name"]: todo for w in wave_table() if (todo := [s for s in w["slugs"] if s in fresh])}
+
+
+def actions(st: list[tuple[dict, str]]) -> list[dict]:
+    """Buttons for the dashboard: {"id", "label", "confirm", "cmd"}; it runs cmd here when one is pressed.
+
+    Every wave not begun yet can be started by hand (the dashboard puts these on the wave strip)."""
+    return [{"id": f"start:{name}", "label": f"{name} 시작", "cmd": f"python tools/pipeline.py start {name}",
+             "confirm": f"{name} {len(todo)}권 제작을 지금 시작할까요? 지금 웨이브가 끝나기를 기다리지 않습니다."}
+            for name, todo in closed(st).items()]
+
+
 def panel() -> dict:
     st = states()
     nxt = {b["slug"] for b, _ in next_wave(st)}
@@ -179,14 +209,18 @@ def panel() -> dict:
                           "current": any(b["slug"] in nxt for b in items),
                           "done": all(b["stage"] == "deployed" for b in items)})
     # When the catalog has moved on from the PIPELINE.md table, show the wave pipeline.py actually runs.
-    listed = {b["slug"] for w in waves if w["current"] for b in w["books"]}
-    if nxt and nxt != listed:
-        months = sorted({by[s]["month"] for s in nxt})
-        at = next((i for i, w in enumerate(waves) if w["current"]), len(waves))
-        waves = [w for w in waves if not w["current"]]
+    # Waves opened with `start` keep their own place in the strip.
+    early = set(config().get("started") or {})
+    rest = nxt - {b["slug"] for w in waves if w["name"] in early for b in w["books"]}
+    listed = {b["slug"] for w in waves if w["current"] and w["name"] not in early for b in w["books"]}
+    if rest and rest != listed:
+        months = sorted({by[s]["month"] for s in rest})
+        merged = lambda w: w["current"] and w["name"] not in early  # noqa: E731
+        at = next((i for i, w in enumerate(waves) if merged(w)), len(waves))
+        waves = [w for w in waves if not merged(w)]
         waves.insert(at, {"name": "현재", "months": f"{months[0]} – {months[-1]}",
-                          "books": [by[s] for s in by if s in nxt], "current": True, "done": False})
-    return {"title": "Sisyphus Library", "counts": counts, "total": len(st), "waves": waves}
+                          "books": [by[s] for s in by if s in rest], "current": True, "done": False})
+    return {"title": "Sisyphus Library", "counts": counts, "total": len(st), "waves": waves, "actions": actions(st)}
 
 
 def run(*cmd: str) -> None:
@@ -272,6 +306,18 @@ def main():
         deploy("--dry-run" in sys.argv)
         return
     st = states()
+    if cmd == "start":
+        can = closed(st)
+        name = sys.argv[2] if len(sys.argv) > 2 else next(iter(can), None)
+        if not name:
+            sys.exit("no wave left to start")
+        if name not in {w["name"] for w in wave_table()}:
+            sys.exit(f"unknown wave {name}")
+        if name not in can:
+            sys.exit(f"{name} is already open or finished")
+        save_started({**(config().get("started") or {}), name: datetime.date.today().isoformat()})
+        print(f"{name} 시작 · {len(can[name])}권")
+        return
     wave = next_wave(st)
     if cmd == "next":
         for b, s in wave:
