@@ -1,5 +1,7 @@
 # Sisyphus Library
 
+**Live site: https://mgjungdev.github.io/sisyphus-library/**
+
 Classic public-domain short stories with a tap-to-look-up dictionary.
 Static site in `site/` (GitHub Pages), content in `content/`.
 
@@ -10,4 +12,4 @@ Static site in `site/` (GitHub Pages), content in `content/`.
 4. `python tools/build.py` → push. CI rebuilds and deploys.
 
 ## Local preview
-`cd site && python -m http.server 8765` → http://127.0.0.1:8765/
+`cd site && python -m http.server 8765` → `http://127.0.0.1:8765/` (local only)
