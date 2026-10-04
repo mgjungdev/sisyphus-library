@@ -26,30 +26,9 @@
 .hw .meta { margin: 3px 0 0; font-size: 14px; color: var(--ink-2); }
 .hw .meta .from { color: var(--ink-3); }
 .card-tools { display: flex; gap: 0; margin-top: -4px; }
-.card-tools .star svg { fill: none; }
-.card-tools .star[aria-pressed="true"] { color: var(--saved); }
-.card-tools .star[aria-pressed="true"] svg { fill: currentColor; }
 
 .card-body { overflow-y: auto; overscroll-behavior: contain; padding: 4px 18px 12px; flex: 1 1 auto; }
-.sense { padding: 12px 14px; border-radius: 10px; background: var(--surface-2); }
-.sense .en { margin: 0; font: 16.5px/1.5 var(--font-read); }
-.sense .ko { margin: 6px 0 0; font: 15px/1.5 var(--font-ko); color: var(--ink-2); }
-.modern { margin: 10px 0 0; font-size: 14.5px; display: flex; gap: 8px; align-items: baseline; }
-.modern span { flex: 0 0 auto; font-size: 13px; font-weight: 600; color: var(--accent); }
-.tip {
-  margin: 10px 0 0; padding: 9px 12px; border-radius: 8px; font: 14px/1.55 var(--font-ko);
-  background: color-mix(in srgb, #e8c34a 16%, transparent); border-left: 3px solid #d4a72c;
-}
 .syns h3 { margin: 18px 0 6px; font-size: 13px; font-weight: 600; color: var(--ink-2); }
-.syns ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
-.syns li { padding-bottom: 10px; border-bottom: 1px solid var(--rule); }
-.syns li:last-child { border-bottom: 0; padding-bottom: 0; }
-.syn-head b, .syn-link { font: 600 16px/1.3 var(--font-read); }
-.syn-link { padding: 0; border: 0; background: none; cursor: pointer; color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
-.syns li p { margin: 2px 0 0; font-size: 14px; line-height: 1.5; color: var(--ink-2); }
-.syns li p.ex { font: italic 14.5px/1.5 var(--font-read); color: var(--ink); }
-details.more { margin-top: 12px; }
-details.more summary { cursor: pointer; font-size: 13.5px; color: var(--ink-2); min-height: 32px; display: flex; align-items: center; }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; }
 .syn-chip { border: 1px solid var(--rule); background: var(--bg); border-radius: 999px; padding: 4px 11px; min-height: 32px; cursor: pointer; font: 14px var(--font-read); }
 .syn-chip:hover { border-color: var(--ink-3); }

@@ -1,8 +1,7 @@
 """Tiny rule-based English lemmatizer (no dependencies).
 
 Good enough to map inflected forms in 19th/early-20th-century fiction to a
-dictionary headword for lookups. Curated glossary entries always carry their
-own headword, so this only feeds the generic word card.
+dictionary headword for the word card's lookups.
 """
 
 IRREGULAR = {

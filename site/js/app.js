@@ -1,7 +1,6 @@
 import { renderLibrary } from './library.js';
 import { renderReader } from './reader.js';
-import { renderWords, renderSettings } from './pages.js';
-import { subscribe, savedList } from './store.js';
+import { renderSettings } from './pages.js';
 
 const view = document.getElementById('view');
 const titleEl = document.getElementById('topbar-title');
@@ -36,11 +35,6 @@ async function route() {
       titleEl.textContent = book.title;
       document.title = `${book.title} · Sisyphus Library`;
       cleanup = renderReader(view, book, parts[2] ? +parts[2] : null);
-    } else if (name === 'words') {
-      document.querySelector('#nav-words').setAttribute('aria-current', 'page');
-      document.title = 'Saved words · Sisyphus Library';
-      scrollTo(0, 0);
-      cleanup = renderWords(view);
     } else if (name === 'settings') {
       document.querySelector('.topbar-actions a[href="#/settings"]').setAttribute('aria-current', 'page');
       document.title = 'Settings · Sisyphus Library';
@@ -57,15 +51,7 @@ async function route() {
   }
 }
 
-function updateBadge() {
-  const n = savedList().length;
-  const b = document.getElementById('words-count');
-  b.hidden = !n; b.textContent = n > 99 ? '99+' : String(n);
-}
-
 addEventListener('hashchange', route);
-subscribe(updateBadge);
-updateBadge();
 route();
 
 if ('serviceWorker' in navigator && location.protocol === 'https:') {

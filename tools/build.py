@@ -2,12 +2,11 @@
 
   content/books.json               catalog (month, spine, cover)
   content/sources/<slug>.txt       story text, paragraphs separated by blank lines
-  content/glossary/<slug>.json     curated vocabulary cards
 
-A book is "ready" when it has a source, a glossary and a "reviewed" date in
-books.json (set by tools/pipeline.py mark-reviewed after the independent check); otherwise it is
+A book is "ready" when it has a source and a "reviewed" date in books.json (set by
+tools/pipeline.py mark-reviewed after the source text is checked); otherwise it is
 shown as a planned (not yet openable) spine on its month's shelf.
-Any glossary error stops the build.
+Every word is emitted as [word, lemma] so the reader can look it up on tap.
 """
 import json
 import math
@@ -16,8 +15,8 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from check_glossary import check, find_all, load_paragraphs  # noqa: E402
 from lemma import lemma  # noqa: E402
+from text import load_paragraphs  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 CONTENT = ROOT / "content"
@@ -42,55 +41,13 @@ def tokenize(text: str) -> list:
 def build_book(meta: dict, nxt: dict | None = None) -> dict:
     slug = meta["slug"]
     paras = load_paragraphs(slug)
-    gloss = json.loads((CONTENT / "glossary" / f"{slug}.json").read_text(encoding="utf-8"))
-    entries = gloss["entries"]
-    by_head = {e["headword"].lower(): e["id"] for e in entries}
-
-    # spans[(para_index)] = list of (start, end, entry_id)
-    spans: dict[int, list] = {i: [] for i in range(len(paras))}
-
-    def free(pi, s, e):
-        return all(e <= a or s >= b for a, b, _ in spans[pi])
-
-    for e in entries:  # primary positions first
-        pi = e["para"] - 1
-        start = find_all(paras[pi], e["match"])[e.get("occurrence", 1) - 1]
-        spans[pi].append((start, start + len(e["match"]), e["id"]))
-    for e in entries:  # other occurrences
-        if not e.get("all", True):
-            continue
-        for pi, p in enumerate(paras):
-            for s in find_all(p, e["match"]):
-                if free(pi, s, s + len(e["match"])):
-                    spans[pi].append((s, s + len(e["match"]), e["id"]))
-
-    heads = {e["id"]: e["headword"] for e in entries}
     out_paras, chapters = [], []
     for pi, p in enumerate(paras):
         if p.startswith("## "):
             chapters.append({"title": p[3:].strip(), "para": pi + 1})
             out_paras.append([{"h": p[3:].strip()}])
-            continue
-        items, pos = [], 0
-        for s, t, eid in sorted(spans[pi]):
-            items += tokenize(p[pos:s])
-            items.append([p[s:t], heads[eid], eid])
-            pos = t
-        items += tokenize(p[pos:])
-        out_paras.append(items)
-
-    cards = {}
-    for e in entries:
-        card = {k: e.get(k) for k in ("headword", "pos", "ipa", "sense_en", "sense_ko", "modern", "tip_ko")}
-        card["para"] = e["para"]
-        card["synonyms"] = []
-        for s in e["synonyms"]:
-            s = dict(s)
-            ref = by_head.get(s["word"].lower())
-            if ref and ref != e["id"]:
-                s["ref"] = ref
-            card["synonyms"].append(s)
-        cards[e["id"]] = {k: v for k, v in card.items() if v not in (None, "")}
+        else:
+            out_paras.append(tokenize(p))
 
     words = sum(len(WORD.findall(p)) for p in paras if not p.startswith("## "))
     return {
@@ -98,8 +55,7 @@ def build_book(meta: dict, nxt: dict | None = None) -> dict:
         "genre": meta.get("genre"), "level": meta.get("level"), "tags": meta.get("tags", []),
         **volume(meta), **({"next": nxt} if nxt else {}),
         "words": words, "minutes": max(1, round(words / WPM)),
-        "chapters": chapters, "paragraphs": out_paras, "cards": cards,
-        "order": [e["id"] for e in sorted(entries, key=lambda e: (e["para"], e["id"]))],
+        "chapters": chapters, "paragraphs": out_paras,
     }
 
 
@@ -124,11 +80,11 @@ def thickness(words: int | None) -> int:
 def main():
     catalog = json.loads((CONTENT / "books.json").read_text(encoding="utf-8"))
     (OUT / "books").mkdir(parents=True, exist_ok=True)
-    errors, out = [], []
+    out = []
 
     def is_ready(meta: dict) -> bool:
         slug = meta["slug"]
-        return (CONTENT / "sources" / f"{slug}.txt").exists() and (CONTENT / "glossary" / f"{slug}.json").exists() and bool(meta.get("reviewed"))
+        return (CONTENT / "sources" / f"{slug}.txt").exists() and bool(meta.get("reviewed"))
 
     # The volume that follows each volume, when it is ready: the reader links to it on the last page.
     vols = {(m["series"], m["vol"]): m for m in catalog if m.get("vol")}
@@ -141,23 +97,14 @@ def main():
         info["status"] = "planned"
         words = None
         if ready:
-            errs = check(slug)
-            if errs:
-                errors += [f"{slug}: {e}" for e in errs]
-                continue
             after = vols.get((meta.get("series"), (meta.get("vol") or 0) + 1))
             book = build_book(meta, {"slug": after["slug"], "vol": after["vol"]} if after and is_ready(after) else None)
             (OUT / "books" / f"{slug}.json").write_text(json.dumps(book, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
             words = book["words"]
-            info.update(status="ready", words=words, minutes=book["minutes"], entries=len(book["cards"]), chapters=len(book["chapters"]))
-            print(f"  built {slug}: {words} words, {len(book['cards'])} cards")
+            info.update(status="ready", words=words, minutes=book["minutes"], chapters=len(book["chapters"]))
+            print(f"  built {slug}: {words} words")
         info["spine"] = {**meta["spine"], "thickness": thickness(words)}
         out.append(info)
-    if errors:
-        print("Build failed:")
-        for e in errors:
-            print("   ", e)
-        sys.exit(1)
     genres = list(dict.fromkeys(b["genre"] for b in catalog))
     order = ["Fairy Tales & Fables", "Adventure", "Mystery & Detective", "Gothic & Horror", "Ghost Stories",
              "Science Fiction & Fantasy", "Love & Society", "Humor & Satire", "Realism & Character"]

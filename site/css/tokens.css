@@ -5,7 +5,6 @@
   color-scheme: light;
   --font-read: "Times New Roman", Tinos, Times, "Liberation Serif", serif;
   --font-ui: "Instrument Sans", system-ui, -apple-system, "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
-  --font-ko: "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", var(--font-ui);
 
   --wall: #e8eae6;
   --bg: #e8eae6;
@@ -17,8 +16,6 @@
   --rule: #d3d8d1;
   --accent: #2f4f6a;
   --accent-ink: #ffffff;
-  --gloss-line: #7d8f9e;
-  --saved: #e2b93b;
   --focus: #2f6fb3;
   --shadow: 0 1px 2px rgb(28 34 32 / .06), 0 12px 32px -8px rgb(28 34 32 / .18);
 
@@ -38,7 +35,7 @@
 :root[data-theme="paper"] {
   --wall: #ece5d6; --bg: #ece5d6; --surface: #f8f2e5; --surface-2: #efe7d6;
   --ink: #3a2f24; --ink-2: #6d5d4c; --ink-3: #978672; --rule: #dccfb8;
-  --gloss-line: #9b8266; --ledge: #f6f0e3; --ledge-edge: #d8ccb5; --scrim: rgb(236 229 214 / .84);
+  --ledge: #f6f0e3; --ledge-edge: #d8ccb5; --scrim: rgb(236 229 214 / .84);
   --page: #f7f0e1; --page-ink: #3b3024; --page-ink-2: #85735f; --surround: #e9e0cd;
 }
 
@@ -46,7 +43,7 @@
   color-scheme: dark;
   --wall: #3b3e41; --bg: #3b3e41; --surface: #4a4d51; --surface-2: #54585c;
   --ink: #ececea; --ink-2: #c3c5c3; --ink-3: #9a9d9c; --rule: #5d6165;
-  --accent: #9cc0e0; --accent-ink: #15222d; --gloss-line: #a9b6c1; --saved: #d9b44a;
+  --accent: #9cc0e0; --accent-ink: #15222d;
   --shadow: 0 1px 2px rgb(0 0 0 / .25), 0 12px 32px -8px rgb(0 0 0 / .5);
   --ledge: #4c5054; --ledge-edge: #2e3134; --ledge-shadow: rgb(0 0 0 / .45); --book-shadow: rgb(0 0 0 / .55);
   --scrim: rgb(59 62 65 / .84);
@@ -57,7 +54,7 @@
   color-scheme: dark;
   --wall: #161a19; --bg: #161a19; --surface: #1f2423; --surface-2: #272d2b;
   --ink: #e4e3dd; --ink-2: #aeb2ad; --ink-3: #7c827e; --rule: #313836;
-  --accent: #8fb3d4; --accent-ink: #0f1a24; --gloss-line: #6f8394; --saved: #c9a13c;
+  --accent: #8fb3d4; --accent-ink: #0f1a24;
   --shadow: 0 1px 2px rgb(0 0 0 / .4), 0 14px 36px -8px rgb(0 0 0 / .7);
   --ledge: #242a28; --ledge-edge: #0e1110; --ledge-shadow: rgb(0 0 0 / .6); --book-shadow: rgb(0 0 0 / .7);
   --scrim: rgb(22 26 25 / .86);
@@ -69,7 +66,7 @@
     color-scheme: dark;
     --wall: #161a19; --bg: #161a19; --surface: #1f2423; --surface-2: #272d2b;
     --ink: #e4e3dd; --ink-2: #aeb2ad; --ink-3: #7c827e; --rule: #313836;
-    --accent: #8fb3d4; --accent-ink: #0f1a24; --gloss-line: #6f8394; --saved: #c9a13c;
+    --accent: #8fb3d4; --accent-ink: #0f1a24;
     --shadow: 0 1px 2px rgb(0 0 0 / .4), 0 14px 36px -8px rgb(0 0 0 / .7);
     --ledge: #242a28; --ledge-edge: #0e1110; --ledge-shadow: rgb(0 0 0 / .6); --book-shadow: rgb(0 0 0 / .7);
     --scrim: rgb(22 26 25 / .86);

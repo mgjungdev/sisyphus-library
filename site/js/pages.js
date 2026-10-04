@@ -1,6 +1,5 @@
 import { esc } from './art.js';
-import { savedList, removeWord, subscribe, getState, syncConfig, setSyncConfig, syncAll, exportJSON, prefs } from './store.js';
-import { speak, canSpeak } from './speech.js';
+import { subscribe, getState, syncConfig, setSyncConfig, syncAll, exportJSON } from './store.js';
 import { applyTheme, currentTheme } from './reader.js';
 
 const STATUS = {
@@ -11,62 +10,6 @@ const STATUS = {
 function statusPill() {
   const s = getState();
   return `<span class="sync-pill" data-s="${s.status}"><i></i>${esc(STATUS[s.status] || s.status)}${s.status === 'error' && s.error ? ` (${esc(s.error)})` : ''}</span>`;
-}
-
-/* ---------------- Saved words ---------------- */
-export function renderWords(root) {
-  let sort = prefs.get('wordsSort', 'recent');
-  const draw = () => {
-    const list = savedList();
-    let groups;
-    if (sort === 'recent') groups = [['', list.sort((a, b) => (b.saved || '').localeCompare(a.saved || ''))]];
-    else if (sort === 'az') groups = [['', list.sort((a, b) => a.headword.localeCompare(b.headword))]];
-    else {
-      const m = new Map();
-      list.sort((a, b) => (a.para || 0) - (b.para || 0)).forEach(w => { const k = w.title || w.book; m.set(k, [...(m.get(k) || []), w]); });
-      groups = [...m.entries()];
-    }
-    const mark = (sentence, word) => {
-      const i = sentence.toLowerCase().indexOf(word.toLowerCase());
-      if (i < 0) return esc(sentence);
-      return esc(sentence.slice(0, i)) + `<mark>${esc(sentence.slice(i, i + word.length))}</mark>` + esc(sentence.slice(i + word.length));
-    };
-    root.innerHTML = `
-    <section class="page">
-      <header class="page-head">
-        <h1>Saved words</h1>
-        <p class="sub">${list.length} ${list.length === 1 ? 'word' : 'words'} ${statusPill()}</p>
-        <div class="seg" role="group" aria-label="Sort">
-          ${[['recent', 'Recent'], ['book', 'By story'], ['az', 'A–Z']].map(([k, l]) => `<button class="chip" data-sort="${k}" aria-pressed="${sort === k}">${l}</button>`).join('')}
-        </div>
-      </header>
-      ${list.length ? groups.map(([g, ws]) => `
-        ${g ? `<h2 class="group-h">${esc(g)}</h2>` : ''}
-        <ul class="word-list">
-          ${ws.map(w => `
-          <li class="word-item">
-            <div class="wi-head">
-              <b>${esc(w.headword)}</b>
-              ${canSpeak() ? `<button class="icon-btn sm" data-speak="${esc(w.headword)}" aria-label="Pronounce ${esc(w.headword)}"><svg viewBox="0 0 24 24"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z" fill="currentColor"/><path d="M15.5 8.5a5 5 0 0 1 0 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>` : ''}
-              <button class="icon-btn sm remove" data-remove="${esc(w.key)}" aria-label="Remove ${esc(w.headword)}"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
-            </div>
-            ${w.sense ? `<p class="wi-sense" lang="${/[가-힣]/.test(w.sense) ? 'ko' : 'en'}">${esc(w.sense)}</p>` : ''}
-            ${w.sentence ? `<a class="wi-quote" href="#/read/${esc(w.book)}/${w.para}">${mark(w.sentence.replace(/^[“"‘']+|[”"’']+$/g, ''), w.word || w.headword)} <span>— ${esc(w.title || w.book)}</span></a>` : ''}
-          </li>`).join('')}
-        </ul>`).join('') : `<div class="empty"><p>No saved words yet.</p><a class="btn" href="#/">Go to the shelves</a></div>`}
-    </section>`;
-  };
-  draw();
-  root.addEventListener('click', e => {
-    const s = e.target.closest('[data-sort]');
-    if (s) { sort = s.dataset.sort; prefs.set('wordsSort', sort); draw(); return; }
-    const r = e.target.closest('[data-remove]');
-    if (r) { removeWord(r.dataset.remove); return; }
-    const sp = e.target.closest('[data-speak]');
-    if (sp) speak(sp.dataset.speak);
-  });
-  const unsub = subscribe(draw);
-  return () => unsub();
 }
 
 /* ---------------- Settings ---------------- */
@@ -105,7 +48,7 @@ export function renderSettings(root) {
 
       <section class="panel">
         <h2>Data</h2>
-        <div class="btn-row"><button class="btn" data-act="export">Download my words (JSON)</button></div>
+        <div class="btn-row"><button class="btn" data-act="export">Download my progress (JSON)</button></div>
       </section>
     </section>`;
   };
@@ -120,7 +63,7 @@ export function renderSettings(root) {
     if (b.dataset.act === 'disconnect') setSyncConfig(null);
     if (b.dataset.act === 'export') {
       const url = URL.createObjectURL(new Blob([exportJSON()], { type: 'application/json' }));
-      const a = Object.assign(document.createElement('a'), { href: url, download: `sisyphus-words-${new Date().toISOString().slice(0, 10)}.json` });
+      const a = Object.assign(document.createElement('a'), { href: url, download: `sisyphus-progress-${new Date().toISOString().slice(0, 10)}.json` });
       document.body.append(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(url), 1000);
     }
   });

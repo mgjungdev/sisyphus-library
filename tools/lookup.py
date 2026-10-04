@@ -1,4 +1,4 @@
-"""Batch dictionary lookup for glossary writing (Datamuse).
+"""Batch dictionary lookup (Datamuse).
 
 Usage: python tools/lookup.py word1 word2 ...     (or  -f words.txt)
 Prints, per word: American IPA (stress marks placed at syllable onset), part-of-speech

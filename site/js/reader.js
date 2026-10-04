@@ -1,9 +1,9 @@
 import { esc, roman, volOf } from './art.js';
 import { openCard, closeCard, cardOpen } from './card.js';
-import { getProgress, setProgress, savedAt, isSaved, prefs, subscribe } from './store.js';
+import { getProgress, setProgress, prefs } from './store.js';
 
 /* ---------- reading preferences ---------- */
-const DEFAULTS = { fs: 20, lh: 'normal', margin: 'normal', layout: 'auto', align: 'justify', turn: 'slide', marks: true };
+const DEFAULTS = { fs: 20, lh: 'normal', margin: 'normal', layout: 'auto', align: 'justify', turn: 'slide' };
 const LH = { compact: 1.42, normal: 1.6, relaxed: 1.85 };
 const MARGIN = { narrow: [22, 16], normal: [40, 24], wide: [64, 36] }; // [wide screens, phones]
 const THEMES = [['auto', 'Auto'], ['white', 'White'], ['paper', 'Paper'], ['gray', 'Gray'], ['night', 'Night']];
@@ -37,13 +37,7 @@ export function renderReader(root, book, startPara) {
   const total = book.paragraphs.length;
   const o = opt();
 
-  const tok = (x, pi) => {
-    if (typeof x === 'string') return esc(x);
-    const [s, l, id] = x;
-    const sv = savedAt(l, book.slug, pi) ? ' saved' : '';
-    if (id) return `<span class="g${sv}" data-id="${id}" data-h="${esc(l)}" tabindex="0" role="button">${esc(s)}</span>`;
-    return `<span class="w${sv}" data-l="${esc(l)}">${esc(s)}</span>`;
-  };
+  const tok = x => typeof x === 'string' ? esc(x) : `<span class="w" data-l="${esc(x[1])}">${esc(x[0])}</span>`;
   const chapters = book.chapters || [];
   const segs = chapters.length
     ? chapters.map((c, i) => ({ title: c.title, start: i === 0 ? 1 : c.para, end: (chapters[i + 1]?.para ?? total + 1) - 1 }))
@@ -59,7 +53,7 @@ export function renderReader(root, book, startPara) {
   const paraHTML = i => {
     const p = book.paragraphs[i - 1];
     if (p.length === 1 && p[0] && p[0].h) return `<h2 class="ch" id="p${i}" data-p="${i}">${esc(p[0].h)}</h2>`;
-    return `<p id="p${i}" data-p="${i}">${p.map(x => tok(x, i)).join('')}</p>`;
+    return `<p id="p${i}" data-p="${i}">${p.map(tok).join('')}</p>`;
   };
   const seg = (name, items, cur) => `<div class="seg" role="group">${items.map(([v, l]) =>
     `<button class="chip" data-set="${name}" data-val="${v}" aria-pressed="${String(cur) === String(v)}">${l}</button>`).join('')}</div>`;
@@ -70,7 +64,7 @@ export function renderReader(root, book, startPara) {
       <a class="r-back" href="#/">${ICON.back}<span>Library</span></a>
       <div class="r-title"><b>${esc(book.title)}${book.vol ? ` ${roman(book.vol)}` : ''}</b><span>${esc(book.author)}</span></div>
       <div class="r-actions">
-        <button class="icon-btn" data-panel="words" aria-label="Words in this story" aria-expanded="false">${ICON.list}</button>
+        ${chapters.length ? `<button class="icon-btn" data-panel="toc" aria-label="Contents" aria-expanded="false">${ICON.list}</button>` : ''}
         <button class="icon-btn aa" data-panel="aa" aria-label="Reading settings" aria-expanded="false">Aa</button>
       </div>
     </header>
@@ -106,13 +100,11 @@ export function renderReader(root, book, startPara) {
       <div class="row"><span class="lbl">Page turn</span>${seg('turn', [['slide', 'Slide'], ['none', 'None']], o.turn)}</div>
       <div class="row"><span class="lbl">Theme</span>
         <div class="swatches">${THEMES.map(([v, l]) => `<button class="swatch" data-theme-set="${v}" data-t="${v}" aria-pressed="${currentTheme() === v}"><i></i>${l}</button>`).join('')}</div></div>
-      <div class="row"><span class="lbl">Glossary underlines</span>${seg('marks', [[true, 'Show'], [false, 'Hide']], o.marks)}</div>
     </aside>
 
-    <aside class="panel-words" hidden aria-label="Words in this story">
-      <header><h2>Words in this story</h2><button class="icon-btn" data-close-panel aria-label="Close">${ICON.close}</button></header>
-      <div class="seg wtabs" role="group"><button class="chip" data-wtab="all" aria-pressed="true">All ${book.order.length}</button><button class="chip" data-wtab="saved" aria-pressed="false">Saved</button>${chapters.length ? '<button class="chip" data-wtab="toc" aria-pressed="false">Contents</button>' : ''}</div>
-      <ol class="wlist"></ol>
+    <aside class="panel-toc" hidden aria-label="Contents">
+      <header><h2>Contents</h2><button class="icon-btn" data-close-panel aria-label="Close">${ICON.close}</button></header>
+      <ol class="toc"></ol>
     </aside>
   </div>`;
 
@@ -183,7 +175,6 @@ export function renderReader(root, book, startPara) {
     L = measure();
     R.classList.toggle('is-spread', L.spread);
     R.classList.toggle('phone', L.phone);
-    R.classList.toggle('no-marks', !o.marks);
     R.style.setProperty('--fs', o.fs + 'px');
     R.style.setProperty('--lh', LH[o.lh]);
     R.style.setProperty('--align', o.align);
@@ -235,7 +226,7 @@ export function renderReader(root, book, startPara) {
   function firstWordOnPage() {
     const p = flow.querySelector(`[data-p="${firstParaOnPage(page)}"]`);
     if (!p) return null;
-    for (const w of p.querySelectorAll('.w, .g')) if (pageOf(w) >= page) return w;
+    for (const w of p.querySelectorAll('.w')) if (pageOf(w) >= page) return w;
     return p;
   }
 
@@ -317,25 +308,7 @@ export function renderReader(root, book, startPara) {
   const setChrome = on => { chromeShown = on; R.classList.toggle('chrome-hidden', !on); };
 
   /* ---------- input ---------- */
-  const openFor = span => {
-    const para = +span.closest('p[data-p]').dataset.p;
-    openCard({
-      anchor: span, book, para, surface: span.textContent, lemma: span.dataset.l || span.dataset.h,
-      id: span.dataset.id || null, onNavigate: ref => gotoEntry(ref),
-    });
-  };
-  const gotoEntry = id => {
-    const cp = book.cards[id]?.para;
-    if (cp && segOf(cp) !== si) { renderSeg(segOf(cp)); layout(null); }
-    const span = flow.querySelector(`.g[data-id="${id}"]`);
-    if (!span) return;
-    closeCard(true);
-    closePanels();
-    const pg = pageOf(span);
-    held = null;
-    show(pg - (pg % L.per));
-    setTimeout(() => openFor(span), 60);
-  };
+  const openFor = span => openCard({ anchor: span, surface: span.textContent, lemma: span.dataset.l });
 
   let down = null, swiped = false;
   stage.addEventListener('pointerdown', e => { down = { x: e.clientX, y: e.clientY, t: Date.now() }; swiped = false; });
@@ -349,11 +322,11 @@ export function renderReader(root, book, startPara) {
     if (swiped) { swiped = false; return; }
     const tb = e.target.closest('.turn');
     if (tb) return turn(tb.classList.contains('next') ? 1 : -1);
-    const span = e.target.closest('.clip .g, .clip .w');
+    const span = e.target.closest('.clip .w');
     const sel = getSelection();
     if (span && !(sel && !sel.isCollapsed && sel.toString().trim().length > 1)) return openFor(span);
     if (cardOpen()) return closeCard();
-    if (!panels.aa.hidden || !panels.words.hidden) return closePanels();
+    if (Object.values(panels).some(p => p && !p.hidden)) return closePanels();
     setChrome(!chromeShown);
   });
   R.querySelector('.r-scrub').addEventListener('click', e => {
@@ -361,15 +334,12 @@ export function renderReader(root, book, startPara) {
     if (b) turn(b.classList.contains('next') ? 1 : -1);
   });
   if (matchMedia('(hover: hover)').matches) {
-    clip.addEventListener('pointerover', e => { if (!busy) markHover(e.target.closest('.w, .g')); });
+    clip.addEventListener('pointerover', e => { if (!busy) markHover(e.target.closest('.w')); });
     clip.addEventListener('pointerleave', () => markHover(null));
   }
-  stage.addEventListener('keydown', e => {
-    if ((e.key === 'Enter' || e.key === ' ') && e.target.classList?.contains('g')) { e.preventDefault(); e.stopPropagation(); openFor(e.target); }
-  });
   const onKey = e => {
-    if (e.target.closest?.('input, textarea, .card, .panel-aa, .panel-words')) return;
-    if (['ArrowRight', 'PageDown'].includes(e.key) || (e.key === ' ' && !e.target.classList?.contains('g'))) { e.preventDefault(); turn(1); }
+    if (e.target.closest?.('input, textarea, .card, .panel-aa, .panel-toc')) return;
+    if (['ArrowRight', 'PageDown'].includes(e.key) || e.key === ' ') { e.preventDefault(); turn(1); }
     if (['ArrowLeft', 'PageUp'].includes(e.key)) { e.preventDefault(); turn(-1); }
     if (e.key === 'Escape') closePanels();
   };
@@ -383,7 +353,7 @@ export function renderReader(root, book, startPara) {
   scrub.addEventListener('input', () => { closeCard(true); held = null; show((+scrub.value - 1) * L.per); });
 
   /* ---------- panels ---------- */
-  const panels = { aa: R.querySelector('.panel-aa'), words: R.querySelector('.panel-words') };
+  const panels = { aa: R.querySelector('.panel-aa'), toc: R.querySelector('.panel-toc') };
   function closePanels() {
     Object.values(panels).forEach(p => { p.hidden = true; });
     R.querySelectorAll('[data-panel]').forEach(b => b.setAttribute('aria-expanded', 'false'));
@@ -393,29 +363,16 @@ export function renderReader(root, book, startPara) {
     const open = p.hidden;
     closePanels(); closeCard(true);
     p.hidden = !open; b.setAttribute('aria-expanded', String(open));
-    if (open && b.dataset.panel === 'words') drawWords();
+    if (open && b.dataset.panel === 'toc') drawToc();
   }));
   R.querySelector('[data-close-panel]').addEventListener('click', closePanels);
 
-  let wtab = 'all';
-  function drawWords() {
-    if (wtab === 'toc') {
-      R.querySelector('.wlist').innerHTML = segs.map((x, n) => `<li><button data-seg="${n}"${n === si ? ' aria-current="true"' : ''}><span class="hw">${esc(x.title || book.title)}</span></button></li>`).join('');
-      return;
-    }
-    const ids = book.order.filter(id => wtab === 'all' || isSaved(book.cards[id].headword));
-    R.querySelector('.wlist').innerHTML = ids.length ? ids.map(id => {
-      const c = book.cards[id];
-      return `<li><button data-goto="${id}"><span class="hw">${esc(c.headword)}</span><span class="ko" lang="ko">${esc(c.sense_ko)}</span></button></li>`;
-    }).join('') : '<li class="none">Words you save with ☆ appear here.</li>';
+  function drawToc() {
+    panels.toc.querySelector('.toc').innerHTML = segs.map((x, n) => `<li><button data-seg="${n}"${n === si ? ' aria-current="true"' : ''}>${esc(x.title || book.title)}</button></li>`).join('');
   }
-  panels.words.addEventListener('click', e => {
-    const t = e.target.closest('[data-wtab]');
-    if (t) { wtab = t.dataset.wtab; panels.words.querySelectorAll('[data-wtab]').forEach(b => b.setAttribute('aria-pressed', String(b === t))); drawWords(); }
-    const g = e.target.closest('[data-goto]');
-    if (g) gotoEntry(g.dataset.goto);
-    const sgb = e.target.closest('[data-seg]');
-    if (sgb) { closePanels(); held = null; renderSeg(+sgb.dataset.seg); layout(null); show(0); }
+  panels.toc.addEventListener('click', e => {
+    const b = e.target.closest('[data-seg]');
+    if (b) { closePanels(); held = null; renderSeg(+b.dataset.seg); layout(null); show(0); }
   });
 
   panels.aa.addEventListener('click', e => {
@@ -435,15 +392,6 @@ export function renderReader(root, book, startPara) {
     layout(anchor);
   });
 
-  /* ---------- saved highlight ---------- */
-  let wordsRev = -1;
-  const unsub = subscribe(st => {
-    if (st.wordsRev === wordsRev) return;
-    wordsRev = st.wordsRev;
-    flow.querySelectorAll('.g, .w').forEach(s => s.classList.toggle('saved', savedAt(s.dataset.h || s.dataset.l, book.slug, +s.parentElement.dataset.p)));
-    if (!panels.words.hidden) drawWords();
-  });
-
   /* ---------- start ---------- */
   let rz;
   const onResize = () => { clearTimeout(rz); rz = setTimeout(() => layout(hold()), 150); };
@@ -458,7 +406,6 @@ export function renderReader(root, book, startPara) {
 
   return () => {
     closeCard(true);
-    unsub();
     removeEventListener('keydown', onKey);
     removeEventListener('resize', onResize);
   };

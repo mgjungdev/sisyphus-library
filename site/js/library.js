@@ -294,7 +294,6 @@ function pullOut(el, book, go) {
         <dt>Genre</dt><dd>${esc(book.genre)}</dd>
         <dt>Level</dt><dd>${book.level} of 5</dd>
         <dt>Length</dt><dd>${book.words.toLocaleString('en-US')} words, about ${book.minutes} min</dd>
-        <dt>Glossary</dt><dd>${book.entries} words and phrases</dd>
         ${p ? `<dt>Progress</dt><dd>${p.done ? 'Finished' : `${p.pct}%`}<div class="meter"><i style="width:${p.done ? 100 : p.pct}%"></i></div></dd>` : ''}
       </dl>
       <div class="actions">

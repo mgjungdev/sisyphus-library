@@ -1,4 +1,4 @@
-// Live dictionary lookups for words without a curated card.
+// Live dictionary lookups for the word card.
 // Datamuse (definitions, IPA, synonyms) -> Wiktionary REST fallback. Cached per device.
 
 const mem = new Map();
@@ -112,7 +112,6 @@ export function dictLinks(word) {
   return [
     { name: 'Cambridge', url: `https://dictionary.cambridge.org/dictionary/english/${dash}` },
     { name: 'Merriam-Webster', url: `https://www.merriam-webster.com/dictionary/${q}` },
-    { name: '네이버', url: `https://en.dict.naver.com/#/search?query=${q}` },
     { name: 'Thesaurus', url: `https://www.thesaurus.com/browse/${q}` },
   ];
 }

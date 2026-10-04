@@ -1,5 +1,5 @@
-// Local-first store for saved words, reading progress and settings.
-// Words + progress sync to a private GitHub repo when a token is set.
+// Local-first store for reading progress and settings.
+// Progress syncs to a private GitHub repo when a token is set.
 
 const LS = {
   get(k, d) { try { const v = localStorage.getItem(k); return v == null ? d : JSON.parse(v); } catch { return d; } },
@@ -7,14 +7,12 @@ const LS = {
   del(k) { try { localStorage.removeItem(k); } catch { /* ignore */ } },
 };
 
-const FILES = { words: 'wordbank.json', progress: 'progress.json' };
+const FILES = { progress: 'progress.json' };
 const listeners = new Set();
 const state = {
-  words: LS.get('sl.words', {}),        // key -> {word, headword, book, para, sentence, sense, saved, updated, removed}
   progress: LS.get('sl.progress', {}),  // slug -> {para, pct, done, updated}
   sync: LS.get('sl.sync', null),        // {owner, repo, token}
   shas: LS.get('sl.shas', {}),
-  wordsRev: 0,                          // bumped whenever the word bank changes
   status: 'local',                      // local | synced | pending | syncing | offline | error
   error: '',
 };
@@ -24,44 +22,6 @@ export function subscribe(fn) { listeners.add(fn); return () => listeners.delete
 export function getState() { return state; }
 
 function now() { return new Date().toISOString(); }
-export const keyOf = w => w.toLowerCase().replace(/’/g, "'").trim();
-
-/* ---------- words ---------- */
-export function isSaved(word) {
-  const r = state.words[keyOf(word)];
-  return !!r && !r.removed;
-}
-export function savedAt(word, slug, para) {
-  const r = state.words[keyOf(word)];
-  return !!r && !r.removed && r.book === slug && r.para === para;
-}
-export function savedList() {
-  return Object.entries(state.words).filter(([, r]) => !r.removed).map(([k, r]) => ({ key: k, ...r }));
-}
-export function toggleWord(rec) {
-  const k = keyOf(rec.headword);
-  const cur = state.words[k];
-  if (cur && !cur.removed) {
-    state.words[k] = { ...cur, removed: true, updated: now() };
-  } else {
-    state.words[k] = { ...rec, saved: now(), updated: now(), removed: false };
-  }
-  state.wordsRev++;
-  LS.set('sl.words', state.words);
-  schedule('words');
-  emit();
-  return !(cur && !cur.removed);
-}
-export function removeWord(key) {
-  const cur = state.words[key];
-  if (!cur) return;
-  state.words[key] = { ...cur, removed: true, updated: now() };
-  state.wordsRev++;
-  LS.set('sl.words', state.words);
-  schedule('words');
-  emit();
-}
-
 /* ---------- progress ---------- */
 export function getProgress(slug) { return state.progress[slug] || null; }
 let progressTimer = null, progressWrite = null;
@@ -137,7 +97,6 @@ async function syncOne(kind) {
     const remote = await pull(kind);
     const merged = merge(remote.data, state[kind]);
     state[kind] = merge(state[kind], merged);
-    if (kind === 'words') state.wordsRev++;
     LS.set('sl.' + kind, state[kind]);
     const body = JSON.stringify(merged, null, 1);
     if (remote.sha && body === JSON.stringify(remote.data, null, 1)) { state.shas[kind] = remote.sha; return; }
@@ -173,7 +132,7 @@ async function runSync(kinds) {
     running = null; emit();
   }
 }
-export function syncAll() { return runSync(['words', 'progress']); }
+export function syncAll() { return runSync(['progress']); }
 
 if (state.sync) {
   state.status = 'pending';
@@ -183,5 +142,5 @@ if (state.sync) {
 }
 
 export function exportJSON() {
-  return JSON.stringify({ exported: now(), words: state.words, progress: state.progress }, null, 1);
+  return JSON.stringify({ exported: now(), progress: state.progress }, null, 1);
 }

@@ -6,16 +6,17 @@ Usage:
   python tools/pipeline.py mark-reviewed <slug>…  record "reviewed": <today> in content/books.json
   python tools/pipeline.py feed                   JSON: the jobs the wave needs now (read by the control queue)
   python tools/pipeline.py panel                  JSON: waves and book stages for the control dashboard
-  python tools/pipeline.py deploy [--dry-run]     check, build, commit and push every reviewed book of the wave
+  python tools/pipeline.py deploy [--dry-run]     check sources, build, commit and push every reviewed book of the wave
   python tools/pipeline.py start [<wave>]         open a PIPELINE.md wave now, alongside the current one (default: the first not begun)
 
-Stages: no-source → no-glossary → failing → unreviewed → reviewed → deployed.
+Stages: no-source → unreviewed → reviewed → deployed.
 A wave is every book already in progress; when none is, the next shelf-months without sources
 (`months_per_wave` in pipeline.config.json, default 2). A wave of the PIPELINE.md table can also be opened early
 with `start` (recorded under "started" in pipeline.config.json); the dashboard offers it as a button (the panel's
 "actions").
-The control queue (~/sisyphus/control) runs one job per book and stage — import, glossary, check —
-and one deploy job once every book of the wave is reviewed.
+The control queue (~/sisyphus/control) runs one job per book and stage — import, then a review of the imported
+text — and one deploy job once every book of the wave is reviewed. A book is deployed once origin/main's
+content/books.json marks it reviewed.
 """
 import datetime
 import hashlib
@@ -27,17 +28,17 @@ import time
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from check_glossary import check  # noqa: E402
+from text import source_problems  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 CONTENT = ROOT / "content"
 BOOKS = CONTENT / "books.json"
-LONG = 12000  # words; writers work from tools/candidates.py above this
+LONG = 12000  # words; shown as LONG by `next`
 CONFIG = ROOT / "pipeline.config.json"  # local, git-ignored
 DEFAULTS = {
     "months_per_wave": 2,
     # Model per job. Haiku importers were unreliable (2026-09-28), so imports use sonnet.
-    "models": {"import": "sonnet", "glossary": "sonnet", "check": "opus"},
+    "models": {"import": "sonnet", "review": "sonnet"},
 }
 
 
@@ -64,11 +65,11 @@ def catalog() -> list[dict]:
 
 def deployed_slugs() -> set[str]:
     try:
-        out = subprocess.run(["git", "ls-tree", "--name-only", "origin/main", "content/glossary/"],
-                             cwd=ROOT, capture_output=True, text=True, check=True).stdout
-    except (OSError, subprocess.CalledProcessError):
+        out = subprocess.run(["git", "show", "origin/main:content/books.json"],
+                             cwd=ROOT, capture_output=True, encoding="utf-8", check=True).stdout
+        return {b["slug"] for b in json.loads(out) if b.get("reviewed")}
+    except (OSError, ValueError, subprocess.CalledProcessError):
         return set()
-    return {Path(p).stem for p in out.split()}
 
 
 def words(slug: str) -> int:
@@ -80,10 +81,6 @@ def stage(book: dict, deployed: set[str]) -> str:
     slug = book["slug"]
     if not (CONTENT / "sources" / f"{slug}.txt").exists():
         return "no-source"
-    if not (CONTENT / "glossary" / f"{slug}.json").exists():
-        return "no-glossary"
-    if check(slug):
-        return "failing"
     if not book.get("reviewed"):
         return "unreviewed"
     return "deployed" if slug in deployed else "reviewed"
@@ -135,21 +132,13 @@ def job_for(b: dict, s: str, models: dict) -> dict | None:
                           f"`python tools/set_source.py {slug}=<gutenberg id>`. If the Gutenberg MCP catalog is down, "
                           f"find the id on gutendex.com and use `tools/import_gutenberg.py` directly. If the story "
                           f"cannot be imported, say why in one paragraph and stop."}
-    if s in ("no-glossary", "failing"):
-        w = words(slug)
-        fix = (" The glossary already exists but fails `python tools/check_glossary.py`; fix the existing file "
-               "instead of rewriting it." if s == "failing" else "")
-        long = f" The story has {w} words, so work from `python tools/candidates.py {slug}`." if w > LONG else ""
-        return {"key": f"glossary:{slug}", "title": f"{title}{vol_label(b)} · 어휘집", "model": models["glossary"], "tags": [slug],
-                "prompt": f"Write the glossary for the Sisyphus Library book {who}. Follow "
-                          f"`.claude/agents/glossary-writer.md` exactly.{long}{fix} "
-                          f"`python tools/check_glossary.py {slug}` must pass before you finish."}
     if s == "unreviewed":
-        return {"key": f"check:{slug}", "title": f"{title}{vol_label(b)} · 검토", "model": models["check"], "tags": [slug],
-                "prompt": f"Review the glossary of the Sisyphus Library book {who}, which you did not write. Follow "
-                          f"`.claude/agents/glossary-checker.md` exactly for this slug. When "
-                          f"`python tools/check_glossary.py {slug}` passes after your fixes, run "
-                          f"`python tools/pipeline.py mark-reviewed {slug}`."}
+        return {"key": f"review:{slug}", "title": f"{title}{vol_label(b)} · 검토", "model": models["review"], "tags": [slug],
+                "prompt": f"Check the imported source text of the Sisyphus Library book {who}: "
+                          f"`content/sources/{slug}.txt`. It must start at the story's first line and end at its last, "
+                          f"carry no Project Gutenberg header, footer, licence or transcriber's notes, keep paragraphs "
+                          f"separated by blank lines, and mark each chapter with a `## ` heading line when the story has "
+                          f"chapters. Fix what is wrong in place, then run `python tools/pipeline.py mark-reviewed {slug}`."}
     return None
 
 
@@ -248,11 +237,10 @@ def deploy(dry: bool) -> None:
         sys.exit("no reviewed books in the wave")
     slugs = [b["slug"] for b in books]
     for slug in slugs:
-        if errs := check(slug):
-            sys.exit(f"{slug}: check_glossary fails: {errs[0]}")
+        if errs := source_problems(slug):
+            sys.exit(f"{slug}: {errs[0]}")
     run(sys.executable, "tools/build.py")
-    paths = ["content/books.json"] + [f"content/{d}/{s}.{e}" for s in slugs
-                                      for d, e in (("sources", "txt"), ("glossary", "json"))]
+    paths = ["content/books.json"] + [f"content/sources/{s}.txt" for s in slugs]
     titles = ", ".join(b.get("title", b["slug"]) for b in books)
     msg = f"Add {len(books)} books: {titles}\n\nCo-Authored-By: Claude <noreply@anthropic.com>"
     if dry:
@@ -277,7 +265,7 @@ def deploy(dry: bool) -> None:
         for _, s in states():
             counts[s] = counts.get(s, 0) + 1
         status = " · ".join(f"{k}: {counts.get(k, 0)}" for k in
-                            ["deployed", "reviewed", "unreviewed", "failing", "no-glossary", "no-source"])
+                            ["deployed", "reviewed", "unreviewed", "no-source"])
         text = re.sub(r"(## Status\n)[^\n]*", lambda m: m.group(1) + f"{status} ({today}).", text, count=1)
         p.write_text(text, encoding="utf-8")
     except OSError:
@@ -292,8 +280,8 @@ def main():
         today = datetime.date.today().isoformat()
         by = {b["slug"]: b for b in books}
         for slug in sys.argv[2:]:
-            if check(slug):
-                sys.exit(f"{slug}: check_glossary fails; not marked")
+            if errs := source_problems(slug):
+                sys.exit(f"{slug}: {errs[0]}; not marked")
             by[slug]["reviewed"] = today
         BOOKS.write_text(json.dumps(books, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
         print("reviewed", len(sys.argv) - 2)
@@ -327,7 +315,7 @@ def main():
     counts: dict[str, int] = {}
     for _, s in st:
         counts[s] = counts.get(s, 0) + 1
-    order = ["deployed", "reviewed", "unreviewed", "failing", "no-glossary", "no-source"]
+    order = ["deployed", "reviewed", "unreviewed", "no-source"]
     print("  ".join(f"{k}: {counts.get(k, 0)}" for k in order))
     print("next wave:", ", ".join(b["slug"] for b, _ in wave) or "(none — all deployed)")
 
