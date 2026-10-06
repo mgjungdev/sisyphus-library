@@ -2277,7 +2277,9 @@
    "accent": "#e0cf94"
   },
   "month": "2028-09",
-  "plan": 93
+  "plan": 93,
+  "gutenberg": 30123,
+  "reviewed": "2026-10-01"
  },
  {
   "slug": "fall-of-the-house-of-usher",
@@ -2299,7 +2301,9 @@
    "accent": "#c9a24a"
   },
   "month": "2028-09",
-  "plan": 94
+  "plan": 94,
+  "gutenberg": 2148,
+  "reviewed": "2026-10-01"
  },
  {
   "slug": "haunted-and-the-haunters",
@@ -2321,7 +2325,9 @@
    "accent": "#d6cfb8"
   },
   "month": "2028-09",
-  "plan": 95
+  "plan": 95,
+  "gutenberg": 14195,
+  "reviewed": "2026-10-01"
  },
  {
   "slug": "daisy-miller",
@@ -2343,7 +2349,9 @@
    "accent": "#ecc9a8"
   },
   "month": "2028-09",
-  "plan": 96
+  "plan": 96,
+  "gutenberg": 208,
+  "reviewed": "2026-10-01"
  },
  {
   "slug": "modest-proposal",
@@ -2365,7 +2373,9 @@
    "accent": "#f3e2b8"
   },
   "month": "2028-10",
-  "plan": 97
+  "plan": 97,
+  "gutenberg": 1080,
+  "reviewed": "2026-10-01"
  },
  {
   "slug": "bartleby",
@@ -2388,7 +2398,9 @@
    "accent": "#e2cfa3"
   },
   "month": "2028-10",
-  "plan": 98
+  "plan": 98,
+  "gutenberg": 11231,
+  "reviewed": "2026-10-01"
  },
  {
   "slug": "rappaccinis-daughter",
@@ -2411,7 +2423,9 @@
    "accent": "#c9a24a"
   },
   "month": "2028-10",
-  "plan": 99
+  "plan": 99,
+  "gutenberg": 512,
+  "reviewed": "2026-10-01"
  },
  {
   "slug": "the-dead",
@@ -2433,7 +2447,9 @@
    "accent": "#e2cfa3"
   },
   "month": "2028-10",
-  "plan": 100
+  "plan": 100,
+  "gutenberg": 2814,
+  "reviewed": "2026-10-01"
  },
  {
   "slug": "treasure-island-1",
@@ -2467,7 +2483,8 @@
    "to": "XIX",
    "heading": "PART [A-Z]+--.*|[IVXLC]+ [A-Z“][^.?!]*",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "treasure-island-2",
@@ -2500,7 +2517,8 @@
    "nth": 1,
    "to": null,
    "heading": "PART [A-Z]+--.*|[IVXLC]+ [A-Z“][^.?!]*"
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "around-the-world-1",
@@ -2534,7 +2552,8 @@
    "to": "CHAPTER XXI.",
    "heading": "CHAPTER [IVXLC]+\\..*",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-01"
  },
  {
   "slug": "around-the-world-2",
@@ -2567,7 +2586,8 @@
    "nth": 1,
    "to": null,
    "heading": "CHAPTER [IVXLC]+\\..*"
-  }
+  },
+  "reviewed": "2026-10-01"
  },
  {
   "slug": "hound-of-the-baskervilles-1",
@@ -2600,7 +2620,8 @@
    "to": "Chapter 9.",
    "heading": "Chapter \\d+\\. .*",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-01"
  },
  {
   "slug": "hound-of-the-baskervilles-2",
@@ -2632,7 +2653,8 @@
    "nth": 1,
    "to": "THE END",
    "heading": "Chapter \\d+\\. .*"
-  }
+  },
+  "reviewed": "2026-10-01"
  },
  {
   "slug": "tom-sawyer-1",
@@ -2666,7 +2688,8 @@
    "to": "CHAPTER XVII",
    "heading": "CHAPTER [IVXLC]+|CONCLUSION",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-01"
  },
  {
   "slug": "tom-sawyer-2",
@@ -2699,7 +2722,8 @@
    "nth": 1,
    "to": null,
    "heading": "CHAPTER [IVXLC]+|CONCLUSION"
-  }
+  },
+  "reviewed": "2026-10-01"
  },
  {
   "slug": "invisible-man-1",
@@ -2732,7 +2756,8 @@
    "to": "CHAPTER XVIII.",
    "heading": "CHAPTER [IVXLC]+\\..*|THE EPILOGUE",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-01"
  },
  {
   "slug": "invisible-man-2",
@@ -2764,7 +2789,8 @@
    "nth": 1,
    "to": null,
    "heading": "CHAPTER [IVXLC]+\\..*|THE EPILOGUE"
-  }
+  },
+  "reviewed": "2026-10-01"
  },
  {
   "slug": "white-fang-1",
@@ -2798,7 +2824,8 @@
    "to": "CHAPTER V",
    "heading": "PART [IVX]+|CHAPTER [IVXLC]+ [A-Z].*",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-01"
  },
  {
   "slug": "white-fang-2",
@@ -2831,7 +2858,8 @@
    "nth": 2,
    "to": null,
    "heading": "PART [IVX]+|CHAPTER [IVXLC]+ [A-Z].*"
-  }
+  },
+  "reviewed": "2026-10-01"
  },
  {
   "slug": "study-in-scarlet-1",
@@ -2865,7 +2893,8 @@
    "to": "PART II.",
    "heading": "PART I+\\..*|CHAPTER [IVX]+\\..*",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "study-in-scarlet-2",
@@ -2898,7 +2927,8 @@
    "nth": 1,
    "to": null,
    "heading": "PART I+\\..*|CHAPTER [IVX]+\\..*"
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "prisoner-of-zenda-1",
@@ -2932,7 +2962,8 @@
    "to": "CHAPTER 12",
    "heading": "CHAPTER \\d+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "prisoner-of-zenda-2",
@@ -2965,7 +2996,8 @@
    "nth": 1,
    "to": null,
    "heading": "CHAPTER \\d+"
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "war-of-the-worlds-1",
@@ -2999,7 +3031,8 @@
    "to": "XVI.",
    "heading": "BOOK (ONE|TWO) THE .*|[IVX]+\\. [A-Z“][A-Z “”’,-]+\\.",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "war-of-the-worlds-2",
@@ -3032,7 +3065,8 @@
    "nth": 1,
    "to": null,
    "heading": "BOOK (ONE|TWO) THE .*|[IVX]+\\. [A-Z“][A-Z “”’,-]+\\."
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "journey-to-the-centre-1",
@@ -3066,7 +3100,8 @@
    "to": "CHAPTER 16",
    "heading": "CHAPTER \\d+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "journey-to-the-centre-2",
@@ -3100,7 +3135,8 @@
    "to": "CHAPTER 31",
    "heading": "CHAPTER \\d+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "journey-to-the-centre-3",
@@ -3133,7 +3169,8 @@
    "nth": 1,
    "to": "End of the Voyage Extraordinaire",
    "heading": "CHAPTER \\d+"
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "sign-of-the-four",
@@ -3163,7 +3200,8 @@
    "nth": 1,
    "to": null,
    "heading": "Chapter [IVX]+ [A-Z].*"
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "kidnapped-1",
@@ -3196,7 +3234,8 @@
    "to": "CHAPTER XVII",
    "heading": "CHAPTER [IVXL]+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "kidnapped-2",
@@ -3228,7 +3267,8 @@
    "nth": 1,
    "to": null,
    "heading": "CHAPTER [IVXL]+"
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "mysterious-affair-at-styles-1",
@@ -3261,7 +3301,8 @@
    "to": "CHAPTER VIII.",
    "heading": "CHAPTER [IVX]+\\. .*",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "mysterious-affair-at-styles-2",
@@ -3293,7 +3334,8 @@
    "nth": 1,
    "to": "THE END",
    "heading": "CHAPTER [IVX]+\\. .*"
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "three-men-in-a-boat-1",
@@ -3327,7 +3369,8 @@
    "to": "CHAPTER XI.",
    "heading": "CHAPTER [IVX]+\\.",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "three-men-in-a-boat-2",
@@ -3360,7 +3403,8 @@
    "nth": 1,
    "to": "Footnotes.",
    "heading": "CHAPTER [IVX]+\\."
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "thirty-nine-steps",
@@ -3390,7 +3434,8 @@
    "nth": 1,
    "to": null,
    "heading": "Chapter [IVX]+\\. .*"
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "the-gambler-1",
@@ -3423,7 +3468,8 @@
    "to": "XI",
    "heading": "[IVX]+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "the-gambler-2",
@@ -3455,7 +3501,8 @@
    "nth": 1,
    "to": null,
    "heading": "[IVX]+"
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "frankenstein-1",
@@ -3478,18 +3525,16 @@
    "accent": "#c9a24a"
   },
   "month": "2029-06",
-  "gutenberg": 84,
+  "gutenberg": 41445,
   "plan": 132,
   "series": "frankenstein",
   "vol": 1,
   "vols": 2,
   "source": {
-   "from": "Letter 1",
-   "nth": 2,
-   "to": "Chapter 14",
-   "heading": "(Letter|Chapter) \\d+",
-   "to_nth": 2
-  }
+   "script": "tools/editions/frankenstein_1818.py",
+   "edition": "1818"
+  },
+  "reviewed": "2026-10-05"
  },
  {
   "slug": "frankenstein-2",
@@ -3512,17 +3557,16 @@
    "accent": "#c9a24a"
   },
   "month": "2029-06",
-  "gutenberg": 84,
+  "gutenberg": 41445,
   "plan": 133,
   "series": "frankenstein",
   "vol": 2,
   "vols": 2,
   "source": {
-   "from": "Chapter 14",
-   "nth": 2,
-   "to": null,
-   "heading": "(Letter|Chapter) \\d+"
-  }
+   "script": "tools/editions/frankenstein_1818.py",
+   "edition": "1818"
+  },
+  "reviewed": "2026-10-05"
  },
  {
   "slug": "the-awakening-1",
@@ -3557,7 +3601,8 @@
    "to": "XX",
    "heading": "[IVXL]+",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "the-awakening-2",
@@ -3591,7 +3636,8 @@
    "nth": 2,
    "to": "BEYOND THE BAYOU",
    "heading": "[IVXL]+"
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "king-solomons-mines-1",
@@ -3625,7 +3671,8 @@
    "to": "CHAPTER VIII.",
    "heading": "CHAPTER [IVX]+\\. .*",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "king-solomons-mines-2",
@@ -3659,7 +3706,8 @@
    "to": "CHAPTER XIV.",
    "heading": "CHAPTER [IVX]+\\. .*",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "king-solomons-mines-3",
@@ -3692,7 +3740,8 @@
    "nth": 1,
    "to": null,
    "heading": "CHAPTER [IVX]+\\. .*"
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "the-great-gatsby-1",
@@ -3726,7 +3775,8 @@
    "to": "VI",
    "heading": "[IVX]+",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "the-great-gatsby-2",
@@ -3759,7 +3809,8 @@
    "nth": 2,
    "to": null,
    "heading": "[IVX]+"
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "island-of-doctor-moreau-1",
@@ -3793,7 +3844,8 @@
    "to": "XIV.",
    "heading": "INTRODUCTION\\.|[IVXL]+\\. [A-Z“][A-Z “”’.,-]+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "island-of-doctor-moreau-2",
@@ -3826,7 +3878,8 @@
    "nth": 1,
    "to": "NOTE.",
    "heading": "INTRODUCTION\\.|[IVXL]+\\. [A-Z“][A-Z “”’.,-]+"
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "scarlet-pimpernel-1",
@@ -3860,7 +3913,8 @@
    "to": "CHAPTER XI.",
    "heading": "CHAPTER [IVXL]+\\. .*",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-04"
  },
  {
   "slug": "scarlet-pimpernel-2",
@@ -3894,7 +3948,8 @@
    "to": "CHAPTER XXII.",
    "heading": "CHAPTER [IVXL]+\\. .*",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "scarlet-pimpernel-3",
@@ -3927,7 +3982,8 @@
    "nth": 1,
    "to": null,
    "heading": "CHAPTER [IVXL]+\\. .*"
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "ethan-frome",
@@ -3957,7 +4013,8 @@
    "nth": 2,
    "to": null,
    "heading": "ETHAN FROME|[IVX]+"
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "dorian-gray-1",
@@ -3991,7 +4048,8 @@
    "to": "CHAPTER IX.",
    "heading": "THE PREFACE|CHAPTER [IVX]+\\.",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "dorian-gray-2",
@@ -4024,7 +4082,8 @@
    "nth": 2,
    "to": "THE END",
    "heading": "THE PREFACE|CHAPTER [IVX]+\\."
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "lost-world-1",
@@ -4058,7 +4117,8 @@
    "to": "CHAPTER X",
    "heading": "CHAPTER [IVX]+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "lost-world-2",
@@ -4091,7 +4151,8 @@
    "nth": 1,
    "to": null,
    "heading": "CHAPTER [IVX]+"
-  }
+  },
+  "reviewed": "2026-10-04"
  },
  {
   "slug": "red-badge-of-courage-1",
@@ -4124,7 +4185,8 @@
    "to": "Chapter XII.",
    "heading": "Chapter [IVXLC]+\\.",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "red-badge-of-courage-2",
@@ -4156,7 +4218,8 @@
    "nth": 1,
    "to": "THE END.",
    "heading": "Chapter [IVXLC]+\\."
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "flatland",
@@ -4186,7 +4249,8 @@
    "nth": 1,
    "to": "PREFACE TO THE SECOND AND REVISED EDITION, 1884. BY THE EDITOR",
    "heading": "PART [IV]+ [A-Z ]+|§ \\d+ .*"
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "herland-1",
@@ -4220,7 +4284,8 @@
    "to": "CHAPTER 7.",
    "heading": "CHAPTER \\d+\\. .*",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "herland-2",
@@ -4253,7 +4318,8 @@
    "nth": 1,
    "to": null,
    "heading": "CHAPTER \\d+\\. .*"
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "man-who-was-thursday-1",
@@ -4287,7 +4353,8 @@
    "to": "CHAPTER IX.",
    "heading": "CHAPTER [IVXLC]+\\. [A-Z][A-Z ,'’.-]+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "man-who-was-thursday-2",
@@ -4320,7 +4387,8 @@
    "nth": 1,
    "to": null,
    "heading": "CHAPTER [IVXLC]+\\. [A-Z][A-Z ,'’.-]+"
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "sorrows-of-young-werther",
@@ -4349,7 +4417,8 @@
    "nth": 1,
    "to": null,
    "heading": "PREFACE|BOOK I+\\.?|THE EDITOR TO THE READER\\."
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "sea-wolf-1",
@@ -4383,7 +4452,8 @@
    "to": "CHAPTER XIII",
    "heading": "CHAPTER [IVXLC]+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "sea-wolf-2",
@@ -4417,7 +4487,8 @@
    "to": "CHAPTER XXVI",
    "heading": "CHAPTER [IVXLC]+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "sea-wolf-3",
@@ -4450,7 +4521,8 @@
    "nth": 1,
    "to": "THE END",
    "heading": "CHAPTER [IVXLC]+"
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "turn-of-the-screw",
@@ -4480,7 +4552,8 @@
    "nth": 2,
    "to": null,
    "heading": "THE TURN OF THE SCREW|[IVXL]+"
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "o-pioneers-1",
@@ -4514,7 +4587,8 @@
    "to": "VIII",
    "heading": "PART [IV]+\\. [A-Z][a-z].*|[IVXL]+",
    "to_nth": 3
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "o-pioneers-2",
@@ -4547,7 +4621,8 @@
    "nth": 3,
    "to": null,
    "heading": "PART [IV]+\\. [A-Z][a-z].*|[IVXL]+"
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "dracula-1",
@@ -4581,7 +4656,8 @@
    "to": "CHAPTER VII",
    "heading": "CHAPTER [IVXL]+|NOTE",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "dracula-2",
@@ -4615,7 +4691,8 @@
    "to": "CHAPTER XII",
    "heading": "CHAPTER [IVXL]+|NOTE",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "dracula-3",
@@ -4649,7 +4726,8 @@
    "to": "CHAPTER XVIII",
    "heading": "CHAPTER [IVXL]+|NOTE",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "dracula-4",
@@ -4683,7 +4761,8 @@
    "to": "CHAPTER XXIII",
    "heading": "CHAPTER [IVXL]+|NOTE",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "dracula-5",
@@ -4716,7 +4795,8 @@
    "nth": 1,
    "to": "THE END",
    "heading": "CHAPTER [IVXL]+|NOTE"
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "candide",
@@ -4746,7 +4826,8 @@
    "nth": 1,
    "to": "FOOTNOTES:",
    "heading": "[IVXL]+"
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "silas-marner-1",
@@ -4780,7 +4861,8 @@
    "to": "CHAPTER XI.",
    "heading": "PART I+\\.|CHAPTER [IVXL]+\\.|CONCLUSION",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "silas-marner-2",
@@ -4813,7 +4895,8 @@
    "nth": 2,
    "to": null,
    "heading": "PART I+\\.|CHAPTER [IVXL]+\\.|CONCLUSION"
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "twenty-thousand-leagues-1",
@@ -4847,7 +4930,8 @@
    "to": "CHAPTER XVIII",
    "heading": "PART (ONE|TWO)|CHAPTER [IVXL]+ .+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "twenty-thousand-leagues-2",
@@ -4881,7 +4965,8 @@
    "to": "CHAPTER IX",
    "heading": "PART (ONE|TWO)|CHAPTER [IVXL]+ .+",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "twenty-thousand-leagues-3",
@@ -4914,7 +4999,8 @@
    "nth": 2,
    "to": null,
    "heading": "PART (ONE|TWO)|CHAPTER [IVXL]+ .+"
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "washington-square-1",
@@ -4948,7 +5034,8 @@
    "to": "XVIII",
    "heading": "[IVXL]+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "washington-square-2",
@@ -4981,7 +5068,8 @@
    "nth": 1,
    "to": null,
    "heading": "[IVXL]+"
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "phantom-of-the-opera-1",
@@ -5015,7 +5103,8 @@
    "to": "Chapter IX  At the Masked Ball",
    "heading": "Prologue|Chapter [IVXL]+ .+|Epilogue\\.",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "phantom-of-the-opera-2",
@@ -5049,7 +5138,8 @@
    "to": "Chapter XIX  The Viscount and the Persian",
    "heading": "Prologue|Chapter [IVXL]+ .+|Epilogue\\.",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "phantom-of-the-opera-3",
@@ -5082,7 +5172,8 @@
    "nth": 1,
    "to": "[1] Even so, I am convinced that it would be easy to reach it by",
    "heading": "Prologue|Chapter [IVXL]+ .+|Epilogue\\."
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "northanger-abbey-1",
@@ -5116,7 +5207,8 @@
    "to": "CHAPTER 17",
    "heading": "CHAPTER \\d+",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "northanger-abbey-2",
@@ -5149,7 +5241,8 @@
    "nth": 2,
    "to": "A NOTE ON THE TEXT",
    "heading": "CHAPTER \\d+"
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "huckleberry-finn-1",
@@ -5183,7 +5276,8 @@
    "to": "CHAPTER XVII.",
    "heading": "CHAPTER ([IVXL]+\\.|THE LAST)",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "huckleberry-finn-2",
@@ -5217,7 +5311,8 @@
    "to": "CHAPTER XXIX.",
    "heading": "CHAPTER ([IVXL]+\\.|THE LAST)",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "huckleberry-finn-3",
@@ -5250,7 +5345,8 @@
    "nth": 2,
    "to": "THE END. YOURS TRULY, _HUCK FINN_.",
    "heading": "CHAPTER ([IVXL]+\\.|THE LAST)"
-  }
+  },
+  "reviewed": "2026-10-02"
  },
  {
   "slug": "notes-from-underground-1",
@@ -5315,7 +5411,8 @@
    "nth": 4,
    "to": null,
    "heading": "NOTES FROM THE UNDERGROUND\\[\\*\\] A NOVEL|PART I+ [A-ZÀ].+|[IVXL]+"
-  }
+  },
+  "reviewed": "2026-10-04"
  },
  {
   "slug": "room-with-a-view-1",
@@ -5349,7 +5446,8 @@
    "to": "Chapter X",
    "heading": "PART (ONE|TWO)|Chapter [IVXL]+ [A-Z].*",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-04"
  },
  {
   "slug": "room-with-a-view-2",
@@ -5382,7 +5480,8 @@
    "nth": 1,
    "to": null,
    "heading": "PART (ONE|TWO)|Chapter [IVXL]+ [A-Z].*"
-  }
+  },
+  "reviewed": "2026-10-05"
  },
  {
   "slug": "robinson-crusoe-1",
@@ -5416,7 +5515,8 @@
    "to": "CHAPTER VI. ILL AND CONSCIENCE-STRICKEN",
    "heading": "CHAPTER [IVXL]+\\. [A-Z].+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-05"
  },
  {
   "slug": "robinson-crusoe-2",
@@ -5450,7 +5550,8 @@
    "to": "CHAPTER XI. FINDS PRINT OF MAN’S FOOT ON THE SAND",
    "heading": "CHAPTER [IVXL]+\\. [A-Z].+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-05"
  },
  {
   "slug": "robinson-crusoe-3",
@@ -5484,7 +5585,8 @@
    "to": "CHAPTER XVI. RESCUE OF PRISONERS FROM CANNIBALS",
    "heading": "CHAPTER [IVXL]+\\. [A-Z].+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-04"
  },
  {
   "slug": "robinson-crusoe-4",
@@ -5517,7 +5619,8 @@
    "nth": 1,
    "to": null,
    "heading": "CHAPTER [IVXL]+\\. [A-Z].+"
-  }
+  },
+  "reviewed": "2026-10-04"
  },
  {
   "slug": "the-warden-1",
@@ -5618,7 +5721,8 @@
    "to": "XIX",
    "heading": "[IVXL]+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-04"
  },
  {
   "slug": "fathers-and-sons-2",
@@ -5651,7 +5755,8 @@
    "nth": 1,
    "to": "[1] In the text this word is given in English.",
    "heading": "[IVXL]+"
-  }
+  },
+  "reviewed": "2026-10-04"
  },
  {
   "slug": "scarlet-letter-1",
@@ -5685,7 +5790,8 @@
    "to": "XIII.",
    "heading": "[IVXL]+\\. [A-Z][A-Z ,’'-]+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-04"
  },
  {
   "slug": "scarlet-letter-2",
