@@ -6950,7 +6950,8 @@
    "to": "CHAPTER IV.",
    "heading": "THE PUBLISHER TO THE READER[.]|A LETTER FROM CAPTAIN GULLIVER TO HIS COUSIN SYMPSON[.]|PART [IV]+[.] .*|CHAPTER [IVXL]+[.]",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "gullivers-travels-2",
@@ -6984,7 +6985,8 @@
    "to": "CHAPTER IX.",
    "heading": "THE PUBLISHER TO THE READER[.]|A LETTER FROM CAPTAIN GULLIVER TO HIS COUSIN SYMPSON[.]|PART [IV]+[.] .*|CHAPTER [IVXL]+[.]",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "gullivers-travels-3",
@@ -7051,7 +7053,8 @@
    "to": "CHAPTER XXII.",
    "heading": "CHAPTER [IVXL]+[.]",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "sense-and-sensibility-2",
@@ -7085,7 +7088,8 @@
    "to": "CHAPTER XXXVII.",
    "heading": "CHAPTER [IVXL]+[.]",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "sense-and-sensibility-3",
@@ -7190,7 +7194,8 @@
    "to": "CHAPTER XI",
    "heading": "CHAPTER [IVXL]+",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "kim-3",
@@ -7224,7 +7229,8 @@
    "nth": 2,
    "to": null,
    "heading": "CHAPTER [IVXL]+"
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "house-of-the-seven-gables-1",
@@ -7501,7 +7507,8 @@
    "to": "CHAPTER XXII",
    "heading": "CHAPTER [IVXL]+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "wuthering-heights-3",
@@ -7534,7 +7541,8 @@
    "nth": 1,
    "to": null,
    "heading": "CHAPTER [IVXL]+"
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "this-side-of-paradise-1",
@@ -7568,7 +7576,8 @@
    "to": "CHAPTER 3. The Egotist Considers",
    "heading": "BOOK (ONE|TWO)—.*|CHAPTER [1-5][.] .*|(?![^a-z]*:—?$)[^a-z]+",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "this-side-of-paradise-2",
@@ -7602,7 +7611,8 @@
    "to": "FIVE WEEKS LATER",
    "heading": "BOOK (ONE|TWO)—.*|CHAPTER [1-5][.] .*|(?![^a-z]*:—?$)[^a-z]+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "this-side-of-paradise-3",
@@ -7635,7 +7645,8 @@
    "nth": 1,
    "to": "Appendix: Production notes for eBook edition 11",
    "heading": "BOOK (ONE|TWO)—.*|CHAPTER [1-5][.] .*|(?![^a-z]*:—?$)[^a-z]+"
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "oliver-twist-1",
@@ -7670,7 +7681,8 @@
    "to": "CHAPTER XV.",
    "heading": "CHAPTER [IVXL]+[.] .*",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "oliver-twist-2",
@@ -7705,7 +7717,8 @@
    "to": "CHAPTER XXIX.",
    "heading": "CHAPTER [IVXL]+[.] .*",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "oliver-twist-3",
