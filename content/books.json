@@ -7740,7 +7740,8 @@
    "to": "CHAPTER XLII.",
    "heading": "CHAPTER [IVXL]+[.] .*",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "oliver-twist-4",
@@ -7774,7 +7775,8 @@
    "nth": 1,
    "to": null,
    "heading": "CHAPTER [IVXL]+[.] .*"
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "secret-agent-1",
@@ -8606,7 +8608,8 @@
    "to": "IV",
    "heading": "CHAPTER [IVXL]+|[IVX]+",
    "to_nth": 9
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "babbitt-3",
@@ -11443,7 +11446,8 @@
    "to": "CHAPTER XII.",
    "heading": "CHAPTER [IVXL]+\\. [^a-z]+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "villette-2",
