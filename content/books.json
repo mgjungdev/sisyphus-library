@@ -10496,7 +10496,8 @@
    "nth": 1,
    "to": "THE END",
    "heading": "PART (ONE|TWO)|CHAPTER [IVX]+ [A-Z][A-Z ,’\\x27—-]+"
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "age-of-innocence-1",
@@ -10530,7 +10531,8 @@
    "to": "XIV.",
    "heading": "Book I{1,2}|[IVXL]+\\.",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "age-of-innocence-2",
