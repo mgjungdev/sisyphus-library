@@ -11407,7 +11407,8 @@
    "nth": 2,
    "to": "Dublin, 1904.",
    "heading": "Chapter [IVX]+"
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "villette-1",
@@ -11477,7 +11478,8 @@
    "to": "CHAPTER XIX.",
    "heading": "CHAPTER [IVXL]+\\. [^a-z]+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "villette-3",
@@ -11512,7 +11514,8 @@
    "to": "CHAPTER XXVI.",
    "heading": "CHAPTER [IVXL]+\\. [^a-z]+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "villette-4",
@@ -11547,7 +11550,8 @@
    "to": "CHAPTER XXXV.",
    "heading": "CHAPTER [IVXL]+\\. [^a-z]+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "villette-5",
@@ -11581,7 +11585,8 @@
    "nth": 1,
    "to": "THE END.",
    "heading": "CHAPTER [IVXL]+\\. [^a-z]+"
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "moby-dick-1",
@@ -11615,7 +11620,8 @@
    "to": "CHAPTER 18. His Mark.",
    "heading": "ETYMOLOGY\\.|EXTRACTS\\.( \\(Supplied by a Sub-Sub-Librarian\\)\\.)?|CHAPTER \\d+\\. .+|Epilogue",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "moby-dick-2",
@@ -11649,7 +11655,8 @@
    "to": "CHAPTER 42. The Whiteness of the Whale.",
    "heading": "ETYMOLOGY\\.|EXTRACTS\\.( \\(Supplied by a Sub-Sub-Librarian\\)\\.)?|CHAPTER \\d+\\. .+|Epilogue",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "moby-dick-3",
