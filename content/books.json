@@ -9865,7 +9865,8 @@
    "to": "PART II",
    "heading": "PART [IV]+|EPILOGUE|CHAPTER [IVX]+|II?",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "crime-and-punishment-2",
@@ -9900,7 +9901,8 @@
    "to": "CHAPTER VII",
    "heading": "PART [IV]+|EPILOGUE|CHAPTER [IVX]+|II?",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "crime-and-punishment-3",
@@ -9935,7 +9937,8 @@
    "to": "CHAPTER VI",
    "heading": "PART [IV]+|EPILOGUE|CHAPTER [IVX]+|II?",
    "to_nth": 3
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "crime-and-punishment-4",
@@ -9970,7 +9973,8 @@
    "to": "PART V",
    "heading": "PART [IV]+|EPILOGUE|CHAPTER [IVX]+|II?",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "crime-and-punishment-5",
@@ -10005,7 +10009,8 @@
    "to": "CHAPTER III",
    "heading": "PART [IV]+|EPILOGUE|CHAPTER [IVX]+|II?",
    "to_nth": 6
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "crime-and-punishment-6",
@@ -10039,7 +10044,8 @@
    "nth": 6,
    "to": null,
    "heading": "PART [IV]+|EPILOGUE|CHAPTER [IVX]+|II?"
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "howards-end-1",
@@ -10073,7 +10079,8 @@
    "to": "Chapter 14",
    "heading": "Chapter \\d+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "howards-end-2",
@@ -10107,7 +10114,8 @@
    "to": "Chapter 27",
    "heading": "Chapter \\d+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "howards-end-3",
