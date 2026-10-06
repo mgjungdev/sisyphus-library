@@ -10357,7 +10357,8 @@
    "to": "CHAPTER V",
    "heading": "PART (ONE|TWO)|CHAPTER [IVX]+ [A-Z][A-Z ,’\\x27—-]+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "sons-and-lovers-2",
