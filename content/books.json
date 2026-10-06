@@ -10811,7 +10811,8 @@
    "to": "CHAPTER XXII.",
    "heading": "CHAPTER [IVXL]+\\.?|“[A-Z][A-Z ’,!?-]+\\.”|[A-Z][A-Z ’,!?-]+[.?!]?",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "north-and-south-3",
