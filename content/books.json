@@ -11234,7 +11234,8 @@
    "to": "XXXII",
    "heading": "Phase the [A-Z][a-z]+:|The Maiden|Maiden No More|The Rally|The Consequence|The Woman Pays|The Convert|Fulfilment|[IVXL]+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "tess-3",
@@ -11268,7 +11269,8 @@
    "to": "Phase the Sixth:",
    "heading": "Phase the [A-Z][a-z]+:|The Maiden|Maiden No More|The Rally|The Consequence|The Woman Pays|The Convert|Fulfilment|[IVXL]+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "tess-4",
@@ -11301,7 +11303,8 @@
    "nth": 1,
    "to": null,
    "heading": "Phase the [A-Z][a-z]+:|The Maiden|Maiden No More|The Rally|The Consequence|The Woman Pays|The Convert|Fulfilment|[IVXL]+"
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "portrait-of-the-artist-1",
