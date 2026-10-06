@@ -5379,7 +5379,8 @@
    "to": "IV",
    "heading": "NOTES FROM THE UNDERGROUND\\[\\*\\] A NOVEL|PART I+ [A-ZÀ].+|[IVXL]+",
    "to_nth": 4
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "notes-from-underground-2",
@@ -5654,7 +5655,8 @@
    "to": "Chapter XI",
    "heading": "Chapter [IVXL]+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "the-warden-2",
@@ -5687,7 +5689,8 @@
    "nth": 1,
    "to": null,
    "heading": "Chapter [IVXL]+"
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "fathers-and-sons-1",
@@ -5824,7 +5827,8 @@
    "nth": 1,
    "to": null,
    "heading": "[IVXL]+\\. [A-Z][A-Z ,’'-]+"
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "pride-and-prejudice-1",
@@ -5859,7 +5863,8 @@
    "heading": "CHAPTER [IVXLC]+\\.",
    "to_nth": 1,
    "drop": "\\[Illustration.*|_(Invented|Engraved) .*|PRIDE AND PREJUDICE:|A Novel\\.|In Three Volumes\\.|By the Author of .*|VOL\\. [IVX]+\\.|London: Printed for T\\. Egerton, Military Library, Whitehall\\. 1813\\.|END OF (VOL\\. I|THE SECOND VOLUME)\\."
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "pride-and-prejudice-2",
@@ -5894,7 +5899,8 @@
    "heading": "CHAPTER [IVXLC]+\\.",
    "to_nth": 2,
    "drop": "\\[Illustration.*|_(Invented|Engraved) .*|PRIDE AND PREJUDICE:|A Novel\\.|In Three Volumes\\.|By the Author of .*|VOL\\. [IVX]+\\.|London: Printed for T\\. Egerton, Military Library, Whitehall\\. 1813\\.|END OF (VOL\\. I|THE SECOND VOLUME)\\."
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "pride-and-prejudice-3",
@@ -5929,7 +5935,8 @@
    "heading": "CHAPTER [IVXLC]+\\.",
    "to_nth": 3,
    "drop": "\\[Illustration.*|_(Invented|Engraved) .*|PRIDE AND PREJUDICE:|A Novel\\.|In Three Volumes\\.|By the Author of .*|VOL\\. [IVX]+\\.|London: Printed for T\\. Egerton, Military Library, Whitehall\\. 1813\\.|END OF (VOL\\. I|THE SECOND VOLUME)\\."
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "pride-and-prejudice-4",
@@ -5963,7 +5970,8 @@
    "to": "Transcriber's note:",
    "heading": "CHAPTER [IVXLC]+\\.",
    "drop": "\\[Illustration.*|_(Invented|Engraved) .*|PRIDE AND PREJUDICE:|A Novel\\.|In Three Volumes\\.|By the Author of .*|VOL\\. [IVX]+\\.|London: Printed for T\\. Egerton, Military Library, Whitehall\\. 1813\\.|END OF (VOL\\. I|THE SECOND VOLUME)\\."
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "aspern-papers",
@@ -5993,7 +6001,8 @@
    "nth": 1,
    "to": null,
    "heading": "[IVXL]+"
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "billy-budd",
@@ -6023,7 +6032,8 @@
    "nth": 1,
    "to": "END OF BOOK,",
    "heading": "[IVXL]+"
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "hero-of-our-time-1",
@@ -6057,7 +6067,8 @@
    "to": "BOOK V THE THIRD EXTRACT FROM PECHORIN’S DIARY",
    "heading": "BOOK [IVX]+ .*|CHAPTER [IVXL]+([.] .*)?|FOREWORD TO BOOKS III, IV, AND V|THE HEART OF A RUSSIAN|CONCERNING PECHORIN’S DIARY|TAMAN|THE FATALIST|PRINCESS MARY",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "hero-of-our-time-2",
@@ -6090,7 +6101,8 @@
    "nth": 1,
    "to": "APPENDIX",
    "heading": "BOOK [IVX]+ .*|CHAPTER [IVXL]+([.] .*)?|FOREWORD TO BOOKS III, IV, AND V|THE HEART OF A RUSSIAN|CONCERNING PECHORIN’S DIARY|TAMAN|THE FATALIST|PRINCESS MARY"
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "agnes-grey-1",
@@ -6124,7 +6136,8 @@
    "to": "CHAPTER XII.",
    "heading": "CHAPTER [IVXL]+[.] .*",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "agnes-grey-2",
@@ -6157,7 +6170,8 @@
    "nth": 1,
    "to": "_Spottiswode & Co. Ltd._, _Printers_, _London_. _Colchester and Eton_.",
    "heading": "CHAPTER [IVXL]+[.] .*"
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "connecticut-yankee-1",
@@ -6191,7 +6205,8 @@
    "to": "CHAPTER XVIII",
    "heading": "CHAPTER [IVXL]+([.] .*)?|A WORD OF EXPLANATION|THE STRANGER'S HISTORY|THE TALE OF THE LOST LAND|THE END OF THE MANUSCRIPT|FINAL P[.]S[.] BY M[.]T[.]|KING\\ ARTHUR'S\\ COURT|KNIGHTS\\ OF\\ THE\\ TABLE\\ ROUND|SIR\\ DINADAN\\ THE\\ HUMORIST|AN\\ INSPIRATION|THE\\ ECLIPSE|MERLIN'S\\ TOWER|THE\\ BOSS|THE\\ TOURNAMENT|BEGINNINGS\\ OF\\ CIVILIZATION|THE\\ YANKEE\\ IN\\ SEARCH\\ OF\\ ADVENTURES|SLOW\\ TORTURE|FREEMEN|“DEFEND\\ THEE,\\ LORD”|SANDY'S\\ TALE|MORGAN\\ LE\\ FAY|A\\ ROYAL\\ BANQUET|IN\\ THE\\ QUEEN'S\\ DUNGEONS|KNIGHT\\-ERRANTRY\\ AS\\ A\\ TRADE|THE\\ OGRE'S\\ CASTLE|THE\\ PILGRIMS|THE\\ HOLY\\ FOUNTAIN|RESTORATION\\ OF\\ THE\\ FOUNTAIN|A\\ RIVAL\\ MAGICIAN|A\\ COMPETITIVE\\ EXAMINATION|THE\\ FIRST\\ NEWSPAPER|THE\\ YANKEE\\ AND\\ THE\\ KING\\ TRAVEL\\ INCOGNITO|DRILLING\\ THE\\ KING|THE\\ SMALLPOX\\ HUT|THE\\ TRAGEDY\\ OF\\ THE\\ MANOR\\-HOUSE|MARCO|DOWLEY'S\\ HUMILIATION|SIXTH\\ CENTURY\\ POLITICAL\\ ECONOMY|THE\\ YANKEE\\ AND\\ THE\\ KING\\ SOLD\\ AS\\ SLAVES|A\\ PITIFUL\\ INCIDENT|AN\\ ENCOUNTER\\ IN\\ THE\\ DARK|AN\\ AWFUL\\ PREDICAMENT|SIR\\ LAUNCELOT\\ AND\\ KNIGHTS\\ TO\\ THE\\ RESCUE|THE\\ YANKEE'S\\ FIGHT\\ WITH\\ THE\\ KNIGHTS|THREE\\ YEARS\\ LATER|THE\\ INTERDICT|WAR!|THE\\ BATTLE\\ OF\\ THE\\ SAND\\ BELT|A\\ POSTSCRIPT\\ BY\\ CLARENCE",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "connecticut-yankee-2",
@@ -6225,7 +6240,8 @@
    "to": "CHAPTER XXXI",
    "heading": "CHAPTER [IVXL]+([.] .*)?|A WORD OF EXPLANATION|THE STRANGER'S HISTORY|THE TALE OF THE LOST LAND|THE END OF THE MANUSCRIPT|FINAL P[.]S[.] BY M[.]T[.]|KING\\ ARTHUR'S\\ COURT|KNIGHTS\\ OF\\ THE\\ TABLE\\ ROUND|SIR\\ DINADAN\\ THE\\ HUMORIST|AN\\ INSPIRATION|THE\\ ECLIPSE|MERLIN'S\\ TOWER|THE\\ BOSS|THE\\ TOURNAMENT|BEGINNINGS\\ OF\\ CIVILIZATION|THE\\ YANKEE\\ IN\\ SEARCH\\ OF\\ ADVENTURES|SLOW\\ TORTURE|FREEMEN|“DEFEND\\ THEE,\\ LORD”|SANDY'S\\ TALE|MORGAN\\ LE\\ FAY|A\\ ROYAL\\ BANQUET|IN\\ THE\\ QUEEN'S\\ DUNGEONS|KNIGHT\\-ERRANTRY\\ AS\\ A\\ TRADE|THE\\ OGRE'S\\ CASTLE|THE\\ PILGRIMS|THE\\ HOLY\\ FOUNTAIN|RESTORATION\\ OF\\ THE\\ FOUNTAIN|A\\ RIVAL\\ MAGICIAN|A\\ COMPETITIVE\\ EXAMINATION|THE\\ FIRST\\ NEWSPAPER|THE\\ YANKEE\\ AND\\ THE\\ KING\\ TRAVEL\\ INCOGNITO|DRILLING\\ THE\\ KING|THE\\ SMALLPOX\\ HUT|THE\\ TRAGEDY\\ OF\\ THE\\ MANOR\\-HOUSE|MARCO|DOWLEY'S\\ HUMILIATION|SIXTH\\ CENTURY\\ POLITICAL\\ ECONOMY|THE\\ YANKEE\\ AND\\ THE\\ KING\\ SOLD\\ AS\\ SLAVES|A\\ PITIFUL\\ INCIDENT|AN\\ ENCOUNTER\\ IN\\ THE\\ DARK|AN\\ AWFUL\\ PREDICAMENT|SIR\\ LAUNCELOT\\ AND\\ KNIGHTS\\ TO\\ THE\\ RESCUE|THE\\ YANKEE'S\\ FIGHT\\ WITH\\ THE\\ KNIGHTS|THREE\\ YEARS\\ LATER|THE\\ INTERDICT|WAR!|THE\\ BATTLE\\ OF\\ THE\\ SAND\\ BELT|A\\ POSTSCRIPT\\ BY\\ CLARENCE",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "connecticut-yankee-3",
@@ -6258,7 +6274,8 @@
    "nth": 1,
    "to": null,
    "heading": "CHAPTER [IVXL]+([.] .*)?|A WORD OF EXPLANATION|THE STRANGER'S HISTORY|THE TALE OF THE LOST LAND|THE END OF THE MANUSCRIPT|FINAL P[.]S[.] BY M[.]T[.]|KING\\ ARTHUR'S\\ COURT|KNIGHTS\\ OF\\ THE\\ TABLE\\ ROUND|SIR\\ DINADAN\\ THE\\ HUMORIST|AN\\ INSPIRATION|THE\\ ECLIPSE|MERLIN'S\\ TOWER|THE\\ BOSS|THE\\ TOURNAMENT|BEGINNINGS\\ OF\\ CIVILIZATION|THE\\ YANKEE\\ IN\\ SEARCH\\ OF\\ ADVENTURES|SLOW\\ TORTURE|FREEMEN|“DEFEND\\ THEE,\\ LORD”|SANDY'S\\ TALE|MORGAN\\ LE\\ FAY|A\\ ROYAL\\ BANQUET|IN\\ THE\\ QUEEN'S\\ DUNGEONS|KNIGHT\\-ERRANTRY\\ AS\\ A\\ TRADE|THE\\ OGRE'S\\ CASTLE|THE\\ PILGRIMS|THE\\ HOLY\\ FOUNTAIN|RESTORATION\\ OF\\ THE\\ FOUNTAIN|A\\ RIVAL\\ MAGICIAN|A\\ COMPETITIVE\\ EXAMINATION|THE\\ FIRST\\ NEWSPAPER|THE\\ YANKEE\\ AND\\ THE\\ KING\\ TRAVEL\\ INCOGNITO|DRILLING\\ THE\\ KING|THE\\ SMALLPOX\\ HUT|THE\\ TRAGEDY\\ OF\\ THE\\ MANOR\\-HOUSE|MARCO|DOWLEY'S\\ HUMILIATION|SIXTH\\ CENTURY\\ POLITICAL\\ ECONOMY|THE\\ YANKEE\\ AND\\ THE\\ KING\\ SOLD\\ AS\\ SLAVES|A\\ PITIFUL\\ INCIDENT|AN\\ ENCOUNTER\\ IN\\ THE\\ DARK|AN\\ AWFUL\\ PREDICAMENT|SIR\\ LAUNCELOT\\ AND\\ KNIGHTS\\ TO\\ THE\\ RESCUE|THE\\ YANKEE'S\\ FIGHT\\ WITH\\ THE\\ KNIGHTS|THREE\\ YEARS\\ LATER|THE\\ INTERDICT|WAR!|THE\\ BATTLE\\ OF\\ THE\\ SAND\\ BELT|A\\ POSTSCRIPT\\ BY\\ CLARENCE"
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "heart-of-darkness",
@@ -6288,7 +6305,8 @@
    "nth": 2,
    "to": null,
    "heading": "I{1,3}"
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "cranford-1",
@@ -6322,7 +6340,8 @@
    "to": "CHAPTER IX.",
    "heading": "CHAPTER [IVXL]+[.] .*",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "cranford-2",
@@ -6355,7 +6374,8 @@
    "nth": 1,
    "to": "PRINTED BY",
    "heading": "CHAPTER [IVXL]+[.] .*"
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "the-moonstone-1",
@@ -6389,7 +6409,8 @@
    "to": "CHAPTER XII",
    "heading": "PROLOGUE|THE STORY|FIRST PERIOD|THE END OF THE FIRST PERIOD[.]|SECOND PERIOD[.]|(FIRST|SECOND|THIRD|FOURTH|FIFTH|SIXTH|SEVENTH|EIGHTH) NARRATIVE[.]|EPILOGUE[.]|THE FINDING OF THE DIAMOND[.]|CHAPTER [IVXL]+|I|II|III|IV|V|THE STORMING OF SERINGAPATAM [(]1799[)]:|THE LOSS OF THE DIAMOND [(]1848[)]|THE DISCOVERY OF THE TRUTH[.] [(]1848-1849[.][)]|THE STATEMENT OF [^()]+[.] [(]18[45][0-9][.][)]",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "the-moonstone-2",
@@ -6423,7 +6444,8 @@
    "to": "CHAPTER XXIII",
    "heading": "PROLOGUE|THE STORY|FIRST PERIOD|THE END OF THE FIRST PERIOD[.]|SECOND PERIOD[.]|(FIRST|SECOND|THIRD|FOURTH|FIFTH|SIXTH|SEVENTH|EIGHTH) NARRATIVE[.]|EPILOGUE[.]|THE FINDING OF THE DIAMOND[.]|CHAPTER [IVXL]+|I|II|III|IV|V|THE STORMING OF SERINGAPATAM [(]1799[)]:|THE LOSS OF THE DIAMOND [(]1848[)]|THE DISCOVERY OF THE TRUTH[.] [(]1848-1849[.][)]|THE STATEMENT OF [^()]+[.] [(]18[45][0-9][.][)]",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "the-moonstone-3",
@@ -6695,7 +6717,8 @@
    "to": "CHAPTER XVIII.",
    "heading": "Book the (First|Second|Third)--.*|CHAPTER [IVXL]+[.] .*",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "tale-of-two-cities-3",
@@ -6730,7 +6753,8 @@
    "to": "CHAPTER VII.",
    "heading": "Book the (First|Second|Third)--.*|CHAPTER [IVXL]+[.] .*",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "tale-of-two-cities-4",
@@ -6764,7 +6788,8 @@
    "nth": 2,
    "to": null,
    "heading": "Book the (First|Second|Third)--.*|CHAPTER [IVXL]+[.] .*"
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "the-jungle-1",
@@ -6799,7 +6824,8 @@
    "to": "CHAPTER VIII",
    "heading": "CHAPTER [IVXL]+",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "the-jungle-2",
