@@ -8885,7 +8885,8 @@
    "to": "CHAPTER XI.",
    "heading": "CHAPTER [IVXLC]+\\.",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "last-of-the-mohicans-2",
@@ -8919,7 +8920,8 @@
    "to": "CHAPTER XVIII.",
    "heading": "CHAPTER [IVXLC]+\\.",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "last-of-the-mohicans-3",
@@ -8953,7 +8955,8 @@
    "to": "CHAPTER XXVI.",
    "heading": "CHAPTER [IVXLC]+\\.",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "last-of-the-mohicans-4",
@@ -8986,7 +8989,8 @@
    "nth": 2,
    "to": null,
    "heading": "CHAPTER [IVXLC]+\\."
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "the-good-soldier-1",
@@ -9019,7 +9023,8 @@
    "to": "II",
    "heading": "PART [IV]+( [IVX]+)?|[IVX]+",
    "to_nth": 3
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "the-good-soldier-2",
@@ -9051,7 +9056,8 @@
    "nth": 3,
    "to": null,
    "heading": "PART [IV]+( [IVX]+)?|[IVX]+"
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "great-expectations-1",
@@ -9086,7 +9092,8 @@
    "to": "Chapter XIII.",
    "heading": "Chapter [IVXL]+\\.",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "great-expectations-2",
@@ -9121,7 +9128,8 @@
    "to": "Chapter XXIV.",
    "heading": "Chapter [IVXL]+\\.",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "great-expectations-3",
@@ -9156,7 +9164,8 @@
    "to": "Chapter XXXVII.",
    "heading": "Chapter [IVXL]+\\.",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "great-expectations-4",
@@ -9191,7 +9200,8 @@
    "to": "Chapter XLVIII.",
    "heading": "Chapter [IVXL]+\\.",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "great-expectations-5",
@@ -9225,7 +9235,8 @@
    "nth": 2,
    "to": null,
    "heading": "Chapter [IVXL]+\\."
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "moon-and-sixpence-1",
@@ -9259,7 +9270,8 @@
    "to": "Chapter XXXI",
    "heading": "Chapter [IVXL]+",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "moon-and-sixpence-2",
@@ -9292,7 +9304,8 @@
    "nth": 2,
    "to": null,
    "heading": "Chapter [IVXL]+"
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "house-of-mirth-1",
@@ -9327,7 +9340,8 @@
    "to": "Chapter 8",
    "heading": "BOOK (ONE|TWO)|Chapter \\d+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "house-of-mirth-2",
@@ -9362,7 +9376,8 @@
    "to": "Chapter 15",
    "heading": "BOOK (ONE|TWO)|Chapter \\d+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "house-of-mirth-3",
@@ -9397,7 +9412,8 @@
    "to": "Chapter 7",
    "heading": "BOOK (ONE|TWO)|Chapter \\d+",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "house-of-mirth-4",
@@ -9431,7 +9447,8 @@
    "nth": 2,
    "to": "THE END",
    "heading": "BOOK (ONE|TWO)|Chapter \\d+"
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "mayor-of-casterbridge-1",
@@ -9465,7 +9482,8 @@
    "to": "XVIII.",
    "heading": "[IVXL]+\\.",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "mayor-of-casterbridge-2",
@@ -9499,7 +9517,8 @@
    "to": "XXXII.",
    "heading": "[IVXL]+\\.",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "mayor-of-casterbridge-3",
@@ -9532,7 +9551,8 @@
    "nth": 1,
    "to": null,
    "heading": "[IVXL]+\\."
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "sister-carrie-1",
@@ -9566,7 +9586,8 @@
    "to": "Chapter XIII. HIS CREDENTIALS ACCEPTED: A BABEL OF TONGUES",
    "heading": "Chapter [IVXL]+\\. [A-Z][A-Z ,:’\\x27-]+",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "sister-carrie-2",
@@ -9600,7 +9621,8 @@
    "to": "Chapter XXVII. WHEN WATERS ENGULF US WE REACH FOR A STAR",
    "heading": "Chapter [IVXL]+\\. [A-Z][A-Z ,:’\\x27-]+",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "sister-carrie-3",
@@ -9634,7 +9656,8 @@
    "to": "Chapter XXXVIII. IN ELF LAND DISPORTING: THE GRIM WORLD WITHOUT",
    "heading": "Chapter [IVXL]+\\. [A-Z][A-Z ,:’\\x27-]+",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "sister-carrie-4",
@@ -9667,7 +9690,8 @@
    "nth": 2,
    "to": null,
    "heading": "Chapter [IVXL]+\\. [A-Z][A-Z ,:’\\x27-]+"
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "emma-1",
@@ -9701,7 +9725,8 @@
    "to": "CHAPTER XV",
    "heading": "VOLUME I{1,3}|CHAPTER [IVXL]+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "emma-2",
@@ -9735,7 +9760,8 @@
    "to": "CHAPTER XI",
    "heading": "VOLUME I{1,3}|CHAPTER [IVXL]+",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "emma-3",
@@ -9769,7 +9795,8 @@
    "to": "CHAPTER VII",
    "heading": "VOLUME I{1,3}|CHAPTER [IVXL]+",
    "to_nth": 3
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "emma-4",
@@ -9802,7 +9829,8 @@
    "nth": 3,
    "to": "FINIS",
    "heading": "VOLUME I{1,3}|CHAPTER [IVXL]+"
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "crime-and-punishment-1",
