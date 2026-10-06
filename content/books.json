@@ -648,29 +648,6 @@
   "reviewed": "2026-09-29"
  },
  {
-  "slug": "most-dangerous-game",
-  "title": "The Most Dangerous Game",
-  "author": "Richard Connell",
-  "year": 1924,
-  "genre": "Adventure",
-  "level": 2,
-  "tags": [
-   "American",
-   "island",
-   "hunting"
-  ],
-  "spine": {
-   "color": "#2e5358",
-   "height": 0.81
-  },
-  "cover": {
-   "motif": "compass",
-   "accent": "#d8c48a"
-  },
-  "month": "2027-04",
-  "plan": 27
- },
- {
   "slug": "monkeys-paw",
   "title": "The Monkey's Paw",
   "author": "W. W. Jacobs",
@@ -6688,7 +6665,8 @@
    "to": "CHAPTER VII.",
    "heading": "Book the (First|Second|Third)--.*|CHAPTER [IVXL]+[.] .*",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "tale-of-two-cities-2",
@@ -7140,7 +7118,8 @@
    "nth": 1,
    "to": "THE END",
    "heading": "CHAPTER [IVXL]+[.]"
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "kim-1",
@@ -7175,7 +7154,8 @@
    "to": "CHAPTER VI",
    "heading": "CHAPTER [IVXL]+",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "kim-2",
@@ -7278,7 +7258,8 @@
    "to": "VIII.",
    "heading": "[IVXL]+[.] [A-Z][A-Za-zœ’ -]+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "house-of-the-seven-gables-2",
@@ -7312,7 +7293,8 @@
    "to": "XIV.",
    "heading": "[IVXL]+[.] [A-Z][A-Za-zœ’ -]+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "house-of-the-seven-gables-3",
@@ -7345,7 +7327,8 @@
    "nth": 1,
    "to": null,
    "heading": "[IVXL]+[.] [A-Z][A-Za-zœ’ -]+"
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "madame-bovary-1",
@@ -7379,7 +7362,8 @@
    "to": "Chapter Six",
    "heading": "Part I{1,3}|Chapter (One|Two|Three|Four|Five|Six|Seven|Eight|Nine|Ten|Eleven|Twelve|Thirteen|Fourteen|Fifteen)",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "madame-bovary-2",
@@ -7413,7 +7397,8 @@
    "to": "Part III",
    "heading": "Part I{1,3}|Chapter (One|Two|Three|Four|Five|Six|Seven|Eight|Nine|Ten|Eleven|Twelve|Thirteen|Fourteen|Fifteen)",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "madame-bovary-3",
@@ -7446,7 +7431,8 @@
    "nth": 1,
    "to": null,
    "heading": "Part I{1,3}|Chapter (One|Two|Three|Four|Five|Six|Seven|Eight|Nine|Ten|Eleven|Twelve|Thirteen|Fourteen|Fifteen)"
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "wuthering-heights-1",
@@ -7480,7 +7466,8 @@
    "to": "CHAPTER XII",
    "heading": "CHAPTER [IVXL]+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "wuthering-heights-2",
@@ -7890,7 +7877,8 @@
    "nth": 1,
    "to": null,
    "heading": "CHAPTER [IVXL]+"
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "persuasion-1",
@@ -7924,7 +7912,8 @@
    "to": "CHAPTER X.",
    "heading": "CHAPTER [IVXL]+[.]",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "persuasion-2",
@@ -7958,7 +7947,8 @@
    "to": "CHAPTER XIX.",
    "heading": "CHAPTER [IVXL]+[.]",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "persuasion-3",
@@ -7991,7 +7981,8 @@
    "nth": 2,
    "to": "Finis",
    "heading": "CHAPTER [IVXL]+[.]"
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "winesburg-ohio-1",
@@ -8024,7 +8015,8 @@
    "to": "THE THINKER",
    "heading": "[A-Z“][A-Z ”]+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "winesburg-ohio-2",
@@ -8056,7 +8048,8 @@
    "nth": 1,
    "to": null,
    "heading": "[A-Z“][A-Z ”]+"
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "germinal-1",
@@ -8090,7 +8083,8 @@
    "to": "CHAPTER IV",
    "heading": "PART [A-Z]+|CHAPTER [IVXLC]+",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "germinal-2",
@@ -8124,7 +8118,8 @@
    "to": "CHAPTER II",
    "heading": "PART [A-Z]+|CHAPTER [IVXLC]+",
    "to_nth": 4
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "germinal-3",
@@ -8158,7 +8153,8 @@
    "to": "CHAPTER III",
    "heading": "PART [A-Z]+|CHAPTER [IVXLC]+",
    "to_nth": 5
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "germinal-4",
@@ -8192,7 +8188,8 @@
    "to": "CHAPTER V",
    "heading": "PART [A-Z]+|CHAPTER [IVXLC]+",
    "to_nth": 6
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "germinal-5",
@@ -8225,7 +8222,8 @@
    "nth": 6,
    "to": null,
    "heading": "PART [A-Z]+|CHAPTER [IVXLC]+"
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "hard-times-1",
@@ -8259,7 +8257,8 @@
    "to": "CHAPTER XVI",
    "heading": "BOOK THE (FIRST|SECOND|THIRD) _[A-Z]+_|CHAPTER [IVXL]+ [A-Z].*",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "hard-times-2",
@@ -8293,7 +8292,8 @@
    "to": "CHAPTER X",
    "heading": "BOOK THE (FIRST|SECOND|THIRD) _[A-Z]+_|CHAPTER [IVXL]+ [A-Z].*",
    "to_nth": 4
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "hard-times-3",
@@ -8326,7 +8326,8 @@
    "nth": 4,
    "to": "FOOTNOTES",
    "heading": "BOOK THE (FIRST|SECOND|THIRD) _[A-Z]+_|CHAPTER [IVXL]+ [A-Z].*"
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "sun-also-rises-1",
@@ -8360,7 +8361,8 @@
    "to": "CHAPTER",
    "heading": "BOOK I{1,3}|CHAPTER [1-9][0-9]?",
    "to_nth": 13
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "sun-also-rises-2",
@@ -8393,7 +8395,8 @@
    "nth": 13,
    "to": "THE END",
    "heading": "BOOK I{1,3}|CHAPTER [1-9][0-9]?"
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "far-from-the-madding-crowd-1",
@@ -8427,7 +8430,8 @@
    "to": "CHAPTER XV",
    "heading": "CHAPTER [IVXL]+ .*|[IV]+|VI{1,2}",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "far-from-the-madding-crowd-2",
@@ -8461,7 +8465,8 @@
    "to": "CHAPTER XXXII",
    "heading": "CHAPTER [IVXL]+ .*|[IV]+|VI{1,2}",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "far-from-the-madding-crowd-3",
@@ -8495,7 +8500,8 @@
    "to": "CHAPTER XLV",
    "heading": "CHAPTER [IVXL]+ .*|[IV]+|VI{1,2}",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "far-from-the-madding-crowd-4",
@@ -8528,7 +8534,8 @@
    "nth": 1,
    "to": "NOTES",
    "heading": "CHAPTER [IVXL]+ .*|[IV]+|VI{1,2}"
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "babbitt-1",
@@ -8563,7 +8570,8 @@
    "to": "IV",
    "heading": "CHAPTER [IVXL]+|[IVX]+",
    "to_nth": 4
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "babbitt-2",
@@ -8633,7 +8641,8 @@
    "to": "IV",
    "heading": "CHAPTER [IVXL]+|[IVX]+",
    "to_nth": 16
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "babbitt-4",
@@ -8667,7 +8676,8 @@
    "nth": 16,
    "to": null,
    "heading": "CHAPTER [IVXL]+|[IVX]+"
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "jane-eyre-1",
