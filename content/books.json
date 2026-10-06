@@ -11690,7 +11690,8 @@
    "to": "CHAPTER 60. The Line.",
    "heading": "ETYMOLOGY\\.|EXTRACTS\\.( \\(Supplied by a Sub-Sub-Librarian\\)\\.)?|CHAPTER \\d+\\. .+|Epilogue",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "moby-dick-4",
@@ -11724,7 +11725,8 @@
    "to": "CHAPTER 86. The Tail.",
    "heading": "ETYMOLOGY\\.|EXTRACTS\\.( \\(Supplied by a Sub-Sub-Librarian\\)\\.)?|CHAPTER \\d+\\. .+|Epilogue",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "moby-dick-5",
@@ -11758,7 +11760,8 @@
    "to": "CHAPTER 109. Ahab and Starbuck in the Cabin.",
    "heading": "ETYMOLOGY\\.|EXTRACTS\\.( \\(Supplied by a Sub-Sub-Librarian\\)\\.)?|CHAPTER \\d+\\. .+|Epilogue",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "moby-dick-6",
@@ -11791,7 +11794,8 @@
    "nth": 2,
    "to": null,
    "heading": "ETYMOLOGY\\.|EXTRACTS\\.( \\(Supplied by a Sub-Sub-Librarian\\)\\.)?|CHAPTER \\d+\\. .+|Epilogue"
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "jacobs-room-1",
@@ -11825,7 +11829,8 @@
    "to": "CHAPTER EIGHT",
    "heading": "CHAPTER [A-Z]+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "jacobs-room-2",
@@ -11858,7 +11863,8 @@
    "nth": 1,
    "to": null,
    "heading": "CHAPTER [A-Z]+"
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "jude-the-obscure-1",
@@ -11892,7 +11898,8 @@
    "to": "V",
    "heading": "Part [A-Z][a-z]+ AT [A-Z ]+|[IVX]+",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "jude-the-obscure-2",
@@ -11926,7 +11933,8 @@
    "to": "II",
    "heading": "Part [A-Z][a-z]+ AT [A-Z ]+|[IVX]+",
    "to_nth": 4
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "jude-the-obscure-3",
@@ -11960,7 +11968,8 @@
    "to": "VII",
    "heading": "Part [A-Z][a-z]+ AT [A-Z ]+|[IVX]+",
    "to_nth": 4
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "jude-the-obscure-4",
@@ -11993,7 +12002,8 @@
    "nth": 4,
    "to": null,
    "heading": "Part [A-Z][a-z]+ AT [A-Z ]+|[IVX]+"
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "voyage-out-1",
@@ -12027,7 +12037,8 @@
    "to": "CHAPTER IX",
    "heading": "CHAPTER [IVXLC]+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "voyage-out-2",
@@ -12061,7 +12072,8 @@
    "to": "CHAPTER XV",
    "heading": "CHAPTER [IVXLC]+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "voyage-out-3",
@@ -12095,7 +12107,8 @@
    "to": "CHAPTER XXII",
    "heading": "CHAPTER [IVXLC]+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "voyage-out-4",
@@ -12128,6 +12141,7 @@
    "nth": 1,
    "to": null,
    "heading": "CHAPTER [IVXLC]+"
-  }
+  },
+  "reviewed": "2026-10-06"
  }
 ]
