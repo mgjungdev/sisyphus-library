@@ -6479,7 +6479,8 @@
    "to": "CHAPTER III",
    "heading": "PROLOGUE|THE STORY|FIRST PERIOD|THE END OF THE FIRST PERIOD[.]|SECOND PERIOD[.]|(FIRST|SECOND|THIRD|FOURTH|FIFTH|SIXTH|SEVENTH|EIGHTH) NARRATIVE[.]|EPILOGUE[.]|THE FINDING OF THE DIAMOND[.]|CHAPTER [IVXL]+|I|II|III|IV|V|THE STORMING OF SERINGAPATAM [(]1799[)]:|THE LOSS OF THE DIAMOND [(]1848[)]|THE DISCOVERY OF THE TRUTH[.] [(]1848-1849[.][)]|THE STATEMENT OF [^()]+[.] [(]18[45][0-9][.][)]",
    "to_nth": 7
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "the-moonstone-4",
@@ -6513,7 +6514,8 @@
    "to": "CHAPTER IX",
    "heading": "PROLOGUE|THE STORY|FIRST PERIOD|THE END OF THE FIRST PERIOD[.]|SECOND PERIOD[.]|(FIRST|SECOND|THIRD|FOURTH|FIFTH|SIXTH|SEVENTH|EIGHTH) NARRATIVE[.]|EPILOGUE[.]|THE FINDING OF THE DIAMOND[.]|CHAPTER [IVXL]+|I|II|III|IV|V|THE STORMING OF SERINGAPATAM [(]1799[)]:|THE LOSS OF THE DIAMOND [(]1848[)]|THE DISCOVERY OF THE TRUTH[.] [(]1848-1849[.][)]|THE STATEMENT OF [^()]+[.] [(]18[45][0-9][.][)]",
    "to_nth": 4
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "the-moonstone-5",
@@ -6546,7 +6548,8 @@
    "nth": 4,
    "to": "FINIS",
    "heading": "PROLOGUE|THE STORY|FIRST PERIOD|THE END OF THE FIRST PERIOD[.]|SECOND PERIOD[.]|(FIRST|SECOND|THIRD|FOURTH|FIFTH|SIXTH|SEVENTH|EIGHTH) NARRATIVE[.]|EPILOGUE[.]|THE FINDING OF THE DIAMOND[.]|CHAPTER [IVXL]+|I|II|III|IV|V|THE STORMING OF SERINGAPATAM [(]1799[)]:|THE LOSS OF THE DIAMOND [(]1848[)]|THE DISCOVERY OF THE TRUTH[.] [(]1848-1849[.][)]|THE STATEMENT OF [^()]+[.] [(]18[45][0-9][.][)]"
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "my-antonia-1",
@@ -6580,7 +6583,8 @@
    "to": "XVII",
    "heading": "INTRODUCTION|BOOK [IV]+[.] .*|[IVX]+",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "my-antonia-2",
@@ -6614,7 +6618,8 @@
    "to": "XV",
    "heading": "INTRODUCTION|BOOK [IV]+[.] .*|[IVX]+",
    "to_nth": 4
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "my-antonia-3",
@@ -6647,7 +6652,8 @@
    "nth": 4,
    "to": null,
    "heading": "INTRODUCTION|BOOK [IV]+[.] .*|[IVX]+"
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "tale-of-two-cities-1",
@@ -6860,7 +6866,8 @@
    "to": "CHAPTER XVIII",
    "heading": "CHAPTER [IVXL]+",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "the-jungle-3",
@@ -6895,7 +6902,8 @@
    "to": "CHAPTER XXVI",
    "heading": "CHAPTER [IVXL]+",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "the-jungle-4",
@@ -6929,7 +6937,8 @@
    "nth": 2,
    "to": null,
    "heading": "CHAPTER [IVXL]+"
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "gullivers-travels-1",
@@ -7812,7 +7821,8 @@
    "to": "CHAPTER VI",
    "heading": "CHAPTER [IVXL]+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "secret-agent-2",
@@ -7846,7 +7856,8 @@
    "to": "CHAPTER X",
    "heading": "CHAPTER [IVXL]+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-06"
  },
  {
   "slug": "secret-agent-3",
