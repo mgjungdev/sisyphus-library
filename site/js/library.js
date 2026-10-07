@@ -59,76 +59,84 @@ export function renderLibrary(root, lib, { go }) {
     `<button class="chip" data-mode="${m}" aria-pressed="${m === mode}">${l}</button>`).join('')}</div>`;
 
   let spy = null;
-  function draw() {
-    const shelfH = isNarrow() ? 214 : 262;
-    const scale = isNarrow() ? 1.1 : 1.35;
+  // The wall: shelves side by side in columns (one per group), a group too long for one column spans more.
+  function wall() {
+    const narrow = isNarrow();
     const pad = Math.min(48, Math.max(16, innerWidth * 0.04));
-    const rowW = innerWidth > 860
-      ? Math.min(innerWidth, 1180) - 2 * pad - Math.min(380, Math.max(240, innerWidth * 0.26)) - Math.min(96, Math.max(32, innerWidth * 0.06)) - 36
-      : innerWidth - 2 * pad - 16;
+    const nav = innerWidth >= 1100 ? 84 : 0; // the timeline at the right edge keeps its own lane
+    const inner = Math.min(innerWidth - nav, 1240) - 2 * pad;
+    const gap = narrow ? 20 : 56, min = narrow ? 150 : 290;
+    const cols = Math.max(1, Math.min(3, Math.floor((inner + gap) / (min + gap))));
+    return { narrow, cols, gap, cell: (inner - gap * (cols - 1)) / cols, shelfH: narrow ? 188 : 214, scale: narrow ? 0.95 : 1.12, edge: narrow ? 12 : 24 };
+  }
+  function draw() {
+    const W = wall();
     const thisMonth = new Date().toISOString().slice(0, 7);
     const groups = groupBooks(lib, mode);
     const target = mode === 'month' ? (groups.find(g => g.key >= thisMonth) || groups[groups.length - 1]) : null;
+    const thick = b => Math.round((b.spine?.thickness || 22) * W.scale) + 4;
 
-    const ledges = g => {
+    const span = g => {
+      const total = g.books.reduce((t, b) => t + thick(b), 0) + W.edge;
+      return Math.max(1, Math.min(W.cols, Math.ceil(total / W.cell)));
+    };
+    const ledges = (g, n) => {
+      const rowW = n * W.cell + (n - 1) * W.gap - W.edge;
       const rows = [[]];
       let w = 0;
       for (const b of g.books) {
-        const t = b.spine.thickness * scale + 4;
+        const t = thick(b);
         if (w + t > rowW && rows[rows.length - 1].length) { rows.push([]); w = 0; }
         rows[rows.length - 1].push(b); w += t;
       }
-      return rows.map(r => `<div class="ledge-wrap"><div class="shelf-row">${r.map(b => bookHTML(b, shelfH, g.big)).join('')}</div><div class="ledge"></div></div>`).join('');
+      return rows.map(r => `<div class="ledge-wrap"><div class="shelf-row" style="height:${Math.round(W.shelfH * 0.93)}px">${r.map(b => bookHTML(b, W.shelfH, g.big, W.scale)).join('')}</div><div class="ledge"></div></div>`).join('');
     };
-    const indexItem = b => {
-      const cls = tag && !b.tags.includes(tag) ? ' class="off"' : '';
-      const title = esc(b.title) + (b.vol ? ` <span class="v">${roman(b.vol)}</span>` : '');
-      if (b.status !== 'ready') return `<li${cls} data-slug="${b.slug}"><div class="planned"><span class="t">${title}</span><span class="a">${esc(b.author)}, ${yearText(b.year)}</span></div></li>`;
-      const p = getProgress(b.slug);
-      const right = p?.done ? 'Finished' : p ? `${p.pct}%` : `${b.minutes} min`;
-      return `<li${cls} data-slug="${b.slug}"><button type="button" data-open="${b.slug}">
-        <span class="t">${title}</span><span class="a">${esc(b.author)}, ${yearText(b.year)}</span><span class="r">${right}</span>
-        ${p && !p.done ? `<span class="bar"><i style="width:${p.pct}%"></i></span>` : ''}
-      </button></li>`;
-    };
-
     root.innerHTML = `
-    <div class="library" data-mode="${mode}">
+    <div class="library" data-mode="${mode}" style="--cols:${W.cols};--gap:${W.gap}px">
       <div class="tagbar" role="group" aria-label="Show stories tagged">
-        <button class="chip" data-tag="" aria-pressed="${!tag}">All stories</button>
-        ${tags.map(t => `<button class="chip" data-tag="${esc(t)}" aria-pressed="${tag === t}">${esc(t)}</button>`).join('')}
+        <div class="tag-track">
+          <button class="chip" data-tag="" aria-pressed="${!tag}">All stories</button>
+          ${tags.map(t => `<button class="chip" data-tag="${esc(t)}" aria-pressed="${tag === t}">${esc(t)}</button>`).join('')}
+        </div>
       </div>
-      ${groups.map(g => `
-      <section class="month${g === target ? ' is-current' : ''}${g.long ? ' long' : ''}" id="grp-${slugify(g.key)}" data-group="${esc(g.key)}" aria-label="${esc(g.big)}">
+      ${groups.map(g => { const n = span(g); return `
+      <section class="month${g === target ? ' is-current' : ''}${g.long ? ' long' : ''}" id="grp-${slugify(g.key)}" data-group="${esc(g.key)}" aria-label="${esc(g.big)}"${n > 1 ? ` style="grid-column: span ${n}"` : ''}>
         <header class="month-head">
           <h2><span class="m">${esc(g.big)}</span>${g.small ? `<span class="y">${esc(g.small)}</span>` : ''}</h2>
           <p>${summary(g)}</p>
         </header>
         <div class="month-body">
-          ${ledges(g)}
-          <ul class="book-index">${g.books.map(indexItem).join('')}</ul>
+          ${ledges(g, n)}
         </div>
-      </section>`).join('')}
+      </section>`; }).join('')}
     </div>
-    <nav class="month-nav" aria-label="Shelves">
-      ${groups.map(g => `<a href="#grp-${slugify(g.key)}" data-group="${esc(g.key)}">${esc(g.nav)}</a>`).join('')}
-    </nav>`;
+    ${timeline(groups, mode)}`;
 
     applyTag();
     const shelves = [...root.querySelectorAll('.month')];
-    const navLinks = [...root.querySelectorAll('.month-nav a')];
     spy?.disconnect();
     spy = new IntersectionObserver(es => {
       const vis = es.filter(e => e.isIntersecting).sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)[0];
-      if (vis) navLinks.forEach(a => a.setAttribute('aria-current', String(a.dataset.group === vis.target.dataset.group)));
-    }, { rootMargin: '-45% 0px -45% 0px' });
+      if (vis) markTimeline(vis.target.dataset.group);
+    }, { rootMargin: '-35% 0px -55% 0px' });
     shelves.forEach(s => spy.observe(s));
     return { target };
   }
 
+  // The timeline at the right edge: years, and under the one on screen its months (month mode); the group names
+  // otherwise.
+  function markTimeline(key) {
+    const nav = root.querySelector('.month-nav');
+    if (!nav) return;
+    nav.querySelectorAll('a').forEach(a => a.setAttribute('aria-current', String(a.dataset.group === key)));
+    if (mode === 'month') {
+      const y = key.slice(0, 4);
+      nav.querySelectorAll('.tl-year').forEach(el => el.classList.toggle('open', el.dataset.year === y));
+    }
+  }
+
   function applyTag() {
     root.querySelectorAll('.book').forEach(el => el.classList.toggle('dim', !!tag && !books.get(el.dataset.slug).tags.includes(tag)));
-    root.querySelectorAll('.book-index li').forEach(li => li.classList.toggle('off', !!tag && !books.get(li.dataset.slug).tags.includes(tag)));
   }
 
   function reshelf(next) {
@@ -140,7 +148,7 @@ export function renderLibrary(root, lib, { go }) {
     draw();
     scrollTo(0, 0);
     if (reduceMotion()) return;
-    root.querySelectorAll('.month-head, .book-index').forEach(el => el.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 500, delay: 380, fill: 'backwards' }));
+    root.querySelectorAll('.month-head').forEach(el => el.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 500, delay: 380, fill: 'backwards' }));
     let i = 0;
     for (const el of root.querySelectorAll('.book')) {
       const r = el.getBoundingClientRect();
@@ -199,8 +207,7 @@ export function renderLibrary(root, lib, { go }) {
       applyTag();
       return;
     }
-    const idx = e.target.closest('[data-open]');
-    const el = idx ? root.querySelector(`.book[data-slug="${idx.dataset.open}"]`) : e.target.closest('.book');
+    const el = e.target.closest('.book');
     if (!el || el.dataset.status !== 'ready') return;
     pullOut(el, books.get(el.dataset.slug), go);
   });
@@ -211,16 +218,33 @@ export function renderLibrary(root, lib, { go }) {
     removeEventListener('scroll', onScroll);
     if (scrollT) { clearTimeout(scrollT); try { sessionStorage.setItem('sl.libScroll', String(scrollY)); } catch { /* ignore */ } }
     removeEventListener('resize', onResize);
-    if (flight && !flight.opening) closeFlight(true);
+    dropFlight();
   };
+}
+
+// Put an open book away at once (the view that pulled it out is going).
+export function dropFlight() { if (flight && !flight.opening) closeFlight(true); }
+
+function timeline(groups, mode) {
+  if (mode !== 'month') {
+    return `<nav class="month-nav" aria-label="Shelves">${groups.map(g =>
+      `<a href="#grp-${slugify(g.key)}" data-group="${esc(g.key)}">${esc(g.nav)}</a>`).join('')}</nav>`;
+  }
+  const years = new Map();
+  for (const g of groups) { const y = g.key.slice(0, 4); if (!years.has(y)) years.set(y, []); years.get(y).push(g); }
+  return `<nav class="month-nav timeline" aria-label="Shelves by month">${[...years].map(([y, gs]) => `
+    <div class="tl-year" data-year="${y}">
+      <a class="tl-y" href="#grp-${slugify(gs[0].key)}" data-group="${esc(gs[0].key)}-y">${y}</a>
+      <div class="tl-months">${gs.map(g => `<a href="#grp-${slugify(g.key)}" data-group="${esc(g.key)}" title="${esc(g.big)} ${y}">${esc(g.big.slice(0, 3))}</a>`).join('')}</div>
+    </div>`).join('')}</nav>`;
 }
 
 const slugify = k => String(k).toLowerCase().replace(/[^a-z0-9]+/g, '-');
 export const yearText = y => (y < 0 ? `c. ${-y} BC` : y < 1000 ? `c. ${y}` : String(y));
 
-function bookHTML(b, shelfH, groupLabel) {
+function bookHTML(b, shelfH, groupLabel, scale = isNarrow() ? 1.1 : 1.35) {
   const h = Math.round(shelfH * 0.88 * (b.spine?.height || 0.9));
-  const t = Math.round((b.spine?.thickness || 22) * (isNarrow() ? 1.1 : 1.35));
+  const t = Math.round((b.spine?.thickness || 22) * scale);
   const w = Math.round(h * 0.68);
   const fs = Math.max(8, Math.min(t * 0.4, 15, (h - 50) / (b.title.length * 0.56))).toFixed(1);
   const p = getProgress(b.slug);
@@ -248,7 +272,10 @@ function spineHTML(b) {
 
 /* ---------------- pull-out ---------------- */
 
-function pullOut(el, book, go) {
+// el: the element the book flies out of (a shelf spine, or a stand-in at a graph node) carrying --h/--t/--w.
+// extra: HTML placed above the actions (the graph lists the books this one talks to); a [data-pick] button in it
+// puts the book back, then calls onPick with its value.
+export function pullOut(el, book, go, extra = '', onPick = null) {
   if (flight) return;
   const layer = document.getElementById('flight-layer');
   const r = el.getBoundingClientRect();
@@ -275,7 +302,7 @@ function pullOut(el, book, go) {
   const started = p && p.para > 1 && !p.done;
   layer.innerHTML = `
     <div class="flight-backdrop"></div>
-    <div class="fbook" style="--fs:${Math.min(tf * 0.4, (Hf - 60) / (book.title.length * 0.56))}px;--h:${Hf}px;--t:${tf}px;--w:${wf}px;--c:${book.spine.color};--a:${book.cover.accent};left:${cx - tf / 2}px;top:${cy - Hf / 2}px">
+    <div class="frig"><div class="fbook" style="--fs:${Math.min(tf * 0.4, (Hf - 60) / (book.title.length * 0.56))}px;--h:${Hf}px;--t:${tf}px;--w:${wf}px;--c:${book.spine.color};--a:${book.cover.accent};left:${cx - tf / 2}px;top:${cy - Hf / 2}px">
       <span class="book-3d">
         <span class="face back"></span>
         <span class="face top"></span>
@@ -285,7 +312,7 @@ function pullOut(el, book, go) {
         </span>
         <span class="face spine">${spineHTML(book)}</span>
       </span>
-    </div>
+    </div></div>
     <section class="flight-info" style="${infoStyle}" role="dialog" aria-modal="true" aria-labelledby="fi-title">
       <h2 id="fi-title">${esc(book.title)}</h2>
       ${book.vol ? `<p class="vol">${volOf(book)}</p>` : ''}
@@ -296,6 +323,7 @@ function pullOut(el, book, go) {
         <dt>Length</dt><dd>${book.words.toLocaleString('en-US')} words, about ${book.minutes} min</dd>
         ${p ? `<dt>Progress</dt><dd>${p.done ? 'Finished' : `${p.pct}%`}<div class="meter"><i style="width:${p.done ? 100 : p.pct}%"></i></div></dd>` : ''}
       </dl>
+      ${extra}
       <div class="actions">
         <button class="btn primary" data-act="read">${started ? 'Continue reading' : 'Read'}</button>
         ${started || (p && p.done) ? '<button class="btn ghost" data-act="restart">From the beginning</button>' : ''}
@@ -331,6 +359,8 @@ function pullOut(el, book, go) {
   }
 
   layer.onclick = e => {
+    const pick = e.target.closest('[data-pick]');
+    if (pick) { closeFlight().then(() => onPick?.(pick.dataset.pick)); return; }
     const act = e.target.closest('[data-act]')?.dataset.act;
     if (act === 'read') openBook(false);
     else if (act === 'restart') openBook(true);
@@ -347,30 +377,76 @@ function pullOut(el, book, go) {
   };
 }
 
+// Read: the cover swings open, then the reader is drawn under the layer and the open book flies to it, its title page
+// landing on the reader's first page as that page shows through.
 function openBook(restart) {
   const { layer, fb, book, go } = flight;
   flight.opening = true;
   layer.classList.remove('show-info');
   const board = fb.querySelector('.cover-board');
-  const finish = () => {
-    sessionStorage.setItem('sl.openFrom', 'shelf');
+  const enter = () => {
+    sessionStorage.setItem('sl.openFrom', location.hash.startsWith('#/graph') ? 'graph' : 'shelf');
     go(`#/read/${book.slug}${restart ? '/1' : ''}`);
-    const fade = layer.animate([{ opacity: 1 }, { opacity: 0 }], { duration: reduceMotion() ? 1 : 380, easing: 'ease-out', fill: 'forwards' });
-    fade.finished.then(() => clear(false), () => clear(false));
   };
-  if (reduceMotion()) return finish();
-  board.animate([{ transform: 'rotateY(0deg)' }, { transform: 'rotateY(-168deg)' }], { duration: 800, easing: 'cubic-bezier(.45,.05,.25,1)', fill: 'forwards' });
-  fb.animate([{ transform: flight.to }, { transform: flight.to.replace('scale3d(1,1,1)', 'scale3d(1.08,1.08,1.08)') }],
-    { duration: 800, easing: 'ease-in-out', fill: 'forwards' }).finished.then(finish, () => {});
+  const fadeAway = (ms = 380) => layer.animate([{ opacity: 1 }, { opacity: 0 }], { duration: reduceMotion() ? 1 : ms, easing: 'ease-out', fill: 'forwards' })
+    .finished.then(() => clear(false), () => clear(false));
+  if (reduceMotion()) { enter(); fadeAway(); return; }
+
+  const swing = { duration: 720, easing: 'cubic-bezier(.45,.05,.25,1)', fill: 'forwards' };
+  board.animate([{ transform: 'rotateY(0deg)' }, { transform: 'rotateY(-168deg)' }], swing);
+  fb.animate([{ transform: flight.to }, { transform: flight.to.replace('scale3d(1,1,1)', 'scale3d(1.04,1.04,1.04)') }], swing)
+    .finished.then(async () => {
+      enter();
+      const sheet = await firstSheet();
+      if (!sheet || !flight) { fadeAway(); return; }
+      land(sheet);
+    }, () => {});
+}
+
+// The reader's first page once it has its place (the reader lays its sheets out after its first frame).
+function firstSheet(timeout = 2500) {
+  const t0 = performance.now();
+  return new Promise(res => {
+    const look = () => {
+      const s = document.querySelector('#view .ereader .sheet.s1');
+      const r = s?.getBoundingClientRect();
+      if (r && r.width > 40 && r.height > 40) requestAnimationFrame(() => requestAnimationFrame(() => res(s)));
+      else if (performance.now() - t0 > timeout) res(null);
+      else requestAnimationFrame(look);
+    };
+    look();
+  });
+}
+
+function land(sheet) {
+  const { layer, fb } = flight;
+  const rig = layer.querySelector('.frig');
+  const tpEl = fb.querySelector('.title-page');
+  const tp = tpEl.getBoundingClientRect(), to = sheet.getBoundingClientRect();
+  const kx = to.width / tp.width, ky = to.height / tp.height;
+  const tx = to.left - kx * tp.left, ty = to.top - ky * tp.top;
+  const ease = 'cubic-bezier(.55,0,.15,1)', D = 680;
+  layer.querySelector('.flight-backdrop').animate([{ opacity: 1 }, { opacity: 0 }], { duration: D * .8, easing: 'ease-in', fill: 'forwards' });
+  // the boards, spine and endpapers fall away; the title page whitens into the reader's paper
+  fb.querySelectorAll('.cover-board, .face:not(.cover)').forEach(el =>
+    el.animate([{ opacity: 1 }, { opacity: 0 }], { duration: D * .55, easing: 'ease-out', fill: 'forwards' }));
+  [...tpEl.children].forEach(el => el.animate([{ opacity: 1 }, { opacity: 0 }], { duration: D * .5, easing: 'ease-out', fill: 'forwards' }));
+  const wash = document.createElement('span');
+  wash.className = 'tp-wash';
+  tpEl.append(wash);
+  wash.animate([{ opacity: 0 }, { opacity: 1 }], { duration: D * .7, easing: 'ease-in-out', fill: 'forwards' });
+  rig.animate([{ transform: 'none' }, { transform: `translate(${tx}px, ${ty}px) scale(${kx}, ${ky})` }], { duration: D, easing: ease, fill: 'forwards' })
+    .finished.then(() => layer.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 220, easing: 'ease-out', fill: 'forwards' }).finished)
+    .then(() => clear(false), () => clear(false));
 }
 
 function closeFlight(immediate = false) {
-  if (!flight) return;
+  if (!flight) return Promise.resolve();
   const { layer, fb, from, to, lift } = flight;
   layer.classList.remove('show-info');
   layer.querySelector('.flight-backdrop').style.opacity = '0';
-  if (immediate || reduceMotion()) return clear(true);
-  fb.animate([{ transform: to }, { transform: lift, offset: 0.72 }, { transform: from }],
+  if (immediate || reduceMotion()) { clear(true); return Promise.resolve(); }
+  return fb.animate([{ transform: to }, { transform: lift, offset: 0.72 }, { transform: from }],
     { duration: 750, easing: 'cubic-bezier(.4,0,.2,1)', fill: 'forwards' }).finished.then(() => clear(true), () => {});
 }
 

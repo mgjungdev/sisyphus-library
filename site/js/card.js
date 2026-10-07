@@ -58,6 +58,38 @@ export function openCard({ anchor, surface, lemma: headword }) {
   fillGeneric(el, headword);
 }
 
+// A note card (footnote, related passage): same shell as the word card, body supplied by the caller.
+export function openNote({ anchor, title, meta = '', html = '', links = [] }) {
+  closeCard(true);
+  const el = document.createElement('div');
+  el.className = 'card note' + (sheetMode() ? ' sheet' : ' pop');
+  el.setAttribute('role', 'dialog');
+  el.setAttribute('aria-label', title);
+  el.innerHTML = `
+    ${sheetMode() ? '<div class="sheet-handle" aria-hidden="true"></div>' : ''}
+    <header class="card-head">
+      <div class="hw"><h2>${esc(title)}</h2>${meta ? `<p class="meta">${meta}</p>` : ''}</div>
+      <div class="card-tools"><button class="icon-btn" data-act="close" aria-label="Close">${ICON.close}</button></div>
+    </header>
+    <div class="card-body">${html}</div>
+    ${links.length ? `<footer class="card-links">${links.map(l => `<a href="${l.href}">${esc(l.label)}</a>`).join('')}</footer>` : ''}`;
+  const backdrop = document.createElement('div');
+  backdrop.className = 'card-backdrop' + (sheetMode() ? ' dim' : '');
+  layer().append(backdrop, el);
+  current = { el, backdrop, anchor };
+  anchor?.classList.add('is-active');
+  if (sheetMode()) requestAnimationFrame(() => { el.classList.add('open'); backdrop.classList.add('open'); });
+  else position(el, anchor);
+  el.addEventListener('click', e => {
+    if (e.target.closest('[data-act="close"]')) closeCard();
+    else if (e.target.closest('a[href^="#"]')) closeCard(true);
+  });
+  backdrop.addEventListener('click', () => closeCard());
+  el.addEventListener('keydown', e => { if (e.key === 'Escape') closeCard(); });
+  if (sheetMode()) dragToClose(el);
+  el.querySelector('[data-act="close"]').focus({ preventScroll: true });
+}
+
 function generic() {
   return `
     <section class="defs" aria-live="polite"><div class="skeleton"></div><div class="skeleton short"></div></section>

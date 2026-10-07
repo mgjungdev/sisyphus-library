@@ -1,0 +1,31 @@
+{
+ "work:frankenstein": {
+  "slugs": [
+   "frankenstein-1",
+   "frankenstein-2"
+  ],
+  "texts": {
+   "text:frankenstein-1818": {
+    "probes": 621,
+    "found": 606,
+    "ratio": 0.976,
+    "examples": [
+     "think ye that the groans of clerval were music to my ears",
+     "but i now indulge in dreams of bliss that cannot be realized",
+     "be calm my dear victor i would sacrifice my life to your peace"
+    ]
+   },
+   "text:frankenstein-1831": {
+    "probes": 786,
+    "found": 0,
+    "ratio": 0.0,
+    "examples": [
+     "i do now not fear to die she said that pang is past",
+     "i was new to sorrow but it did not the less alarm me",
+     "the world was to me a secret which i desired to divine"
+    ]
+   }
+  },
+  "copytext": "text:frankenstein-1818"
+ }
+}

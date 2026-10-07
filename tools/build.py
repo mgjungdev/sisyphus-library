@@ -2,6 +2,7 @@
 
   content/books.json               catalog (month, spine, cover)
   content/sources/<slug>.txt       story text, paragraphs separated by blank lines
+  content/graph/, content/contexts/ relations catalog -> site/data/graph.json (see tools/catalog.py)
 
 A book is "ready" when it has a source and a "reviewed" date in books.json (set by
 tools/pipeline.py mark-reviewed after the source text is checked); otherwise it is
@@ -38,9 +39,9 @@ def tokenize(text: str) -> list:
     return out
 
 
-def build_book(meta: dict, nxt: dict | None = None) -> dict:
+def build_book(meta: dict, nxt: dict | None = None, folder: str = "sources", name: str | None = None) -> dict:
     slug = meta["slug"]
-    paras = load_paragraphs(slug)
+    paras = load_paragraphs(name or slug, folder)
     out_paras, chapters = [], []
     for pi, p in enumerate(paras):
         if p.startswith("## "):
@@ -111,6 +112,13 @@ def main():
     genres = [g for g in order if g in genres] + [g for g in genres if g not in order]
     (OUT / "library.json").write_text(json.dumps({"genres": genres, "books": out}, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     print(f"  library.json: {len(out)} books, {sum(b['status'] == 'ready' for b in out)} ready")
+
+    # The relations catalog (admitted records only). It must never stop the shelves from deploying.
+    try:
+        import catalog
+        catalog.write(catalog.build_contexts(build_book), drafts=False)
+    except Exception as e:  # noqa: BLE001
+        print(f"  graph.json skipped: {e!r}")
 
 
 if __name__ == "__main__":

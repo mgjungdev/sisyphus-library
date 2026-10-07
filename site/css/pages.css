@@ -28,3 +28,40 @@
 }
 .sync-form input:focus { outline: 2px solid var(--focus); outline-offset: 0; }
 .sync-form .btn { justify-self: start; }
+
+/* ================= Author essay: the reader's type and measure on one scrolled page ================= */
+body[data-view="author"] { background: var(--surround); }
+.adoc-wrap { padding: 28px 16px 96px; }
+.adoc {
+  --fs: 20px; --lh: 1.6; --align: justify; --m: 40px;
+  box-sizing: content-box; max-width: calc(var(--fs) * 30); margin: 0 auto; padding: calc(var(--m) * 1.2) var(--m) calc(var(--m) * 1.6);
+  background: var(--page); color: var(--page-ink);
+  box-shadow: 0 1px 2px rgb(0 0 0 / .06), 0 18px 40px -22px rgb(0 0 0 / .35);
+  font-family: var(--font-read); font-size: var(--fs); line-height: var(--lh);
+  text-align: var(--align); hyphens: auto; -webkit-hyphens: auto; font-kerning: normal; font-variant-ligatures: common-ligatures;
+}
+.adoc p { margin: 0; text-indent: 1.5em; }
+.adoc h2 + p, .adoc-lead p:first-child, .adoc li p { text-indent: 0; }
+.adoc a { color: inherit; text-decoration-color: color-mix(in srgb, var(--page-ink) 40%, transparent); text-underline-offset: .2em; }
+.adoc a:hover { text-decoration-color: currentColor; }
+.adoc-head { text-align: center; margin-bottom: 1.6em; }
+.adoc-head h1 { margin: 0; font-weight: 400; font-size: calc(var(--fs) * 2.1); line-height: 1.08; letter-spacing: -.01em; text-wrap: balance; }
+.adoc-dates { margin: .5em 0 0 !important; text-indent: 0 !important; font-size: .85em; letter-spacing: .08em; color: var(--page-ink-2); font-variant-numeric: lining-nums; }
+.adoc-toc { display: flex; flex-wrap: wrap; justify-content: center; gap: .2em 1.1em; margin-top: 1.1em; font-size: .78em; font-style: italic; }
+.adoc-toc a { color: var(--page-ink-2); text-decoration: none; }
+.adoc-toc a:hover { color: var(--page-ink); text-decoration: underline; }
+.adoc-lead { font-size: 1.08em; margin-bottom: .4em; }
+.adoc-lead p:first-child::first-line { font-variant: small-caps; letter-spacing: .03em; }
+.adoc h2 { margin: 1.9em 0 .7em; text-align: center; font-weight: 400; font-size: 1.25em; letter-spacing: .05em; font-variant: small-caps; scroll-margin-top: 72px; }
+.adoc section { scroll-margin-top: 72px; }
+.adoc-books { list-style: none; margin: 0; padding: 0; text-align: left; hyphens: manual; }
+.adoc-books > li { margin: 0 0 1.1em; }
+.adoc-book { font-size: 1.08em; }
+.adoc-book span { margin-left: .6em; font-size: .78em; color: var(--page-ink-2); }
+.adoc-go { margin-top: .2em !important; font-size: .82em; font-style: italic; display: flex; gap: 1.2em; }
+.adoc-sources ol { margin: 0; padding-left: 1.4em; font-size: .82em; line-height: 1.45; text-align: left; hyphens: manual; }
+.adoc-sources li { margin: 0 0 .5em; overflow-wrap: anywhere; }
+@media (max-width: 599px) {
+  .adoc-wrap { padding: 0 0 64px; }
+  .adoc { box-shadow: none; padding: 26px var(--m) 40px; }
+}

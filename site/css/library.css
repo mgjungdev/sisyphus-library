@@ -1,58 +1,52 @@
 /* ================= Library: stone wall, floating ledges ================= */
 body[data-view="library"] { background: var(--wall); }
-.library { max-width: 1180px; margin: 0 auto; padding: 8px clamp(16px, 4vw, 48px) 120px; }
-
-.month {
-  display: grid; grid-template-columns: minmax(240px, 380px) minmax(0, 1fr);
-  column-gap: clamp(32px, 6vw, 96px);
-  padding: clamp(40px, 7vh, 88px) 0;
-  scroll-margin-top: 56px;
+.library {
+  max-width: 1240px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 48px) 120px;
+  display: grid; grid-template-columns: repeat(var(--cols, 3), minmax(0, 1fr)); column-gap: var(--gap, 56px); row-gap: clamp(36px, 6vh, 64px);
+  align-items: end;
 }
-.month-head { position: sticky; top: 96px; align-self: start; }
-.month-head h2 { margin: 0; font-family: var(--font-read); font-weight: 400; line-height: .9; letter-spacing: -.035em; }
-.month-head .m { display: block; font-size: clamp(52px, 6.1vw, 88px); }
-.month-head .y { display: block; margin-top: 14px; font: 500 15px/1 var(--font-ui); letter-spacing: 0; color: var(--ink-2); }
-.month-head p { margin: 18px 0 0; max-width: 24ch; font-size: 15px; line-height: 1.5; color: var(--ink-2); }
-.month.is-current .month-head .y::after { content: "This month"; margin-left: 10px; padding: 3px 8px; border-radius: 999px; background: var(--ink); color: var(--wall); font-size: 12px; vertical-align: 1px; }
+@media (min-width: 1100px) { .library { max-width: calc(1240px + 84px); padding-right: calc(clamp(16px, 4vw, 48px) + 84px); } }
+
+.month { min-width: 0; scroll-margin-top: 128px; }
+.month-head { display: flex; align-items: baseline; flex-wrap: wrap; column-gap: 12px; row-gap: 2px; margin: 0 0 8px; padding: 0 2px; }
+.month-head h2 { display: flex; align-items: baseline; gap: 10px; margin: 0; font-family: var(--font-read); font-weight: 400; line-height: 1; letter-spacing: -.02em; }
+.month-head .m { font-size: clamp(30px, 2.6vw, 38px); }
+.month-head .y { font: 500 14px/1 var(--font-ui); letter-spacing: 0; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+.month-head p { margin: 0; flex-basis: 100%; font-size: 13.5px; line-height: 1.45; color: var(--ink-2); }
+.month.is-current .month-head .y::after { content: "This month"; margin-left: 8px; padding: 3px 8px; border-radius: 999px; background: var(--ink); color: var(--wall); font-size: 11.5px; vertical-align: 1px; }
+.month.long .month-head .m { font-size: clamp(26px, 2.3vw, 32px); text-wrap: balance; }
 
 .ledge-wrap { position: relative; }
+.ledge-wrap + .ledge-wrap { margin-top: 26px; }
 .shelf-row {
-  position: relative; height: 262px;
-  display: flex; align-items: flex-end; gap: 4px; padding: 0 18px;
+  position: relative; height: 214px;
+  display: flex; align-items: flex-end; gap: 4px; padding: 0 12px;
   overflow: visible;
 }
 .ledge {
-  position: relative; height: 13px; border-radius: 1px;
-  background: linear-gradient(180deg, var(--ledge) 0 62%, var(--ledge-edge));
-  box-shadow: 0 1px 0 var(--ledge-edge), 0 26px 30px -20px var(--ledge-shadow), 0 6px 10px -6px var(--ledge-shadow);
+  position: relative; height: 12px; border-radius: 1px 1px 2px 2px;
+  background:
+    linear-gradient(180deg, rgb(255 255 255 / .55) 0 1px, transparent 1px 3px, rgb(0 0 0 / .00) 3px 58%, rgb(0 0 0 / .07) 58% 100%),
+    var(--grain, none) 0 0 / 160px 160px;
+  background-color: var(--ledge);
+  background-blend-mode: normal, soft-light;
+  box-shadow: 0 1px 0 var(--ledge-edge), 0 22px 26px -18px var(--ledge-shadow), 0 5px 8px -5px var(--ledge-shadow);
+}
+.ledge::after { /* the ledge's lit front edge */
+  content: ""; position: absolute; left: 0; right: 0; top: 58%; height: 1px; background: rgb(255 255 255 / .35); mix-blend-mode: soft-light;
 }
 
-.book-index { list-style: none; margin: 30px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 4px 28px; }
-.book-index button, .book-index .planned {
-  display: grid; grid-template-columns: 1fr auto; align-items: baseline; gap: 2px 12px;
-  width: 100%; padding: 12px 0; border: 0; border-top: 1px solid var(--rule); background: none; text-align: left; cursor: pointer; color: var(--ink);
-}
-.book-index .t { font: 400 21px/1.2 var(--font-read); }
-.book-index .a { grid-column: 1; font-size: 14px; color: var(--ink-2); }
-.book-index .r { grid-row: 1 / span 2; grid-column: 2; align-self: center; font-size: 13.5px; color: var(--ink-2); font-variant-numeric: tabular-nums; }
-.book-index button:hover .t { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; }
-.book-index .planned { cursor: default; color: var(--ink-3); }
-.book-index .planned .a, .book-index .planned .r { color: var(--ink-3); }
-.book-index .bar { grid-column: 1 / -1; height: 2px; background: var(--rule); margin-top: 8px; }
-.book-index .bar i { display: block; height: 100%; background: var(--accent); }
-
-@media (max-width: 860px) {
-  .month { grid-template-columns: 1fr; padding: 28px 0 40px; }
-  .month-head {
-    top: 56px; z-index: 5; margin: 0 calc(-1 * clamp(16px, 4vw, 48px)); padding: 12px clamp(16px, 4vw, 48px) 14px;
-    background: color-mix(in srgb, var(--wall) 96%, transparent);
-    display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap;
-  }
-  .month-head h2 { display: flex; align-items: baseline; gap: 12px; }
-  .month-head .m { font-size: 46px; }
-  .month-head .y { margin: 0; }
-  .month-head p { margin: 0; flex-basis: 100%; }
-  .shelf-row { height: 214px; padding: 0 8px; margin-top: 12px; }
+@media (max-width: 639px) {
+  .library { row-gap: 30px; }
+  .month-head { column-gap: 8px; }
+  .month-head h2 { gap: 7px; }
+  .month-head .m { font-size: 25px; }
+  .month-head .y { font-size: 12.5px; }
+  .month-head p { font-size: 12px; line-height: 1.35; }
+  .month.is-current .month-head .y::after { display: none; }
+  .month.is-current .month-head h2::after { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); align-self: center; }
+  .month.long .month-head .m { font-size: 25px; }
+  .shelf-row { padding: 0 6px; }
 }
 
 /* ================= Book (3D) ================= */
@@ -78,18 +72,30 @@ body[data-view="library"] { background: var(--wall); }
 .spine {
   left: 0; top: 0; width: var(--t); height: var(--h);
   transform: translateZ(calc(var(--w) / 2));
+  /* a rounded cloth spine: dark at both turns, lit on the left shoulder, a woven grain, worn a little at head and tail */
   background:
-    linear-gradient(90deg, rgb(0 0 0 / .35), rgb(255 255 255 / .10) 30%, rgb(255 255 255 / .04) 55%, rgb(0 0 0 / .30)),
-    var(--c);
-  border-radius: 2px 2px 1px 1px;
+    linear-gradient(90deg, rgb(0 0 0 / .46) 0, rgb(0 0 0 / .14) 8%, rgb(255 255 255 / .17) 24%, rgb(255 255 255 / .07) 38%, transparent 56%, rgb(0 0 0 / .12) 80%, rgb(0 0 0 / .44) 100%),
+    linear-gradient(180deg, rgb(255 255 255 / .10), transparent 7%, transparent 92%, rgb(0 0 0 / .22)),
+    repeating-linear-gradient(0deg, rgb(255 255 255 / .035) 0 1px, transparent 1px 2px),
+    repeating-linear-gradient(90deg, rgb(0 0 0 / .04) 0 1px, transparent 1px 2px),
+    var(--grain, none) 0 0 / 120px 120px;
+  background-color: var(--c);
+  background-blend-mode: normal, normal, normal, normal, overlay;
+  border-radius: 3px 3px 2px 2px;
   display: flex; flex-direction: column; align-items: center; justify-content: space-between;
   padding: 12px 0 10px;
   color: var(--a);
-  box-shadow: 0 0 0 .5px rgb(0 0 0 / .35);
+  box-shadow: 0 0 0 .5px rgb(0 0 0 / .4), inset 0 1px 0 rgb(255 255 255 / .12);
 }
-.spine::before, .spine::after { /* gilt bands */
-  content: ""; position: absolute; left: 3px; right: 3px; height: 5px;
-  border-top: 1px solid var(--a); border-bottom: 1px solid var(--a); opacity: .8;
+.spine::before, .spine::after { /* gilt bands, catching the light across the round */
+  content: ""; position: absolute; left: 3px; right: 3px; height: 6px;
+  background:
+    linear-gradient(90deg, rgb(0 0 0 / .45), rgb(255 255 255 / .55) 30%, rgb(255 255 255 / .1) 50%, rgb(0 0 0 / .35)),
+    var(--a);
+  background-blend-mode: overlay, normal;
+  -webkit-mask: linear-gradient(#000 0 1px, transparent 1px 5px, #000 5px 6px);
+  mask: linear-gradient(#000 0 1px, transparent 1px 5px, #000 5px 6px);
+  opacity: .9;
 }
 .spine::before { top: 6px; }
 .spine::after { bottom: 22px; }
@@ -98,7 +104,10 @@ body[data-view="library"] { background: var(--wall); }
   font: 600 var(--fs, 12px)/1 var(--font-read); letter-spacing: .03em;
   max-height: calc(var(--h) - 44px); overflow: hidden; white-space: nowrap; text-overflow: ellipsis;
   margin-top: 8px;
-  text-shadow: 0 1px 0 rgb(0 0 0 / .35);
+  /* gold leaf: lit where the spine turns toward the light */
+  background: linear-gradient(90deg, color-mix(in srgb, var(--a) 62%, #000), color-mix(in srgb, var(--a) 55%, #fff) 42%, var(--a) 62%, color-mix(in srgb, var(--a) 75%, #000));
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+  filter: drop-shadow(0 .5px 0 rgb(0 0 0 / .45));
 }
 .spine-author { font: 600 8.5px/1 var(--font-ui); letter-spacing: .08em; opacity: .9; }
 .spine-vol { font: 600 10px/1 var(--font-read); letter-spacing: .04em; margin: auto 0 6px; }
@@ -113,14 +122,23 @@ body[data-view="library"] { background: var(--wall); }
   left: 0; width: var(--t); height: var(--w);
   top: calc((var(--h) - var(--w)) / 2);
   transform: rotateX(90deg) translateZ(calc(var(--h) / 2));
-  background: repeating-linear-gradient(90deg, #efe6d2 0 1px, #d9ccb1 1px 2px);
-  box-shadow: inset 2px 0 0 var(--c), inset -2px 0 0 var(--c);
+  background:
+    linear-gradient(180deg, rgb(0 0 0 / .18), transparent 30%, transparent 85%, rgb(0 0 0 / .12)),
+    repeating-linear-gradient(90deg, #f1e9d6 0 1px, #dbcfb4 1px 2px);
+  box-shadow: inset 2px 0 0 var(--c), inset -2px 0 0 var(--c), inset 0 2px 0 color-mix(in srgb, var(--c) 70%, #000);
 }
 .book::after { /* contact shadow on the shelf */
-  content: ""; position: absolute; left: -4px; right: -6px; bottom: -3px; height: 8px;
+  content: ""; position: absolute; left: -3px; right: -5px; bottom: -3px; height: 7px;
   background: radial-gradient(closest-side, var(--book-shadow), transparent); transform: translateZ(-2px);
   pointer-events: none;
 }
+.book::before { /* the soft shadow the book casts on the wall behind it, light from above left */
+  content: ""; position: absolute; left: 2px; right: -16px; top: 18%; bottom: 0;
+  background: linear-gradient(90deg, var(--wall-ao), transparent 90%);
+  filter: blur(7px); border-radius: 40% 40% 0 0;
+  transform: translateZ(calc(var(--w) / -1)); pointer-events: none;
+}
+.book[data-status="planned"]::before { display: none; }
 
 /* hover / focus: pull out slightly and tilt */
 @media (hover: hover) {
@@ -170,16 +188,24 @@ body[data-view="library"] { background: var(--wall); }
   position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: space-between;
   padding: 11% 10% 9%;
   background:
-    repeating-linear-gradient(45deg, rgb(255 255 255 / .025) 0 2px, transparent 2px 4px),
-    repeating-linear-gradient(-45deg, rgb(0 0 0 / .05) 0 2px, transparent 2px 4px),
-    linear-gradient(90deg, rgb(0 0 0 / .28), transparent 9%, transparent 94%, rgb(0 0 0 / .18)),
-    var(--c);
+    radial-gradient(120% 90% at 22% 12%, rgb(255 255 255 / .13), transparent 55%),
+    linear-gradient(90deg, rgb(0 0 0 / .32), rgb(255 255 255 / .06) 4%, transparent 9%, transparent 94%, rgb(0 0 0 / .2)),
+    repeating-linear-gradient(0deg, rgb(255 255 255 / .04) 0 1px, transparent 1px 2px),
+    repeating-linear-gradient(90deg, rgb(0 0 0 / .05) 0 1px, transparent 1px 2px),
+    var(--grain, none) 0 0 / 160px 160px;
+  background-color: var(--c);
+  background-blend-mode: normal, normal, normal, normal, overlay;
   color: var(--a); text-align: center;
   box-shadow: inset 0 0 0 1px rgb(0 0 0 / .3);
 }
 .cover-art::before { /* gilt double frame */
   content: ""; position: absolute; inset: 5.5%;
-  border: 1px solid var(--a); outline: 1px solid var(--a); outline-offset: -5px; opacity: .75;
+  border: 1px solid var(--a); outline: 1px solid var(--a); outline-offset: -5px; opacity: .8;
+  box-shadow: 0 .5px 0 rgb(0 0 0 / .35), inset 0 .5px 0 rgb(0 0 0 / .35);
+}
+.cover-art .ct, .cover-art .cv, .cover-art .ca {
+  background: linear-gradient(115deg, color-mix(in srgb, var(--a) 70%, #000), color-mix(in srgb, var(--a) 50%, #fff) 45%, var(--a) 60%, color-mix(in srgb, var(--a) 80%, #000));
+  -webkit-background-clip: text; background-clip: text; color: transparent;
 }
 .cover-art .ct { font: 600 calc(var(--w) * .105)/1.15 var(--font-read); letter-spacing: .01em; text-wrap: balance; }
 .cover-art .cv { font: 500 calc(var(--w) * .06)/1 var(--font-read); letter-spacing: .12em; text-transform: uppercase; opacity: .9; }
@@ -198,6 +224,8 @@ body[data-view="library"] { background: var(--wall); }
   opacity: 0; transition: opacity .5s ease;
 }
 #flight-layer.active .flight-backdrop { opacity: 1; }
+.frig { position: absolute; inset: 0; perspective: 2200px; perspective-origin: 50% 45%; transform-origin: 0 0; pointer-events: none; }
+.frig .fbook { pointer-events: auto; }
 .fbook {
   position: absolute; transform-style: preserve-3d;
   width: var(--t); height: var(--h);
@@ -221,6 +249,7 @@ body[data-view="library"] { background: var(--wall); }
 .title-page .tt { font: 500 calc(var(--w) * .1)/1.2 var(--font-read); }
 .title-page .tv { font: 400 calc(var(--w) * .055)/1.2 var(--font-read); letter-spacing: .1em; text-transform: uppercase; color: #6a5a4b; }
 .title-page .ta { font: italic 400 calc(var(--w) * .06)/1.2 var(--font-read); color: #6a5a4b; }
+.tp-wash { position: absolute; inset: 0; background: var(--page); opacity: 0; }
 .title-page hr { width: 30%; border: 0; border-top: 1px solid #b59f7c; margin: 0; }
 
 .flight-info {
@@ -239,6 +268,19 @@ body[data-view="library"] { background: var(--wall); }
 .flight-info .meter i { display: block; height: 100%; background: var(--accent); }
 .flight-info .actions { display: flex; gap: 10px; flex-wrap: wrap; }
 .flight-info .btn.ghost { color: var(--ink); border-color: var(--rule); }
+.fi-links { margin: -4px 0 20px; }
+.fi-links h3 { margin: 0 0 6px; font: 500 12px/1.3 var(--font-ui); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); }
+.fi-links ul { list-style: none; margin: 0; padding: 0; max-height: min(30vh, 200px); overflow-y: auto; }
+@media (max-width: 759px) { .fi-links ul { max-height: min(15vh, 124px); } } /* phones: Read stays on screen under a long list */
+.fi-links button {
+  display: flex; align-items: baseline; justify-content: space-between; gap: 12px; width: 100%;
+  padding: 6px 0; border: 0; border-bottom: 1px solid var(--rule); background: none; color: var(--ink);
+  font: inherit; text-align: left; cursor: pointer;
+}
+.fi-links li:last-child button { border-bottom: 0; }
+.fi-links .t { font: italic 400 16px/1.3 var(--font-read); }
+.fi-links .k { flex: none; font-size: 12.5px; color: var(--ink-3); }
+.fi-links button:hover .t, .fi-links button:focus-visible .t { text-decoration: underline; text-underline-offset: 3px; }
 .flight-close {
   position: absolute; top: max(12px, env(safe-area-inset-top)); right: 12px;
   width: 44px; height: 44px; border-radius: 50%; border: 0; cursor: pointer;
@@ -249,29 +291,64 @@ body[data-view="library"] { background: var(--wall); }
 .flight-close svg { width: 20px; height: 20px; }
 
 
-/* ================= Month navigation ================= */
+/* ================= Timeline (right edge) ================= */
 .month-nav {
-  position: fixed; right: max(20px, env(safe-area-inset-right)); top: 50%; transform: translateY(-50%); z-index: 20;
-  display: flex; flex-direction: column; gap: 2px;
+  position: fixed; right: max(16px, env(safe-area-inset-right)); top: calc(50% + 28px); transform: translateY(-50%); z-index: 20;
+  display: flex; flex-direction: column; align-items: flex-end; gap: 1px;
+  max-height: calc(100dvh - 140px); overflow-y: auto; scrollbar-width: none; padding: 4px 0;
 }
+.month-nav::-webkit-scrollbar { display: none; }
 .month-nav a {
-  display: block; padding: 6px 10px; border-radius: 6px; text-decoration: none; text-align: right;
-  font-size: 13px; color: var(--ink-3); font-variant-numeric: tabular-nums;
+  display: block; padding: 4px 8px; border-radius: 6px; text-decoration: none; text-align: right;
+  font-size: 12.5px; line-height: 1.25; color: var(--ink-3); font-variant-numeric: tabular-nums;
 }
 .month-nav a:hover { color: var(--ink); }
 .month-nav a[aria-current="true"] { color: var(--ink); font-weight: 600; }
-@media (max-width: 1320px) { .month-nav { display: none; } }
+.timeline .tl-year { display: flex; flex-direction: column; align-items: flex-end; position: relative; padding-right: 10px; }
+.timeline .tl-year::before { /* the year's rail */
+  content: ""; position: absolute; right: 0; top: 8px; bottom: 8px; width: 2px; border-radius: 1px; background: var(--rule);
+  transition: background .3s;
+}
+.timeline .tl-year.open::before { background: var(--ink-3); }
+.timeline .tl-y { font-weight: 600; font-size: 13px; color: var(--ink-2); padding: 6px 8px; }
+.timeline .tl-year.open .tl-y { color: var(--ink); }
+.timeline .tl-months { overflow: hidden; display: flex; flex-direction: column; align-items: flex-end; max-height: 0; transition: max-height .35s cubic-bezier(.3,.8,.3,1); }
+.timeline .tl-year.open .tl-months { max-height: 340px; }
+.timeline .tl-months a { padding: 2px 8px; font-size: 12px; }
+.timeline .tl-months a[aria-current="true"] { position: relative; }
+.timeline .tl-months a[aria-current="true"]::after { /* marker on the rail */
+  content: ""; position: absolute; right: -14px; top: 50%; width: 6px; height: 6px; margin-top: -3px; border-radius: 50%;
+  background: var(--ink); box-shadow: 0 0 0 3px var(--wall);
+}
+@media (max-width: 1099px) { .month-nav { display: none; } }
 
 /* ================= Arrange + tags ================= */
 .topbar-title .arrange { display: inline-grid; grid-auto-flow: column; gap: 0; padding: 2px; border: 1px solid var(--rule); border-radius: 999px; background: color-mix(in srgb, var(--surface) 70%, transparent); }
 .arrange .chip { border: 0; min-height: 32px; padding: 0 14px; font: 500 13.5px/1 var(--font-ui); }
 .arrange .chip[aria-pressed="true"] { background: var(--ink); color: var(--wall); }
-.tagbar { display: flex; gap: 6px; flex-wrap: wrap; padding: 22px 0 0; }
-.tagbar .chip { min-height: 32px; font-size: 13px; }
-@media (max-width: 860px) { .tagbar { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin: 0 calc(-1 * clamp(16px, 4vw, 48px)); padding: 16px clamp(16px, 4vw, 48px) 0; } .tagbar::-webkit-scrollbar { display: none; } .tagbar .chip { flex: 0 0 auto; } }
-.month.long .month-head .m { font-size: clamp(40px, 4.4vw, 62px); line-height: .98; letter-spacing: -.025em; text-wrap: balance; }
-@media (max-width: 860px) { .month.long .month-head .m { font-size: 34px; } }
-.ledge-wrap + .ledge-wrap { margin-top: 30px; }
+/* tags: one row that scrolls sideways, held under the top bar */
+.tagbar {
+  grid-column: 1 / -1; position: sticky; top: 56px; z-index: 15;
+  margin: 0 calc(-1 * clamp(16px, 4vw, 48px)); padding: 10px clamp(16px, 4vw, 48px);
+  background: color-mix(in srgb, var(--wall) 82%, transparent);
+  backdrop-filter: blur(12px) saturate(1.2); -webkit-backdrop-filter: blur(12px) saturate(1.2);
+}
+.tag-track {
+  display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; overscroll-behavior-x: contain;
+  -webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 40px), transparent);
+  mask-image: linear-gradient(90deg, #000 calc(100% - 40px), transparent);
+  padding-right: 40px;
+}
+.tag-track::-webkit-scrollbar { display: none; }
+.tagbar .chip { flex: 0 0 auto; min-height: 32px; font-size: 13px; background: color-mix(in srgb, var(--surface) 55%, transparent); }
+.tagbar .chip[aria-pressed="true"] { background: var(--ink); }
 .book { transition: opacity .35s ease; }
 .book.dim { opacity: .12; pointer-events: none; }
-.book-index li.off { display: none; }
+@media (max-width: 560px) { .arrange .chip { padding: 0 11px; } }
+.book[data-status="planned"] .spine-title { background: none; color: var(--ink-3); filter: none; }
+/* in the air between shelves and map the cloth is too small and quick to see: a plain round spine paints in time */
+.fly .spine {
+  background: linear-gradient(90deg, rgb(0 0 0 / .4), rgb(255 255 255 / .12) 26%, transparent 56%, rgb(0 0 0 / .4)), var(--c);
+  background-blend-mode: normal;
+}
+.fly .spine-title { background: none; color: var(--a); filter: none; }

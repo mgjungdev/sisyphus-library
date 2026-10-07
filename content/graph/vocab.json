@@ -1,0 +1,25 @@
+{
+ "note_types": {
+  "refers":      {"label": "Refers to",      "order": 1, "computed": true, "modes": ["quotes", "alludes", "diegetic-reading"],
+                  "def": "The text names, quotes or alludes to the other work. Computed from glosses whose target is a library work."},
+  "read":        {"label": "Read",           "order": 2, "computed": true,
+                  "def": "An outside record shows the author read the other work before writing. Computed from encounters (B2)."},
+  "rewrites":    {"label": "Rewrites",       "order": 3, "modes": ["continuation", "parody", "inversion", "transposition"],
+                  "def": "Takes over the other work's plot, characters or scenes and changes them."},
+  "answers":     {"label": "Answers",        "order": 4,
+                  "def": "Different scenes, the same question, a different answer."},
+  "shares-form": {"label": "Shares form with","order": 5, "modes": ["frame", "epistolary", "found-manuscript"],
+                  "def": "Inherits a narrative form or device, not content."}
+ },
+ "interpretive": ["rewrites", "answers", "shares-form"],
+ "context_roles": ["composition", "preface", "letter", "review", "source", "criticism"],
+ "gloss_kinds": ["allusion", "quotation", "term", "historical", "variant"],
+ "work_forms": ["novel", "novella", "story", "preface", "introduction", "letter", "essay", "review", "poem"],
+ "ev_nature": ["primary", "secondary"],
+ "ev_access": ["scan", "transcription", "database", "citation"],
+ "ev_status": ["unverified", "cited-unseen", "machine", "human"],
+ "contact": ["documented", "probable", "none"],
+ "case": ["strong", "moderate", "speculative"],
+ "status": ["proposed", "admitted"],
+ "limits": {"claim_words": 60, "same_words": 35, "differs_words": 35, "alignments": [1, 3]}
+}

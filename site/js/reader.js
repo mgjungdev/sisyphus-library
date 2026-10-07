@@ -1,6 +1,8 @@
 import { esc, roman, volOf } from './art.js';
 import { openCard, closeCard, cardOpen } from './card.js';
 import { getProgress, setProgress, prefs } from './store.js';
+import { pairHref } from './pair.js';
+import { locHref, readSlug, authorOf, yearOf, relationSentence, relKind } from './catalog.js';
 
 /* ---------- reading preferences ---------- */
 const DEFAULTS = { fs: 20, lh: 'normal', margin: 'normal', layout: 'auto', align: 'justify', turn: 'slide' };
@@ -13,6 +15,11 @@ const opt = () => {
   return o;
 };
 const saveOpt = o => prefs.set('reader', o);
+// The reader's type, for other pages set like it (the author essays): size, leading, alignment, side margin.
+export function readingType() {
+  const o = opt();
+  return { fs: o.fs, lh: LH[o.lh], align: o.align, margin: MARGIN[o.margin][innerWidth < 600 ? 1 : 0] };
+}
 const reduceMotion = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 export function applyTheme(t) {
@@ -30,10 +37,175 @@ const ICON = {
   list: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 6.5h14M5 12h14M5 17.5h9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>',
   prev: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 5.5L8 12l6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>',
   next: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 5.5L16 12l-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+  graph: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="7" r="2.4" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="18" cy="6" r="2.4" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="18" r="2.4" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8.3 7.4l7.4-.9M7.2 9.1l3.7 6.8M16.9 8.2l-3.8 7.6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>',
   close: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>',
 };
 
-export function renderReader(root, book, startPara) {
+/* ---------- footnotes: the glosses anchored in one book ---------- */
+// Map(para -> [{ g, n }]) for one slug, numbered in reading order.
+export function glossMarks(G, slug) {
+  const marks = new Map();
+  (G.glossesBySlug.get(slug) || []).filter(g => g.loc.para).sort((x, y) => x.loc.para - y.loc.para)
+    .forEach((g, i) => { if (!marks.has(g.loc.para)) marks.set(g.loc.para, []); marks.get(g.loc.para).push({ g, n: i + 1 }); });
+  return marks;
+}
+
+export function glossCard(G, g) {
+  const t = g.target && G.nodes.get(g.target);
+  const read = t && readSlug(G, t.id);
+  return {
+    title: g.label,
+    html: `<p class="gloss-text">${esc(g.text)}</p>`,
+    links: [
+      ...(g.see ? [{ href: locHref(G, g.see), label: 'See also' }] : []),
+      ...(read ? [{ href: `#/read/${read}`, label: `Read ${t.title.split(';')[0]}` }] : []),
+      ...(t?.slugs?.length ? [{ href: `#/graph/${t.slugs[0]}`, label: 'In the graph' }] : []),
+    ],
+  };
+}
+
+/* ---------- relation marks: passages a reading aligns with a passage in another book ---------- */
+// A short name for the other book: "The Island of Doctor Moreau" → "Moreau", "Frankenstein; or, …" → "Frankenstein".
+export function shortTitle(title = '') {
+  let t = title.split(/[;:]/)[0].trim();
+  const of = t.lastIndexOf(' of ');
+  if (of > 0) t = t.slice(of + 4);
+  t = t.replace(/^(the|a|an)\s+/i, '').replace(/\b(Doctor|Dr\.?|Mr\.?|Mrs\.?|Miss|Captain|Sir)\s+/g, '');
+  return t || title;
+}
+
+// Map(para -> [{ rel }]) for one slug: one mark per paragraph and other book, holding every alignment that meets there.
+export function relationMarks(G, slug) {
+  const marks = new Map(), byKey = new Map();
+  G.readings.forEach(list => list.forEach(r => (r.alignments || []).forEach((a, i) => {
+    [[a.from, a.to, r.note[1]], [a.to, a.from, r.note[0]]].forEach(([here, there, otherWork]) => {
+      if (here.source !== slug || !here.para) return;
+      const key = `${here.para}|${otherWork}`;
+      let m = byKey.get(key);
+      if (!m) {
+        const w = G.nodes.get(otherWork);
+        m = { id: key, para: here.para, work: w, label: shortTitle(w?.title || otherWork), exact: here.exact, items: [] };
+        byKey.set(key, m);
+        if (!marks.has(here.para)) marks.set(here.para, []);
+        marks.get(here.para).push({ rel: m });
+      }
+      m.items.push({ r, a, n: i + 1, there });
+    });
+  })));
+  return marks;
+}
+
+export function relationCard(G, m) {
+  const w = m.work;
+  // Each item opens on who does what to whom ('Rappaccini's Daughter answers Frankenstein') and what that kind means.
+  const head = r => {
+    const [from, to, rel] = r.note, note = G.notes.find(n => n.from === from && n.to === to && n.rel === rel) || { from, to, rel };
+    const x = relationSentence(G, note), mode = x.mode && relKind(rel).modes?.[x.mode];
+    return `<p class="rel-sent"><i>${esc(x.from)}</i> <em>${esc(x.verb)}</em> <i>${esc(x.to)}</i></p>
+      <p class="rel-type">${esc(x.name)}${x.mode ? `&nbsp;· <span${mode ? ` title="${esc(mode)}"` : ''}>${esc(x.mode.replace(/-/g, ' '))}</span>` : ''}${r.status === 'proposed' ? ' <span class="tag draft">proposed</span>' : ''}${r.disputes ? ' <span class="tag">dissent</span>' : ''}</p>
+      <p class="rel-def">${esc(x.def)}</p>`;
+  };
+  const items = m.items.map(({ r, a, there }) => `
+    <section class="rel-item">
+      ${head(r)}
+      <p class="rel-line"><b>Same</b> ${esc(a.same)}</p>
+      <p class="rel-line"><b>Differs</b> ${esc(a.differs)}</p>
+      <blockquote class="rel-psg"><p>“${esc(there.exact)}”</p><a href="${locHref(G, there)}">${esc(m.label)}${there.para ? `, ¶ ${there.para}` : ''} →</a></blockquote>
+    </section>`).join('');
+  // One passage across the alignments: a footer link to it; several: each item carries its own link.
+  const places = [...new Map(m.items.map(({ there }) => [locHref(G, there), there])).values()];
+  return {
+    title: `↔ ${w?.title?.split(';')[0] || m.label}`,
+    meta: w ? `${esc(authorOf(G, w))}${yearOf(w) ? `, ${esc(String(yearOf(w)))}` : ''}` : '',
+    html: items,
+    links: [...(places.length === 1 ? [{ href: locHref(G, places[0]), label: `Go to the passage in ${m.label}` }] : []),
+      ...[...new Map(m.items.map(({ r, n }) => [r.id, { href: pairHref(r, n), label: 'Read side by side' }])).values()].slice(0, 1)],
+  };
+}
+
+/* ---------- appendix: the back matter after "The End" of the last volume, from the work's dossier ---------- */
+const ROLE = { composition: 'Composition', preface: 'Preface', letter: 'Letters', review: 'Reception', source: 'Sources', criticism: 'Criticism' };
+
+// { html, parts: [[id, title]] } for the book's work, or null when the catalog holds nothing to put there.
+export function appendixOf(G, slug) {
+  const id = G.slugs[slug];
+  const w = id && G.nodes.get(id);
+  if (!w) return null;
+  const dossier = G.dossiers.get(id);
+  const texts = G.textsOf.get(id) || [];
+  const cited = new Set();
+  const cite = evs => (evs || []).forEach(e => cited.add(e.src));
+  cite(w.ev);
+  const parts = [];
+  const part = (pid, title, body) => { parts.push([pid, title]); return `<section class="app-part" id="${pid}"><h3>${esc(title)}</h3>${body}</section>`; };
+
+  // Contexts: the dossier's arrangement, or the context edges grouped by role.
+  const ctxEdges = G.edges.filter(e => e.type === 'context' && e.to === id);
+  ctxEdges.forEach(e => cite(e.ev));
+  const byRole = ctxEdges.reduce((m, e) => ((m[e.role] ||= []).push(e.from), m), {});
+  const sections = dossier?.sections || Object.entries(byRole).map(([role, items]) => ({ title: ROLE[role] || role, items }));
+  const vol = (w.slugs || []).length > 1 ? s => w.slugs.indexOf(s) + 1 : () => 0;
+  const where = loc => `${vol(loc.source) ? `, Volume ${roman(vol(loc.source))}` : ''}${loc.para ? `, ¶ ${loc.para}` : ''}`;
+  const item = itemId => {
+    const g = G.glosses.get(itemId);
+    if (g) {
+      cite(g.ev);
+      return `<li class="app-gloss"><p class="app-title">${esc(g.label)}</p><p>${esc(g.text)}</p>
+        <p class="app-links"><a href="${locHref(G, g.loc)}">In the text${where(g.loc)}</a></p></li>`;
+    }
+    const c = G.nodes.get(itemId);
+    if (!c) return '';
+    cite(c.ev);
+    const fp = c.first_pub || {};
+    const s = G.contexts[itemId];
+    const head = `<i>${esc(c.title)}</i>`;
+    // A context printed inside the book itself (Dorian Gray's Preface) has no ctx- text; its locus points into the book.
+    const at = !s && ctxEdges.find(e => e.from === itemId)?.loci?.[0];
+    return `<li class="app-ctx"><p class="app-title">${s ? `<a href="#/read/${esc(s)}">${head}</a>` : head}</p>
+      <p class="app-sub">${esc(authorOf(G, c))}${fp.venue ? `, ${esc(fp.venue)}` : ''}${yearOf(c) ? `, ${esc(String(yearOf(c)))}` : ''}</p>${at
+      ? `<p class="app-links"><a href="${locHref(G, at)}">In the text${where(at)}</a></p>` : ''}</li>`;
+  };
+  const ctxHTML = sections.map(s => {
+    const items = s.items.map(item).join('');
+    return items ? `<h4>${esc(s.title)}</h4><ul class="app-list">${items}</ul>` : '';
+  }).join('');
+
+  // A Note on the Text: the editor's note, the editions of each text, and the collation behind the copy-text.
+  const col = G.collate[id];
+  const editions = [...G.nodes.values()].filter(n => n.kind === 'edition' && texts.some(t => t.id === n.text)).sort((a, b) => a.year - b.year);
+  editions.forEach(e => cite(e.ev));
+  texts.forEach(t => cite(t.ev));
+  const label = tid => G.nodes.get(tid)?.label || tid;
+  const noteHTML = (dossier?.note_on_text ? `<p>${esc(dossier.note_on_text)}</p>` : '')
+    + (editions.length ? `<table class="app-table"><thead><tr><th>Edition</th><th>Text</th></tr></thead><tbody>${editions.map(e =>
+      `<tr><td>${esc(e.label)}</td><td>${esc(label(e.text))}</td></tr>`).join('')}</tbody></table>` : '')
+    + (col ? `<h4>Collation</h4><p class="app-sub">Sentences found in only one of the two editions, and how many of them occur in this edition's text.</p>
+      <table class="app-table"><thead><tr><th>Sentences unique to</th><th class="num">Found here</th></tr></thead><tbody>${Object.entries(col.texts).map(([tid, v]) =>
+        `<tr><td>${esc(label(tid))}${tid === col.copytext ? ' <span class="app-sub">(copy-text)</span>' : ''}</td><td class="num">${v.found} of ${v.probes}</td></tr>`).join('')}</tbody></table>` : '');
+
+  // Sources: the dossier's bibliography, then every source the records above rest on.
+  const author = G.nodes.get(w.author);
+  if (author?.lccn) cited.add(`src:lcnaf-${author.lccn}`);
+  const src = sid => {
+    const s = G.sources.get(sid);
+    return s ? `<li>${s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a>` : esc(s.title)}</li>` : '';
+  };
+  const bib = dossier?.bibliography || [];
+  const rest = [...cited].filter(s => !s.startsWith('ctx:') && !bib.includes(s)).sort();
+  const srcHTML = [...bib, ...rest].map(src).join('');
+
+  if (!ctxHTML && !noteHTML && !dossier) return null;
+  const html = (ctxHTML ? part('app-contexts', 'Contexts', ctxHTML) : '')
+    + (noteHTML ? part('app-note', 'A Note on the Text', noteHTML) : '')
+    + (srcHTML ? part('app-sources', 'Sources', `<ul class="app-list app-src">${srcHTML}</ul>`) : '');
+  return html ? { html: `<section class="appendix" id="appendix"><h2>Appendix</h2>${html}</section>`, parts } : null;
+}
+
+// notes: { marks: Map(para -> [{ g, n } | { rel }]), open(anchor, kind, id) } — footnote and relation markers from the catalog.
+// appendix: { html, parts } from appendixOf, set after "The End" of the last volume and listed in the contents.
+// graph: the book's place in the graph (#/graph/<slug>), when it is a node there.
+// author: the author's essay (#/author/<slug>), when there is one.
+export function renderReader(root, book, startPara, notes = null, appendix = null, graph = null, author = null) {
   const total = book.paragraphs.length;
   const o = opt();
 
@@ -43,18 +215,43 @@ export function renderReader(root, book, startPara) {
     ? chapters.map((c, i) => ({ title: c.title, start: i === 0 ? 1 : c.para, end: (chapters[i + 1]?.para ?? total + 1) - 1 }))
     : [{ title: '', start: 1, end: total }];
   const segOf = para => Math.max(0, segs.findIndex(x => para >= x.start && para <= x.end));
-  const titlePage = `<section class="tp"><p class="tp-author">${esc(book.author)}</p><h1>${esc(book.title)}</h1>${book.vol ? `<p class="tp-vol">${volOf(book)}</p>` : ''}<p class="tp-year">${book.year < 0 ? `c. ${-book.year} BC` : book.year < 1000 ? `c. ${book.year}` : book.year}</p></section>`;
+  const titlePage = `<section class="tp"><p class="tp-author">${author ? `<a href="${esc(author)}">${esc(book.author)}</a>` : esc(book.author)}</p><h1>${esc(book.title)}</h1>${book.vol ? `<p class="tp-vol">${volOf(book)}</p>` : ''}<p class="tp-year">${book.year < 0 ? `c. ${-book.year} BC` : book.year < 1000 ? `c. ${book.year}` : book.year}</p></section>`;
   // The last volume ends the novel; the others hand over to the next volume once it is on the shelf.
   const more = book.vol && book.vol < book.vols;
-  const endHTML = !more ? '<p class="the-end">The End</p>'
+  if (more) appendix = null;
+  const endHTML = !more ? '<p class="the-end">The End</p>' + (appendix?.html || '')
     : `<p class="the-end">End of Volume ${roman(book.vol)}</p>` + (book.next
       ? `<p class="next-vol"><a href="#/read/${esc(book.next.slug)}">Continue to Volume ${roman(book.next.vol)}</a></p>`
       : `<p class="next-vol soon">Volume ${roman(book.vol + 1)} is coming soon</p>`);
   const paraHTML = i => {
     const p = book.paragraphs[i - 1];
     if (p.length === 1 && p[0] && p[0].h) return `<h2 class="ch" id="p${i}" data-p="${i}">${esc(p[0].h)}</h2>`;
-    return `<p id="p${i}" data-p="${i}">${p.map(tok).join('')}</p>`;
+    return `<p id="p${i}" data-p="${i}">${withMarks(p, notes?.marks?.get(i))}</p>`;
   };
+  // A footnote marker goes right after the passage it glosses (at the paragraph's end if the passage is not found).
+  function withMarks(p, list) {
+    const html = p.map(tok);
+    if (!list) return html.join('');
+    const text = p.map(x => (typeof x === 'string' ? x : x[0]));
+    const full = text.join('');
+    const tail = [];
+    for (const { g, n, rel } of list) {
+      const mark = rel
+        ? `<button class="rel-mark" data-rel="${esc(rel.id)}" aria-label="Related passage in ${esc(rel.label)}">↔ ${esc(rel.label)}</button>`
+        : `<button class="fn" data-gloss="${esc(g.id)}" aria-label="Note ${n}: ${esc(g.label)}">${n}</button>`;
+      const loc = rel ? { exact: rel.exact } : g.loc;
+      let at = full.indexOf(loc.exact);
+      if (loc.prefix) { const k = full.indexOf(loc.prefix + loc.exact); if (k >= 0) at = k + loc.prefix.length; }
+      if (at < 0) { tail.push(mark); continue; }
+      const end = at + loc.exact.length;
+      let pos = 0;
+      for (let k = 0; k < text.length; k++) {
+        pos += text[k].length;
+        if (pos >= end) { html[k] += mark; break; }
+      }
+    }
+    return html.join('') + tail.join('');
+  }
   const seg = (name, items, cur) => `<div class="seg" role="group">${items.map(([v, l]) =>
     `<button class="chip" data-set="${name}" data-val="${v}" aria-pressed="${String(cur) === String(v)}">${l}</button>`).join('')}</div>`;
 
@@ -62,9 +259,10 @@ export function renderReader(root, book, startPara) {
   <div class="ereader">
     <header class="r-top chrome">
       <a class="r-back" href="#/">${ICON.back}<span>Library</span></a>
-      <div class="r-title"><b>${esc(book.title)}${book.vol ? ` ${roman(book.vol)}` : ''}</b><span>${esc(book.author)}</span></div>
+      <div class="r-title"><b>${esc(book.title)}${book.vol ? ` ${roman(book.vol)}` : ''}</b>${author ? `<a class="r-author" href="${esc(author)}">${esc(book.author)}</a>` : `<span>${esc(book.author)}</span>`}</div>
       <div class="r-actions">
-        ${chapters.length ? `<button class="icon-btn" data-panel="toc" aria-label="Contents" aria-expanded="false">${ICON.list}</button>` : ''}
+        ${graph ? `<a class="icon-btn" href="${esc(graph)}" aria-label="Show in the graph" title="Show in the graph">${ICON.graph}</a>` : ''}
+        ${chapters.length || appendix ? `<button class="icon-btn" data-panel="toc" aria-label="Contents" aria-expanded="false">${ICON.list}</button>` : ''}
         <button class="icon-btn aa" data-panel="aa" aria-label="Reading settings" aria-expanded="false">Aa</button>
       </div>
     </header>
@@ -185,6 +383,8 @@ export function renderReader(root, book, startPara) {
     Object.assign(clip.style, { left: L.x0 + L.m + 'px', top: L.top + L.vpad + 'px', width: (L.spread ? 2 * L.pageW - 2 * L.m : L.colW) + 'px', height: L.textH + 'px' });
     Object.assign(flow.style, { transform: 'none', width: clip.style.width, height: L.textH + 'px', columnCount: L.per, columnGap: 2 * L.m + 'px' });
     L.pages = pageOf(flow.querySelector('.flow-end')) + 1;
+    const theEnd = flow.querySelector('.the-end');
+    L.endPage = theEnd ? pageOf(theEnd) : null;
     if (L.pages % L.per) L.pages += L.per - (L.pages % L.per);
     // The clip can only scroll as far as its content: stretch it to the padded last spread.
     R.querySelector('.clip-end').style.left = L.pages * L.pageW - 2 * L.m - 1 + 'px';
@@ -195,6 +395,9 @@ export function renderReader(root, book, startPara) {
     pg -= pg % L.per;
     show(pg);
   }
+
+  // The appendix starts on a fresh page after the one with "The End".
+  const inAppendix = () => !!appendix && si === segs.length - 1 && L?.endPage != null && page > L.endPage;
 
   function pageOf(el) {
     if (!el) return 0;
@@ -241,15 +444,18 @@ export function renderReader(root, book, startPara) {
     scrub.value = String(page / L.per + 1);
     const last = page + L.per >= L.pages;
     const end = last && si === segs.length - 1;
+    // The story is done once "The End" is on screen; the appendix may follow on later pages.
+    const done = end || (si === segs.length - 1 && L.endPage != null && page + L.per > L.endPage);
     const a = page, b = Math.min(page + L.per - 1, L.pages - 1);
     const pages = L.per === 2 ? `ages ${a + 1}–${b + 1} of ${L.pages}` : `age ${a + 1} of ${L.pages}`;
-    R.querySelector('.pos').textContent = segs.length > 1 ? `${segs[si].title}, p${pages}` : `P${pages}`;
+    const where = inAppendix() ? 'Appendix' : segs.length > 1 ? segs[si].title : '';
+    R.querySelector('.pos').textContent = where ? `${where}, p${pages}` : `P${pages}`;
     const para = page === 0 ? segs[si].start : firstParaOnPage(page);
     const left = Math.max(0, Math.round(book.minutes * (1 - para / total)));
-    R.querySelector('.left').textContent = end ? (more ? 'End of volume' : 'End of story') : left <= 1 ? 'Less than a minute left' : `${left} min left`;
+    R.querySelector('.left').textContent = done ? (more ? 'End of volume' : 'End of story') : left <= 1 ? 'Less than a minute left' : `${left} min left`;
     R.querySelectorAll('.prev').forEach(b => { b.disabled = page === 0 && si === 0; });
     R.querySelectorAll('.next').forEach(b => { b.disabled = end; });
-    setProgress(book.slug, end ? total : para, end ? 100 : (para / total) * 100, total);
+    setProgress(book.slug, done ? total : para, done ? 100 : (para / total) * 100, total);
   }
 
   /* ---------- page turning ---------- */
@@ -320,8 +526,13 @@ export function renderReader(root, book, startPara) {
   });
   stage.addEventListener('click', e => {
     if (swiped) { swiped = false; return; }
+    if (e.target.closest('.clip a')) return; // links in the text (next volume, appendix) navigate
     const tb = e.target.closest('.turn');
     if (tb) return turn(tb.classList.contains('next') ? 1 : -1);
+    const fn = e.target.closest('.clip .fn');
+    if (fn && notes) return notes.open(fn, 'gloss', fn.dataset.gloss);
+    const rm = e.target.closest('.clip .rel-mark');
+    if (rm && notes) return notes.open(rm, 'rel', rm.dataset.rel);
     const span = e.target.closest('.clip .w');
     const sel = getSelection();
     if (span && !(sel && !sel.isCollapsed && sel.toString().trim().length > 1)) return openFor(span);
@@ -368,11 +579,20 @@ export function renderReader(root, book, startPara) {
   R.querySelector('[data-close-panel]').addEventListener('click', closePanels);
 
   function drawToc() {
-    panels.toc.querySelector('.toc').innerHTML = segs.map((x, n) => `<li><button data-seg="${n}"${n === si ? ' aria-current="true"' : ''}>${esc(x.title || book.title)}</button></li>`).join('');
+    const inApp = inAppendix();
+    panels.toc.querySelector('.toc').innerHTML = segs.map((x, n) => `<li><button data-seg="${n}"${n === si && !inApp ? ' aria-current="true"' : ''}>${esc(x.title || book.title)}</button></li>`).join('')
+      + (appendix ? `<li class="toc-app"><button data-app="appendix"${inApp ? ' aria-current="true"' : ''}>Appendix</button>
+        <ol>${appendix.parts.map(([id, t]) => `<li><button data-app="${id}">${esc(t)}</button></li>`).join('')}</ol></li>` : '');
   }
   panels.toc.addEventListener('click', e => {
     const b = e.target.closest('[data-seg]');
     if (b) { closePanels(); held = null; renderSeg(+b.dataset.seg); layout(null); show(0); }
+    const a = e.target.closest('[data-app]');
+    if (a) {
+      closePanels(); held = null;
+      if (si !== segs.length - 1) renderSeg(segs.length - 1);
+      layout(flow.querySelector(`#${a.dataset.app}`));
+    }
   });
 
   panels.aa.addEventListener('click', e => {

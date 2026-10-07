@@ -1,12 +1,12 @@
-"""Shared helpers for reading content/sources/<slug>.txt."""
+"""Shared helpers for reading content/sources/<slug>.txt (and content/contexts/<id>.txt)."""
 import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 
 
-def load_paragraphs(slug: str) -> list[str]:
-    text = (ROOT / "content" / "sources" / f"{slug}.txt").read_text(encoding="utf-8")
+def load_paragraphs(slug: str, folder: str = "sources") -> list[str]:
+    text = (ROOT / "content" / folder / f"{slug}.txt").read_text(encoding="utf-8")
     return [p.strip() for p in text.split("\n\n") if p.strip()]
 
 

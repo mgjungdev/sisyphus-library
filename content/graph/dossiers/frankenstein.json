@@ -1,0 +1,12 @@
+{
+ "work": "work:frankenstein",
+ "text": "text:frankenstein-1818",
+ "note_on_text": "This edition reads the first edition of 1818, published anonymously in three volumes, from the Project Gutenberg transcription of a photo-reprint. Chapter numbers restart in each volume, as they do in 1818. Mary Shelley revised the novel for the one-volume Standard Novels edition of 1831 and added an Introduction; the 1831 text is given here only for comparison.",
+ "sections": [
+  {"title": "Composition", "items": ["work:shelley-1831-intro", "work:pbs-1818-preface"]},
+  {"title": "The Creature's Reading", "items": ["gloss:frank-paradise-lost", "gloss:frank-plutarch", "gloss:frank-werter"]},
+  {"title": "Quotations in the Text", "items": ["gloss:frank-mariner", "gloss:frank-tintern", "gloss:frank-mutability"]},
+  {"title": "Reception, 1818", "items": ["work:scott-blackwoods-1818"]}
+ ],
+ "bibliography": ["src:romantic-circles-werter", "src:hathi-blackwoods-v2"]
+}

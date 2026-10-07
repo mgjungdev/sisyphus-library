@@ -18,6 +18,7 @@
 <link rel="stylesheet" href="css/reader.css">
 <link rel="stylesheet" href="css/card.css">
 <link rel="stylesheet" href="css/pages.css">
+<link rel="stylesheet" href="css/graph.css">
 <script>
   try {
     let t = localStorage.getItem('sl.theme');
@@ -34,7 +35,18 @@
   </a>
   <div class="topbar-title" id="topbar-title" aria-live="polite"></div>
   <nav class="topbar-actions">
-    <a class="icon-btn" href="#/settings" aria-label="Settings">
+    <div class="view-switch" role="group" aria-label="View">
+      <span class="view-thumb" aria-hidden="true"></span>
+      <a href="#/" data-nav="library" aria-label="Shelves">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V5.5A1.5 1.5 0 0 1 5.5 4H8v16M8 20V6h3.5v14M11.5 20V8.2l3.2-.9 3.8 12.7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M3 20h18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <span>Shelves</span>
+      </a>
+      <a href="#/graph" data-nav="graph" aria-label="Graph">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="7" r="2.4" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="18" cy="6" r="2.4" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="18" r="2.4" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8.3 7.4l7.4-.9M7.2 9.1l3.7 6.8M16.9 8.2l-3.8 7.6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <span>Graph</span>
+      </a>
+    </div>
+    <a class="icon-btn" href="#/settings" data-nav="settings" aria-label="Settings">
       <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 2.8v2.4M12 18.8v2.4M21.2 12h-2.4M5.2 12H2.8M18.5 5.5l-1.7 1.7M7.2 16.8l-1.7 1.7M18.5 18.5l-1.7-1.7M7.2 7.2L5.5 5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
     </a>
   </nav>
@@ -42,6 +54,7 @@
 <main id="view" tabindex="-1"></main>
 <div id="flight-layer" aria-hidden="true"></div>
 <div id="card-layer"></div>
+<script src="vendor/force-graph.min.js" defer></script>
 <script type="module" src="js/app.js"></script>
 </body>
 </html>

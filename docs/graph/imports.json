@@ -1,0 +1,356 @@
+[
+ {
+  "slug": "castle-of-otranto",
+  "title": "The Castle of Otranto",
+  "wave": "G33",
+  "step": "G33-01"
+ },
+ {
+  "slug": "mysteries-of-udolpho",
+  "title": "The Mysteries of Udolpho",
+  "wave": "G33",
+  "step": "G33-02"
+ },
+ {
+  "slug": "the-monk",
+  "title": "The Monk",
+  "wave": "G33",
+  "step": "G33-03"
+ },
+ {
+  "slug": "vathek",
+  "title": "Vathek",
+  "wave": "G33",
+  "step": "G33-04"
+ },
+ {
+  "slug": "the-vampyre",
+  "title": "The Vampyre",
+  "wave": "G33",
+  "step": "G33-05"
+ },
+ {
+  "slug": "carmilla",
+  "title": "Carmilla",
+  "wave": "G33",
+  "step": "G33-06"
+ },
+ {
+  "slug": "melmoth-the-wanderer",
+  "title": "Melmoth the Wanderer",
+  "wave": "G33",
+  "step": "G33-07"
+ },
+ {
+  "slug": "william-wilson",
+  "title": "William Wilson",
+  "wave": "G34",
+  "step": "G34-01"
+ },
+ {
+  "slug": "oval-portrait",
+  "title": "The Oval Portrait",
+  "wave": "G34",
+  "step": "G34-02"
+ },
+ {
+  "slug": "the-sandman",
+  "title": "The Sandman",
+  "wave": "G34",
+  "step": "G34-03"
+ },
+ {
+  "slug": "the-double",
+  "title": "The Double",
+  "wave": "G34",
+  "step": "G34-04"
+ },
+ {
+  "slug": "the-nose",
+  "title": "The Nose",
+  "wave": "G34",
+  "step": "G34-05"
+ },
+ {
+  "slug": "diary-of-a-madman",
+  "title": "Diary of a Madman",
+  "wave": "G34",
+  "step": "G34-06"
+ },
+ {
+  "slug": "the-horla",
+  "title": "The Horla",
+  "wave": "G34",
+  "step": "G34-07"
+ },
+ {
+  "slug": "don-quixote",
+  "title": "Don Quixote",
+  "wave": "G35",
+  "step": "G35-01"
+ },
+ {
+  "slug": "pilgrims-progress",
+  "title": "The Pilgrim's Progress",
+  "wave": "G35",
+  "step": "G35-02"
+ },
+ {
+  "slug": "joseph-andrews",
+  "title": "Joseph Andrews",
+  "wave": "G35",
+  "step": "G35-03"
+ },
+ {
+  "slug": "rasselas",
+  "title": "Rasselas",
+  "wave": "G35",
+  "step": "G35-04"
+ },
+ {
+  "slug": "vicar-of-wakefield",
+  "title": "The Vicar of Wakefield",
+  "wave": "G35",
+  "step": "G35-05"
+ },
+ {
+  "slug": "tristram-shandy",
+  "title": "Tristram Shandy",
+  "wave": "G35",
+  "step": "G35-06"
+ },
+ {
+  "slug": "poor-folk",
+  "title": "Poor Folk",
+  "wave": "G36",
+  "step": "G36-01"
+ },
+ {
+  "slug": "death-of-ivan-ilyich",
+  "title": "The Death of Ivan Ilyich",
+  "wave": "G36",
+  "step": "G36-02"
+ },
+ {
+  "slug": "anna-karenina",
+  "title": "Anna Karenina",
+  "wave": "G36",
+  "step": "G36-03"
+ },
+ {
+  "slug": "kreutzer-sonata",
+  "title": "The Kreutzer Sonata",
+  "wave": "G36",
+  "step": "G36-04"
+ },
+ {
+  "slug": "dead-souls",
+  "title": "Dead Souls",
+  "wave": "G36",
+  "step": "G36-05"
+ },
+ {
+  "slug": "the-darling",
+  "title": "The Darling",
+  "wave": "G36",
+  "step": "G36-06"
+ },
+ {
+  "slug": "ward-no-6",
+  "title": "Ward No. 6",
+  "wave": "G36",
+  "step": "G36-07"
+ },
+ {
+  "slug": "woman-in-white",
+  "title": "The Woman in White",
+  "wave": "G37",
+  "step": "G37-01"
+ },
+ {
+  "slug": "lady-audleys-secret",
+  "title": "Lady Audley's Secret",
+  "wave": "G37",
+  "step": "G37-02"
+ },
+ {
+  "slug": "bleak-house",
+  "title": "Bleak House",
+  "wave": "G37",
+  "step": "G37-03"
+ },
+ {
+  "slug": "david-copperfield",
+  "title": "David Copperfield",
+  "wave": "G37",
+  "step": "G37-04"
+ },
+ {
+  "slug": "vanity-fair",
+  "title": "Vanity Fair",
+  "wave": "G37",
+  "step": "G37-05"
+ },
+ {
+  "slug": "middlemarch",
+  "title": "Middlemarch",
+  "wave": "G37",
+  "step": "G37-06"
+ },
+ {
+  "slug": "wives-and-daughters",
+  "title": "Wives and Daughters",
+  "wave": "G37",
+  "step": "G37-07"
+ },
+ {
+  "slug": "alice-in-wonderland",
+  "title": "Alice's Adventures in Wonderland",
+  "wave": "G38",
+  "step": "G38-01"
+ },
+ {
+  "slug": "through-the-looking-glass",
+  "title": "Through the Looking-Glass",
+  "wave": "G38",
+  "step": "G38-02"
+ },
+ {
+  "slug": "water-babies",
+  "title": "The Water-Babies",
+  "wave": "G38",
+  "step": "G38-03"
+ },
+ {
+  "slug": "little-women",
+  "title": "Little Women",
+  "wave": "G38",
+  "step": "G38-04"
+ },
+ {
+  "slug": "wizard-of-oz",
+  "title": "The Wonderful Wizard of Oz",
+  "wave": "G38",
+  "step": "G38-05"
+ },
+ {
+  "slug": "peter-and-wendy",
+  "title": "Peter and Wendy",
+  "wave": "G38",
+  "step": "G38-06"
+ },
+ {
+  "slug": "wind-in-the-willows",
+  "title": "The Wind in the Willows",
+  "wave": "G38",
+  "step": "G38-07"
+ },
+ {
+  "slug": "celestial-railroad",
+  "title": "The Celestial Railroad",
+  "wave": "G39",
+  "step": "G39-01"
+ },
+ {
+  "slug": "dr-heideggers-experiment",
+  "title": "Dr. Heidegger's Experiment",
+  "wave": "G39",
+  "step": "G39-02"
+ },
+ {
+  "slug": "feathertop",
+  "title": "Feathertop",
+  "wave": "G39",
+  "step": "G39-03"
+ },
+ {
+  "slug": "benito-cereno",
+  "title": "Benito Cereno",
+  "wave": "G39",
+  "step": "G39-04"
+ },
+ {
+  "slug": "typee",
+  "title": "Typee",
+  "wave": "G39",
+  "step": "G39-05"
+ },
+ {
+  "slug": "uncle-toms-cabin",
+  "title": "Uncle Tom's Cabin",
+  "wave": "G39",
+  "step": "G39-06"
+ },
+ {
+  "slug": "looking-backward",
+  "title": "Looking Backward",
+  "wave": "G40",
+  "step": "G40-01"
+ },
+ {
+  "slug": "news-from-nowhere",
+  "title": "News from Nowhere",
+  "wave": "G40",
+  "step": "G40-02"
+ },
+ {
+  "slug": "erewhon",
+  "title": "Erewhon",
+  "wave": "G40",
+  "step": "G40-03"
+ },
+ {
+  "slug": "the-coming-race",
+  "title": "The Coming Race",
+  "wave": "G40",
+  "step": "G40-04"
+ },
+ {
+  "slug": "from-the-earth-to-the-moon",
+  "title": "From the Earth to the Moon",
+  "wave": "G40",
+  "step": "G40-05"
+ },
+ {
+  "slug": "first-men-in-the-moon",
+  "title": "The First Men in the Moon",
+  "wave": "G40",
+  "step": "G40-06"
+ },
+ {
+  "slug": "she-haggard",
+  "title": "She",
+  "wave": "G41",
+  "step": "G41-01"
+ },
+ {
+  "slug": "beach-of-falesa",
+  "title": "The Beach of Falesá",
+  "wave": "G41",
+  "step": "G41-02"
+ },
+ {
+  "slug": "almayers-folly",
+  "title": "Almayer's Folly",
+  "wave": "G41",
+  "step": "G41-03"
+ },
+ {
+  "slug": "jungle-book",
+  "title": "The Jungle Book",
+  "wave": "G41",
+  "step": "G41-04"
+ },
+ {
+  "slug": "swiss-family-robinson",
+  "title": "The Swiss Family Robinson",
+  "wave": "G41",
+  "step": "G41-05"
+ },
+ {
+  "slug": "coral-island",
+  "title": "The Coral Island",
+  "wave": "G41",
+  "step": "G41-06"
+ }
+]
