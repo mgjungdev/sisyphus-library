@@ -98,11 +98,22 @@ export function renderPair(root, G, r, sides, start = 1) {
   const maxOf = s => Math.max(0, panes[s].scrollHeight - panes[s].clientHeight);
   function measure() {
     const top = s => panes[s].getBoundingClientRect().top - panes[s].scrollTop;
-    const at = (s, n) => {
+    // A passage near the start of a book sits above the reading line even at scrollTop 0: a margin above the text
+    // gives it room to reach the line.
+    const raw = (s, n) => {
       const e = el(s, n);
       if (!e) return null;
       const r = e.getBoundingClientRect();
-      return Math.max(0, Math.min(maxOf(s), r.top - top(s) + r.height / 2 - panes[s].clientHeight * LINE));
+      return r.top - top(s) + r.height / 2 - panes[s].clientHeight * LINE;
+    };
+    for (const s of ['from', 'to']) {
+      const t = panes[s].firstElementChild, was = parseFloat(t.style.marginTop) || 0;
+      const low = Math.min(0, ...als.map((_, k) => raw(s, k + 1)).filter(v => v != null).map(v => v - was));
+      t.style.marginTop = low < 0 ? `${Math.ceil(-low)}px` : '';
+    }
+    const at = (s, n) => {
+      const v = raw(s, n);
+      return v == null ? null : Math.max(0, Math.min(maxOf(s), v));
     };
     anchors = als.map((_, k) => ({ n: k + 1, from: at('from', k + 1), to: at('to', k + 1) })).filter(a => a.from != null && a.to != null);
   }

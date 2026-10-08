@@ -3,6 +3,7 @@ name: Gogolʹ, Nikolaĭ Vasilʹevich
 display: Nikolai Gogol
 born: 1809
 died: 1852
+person: person:nikolai-gogol
 lccn: n79056736
 ---
 

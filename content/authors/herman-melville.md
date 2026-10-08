@@ -3,6 +3,7 @@ name: Melville, Herman
 display: Herman Melville
 born: 1819
 died: 1891
+person: person:herman-melville
 lccn: n79006936
 ---
 

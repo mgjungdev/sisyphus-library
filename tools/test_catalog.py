@@ -106,6 +106,8 @@ def author_nodes(base):
 
 
 def main():
+    if "--stage" in sys.argv:  # the graph as a data step sees it (catalog.py --stage)
+        c.STAGE = sys.argv[sys.argv.index("--stage") + 1]
     base = c.load()
     failed = book_nodes(base) + author_nodes(base)
     real = c.check(base)

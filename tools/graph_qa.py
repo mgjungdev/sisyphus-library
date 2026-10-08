@@ -915,7 +915,7 @@ FPS = """ms => new Promise(done => { let n = 0; const t0 = performance.now();
 CAM = "() => ({ ...document.querySelector('.graph-stage').cam(), mode: document.querySelector('.graph-stage').mode })"
 FPS_MIN = 55
 ON_SCREEN = """() => { const st = document.querySelector('.graph-stage'), r = st.getBoundingClientRect();
-  const on = st.nodeIds().filter(n => !n.author).map(n => ({ id: n.id, q: st.screenOf(n.id) })).filter(o => o.q).map(o => ({ id: o.id, p: { x: o.q.x - r.left, y: o.q.y - r.top } }))
+  const on = st.nodeIds().filter(n => !n.author && n.deg).map(n => ({ id: n.id, q: st.screenOf(n.id) })).filter(o => o.q).map(o => ({ id: o.id, p: { x: o.q.x - r.left, y: o.q.y - r.top } }))
     .filter(o => o.p.x > 40 && o.p.x < r.width - 40 && o.p.y > 80 && o.p.y < r.height - 80)
     .sort((a, b) => Math.hypot(a.p.x - r.width / 2, a.p.y - r.height / 2) - Math.hypot(b.p.x - r.width / 2, b.p.y - r.height / 2));
   return on[0] ? { id: on[0].id, x: r.left + on[0].p.x, y: r.top + on[0].p.y } : null; }"""
@@ -1027,7 +1027,7 @@ def g1(browser, base) -> int:
         moved = ((b["x"] - c["x"]) * c["k"], (b["y"] - c["y"]) * c["k"])  # screen px the map followed the finger
         check("one-finger pan", moved[0] > 90 and moved[1] > 50 and abs(c["k"] - b["k"]) < 0.01,
               f"map moved {moved[0]:.0f},{moved[1]:.0f} px under a 120,72 px drag, zoom {c['k']:.2f}")
-    tapped = page.evaluate(ON_SCREEN)  # the book nearest the middle of the zoomed map
+    tapped = page.evaluate(ON_SCREEN)  # the related book nearest the middle of the zoomed map (a book with no relations on a line opens the line)
     tap_in = bool(tapped)
     if tap_in:
         page.touchscreen.tap(tapped["x"], tapped["y"])

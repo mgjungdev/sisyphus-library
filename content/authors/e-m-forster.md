@@ -3,6 +3,7 @@ name: Forster, E. M. (Edward Morgan)
 display: E. M. Forster
 born: 1879
 died: 1970
+person: person:e-m-forster
 lccn: n79091231
 ---
 

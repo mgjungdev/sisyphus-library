@@ -3,6 +3,7 @@ name: Irving, Washington
 display: Washington Irving
 born: 1783
 died: 1859
+person: person:washington-irving
 lccn: n79005645
 ---
 

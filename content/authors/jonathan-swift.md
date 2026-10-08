@@ -3,6 +3,7 @@ name: Swift, Jonathan
 display: Jonathan Swift
 born: 1667
 died: 1745
+person: person:jonathan-swift
 lccn: n78096912
 ---
 

@@ -3,6 +3,7 @@ name: O'Brien, Fitz James
 display: Fitz-James O'Brien
 born: 1828
 died: 1862
+person: person:fitz-james-o-brien
 lccn: n50038225
 ---
 

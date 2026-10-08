@@ -3,6 +3,7 @@ name: Voltaire
 display: Voltaire
 born: 1694
 died: 1778
+person: person:voltaire
 lccn: n80126267
 ---
 

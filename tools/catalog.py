@@ -22,6 +22,9 @@ Usage:
     python tools/catalog.py authority           fetch LC Name Authority labels for every person
     python tools/catalog.py collate <work>      decide which text (expression) our copy is, from two Gutenberg editions
     python tools/catalog.py substitute <reading> print the substitution-test prompt for one reading
+    … --stage <code>                            any command, on the graph as data step <code> sees it in serial order,
+                                                with its stage folder content/graph/stage/<code>/ laid over it;
+                                                authority and collate then write there (tools/graph_stage.py)
 """
 import html
 import json
@@ -43,6 +46,7 @@ RAW = CONTENT / "raw"
 OUT = ROOT / "site" / "data"
 UA = "SisyphusLibrary/1.0 (study library)"
 OK = ("machine", "human")
+STAGE = None  # a data step's code (--stage): load() gives the graph as that step sees it, caches are written to its stage
 
 
 # ---------------- loading ----------------
@@ -52,6 +56,14 @@ def jsonl(name: str) -> list[dict]:
     if not path.exists():
         return []
     return [json.loads(l) for l in path.read_text(encoding="utf-8").splitlines() if l.strip()]
+
+
+def cache_dir() -> Path:
+    if not STAGE:
+        return GRAPH
+    d = GRAPH / "stage" / STAGE
+    d.mkdir(parents=True, exist_ok=True)
+    return d
 
 
 def jfile(name: str, default=None):
@@ -72,7 +84,11 @@ def load() -> dict:
         "collate": jfile("collate.json", {}),
         "authors": {p.stem: parse_author(p) for p in sorted((CONTENT / "authors").glob("*.md"))},
         "books": json.loads((CONTENT / "books.json").read_text(encoding="utf-8")),
+        "hidden": set(),
     }
+    if STAGE:
+        import graph_stage
+        graph_stage.apply_view(g, STAGE)
     # Generated sources: every Gutenberg id in the catalog or in a text's items, every person's LC record.
     pgs = {b["gutenberg"] for b in g["books"] if b.get("gutenberg")}
     pgs |= {it["pg"] for n in g["nodes"] if n.get("kind") == "text" for it in n.get("items", []) if it.get("pg")}
@@ -199,6 +215,8 @@ def check_authors(g: dict, r: "Report", nodes: dict):
         if collection and (d.get("born") or d.get("died")):
             r.err(where, "a collection has no born/died")
         p = nodes.get(a["person"]) if a["person"] else None
+        if d.get("person") in g["hidden"]:
+            continue  # its record comes from a step after this one in serial order
         if p:
             if d.get("person") != p["id"]:
                 r.err(where, f"person {d.get('person')!r} is not the author's record {p['id']}")
@@ -826,7 +844,7 @@ def cmd_authority():
         label = me["http://www.loc.gov/mads/rdf/v1#authoritativeLabel"][0]["@value"]
         cache[n["lccn"]] = label
         print(f"  {n['id']}: {label}")
-    (GRAPH / "authority.json").write_text(json.dumps(cache, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    (cache_dir() / "authority.json").write_text(json.dumps(cache, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
 
 SENT = re.compile(r"(?<=[.!?])\s+")
@@ -872,7 +890,7 @@ def cmd_collate(work: str):
     result["copytext"] = best if ok else "unknown"
     cache = g["collate"]
     cache[wid] = result
-    (GRAPH / "collate.json").write_text(json.dumps(cache, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    (cache_dir() / "collate.json").write_text(json.dumps(cache, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     for tid, v in result["texts"].items():
         print(f"  {tid}: {v['found']}/{v['probes']} probes in our copy")
     print(f"  copytext: {result['copytext']}")
@@ -895,7 +913,12 @@ def cmd_substitute(rid: str):
 
 
 def main():
+    global STAGE
     args = sys.argv[1:]
+    if "--stage" in args:
+        i = args.index("--stage")
+        STAGE = args[i + 1]
+        del args[i:i + 2]
     cmd = args[0] if args else "check"
     if cmd == "check":
         g = load()

@@ -1,0 +1,4 @@
+{"para": 1, "from": "Belle w", "to": "Bellew", "reason": "OCR split the name."}
+{"para": 1, "from": "Bat O'Brien", "to": "But O'Brien", "reason": "OCR misread."}
+{"para": 1, "from": "0' Bouncer", "to": "O'Bouncer", "reason": "OCR misread."}
+{"para": 1, "from": "line-end hyphens (ima- gination, sug- gests, hand- some)", "to": "joined words", "reason": "Hyphens at line ends of the scan are not part of the words."}

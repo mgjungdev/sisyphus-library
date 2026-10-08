@@ -1,0 +1,8 @@
+{"para": 8, "from": "better-could", "to": "better could", "reason": "A blot between the words in the scan of 17 August, not a hyphen; the OCR read it as one."}
+{"para": 41, "from": "Lupecially", "to": "Especially", "reason": "OCR misread."}
+{"para": 6, "from": "result, At breakfust", "to": "result. At breakfast", "reason": "OCR misread; the scan has a full stop."}
+{"para": 30, "from": "powerful! intellect", "to": "powerful intellect", "reason": "OCR read the line-end hyphen of 'intel-lect' as a mark."}
+{"para": 35, "from": "“ ‘Faith !’ … crying— ‘Faith ! Faith !’", "to": "“‘Faith!’ … crying—‘Faith! Faith!’", "reason": "The OCR dropped the inner quotation marks; spacing before marks is not kept."}
+{"para": 1, "from": "OCR of both issues (Internet Archive sim_literary-world_1850-08-17_7_185 and _1850-08-24_7_186)", "to": "words checked against the unsourced Wikisource text, and every disagreement in which both readings are words checked against the page images", "reason": "The two columns of each page are interleaved in the OCR. Where Wikisource departs from the 1850 print (for example 'like wine' for 'likewise', 'Shakespeare' for 'Shakspeare', 'bowels' for 'bonds', 'hooted' for 'looked'), the print is followed."}
+{"para": 1, "from": "line-end hyphens (moun- tains, found- lings, Haw- thorne)", "to": "joined words", "reason": "Hyphens at line ends of the scan are not part of the words; compounds hyphenated within a line (hill-side, back-ground, hay-mow) are kept."}
+{"para": 1, "from": "spaces before ; : ! ? and inside quotation marks", "to": "closed up", "reason": "Typesetting space, not text."}

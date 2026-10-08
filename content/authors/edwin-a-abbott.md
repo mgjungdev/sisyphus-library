@@ -3,6 +3,7 @@ name: Abbott, Edwin Abbott
 display: Edwin A. Abbott
 born: 1838
 died: 1926
+person: person:edwin-a-abbott
 lccn: n50034802
 ---
 

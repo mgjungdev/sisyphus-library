@@ -9,3 +9,4 @@ PAUSE
 .pipeline.lock
 pipeline.config.json
 .mirror/
+content/graph/stage/
