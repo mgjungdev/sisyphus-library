@@ -1,0 +1,3 @@
+{"para": 1, "from": "person ;", "to": "person;", "reason": "The space before the semicolon is the scan's spacing, not a word."}
+{"para": 2, "from": "me ;", "to": "me;", "reason": "The space before the semicolon is the scan's spacing, not a word."}
+{"para": 3, "from": "Carl yle's", "to": "Carlyle's", "reason": "OCR split the name with a space."}

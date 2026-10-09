@@ -3,6 +3,7 @@ name: Henry, O.
 display: O. Henry
 born: 1862
 died: 1910
+person: person:o-henry
 lccn: n79071080
 ---
 

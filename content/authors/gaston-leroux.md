@@ -3,6 +3,7 @@ name: Leroux, Gaston
 display: Gaston Leroux
 born: 1868
 died: 1927
+person: person:gaston-leroux
 lccn: n50050425
 ---
 

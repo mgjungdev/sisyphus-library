@@ -3,6 +3,7 @@ name: Twain, Mark
 display: Mark Twain
 born: 1835
 died: 1910
+person: person:mark-twain
 lccn: n79021164
 ---
 

@@ -3,6 +3,7 @@ name: Chopin, Kate
 display: Kate Chopin
 born: 1850
 died: 1904
+person: person:kate-chopin
 lccn: n80008080
 ---
 

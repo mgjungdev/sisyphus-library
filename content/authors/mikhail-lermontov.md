@@ -3,6 +3,7 @@ name: Lermontov, Mikhail I︠U︡rʹevich
 display: Mikhail Lermontov
 born: 1814
 died: 1841
+person: person:mikhail-lermontov
 lccn: n81032540
 ---
 

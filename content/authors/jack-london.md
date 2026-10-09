@@ -3,6 +3,7 @@ name: London, Jack
 display: Jack London
 born: 1876
 died: 1916
+person: person:jack-london
 lccn: n78086415
 ---
 

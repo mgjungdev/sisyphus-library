@@ -1,8 +1,9 @@
 ---
 name: Villeneuve, Gabrielle-Suzanne Barbot Gallon, dame de
 display: Madame de Villeneuve
-born: 1695
+born: approximately 1695
 died: 1755
+person: person:madame-de-villeneuve
 lccn: n85382197
 ---
 

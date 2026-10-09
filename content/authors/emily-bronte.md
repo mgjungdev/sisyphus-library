@@ -3,6 +3,7 @@ name: Brontë, Emily
 display: Emily Brontë
 born: 1818
 died: 1848
+person: person:emily-bronte
 lccn: n79018755
 ---
 

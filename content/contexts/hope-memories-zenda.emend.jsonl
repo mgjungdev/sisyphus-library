@@ -1,0 +1,6 @@
+{"para": 1, "from": "day— it", "to": "day—it", "reason": "The space after the dash is the scan's spacing, not a word."}
+{"para": 1, "from": "1893—1 was", "to": "1893—I was", "reason": "OCR misread of the capital I."}
+{"para": 1, "from": "''Ruritania\"", "to": "\"Ruritania\"", "reason": "OCR misread of the opening quotation mark."}
+{"para": 1, "from": "\"stuck up'';", "to": "\"stuck up\";", "reason": "OCR misread of the closing quotation mark."}
+{"para": 1, "from": "month— on", "to": "month—on", "reason": "The space after the dash is the scan's spacing, not a word."}
+{"para": 2, "from": "situa^ tion", "to": "situation", "reason": "Line-end hyphen read as a caret by the OCR."}

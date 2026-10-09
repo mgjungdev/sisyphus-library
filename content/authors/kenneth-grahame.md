@@ -3,6 +3,7 @@ name: Grahame, Kenneth
 display: Kenneth Grahame
 born: 1859
 died: 1932
+person: person:kenneth-grahame
 lccn: n50000823
 ---
 

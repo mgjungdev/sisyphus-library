@@ -1,8 +1,9 @@
 ---
-name: Maugham, W. Somerset
+name: Maugham, W. Somerset (William Somerset)
 display: W. Somerset Maugham
 born: 1874
 died: 1965
+person: person:w-somerset-maugham
 lccn: n79036830
 ---
 

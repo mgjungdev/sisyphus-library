@@ -2,6 +2,7 @@
 kind: collection
 name: Arabian nights
 display: The Arabian Nights
+person: person:the-arabian-nights
 lccn: n80008548
 ---
 

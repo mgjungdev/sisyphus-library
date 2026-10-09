@@ -3,6 +3,7 @@ name: Dickens, Charles
 display: Charles Dickens
 born: 1812
 died: 1870
+person: person:charles-dickens
 lccn: n78087607
 ---
 

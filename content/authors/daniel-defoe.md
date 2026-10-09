@@ -1,8 +1,9 @@
 ---
 name: Defoe, Daniel
 display: Daniel Defoe
-born: 1661
+born: 1661?
 died: 1731
+person: person:daniel-defoe
 lccn: n79053974
 ---
 

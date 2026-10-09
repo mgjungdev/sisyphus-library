@@ -3,6 +3,7 @@ name: Anderson, Sherwood
 display: Sherwood Anderson
 born: 1876
 died: 1941
+person: person:sherwood-anderson
 lccn: n79045519
 ---
 

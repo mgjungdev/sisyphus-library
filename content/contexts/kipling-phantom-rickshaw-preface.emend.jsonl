@@ -1,0 +1,6 @@
+{"para": 1, "from": "THIS", "to": "This", "reason": "The opening word is set in capitals in the scan."}
+{"para": 1, "from": "haunted ;", "to": "haunted;", "reason": "The space before the semicolon is the scan's spacing, not a word."}
+{"para": 1, "from": "place ;", "to": "place;", "reason": "The space before the semicolon is the scan's spacing, not a word."}
+{"para": 2, "from": "Grhost-stories", "to": "Ghost-stories", "reason": "OCR misread."}
+{"para": 2, "from": "trust ;", "to": "trust;", "reason": "The space before the semicolon is the scan's spacing, not a word."}
+{"para": 3, "from": "EUDYARD", "to": "RUDYARD", "reason": "OCR misread."}

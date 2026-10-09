@@ -3,6 +3,7 @@ name: Eliot, George
 display: George Eliot
 born: 1819
 died: 1880
+person: person:george-eliot
 lccn: n79045512
 ---
 

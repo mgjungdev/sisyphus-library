@@ -3,6 +3,7 @@ name: Maupassant, Guy de
 display: Guy de Maupassant
 born: 1850
 died: 1893
+person: person:guy-de-maupassant
 lccn: n79069916
 ---
 

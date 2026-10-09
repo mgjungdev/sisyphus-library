@@ -3,6 +3,7 @@ name: Mansfield, Katherine
 display: Katherine Mansfield
 born: 1888
 died: 1923
+person: person:katherine-mansfield
 lccn: n79043273
 ---
 

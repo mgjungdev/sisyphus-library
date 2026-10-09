@@ -3,6 +3,7 @@ name: Harte, Bret
 display: Bret Harte
 born: 1836
 died: 1902
+person: person:bret-harte
 lccn: n79103643
 ---
 

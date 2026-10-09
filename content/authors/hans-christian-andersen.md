@@ -3,6 +3,7 @@ name: Andersen, H. C. (Hans Christian)
 display: Hans Christian Andersen
 born: 1805
 died: 1875
+person: person:hans-christian-andersen
 lccn: n79022941
 ---
 

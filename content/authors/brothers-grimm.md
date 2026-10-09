@@ -3,6 +3,7 @@ name: Grimm, Jacob
 display: Brothers Grimm
 born: 1785
 died: 1863
+person: person:brothers-grimm
 lccn: n78095680
 ---
 

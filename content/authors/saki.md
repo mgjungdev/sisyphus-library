@@ -3,6 +3,7 @@ name: Saki
 display: Saki
 born: 1870
 died: 1916
+person: person:saki
 lccn: n81079486
 ---
 

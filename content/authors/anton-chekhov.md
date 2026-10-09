@@ -3,6 +3,7 @@ name: Chekhov, Anton Pavlovich
 display: Anton Chekhov
 born: 1860
 died: 1904
+person: person:anton-chekhov
 lccn: n79130807
 ---
 

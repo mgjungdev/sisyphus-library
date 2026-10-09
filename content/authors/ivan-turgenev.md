@@ -3,6 +3,7 @@ name: Turgenev, Ivan Sergeevich
 display: Ivan Turgenev
 born: 1818
 died: 1883
+person: person:ivan-turgenev
 lccn: n79144981
 ---
 

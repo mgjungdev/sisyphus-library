@@ -1,0 +1,6 @@
+{"para": 1, "from": "THE", "to": "The", "reason": "The opening word is set in capitals in the scan."}
+{"para": 2, "from": "Jf £\" Youth\"", "to": "\"Youth\"", "reason": "OCR misread of the paragraph's opening quotation mark."}
+{"para": 3, "from": "charlatan ;", "to": "charlatan;", "reason": "The space before the semicolon is the scan's spacing, not a word."}
+{"para": 3, "from": "things :", "to": "things:", "reason": "The space before the colon is the scan's spacing, not a word."}
+{"para": 4, "from": ">,  A most discreet, understanding man.  .  .  .  ^", "to": "A most discreet, understanding man. . . .", "reason": "OCR read marks in the margin as characters."}
+{"para": 6, "from": "said :", "to": "said:", "reason": "The space before the colon is the scan's spacing, not a word."}

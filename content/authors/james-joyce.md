@@ -3,6 +3,7 @@ name: Joyce, James
 display: James Joyce
 born: 1882
 died: 1941
+person: person:james-joyce
 lccn: n79056824
 ---
 

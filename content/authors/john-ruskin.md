@@ -3,6 +3,7 @@ name: Ruskin, John
 display: John Ruskin
 born: 1819
 died: 1900
+person: person:john-ruskin
 lccn: n79006950
 ---
 

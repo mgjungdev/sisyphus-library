@@ -3,6 +3,7 @@ name: Wharton, Edith
 display: Edith Wharton
 born: 1862
 died: 1937
+person: person:edith-wharton
 lccn: n79151500
 ---
 

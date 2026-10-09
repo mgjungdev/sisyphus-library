@@ -2,7 +2,8 @@
 name: Bierce, Ambrose
 display: Ambrose Bierce
 born: 1842
-died: 1914
+died: 1914?
+person: person:ambrose-bierce
 lccn: n79100683
 ---
 

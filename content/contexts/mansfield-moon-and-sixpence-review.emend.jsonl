@@ -1,0 +1,15 @@
+{"para": 2, "from": "THE Moon anp Sixpence. By W. S. Maugham. (Heinemann. 7s. net.)", "to": "The Moon and Sixpence. By W. S. Maugham. (Heinemann. 7s. net.)", "reason": "Small capitals in the scan; OCR read 'and' as 'anp'."}
+{"para": 3, "from": "AD Mr. Maugham", "to": "Had Mr. Maugham", "reason": "The drop capital H was not read by the OCR."}
+{"para": 3, "from": "**Go to hell.", "to": "“Go to hell.", "reason": "OCR misread of the opening quotation mark."}
+{"para": 4, "from": "guidegto", "to": "guide to", "reason": "OCR run-together."}
+{"para": 6, "from": "Pictures", "to": "pictures", "reason": "OCR misread of a lower-case letter."}
+{"para": 6, "from": "Hislifewascomplete.", "to": "His life was complete.", "reason": "OCR dropped the word spaces."}
+{"para": 7, "from": "Strick. land’s", "to": "Strickland’s", "reason": "A line-end hyphen read as a full stop."}
+{"para": 7, "from": "Strick. land", "to": "Strickland", "reason": "A line-end hyphen read as a full stop."}
+{"para": 10, "from": "“|. . She’ll", "to": "“. . . She’ll", "reason": "OCR read the first point of the ellipsis as a bar."}
+{"para": 14, "from": "together,", "to": "together.", "reason": "The sentence ends here; the next begins with a capital."}
+{"para": 14, "from": "devined", "to": "divined", "reason": "Spelling slip; the review has 'divine' two sentences later."}
+{"para": 14, "from": "able to. glean", "to": "able to glean", "reason": "A speck read as a full stop."}
+{"para": 14, "from": "makes ‘no attempt", "to": "makes no attempt", "reason": "A speck read as a quotation mark."}
+{"para": 15, "from": "ways of life, But", "to": "ways of life. But", "reason": "The sentence ends here; the next begins with a capital."}
+{"para": 15, "from": "li€e", "to": "like", "reason": "OCR misread."}

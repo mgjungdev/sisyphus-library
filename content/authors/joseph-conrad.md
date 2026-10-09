@@ -3,6 +3,7 @@ name: Conrad, Joseph
 display: Joseph Conrad
 born: 1857
 died: 1924
+person: person:joseph-conrad
 lccn: n79054067
 ---
 

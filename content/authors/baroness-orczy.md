@@ -3,6 +3,7 @@ name: Orczy, Emmuska Orczy, Baroness
 display: Baroness Orczy
 born: 1865
 died: 1947
+person: person:baroness-orczy
 lccn: n50064803
 ---
 

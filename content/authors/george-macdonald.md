@@ -3,6 +3,7 @@ name: MacDonald, George
 display: George MacDonald
 born: 1824
 died: 1905
+person: person:george-macdonald
 lccn: n78096948
 ---
 

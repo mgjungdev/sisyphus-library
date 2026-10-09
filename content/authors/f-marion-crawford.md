@@ -3,6 +3,7 @@ name: Crawford, F. Marion (Francis Marion)
 display: F. Marion Crawford
 born: 1854
 died: 1909
+person: person:f-marion-crawford
 lccn: n50019084
 ---
 

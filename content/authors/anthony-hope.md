@@ -3,6 +3,7 @@ name: Hope, Anthony
 display: Anthony Hope
 born: 1863
 died: 1933
+person: person:anthony-hope
 lccn: n50035272
 ---
 

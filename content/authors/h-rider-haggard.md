@@ -3,6 +3,7 @@ name: Haggard, H. Rider (Henry Rider)
 display: H. Rider Haggard
 born: 1856
 died: 1925
+person: person:h-rider-haggard
 lccn: n80010495
 ---
 

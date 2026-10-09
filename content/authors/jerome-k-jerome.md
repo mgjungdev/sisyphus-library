@@ -3,6 +3,7 @@ name: Jerome, Jerome K. (Jerome Klapka)
 display: Jerome K. Jerome
 born: 1859
 died: 1927
+person: person:jerome-k-jerome
 lccn: n80060933
 ---
 

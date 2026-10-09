@@ -3,6 +3,7 @@ name: Kipling, Rudyard
 display: Rudyard Kipling
 born: 1865
 died: 1936
+person: person:rudyard-kipling
 lccn: n79103792
 ---
 

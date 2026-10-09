@@ -2,6 +2,7 @@
 kind: collection
 name: Aesop
 display: Aesop
+person: person:aesop
 lccn: n81066350
 ---
 

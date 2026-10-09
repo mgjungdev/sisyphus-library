@@ -425,6 +425,14 @@ def contact(note: dict, notes: list[dict]) -> str:
     return "none"
 
 
+def heading_of(person: dict) -> str:
+    """The LC heading a person record should match: 'Name, born-died', or the bare name for an anonymous collection
+    (collection: true, no dates), which stands as the author of its tales (LC 'Arabian nights')."""
+    if person.get("collection"):
+        return person["name"]
+    return f"{person['name']}, {person['born']}-{person['died']}"
+
+
 REQUIRED = {"work": ["title", "author", "first_pub"], "person": ["name", "born", "died"],
             "text": ["label"], "edition": ["year"]}
 
@@ -504,7 +512,7 @@ def check(g: dict) -> Report:
             if not label:
                 r.warn(where, "no LC authority label cached (run: python tools/catalog.py authority)")
             else:
-                want = f"{n['name']}, {n['born']}-{n['died']}"
+                want = heading_of(n)
                 if label != want:
                     r.err(where, f"name/dates {want!r} do not match LC authority {label!r}")
         elif k == "work":
@@ -668,8 +676,8 @@ def build(g: dict, drafts: bool = False) -> dict:
         m = {**n, "ev": ev(n.get("ev"))}
         if n.get("kind") == "person":
             m["authority"] = g["authority"].get(n.get("lccn", ""))
-            m["ev"] = [{"src": f"src:lcnaf-{n['lccn']}", "for": ["name", "born", "died"],
-                        "status": "machine" if m["authority"] == f"{n['name']}, {n['born']}-{n['died']}" else "unverified"}]
+            m["ev"] = [{"src": f"src:lcnaf-{n['lccn']}", "for": ["name"] if n.get("collection") else ["name", "born", "died"],
+                        "status": "machine" if m["authority"] == heading_of(n) else "unverified"}]
         used_src |= {e["src"] for e in m["ev"]}
         out_nodes.append(m)
     books, author_links = library_works(g, works, notes, out_nodes)

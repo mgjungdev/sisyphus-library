@@ -1,0 +1,10 @@
+{"para": 1, "from": "‘““Lookee", "to": "“Lookee", "reason": "The OCR doubles the opening quotation marks; the second scan of the same reprint (Internet Archive olivertwistthewo0000char) has one."}
+{"para": 1, "from": "groaning.’-—FIeLpic.", "to": "groaning.’—Fielding.", "reason": "The source name is set in small capitals, which the OCR misreads; the stray hyphen before the dash is the scan's."}
+{"para": 2, "from": "THE greater", "to": "The greater", "reason": "The first word is set in capitals in the scan."}
+{"para": 3, "from": "who. perhaps", "to": "who, perhaps", "reason": "The OCR reads the comma as a full stop; the second scan of the same reprint (Internet Archive olivertwistthewo0000char) has a comma."}
+{"para": 6, "from": "in this spirit", "to": "In this spirit", "reason": "The paragraph opens with a capital; the second scan of the same reprint (Internet Archive olivertwistthewo0000char) reads 'In'."}
+{"para": 6, "from": "the pvin- ciple", "to": "the principle", "reason": "The word is broken across the page; the OCR misreads 'prin-', and the second scan of the same reprint (Internet Archive olivertwistthewo0000char) reads 'prin-'."}
+{"para": 6, "from": "circumstance, anc triumphing", "to": "circumstance, and triumphing", "reason": "The OCR drops a letter; the second scan of the same reprint (Internet Archive olivertwistthewo0000char) reads 'and'."}
+{"para": 9, "from": "most jolterheaded", "to": "most jolter-headed", "reason": "The line breaks at the hyphen of the compound in both scans; the hyphen is kept."}
+{"para": 12, "from": "T am sure", "to": "I am sure", "reason": "The OCR reads the pronoun as 'T'; the second scan of the same reprint (Internet Archive olivertwistthewo0000char) reads 'I'."}
+{"para": 14, "from": "DEVONSHIRE TERRACE, April, 1841.", "to": "Devonshire Terrace, April, 1841.", "reason": "The place is set in capitals in the scan."}

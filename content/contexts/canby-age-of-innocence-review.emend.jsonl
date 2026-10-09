@@ -1,0 +1,5 @@
+{"para": 5, "from": "New York of the *7o's", "to": "New York of the '70's", "reason": "OCR misread."}
+{"para": 6, "from": "— ^like Jane Austen's", "to": "— like Jane Austen's", "reason": "OCR misread."}
+{"para": 10, "from": "narrow — ^but in- tensely", "to": "narrow — but intensely", "reason": "OCR misread."}
+{"para": 1, "from": "running heads and page numbers (212, Wharton's \"The Age of Innocence\" 213, 214 The Reviewin-g of Books, 21^, 2i6 The Reviewing of Books)", "to": "removed", "reason": "Running heads and folios of the scan are not part of the essay."}
+{"para": 1, "from": "line-end hyphens (exist- ence, disagree- able, conform- ity, Inno- cence, Min- gotts, back- ground)", "to": "joined words", "reason": "Hyphens at line ends of the scan are not part of the words."}

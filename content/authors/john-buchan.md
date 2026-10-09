@@ -3,6 +3,7 @@ name: Buchan, John
 display: John Buchan
 born: 1875
 died: 1940
+person: person:john-buchan
 lccn: n79045167
 ---
 

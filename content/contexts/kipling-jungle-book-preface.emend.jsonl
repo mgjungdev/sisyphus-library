@@ -1,0 +1,12 @@
+{"para": 1, "from": "indebtedness,", "to": "indebtedness.", "reason": "The sentence ends the paragraph; the OCR reads the full stop as a comma, and the later Macmillan printing (Internet Archive junglebook0000jloc) has a full stop."}
+{"para": 2, "from": "elephant 1 74", "to": "elephant 174", "reason": "The OCR splits the number; the later Macmillan printing reads '174'."}
+{"para": 2, "from": "' Toomai of the Elephants '", "to": "‘Toomai of the Elephants’", "reason": "The spaces inside the quotation marks are the scan's spacing; quotation marks are set as curly quotes."}
+{"para": 2, "from": "' Servants of the Queen.'", "to": "‘Servants of the Queen.’", "reason": "Quotation marks are set as curly quotes."}
+{"para": 2, "from": "* Tiger-Tiger ! '", "to": "‘Tiger-Tiger!’", "reason": "The OCR reads the opening quotation mark as an asterisk and spaces the exclamation mark."}
+{"para": 2, "from": "* Kaa's Hunting,'", "to": "‘Kaa’s Hunting,’", "reason": "The OCR reads the opening quotation mark as an asterisk."}
+{"para": 2, "from": "* Mowgli's Brothers/", "to": "‘Mowgli’s Brothers.’", "reason": "The OCR reads the opening quotation mark as an asterisk and the closing full stop and quotation mark as a slash."}
+{"para": 2, "from": "' Rikki- tikki-tavi '", "to": "‘Rikki-tikki-tavi’", "reason": "The hyphen at the line end belongs to the title; the spaces are the scan's spacing."}
+{"para": 2, "from": "* not to live but know,'", "to": "‘not to live but know,’", "reason": "The OCR reads the opening quotation mark as an asterisk."}
+{"para": 2, "from": "over- application", "to": "over-application", "reason": "The hyphen at the line end is part of the word; the later Macmillan printing reads 'over-application'."}
+{"para": 2, "from": "Empress of Indian to be of ' some", "to": "Empress of India, to be of some", "reason": "The OCR reads the comma as 'n' and a speck as a quotation mark; the later Macmillan printing reads 'the Empress of India, to be of some'."}
+{"para": 2, "from": "* White Seal '", "to": "‘White Seal’", "reason": "The OCR reads the opening quotation mark as an asterisk."}

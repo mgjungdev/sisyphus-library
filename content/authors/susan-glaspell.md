@@ -3,6 +3,7 @@ name: Glaspell, Susan
 display: Susan Glaspell
 born: 1876
 died: 1948
+person: person:susan-glaspell
 lccn: n81119968
 ---
 

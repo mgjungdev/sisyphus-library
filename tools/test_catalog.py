@@ -37,7 +37,7 @@ def essay(g, slug="wells", **over):
 
 
 FAULTS = {
-    "duplicate note": lambda g: g["edges"].append(dict(g["edges"][-1])),
+    "duplicate note": lambda g: g["edges"].append(dict([e for e in g["edges"] if e["type"] == "note"][-1])),
     "answers without a reading": lambda g: g["edges"].append(
         {"type": "note", "from": "work:island-of-doctor-moreau", "to": "work:birth-mark", "rel": "answers"}),
     "broader cycle": lambda g: node(g, "heading:identity").__setitem__("broader", ["heading:maker-and-made"]),

@@ -3,6 +3,7 @@ name: Cooper, James Fenimore
 display: James Fenimore Cooper
 born: 1789
 died: 1851
+person: person:james-fenimore-cooper
 lccn: n79059786
 ---
 

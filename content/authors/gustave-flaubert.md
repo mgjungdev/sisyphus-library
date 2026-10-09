@@ -3,6 +3,7 @@ name: Flaubert, Gustave
 display: Gustave Flaubert
 born: 1821
 died: 1880
+person: person:gustave-flaubert
 lccn: n79059896
 ---
 

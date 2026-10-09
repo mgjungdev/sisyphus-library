@@ -3,6 +3,7 @@ name: Crane, Stephen
 display: Stephen Crane
 born: 1871
 died: 1900
+person: person:stephen-crane
 lccn: n81023065
 ---
 

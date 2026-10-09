@@ -3,6 +3,7 @@ name: Collins, Wilkie
 display: Wilkie Collins
 born: 1824
 died: 1889
+person: person:wilkie-collins
 lccn: n79061084
 ---
 

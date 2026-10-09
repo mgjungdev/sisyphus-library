@@ -3,6 +3,7 @@ name: Dostoyevsky, Fyodor
 display: Fyodor Dostoevsky
 born: 1821
 died: 1881
+person: person:fyodor-dostoevsky
 lccn: n79029930
 ---
 

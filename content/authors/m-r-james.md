@@ -3,6 +3,7 @@ name: James, M. R. (Montague Rhodes)
 display: M. R. James
 born: 1862
 died: 1936
+person: person:m-r-james
 lccn: n80109149
 ---
 

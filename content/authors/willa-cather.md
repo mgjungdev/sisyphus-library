@@ -3,6 +3,7 @@ name: Cather, Willa
 display: Willa Cather
 born: 1873
 died: 1947
+person: person:willa-cather
 lccn: n80015717
 ---
 

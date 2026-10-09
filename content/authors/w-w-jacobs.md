@@ -1,8 +1,9 @@
 ---
-name: Jacobs, W. W.
+name: Jacobs, W. W. (William Wymark)
 display: W. W. Jacobs
 born: 1863
 died: 1943
+person: person:w-w-jacobs
 lccn: n50027985
 ---
 

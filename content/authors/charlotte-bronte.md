@@ -3,6 +3,7 @@ name: Brontë, Charlotte
 display: Charlotte Brontë
 born: 1816
 died: 1855
+person: person:charlotte-bronte
 lccn: n79054114
 ---
 
