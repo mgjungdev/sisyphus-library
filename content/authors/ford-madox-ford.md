@@ -3,6 +3,7 @@ name: Ford, Ford Madox
 display: Ford Madox Ford
 born: 1873
 died: 1939
+person: person:ford-madox-ford
 lccn: n79045085
 ---
 

@@ -3,6 +3,7 @@ name: Sinclair, Upton
 display: Upton Sinclair
 born: 1878
 died: 1968
+person: person:upton-sinclair
 lccn: n79127862
 ---
 

@@ -1,0 +1,7 @@
+{"para": 1, "from": "“My Antonia,” by", "to": "“My Ántonia,” by", "reason": "The OCR dropped the accent; the page image (leaf n148, p. 143) prints 'My Ántonia'."}
+{"para": 1, "from": "This is the zsthetic echo", "to": "This is the æsthetic echo", "reason": "OCR misread of the ligature; the page image (p. 143) reads 'æsthetic'."}
+{"para": 1, "from": "drivel that passes ° for", "to": "drivel that passes for", "reason": "Stray mark dropped."}
+{"para": 1, "from": "look our way. é", "to": "look our way.", "reason": "Stray mark dropped."}
+{"para": 3, "from": "lonely, inhospit- SUNRISE ON THE PRAIRIE able wilds", "to": "lonely, inhospitable wilds", "reason": "The running head of p. 144 fell inside the word in the OCR; dropped and the word joined."}
+{"para": 4, "from": "“My Antonia” is the best", "to": "“My Ántonia” is the best", "reason": "The OCR dropped the accent; the page image (leaf n149, p. 144) prints 'My Ántonia'."}
+{"para": 4, "from": "David Leyv- insky", "to": "David Levinsky", "reason": "OCR misread; the page image (p. 144) reads 'Lev-insky' across the line end."}

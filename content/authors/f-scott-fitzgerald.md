@@ -3,6 +3,7 @@ name: Fitzgerald, F. Scott (Francis Scott)
 display: F. Scott Fitzgerald
 born: 1896
 died: 1940
+person: person:f-scott-fitzgerald
 lccn: n79006871
 ---
 

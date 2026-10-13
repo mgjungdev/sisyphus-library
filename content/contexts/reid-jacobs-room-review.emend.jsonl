@@ -1,0 +1,14 @@
+{"para": 2, "from": "By Virainta Woo.tr.", "to": "By Virginia Woolf.", "reason": "OCR misread the small capitals of the author's name."}
+{"para": 3, "from": "Waar is one to say", "to": "What is one to say", "reason": "OCR misread the small capitals of the first word."}
+{"para": 3, "from": "but- made my task", "to": "but made my task", "reason": "OCR put a hyphen at a line end where the page has none (page image)."}
+{"para": 3, "from": "Charlotte Bronté", "to": "Charlotte Brontë", "reason": "OCR misread the diaeresis."}
+{"para": 3, "from": "‘“ Mrs. Woolf's art", "to": "“Mrs. Woolf’s art", "reason": "Stray mark before the quotation dropped."}
+{"para": 3, "from": "intellectual day.’”’", "to": "intellectual day.”", "reason": "Stray marks after the quotation dropped."}
+{"para": 3, "from": "intellectual.dusk", "to": "intellectual dusk", "reason": "Stray full stop dropped."}
+{"para": 4, "from": "Mrs, Woolf’s method", "to": "Mrs. Woolf’s method", "reason": "OCR misread the full stop."}
+{"para": 4, "from": "JT.ike the Leprechaun", "to": "Like the Leprechaun", "reason": "OCR misread."}
+{"para": 5, "from": "at atime", "to": "at a time", "reason": "OCR joined two words."}
+{"para": 6, "from": "illumines tne tree-trunks", "to": "illumines the tree-trunks", "reason": "OCR misread."}
+{"para": 9, "from": "her Jacob, not But read", "to": "her Jacob, not——. But read", "reason": "OCR lost the dash and full stop; restored from the page image (p. 204)."}
+{"para": 9, "from": "chef-d’ceuvre?”’", "to": "chef-d’œuvre?”", "reason": "OCR misread the ligature; stray mark dropped."}
+{"para": 10, "from": "Foreest Rep.", "to": "Forrest Reid", "reason": "OCR misread the small capitals of the signature; the contents list reads 'By Forrest Reid'."}

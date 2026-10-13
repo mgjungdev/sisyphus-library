@@ -3,6 +3,7 @@ name: Woolf, Virginia
 display: Virginia Woolf
 born: 1882
 died: 1941
+person: person:virginia-woolf
 lccn: n79041870
 ---
 

@@ -3,6 +3,7 @@ name: Brontë, Anne
 display: Anne Brontë
 born: 1820
 died: 1849
+person: person:anne-bronte
 lccn: n79034991
 ---
 

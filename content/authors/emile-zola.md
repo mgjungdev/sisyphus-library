@@ -3,6 +3,7 @@ name: Zola, Émile
 display: Émile Zola
 born: 1840
 died: 1902
+person: person:emile-zola
 lccn: n79026785
 ---
 

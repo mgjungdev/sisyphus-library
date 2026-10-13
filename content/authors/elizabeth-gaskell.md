@@ -3,6 +3,7 @@ name: Gaskell, Elizabeth Cleghorn
 display: Elizabeth Gaskell
 born: 1810
 died: 1865
+person: person:elizabeth-gaskell
 lccn: n80010119
 ---
 

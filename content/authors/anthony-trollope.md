@@ -3,6 +3,7 @@ name: Trollope, Anthony
 display: Anthony Trollope
 born: 1815
 died: 1882
+person: person:anthony-trollope
 lccn: n78089077
 ---
 

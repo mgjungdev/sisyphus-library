@@ -3,6 +3,7 @@ name: Hemingway, Ernest
 display: Ernest Hemingway
 born: 1899
 died: 1961
+person: person:ernest-hemingway
 lccn: n78078534
 ---
 

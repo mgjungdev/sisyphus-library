@@ -3,6 +3,7 @@ name: Lewis, Sinclair
 display: Sinclair Lewis
 born: 1885
 died: 1951
+person: person:sinclair-lewis
 lccn: n79023149
 ---
 

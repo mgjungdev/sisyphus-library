@@ -3,6 +3,7 @@ name: Hardy, Thomas
 display: Thomas Hardy
 born: 1840
 died: 1928
+person: person:thomas-hardy
 lccn: n79046230
 ---
 

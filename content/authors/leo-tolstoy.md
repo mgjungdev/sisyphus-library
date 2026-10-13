@@ -3,6 +3,7 @@ name: Tolstoy, Leo, graf
 display: Leo Tolstoy
 born: 1828
 died: 1910
+person: person:leo-tolstoy
 lccn: n79068416
 ---
 

@@ -3,6 +3,7 @@ name: Lawrence, D. H. (David Herbert)
 display: D. H. Lawrence
 born: 1885
 died: 1930
+person: person:d-h-lawrence
 lccn: n79018450
 ---
 

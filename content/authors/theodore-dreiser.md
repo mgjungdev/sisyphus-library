@@ -3,6 +3,7 @@ name: Dreiser, Theodore
 display: Theodore Dreiser
 born: 1871
 died: 1945
+person: person:theodore-dreiser
 lccn: n79046644
 ---
 
