@@ -477,3 +477,4 @@
 - 2026-10-13 — G33 수동 시작: B1 고딕의 근원: Northanger의 '무서운 소설들'
 - 2026-10-13 — G34 수동 시작: B2 분신과 기이한 것
 - [x] G24-08 2026-10-13 — A18–A21 관계 데이터는 이미 이전 커밋(3c24987 등)으로 커밋·push됨(content/graph 변경 없음), build.py·test_catalog.py 통과, 이번엔 docs/graph 기록만 커밋·push
+- [x] G28-08 2026-10-13 — A22–A25 관계 데이터(content/graph·contexts)는 이미 이전 커밋으로 커밋·push됨(작업트리 변경 없음), build.py·test_catalog.py 통과, 이번엔 docs/graph 기록만 커밋·push
