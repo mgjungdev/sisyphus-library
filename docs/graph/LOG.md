@@ -461,3 +461,5 @@
 - [x] G32-07 2026-10-10 보정 — 새로 보이는 작품 6개(diamond-as-big-as-the-ritz·my-antonia·sun-also-rises와 paratext 3)로 두 reading(r:billy-budd-lord-jim-1·r:billy-budd-bartleby-1) 대체 테스트를 다시 해 모두 통과(직역 법정·출생을 말 못 하는 젊은이와 감금을 부인하는 윗사람이 없음) → qc.substitution tried에 더하고 note에 한 줄 덧붙임. 새 heading 3개(offering-refused-by-heaven·the-land-breaks-the-father·wound-that-bars-love)는 the-deed-not-the-why와 다른 개념이고 Billy Budd가 enacts하지 않음. peers(moby-dick / lord-jim·overcoat·vanka)·contact 변화 없음, leads에 생긴 작품이 상대인 후보나 '그래프에 없음'으로 뺀 후보 없음(Udolpho는 여전히 G33).
 - 2026-10-13 — G8-OK 사용자 확인
 - [x] G8-07 2026-10-13 — A2–A5 관계 데이터 커밋·push, build·test_catalog 통과
+- 2026-10-13 — G12-OK 사용자 확인
+- [x] G12-08 2026-10-13 — A9 단편 형식 2 관계 데이터는 이미 3c24987로 커밋·push됨(content/graph 변경 없음), build.py·test_catalog.py 통과, 이번엔 docs/graph 기록만 커밋·push
