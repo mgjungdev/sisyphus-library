@@ -466,3 +466,6 @@
 - 2026-10-13 — G16-OK 사용자 확인
 - 2026-10-13 — G20 수동 시작: A17 디킨스와 빅토리아의 아이들
 - [x] G16-08 2026-10-13 — A10–A13 관계 데이터는 이미 커밋·push됨(content/graph 변경 없음), build.py·test_catalog.py 통과, 이번엔 docs/graph 기록만 커밋·push
+- 2026-10-13 — G20-OK 사용자 확인
+- 2026-10-13 — G24 수동 시작: A21 아이러니 결말
+- [x] G20-07 2026-10-13 — A14–A17 관계 데이터는 이미 3c24987 등으로 커밋·push됨(content/graph 변경 없음), build.py·test_catalog.py 통과, 이번엔 docs/graph 기록만 커밋·push
