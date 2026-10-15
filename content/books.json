@@ -17279,7 +17279,8 @@
    "to": "NOTE.",
    "heading": "CHAPTER [A-Z]+(-[A-Z]+)?|THE STORY OF TOBY",
    "drop": "(?!CHAPTER |THE STORY OF TOBY$)[A-Z][^a-z]*"
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "uncle-toms-cabin-1",
@@ -17313,7 +17314,8 @@
    "heading": "CHAPTER [IVXLC]+ .*",
    "to_nth": 1,
    "drop": "VOLUME II|\\[\\d+\\] .*|\\[Mrs\\. Stowe’s note\\.\\]|“Think, O Jesus, for what reason.*"
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "uncle-toms-cabin-2",
@@ -17347,7 +17349,8 @@
    "heading": "CHAPTER [IVXLC]+ .*",
    "to_nth": 1,
    "drop": "VOLUME II|\\[\\d+\\] .*|\\[Mrs\\. Stowe’s note\\.\\]|“Think, O Jesus, for what reason.*"
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "uncle-toms-cabin-3",
@@ -17381,7 +17384,8 @@
    "heading": "CHAPTER [IVXLC]+ .*",
    "to_nth": 1,
    "drop": "VOLUME II|\\[\\d+\\] .*|\\[Mrs\\. Stowe’s note\\.\\]|“Think, O Jesus, for what reason.*"
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "uncle-toms-cabin-4",
@@ -17415,7 +17419,8 @@
    "heading": "CHAPTER [IVXLC]+ .*",
    "to_nth": 1,
    "drop": "VOLUME II|\\[\\d+\\] .*|\\[Mrs\\. Stowe’s note\\.\\]|“Think, O Jesus, for what reason.*"
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "uncle-toms-cabin-5",
@@ -17448,7 +17453,8 @@
    "to": null,
    "heading": "CHAPTER [IVXLC]+ .*",
    "drop": "VOLUME II|\\[\\d+\\] .*|\\[Mrs\\. Stowe’s note\\.\\]|“Think, O Jesus, for what reason.*"
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "looking-backward-1",
@@ -17484,7 +17490,8 @@
    "heading": "Chapter \\d+",
    "to_nth": 1,
    "drop": "\\[\\d+\\] .*"
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "looking-backward-2",
@@ -17519,7 +17526,8 @@
    "to": null,
    "heading": "Chapter \\d+",
    "drop": "\\[\\d+\\] .*"
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "news-from-nowhere-1",
@@ -17553,7 +17561,8 @@
    "to": "CHAPTER XVII: HOW THE CHANGE CAME",
    "heading": "CHAPTER [IVXLC]+: .*",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "news-from-nowhere-2",
@@ -17586,7 +17595,8 @@
    "nth": 1,
    "to": "FOOTNOTES:",
    "heading": "CHAPTER [IVXLC]+: .*"
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "erewhon-1",
@@ -17621,7 +17631,8 @@
    "to": "CHAPTER XI. SOME EREWHONIAN TRIALS",
    "heading": "CHAPTER [IVXLC]+\\. .*",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "erewhon-2",
@@ -17656,7 +17667,8 @@
    "to": "CHAPTER XXII. THE COLLEGES OF UNREASON—Continued",
    "heading": "CHAPTER [IVXLC]+\\. .*",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "erewhon-3",
@@ -17690,7 +17702,8 @@
    "nth": 2,
    "to": "Footnotes",
    "heading": "CHAPTER [IVXLC]+\\. .*"
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "the-coming-race-1",
@@ -17723,7 +17736,8 @@
    "to": "Chapter XVII.",
    "heading": "Chapter [IVXLC]+\\.",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "the-coming-race-2",
@@ -17755,7 +17769,8 @@
    "nth": 1,
    "to": null,
    "heading": "Chapter [IVXLC]+\\."
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "from-the-earth-to-the-moon",
@@ -17785,7 +17800,8 @@
    "nth": 1,
    "to": "ROUND THE MOON",
    "heading": "CHAPTER [IVXLC]+\\. .*"
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "first-men-in-the-moon-1",
@@ -17820,7 +17836,8 @@
    "heading": "[IVXLC]+\\. [A-Z][^“”]{2,80}",
    "to_nth": 1,
    "drop": "\\[\\d+\\] .*"
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "first-men-in-the-moon-2",
@@ -17854,7 +17871,8 @@
    "to": null,
    "heading": "[IVXLC]+\\. [A-Z][^“”]{2,80}",
    "drop": "\\[\\d+\\] .*"
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "she-haggard-1",
@@ -17889,7 +17907,8 @@
    "heading": "INTRODUCTION|[IVXLC]+\\. [A-Z“][^a-z]{1,60}",
    "to_nth": 1,
    "drop": "\\[\\d+\\] .*|\\[Illustration\\].*|One 1/2 size|Greatest length.*"
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "she-haggard-2",
@@ -17924,7 +17943,8 @@
    "heading": "INTRODUCTION|[IVXLC]+\\. [A-Z“][^a-z]{1,60}",
    "to_nth": 1,
    "drop": "\\[\\d+\\] .*|\\[Illustration\\].*|One 1/2 size|Greatest length.*"
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "she-haggard-3",
@@ -17958,7 +17978,8 @@
    "to": null,
    "heading": "INTRODUCTION|[IVXLC]+\\. [A-Z“][^a-z]{1,60}",
    "drop": "\\[\\d+\\] .*|\\[Illustration\\].*|One 1/2 size|Greatest length.*"
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "beach-of-falesa",
@@ -17981,7 +18002,9 @@
    "accent": "#d8c48a"
   },
   "month": "2036-09",
-  "plan": 553
+  "plan": 553,
+  "gutenberg": 329,
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "almayers-folly-1",
@@ -18015,7 +18038,8 @@
    "to": "CHAPTER VIII.",
    "heading": "CHAPTER [IVXLC]+\\.",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "almayers-folly-2",
@@ -18048,7 +18072,8 @@
    "nth": 1,
    "to": null,
    "heading": "CHAPTER [IVXLC]+\\."
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "jungle-book-1",
@@ -18082,7 +18107,8 @@
    "to": "The White Seal",
    "heading": "Mowgli’s Brothers|Hunting-Song of the Seeonee Pack|Kaa’s Hunting|Road-Song of the Bandar-Log|“Tiger! Tiger!”|Mowgli’s Song|The White Seal|Lukannon|“Rikki-Tikki-Tavi”|Darzee’s Chant|Toomai of the Elephants|Shiv and the Grasshopper|Her Majesty’s Servants|Parade Song of the Camp Animals",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "jungle-book-2",
@@ -18115,7 +18141,8 @@
    "nth": 2,
    "to": null,
    "heading": "Mowgli’s Brothers|Hunting-Song of the Seeonee Pack|Kaa’s Hunting|Road-Song of the Bandar-Log|“Tiger! Tiger!”|Mowgli’s Song|The White Seal|Lukannon|“Rikki-Tikki-Tavi”|Darzee’s Chant|Toomai of the Elephants|Shiv and the Grasshopper|Her Majesty’s Servants|Parade Song of the Camp Animals"
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "swiss-family-robinson-1",
