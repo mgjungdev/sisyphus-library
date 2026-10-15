@@ -17172,7 +17172,8 @@
    "accent": "#d9c08a"
   },
   "month": "2036-03",
-  "plan": 529
+  "plan": 529,
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "typee-1",
@@ -17207,7 +17208,8 @@
    "heading": "CHAPTER [A-Z]+(-[A-Z]+)?|THE STORY OF TOBY",
    "to_nth": 1,
    "drop": "(?!CHAPTER |THE STORY OF TOBY$)[A-Z][^a-z]*"
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "typee-2",
@@ -17242,7 +17244,8 @@
    "heading": "CHAPTER [A-Z]+(-[A-Z]+)?|THE STORY OF TOBY",
    "to_nth": 1,
    "drop": "(?!CHAPTER |THE STORY OF TOBY$)[A-Z][^a-z]*"
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "typee-3",
