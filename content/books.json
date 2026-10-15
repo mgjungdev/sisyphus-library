@@ -18177,7 +18177,8 @@
    "heading": "CHAPTER [IVXLC]+\\.?",
    "to_nth": 2,
    "drop": "\\[[A-Z]\\] .*"
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "swiss-family-robinson-2",
@@ -18212,7 +18213,8 @@
    "heading": "CHAPTER [IVXLC]+\\.?",
    "to_nth": 2,
    "drop": "\\[[A-Z]\\] .*"
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "swiss-family-robinson-3",
@@ -18247,7 +18249,8 @@
    "heading": "CHAPTER [IVXLC]+\\.?",
    "to_nth": 2,
    "drop": "\\[[A-Z]\\] .*"
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "swiss-family-robinson-4",
@@ -18281,7 +18284,8 @@
    "to": "THE END.",
    "heading": "CHAPTER [IVXLC]+\\.?",
    "drop": "\\[[A-Z]\\] .*"
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "coral-island-1",
@@ -18316,7 +18320,8 @@
    "heading": "CHAPTER [IVXLC]+\\.",
    "to_nth": 1,
    "drop": "\\{[^}]*\\}"
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "coral-island-2",
@@ -18351,7 +18356,8 @@
    "heading": "CHAPTER [IVXLC]+\\.",
    "to_nth": 1,
    "drop": "\\{[^}]*\\}"
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "coral-island-3",
@@ -18385,6 +18391,7 @@
    "to": null,
    "heading": "CHAPTER [IVXLC]+\\.",
    "drop": "\\{[^}]*\\}"
-  }
+  },
+  "reviewed": "2026-10-15"
  }
 ]
