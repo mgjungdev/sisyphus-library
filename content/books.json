@@ -12765,7 +12765,8 @@
    "to": "CHAPTER V.",
    "heading": "CHAPTER [IVXL]+\\.",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "melmoth-the-wanderer-2",
@@ -12797,7 +12798,8 @@
    "nth": 1,
    "to": "END OF FIRST VOLUME.",
    "heading": "CHAPTER [IVXL]+\\."
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "melmoth-the-wanderer-3",
@@ -12830,7 +12832,8 @@
    "to": "CHAPTER VIII.",
    "heading": "CHAPTER [IVXL]+\\.",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "melmoth-the-wanderer-4",
@@ -12862,7 +12865,8 @@
    "nth": 1,
    "to": "END OF VOLUME SECOND.",
    "heading": "CHAPTER [IVXL]+\\."
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "melmoth-the-wanderer-5",
@@ -12895,7 +12899,8 @@
    "to": "CHAPTER XVIII.",
    "heading": "CHAPTER [IVXL]+\\.",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "melmoth-the-wanderer-6",
@@ -12927,7 +12932,8 @@
    "nth": 1,
    "to": "END OF THIRD VOLUME.",
    "heading": "CHAPTER [IVXL]+\\."
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "melmoth-the-wanderer-7",
@@ -12960,7 +12966,8 @@
    "to": "CHAPTER XXX.",
    "heading": "CHAPTER [IVXL]+\\.",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "melmoth-the-wanderer-8",
@@ -12992,7 +12999,8 @@
    "nth": 1,
    "to": "FINIS.",
    "heading": "CHAPTER [IVXL]+\\."
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "william-wilson",
@@ -14658,7 +14666,8 @@
    "heading": "THE (SECOND|THIRD) EPOCH|THE STORY (BEGUN|CONTINUED|CONCLUDED) .*|[1-5]\\. THE NARRATIVE OF .*|POSTSCRIPT BY A SINCERE FRIEND|THE COUNT’S NARRATIVE|II|III|IV|V|VI|VII|VIII|IX|X|XI|XII|XIII|XIV|XV",
    "to_nth": 1,
    "drop": "\\[\\d+\\] .*|I"
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "woman-in-white-2",
@@ -14693,7 +14702,8 @@
    "heading": "THE (SECOND|THIRD) EPOCH|THE STORY (BEGUN|CONTINUED|CONCLUDED) .*|[1-5]\\. THE NARRATIVE OF .*|POSTSCRIPT BY A SINCERE FRIEND|THE COUNT’S NARRATIVE|II|III|IV|V|VI|VII|VIII|IX|X|XI|XII|XIII|XIV|XV",
    "to_nth": 3,
    "drop": "\\[\\d+\\] .*|I"
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "woman-in-white-3",
@@ -14728,7 +14738,8 @@
    "heading": "THE (SECOND|THIRD) EPOCH|THE STORY (BEGUN|CONTINUED|CONCLUDED) .*|[1-5]\\. THE NARRATIVE OF .*|POSTSCRIPT BY A SINCERE FRIEND|THE COUNT’S NARRATIVE|II|III|IV|V|VI|VII|VIII|IX|X|XI|XII|XIII|XIV|XV",
    "to_nth": 2,
    "drop": "\\[\\d+\\] .*|I"
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "woman-in-white-4",
@@ -14763,7 +14774,8 @@
    "heading": "THE (SECOND|THIRD) EPOCH|THE STORY (BEGUN|CONTINUED|CONCLUDED) .*|[1-5]\\. THE NARRATIVE OF .*|POSTSCRIPT BY A SINCERE FRIEND|THE COUNT’S NARRATIVE|II|III|IV|V|VI|VII|VIII|IX|X|XI|XII|XIII|XIV|XV",
    "to_nth": 2,
    "drop": "\\[\\d+\\] .*|I"
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "woman-in-white-5",
@@ -14798,7 +14810,8 @@
    "heading": "THE (SECOND|THIRD) EPOCH|THE STORY (BEGUN|CONTINUED|CONCLUDED) .*|[1-5]\\. THE NARRATIVE OF .*|POSTSCRIPT BY A SINCERE FRIEND|THE COUNT’S NARRATIVE|II|III|IV|V|VI|VII|VIII|IX|X|XI|XII|XIII|XIV|XV",
    "to_nth": 3,
    "drop": "\\[\\d+\\] .*|I"
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "woman-in-white-6",
@@ -14833,7 +14846,8 @@
    "heading": "THE (SECOND|THIRD) EPOCH|THE STORY (BEGUN|CONTINUED|CONCLUDED) .*|[1-5]\\. THE NARRATIVE OF .*|POSTSCRIPT BY A SINCERE FRIEND|THE COUNT’S NARRATIVE|II|III|IV|V|VI|VII|VIII|IX|X|XI|XII|XIII|XIV|XV",
    "to_nth": 2,
    "drop": "\\[\\d+\\] .*|I"
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "woman-in-white-7",
@@ -14867,7 +14881,8 @@
    "to": null,
    "heading": "THE (SECOND|THIRD) EPOCH|THE STORY (BEGUN|CONTINUED|CONCLUDED) .*|[1-5]\\. THE NARRATIVE OF .*|POSTSCRIPT BY A SINCERE FRIEND|THE COUNT’S NARRATIVE|II|III|IV|V|VI|VII|VIII|IX|X|XI|XII|XIII|XIV|XV",
    "drop": "\\[\\d+\\] .*|I"
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "lady-audleys-secret-1",
@@ -14901,7 +14916,8 @@
    "to": "CHAPTER XV.",
    "heading": "CHAPTER [IVXLC]+\\.",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "lady-audleys-secret-2",
@@ -14935,7 +14951,8 @@
    "to": "CHAPTER XXVI.",
    "heading": "CHAPTER [IVXLC]+\\.",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "lady-audleys-secret-3",
@@ -14969,7 +14986,8 @@
    "to": "CHAPTER XXXIII.",
    "heading": "CHAPTER [IVXLC]+\\.",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "lady-audleys-secret-4",
@@ -15002,7 +15020,8 @@
    "nth": 1,
    "to": "THE END.",
    "heading": "CHAPTER [IVXLC]+\\."
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "bleak-house-1",
@@ -15037,7 +15056,8 @@
    "to": "CHAPTER VIII",
    "heading": "CHAPTER [IVXLC]+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "bleak-house-2",
@@ -15072,7 +15092,8 @@
    "to": "CHAPTER XIV",
    "heading": "CHAPTER [IVXLC]+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "bleak-house-3",
@@ -15107,7 +15128,8 @@
    "to": "CHAPTER XIX",
    "heading": "CHAPTER [IVXLC]+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "bleak-house-4",
@@ -15142,7 +15164,8 @@
    "to": "CHAPTER XXV",
    "heading": "CHAPTER [IVXLC]+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "bleak-house-5",
@@ -15177,7 +15200,8 @@
    "to": "CHAPTER XXXII",
    "heading": "CHAPTER [IVXLC]+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "bleak-house-6",
@@ -15212,7 +15236,8 @@
    "to": "CHAPTER XXXVIII",
    "heading": "CHAPTER [IVXLC]+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "bleak-house-7",
@@ -15247,7 +15272,8 @@
    "to": "CHAPTER XLV",
    "heading": "CHAPTER [IVXLC]+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "bleak-house-8",
@@ -15282,7 +15308,8 @@
    "to": "CHAPTER LII",
    "heading": "CHAPTER [IVXLC]+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "bleak-house-9",
@@ -15317,7 +15344,8 @@
    "to": "CHAPTER LVIII",
    "heading": "CHAPTER [IVXLC]+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "bleak-house-10",
@@ -15351,7 +15379,8 @@
    "nth": 1,
    "to": null,
    "heading": "CHAPTER [IVXLC]+"
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "david-copperfield-1",
@@ -15386,7 +15415,8 @@
    "to": "CHAPTER 7. MY ‘FIRST HALF’ AT SALEM HOUSE",
    "heading": "CHAPTER \\d+\\. .*",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "david-copperfield-2",
@@ -15421,7 +15451,8 @@
    "to": "CHAPTER 12. LIKING LIFE ON MY OWN ACCOUNT NO BETTER, I FORM A GREAT",
    "heading": "CHAPTER \\d+\\. .*",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "david-copperfield-3",
@@ -15456,7 +15487,8 @@
    "to": "CHAPTER 18. A RETROSPECT",
    "heading": "CHAPTER \\d+\\. .*",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "david-copperfield-4",
@@ -15491,7 +15523,8 @@
    "to": "CHAPTER 24. MY FIRST DISSIPATION",
    "heading": "CHAPTER \\d+\\. .*",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "david-copperfield-5",
@@ -15526,7 +15559,8 @@
    "to": "CHAPTER 30. A LOSS",
    "heading": "CHAPTER \\d+\\. .*",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "david-copperfield-6",
@@ -15561,7 +15595,8 @@
    "to": "CHAPTER 36. ENTHUSIASM",
    "heading": "CHAPTER \\d+\\. .*",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "david-copperfield-7",
@@ -15596,7 +15631,8 @@
    "to": "CHAPTER 42. MISCHIEF",
    "heading": "CHAPTER \\d+\\. .*",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "david-copperfield-8",
@@ -15631,7 +15667,8 @@
    "to": "CHAPTER 49. I AM INVOLVED IN MYSTERY",
    "heading": "CHAPTER \\d+\\. .*",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "david-copperfield-9",
@@ -15666,7 +15703,8 @@
    "to": "CHAPTER 55. TEMPEST",
    "heading": "CHAPTER \\d+\\. .*",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "david-copperfield-10",
@@ -15700,7 +15738,8 @@
    "nth": 1,
    "to": null,
    "heading": "CHAPTER \\d+\\. .*"
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "vanity-fair-1",
@@ -15735,7 +15774,8 @@
    "to": "CHAPTER XI",
    "heading": "CHAPTER [IVXLC]+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "vanity-fair-2",
@@ -15770,7 +15810,8 @@
    "to": "CHAPTER XIX",
    "heading": "CHAPTER [IVXLC]+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "vanity-fair-3",
@@ -15805,7 +15846,8 @@
    "to": "CHAPTER XXVIII",
    "heading": "CHAPTER [IVXLC]+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "vanity-fair-4",
@@ -15840,7 +15882,8 @@
    "to": "CHAPTER XXXV",
    "heading": "CHAPTER [IVXLC]+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "vanity-fair-5",
@@ -15875,7 +15918,8 @@
    "to": "CHAPTER XLIV",
    "heading": "CHAPTER [IVXLC]+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "vanity-fair-6",
@@ -15910,7 +15954,8 @@
    "to": "CHAPTER LIII",
    "heading": "CHAPTER [IVXLC]+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "vanity-fair-7",
@@ -15945,7 +15990,8 @@
    "to": "CHAPTER LXI",
    "heading": "CHAPTER [IVXLC]+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "vanity-fair-8",
@@ -15979,7 +16025,8 @@
    "nth": 1,
    "to": null,
    "heading": "CHAPTER [IVXLC]+"
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "middlemarch-1",
@@ -16013,7 +16060,8 @@
    "to": "CHAPTER XI.",
    "heading": "PRELUDE\\.|BOOK [IVX]+\\. .*|CHAPTER [IVXLC]+\\.|FINALE\\.",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "middlemarch-2",
