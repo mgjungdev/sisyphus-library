@@ -16095,7 +16095,8 @@
    "to": "CHAPTER XX.",
    "heading": "PRELUDE\\.|BOOK [IVX]+\\. .*|CHAPTER [IVXLC]+\\.|FINALE\\.",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "middlemarch-3",
@@ -16129,7 +16130,8 @@
    "to": "CHAPTER XXX.",
    "heading": "PRELUDE\\.|BOOK [IVX]+\\. .*|CHAPTER [IVXLC]+\\.|FINALE\\.",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "middlemarch-4",
@@ -16163,7 +16165,8 @@
    "to": "CHAPTER XXXVIII.",
    "heading": "PRELUDE\\.|BOOK [IVX]+\\. .*|CHAPTER [IVXLC]+\\.|FINALE\\.",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "middlemarch-5",
@@ -16197,7 +16200,8 @@
    "to": "CHAPTER XLVII.",
    "heading": "PRELUDE\\.|BOOK [IVX]+\\. .*|CHAPTER [IVXLC]+\\.|FINALE\\.",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "middlemarch-6",
@@ -16231,7 +16235,8 @@
    "to": "CHAPTER LVII.",
    "heading": "PRELUDE\\.|BOOK [IVX]+\\. .*|CHAPTER [IVXLC]+\\.|FINALE\\.",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "middlemarch-7",
@@ -16265,7 +16270,8 @@
    "to": "CHAPTER LXIV.",
    "heading": "PRELUDE\\.|BOOK [IVX]+\\. .*|CHAPTER [IVXLC]+\\.|FINALE\\.",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "middlemarch-8",
@@ -16299,7 +16305,8 @@
    "to": "CHAPTER LXXIV.",
    "heading": "PRELUDE\\.|BOOK [IVX]+\\. .*|CHAPTER [IVXLC]+\\.|FINALE\\.",
    "to_nth": 2
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "middlemarch-9",
@@ -16332,7 +16339,8 @@
    "nth": 2,
    "to": "THE END",
    "heading": "PRELUDE\\.|BOOK [IVX]+\\. .*|CHAPTER [IVXLC]+\\.|FINALE\\."
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "wives-and-daughters-1",
@@ -16367,7 +16375,8 @@
    "heading": "CHAPTER [IVXLC]+\\.",
    "to_nth": 1,
    "drop": "(?!CHAPTER |DEAR GIBSON|R\\. HAMLEY|MY DEAR SIR|HYACINTH)[A-Z\"][^a-z]*"
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "wives-and-daughters-2",
@@ -16402,7 +16411,8 @@
    "heading": "CHAPTER [IVXLC]+\\.",
    "to_nth": 1,
    "drop": "(?!CHAPTER |DEAR GIBSON|R\\. HAMLEY|MY DEAR SIR|HYACINTH)[A-Z\"][^a-z]*"
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "wives-and-daughters-3",
@@ -16437,7 +16447,8 @@
    "heading": "CHAPTER [IVXLC]+\\.",
    "to_nth": 1,
    "drop": "(?!CHAPTER |DEAR GIBSON|R\\. HAMLEY|MY DEAR SIR|HYACINTH)[A-Z\"][^a-z]*"
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "wives-and-daughters-4",
@@ -16472,7 +16483,8 @@
    "heading": "CHAPTER [IVXLC]+\\.",
    "to_nth": 1,
    "drop": "(?!CHAPTER |DEAR GIBSON|R\\. HAMLEY|MY DEAR SIR|HYACINTH)[A-Z\"][^a-z]*"
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "wives-and-daughters-5",
@@ -16507,7 +16519,8 @@
    "heading": "CHAPTER [IVXLC]+\\.",
    "to_nth": 1,
    "drop": "(?!CHAPTER |DEAR GIBSON|R\\. HAMLEY|MY DEAR SIR|HYACINTH)[A-Z\"][^a-z]*"
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "wives-and-daughters-6",
@@ -16542,7 +16555,8 @@
    "heading": "CHAPTER [IVXLC]+\\.",
    "to_nth": 1,
    "drop": "(?!CHAPTER |DEAR GIBSON|R\\. HAMLEY|MY DEAR SIR|HYACINTH)[A-Z\"][^a-z]*"
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "wives-and-daughters-7",
@@ -16576,7 +16590,8 @@
    "to": "CONCLUDING REMARKS:",
    "heading": "CHAPTER [IVXLC]+\\.",
    "drop": "(?!CHAPTER |DEAR GIBSON|R\\. HAMLEY|MY DEAR SIR|HYACINTH)[A-Z\"][^a-z]*"
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "alice-in-wonderland",
@@ -16606,7 +16621,8 @@
    "nth": 1,
    "to": "THE END",
    "heading": "CHAPTER [IVXLC]+\\. .*"
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "through-the-looking-glass",
@@ -16636,7 +16652,8 @@
    "nth": 1,
    "to": "THE END",
    "heading": "CHAPTER [IVXLC]+\\. .*"
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "water-babies-1",
@@ -16670,7 +16687,8 @@
    "to": "CHAPTER V",
    "heading": "CHAPTER [IVXLC]+( AND LAST)?",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "water-babies-2",
@@ -16703,7 +16721,8 @@
    "nth": 1,
    "to": null,
    "heading": "CHAPTER [IVXLC]+( AND LAST)?"
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "little-women-1",
@@ -16739,7 +16758,8 @@
    "heading": "CHAPTER [A-Z]+(-[A-Z]+)? .*",
    "to_nth": 1,
    "drop": "PART 2|In order that we may start afresh and go to Meg’s wedding\\.\\.\\."
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "little-women-2",
@@ -16775,7 +16795,8 @@
    "heading": "CHAPTER [A-Z]+(-[A-Z]+)? .*",
    "to_nth": 1,
    "drop": "PART 2|In order that we may start afresh and go to Meg’s wedding\\.\\.\\."
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "little-women-3",
@@ -16811,7 +16832,8 @@
    "heading": "CHAPTER [A-Z]+(-[A-Z]+)? .*",
    "to_nth": 1,
    "drop": "PART 2|In order that we may start afresh and go to Meg’s wedding\\.\\.\\."
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "little-women-4",
@@ -16847,7 +16869,8 @@
    "heading": "CHAPTER [A-Z]+(-[A-Z]+)? .*",
    "to_nth": 1,
    "drop": "PART 2|In order that we may start afresh and go to Meg’s wedding\\.\\.\\."
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "little-women-5",
@@ -16882,7 +16905,8 @@
    "to": null,
    "heading": "CHAPTER [A-Z]+(-[A-Z]+)? .*",
    "drop": "PART 2|In order that we may start afresh and go to Meg’s wedding\\.\\.\\."
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "wizard-of-oz",
@@ -16912,7 +16936,8 @@
    "nth": 1,
    "to": null,
    "heading": "Chapter [IVXLC]+ .*"
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "peter-and-wendy-1",
@@ -16946,7 +16971,8 @@
    "to": "Chapter IX.",
    "heading": "Chapter [IVXLC]+\\. .*",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "peter-and-wendy-2",
@@ -16979,7 +17005,8 @@
    "nth": 1,
    "to": "THE END",
    "heading": "Chapter [IVXLC]+\\. .*"
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "wind-in-the-willows-1",
@@ -17013,7 +17040,8 @@
    "to": "VIII.",
    "heading": "[IVXLC]+\\. [^a-z]+",
    "to_nth": 1
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "wind-in-the-willows-2",
@@ -17046,7 +17074,8 @@
    "nth": 1,
    "to": null,
    "heading": "[IVXLC]+\\. [^a-z]+"
-  }
+  },
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "celestial-railroad",
@@ -17069,7 +17098,9 @@
    "accent": "#f3e2b8"
   },
   "month": "2036-03",
-  "plan": 526
+  "plan": 526,
+  "gutenberg": 512,
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "dr-heideggers-experiment",
@@ -17092,7 +17123,9 @@
    "accent": "#e0cf94"
   },
   "month": "2036-03",
-  "plan": 527
+  "plan": 527,
+  "gutenberg": 508,
+  "reviewed": "2026-10-15"
  },
  {
   "slug": "feathertop",
@@ -17115,7 +17148,8 @@
    "accent": "#e3c16f"
   },
   "month": "2036-03",
-  "plan": 528
+  "plan": 528,
+  "gutenberg": 512
  },
  {
   "slug": "benito-cereno",
