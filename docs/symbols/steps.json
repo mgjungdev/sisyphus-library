@@ -86,7 +86,8 @@
    "needs": [
     "S1-OK"
    ],
-   "extra": "이번엔 그래프 화면 변경도 같이 커밋한다: site/js/app.js, art.js, graph.js, graph2d.js, graph3d.js, site/css/graph.css, site/sw.js, tools/build.py, tools/graph_qa.py, tools/symbol_sheet.py, tools/symbol_pipeline.py. `python tools/graph_qa.py --node frankenstein-1`과 `--controls`도 통과해야 한다."
+   "extra": "이번엔 그래프 화면 변경도 같이 커밋한다: site/js/app.js, art.js, graph.js, graph2d.js, graph3d.js, site/css/graph.css, site/sw.js, tools/build.py, tools/graph_qa.py, tools/symbol_sheet.py, tools/symbol_pipeline.py. `python tools/graph_qa.py --node frankenstein-1`과 `--controls`도 통과해야 한다.",
+   "done": "2026-10-16"
   },
   {
    "code": "S2-01",
