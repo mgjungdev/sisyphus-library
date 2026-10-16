@@ -36,8 +36,8 @@ Usage:
                                                             (no step over a tenth of the way), axis fades in, >= 50 fps,
                                                             relations and years run left to right, back in place; kept
                                                             for the next visit; reduced motion at once; G4-03-*.png
-  python tools/graph_qa.py --modes                          the 3D map holds still until the reader turns it; the 2D | 3D switch draws the other engine and is
-                                                            remembered; without WebGL the map is drawn in 2D
+  python tools/graph_qa.py --modes                          the map is flat and holds still; an old 3D choice draws it flat; the same
+                                                            without WebGL
   python tools/graph_qa.py --g2                             G2 items of PLAN.md §7 (margin mark -> jump, appendix link, Show in the graph
                                                             -> focus) at 1280 and 390, then --g1
   python tools/graph_qa.py --g1                             every G1 check of PLAN.md §7: node count (books + authors), console errors,
@@ -45,9 +45,9 @@ Usage:
                                                             toggle, touch pinch-zoom and pan at 390px; then the
                                                             G1-*.png screenshots (1280 and 390, light and dark; G1-2d-*.png with --view 2d)
 
-<hash> is e.g. "#/graph" or "/graph"; ?drafts=1 is added automatically. The map is drawn in 3D (graph3d.js) unless
---view 2d adds ?view=2d (graph2d.js, the path for browsers without WebGL); every check runs in either. --layout timeline
-adds ?layout=timeline: the map opens on the timeline (for this visit; the switch in the corner keeps the choice).
+<hash> is e.g. "#/graph" or "/graph"; ?drafts=1 is added automatically. The map is flat (graph2d.js); --view is
+kept for old commands and changes nothing. --layout circle|timeline adds ?layout=…: the map opens on that layout (for
+this visit; the switch in the corner keeps the choice).
 """
 import argparse
 import functools
@@ -759,7 +759,7 @@ TL_CHECK = """() => {
   return { layout: s.layout, mix: s.mix, pressed, kept: localStorage.getItem('sl.graph.layout'), books: r.books.length, lines: r.lines.length,
     held: r.books.filter(b => b.held).length, back, older, inv: inv.slice(0, 5), invN: inv.length, spin: s.mode === '3d' ? st.cam().az : null };
 }"""
-TL_BOXES = """() => ['.graph-layout', '.graph-key', '.gc-search', '.gc-toggle', '.gc-mode', '.graph-head'].map(sel => {
+TL_BOXES = """() => ['.graph-layout', '.graph-key', '.gc-search', '.gc-toggle', '.graph-head'].map(sel => {
   const r = document.querySelector(sel).getBoundingClientRect();
   return { el: sel, l: r.left, r: r.right, t: r.top, b: r.bottom };
 })"""
@@ -1068,6 +1068,8 @@ def g1(browser, base) -> int:
 
 
 def modes(browser, base) -> int:
+    """The map is flat and holds still: no 2D | 3D switch, an old stored or asked-for 3D choice draws it flat, the
+    camera does not move by itself, and a browser without WebGL draws it the same."""
     ok = True
 
     def check(name, cond, detail=""):
@@ -1082,34 +1084,13 @@ def modes(browser, base) -> int:
     a = page.evaluate(cam)
     page.wait_for_timeout(2000)
     b = page.evaluate(cam)
-    turn = (b["az"] - a["az"] + 540) % 360 - 180
-    check("3D holds still", page.evaluate("() => document.querySelector('.graph-stage').mode") == "3d" and abs(turn) < 0.3, f"{turn:.1f} deg in 2 s")
-    page.mouse.move(1180, 690)  # empty stage, clear of the key, the controls and the Web | Timeline switch
-    page.mouse.down(); page.mouse.up()
-    page.wait_for_timeout(300)
-    a = page.evaluate(cam)
+    st = page.evaluate("() => ({ mode: document.querySelector('.graph-stage').mode, switch: !!document.querySelector('.gc-mode'), nodes: document.querySelector('.graph-stage').nodeIds().length })")
+    check("flat, no 2D | 3D switch", st["mode"] == "2d" and not st["switch"] and st["nodes"] > 0, json.dumps(st))
+    check("holds still", abs(b["x"] - a["x"]) < 0.5 and abs(b["y"] - a["y"]) < 0.5 and abs(b["k"] - a["k"]) < 0.01, f"{a} -> {b}")
+    page.evaluate("() => localStorage.setItem('sl.graph.view', '3d')")
+    page.goto(f"{base}/?drafts=1&view=3d#/graph", wait_until="load")
     page.wait_for_timeout(1500)
-    b = page.evaluate(cam)
-    check("stops once touched", abs((b["az"] - a["az"] + 540) % 360 - 180) < 0.3, f"{b['az'] - a['az']:.2f} deg in 1.5 s")
-    page.click(".gc-mode [data-mode='2d']")
-    page.wait_for_timeout(1200)
-    st = page.evaluate("() => ({ mode: document.querySelector('.graph-stage').mode, pressed: document.querySelector(\".gc-mode [aria-pressed='true']\").dataset.mode, kept: localStorage.getItem('sl.graph.view') })")
-    check("switch to 2D", st == {"mode": "2d", "pressed": "2d", "kept": "2d"}, json.dumps(st))
-    page.reload(wait_until="load")
-    page.wait_for_timeout(1500)
-    check("2D remembered", page.evaluate("() => document.querySelector('.graph-stage').mode") == "2d")
-    page.click(".gc-mode [data-mode='3d']")
-    page.wait_for_timeout(1500)
-    st = page.evaluate("() => ({ mode: document.querySelector('.graph-stage').mode, kept: localStorage.getItem('sl.graph.view'), nodes: document.querySelector('.graph-stage').nodeIds().length })")
-    check("switch back to 3D", st["mode"] == "3d" and st["kept"] == "3d" and st["nodes"] > 0, json.dumps(st))
-    ctx.close()
-
-    ctx, page = open_page(browser, base, "#/graph", errors=errs, reduced_motion="reduce")
-    page.wait_for_timeout(1500)
-    a = page.evaluate(cam)
-    page.wait_for_timeout(1500)
-    b = page.evaluate(cam)
-    check("reduced motion: no turning", abs((b["az"] - a["az"] + 540) % 360 - 180) < 0.3, f"{b['az'] - a['az']:.2f} deg in 1.5 s")
+    check("an old 3D choice draws it flat", page.evaluate("() => document.querySelector('.graph-stage').mode") == "2d")
     ctx.close()
     for e in errs:
         print("   ", e)
@@ -1120,9 +1101,8 @@ def modes(browser, base) -> int:
         errs = []
         ctx, page = open_page(nogl, base, "#/graph", errors=errs)
         page.wait_for_timeout(800)
-        st = page.evaluate("() => ({ mode: document.querySelector('.graph-stage')?.mode, off: document.querySelector(\".gc-mode [data-mode='3d']\").disabled, nodes: document.querySelector('.graph-stage').nodeIds().length })")
-        check("no WebGL: drawn in 2D", st["mode"] == "2d" and st["off"] and st["nodes"] > 0, json.dumps(st))
-        errs = [e for e in errs if "WebGL" not in e]  # the engine's own note that it fell back
+        st = page.evaluate("() => ({ mode: document.querySelector('.graph-stage')?.mode, nodes: document.querySelector('.graph-stage').nodeIds().length })")
+        check("no WebGL: drawn the same", st["mode"] == "2d" and st["nodes"] > 0, json.dumps(st))
         check("no WebGL: console errors", not errs, "; ".join(errs))
         ctx.close()
     finally:
@@ -1339,10 +1319,10 @@ def main() -> int:
     ap.add_argument("--h", type=int, default=800)
     ap.add_argument("--out")
     ap.add_argument("--view", choices=["2d", "3d"], default="3d")
-    ap.add_argument("--layout", choices=["web", "timeline"], default="web")
+    ap.add_argument("--layout", choices=["web", "circle", "timeline"], default="web")
     a = ap.parse_args()
     global VIEW
-    VIEW = ("&view=2d" if a.view == "2d" else "") + ("&layout=timeline" if a.layout == "timeline" else "")
+    VIEW = ("&view=2d" if a.view == "2d" else "") + (f"&layout={a.layout}" if a.layout != "web" else "")
 
     from playwright.sync_api import sync_playwright
 

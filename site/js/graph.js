@@ -2,14 +2,13 @@
 // = case of the lead reading, colour = kind, arrowheads point from the older work to the newer. Each author is a node too,
 // a small medal with its name, tied to its books by hairlines that draw them into one cluster; genre and shelf heading
 // only pull books together, with no line drawn.
-// Two engines draw it: graph3d.js (3d-force-graph, books as boxes in space; the default) and graph2d.js (force-graph
-// on a canvas; when there is no WebGL, or the reader picks 2D). This file holds what they share: the controls, the
-// tooltip and popover, the book panel, filters, search, focus and the shelves ⇄ map flight.
+// graph2d.js draws it (force-graph on a canvas) in three layouts: the web of forces, a circle, and a timeline of
+// arcs. This file holds the rest: the controls, the tooltip and popover, the book panel, filters, search, focus and
+// the shelves ⇄ map flight.
 import { esc } from './art.js';
 import { readingsOf, authorOf, yearOf, isDrafts, locHref, displayName, RELATION_KINDS, CONTACT_KINDS, CASE_KINDS, relKind, relationSentence, plainTitle, relColour } from './catalog.js';
 import { pullOut, dropFlight } from './library.js';
 import { make2D } from './graph2d.js';
-import { make3D } from './graph3d.js';
 import { pairHref } from './pair.js';
 
 export const CASE_W = { strong: 3.4, moderate: 2.4, speculative: 1.4 };
@@ -26,114 +25,91 @@ export const GENRES = ['Gothic & Horror', 'Science Fiction & Fantasy', 'Adventur
 // Filters outlive the view, so they are still set on the way back from a book. An empty set means all.
 const filters = { rels: new Set(), genres: new Set(), year: null };
 
-/* ---------- which engine: 3D unless there is no WebGL, the reader chose 2D, or ?view=2d ---------- */
+/* ---------- the engine: the flat map (force-graph, site/vendor) ---------- */
 const MODE_KEY = 'sl.graph.view';
 // The key starts folded, so the map is framed on the whole stage; once opened it stays open.
 const KEY_OPEN = 'sl.graph.key';
 const keyOpen = () => { try { return localStorage.getItem(KEY_OPEN) === '1'; } catch { return false; } };
-// Opening a WebGL context only to test for one costs a tenth of a second: trust the API being there, and fall back
-// to 2D if the 3D engine then cannot get a context (failed3D).
-const hasWebGL = () => !!(window.WebGL2RenderingContext || window.WebGLRenderingContext);
-function wantedMode() {
-  let m = new URLSearchParams(location.search).get('view');
-  if (m !== '2d' && m !== '3d') { try { m = localStorage.getItem(MODE_KEY); } catch { m = null; } }
-  return m === '2d' || !hasWebGL() ? '2d' : '3d';
-}
-let loading3D = null, failed3D = false;
-const script = src => new Promise((res, rej) => {
-  const s = document.createElement('script');
-  s.src = src; s.onload = res; s.onerror = rej;
-  document.head.append(s);
-});
-// The engine script for the mode the map will be drawn in: the 3D bundle is large, so it loads only when wanted.
-export async function ensureEngine(mode = wantedMode()) {
-  if (mode === '3d' && !failed3D) {
-    try { await (loading3D ||= window.ForceGraph3D ? Promise.resolve() : script('vendor/3d-force-graph.min.js')); return '3d'; }
-    catch { failed3D = true; loading3D = null; }
-  }
+export async function ensureEngine() {
   if (!window.ForceGraph) await new Promise(res => addEventListener('DOMContentLoaded', res, { once: true }));
   return '2d';
 }
-const engineMode = () => (wantedMode() === '3d' && window.ForceGraph3D && !failed3D ? '3d' : '2d');
 
-/* ---------- which layout: the web of forces, or a timeline (?layout=timeline); the reader's choice is kept ---------- */
+/* ---------- which layout: the web of forces, a circle or a timeline (?layout=…); the reader's choice is kept ---------- */
 const LAYOUT_KEY = 'sl.graph.layout';
 function wantedLayout() {
   let m = new URLSearchParams(location.search).get('layout');
-  if (m !== 'web' && m !== 'timeline') { try { m = localStorage.getItem(LAYOUT_KEY); } catch { m = null; } }
-  return m === 'timeline' ? 'timeline' : 'web';
+  if (!['web', 'circle', 'timeline'].includes(m)) { try { m = localStorage.getItem(LAYOUT_KEY); } catch { m = null; } }
+  return ['circle', 'timeline'].includes(m) ? m : 'web';
 }
 
-// The timeline: x is the year a book came out, a lane for each genre (in the order of the map's regions) across it.
-// Years from 1700 on are to scale; the few older ones (a fable, the Nights) stand in slots of their own left of a
-// break. A relation's older book is always left of its newer one, so its arrows run left to right. Within a lane
-// the books step up and down out of one another's way. Positions are in map units with y down; the 3D engine turns
-// them over (yUp).
-export const PER_YEAR = 6.5;
-const EARLY = 1700, SLOT = 58;
-function timelineOf(nodes, relLinks, yUp) {
+// The timeline: every book on one line in the order it came out, books of the same years stacked below it, and the
+// relations as arcs above it from the older book to the newer, so every arrow runs left to right. Years from 1700 on
+// are to scale; the few older ones (a fable, the Nights) stand in slots of their own left of a break. Positions are in
+// map units with y down; base is the line's y.
+export const PER_YEAR = 9;
+const EARLY = 1700, SLOT = 58, COL = 16, STEP = 11;
+function timelineOf(nodes, relLinks) {
   const books = nodes.filter(n => !n.isA);
   const late = books.map(n => n.year).filter(y => y >= EARLY);
   const y0 = Math.floor(Math.min(...late, 1800) / 10) * 10, y1 = Math.ceil(Math.max(...late, 1800) / 10) * 10;
   const early = [...new Set(books.map(n => n.year).filter(y => y && y < EARLY))].sort((a, b) => a - b);
   const undated = books.some(n => !n.year);
   const X = y => (!y ? (y1 - y0) * PER_YEAR + SLOT : y >= EARLY ? (y - y0) * PER_YEAR : -(early.length - early.indexOf(y)) * SLOT - 12);
-  // Lanes, a little taller for a genre of many books.
-  const names = [...GENRES.filter(g => books.some(n => n.genre === g)), ...(books.some(n => !GENRES.includes(n.genre)) ? [null] : [])];
-  let top = 0;
-  const lanes = names.map(g => {
-    const k = books.filter(n => (g ? n.genre === g : !GENRES.includes(n.genre))).length;
-    const h = Math.round(40 + 11 * Math.sqrt(k)), L = { name: g || 'Other', genre: g, y0: top, y1: top + h };
-    top += h;
-    return L;
+  // Books a column's width apart or less share the column, the most related nearest the line.
+  const at = new Map();
+  let colX = -Infinity, depth = 0, deepest = 0;
+  [...books].sort((a, b) => X(a.year) - X(b.year) || b.deg - a.deg).forEach(n => {
+    const x = X(n.year);
+    if (x - colX < COL) depth++; else { colX = x; depth = 0; }
+    deepest = Math.max(deepest, depth);
+    at.set(n, { x: colX, y: 14 + depth * STEP });
   });
-  const laneOf = g => lanes.find(L => L.genre === g) || lanes[lanes.length - 1];
-  // A steady scatter from the id, so the same map comes out every time.
-  const jit = s => { let h = 2166136261; for (const c of s) h = Math.imul(h ^ c.charCodeAt(0), 16777619); return ((h >>> 0) % 1000) / 1000 - 0.5; };
-  const P = nodes.map(n => {
-    const L = laneOf(n.isA ? n.home : n.genre);
-    const tx = n.isA ? n.books.reduce((a, b) => a + X(b.year), 0) / n.books.length : X(n.year);
-    const ty = (L.y0 + L.y1) / 2;
-    const rx = n.isA ? n.h / 2 + 5 : n.deg ? Math.max(n.w / 2, 12) + 4 : n.w / 2 + 2;
-    const ry = n.isA ? n.h / 2 + 7 : n.h / 2 + (n.deg ? 9 : 2);
-    return { n, L, tx, ty, rx, ry, x: tx + jit(n.id) * 4, y: ty + jit(`${n.id}~`) * (L.y1 - L.y0) * 0.6 };
-  });
-  const at = new Map(P.map(p => [p.n, p]));
-  const pairs = relLinks.map(l => [at.get(l.source), at.get(l.target)]);
-  const wide = Math.max(...P.map(p => p.rx)) * 2;
-  for (let it = 0; it < 180; it++) {
-    P.forEach(p => { p.x += (p.tx - p.x) * 0.22; p.y += (p.ty - p.y) * 0.02; });
-    P.sort((a, b) => a.x - b.x);
-    for (let i = 0; i < P.length; i++) {
-      const a = P[i];
-      for (let j = i + 1; j < P.length && P[j].x - a.x < wide; j++) {
-        const b = P[j], dx = b.x - a.x, dy = b.y - a.y;
-        const ox = a.rx + b.rx - Math.abs(dx), oy = a.ry + b.ry - Math.abs(dy);
-        if (ox <= 0 || oy <= 0) continue;
-        // Out of each other's way up and down rather than across, which would move a book off its year.
-        if (oy < ox * 2.5) { const s = (dy || jit(a.n.id + b.n.id)) >= 0 ? oy * 0.3 : -oy * 0.3; a.y -= s; b.y += s; }
-        else { const s = dx >= 0 ? ox * 0.3 : -ox * 0.3; a.x -= s; b.x += s; }
-      }
-    }
-    pairs.forEach(([s, t]) => { const d = s.x + 8 - t.x; if (d > 0) { s.x -= d / 2; t.x += d / 2; } });
-    P.forEach(p => {
-      const lo = p.L.y0 + p.ry, hi = p.L.y1 - p.ry;
-      p.y = lo < hi ? Math.max(lo, Math.min(hi, p.y)) : (p.L.y0 + p.L.y1) / 2;
-    });
-  }
-  // The axis: a tick each decade (every fifty years a major one), one for each older year, and the lanes.
-  const x0 = Math.min(...P.map(p => p.x - p.rx), X(y0)) - 14, x1 = Math.max(...P.map(p => p.x + p.rx), X(y1)) + 14;
-  const cx = (x0 + x1) / 2, cy = top / 2, sy = yUp ? -1 : 1;
+  // An author waits above its books, at the height of the arcs (it is not drawn on the timeline), so framing the
+  // books frames the arcs too.
+  nodes.forEach(n => { if (n.isA) at.set(n, { x: n.books.reduce((a, b) => a + X(b.year), 0) / n.books.length, y: 0 }); });
+  // The arcs: half as high as they are wide, the widest kept to a height the screen can take in.
+  const span = Math.max(1, ...relLinks.map(l => Math.abs(at.get(l.source).x - at.get(l.target).x) / 2));
+  const x0 = Math.min(...[...at.values()].map(p => p.x), X(y0)) - 20, x1 = Math.max(...[...at.values()].map(p => p.x), X(y1)) + 20;
+  const hMax = Math.min(span, (x1 - x0) * 0.3), arcK = hMax / span;
+  nodes.forEach(n => { if (n.isA) at.get(n).y = -hMax; });
+  const top = -hMax - 24, bottom = 14 + deepest * STEP + 30;
+  const cx = (x0 + x1) / 2, cy = (top + bottom) / 2;
   const ticks = [];
   for (let y = y0; y <= y1; y += 10) ticks.push({ x: X(y) - cx, label: `${y}`, major: y % 50 === 0 });
   early.forEach(y => ticks.push({ x: X(y) - cx, label: y < 0 ? `${-y} BC` : `${y}`, major: true, early: true }));
   if (undated) ticks.push({ x: X(0) - cx, label: 'n.d.', major: true, early: true });
-  const pos = new Map(P.map(p => [p.n, { x: p.x - cx, y: (p.y - cy) * sy, z: 0 }]));
+  const pos = new Map([...at].map(([n, p]) => [n, { x: p.x - cx, y: p.y - cy, z: 0 }]));
   return {
     pos,
-    axis: { x0: x0 - cx, x1: x1 - cx, top: -cy, bottom: cy, ticks, brk: early.length ? X(y0) - cx - SLOT / 2 - 6 : null,
-      lanes: lanes.map(L => ({ name: L.name, y0: L.y0 - cy, y1: L.y1 - cy })) },
+    axis: { x0: x0 - cx, x1: x1 - cx, top: top - cy, bottom: bottom - cy, base: -cy, arcK, ticks, lanes: [],
+      brk: early.length ? X(y0) - cx - SLOT / 2 - 6 : null },
   };
+}
+
+// The circle: books round a ring, genre by genre (in the order of the map's regions), each genre in the order its
+// books came out; the relations cross the ring inside it.
+function ringOf(nodes) {
+  const gi = n => { const i = GENRES.indexOf(n.genre); return i < 0 ? GENRES.length : i; };
+  const books = nodes.filter(n => !n.isA).sort((a, b) => gi(a) - gi(b) || (a.year || 9999) - (b.year || 9999) || a.id.localeCompare(b.id));
+  const GAP = 5, kinds = new Set(books.map(gi)).size, slots = books.length + GAP * kinds;
+  const R = Math.max(240, (slots * 15) / (2 * Math.PI));
+  const ang = new Map(), groups = [];
+  let s = 0, prev = null;
+  books.forEach(n => {
+    if (gi(n) !== prev) { s += GAP; prev = gi(n); groups.push({ name: n.genre || 'Other', books: [] }); }
+    const a = -Math.PI / 2 + (s / slots) * Math.PI * 2;
+    ang.set(n, a); groups[groups.length - 1].books.push(a); s++;
+  });
+  const pos = new Map();
+  books.forEach(n => pos.set(n, { x: Math.cos(ang.get(n)) * R, y: Math.sin(ang.get(n)) * R, z: 0 }));
+  // An author waits at the middle of its books on the ring (it is not drawn on the circle).
+  nodes.forEach(n => {
+    if (!n.isA) return;
+    const a = n.books.reduce((t, b) => t + ang.get(b), 0) / n.books.length;
+    pos.set(n, { x: Math.cos(a) * R, y: Math.sin(a) * R, z: 0 });
+  });
+  return { pos, ring: { R, groups: groups.map(g => ({ name: g.name, a0: g.books[0], a1: g.books[g.books.length - 1] })) } };
 }
 
 export function renderGraph(root, G, opts) {
@@ -148,7 +124,7 @@ export function renderGraph(root, G, opts) {
     inner?.();
     draw(got, { ...opts, focus: focus ? decodeURIComponent(focus) : null, arrive: null });
   }
-  draw(engineMode(), opts);
+  draw('2d', opts);
   return () => { gone = true; inner?.(); };
 }
 
@@ -211,7 +187,6 @@ function drawGraph(root, G, { go, lib, focus = null, arrive = null, mode, switch
   let layout = wantedLayout();
   const chip = (group, v, label, count, dot = '') => `<button type="button" class="gc-chip" data-group="${group}" data-v="${esc(v)}"
     aria-pressed="false">${dot}${esc(label)}<span class="n">${count}</span></button>`;
-  const modeBtn = (m, label, off) => `<button type="button" data-mode="${m}" aria-pressed="${m === mode}"${off ? ' disabled title="This browser cannot draw in 3D"' : ''}>${label}</button>`;
 
   root.innerHTML = `
     <section class="graph-view" data-mode="${mode}" data-layout="${layout}">
@@ -228,7 +203,6 @@ function drawGraph(root, G, { go, lib, focus = null, arrive = null, mode, switch
             <ul class="gc-hits" id="gc-hits" role="listbox" aria-label="Books and authors" hidden></ul>
           </div>
           <button type="button" class="gc-toggle" aria-expanded="false" aria-controls="gc-panel">Filter<span class="gc-badge" hidden></span></button>
-          <div class="gc-mode" role="group" aria-label="Map in two or three dimensions">${modeBtn('2d', '2D')}${modeBtn('3d', '3D', !hasWebGL() || failed3D)}</div>
           <div class="gc-panel" id="gc-panel" hidden>
             ${rels.length ? `<fieldset><legend>Relations</legend><div class="gc-chips">${rels.map(r => chip('rel', r, relLabel(r),
               relLinks.filter(l => l.rel === r).length, `<i class="gc-dot" data-rel="${esc(r)}"></i>`)).join('')}</div></fieldset>` : ''}
@@ -259,12 +233,13 @@ function drawGraph(root, G, { go, lib, focus = null, arrive = null, mode, switch
           <ul>${Object.entries(CASE_KINDS).map(([c, k]) => `
             <li><i class="key-line key-case" style="border-top-width:${CASE_W[c]}px"></i><span><b>${esc(k.name)}</b> ${esc(k.def)}</span></li>`).join('')}
           </ul>
-          <ul class="key-last"><li><i class="key-medal"></i><span>An author, tied to its books</span></li></ul>
+          <ul class="key-last"><li><i class="key-medal"></i><span>An author, tied to its books by hairlines</span></li></ul>
         </div>
       </details>
       <div class="graph-layout" role="group" aria-label="Arrange the map">
         <button type="button" data-layout="web" aria-pressed="${layout === 'web'}"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 6l9-2M5 6l2 9M14 4l-7 11M14 4l2 9M7 15l9-2" fill="none" stroke="currentColor" stroke-width="1.2"/><circle cx="5" cy="6" r="2"/><circle cx="14" cy="4" r="2"/><circle cx="7" cy="15" r="2"/><circle cx="16" cy="13" r="2"/></svg>Web</button>
-        <button type="button" data-layout="timeline" aria-pressed="${layout === 'timeline'}"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2 16h16M4 14.5v3M10 14.5v3M16 14.5v3" fill="none" stroke="currentColor" stroke-width="1.2"/><circle cx="5" cy="9" r="2"/><circle cx="10" cy="5" r="2"/><circle cx="15" cy="10" r="2"/><path d="M6.6 7.6l1.8-1.2M11.8 6.4l1.6 2" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>Timeline</button>
+        <button type="button" data-layout="circle" aria-pressed="${layout === 'circle'}"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7.5" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M4 6.5Q10 10 15.5 14M3 12Q10 9 16 5" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>Circle</button>
+        <button type="button" data-layout="timeline" aria-pressed="${layout === 'timeline'}"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2 15h16" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M4 15a5 5 0 0 1 10 0M8 15a4.5 4.5 0 0 1 9 0" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>Timeline</button>
       </div>
       <div class="graph-tip" role="tooltip" hidden></div>
       <div class="graph-pop" role="dialog" aria-label="Relation" hidden></div>
@@ -285,13 +260,13 @@ function drawGraph(root, G, { go, lib, focus = null, arrive = null, mode, switch
 
   /* ---------- node size: a book's badge grows with its relations ---------- */
   nodes.forEach(n => {
-    if (n.isA) { // a medal, a little larger for an author of many books; room around it for the name
-      n.h = n.w = 8.5 + 1.6 * Math.sqrt(n.books.length);
-      n.r = n.h * 0.5 + 9;
+    if (n.isA) { // a small ring, a little larger for an author of many books; room around it for the name
+      n.h = n.w = 5 + 0.9 * Math.sqrt(n.books.length);
+      n.r = n.h * 0.5 + 7;
       return;
     }
-    n.h = n.w = n.deg ? 11 + 3.6 * Math.sqrt(n.deg) : 8; // the badge's diameter
-    n.r = n.h * 0.5 + (n.deg ? 32 : 2); // related books keep room for their titles
+    n.h = n.w = n.deg ? 4.5 + 2.1 * Math.sqrt(n.deg) : 4; // the dot's diameter
+    n.r = n.h * 0.5 + (n.deg ? 30 : 2); // related books keep room for their titles
   });
   // Hubs keep their titles on the whole map: the most related books, and the two most related of each genre, so every
   // region is named by its books. The rest show their titles as the reader zooms in, or when lit.
@@ -299,7 +274,7 @@ function drawGraph(root, G, { go, lib, focus = null, arrive = null, mode, switch
   const ranked = bookNodes.filter(n => n.deg).sort((a, b) => b.deg - a.deg), phone = innerWidth < 640;
   ranked.slice(0, phone ? 12 : HUBS).forEach(n => { n.hub = true; });
   GENRES.forEach(g => ranked.filter(n => n.genre === g).slice(0, phone ? 1 : 2).forEach(n => { n.hub = true; }));
-  ranked.forEach(n => { if (!n.hub) n.r = n.h * 0.5 + 10; }); // only a hub keeps room for its title at rest
+  ranked.forEach(n => { if (!n.hub) n.r = n.h * 0.5 + 6; }); // only a hub keeps room for its title at rest
 
   /* ---------- hover state ---------- */
   let hoverNode = null, hoverLink = null, popLink = null, pin = null; // pin: the book found or named in the URL
@@ -330,9 +305,10 @@ function drawGraph(root, G, { go, lib, focus = null, arrive = null, mode, switch
     stage, view, root, nodes, links, relLinks, nbrs, lit, litLinks, filters, restAlpha, freeRect, reduced,
     C: {},
     layout: () => layout,
-    // The camera faces the map straight on: on the timeline, and in a book's cascade.
-    front: () => layout === 'timeline' || !!cascade,
+    // The camera faces the map straight on: on the circle and the timeline, and in a book's cascade.
+    front: () => layout !== 'web' || !!cascade,
     cascade: () => !!cascade,
+    cascadeRoot: () => cascade?.root || null,
     // A relation line's words along its arrow, older to newer: 'answered by'.
     verbOf: l => relKind(l.rel).by,
     // Where on a cascade's line its words go: most of the way down, toward the book below, so the lines fanning out of
@@ -342,6 +318,8 @@ function drawGraph(root, G, { go, lib, focus = null, arrive = null, mode, switch
     more: n => cascade?.more.get(n) || 0,
     // The timeline's axis (y down) and how far the map has gone over to it (0 the web, 1 the timeline).
     timeline: () => (tlMix > 0 && tl ? { axis: tl.axis, mix: tlMix } : null),
+    // The circle and how far the map has gone over to it.
+    ring: () => (ringMix > 0 && rg ? { ring: rg.ring, mix: ringMix } : null),
     marked: n => n === hoverNode || n === pin,
     hoverNode: () => hoverNode,
     hoverLink: () => hoverLink,
@@ -382,14 +360,14 @@ function drawGraph(root, G, { go, lib, focus = null, arrive = null, mode, switch
         closeAuthor(); unpin(); setFocus(null, null); tip.hidden = true;
         if (cascade) closeCascade();
       },
-      // The engine has warmed up the web: on a map opened on the timeline, keep the web to go back to and put the
-      // books on the timeline before the first frame is drawn.
+      // The engine has warmed up the web: on a map opened on the circle or the timeline, keep the web to go back to
+      // and put the books in their places there before the first frame is drawn.
       placed() {
-        if (placedOnce || layout !== 'timeline') { placedOnce = true; return; }
+        if (placedOnce || layout === 'web') { placedOnce = true; return; }
         placedOnce = true;
         nodes.forEach(n => { if (Number.isFinite(n.x)) n.web = { x: n.x, y: n.y, z: n.z || 0 }; });
         if (!nodes.every(n => n.web)) nodes.forEach(n => { delete n.web; });
-        nodes.forEach(n => pinTo(n, timeline().pos.get(n)));
+        nodes.forEach(n => pinTo(n, placesOf(layout).get(n)));
       },
       firstFrame() { enter(); if (startCascade && root.isConnected) openCascade(startCascade, 0); },
       frame: () => placePop(),
@@ -403,7 +381,8 @@ function drawGraph(root, G, { go, lib, focus = null, arrive = null, mode, switch
     const cs = getComputedStyle(document.documentElement);
     const v = k => cs.getPropertyValue(k).trim();
     const dark = cs.colorScheme === 'dark' || v('color-scheme') === 'dark';
-    const C = { dark, bg: v('--bg'), ink: v('--ink'), ink2: v('--ink-2'), ink3: v('--ink-3'), rule: v('--rule'), font: v('--font-read') || 'serif', ui: v('--font-ui') || 'sans-serif' };
+    const C = { dark, bg: v('--bg'), ink: v('--ink'), ink2: v('--ink-2'), ink3: v('--ink-3'), rule: v('--rule'), font: v('--font-display') || 'serif', ui: v('--font-ui') || 'sans-serif',
+      coverMix: parseFloat(v('--cover-mix')) / 100 || 0.45, coverInk: v('--cover-ink') || '#fbfbf8' };
     C.rel = r => relColour(r, dark);
     env.C = C;
     root.querySelectorAll('i[data-rel]').forEach(el => el.style.setProperty('--c', C.rel(el.dataset.rel)));
@@ -411,19 +390,14 @@ function drawGraph(root, G, { go, lib, focus = null, arrive = null, mode, switch
   }
   let engine = null;
   readTheme();
-  /* ---------- layout: the web, or the timeline (books held at their places there: fx, fy, fz) ---------- */
-  let prep = 0, tl = null, tlMix = layout === 'timeline' ? 1 : 0, tween = 0, tweenAt = 0, placedOnce = false;
+  /* ---------- layout: the web, the circle or the timeline (books held at their places there: fx, fy) ---------- */
+  let prep = 0, tl = null, rg = null, tween = 0, tweenAt = 0, placedOnce = false;
+  let tlMix = layout === 'timeline' ? 1 : 0, ringMix = layout === 'circle' ? 1 : 0;
   const pinTo = (n, p) => { n.x = n.fx = p.x; n.y = n.fy = p.y; n.z = n.fz = p.z; };
-  const timeline = () => (tl ||= timelineOf(nodes, relLinks, mode === '3d'));
-  if (mode === '3d') {
-    try { engine = make3D(env); } catch (e) {
-      console.warn('3D map unavailable, drawing it flat:', e);
-      failed3D = true; mode = '2d';
-      stage.replaceChildren(); view.dataset.mode = mode;
-      root.querySelectorAll('.gc-mode [data-mode]').forEach(b => { b.setAttribute('aria-pressed', b.dataset.mode === mode); b.disabled ||= b.dataset.mode === '3d'; });
-    }
-  }
-  engine ||= make2D(env);
+  const timeline = () => (tl ||= timelineOf(nodes, relLinks));
+  const ring = () => (rg ||= ringOf(nodes));
+  const placesOf = name => (name === 'timeline' ? timeline().pos : ring().pos);
+  engine = make2D(env);
   engine.layout(layout);
   stage.graph = engine.fg; // for tools/graph_qa.py
   stage.mode = mode;
@@ -471,7 +445,7 @@ function drawGraph(root, G, { go, lib, focus = null, arrive = null, mode, switch
     arrive?.take(flight);
     // The timeline worked out ahead, once the map is in and idle (not while books fly in), so the switch starts at once.
     const idle = f => (window.requestIdleCallback || setTimeout)(f, { timeout: 4000 });
-    prep = setTimeout(() => idle(() => { if (root.isConnected) { timeline(); idle(() => root.isConnected && engine.prepare(tl.axis)); } }), 2500);
+    prep = setTimeout(() => idle(() => { if (root.isConnected) { timeline(); ring(); } }), 2500);
   }
 
   const stop = () => { touched = user = true; engine.still(); closePanel(); };
@@ -668,9 +642,11 @@ function drawGraph(root, G, { go, lib, focus = null, arrive = null, mode, switch
     tip.hidden = true; setFocus(null, null);
     await flyTo(n);
     if (!root.isConnected) return;
-    // A stand-in the size of the book on screen, where the node is drawn: pullOut flies the book out of it.
-    const p = engine.screen(n), { w: t, h } = engine.size(n), box = stage.getBoundingClientRect(), vb = view.getBoundingClientRect();
-    standin.style.cssText = `--h:${h}px;--t:${t}px;--w:${h * 0.68}px;left:${box.left - vb.left + p.x - t / 2}px;top:${box.top - vb.top + p.y - h / 2}px;width:${t}px;height:${h}px`;
+    // A cover-shaped stand-in where the node is drawn: pullOut flies the book out of it, growing.
+    const p = engine.screen(n), { h: d } = engine.size(n), box = stage.getBoundingClientRect(), vb = view.getBoundingClientRect();
+    const h = Math.max(18, d * 1.25), cw = h * 0.68;
+    standin.dataset.face = 'cover';
+    standin.style.cssText = `left:${box.left - vb.left + p.x - cw / 2}px;top:${box.top - vb.top + p.y - h / 2}px;width:${cw}px;height:${h}px`;
     outNode = n;
     pullOut(standin, book, go, panelHTML(n), id => { const m = byId.get(id); if (m) flyTo(m).then(() => { setFocus(m, null); }); });
   }
@@ -818,12 +794,7 @@ function drawGraph(root, G, { go, lib, focus = null, arrive = null, mode, switch
   });
   range?.addEventListener('input', () => { filters.year = sliderYear(); applyFilters(); });
   range?.addEventListener('change', refit);
-  ctrl.querySelector('.gc-mode').addEventListener('click', e => {
-    const b = e.target.closest('[data-mode]');
-    if (b && !b.disabled && b.dataset.mode !== mode) switchTo(b.dataset.mode);
-  });
-
-  /* ---------- Web | Timeline: the books glide to their new places, left to right, the axis fading in ---------- */
+  /* ---------- Web | Circle | Timeline: the books glide to their new places, left to right, the axis fading in ---------- */
   const layoutEl = root.querySelector('.graph-layout');
   const easeIO = t => (t < 0.5 ? 4 * t * t * t : 1 - (-2 * t + 2) ** 3 / 2);
   let regrow = 0;
@@ -837,14 +808,14 @@ function drawGraph(root, G, { go, lib, focus = null, arrive = null, mode, switch
     closePop(); closePanel(); tip.hidden = true;
     const T = timeline();
     // Leaving the web: remember where every book was, to go back there.
-    if (next === 'timeline' && nodes.every(n => n.fx == null)) nodes.forEach(n => { n.web = { x: n.x, y: n.y, z: n.z || 0 }; });
-    const to = next === 'timeline' ? T.pos : nodes.every(n => n.web) ? new Map(nodes.map(n => [n, n.web])) : null;
+    if (next !== 'web' && nodes.every(n => n.fx == null)) nodes.forEach(n => { n.web = { x: n.x, y: n.y, z: n.z || 0 }; });
+    const to = next !== 'web' ? placesOf(next) : nodes.every(n => n.web) ? new Map(nodes.map(n => [n, n.web])) : null;
     const from = new Map(nodes.map(n => [n, { x: n.x, y: n.y, z: n.z || 0 }]));
     const ms = reduced() ? 0 : 1500, span = ms * 0.8;
     // Books further right on the timeline set off a little later: the change sweeps across in time order.
     const xs = [...T.pos.values()].map(p => p.x), xa = Math.min(...xs), xw = Math.max(...xs) - xa || 1;
     const lag = n => (ms - span) * ((T.pos.get(n).x - xa) / xw);
-    const m0 = tlMix, m1 = next === 'timeline' ? 1 : 0;
+    const m0 = tlMix, m1 = next === 'timeline' ? 1 : 0, r0 = ringMix, r1 = next === 'circle' ? 1 : 0;
     engine.layout(next);
     engine.still(); touched = true;
     if (to) engine.frame(nodes.filter(n => n.vis).map(n => to.get(n)), ms, 2.4, true);
@@ -864,6 +835,7 @@ function drawGraph(root, G, { go, lib, focus = null, arrive = null, mode, switch
         pinTo(n, { x: a.x + (b.x - a.x) * u, y: a.y + (b.y - a.y) * u, z: a.z + (b.z - a.z) * u });
       });
       tlMix = m0 + (m1 - m0) * easeIO(e);
+      ringMix = r0 + (r1 - r0) * easeIO(e);
       if (e < 1) { tween = requestAnimationFrame(step); return; }
       tween = 0;
       // Back in the web: the books are free again, where they were.
@@ -1008,7 +980,7 @@ function drawGraph(root, G, { go, lib, focus = null, arrive = null, mode, switch
   // Rows top down, each centred under the book; a row's books under their parents, left to right, a long row in
   // staggered lines. y down (the 3D map turns it over).
   function cascadeSpots(c) {
-    const rows = [], at = new Map(), up = mode === '3d' ? -1 : 1;
+    const rows = [], at = new Map(), up = 1;
     c.depth.forEach((d, n) => (rows[d] ||= []).push(n));
     let y = 0;
     rows.forEach((row, d) => {
@@ -1116,7 +1088,7 @@ function drawGraph(root, G, { go, lib, focus = null, arrive = null, mode, switch
   // For tools/graph_qa.py: what the map shows and where the camera is.
   stage.state = () => {
     const c = engine.cam();
-    return { mode, layout, mix: tlMix, tweenAt, pin: pin?.id || null, center: { x: c.x, y: c.y }, zoom: c.k, hash: location.hash,
+    return { mode, layout, mix: tlMix, ring: ringMix, tweenAt, pin: pin?.id || null, center: { x: c.x, y: c.y }, zoom: c.k, hash: location.hash,
       visible: bookNodes.filter(n => n.vis).length, authors: authorNodes.filter(n => n.vis).length, author: authorOpen?.id || null, lit: [...lit].map(n => n.id), lines: relLinks.filter(l => l.on && l.source.vis && l.target.vis).length,
       bright: nodes.filter(n => n.vis && (!filters.rels.size || n.relOn)).length, away: nodes.filter(n => n.away).length,
       years: bookNodes.filter(n => n.vis).map(n => n.year), genres: [...new Set(bookNodes.filter(n => n.vis).map(n => n.genre))],

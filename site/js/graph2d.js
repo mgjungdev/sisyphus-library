@@ -1,11 +1,11 @@
-// The flat map (graph.js chooses it when there is no WebGL or the reader picks 2D): force-graph (site/vendor) draws
-// each book on a canvas as a round badge: its cover symbol in gilt on its cloth (art.js badgeCanvas). Relation lines: style = contact, weight = case
-// of the lead reading, colour = kind, an arrowhead from the older work to the newer; faint at rest, full when lit. An author is a small gilt medal with
-// its name, tied to its books by hairlines that pull them together; genre and shelf heading only pull books together.
-// Genre names lie under the books like regions on a map.
-import { isDrafts } from './catalog.js';
-import { GENRES, CASE_W, REST_LINE, TITLES_AT, NAMES_AT, zoomIn, PER_YEAR, shortTitle, authorForces, drawMedal } from './graph.js';
-import { badgeCanvas } from './art.js';
+// The map (graph.js): force-graph (site/vendor) on a canvas, in three layouts. The web: each book a plain dot in its
+// cloth colour, sized by its relations, the genres pulled into regions named at their rims; relation lines thin and
+// faint until lit (style = contact, weight = case, colour = kind when lit), a small chevron halfway pointing from the
+// older work to the newer. The circle: books round a ring by genre, the lines crossing inside it. The timeline: books
+// on one line by year, the lines as arcs above it, older to newer. An author is a small ring with its name, tied to
+// its books by hairlines (the web only). In a book's cascade each book shows its cover with its symbol.
+import { GENRES, CASE_W, REST_LINE, TITLES_AT, NAMES_AT, zoomIn, PER_YEAR, shortTitle, authorForces } from './graph.js';
+import { coverCanvas, hexMix } from './art.js';
 
 const DASH = { documented: null, probable: [6, 4], none: [1.4, 3.2] };
 
@@ -19,7 +19,7 @@ export function make2D(env) {
   function placeAnchors() {
     const r = stage.getBoundingClientRect();
     const aspect = Math.min(2.2, Math.max(0.45, (r.width || 1280) / (r.height || 800)));
-    const R = 560, rx = R * Math.sqrt(aspect), ry = R / Math.sqrt(aspect);
+    const R = 420, rx = R * Math.sqrt(aspect), ry = R / Math.sqrt(aspect);
     anchors = new Map(GENRES.map((g, i) => {
       // Start just off vertical so the lower-left corner, where the key sits, falls between two regions.
       const t = (-85 / 180) * Math.PI + (i / GENRES.length) * Math.PI * 2;
@@ -70,116 +70,108 @@ export function make2D(env) {
 
   /* ---------- drawing ---------- */
   const ease = (cur, to, k = 0.18) => cur + (to - cur) * k;
-  // An author: a gilt medal with its initials, its name always beside it. The medal is drawn once into a small bitmap
-  // (a gradient per medal per frame slows the map), with and without initials for when it is too small to read them.
-  const medalPx = 64;
-  function medalImage(n, ini) {
-    const key = ini ? 'medalI' : 'medal';
-    if (!n[key]) {
-      const cv = document.createElement('canvas');
-      cv.width = cv.height = medalPx;
-      drawMedal(cv.getContext('2d'), medalPx / 2, medalPx / 2, medalPx / 2 - 1, ini ? n.ini : '', C().font);
-      n[key] = cv;
-    }
-    return n[key];
-  }
-  const badgeOf = n => (n.badge ||= badgeCanvas(n.lb, n.b.spine?.color || '#57605c', n.b.accent || '#c9a24a', 128));
+  // 0 in the web, 1 on the circle or the timeline (the regions, authors and their hairlines belong to the web).
+  const held = () => Math.max(env.timeline()?.mix || 0, env.ring()?.mix || 0);
+  const dotOf = n => (n.dot ||= hexMix(n.b.spine?.color || '#57605c', C().bg, C().dark ? 0.12 : 0.18));
+  const coverOf = n => coverCanvas(n.lb || n.b, n.b.spine?.color || '#57605c', C().bg, C().coverMix, C().coverInk);
   let inFlight = false; // books are flying in from the shelves: authors wait until they have landed
   function drawAuthor(n, ctx, scale) {
     if (inFlight) { n.a = 0; return; }
-    const focus = focusing(), c = C(), on = lit.has(n);
-    n.a = ease(n.a, focus ? (on ? 1 : 0.1) : env.restAlpha(n));
-    n.s = ease(n.s, env.marked(n) ? 1.18 : 1);
-    const r = (n.h * n.s) / 2;
+    const focus = focusing(), c = C(), on = lit.has(n), away = 1 - held();
+    n.a = ease(n.a, (focus ? (on ? 1 : 0.08) : env.restAlpha(n) * 0.6) * away);
+    if (n.a < 0.02) return;
+    const r = (n.h * (env.marked(n) ? 1.25 : 1)) / 2;
     ctx.save();
     ctx.globalAlpha = n.a;
-    if (r * scale >= 5) { ctx.shadowColor = c.dark ? 'rgba(0,0,0,.55)' : 'rgba(28,34,32,.3)'; ctx.shadowBlur = 5 * n.s; ctx.shadowOffsetY = 1.5; }
-    ctx.drawImage(medalImage(n, r * scale >= 6), n.x - r, n.y - r, r * 2, r * 2);
+    ctx.beginPath(); ctx.arc(n.x, n.y, r, 0, Math.PI * 2);
+    ctx.fillStyle = c.bg; ctx.fill();
+    ctx.lineWidth = 1 / scale; ctx.strokeStyle = on ? c.ink : c.ink3; ctx.stroke();
     ctx.restore();
-    // The books come first: an author's name shows as the reader zooms in, or when lit.
+    // Its name, in small capitals, as the reader zooms in, or when lit.
     const named = on || env.marked(n) || n === env.hoverNode() ? 1 : zoomIn(scale, NAMES_AT);
-    if (named < 0.02) return;
-    const px = 11.5, th = px / scale;
+    if (named * n.a < 0.02) return;
+    const px = 9, th = px / scale, label = n.name.toUpperCase();
     ctx.save();
     ctx.globalAlpha = Math.min(1, n.a + 0.1) * named;
-    ctx.font = `italic ${th}px ${c.font}`;
+    ctx.font = `600 ${th}px ${c.ui}`;
+    if ('letterSpacing' in ctx) ctx.letterSpacing = '1.2px';
     ctx.textAlign = 'center'; ctx.textBaseline = 'top';
     ctx.lineJoin = 'round'; ctx.lineWidth = 3.5 / scale; ctx.strokeStyle = c.bg;
-    const tw = measure(ctx, n.name), gap = 3 / scale + 1;
+    const tw = measure(ctx, label) * 1.12, gap = 3 / scale + 1;
     const box = (lx, y0) => ({ lx, x0: lx - tw / 2, x1: lx + tw / 2, y0, y1: y0 + th });
     const side = r + gap + tw / 2;
     const tries = [box(n.x, n.y + r + gap), box(n.x, n.y - r - gap - th), box(n.x + side, n.y - th / 2), box(n.x - side, n.y - th / 2)];
     const clash = b => labels.reduce((a, o) => a + Math.max(0, Math.min(b.x1, o.x1) - Math.max(b.x0, o.x0)) * Math.max(0, Math.min(b.y1, o.y1) - Math.max(b.y0, o.y0)), 0);
     const b = tries.find(t => !clash(t)) || tries.reduce((m, t) => (clash(t) < clash(m) ? t : m));
     labels.push(b);
-    put(ctx, true, n.name, b.lx, b.y0);
-    ctx.fillStyle = on || !focus ? c.ink : c.ink2;
-    put(ctx, false, n.name, b.lx, b.y0);
+    put(ctx, true, label, b.lx, b.y0);
+    ctx.fillStyle = on || !focusing() ? c.ink2 : c.ink3;
+    put(ctx, false, label, b.lx, b.y0);
     ctx.restore();
   }
   function drawBook(n, ctx, scale) {
     if (!Number.isFinite(n.x) || env.outHidden(n)) return;
     if (n.isA) { drawAuthor(n, ctx, scale); return; }
-    if (n.away) { n.a = env.restAlpha(n); return; } // its spines are in the air (transit.js)
+    if (n.away) { n.a = env.restAlpha(n); return; } // its cover is in the air (transit.js)
     const focus = focusing();
     const on = !focus || lit.has(n);
     const dim = !focus && env.filters.rels.size && !n.relOn;
-    const c = C(), marked = env.marked(n);
-    n.a = ease(n.a, focus ? (on ? 1 : 0.1) : env.restAlpha(n));
-    n.s = ease(n.s, (marked ? 1.18 : 1) * (env.cascade() ? 1.8 : 1)); // a cascade has room: its badges are larger
-    const h = n.h * n.s, w = h;
+    const c = C(), marked = env.marked(n), casc = env.cascade(), hov = n === env.hoverNode();
+    n.a = ease(n.a, focus ? (on ? 1 : 0.08) : env.restAlpha(n));
+    n.s = ease(n.s, marked ? 1.25 : 1);
     ctx.save();
     ctx.globalAlpha = n.a;
-    if (n.deg || n === env.hoverNode()) {
-      ctx.shadowColor = c.dark ? 'rgba(0,0,0,.55)' : 'rgba(28,34,32,.32)';
-      ctx.shadowBlur = 6 * n.s; ctx.shadowOffsetY = 2;
-    }
-    // Its cover symbol on a badge of its cloth; a speck of the cloth when too small on screen to read.
-    if (h * scale < 7) {
-      ctx.beginPath(); ctx.arc(n.x, n.y, h / 2, 0, Math.PI * 2);
-      ctx.fillStyle = n.b.spine?.color || '#57605c'; ctx.fill();
-    } else ctx.drawImage(badgeOf(n), n.x - h / 2, n.y - h / 2, h, h);
-    ctx.shadowColor = 'transparent';
-    if (n.b.status === 'proposed' && isDrafts()) { // a draft record: a small gold seal at the rim
-      ctx.beginPath(); ctx.arc(n.x + h * 0.38, n.y - h * 0.38, 1.6, 0, Math.PI * 2); ctx.fillStyle = '#d4a72c'; ctx.fill();
+    let half;
+    if (casc) { // a cascade has room: each book shows its cover
+      const H = (env.cascadeRoot() === n ? 84 : 58) * n.s, W = H * 0.68;
+      ctx.drawImage(coverOf(n), n.x - W / 2, n.y - H / 2, W, H);
+      half = H / 2; n.hitR = H / 2;
+    } else {
+      const r = (n.h / 2) * n.s;
+      ctx.beginPath(); ctx.arc(n.x, n.y, r, 0, Math.PI * 2);
+      ctx.fillStyle = dotOf(n); ctx.fill();
+      if (marked) { ctx.lineWidth = 1.2 / scale; ctx.strokeStyle = c.ink; ctx.beginPath(); ctx.arc(n.x, n.y, r + 2.5 / scale, 0, Math.PI * 2); ctx.stroke(); }
+      half = r; n.hitR = n.h / 2;
     }
     ctx.restore();
 
     // Titles: always for hubs and the lit neighbourhood, for other related books as the reader zooms in, for the rest
-    // closer still.
-    const show = lit.has(n) || n === env.hoverNode() || (!focus && !dim && (n.hub || (n.deg > 0 && scale > TITLES_AT) || scale > 2.6));
+    // closer still. On the circle and the timeline only what is lit or pointed at.
+    const away = held() > 0.5;
+    const show = lit.has(n) || hov || (!focus && !dim && !away && (n.hub || (n.deg > 0 && scale > TITLES_AT) || scale > 2.6));
     if (!show) return;
-    const px = n.deg || lit.has(n) ? 12.5 : 10.5;
+    const strong = n.hub || lit.has(n) || hov;
+    const px = strong ? 14 : 12.5;
     ctx.save();
-    ctx.globalAlpha = Math.min(1, n.a * (n.hub || lit.has(n) || n === env.hoverNode() ? 1 : n.deg ? zoomIn(scale, TITLES_AT) : Math.min(1, (scale - 2.6) * 2)));
-    ctx.font = `${marked ? 'italic ' : ''}${px / scale}px ${c.font}`;
+    ctx.globalAlpha = Math.min(1, n.a * (strong ? 1 : n.deg ? zoomIn(scale, TITLES_AT) : Math.min(1, (scale - 2.6) * 2)));
+    ctx.font = `${marked ? 'italic ' : ''}500 ${px / scale}px ${c.font}`;
     ctx.textAlign = 'center'; ctx.textBaseline = 'top';
     ctx.lineJoin = 'round'; ctx.lineWidth = 3.5 / scale; ctx.strokeStyle = c.bg;
-    // Below the spine if that space is free, else above it; an unrelated book's title gives way.
+    // Below the book if that space is free, else above it; an unrelated book's title gives way.
     const more = env.more(n), label = shortTitle(n.b.title) + (more ? `  +${more}` : ''), tw = measure(ctx, label), th = px / scale;
-    const below = n.y + h / 2 + 4 / scale + 2, above = n.y - h / 2 - 4 / scale - 2 - th;
+    const below = n.y + half + 3 / scale, above = n.y - half - 3 / scale - th;
     const box = (lx, y0) => ({ lx, x0: lx - tw / 2, x1: lx + tw / 2, y0, y1: y0 + th });
     const clash = b => labels.reduce((a, o) => a + (o.n === n ? 0
       : Math.max(0, Math.min(b.x1, o.x1) - Math.max(b.x0, o.x0)) * Math.max(0, Math.min(b.y1, o.y1) - Math.max(b.y0, o.y0))), 0);
     const free = b => !clash(b);
-    // A related book's title may also sit beside its spine when both ends are taken (crowded narrow screens).
-    const side = w / 2 + 5 / scale + tw / 2;
+    const side = half + 5 / scale + tw / 2;
     const tries = [box(n.x, below), box(n.x, above)];
     if (n.deg) tries.push(box(n.x + side, n.y - th / 2), box(n.x - side, n.y - th / 2));
     let b = tries.find(free);
     if (!b) {
-      if (!n.hub && !lit.has(n)) { ctx.restore(); return; }
+      if (!strong) { ctx.restore(); return; }
       b = tries.reduce((m, t) => (clash(t) < clash(m) ? t : m)); // the least crowded place
     }
     labels.push(b);
     put(ctx, true, label, b.lx, b.y0);
-    ctx.fillStyle = n.deg || lit.has(n) ? c.ink : c.ink2;
+    ctx.fillStyle = strong ? c.ink : c.ink2;
     put(ctx, false, label, b.lx, b.y0);
     ctx.restore();
   }
   function hitBook(n, color, ctx) {
+    if (n.isA && held() > 0.5) return;
     ctx.fillStyle = color;
-    ctx.beginPath(); ctx.arc(n.x, n.y, n.h / 2 + 3, 0, Math.PI * 2); ctx.fill();
+    ctx.beginPath(); ctx.arc(n.x, n.y, (n.hitR || n.h / 2) + 3, 0, Math.PI * 2); ctx.fill();
   }
 
   // Genre names lie under the books like regions on a map, fading as the reader zooms in.
@@ -211,6 +203,9 @@ export function make2D(env) {
     });
     ctx.globalAlpha = mix * 0.5;
     ctx.beginPath(); ctx.moveTo(A.x0, A.bottom); ctx.lineTo(A.x1, A.bottom); ctx.stroke();
+    ctx.globalAlpha = mix * 0.8; ctx.strokeStyle = c.ink2;
+    ctx.beginPath(); ctx.moveTo(A.x0, A.base); ctx.lineTo(A.x1, A.base); ctx.stroke();
+    ctx.strokeStyle = c.ink3;
     if (A.brk != null) { // the axis breaks between the older years and 1700: two short slants
       const d = 4 / scale;
       ctx.lineWidth = 1.4 / scale; ctx.globalAlpha = mix * 0.7;
@@ -267,21 +262,8 @@ export function make2D(env) {
       isles.set(g, { x, y, r: sd * 1.3 + 26 });
     });
   }
-  function drawIslands(ctx) {
-    const mix = env.timeline()?.mix || 0;
-    if (mix >= 1) return;
-    const c = C(), a = (c.dark ? 0.07 : 0.05) * (1 - mix) * (focusing() ? 0.5 : 1);
-    ctx.save();
-    isles.forEach(({ x, y, r }) => {
-      const g = ctx.createRadialGradient(x, y, 0, x, y, r);
-      g.addColorStop(0, withAlpha(c.ink, a)); g.addColorStop(0.6, withAlpha(c.ink, a * 0.7)); g.addColorStop(1, withAlpha(c.ink, 0));
-      ctx.fillStyle = g;
-      ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI * 2); ctx.fill();
-    });
-    ctx.restore();
-  }
   function drawIsleNames(ctx, scale) {
-    const fade = Math.max(0, Math.min(1, (3.2 - scale) / 1.4)) * (1 - (env.timeline()?.mix || 0));
+    const fade = Math.max(0, Math.min(1, (3.2 - scale) / 1.4)) * (1 - held()) * (env.cascade() ? 0 : 1);
     if (!fade) return;
     const c = C(), px = 10.5 / scale;
     ctx.save();
@@ -304,6 +286,26 @@ export function make2D(env) {
     ctx.restore();
   }
 
+  // The circle's genres: a short arc outside each genre's books, its name in small capitals beyond it.
+  function drawRing(ctx, scale) {
+    const R = env.ring();
+    if (!R) return;
+    const c = C(), { R: r, groups } = R.ring;
+    ctx.save();
+    ctx.lineCap = 'round'; ctx.lineWidth = 2 / scale; ctx.strokeStyle = c.ink3;
+    ctx.globalAlpha = R.mix * 0.7;
+    groups.forEach(g => { ctx.beginPath(); ctx.arc(0, 0, r + 14, g.a0 - 0.01, g.a1 + 0.01); ctx.stroke(); });
+    ctx.font = `600 ${10 / scale}px ${c.ui}`;
+    if ('letterSpacing' in ctx) ctx.letterSpacing = '1.5px';
+    ctx.textBaseline = 'middle'; ctx.fillStyle = c.ink3; ctx.globalAlpha = R.mix * (focusing() ? 0.4 : 0.9);
+    groups.forEach(g => {
+      const a = (g.a0 + g.a1) / 2, x = Math.cos(a) * (r + 30), y = Math.sin(a) * (r + 30);
+      ctx.textAlign = Math.abs(Math.cos(a)) < 0.25 ? 'center' : Math.cos(a) > 0 ? 'left' : 'right';
+      put(ctx, false, g.name.toUpperCase(), x, y);
+    });
+    ctx.restore();
+  }
+
   let entered = false;
   function drawRegions(ctx, scale) {
     M = ctx.getTransform();
@@ -313,8 +315,9 @@ export function make2D(env) {
     labels = nodes.filter(n => n.deg && n.vis && Number.isFinite(n.x))
       .map(n => ({ n, x0: n.x - n.w / 2, x1: n.x + n.w / 2, y0: n.y - n.h / 2, y1: n.y + n.h / 2 }));
     drawAxis(ctx, scale);
+    drawRing(ctx, scale);
+    drawLinks(ctx, scale);
     measureIslands();
-    drawIslands(ctx);
     drawIsleNames(ctx, scale);
   }
 
@@ -343,8 +346,109 @@ export function make2D(env) {
     ctx.restore();
   }
 
+  // The points of a relation line as drawn now: straight in the web, bowed toward the middle on the circle, an arc
+  // above the line on the timeline (both ends sliding onto it). Kept on the link for hover and the popover.
+  function pathOf(l) {
+    const a = l.source, b = l.target, T = env.timeline(), R = env.ring();
+    const tm = T?.mix || 0, rm = R?.mix || 0, pts = [];
+    if (tm > 0.001) {
+      const base = T.axis.base, ay = a.y + (base - a.y) * tm, by = b.y + (base - b.y) * tm;
+      const h = (Math.abs(b.x - a.x) / 2) * T.axis.arcK * tm * 1.333;
+      for (let i = 0; i <= 24; i++) {
+        const u = i / 24, v = 1 - u;
+        pts.push({ x: v * v * v * a.x + 3 * v * v * u * a.x + 3 * v * u * u * b.x + u * u * u * b.x,
+          y: v * v * v * ay + 3 * v * v * u * (ay - h) + 3 * v * u * u * (by - h) + u * u * u * by });
+      }
+    } else if (rm > 0.001) {
+      const k = 1 - 0.85 * rm, cx = ((a.x + b.x) / 2) * k, cy = ((a.y + b.y) / 2) * k;
+      for (let i = 0; i <= 24; i++) {
+        const u = i / 24, v = 1 - u;
+        pts.push({ x: v * v * a.x + 2 * v * u * cx + u * u * b.x, y: v * v * a.y + 2 * v * u * cy + u * u * b.y });
+      }
+    } else pts.push({ x: a.x, y: a.y }, { x: b.x, y: b.y });
+    return (l.pts = pts);
+  }
+  const at = (pts, u) => { // a point u of the way along, and the direction there
+    if (pts.length === 2) {
+      const [p, q] = pts;
+      return { x: p.x + (q.x - p.x) * u, y: p.y + (q.y - p.y) * u, ang: Math.atan2(q.y - p.y, q.x - p.x), len: Math.hypot(q.x - p.x, q.y - p.y) };
+    }
+    const L = []; let tot = 0;
+    for (let i = 1; i < pts.length; i++) { const d = Math.hypot(pts[i].x - pts[i - 1].x, pts[i].y - pts[i - 1].y); L.push(d); tot += d; }
+    let want = tot * u;
+    for (let i = 0; i < L.length; i++) {
+      if (want <= L[i] || i === L.length - 1) {
+        const f = L[i] ? Math.min(1, want / L[i]) : 0, p = pts[i], q = pts[i + 1];
+        return { x: p.x + (q.x - p.x) * f, y: p.y + (q.y - p.y) * f, ang: Math.atan2(q.y - p.y, q.x - p.x), len: tot };
+      }
+      want -= L[i];
+    }
+    return { x: pts[0].x, y: pts[0].y, ang: 0, len: 0 };
+  };
+  // A chevron (or, on the timeline, an arrowhead where the arc comes down) added to a path.
+  function arrowTo(path, pts, tl, size) {
+    const m = at(pts, tl ? 1 : 0.55);
+    if (m.len < 24 * size / 3) return;
+    const co = Math.cos(m.ang), si = Math.sin(m.ang), pt = (dx, dy) => [m.x + dx * co - dy * si, m.y + dx * si + dy * co];
+    const [a, b, c] = tl ? [pt(-size * 1.6, -size * 0.8), pt(0, 0), pt(-size * 1.6, size * 0.8)] : [pt(-size * 0.6, -size), pt(size * 0.4, 0), pt(-size * 0.6, size)];
+    path.moveTo(...a); path.lineTo(...b); path.lineTo(...c);
+  }
+  const polyline = (path, pts, i0 = 0, i1 = pts.length - 1) => { path.moveTo(pts[i0].x, pts[i0].y); for (let i = i0 + 1; i <= i1; i++) path.lineTo(pts[i].x, pts[i].y); };
+  // Every relation line, under the books. Lines at rest share one colour: they go out in a few strokes, one per
+  // width (a stroke per line slows the switch between layouts). Lines that are lit, filtered for or in a cascade
+  // say what they are and are drawn one by one.
+  function drawLinks(ctx, scale) {
+    const c = C(), groups = new Map(), one = [];
+    const tl = (env.timeline()?.mix || 0) > 0.5, ring = (env.ring()?.mix || 0) > 0.5;
+    for (const l of relLinks) {
+      if (!l.on || !l.source.vis || !l.target.vis || !Number.isFinite(l.source.x) || !Number.isFinite(l.target.x)) continue;
+      const a = linkAlpha(l);
+      if (a < 0.01) continue;
+      const pts = pathOf(l), lit = focusing() && litLinks.has(l);
+      if (lit || env.filters.rels.size || env.cascade()) { one.push([l, pts, lit, a]); continue; }
+      const w = linkW(l) / scale, key = w.toFixed(5);
+      let g = groups.get(key);
+      if (!g) groups.set(key, g = { w, a, path: new Path2D(), faint: new Path2D() });
+      // On the circle a resting line comes in faint from the older book, so the ring is not ringed with ink.
+      if (ring && pts.length > 2) { const h = pts.length >> 1; polyline(g.faint, pts, 0, h); polyline(g.path, pts, h); }
+      else polyline(g.path, pts);
+      arrowTo(g.path, pts, tl, 3 / scale);
+    }
+    ctx.save();
+    ctx.lineCap = 'round'; ctx.lineJoin = 'round'; ctx.strokeStyle = c.ink;
+    const k = c.dark ? 0.32 : 0.55; // light ink on a dark page carries further
+    groups.forEach(g => {
+      ctx.lineWidth = g.w;
+      ctx.globalAlpha = g.a * k * 0.4; ctx.stroke(g.faint);
+      ctx.globalAlpha = g.a * k; ctx.stroke(g.path);
+    });
+    ctx.restore();
+    one.forEach(([l, pts, lit, a]) => {
+      const col = c.rel(l.rel);
+      ctx.save();
+      ctx.globalAlpha = a; ctx.strokeStyle = col; ctx.lineWidth = linkW(l) / scale; ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+      const dash = lit && DASH[l.contact]; // contact shows when lit; at rest every line is a plain hairline
+      if (dash) ctx.setLineDash(dash.map(d => d / scale));
+      const path = new Path2D();
+      polyline(path, pts);
+      ctx.stroke(path);
+      ctx.setLineDash([]);
+      const head = new Path2D();
+      arrowTo(head, pts, tl, (lit ? 4.5 : 3.2) / scale);
+      ctx.lineWidth = (lit ? 1.6 : 1.1) / scale; ctx.stroke(head);
+      ctx.restore();
+    });
+  }
+  function hitRel(l, color, ctx, scale) {
+    const pts = l.pts || pathOf(l);
+    ctx.strokeStyle = color; ctx.lineWidth = 8 / scale;
+    ctx.beginPath(); ctx.moveTo(pts[0].x, pts[0].y);
+    for (let i = 1; i < pts.length; i++) ctx.lineTo(pts[i].x, pts[i].y);
+    ctx.stroke();
+  }
+
   const linkAlpha = l => (focusing() ? (litLinks.has(l) ? 1 : 0.05) : env.filters.rels.size ? REST_LINE.filtered : REST_LINE.alpha);
-  const linkW = l => (CASE_W[l.case] || 1.8) * (focusing() && litLinks.has(l) ? (env.hoverLink() === l ? 1.4 : 1) : REST_LINE.width);
+  const linkW = l => (CASE_W[l.case] || 1.8) * (focusing() && litLinks.has(l) ? (env.hoverLink() === l ? 0.85 : 0.6) : REST_LINE.width * 0.9);
   const withAlpha = (hex, a) => {
     if (!hex.startsWith('#')) return hex;
     const h = hex.length === 4 ? hex.replace(/#(.)(.)(.)/, '#$1$1$2$2$3$3') : hex;
@@ -360,21 +464,13 @@ export function make2D(env) {
     .nodeCanvasObject(drawBook)
     .nodePointerAreaPaint(hitBook)
     .nodeVisibility(n => n.vis)
-    .linkVisibility(l => l.source.vis && l.target.vis && (l.kind !== 'rel' ? !inFlight : l.on))
-    .linkCurvature(l => (l.kind === 'rel' && !env.cascade() ? 0.14 : 0)) // a cascade's lines run straight
-    .linkColor(l => (l.kind === 'author'
-      ? withAlpha(C().ink3, (focusing() ? (litLinks.has(l) ? 0.75 : 0.03) : (C().dark ? 0.2 : 0.16)))
-      : withAlpha(C().rel(l.rel), 0.88 * linkAlpha(l))))
-    .linkWidth(l => (l.kind === 'author' ? (litLinks.has(l) ? 1 : 0.5) : linkW(l)))
-    .linkLineDash(l => (l.kind === 'rel' ? DASH[l.contact] : null))
+    .linkVisibility(l => l.source.vis && l.target.vis && (l.kind !== 'rel' ? !inFlight && held() < 0.99 : l.on))
+    .linkColor(l => withAlpha(C().ink3, (1 - held()) * (focusing() ? (litLinks.has(l) ? 0.75 : 0.03) : (C().dark ? 0.2 : 0.14))))
+    .linkWidth(l => (litLinks.has(l) ? 1 : 0.5))
+    .linkCanvasObjectMode(l => (l.kind === 'rel' ? 'replace' : undefined))
+    .linkCanvasObject(() => {}) // drawn under the books, all at once (drawLinks)
+    .linkPointerAreaPaint(hitRel)
     .linkHoverPrecision(6)
-    // An arrowhead by the newer book: just short of its spine.
-    .linkDirectionalArrowLength(l => (l.kind === 'rel' ? (linkW(l) + 1.4) * 2.4 : 0))
-    .linkDirectionalArrowRelPos(l => {
-      const d = Math.hypot(l.target.x - l.source.x, l.target.y - l.source.y) || 1;
-      return Math.max(0.55, Math.min(0.99, 1 - (l.target.h * l.target.s * 0.5 + 1) / d));
-    })
-    .linkDirectionalArrowColor(l => withAlpha(C().rel(l.rel), 0.95 * linkAlpha(l)))
     .onRenderFramePre(drawRegions)
     .autoPauseRedraw(false)
     .minZoom(0.35).maxZoom(9)
@@ -442,9 +538,8 @@ export function make2D(env) {
 
   // The middle of the drawn line: on the curve when force-graph bent it (quadratic, control point kept on the link).
   function midOf(l) {
-    const s = l.source, t = l.target, cp = l.__controlPoints;
-    return cp ? { x: 0.25 * s.x + 0.5 * cp[0] + 0.25 * t.x, y: 0.25 * s.y + 0.5 * cp[1] + 0.25 * t.y }
-      : { x: (s.x + t.x) / 2, y: (s.y + t.y) / 2 };
+    const m = at(l.pts || pathOf(l), 0.5);
+    return { x: m.x, y: m.y };
   }
   const local = e => { const r = stage.getBoundingClientRect(); return fg.screen2GraphCoords(e.clientX - r.left, e.clientY - r.top); };
   // The visible relation line nearest the pointer, within a few pixels, if any.
@@ -453,10 +548,11 @@ export function make2D(env) {
     let best = null, bd = 6 / fg.zoom();
     for (const l of relLinks) {
       if (!l.on || !l.source.vis || !l.target.vis) continue;
-      const s = l.source, t = l.target, cp = l.__controlPoints || [(s.x + t.x) / 2, (s.y + t.y) / 2];
-      for (let i = 0; i <= 24; i++) {
-        const u = i / 24, a = (1 - u) * (1 - u), b = 2 * u * (1 - u), c = u * u;
-        const d = Math.hypot(a * s.x + b * cp[0] + c * t.x - p.x, a * s.y + b * cp[1] + c * t.y - p.y);
+      const pts = l.pts || pathOf(l);
+      for (let i = 1; i < pts.length; i++) {
+        const a = pts[i - 1], b = pts[i], dx = b.x - a.x, dy = b.y - a.y, L = dx * dx + dy * dy || 1;
+        const u = Math.max(0, Math.min(1, ((p.x - a.x) * dx + (p.y - a.y) * dy) / L));
+        const d = Math.hypot(a.x + u * dx - p.x, a.y + u * dy - p.y);
         if (d < bd) { bd = d; best = l; }
       }
     }
@@ -476,16 +572,16 @@ export function make2D(env) {
     mode: '2d',
     has: n => Number.isFinite(n.x),
     screen: n => fg.graph2ScreenCoords(n.x, n.y),
-    size: (n, scaled) => { const k = fg.zoom() * (scaled ? n.s : 1); return { w: n.w * k, h: n.h * k }; },
+    size: (n, scaled) => { const k = fg.zoom() * (scaled ? n.s : 1), d = (n.hitR || n.h / 2) * 2; return { w: d * k, h: d * k }; },
     mid: l => { const m = midOf(l); return fg.graph2ScreenCoords(m.x, m.y); },
     lineAt,
     bookAt(e) {
       const p = local(e), pad = (e.pointerType === 'mouse' ? 3 : 8) / fg.zoom();
       let best = null, bd = Infinity;
       for (const n of nodes) {
-        if (!n.vis || !Number.isFinite(n.x)) continue;
+        if (!n.vis || !Number.isFinite(n.x) || (n.isA && held() > 0.5)) continue; // authors belong to the web
         const d = Math.hypot(p.x - n.x, p.y - n.y);
-        if (d > n.h / 2 + pad) continue;
+        if (d > (n.hitR || n.h / 2) + pad) continue;
         if (d < bd) { best = n; bd = d; }
       }
       return best;
@@ -516,9 +612,9 @@ export function make2D(env) {
       else fg.zoom(k, arrive ? 1000 : 1400);
     },
     refresh() {},
-    restyle() {},
-    // On the timeline books keep to their years: they are not dragged about.
-    layout(name) { fg.enableNodeDrag(name !== 'timeline'); },
+    restyle() { nodes.forEach(n => { delete n.dot; }); },
+    // On the circle and the timeline books keep their places: they are not dragged about.
+    layout(name) { fg.enableNodeDrag(name === 'web'); },
     // soft: the forces cool to almost nothing over the switch (all books are held), so none is kicked when let go.
     reheat(soft) { fg.d3AlphaDecay(soft ? 0.05 : 0.018).d3ReheatSimulation(); },
     prepare() {},

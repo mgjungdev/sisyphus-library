@@ -1,4 +1,4 @@
-import { coverHTML, initials, esc, roman, volOf } from './art.js';
+import { coverHTML, symbolSVG, initials, esc, roman, volOf } from './art.js';
 import { getProgress, prefs } from './store.js';
 
 const reduceMotion = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -59,38 +59,23 @@ export function renderLibrary(root, lib, { go }) {
     `<button class="chip" data-mode="${m}" aria-pressed="${m === mode}">${l}</button>`).join('')}</div>`;
 
   let spy = null;
-  // The wall: shelves side by side in columns (one per group), a group too long for one column spans more.
+  // The page: groups side by side in columns, each a row of covers; a group of more than four books (a genre, a
+  // century) takes the whole width.
   function wall() {
     const narrow = isNarrow();
     const pad = Math.min(48, Math.max(16, innerWidth * 0.04));
     const nav = innerWidth >= 1100 ? 84 : 0; // the timeline at the right edge keeps its own lane
     const inner = Math.min(innerWidth - nav, 1240) - 2 * pad;
-    const gap = narrow ? 20 : 56, min = narrow ? 150 : 290;
+    const gap = narrow ? 20 : 64, min = narrow ? 300 : 420;
     const cols = Math.max(1, Math.min(3, Math.floor((inner + gap) / (min + gap))));
-    return { narrow, cols, gap, cell: (inner - gap * (cols - 1)) / cols, shelfH: narrow ? 188 : 214, scale: narrow ? 0.95 : 1.12, edge: narrow ? 12 : 24 };
+    return { narrow, cols, gap };
   }
   function draw() {
     const W = wall();
     const thisMonth = new Date().toISOString().slice(0, 7);
     const groups = groupBooks(lib, mode);
     const target = mode === 'month' ? (groups.find(g => g.key >= thisMonth) || groups[groups.length - 1]) : null;
-    const thick = b => Math.round((b.spine?.thickness || 22) * W.scale) + 4;
-
-    const span = g => {
-      const total = g.books.reduce((t, b) => t + thick(b), 0) + W.edge;
-      return Math.max(1, Math.min(W.cols, Math.ceil(total / W.cell)));
-    };
-    const ledges = (g, n) => {
-      const rowW = n * W.cell + (n - 1) * W.gap - W.edge;
-      const rows = [[]];
-      let w = 0;
-      for (const b of g.books) {
-        const t = thick(b);
-        if (w + t > rowW && rows[rows.length - 1].length) { rows.push([]); w = 0; }
-        rows[rows.length - 1].push(b); w += t;
-      }
-      return rows.map(r => `<div class="ledge-wrap"><div class="shelf-row" style="height:${Math.round(W.shelfH * 0.93)}px">${r.map(b => bookHTML(b, W.shelfH, g.big, W.scale)).join('')}</div><div class="ledge"></div></div>`).join('');
-    };
+    const span = g => (mode !== 'month' && g.books.length > 4 ? W.cols : 1);
     root.innerHTML = `
     <div class="library" data-mode="${mode}" style="--cols:${W.cols};--gap:${W.gap}px">
       <div class="tagbar" role="group" aria-label="Show stories tagged">
@@ -100,14 +85,12 @@ export function renderLibrary(root, lib, { go }) {
         </div>
       </div>
       ${groups.map(g => { const n = span(g); return `
-      <section class="month${g === target ? ' is-current' : ''}${g.long ? ' long' : ''}" id="grp-${slugify(g.key)}" data-group="${esc(g.key)}" aria-label="${esc(g.big)}"${n > 1 ? ` style="grid-column: span ${n}"` : ''}>
+      <section class="month${g === target ? ' is-current' : ''}${g.long ? ' long' : ''}${n > 1 ? ' wide' : ''}" id="grp-${slugify(g.key)}" data-group="${esc(g.key)}" aria-label="${esc(g.big)}"${n > 1 ? ` style="grid-column: span ${n}"` : ''}>
         <header class="month-head">
           <h2><span class="m">${esc(g.big)}</span>${g.small ? `<span class="y">${esc(g.small)}</span>` : ''}</h2>
           <p>${summary(g)}</p>
         </header>
-        <div class="month-body">
-          ${ledges(g, n)}
-        </div>
+        <div class="month-body covers">${g.books.map(b => bookHTML(b, g.big)).join('')}</div>
       </section>`; }).join('')}
     </div>
     ${timeline(groups, mode)}`;
@@ -209,7 +192,7 @@ export function renderLibrary(root, lib, { go }) {
     }
     const el = e.target.closest('.book');
     if (!el || el.dataset.status !== 'ready') return;
-    pullOut(el, books.get(el.dataset.slug), go);
+    pullOut(el.querySelector('.shelf-cover') || el, books.get(el.dataset.slug), go);
   });
 
   return () => {
@@ -242,26 +225,19 @@ function timeline(groups, mode) {
 const slugify = k => String(k).toLowerCase().replace(/[^a-z0-9]+/g, '-');
 export const yearText = y => (y < 0 ? `c. ${-y} BC` : y < 1000 ? `c. ${y}` : String(y));
 
-function bookHTML(b, shelfH, groupLabel, scale = isNarrow() ? 1.1 : 1.35) {
-  const h = Math.round(shelfH * 0.88 * (b.spine?.height || 0.9));
-  const t = Math.round((b.spine?.thickness || 22) * scale);
-  const w = Math.round(h * 0.68);
-  const fs = Math.max(8, Math.min(t * 0.4, 15, (h - 50) / (b.title.length * 0.56))).toFixed(1);
+// A book on the page: its cover (the cloth colour softened, its symbol) with the title and author under it. The
+// cover is what flies: out to the pull-out, and to and from the map.
+function bookHTML(b, groupLabel) {
   const p = getProgress(b.slug);
   const ready = b.status === 'ready';
   const label = `${b.title}${b.vol ? `, volume ${b.vol} of ${b.vols},` : ''} by ${b.author}${ready ? '' : `, ${groupLabel}, coming soon`}`;
   return `
-  <button class="book" type="button" data-slug="${b.slug}" data-status="${b.status}"
-    style="--h:${h}px;--t:${t}px;--w:${w}px;--fs:${fs}px;--c:${b.spine?.color};--a:${b.cover?.accent}"
+  <button class="book" type="button" data-slug="${b.slug}" data-status="${b.status}" style="--c:${b.spine?.color};--a:${b.cover?.accent}"
     aria-label="${esc(label)}" ${ready ? '' : 'aria-disabled="true"'}>
-    <span class="book-3d">
-      ${ready ? `<span class="face back"></span>
-      <span class="face top"></span>
-      <span class="face cover">${coverHTML(b)}</span>` : ''}
-      <span class="face spine">${spineHTML(b)}</span>
-      ${p && !p.done ? '<span class="face ribbon"></span>' : ''}
-      ${p && p.done ? '<span class="face done-mark"></span>' : ''}
-    </span>
+    <span class="shelf-cover" data-face="cover">${ready ? symbolSVG(b) : ''}${b.vol ? `<span class="sc-vol">${roman(b.vol)}</span>` : ''}${
+      p && !p.done ? `<span class="sc-progress" style="--p:${p.pct || 0}%"></span>` : ''}${p && p.done ? '<span class="sc-done"></span>' : ''}</span>
+    <span class="shelf-t">${esc(b.title)}</span>
+    <span class="shelf-a">${esc(b.author)}</span>
   </button>`;
 }
 
@@ -272,15 +248,18 @@ function spineHTML(b) {
 
 /* ---------------- pull-out ---------------- */
 
-// el: the element the book flies out of (a shelf spine, or a stand-in at a graph node) carrying --h/--t/--w.
+// el: the element the book flies out of: a cover on the shelves or a stand-in at a graph node (data-face="cover", its
+// size read from its box), or a spine carrying --h/--t/--w.
 // extra: HTML placed above the actions (the graph lists the books this one talks to); a [data-pick] button in it
 // puts the book back, then calls onPick with its value.
 export function pullOut(el, book, go, extra = '', onPick = null) {
   if (flight) return;
   const layer = document.getElementById('flight-layer');
   const r = el.getBoundingClientRect();
-  const cs = getComputedStyle(el);
-  const h = parseFloat(cs.getPropertyValue('--h')), t = parseFloat(cs.getPropertyValue('--t')), w = parseFloat(cs.getPropertyValue('--w'));
+  const cs = getComputedStyle(el), face = el.dataset.face === 'cover';
+  const h = face ? r.height : parseFloat(cs.getPropertyValue('--h'));
+  const w = face ? r.width : parseFloat(cs.getPropertyValue('--w'));
+  const t = face ? Math.max(4, w * 0.08) : parseFloat(cs.getPropertyValue('--t'));
   const vw = innerWidth, vh = innerHeight;
   const narrow = vw < 760;
   const Hf = narrow ? Math.min(vh * 0.46, 340) : Math.min(vh * 0.62, 470);
@@ -336,9 +315,10 @@ export function pullOut(el, book, go, extra = '', onPick = null) {
   const fb = layer.querySelector('.fbook');
   const s = 1 / k;
   const dx = (r.left + r.width / 2) - cx, dy = (r.top + r.height / 2) - cy;
-  const zc = (wf / 2) * (1 - s);
-  const from = `translate3d(${dx}px,${dy}px,${zc}px) scale3d(${s},${s},${s}) rotateY(0deg)`;
-  const lift = `translate3d(${dx}px,${dy - 8}px,${zc + 70}px) scale3d(${s},${s},${s}) rotateY(-6deg)`;
+  // From a spine the book turns to show its cover; from a cover it only comes forward and grows.
+  const zc = face ? wf / 2 : (wf / 2) * (1 - s);
+  const from = `translate3d(${dx}px,${dy}px,${zc}px) scale3d(${s},${s},${s}) rotateY(${face ? -90 : 0}deg)`;
+  const lift = `translate3d(${dx}px,${dy - 8}px,${zc + (face ? 40 : 70)}px) scale3d(${s},${s},${s}) rotateY(${face ? -90 : -6}deg)`;
   const to = `translate3d(0px,0px,${wf / 2}px) scale3d(1,1,1) rotateY(-90deg)`;
 
   flight = { el, layer, fb, from, lift, to, book, go, prevFocus: document.activeElement };

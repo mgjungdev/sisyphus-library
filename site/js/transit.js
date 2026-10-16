@@ -11,9 +11,10 @@ const FLY = 880; // ms in the air
 const SWEEP = 240; // left-to-right stagger across the screen
 const SETTLE = 450; // longest wait, once the map is there, for its first heavy frames to pass before take-off
 
-// A spine on screen: its rect, and a copy of the shelf's spine face to fly.
+// A book on screen: a copy of its cover (or its spine) to fly, and the box it flies from.
+const faceOf = book => book.querySelector('.shelf-cover') || book.querySelector('.face.spine');
 function spineOf(book) {
-  const face = book.querySelector('.face.spine');
+  const face = faceOf(book);
   if (!face) return null;
   const el = document.createElement('div');
   el.className = 'fly';
@@ -110,7 +111,7 @@ export function liftShelves(view) {
   const flights = [];
   let map = null;
   // Measure every spine before marking any of them, so the page is laid out once, not once per book.
-  const seen = [...view.querySelectorAll('.book[data-status="ready"]')].map(book => [book, book.getBoundingClientRect()]);
+  const seen = [...view.querySelectorAll('.book[data-status="ready"]')].map(book => [book, (faceOf(book) || book).getBoundingClientRect()]);
   seen.forEach(([book, r]) => {
     if (!onScreen(r, top)) return;
     const el = spineOf(book);
@@ -132,7 +133,7 @@ export function landShelves(view, map, done = () => {}) {
   const top = document.querySelector('.topbar')?.getBoundingClientRect().bottom || 0;
   const host = layer();
   const flights = [], flown = new Set();
-  const seen = [...view.querySelectorAll('.book[data-status="ready"]')].map(book => [book, book.getBoundingClientRect()]);
+  const seen = [...view.querySelectorAll('.book[data-status="ready"]')].map(book => [book, (faceOf(book) || book).getBoundingClientRect()]);
   seen.forEach(([book, r]) => {
     const slug = book.dataset.slug;
     if (!onScreen(r, top)) return;

@@ -2,7 +2,7 @@
 body[data-view="graph"] { background: var(--bg); overflow: hidden; }
 .graph-view {
   position: fixed; inset: 56px 0 0 0; z-index: 1; font-family: var(--font-ui); overflow: hidden;
-  background: radial-gradient(ellipse 70% 60% at 50% 48%, color-mix(in srgb, var(--surface) 55%, var(--bg)) 0%, var(--bg) 100%);
+  background: var(--bg);
   animation: graph-in .7s ease-out both;
 }
 @keyframes graph-in { from { opacity: 0; } }
@@ -14,7 +14,7 @@ body[data-view="graph"] { background: var(--bg); overflow: hidden; }
   display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; pointer-events: none; z-index: 2;
 }
 .graph-head { pointer-events: none; }
-.graph-head h1 { margin: 0; font: 400 clamp(26px, 3.2vw, 34px)/1.05 var(--font-read); letter-spacing: -.01em; }
+.graph-head h1 { margin: 0; font: 400 clamp(30px, 3.6vw, 40px)/1.05 var(--font-display); letter-spacing: -.01em; }
 .graph-head p { margin: 6px 0 0; font-size: 13.5px; color: var(--ink-2); }
 .graph-draft { margin-left: 6px; padding: 1px 8px; border-radius: 999px; font-size: 11.5px; background: color-mix(in srgb, #d4a72c 22%, var(--surface)); color: var(--ink); }
 
@@ -62,7 +62,7 @@ body[data-view="graph"] { background: var(--bg); overflow: hidden; }
 .key-arrow::after { content: ""; position: absolute; right: -2px; top: -6px; border: 5px solid transparent; border-left: 8px solid var(--ink-2); border-right: 0; }
 .key-medal {
   flex: none; width: 13px; height: 13px; margin: 0 8px 0 7px; border-radius: 50%; align-self: center;
-  background: radial-gradient(circle at 35% 30%, #f3dc94, #c9a24a 55%, #8a6a24); box-shadow: inset 0 0 0 1.5px rgba(92,66,20,.45);
+  background: var(--bg); box-shadow: inset 0 0 0 1.2px var(--ink-3);
 }
 .graph-key .key-last { margin-top: 10px; }
 
@@ -71,7 +71,7 @@ body[data-view="graph"] { background: var(--bg); overflow: hidden; }
   background: color-mix(in srgb, var(--surface) 94%, transparent); border: 1px solid var(--rule); box-shadow: var(--shadow);
   pointer-events: none; font-size: 13px; color: var(--ink-2); line-height: 1.4;
 }
-.graph-tip b { display: block; margin-bottom: 2px; font: italic 400 17px/1.25 var(--font-read); color: var(--ink); }
+.graph-tip b { display: block; margin-bottom: 2px; font: 500 18px/1.2 var(--font-display); color: var(--ink); }
 .graph-tip b.tip-pair { font-style: normal; font-size: 15.5px; }
 .graph-tip b.tip-pair em { font-style: normal; font-weight: 500; }
 .graph-tip b.tip-pair i { font-style: italic; }
@@ -99,7 +99,7 @@ body[data-view="graph"] { background: var(--bg); overflow: hidden; }
   border-radius: 16px 16px 0 0; border-bottom: 0; padding-bottom: env(safe-area-inset-bottom);
 }
 .gp-head { position: relative; padding: 12px 44px 8px 16px; border-bottom: 1px solid var(--rule); flex: none; }
-.gp-pair { margin: 0; font: 400 18px/1.3 var(--font-read); }
+.gp-pair { margin: 0; font: 500 19px/1.3 var(--font-display); }
 .gp-pair em { font-style: normal; font-weight: 500; }
 .gp-pair i { font-style: italic; }
 .gp-def { margin: 3px 0 0; }
@@ -139,7 +139,7 @@ body[data-view="graph"] { background: var(--bg); overflow: hidden; }
 .graph-author {
   position: absolute; right: clamp(12px, 3vw, 28px); top: 84px; z-index: 4; width: min(340px, calc(100% - 24px));
   max-height: calc(100% - 110px); display: flex; flex-direction: column; border-radius: 14px; overflow: hidden;
-  background: var(--surface); border: 1px solid var(--rule); border-top: 3px solid #c9a24a; box-shadow: var(--shadow);
+  background: var(--surface); border: 1px solid var(--rule); border-top: 2px solid var(--ink); box-shadow: var(--shadow);
   font-family: var(--font-ui); color: var(--ink); animation: gp-in .18s ease-out;
 }
 .graph-author[hidden] { display: none; }
@@ -150,10 +150,10 @@ body[data-view="graph"] { background: var(--bg); overflow: hidden; }
 .ga-head { position: relative; display: flex; align-items: center; gap: 12px; padding: 14px 44px 10px 16px; border-bottom: 1px solid var(--rule); flex: none; }
 .ga-medal {
   flex: none; display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%;
-  background: radial-gradient(circle at 35% 30%, #f3dc94, #c9a24a 55%, #8a6a24); box-shadow: inset 0 0 0 3px rgba(92,66,20,.35), 0 1px 3px rgba(0,0,0,.25);
-  font: 600 15px/1 var(--font-read); color: #5a4012;
+  background: var(--bg); box-shadow: inset 0 0 0 1.2px var(--ink-3);
+  font: 600 12px/1 var(--font-ui); letter-spacing: .08em; color: var(--ink-2);
 }
-.ga-head h2 { margin: 0; font: 400 22px/1.15 var(--font-read); text-wrap: balance; }
+.ga-head h2 { margin: 0; font: 500 24px/1.15 var(--font-display); text-wrap: balance; }
 .ga-life { margin: 2px 0 0; font-size: 13px; color: var(--ink-3); font-variant-numeric: tabular-nums; }
 .ga-body { overflow-y: auto; overscroll-behavior: contain; padding: 10px 16px 14px; }
 .ga-about { margin: 0 0 12px; font: 15.5px/1.5 var(--font-read); color: var(--ink-2); }
@@ -164,7 +164,7 @@ body[data-view="graph"] { background: var(--bg); overflow: hidden; }
   border: 0; border-bottom: 1px solid var(--rule); background: none; color: var(--ink); text-align: left; cursor: pointer;
 }
 .ga-books li:last-child button { border-bottom: 0; }
-.ga-books .t { font: italic 400 16px/1.3 var(--font-read); }
+.ga-books .t { font: 500 17px/1.3 var(--font-display); }
 .ga-books .k { flex: none; font-size: 12.5px; color: var(--ink-3); font-variant-numeric: tabular-nums; }
 .ga-books button:hover .t, .ga-books button:focus-visible .t { text-decoration: underline; text-underline-offset: 3px; }
 .ga-books button.is-out .t { color: var(--ink-3); }
@@ -207,7 +207,7 @@ body[data-view="graph"] { background: var(--bg); overflow: hidden; }
   background: var(--surface); border: 1px solid var(--rule); box-shadow: var(--shadow);
 }
 .gc-hits li { padding: 7px 10px; border-radius: 8px; cursor: pointer; line-height: 1.3; }
-.gc-hits li b { display: block; font: italic 400 16px/1.25 var(--font-read); color: var(--ink); }
+.gc-hits li b { display: block; font: 500 17px/1.25 var(--font-display); color: var(--ink); }
 .gc-hits li span { font-size: 12.5px; color: var(--ink-3); }
 .gc-hits li[aria-selected="true"], .gc-hits li:hover { background: var(--surface-2); }
 .gc-hits li.is-out b { color: var(--ink-3); }
@@ -282,7 +282,7 @@ body[data-view="graph"] { background: var(--bg); overflow: hidden; }
 .graph-cascade button:hover { color: var(--ink); background: color-mix(in srgb, var(--ink) 6%, transparent); }
 .graph-cascade button[hidden] { display: none; }
 .graph-cascade svg { width: 16px; height: 16px; margin-left: -4px; }
-.graph-cascade .gk-title { min-width: 0; padding: 0 8px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font: italic 400 15.5px var(--font-read); color: var(--ink); }
+.graph-cascade .gk-title { min-width: 0; padding: 0 8px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font: 500 17px var(--font-display); color: var(--ink); }
 .graph-cascade .gk-read { background: var(--ink); color: var(--bg); }
 .graph-cascade .gk-read:hover { background: var(--ink); color: var(--bg); opacity: .88; }
 /* the Web | Timeline switch and the key make room for it */

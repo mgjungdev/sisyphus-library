@@ -1,21 +1,25 @@
 /* Design tokens
-   Library: stone wall, floating ledges, cloth-bound books as the only colour.
-   Reader themes: white / paper / gray / night. */
+   Library: an off-white page, thin serif headings, small tracked capitals; each book's cloth colour, softened, is its
+   cover and the only colour. Reader themes: white / paper / gray / night. */
 :root {
   color-scheme: light;
   --font-read: "Times New Roman", Tinos, Times, "Liberation Serif", serif;
   --font-ui: "Instrument Sans", system-ui, -apple-system, "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  --font-display: "Cormorant Garamond", "Times New Roman", Tinos, Times, serif;
 
-  --wall: #e8eae6;
-  --bg: #e8eae6;
+  --wall: #f3f3f0;
+  --bg: #f3f3f0;
   --surface: #fbfbf9;
-  --surface-2: #eff1ed;
-  --ink: #1c2220;
-  --ink-2: #57605c;
-  --ink-3: #89918d;
-  --rule: #d3d8d1;
-  --accent: #2f4f6a;
-  --accent-ink: #ffffff;
+  --surface-2: #ecece8;
+  --ink: #1d1d1b;
+  --ink-2: #5c5c57;
+  --ink-3: #8a8a83;
+  --rule: #e2e2dc;
+  --accent: #1d1d1b;
+  --accent-ink: #fbfbf8;
+  /* a cover: the book's cloth mixed this far into the page, its symbol in this colour */
+  --cover-mix: 45%;
+  --cover-ink: #fbfbf8;
   --focus: #2f6fb3;
   --shadow: 0 1px 2px rgb(28 34 32 / .06), 0 12px 32px -8px rgb(28 34 32 / .18);
 
@@ -23,7 +27,7 @@
   --ledge-edge: #d6dad3;
   --ledge-shadow: rgb(40 48 44 / .22);
   --book-shadow: rgb(28 34 32 / .35);
-  --scrim: rgb(232 234 230 / .82);
+  --scrim: rgb(243 243 240 / .88);
   --wall-ao: rgb(40 48 44 / .10);
   /* fine noise: cloth, paper and the ledge take it through a blend mode */
   --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .5 0 0 0 0 .5 0 0 0 0 .5 0 0 0 .9 -.12'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
@@ -32,7 +36,7 @@
   --page: #ffffff;
   --page-ink: #1b1b1b;
   --page-ink-2: #6b6b6b;
-  --surround: #eceeeb;
+  --surround: #ecece8;
 }
 
 :root[data-theme="paper"] {
@@ -50,29 +54,32 @@
   --shadow: 0 1px 2px rgb(0 0 0 / .25), 0 12px 32px -8px rgb(0 0 0 / .5);
   --ledge: #4c5054; --ledge-edge: #2e3134; --ledge-shadow: rgb(0 0 0 / .45); --book-shadow: rgb(0 0 0 / .55); --wall-ao: rgb(0 0 0 / .22);
   --scrim: rgb(59 62 65 / .84);
+  --cover-mix: 70%; --cover-ink: #f0eee9;
   --page: #4b4e52; --page-ink: #e9e9e6; --page-ink-2: #b0b2b1; --surround: #3b3e41;
 }
 
 :root[data-theme="night"] {
   color-scheme: dark;
-  --wall: #161a19; --bg: #161a19; --surface: #1f2423; --surface-2: #272d2b;
-  --ink: #e4e3dd; --ink-2: #aeb2ad; --ink-3: #7c827e; --rule: #313836;
-  --accent: #8fb3d4; --accent-ink: #0f1a24;
+  --wall: #1c1c1a; --bg: #1c1c1a; --surface: #252523; --surface-2: #2c2c29;
+  --ink: #ecebe6; --ink-2: #b5b4ad; --ink-3: #8a8a83; --rule: #2e2e2b;
+  --accent: #ecebe6; --accent-ink: #1c1c1a;
   --shadow: 0 1px 2px rgb(0 0 0 / .4), 0 14px 36px -8px rgb(0 0 0 / .7);
-  --ledge: #242a28; --ledge-edge: #0e1110; --ledge-shadow: rgb(0 0 0 / .6); --book-shadow: rgb(0 0 0 / .7); --wall-ao: rgb(0 0 0 / .35);
-  --scrim: rgb(22 26 25 / .86);
-  --page: #1b1f1e; --page-ink: #d8d5cd; --page-ink-2: #8d918c; --surround: #121514;
+  --ledge: #242422; --ledge-edge: #0f0f0e; --ledge-shadow: rgb(0 0 0 / .6); --book-shadow: rgb(0 0 0 / .7); --wall-ao: rgb(0 0 0 / .35);
+  --scrim: rgb(28 28 26 / .95);
+  --cover-mix: 78%; --cover-ink: #e9e4d6;
+  --page: #1f1f1d; --page-ink: #dedcd5; --page-ink-2: #8f8e88; --surround: #171716;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme]) {
     color-scheme: dark;
-    --wall: #161a19; --bg: #161a19; --surface: #1f2423; --surface-2: #272d2b;
-    --ink: #e4e3dd; --ink-2: #aeb2ad; --ink-3: #7c827e; --rule: #313836;
-    --accent: #8fb3d4; --accent-ink: #0f1a24;
+    --wall: #1c1c1a; --bg: #1c1c1a; --surface: #252523; --surface-2: #2c2c29;
+    --ink: #ecebe6; --ink-2: #b5b4ad; --ink-3: #8a8a83; --rule: #2e2e2b;
+    --accent: #ecebe6; --accent-ink: #1c1c1a;
     --shadow: 0 1px 2px rgb(0 0 0 / .4), 0 14px 36px -8px rgb(0 0 0 / .7);
-    --ledge: #242a28; --ledge-edge: #0e1110; --ledge-shadow: rgb(0 0 0 / .6); --book-shadow: rgb(0 0 0 / .7); --wall-ao: rgb(0 0 0 / .35);
-    --scrim: rgb(22 26 25 / .86);
-    --page: #1b1f1e; --page-ink: #d8d5cd; --page-ink-2: #8d918c; --surround: #121514;
+    --ledge: #242422; --ledge-edge: #0f0f0e; --ledge-shadow: rgb(0 0 0 / .6); --book-shadow: rgb(0 0 0 / .7); --wall-ao: rgb(0 0 0 / .35);
+    --scrim: rgb(28 28 26 / .95);
+    --cover-mix: 78%; --cover-ink: #e9e4d6;
+    --page: #1f1f1d; --page-ink: #dedcd5; --page-ink-2: #8f8e88; --surround: #171716;
   }
 }

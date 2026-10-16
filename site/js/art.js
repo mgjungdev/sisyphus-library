@@ -90,6 +90,39 @@ export function badgeCanvas(book, cloth, gilt, px = 128, onload = null) {
   img.src = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
   return cv;
 }
+// Two #rrggbb colours mixed: t of the way from a to b (a, when either is not one).
+export function hexMix(a, b, t) {
+  const p = h => (/^#([0-9a-f]{6})$/i.exec(h || '') ? [1, 3, 5].map(i => parseInt(h.slice(i, i + 2), 16)) : null);
+  const x = p(a), y = p(b);
+  if (!x || !y) return a;
+  return '#' + x.map((v, i) => Math.round(v + (y[i] - v) * t).toString(16).padStart(2, '0')).join('');
+}
+
+// A book's cover, drawn once into a canvas (px wide) for the map: its cloth mixed into the page (mix: how much of
+// the cloth), its symbol in ink, as on the shelves. The symbol arrives a moment later (an SVG image decodes
+// asynchronously) and is drawn in then.
+const covers = new Map();
+export function coverCanvas(book, cloth, page, mix, ink, px = 136) {
+  const key = `${book?.series || book?.slug || ''}|${book?.cover?.motif || ''}|${cloth}|${page}|${mix}|${ink}`;
+  let cv = covers.get(key);
+  if (cv) return cv;
+  cv = document.createElement('canvas');
+  cv.width = px; cv.height = Math.round(px / 0.68);
+  const x = cv.getContext('2d');
+  x.fillStyle = hexMix(page, cloth, mix); x.fillRect(0, 0, cv.width, cv.height);
+  const svg = symbolSVG(book).replace('<svg ', `<svg xmlns="http://www.w3.org/2000/svg" color="${ink}" `)
+    .replace(/stroke-width="2\.2"/g, 'stroke-width="4"');
+  const img = new Image();
+  img.onload = () => {
+    const vb = (/viewBox="([^"]+)"/.exec(svg)?.[1] || '0 0 120 100').split(/\s+/).map(Number);
+    const k = (px * 0.64) / Math.max(vb[2], vb[3]), w = vb[2] * k, h = vb[3] * k;
+    x.drawImage(img, (cv.width - w) / 2, (cv.height - h) / 2, w, h);
+  };
+  img.src = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
+  covers.set(key, cv);
+  return cv;
+}
+
 function shadeHex(hex, k) {
   const m = /^#?([0-9a-f]{6})$/i.exec(hex || '');
   if (!m) return hex || '#57605c';
@@ -97,10 +130,10 @@ function shadeHex(hex, k) {
   return `rgb(${f(v >> 16)},${f((v >> 8) & 255)},${f(v & 255)})`;
 }
 
+// A cover: the cloth colour softened, the symbol, and a volume number for one volume of a longer novel.
 export function coverHTML(book) {
-  const motif = symbolSVG(book);
-  const vol = book.vol ? `<span class="cv">Volume ${roman(book.vol)}</span>` : '';
-  return `<span class="cover-art"><span class="ct">${esc(book.title)}</span>${vol}${motif}<span class="ca">${esc(book.author)}</span></span>`;
+  const vol = book.vol ? `<span class="cv">${roman(book.vol)}</span>` : '';
+  return `<span class="cover-art">${symbolSVG(book)}${vol}</span>`;
 }
 
 export const roman = n => [[10, 'X'], [9, 'IX'], [5, 'V'], [4, 'IV'], [1, 'I']]

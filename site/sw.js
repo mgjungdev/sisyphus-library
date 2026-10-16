@@ -1,11 +1,11 @@
 // Offline support: app shell and book data network-first (revalidated past the HTTP cache), dictionary lookups cache-first.
-const VERSION = 'v34';
+const VERSION = 'v35';
 const SHELL = `shell-${VERSION}`, DATA = `data-${VERSION}`, LOOKUP = 'lookup-v1', FONTS = 'fonts-v1';
 const SHELL_FILES = [
   './', 'index.html', 'manifest.webmanifest', 'img/icon.svg',
   'css/tokens.css', 'css/base.css', 'css/library.css', 'css/reader.css', 'css/card.css', 'css/pages.css', 'css/graph.css',
-  'js/app.js', 'js/art.js', 'js/author.js', 'js/card.js', 'js/catalog.js', 'js/graph.js', 'js/graph2d.js', 'js/graph3d.js', 'js/library.js', 'js/lookup.js', 'js/pages.js', 'js/pair.js', 'js/reader.js', 'js/speech.js', 'js/store.js', 'js/transit.js',
-  'vendor/force-graph.min.js', 'vendor/3d-force-graph.min.js',
+  'js/app.js', 'js/art.js', 'js/author.js', 'js/card.js', 'js/catalog.js', 'js/graph.js', 'js/graph2d.js', 'js/library.js', 'js/lookup.js', 'js/pages.js', 'js/pair.js', 'js/reader.js', 'js/speech.js', 'js/store.js', 'js/transit.js',
+  'vendor/force-graph.min.js',
 ];
 
 self.addEventListener('install', e => {
