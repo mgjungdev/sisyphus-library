@@ -155,6 +155,35 @@ def main():
         catalog.write(catalog.build_contexts(build_book, drafts=True), drafts=True)
     except Exception as e:  # noqa: BLE001
         print(f"  graph.json skipped: {e!r}")
+    write_author_index(out)
+
+
+def lede(intro: list) -> str:
+    """The first sentence of an essay's opening, without its name and dates: 'English novelist, travel writer…'."""
+    text = re.sub(r"<[^>]+>", "", intro[0] if intro else "")
+    first = re.split(r"(?<=[.!?])\s+(?=[A-Z])", text.strip(), maxsplit=1)[0]
+    m = re.match(r".*?\)(?:,[^.]*?)?\s+(?:was|is)\s+(?:an?\s+|the\s+)?(.*)", first)
+    s = (m.group(1) if m else first).rstrip(".")
+    return s[:1].upper() + s[1:]
+
+
+def write_author_index(books: list):
+    """site/data/authors.json: every author with an essay (site/data/authors/), for the authors page: the name, the
+    dates, a line about them, and the slugs of their books on the shelves."""
+    folder = OUT / "authors"
+    if not folder.exists():
+        return
+    ready = [b for b in books if b["status"] == "ready"]
+    out = []
+    for p in sorted(folder.glob("*.json")):
+        d = json.loads(p.read_text(encoding="utf-8"))
+        named = {re.sub(r"^#/read/", "", b["read"]) for b in d.get("books", [])}
+        series = {b.get("series") for b in ready if b["slug"] in named} - {None}
+        slugs = [b["slug"] for b in ready if b["slug"] in named or b.get("series") in series or b["author"] == d["name"]]
+        out.append({"slug": d["slug"], "name": d["name"], "heading": d.get("heading"), "born": d.get("born"), "died": d.get("died"),
+                    "lede": lede(d.get("intro") or []), "books": slugs})
+    (OUT / "authors.json").write_text(json.dumps(out, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    print(f"  authors.json: {len(out)} authors, {sum(bool(a['books']) for a in out)} with books on the shelves")
 
 
 if __name__ == "__main__":

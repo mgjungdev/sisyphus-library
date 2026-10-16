@@ -126,17 +126,8 @@ export function renderLibrary(root, lib, { go }) {
     });
   }
 
-  // A book is a box only while it is pointed at, found or taken out; a moment after, it is flat again.
-  const settle = el => { clearTimeout(el._flat); el._flat = setTimeout(() => { if (!el.matches(':hover') && !el.classList.contains('hit') && !el.classList.contains('is-out')) el.classList.remove('live'); }, 500); };
-  // its cover is drawn the first time it becomes a box: hundreds of covers no one turns to would weigh on the page
-  const liven = el => {
-    if (el.classList.contains('live')) return;
-    const cv = el.querySelector('.face.cover');
-    if (cv && !cv.firstChild) cv.innerHTML = coverHTML(books.get(el.dataset.slug));
-    el.classList.add('live'); void el.offsetWidth;
-  };
-  root.addEventListener('pointerover', e => { const el = e.target.closest('.book[data-status="ready"]'); if (el) liven(el); });
-  root.addEventListener('pointerout', e => { const el = e.target.closest('.book'); if (el && !el.contains(e.relatedTarget)) settle(el); });
+  const { liven, settle, off: unwire } = wireBooks(root, books, go);
+  const page = new AbortController(), on = { signal: page.signal }; // this page's listeners on the view, taken off when it goes
 
   // Search: the books that match stay bright, the first comes forward and the page goes to it; Enter moves on.
   let query = '', hits = [], at = 0, typing = 0;
@@ -163,12 +154,12 @@ export function renderLibrary(root, lib, { go }) {
   root.addEventListener('input', e => {
     if (!e.target.matches('.shelf-search input')) return;
     query = e.target.value; at = 0; clearTimeout(typing); typing = setTimeout(() => search(true), 160);
-  });
+  }, on);
   root.addEventListener('keydown', e => {
     if (!e.target.matches('.shelf-search input')) return;
     if (e.key === 'Enter' && hits.length) { e.preventDefault(); at = (at + (e.shiftKey ? hits.length - 1 : 1)) % hits.length; showHit(); }
     if (e.key === 'Escape') { e.target.value = query = ''; search(); }
-  });
+  }, on);
 
   function applyTag() {
     root.querySelectorAll('.book').forEach(el => el.classList.toggle('dim', !!tag && !books.get(el.dataset.slug).tags.includes(tag)));
@@ -242,20 +233,51 @@ export function renderLibrary(root, lib, { go }) {
       applyTag();
       return;
     }
-    const el = e.target.closest('.book');
-    if (!el || el.dataset.status !== 'ready') return;
-    liven(el);
-    pullOut(el, books.get(el.dataset.slug), go);
-  });
+  }, on);
 
   return () => {
-    spy?.disconnect(); pins?.disconnect(); clearTimeout(typing);
+    spy?.disconnect(); pins?.disconnect(); clearTimeout(typing); unwire(); page.abort();
     bar.innerHTML = '';
     removeEventListener('scroll', onScroll);
     if (scrollT) { clearTimeout(scrollT); try { sessionStorage.setItem('sl.libScroll', String(scrollY)); } catch { /* ignore */ } }
     removeEventListener('resize', onResize);
     dropFlight();
   };
+}
+
+// Books standing on a shelf anywhere (the shelves, an author's page): pointed at, a book becomes a box and rises;
+// clicked, it is taken out. A book is a box only while pointed at, found or out; a moment after, it is flat again.
+export function wireBooks(root, books, go) {
+  const settle = el => {
+    clearTimeout(el._flat);
+    el._flat = setTimeout(() => { if (!el.matches(':hover') && !el.classList.contains('hit') && !el.classList.contains('is-out')) el.classList.remove('live'); }, 300);
+  };
+  // Flat to box in one frame (the box at rest looks the same as the flat book), then it rises with a transition. Its
+  // cover is drawn the first time: hundreds of covers no one turns to would weigh on the page.
+  const liven = el => {
+    clearTimeout(el._flat);
+    if (el.classList.contains('live')) return;
+    const cv = el.querySelector('.face.cover');
+    if (cv && !cv.firstChild) cv.innerHTML = coverHTML(books.get(el.dataset.slug));
+    el.classList.add('arming', 'live'); void el.offsetWidth; el.classList.remove('arming');
+  };
+  const off = new AbortController(), opt = { signal: off.signal };
+  root.addEventListener('pointerover', e => {
+    const el = e.target.closest('.book[data-status="ready"]');
+    if (!el || el.classList.contains('up')) return;
+    liven(el); el.classList.add('up');
+  }, opt);
+  root.addEventListener('pointerout', e => {
+    const el = e.target.closest('.book');
+    if (el && !el.contains(e.relatedTarget)) { el.classList.remove('up'); settle(el); }
+  }, opt);
+  root.addEventListener('click', e => {
+    const el = e.target.closest('.book');
+    if (!el || el.dataset.status !== 'ready') return;
+    liven(el);
+    pullOut(el, books.get(el.dataset.slug), go);
+  }, opt);
+  return { liven, settle, off: () => off.abort() };
 }
 
 // Put an open book away at once (the view that pulled it out is going).
@@ -280,7 +302,7 @@ export const yearText = y => (y < 0 ? `c. ${-y} BC` : y < 1000 ? `c. ${y}` : Str
 
 // A book on the shelf: a spine all books share the height of, as wide as the book is long. Its faces are the pulled-out
 // book's (--h tall, --t thick, --w deep); the top and cover show only while it is a box (pointed at, found, taken out).
-function bookHTML(b, groupLabel) {
+export function bookHTML(b, groupLabel = '') {
   const ready = b.status === 'ready';
   const label = `${b.title}${b.vol ? `, volume ${b.vol} of ${b.vols},` : ''} by ${b.author}${b.essential ? ', essential reading' : ''}${ready ? '' : `, ${groupLabel}, coming soon`}`;
   const h = isNarrow() ? 196 : 224, t = Math.round(Math.max(20, Math.min(46, (b.spine?.thickness || 22) * 1.05 + 6)));

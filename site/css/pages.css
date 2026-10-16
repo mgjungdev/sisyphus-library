@@ -29,8 +29,63 @@
 .sync-form input:focus { outline: 2px solid var(--focus); outline-offset: 0; }
 .sync-form .btn { justify-self: start; }
 
-/* ================= Author essay: the reader's type and measure on one scrolled page ================= */
-body[data-view="author"] { background: var(--surround); }
+/* ================= Authors: cards, each with a small shelf of the author's books ================= */
+body[data-view="authors"], body[data-view="author"] { background: var(--wall); }
+.authors-page { padding-top: 8px; }
+.authors-top { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 18px; padding: 26px 2px 6px; }
+.authors-top h1 { margin: 0; font: 400 clamp(44px, 6vw, 64px)/1 var(--font-display); letter-spacing: -.01em; }
+.authors-count { margin: 0; font: 500 11px/1.4 var(--font-ui); letter-spacing: .16em; text-transform: uppercase; color: var(--ink-3); }
+.authors-bar { justify-content: space-between; }
+.authors-bar .arrange { display: inline-grid; grid-auto-flow: column; padding: 2px; border: 1px solid var(--rule); border-radius: 999px; }
+.authors-bar .arrange .chip { border: 0; min-height: 30px; padding: 0 14px; font: 500 13px/1 var(--font-ui); }
+.authors-bar .arrange .chip[aria-pressed="true"] { background: var(--ink); color: var(--wall); }
+.authors-none { color: var(--ink-3); padding: 40px 2px; }
+.acards { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 248px), 1fr)); gap: 16px; padding: 18px 0 40px; }
+.acard {
+  display: flex; flex-direction: column; gap: 6px; min-width: 0; padding: 18px 18px 16px; text-decoration: none; color: var(--ink);
+  background: var(--surface); border: 1px solid var(--rule); border-radius: 4px;
+  transition: transform .25s cubic-bezier(.2,.8,.2,1), box-shadow .25s ease, border-color .25s ease;
+}
+a.acard:hover { transform: translateY(-3px); border-color: var(--ink-3); box-shadow: 0 12px 26px -18px rgb(0 0 0 / .35); }
+a.acard:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+/* the author's books as a small shelf: cream spines, black for essential reading, each with its genre band */
+.ac-shelf { display: flex; align-items: flex-end; gap: 1.5px; height: 58px; margin-bottom: 10px; padding: 0 2px; border-bottom: 3px solid var(--ledge); overflow: hidden; }
+.ac-shelf .ms { flex: none; width: var(--mw); height: 52px; background: linear-gradient(var(--spine-cream) 0 84%, var(--g) 84% 92%, var(--spine-cream) 92%);
+  box-shadow: inset 1px 0 0 rgb(0 0 0 / .07), inset -1px 0 0 rgb(0 0 0 / .1); }
+.ac-shelf .ms.must { background: linear-gradient(var(--spine-black) 0 84%, var(--g) 84% 92%, var(--spine-black) 92%); }
+.ac-name { font: 500 25px/1.08 var(--font-display); text-wrap: balance; }
+.ac-life { font: 500 10.5px/1.4 var(--font-ui); letter-spacing: .16em; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+.ac-lede { margin-top: 4px; font-size: 13.5px; line-height: 1.45; color: var(--ink-2); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+@media (max-width: 560px) {
+  .acards { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .acard { padding: 14px 12px 12px; }
+  .ac-shelf { height: 44px; margin-bottom: 6px; }
+  .ac-shelf .ms { height: 40px; }
+  .ac-name { font-size: 20px; }
+  .ac-lede { font-size: 12.5px; }
+}
+.ac-meta { margin-top: auto; padding-top: 10px; font: 600 9.5px/1.4 var(--font-ui); letter-spacing: .16em; text-transform: uppercase; color: var(--ink-3); }
+
+/* an author's page: the card held at the side, the author's shelf, then the essay */
+.apage { display: grid; grid-template-columns: minmax(0, 300px) minmax(0, 1fr); gap: 40px; max-width: 1180px; margin: 0 auto; padding: 32px clamp(16px, 4vw, 40px) 96px; align-items: start; }
+.apage-side { position: sticky; top: 80px; display: grid; gap: 14px; }
+.acard.big { padding: 22px 22px 20px; }
+.acard.big .ac-shelf { height: 92px; }
+.acard.big .ac-shelf .ms { height: 84px; width: calc(var(--mw) * 1.5); }
+.acard.big .ac-name { font-size: 34px; }
+.acard.big .ac-lede { -webkit-line-clamp: unset; font-size: 14.5px; }
+.apage-links { display: flex; gap: 18px; padding: 0 4px; font: 500 11px/1.4 var(--font-ui); letter-spacing: .14em; text-transform: uppercase; }
+.apage-links a { color: var(--ink-2); text-decoration: none; }
+.apage-links a:hover { color: var(--ink); }
+.apage-main { min-width: 0; display: grid; gap: 28px; }
+.apage-h { margin: 0 0 4px; font: 500 10.5px/1.4 var(--font-ui); letter-spacing: .18em; text-transform: uppercase; color: var(--ink-3); }
+.apage-lib { padding: 0; max-width: none; }
+.apage-lib .shelf-rows { padding: 10px 6px 18px; }
+.apage .adoc { margin: 0; max-width: calc(var(--fs) * 30); }
+@media (max-width: 860px) {
+  .apage { grid-template-columns: 1fr; gap: 24px; padding-top: 20px; }
+  .apage-side { position: static; }
+}
 .adoc-wrap { padding: 28px 16px 96px; }
 .adoc {
   --fs: 20px; --lh: 1.6; --align: justify; --m: 40px;

@@ -348,7 +348,7 @@ export function make2D(env) {
 
   // The points of a relation line as drawn now: straight in the web, bowed toward the middle on the circle, an arc
   // above the line on the timeline (both ends sliding onto it). Kept on the link for hover and the popover.
-  function pathOf(l) {
+  function pathOf(l, straight = false) {
     const a = l.source, b = l.target, T = env.timeline(), R = env.ring();
     const tm = T?.mix || 0, rm = R?.mix || 0, pts = [];
     if (tm > 0.001) {
@@ -359,7 +359,7 @@ export function make2D(env) {
         pts.push({ x: v * v * v * a.x + 3 * v * v * u * a.x + 3 * v * u * u * b.x + u * u * u * b.x,
           y: v * v * v * ay + 3 * v * v * u * (ay - h) + 3 * v * u * u * (by - h) + u * u * u * by });
       }
-    } else if (rm > 0.001) {
+    } else if (rm > 0.001 && !straight) { // a lit line on the circle runs straight, so its arrow points true
       const k = 1 - 0.85 * rm, cx = ((a.x + b.x) / 2) * k, cy = ((a.y + b.y) / 2) * k;
       for (let i = 0; i <= 24; i++) {
         const u = i / 24, v = 1 - u;
@@ -404,7 +404,7 @@ export function make2D(env) {
       if (!l.on || !l.source.vis || !l.target.vis || !Number.isFinite(l.source.x) || !Number.isFinite(l.target.x)) continue;
       const a = linkAlpha(l);
       if (a < 0.01) continue;
-      const pts = pathOf(l), lit = focusing() && litLinks.has(l);
+      const lit = focusing() && litLinks.has(l), pts = pathOf(l, lit);
       if (lit || env.filters.rels.size || env.cascade()) { one.push([l, pts, lit, a]); continue; }
       const w = linkW(l) / scale, key = w.toFixed(5);
       let g = groups.get(key);

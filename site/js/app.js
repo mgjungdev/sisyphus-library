@@ -1,7 +1,7 @@
 import { renderLibrary } from './library.js';
 import { renderReader, relationMarks, relationCard, appendixOf, glossMarks, glossCard } from './reader.js';
 import { renderSettings } from './pages.js';
-import { renderAuthor } from './author.js';
+import { renderAuthor, renderAuthors } from './author.js';
 import { loadGraph } from './catalog.js';
 import { openNote } from './card.js';
 import { renderGraph, ensureEngine } from './graph.js';
@@ -100,13 +100,16 @@ function arriveShelves() {
 
 // The top bar: the switch's thumb sits on the view on screen; the settings icon lights on its page.
 const viewSwitch = document.querySelector('.view-switch');
+const NAV = { library: 'library', graph: 'graph', authors: 'authors', author: 'authors' };
 function markNav(name) {
-  viewSwitch.dataset.on = PAIR.has(name) ? name : '';
+  viewSwitch.dataset.on = NAV[name] || '';
   document.querySelectorAll('.topbar-actions [data-nav]').forEach(a =>
-    a.dataset.nav === name ? a.setAttribute('aria-current', 'page') : a.removeAttribute('aria-current'));
+    a.dataset.nav === (NAV[name] || name) ? a.setAttribute('aria-current', 'page') : a.removeAttribute('aria-current'));
 }
 
-const ROUTES = new Set(['read', 'pair', 'graph', 'author', 'settings']);
+const ROUTES = new Set(['read', 'pair', 'graph', 'author', 'authors', 'settings']);
+let authorIndex = null;
+const loadAuthors = async () => (authorIndex ||= await getJSON('data/authors.json').catch(() => []));
 
 async function route() {
   const parts = (location.hash || '#/').replace(/^#\/?/, '').split('/').filter(Boolean);
@@ -156,10 +159,14 @@ async function route() {
       document.title = `${from[0].title} · ${to[0].title} · Sisyphus Library`;
       cleanup = renderPair(view, G, r, { from, to }, parts[2] ? +parts[2] : 1);
     } else if (name === 'author') {
-      const doc = await getJSON(`data/authors/${encodeURIComponent(parts[1])}.json`);
+      const [doc, index, lib] = await Promise.all([getJSON(`data/authors/${encodeURIComponent(parts[1])}.json`), loadAuthors(), loadLibrary()]);
       titleEl.textContent = doc.name;
       document.title = `${doc.name} · Sisyphus Library`;
-      cleanup = renderAuthor(view, doc);
+      cleanup = renderAuthor(view, doc, { entry: index.find(a => a.slug === doc.slug), lib, go });
+    } else if (name === 'authors') {
+      document.title = 'Authors · Sisyphus Library';
+      const [index, lib] = await Promise.all([loadAuthors(), loadLibrary()]);
+      cleanup = renderAuthors(view, index, lib);
     } else if (name === 'graph') {
       document.title = 'Relations · Sisyphus Library';
       const [G, lib] = await Promise.all([loadGraph(), loadLibrary(), ensureEngine()]);
