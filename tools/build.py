@@ -113,10 +113,12 @@ def main():
     (OUT / "library.json").write_text(json.dumps({"genres": genres, "books": out}, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     print(f"  library.json: {len(out)} books, {sum(b['status'] == 'ready' for b in out)} ready")
 
-    # The relations catalog (admitted records only). It must never stop the shelves from deploying.
+    # The relations catalog: graph.json (admitted records only) for everyone, and graph.drafts.json
+    # (proposed records too) for ?drafts=1. It must never stop the shelves from deploying.
     try:
         import catalog
         catalog.write(catalog.build_contexts(build_book), drafts=False)
+        catalog.write(catalog.build_contexts(build_book, drafts=True), drafts=True)
     except Exception as e:  # noqa: BLE001
         print(f"  graph.json skipped: {e!r}")
 
