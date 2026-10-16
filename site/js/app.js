@@ -19,7 +19,11 @@ async function getJSON(url) {
   if (!r.ok) throw new Error(`${url}: ${r.status}`);
   return r.json();
 }
-const loadLibrary = async () => (library ||= await getJSON('data/library.json'));
+// Each book carries its work's cover symbol (content/symbols/<work>.svg), when one is drawn.
+const loadLibrary = async () => (library ||= await getJSON('data/library.json').then(lib => {
+  lib.books.forEach(b => { b.symbol = lib.symbols?.[b.series || b.slug] || null; });
+  return lib;
+}));
 async function loadBook(slug) {
   if (!books.has(slug)) books.set(slug, getJSON(`data/books/${slug}.json`));
   return books.get(slug);

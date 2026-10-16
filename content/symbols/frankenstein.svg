@@ -1,0 +1,10 @@
+<!-- Frankenstein: the oak Victor watches lightning blast to a stump as a boy, the "stream of fire" that turns him to electricity and to making life. -->
+<svg viewBox="0 0 120 100">
+  <path d="M86 4L70 24h11L64 44"/>
+  <path d="M50 92c3-14 4-28 2-42M70 92c-3-14-4-27-1-40"/>
+  <path d="M52 50l4-9 4 7 5-10 4 14"/>
+  <path d="M52 62L38 50l-7 2M51 72l-12-4M69 60l13-11 3-8M69 72l10-3"/>
+  <path d="M30 92h60M50 92l-7 4M70 92l7 4"/>
+  <path d="M44 40l-5-5M74 40l6-3M60 34v-5" opacity=".6"/>
+  <circle cx="64" cy="44" r="1.8" fill="currentColor"/>
+</svg>

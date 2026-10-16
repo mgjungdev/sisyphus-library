@@ -1,10 +1,11 @@
 // The flat map (graph.js chooses it when there is no WebGL or the reader picks 2D): force-graph (site/vendor) draws
-// each book on a canvas as a small cloth spine in its shelf colours. Relation lines: style = contact, weight = case
+// each book on a canvas as a round badge: its cover symbol in gilt on its cloth (art.js badgeCanvas). Relation lines: style = contact, weight = case
 // of the lead reading, colour = kind, particles and an arrowhead from the older work to the newer. An author is a small gilt medal with
 // its name, tied to its books by hairlines that pull them together; genre and shelf heading only pull books together.
 // Genre names lie under the books like regions on a map.
 import { isDrafts } from './catalog.js';
 import { GENRES, CASE_W, PER_YEAR, shortTitle, authorForces, drawMedal } from './graph.js';
+import { badgeCanvas } from './art.js';
 
 const DASH = { documented: null, probable: [6, 4], none: [1.4, 3.2] };
 
@@ -82,6 +83,7 @@ export function make2D(env) {
     }
     return n[key];
   }
+  const badgeOf = n => (n.badge ||= badgeCanvas(n.lb, n.b.spine?.color || '#57605c', n.b.accent || '#c9a24a', 128));
   let inFlight = false; // books are flying in from the shelves: authors wait until they have landed
   function drawAuthor(n, ctx, scale) {
     if (inFlight) { n.a = 0; return; }
@@ -124,35 +126,22 @@ export function make2D(env) {
     const dim = !focus && env.filters.rels.size && !n.relOn;
     const c = C(), marked = env.marked(n);
     n.a = ease(n.a, focus ? (on ? 1 : 0.1) : env.restAlpha(n));
-    n.s = ease(n.s, marked ? 1.18 : 1);
-    const h = n.h * n.s, w = n.w * n.s, x = n.x - w / 2, y = n.y - h / 2, rad = Math.min(w * 0.18, 2);
+    n.s = ease(n.s, (marked ? 1.18 : 1) * (env.cascade() ? 1.8 : 1)); // a cascade has room: its badges are larger
+    const h = n.h * n.s, w = h;
     ctx.save();
     ctx.globalAlpha = n.a;
     if (n.deg || n === env.hoverNode()) {
       ctx.shadowColor = c.dark ? 'rgba(0,0,0,.55)' : 'rgba(28,34,32,.32)';
       ctx.shadowBlur = 6 * n.s; ctx.shadowOffsetY = 2;
     }
-    ctx.beginPath(); ctx.roundRect(x, y, w, h, rad);
-    ctx.fillStyle = n.b.spine?.color || '#57605c';
-    ctx.fill();
+    // Its cover symbol on a badge of its cloth; a speck of the cloth when too small on screen to read.
+    if (h * scale < 7) {
+      ctx.beginPath(); ctx.arc(n.x, n.y, h / 2, 0, Math.PI * 2);
+      ctx.fillStyle = n.b.spine?.color || '#57605c'; ctx.fill();
+    } else ctx.drawImage(badgeOf(n), n.x - h / 2, n.y - h / 2, h, h);
     ctx.shadowColor = 'transparent';
-    const speck = h * scale < 9; // so small on screen that its cloth and gilt would not show
-    if (!speck) {
-      // Rounded cloth: light across the middle, darker at the joints.
-      const g = ctx.createLinearGradient(x, 0, x + w, 0);
-      g.addColorStop(0, 'rgba(0,0,0,.28)'); g.addColorStop(0.32, 'rgba(255,255,255,.16)');
-      g.addColorStop(0.6, 'rgba(255,255,255,.02)'); g.addColorStop(1, 'rgba(0,0,0,.32)');
-      ctx.fillStyle = g; ctx.fill();
-      if (c.dark) { ctx.lineWidth = 0.6 / scale + 0.3; ctx.strokeStyle = 'rgba(255,255,255,.24)'; ctx.stroke(); }
-      // Gilt bands, as on the shelf.
-      ctx.fillStyle = n.b.accent || '#c9a24a';
-      const band = Math.max(h * 0.035, 0.5);
-      ctx.fillRect(x + w * 0.08, y + h * 0.1, w * 0.84, band);
-      ctx.fillRect(x + w * 0.08, y + h * 0.1 + band * 2, w * 0.84, band * 0.6);
-      ctx.fillRect(x + w * 0.08, y + h * 0.8, w * 0.84, band);
-      if (n.b.status === 'proposed' && isDrafts()) { // a draft record: a small gold seal at the head
-        ctx.beginPath(); ctx.arc(x + w + 2.2, y + 1.5, 1.6, 0, Math.PI * 2); ctx.fillStyle = '#d4a72c'; ctx.fill();
-      }
+    if (n.b.status === 'proposed' && isDrafts()) { // a draft record: a small gold seal at the rim
+      ctx.beginPath(); ctx.arc(n.x + h * 0.38, n.y - h * 0.38, 1.6, 0, Math.PI * 2); ctx.fillStyle = '#d4a72c'; ctx.fill();
     }
     ctx.restore();
 
@@ -166,7 +155,7 @@ export function make2D(env) {
     ctx.textAlign = 'center'; ctx.textBaseline = 'top';
     ctx.lineJoin = 'round'; ctx.lineWidth = 3.5 / scale; ctx.strokeStyle = c.bg;
     // Below the spine if that space is free, else above it; an unrelated book's title gives way.
-    const label = shortTitle(n.b.title), tw = measure(ctx, label), th = px / scale;
+    const more = env.more(n), label = shortTitle(n.b.title) + (more ? `  +${more}` : ''), tw = measure(ctx, label), th = px / scale;
     const below = n.y + h / 2 + 4 / scale + 2, above = n.y - h / 2 - 4 / scale - 2 - th;
     const box = (lx, y0) => ({ lx, x0: lx - tw / 2, x1: lx + tw / 2, y0, y1: y0 + th });
     const clash = b => labels.reduce((a, o) => a + (o.n === n ? 0
@@ -188,10 +177,8 @@ export function make2D(env) {
     ctx.restore();
   }
   function hitBook(n, color, ctx) {
-    const pad = 3;
     ctx.fillStyle = color;
-    if (n.isA) { ctx.beginPath(); ctx.arc(n.x, n.y, n.h / 2 + pad, 0, Math.PI * 2); ctx.fill(); return; }
-    ctx.fillRect(n.x - n.w / 2 - pad, n.y - n.h / 2 - pad, n.w + pad * 2, n.h + pad * 2);
+    ctx.beginPath(); ctx.arc(n.x, n.y, n.h / 2 + 3, 0, Math.PI * 2); ctx.fill();
   }
 
   // Genre names lie under the books like regions on a map, fading as the reader zooms in.
@@ -325,6 +312,31 @@ export function make2D(env) {
     ctx.restore();
   }
 
+  // In a cascade each line says what it is, along its arrow ('answered by'), in its colour, at its middle.
+  function drawVerbs(ctx, scale) {
+    if (!env.cascade()) return;
+    const c = C();
+    M = ctx.getTransform();
+    ctx.save();
+    ctx.font = `italic ${11 / scale}px ${c.font}`;
+    ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+    ctx.lineJoin = 'round'; ctx.lineWidth = 4 / scale; ctx.strokeStyle = c.bg;
+    relLinks.forEach(l => {
+      if (!l.on || !l.source.vis || !l.target.vis || !Number.isFinite(l.source.x)) return;
+      const u = env.verbAt(l), t = env.verbOf(l);
+      const m = { x: l.source.x + (l.target.x - l.source.x) * u, y: l.source.y + (l.target.y - l.source.y) * u };
+      // Words that would fall on a title, or on other words, are left out (the tooltip names the line).
+      const w = measure(ctx, t) / 2, hh = 7 / scale, b = { x0: m.x - w, x1: m.x + w, y0: m.y - hh, y1: m.y + hh };
+      if (labels.some(o => Math.min(b.x1, o.x1) > Math.max(b.x0, o.x0) && Math.min(b.y1, o.y1) > Math.max(b.y0, o.y0))) return;
+      labels.push(b);
+      ctx.globalAlpha = linkAlpha(l);
+      put(ctx, true, t, m.x, m.y);
+      ctx.fillStyle = C().rel(l.rel);
+      put(ctx, false, t, m.x, m.y);
+    });
+    ctx.restore();
+  }
+
   const linkAlpha = l => (focusing() ? (litLinks.has(l) ? 1 : 0.06) : 1);
   const withAlpha = (hex, a) => {
     if (!hex.startsWith('#')) return hex;
@@ -342,7 +354,7 @@ export function make2D(env) {
     .nodePointerAreaPaint(hitBook)
     .nodeVisibility(n => n.vis)
     .linkVisibility(l => l.source.vis && l.target.vis && (l.kind !== 'rel' ? !inFlight : l.on))
-    .linkCurvature(l => (l.kind === 'rel' ? 0.18 : 0))
+    .linkCurvature(l => (l.kind === 'rel' && !env.cascade() ? 0.18 : 0)) // a cascade's lines run straight
     .linkColor(l => (l.kind === 'author'
       ? withAlpha(C().ink3, (focusing() ? (litLinks.has(l) ? 0.75 : 0.03) : (C().dark ? 0.2 : 0.16)))
       : withAlpha(C().rel(l.rel), 0.88 * linkAlpha(l))))
@@ -350,10 +362,10 @@ export function make2D(env) {
     .linkLineDash(l => (l.kind === 'rel' ? DASH[l.contact] : null))
     .linkHoverPrecision(6)
     // An arrowhead by the newer book, pointing the way the particles go: just short of its spine.
-    .linkDirectionalArrowLength(l => (l.kind === 'rel' ? ((CASE_W[l.case] || 1.8) + 1.6) * 1.7 : 0))
+    .linkDirectionalArrowLength(l => (l.kind === 'rel' ? ((CASE_W[l.case] || 1.8) + 1.6) * 2.7 : 0))
     .linkDirectionalArrowRelPos(l => {
       const d = Math.hypot(l.target.x - l.source.x, l.target.y - l.source.y) || 1;
-      return Math.max(0.55, Math.min(0.97, 1 - (l.target.h * 0.5 + 2) / d));
+      return Math.max(0.55, Math.min(0.99, 1 - (l.target.h * l.target.s * 0.5 + 1) / d));
     })
     .linkDirectionalArrowColor(l => withAlpha(C().rel(l.rel), 0.95 * linkAlpha(l)))
     .linkDirectionalParticles(l => (l.kind === 'rel' ? (l.case === 'strong' ? 4 : 3) : 0))
@@ -376,7 +388,7 @@ export function make2D(env) {
     // The engine finds what is under the pointer on a picture it redraws only every 800 ms, so a tap soon after a
     // pinch or pan can miss the book under the finger: graph.js looks for it before treating it as the background.
     .onBackgroundClick(up => on.clickBackground(up))
-    .onRenderFramePost(() => on.frame())
+    .onRenderFramePost((ctx, scale) => { drawVerbs(ctx, scale); on.frame(); })
     .onNodeDragEnd(n => { n.fx = undefined; n.fy = undefined; });
   authorForces(fg);
   fg.d3Force('center', null);
@@ -469,9 +481,9 @@ export function make2D(env) {
       let best = null, bd = Infinity;
       for (const n of nodes) {
         if (!n.vis || !Number.isFinite(n.x)) continue;
-        const dx = Math.abs(p.x - n.x), dy = Math.abs(p.y - n.y);
-        if (dx > n.w / 2 + pad || dy > n.h / 2 + pad) continue;
-        if (dx + dy < bd) { best = n; bd = dx + dy; }
+        const d = Math.hypot(p.x - n.x, p.y - n.y);
+        if (d > n.h / 2 + pad) continue;
+        if (d < bd) { best = n; bd = d; }
       }
       return best;
     },

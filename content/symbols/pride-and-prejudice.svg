@@ -1,0 +1,7 @@
+<!-- Pride and Prejudice: Darcy's letter, read and reread, that turns Elizabeth's judgement of him and of herself. -->
+<svg viewBox="0 0 120 100">
+  <path d="M24 24h60l12 12v54H24z"/><path d="M84 24v12h12"/>
+  <path d="M34 42h40M34 52h50M34 62h44M34 72h24" opacity=".6"/>
+  <circle cx="80" cy="76" r="9"/><circle cx="80" cy="76" r="4.5" opacity=".7"/>
+  <path d="M74 84l-3 7M86 84l3 6"/>
+</svg>

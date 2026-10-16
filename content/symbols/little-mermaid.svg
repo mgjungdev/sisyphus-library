@@ -1,0 +1,9 @@
+<!-- The Little Mermaid: her tail going under the waves, and the foam she becomes in the end. -->
+<svg viewBox="0 0 120 100">
+  <path d="M46 78c2-16 10-28 20-38 6-6 9-12 9-18M62 78c1-12 6-21 14-29 6-6 9-13 8-21"/>
+  <path d="M78 24c-9-6-20-5-27 1 8 0 15 2 20 6M82 24c5-9 4-19-1-25-2 8-3 14-6 19"/>
+  <path d="M52 64c3 2 6 2 9 0M57 54c3 2 6 2 9 0M64 44c3 2 6 2 9 0" opacity=".6"/>
+  <path d="M8 80c8-6 16-6 24 0s16 6 24 0 16-6 24 0 16 6 24 0"/>
+  <path d="M20 90c8-5 16-5 24 0s16 5 24 0 16-5 24 0" opacity=".5"/>
+  <circle cx="28" cy="62" r="3"/><circle cx="22" cy="50" r="2.2"/><circle cx="31" cy="42" r="1.6" fill="currentColor"/>
+</svg>

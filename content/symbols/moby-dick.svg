@@ -1,0 +1,10 @@
+<!-- Moby-Dick: the white whale's flukes going down, and Ahab's harpoon thrown after it. -->
+<svg viewBox="0 0 120 100">
+  <path d="M55 58c0 8-2 14-5 20M65 58c0 8 2 14 5 20"/>
+  <path d="M60 58c-6-6-16-8-28-6-7 1-14-3-18-10 9 1 18 1 25-2 9-3 17 0 21 8"/>
+  <path d="M60 58c6-6 16-8 28-6 7 1 14-3 18-10-9 1-18 1-25-2-9-3-17 0-21 8"/>
+  <path d="M8 82c8-5 16-5 24 0s16 5 24 0 16-5 24 0 16 5 24 0"/>
+  <path d="M14 6l30 24M44 30l-9 1M44 30l-1-9"/>
+  <path d="M14 6c-4 7 1 13-5 19" opacity=".6"/>
+  <circle cx="36" cy="90" r="1.6" fill="currentColor"/><circle cx="86" cy="91" r="1.6" fill="currentColor"/>
+</svg>

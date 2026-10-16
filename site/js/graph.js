@@ -148,9 +148,11 @@ export function renderGraph(root, G, opts) {
 function drawGraph(root, G, { go, lib, focus = null, arrive = null, mode, switchTo }) {
   const books = G.books;
   const byId = new Map();
+  const libBy = new Map((lib?.books || []).map(b => [b.slug, b]));
   // Related books first: they are drawn, and claim their title space, before the rest.
   const nodes = [...books].sort((a, b) => (b.degree || 0) - (a.degree || 0)).map(b => {
-    const n = { id: b.id, b, deg: b.degree || 0, year: +yearOf(b) || 0, genre: b.genre, heads: [], a: 1, s: 1 };
+    // lb: the library's book (its first volume), for the cover symbol the node is drawn with.
+    const n = { id: b.id, b, lb: libBy.get(b.slugs?.[0]) || null, deg: b.degree || 0, year: +yearOf(b) || 0, genre: b.genre, heads: [], a: 1, s: 1 };
     byId.set(n.id, n);
     return n;
   });
@@ -260,6 +262,11 @@ function drawGraph(root, G, { go, lib, focus = null, arrive = null, mode, switch
       <div class="graph-tip" role="tooltip" hidden></div>
       <div class="graph-pop" role="dialog" aria-label="Relation" hidden></div>
       <section class="graph-author" role="dialog" aria-labelledby="ga-name" hidden></section>
+      <div class="graph-cascade" role="group" aria-label="Relations of one book" hidden>
+        <button type="button" class="gk-back"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M12 4l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Whole map</button>
+        <span class="gk-title"></span>
+        <button type="button" class="gk-read">Read</button>
+      </div>
       <div class="graph-standin" aria-hidden="true"></div>
     </section>`;
   const view = root.querySelector('.graph-view');
@@ -269,20 +276,20 @@ function drawGraph(root, G, { go, lib, focus = null, arrive = null, mode, switch
   const pop = root.querySelector('.graph-pop');
   const reduced = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  /* ---------- node size: a book whose height grows with its relations ---------- */
+  /* ---------- node size: a book's badge grows with its relations ---------- */
   nodes.forEach(n => {
     if (n.isA) { // a medal, a little larger for an author of many books; room around it for the name
       n.h = n.w = 8.5 + 1.6 * Math.sqrt(n.books.length);
       n.r = n.h * 0.5 + 9;
       return;
     }
-    n.h = (n.deg ? 21 + 9 * Math.sqrt(n.deg) : 11.5) * (n.b.spine?.height || 0.9);
-    n.w = n.h * 0.31;
-    n.r = n.h * 0.56 + (n.deg ? 34 : 2); // related books keep room for their titles
+    n.h = n.w = n.deg ? 11 + 3.6 * Math.sqrt(n.deg) : 8; // the badge's diameter
+    n.r = n.h * 0.5 + (n.deg ? 32 : 2); // related books keep room for their titles
   });
 
   /* ---------- hover state ---------- */
   let hoverNode = null, hoverLink = null, popLink = null, pin = null; // pin: the book found or named in the URL
+  let cascade = null, startCascade = null; // a book's cascade (below), and the one its address asks for
   const lit = new Set();
   const litLinks = new Set();
   function setFocus(node, link) {
@@ -309,6 +316,16 @@ function drawGraph(root, G, { go, lib, focus = null, arrive = null, mode, switch
     stage, view, root, nodes, links, relLinks, nbrs, lit, litLinks, filters, restAlpha, freeRect, reduced,
     C: {},
     layout: () => layout,
+    // The camera faces the map straight on: on the timeline, and in a book's cascade.
+    front: () => layout === 'timeline' || !!cascade,
+    cascade: () => !!cascade,
+    // A relation line's words along its arrow, older to newer: 'answered by'.
+    verbOf: l => relKind(l.rel).by,
+    // Where on a cascade's line its words go: most of the way down, toward the book below, so the lines fanning out of
+    // one book do not stack their words in a band (0 = the line's source, 1 = its target).
+    verbAt: l => (cascade?.parent.get(l.target) === l.source ? 0.66 : 0.34),
+    // How many of a cascade book's relations are not shown yet (a click adds them).
+    more: n => cascade?.more.get(n) || 0,
     // The timeline's axis (y down) and how far the map has gone over to it (0 the web, 1 the timeline).
     timeline: () => (tlMix > 0 && tl ? { axis: tl.axis, mix: tlMix } : null),
     marked: n => n === hoverNode || n === pin,
@@ -325,22 +342,31 @@ function drawGraph(root, G, { go, lib, focus = null, arrive = null, mode, switch
       },
       hoverLink(l) { if (!hoverNode) { setFocus(null, l); showTip(null, l === popLink ? null : l); } },
       clickNode(n, ev) {
+        // Under a mouse the click opens what the tooltip names: a line, though the engine finds a book's edge there.
+        if (ev?.pointerType === 'mouse' && hoverLink?.kind === 'rel' && !hoverNode && !popLink) { openPop(hoverLink); return; }
         if (n.isA) { closePop(); openAuthor(n); return; }
         // A book with no relations that lies on a relation line must not hide the line from the pointer.
         const l = !n.deg && ev && engine.lineAt(ev);
         if (l) { openPop(l); return; }
-        closePop(); openNode(n);
+        closePop(); pickBook(n);
       },
-      clickLink(l) { l?.kind === 'rel' ? openPop(l) : closePop(); },
+      // The click opens the line the tooltip names: lines into a much related book run close together, and the map may
+      // have drifted a pixel between the hover and the click.
+      clickLink(l) {
+        if (hoverLink?.kind === 'rel' && !hoverNode && !popLink) l = hoverLink;
+        l?.kind === 'rel' ? openPop(l) : closePop();
+      },
       // Nothing the engine knows of under the pointer: look for a book there (the engine may not have caught up with
       // a finger), then for a relation line, which a book with no relations never hides.
       clickBackground(up) {
         const n = up && engine.bookAt(up), l = up && engine.lineAt(up);
         // Under a mouse the click opens what the tooltip names: the line, though a medal's edge is near.
-        if (l && up.pointerType === 'mouse' && hoverLink === l && !hoverNode) { openPop(l); return; }
-        if (n && (n.deg || n.isA || !l)) { closePop(); n.isA ? openAuthor(n) : openNode(n); return; }
+        if (l && up.pointerType === 'mouse' && hoverLink?.kind === 'rel' && !hoverNode && !popLink) { openPop(hoverLink); return; }
+        if (n && (n.deg || n.isA || !l)) { closePop(); n.isA ? openAuthor(n) : pickBook(n); return; }
         if (l) { openPop(l); return; }
-        closePop(); closeAuthor(); unpin(); setFocus(null, null); tip.hidden = true;
+        if (popLink) { closePop(); return; }
+        closeAuthor(); unpin(); setFocus(null, null); tip.hidden = true;
+        if (cascade) closeCascade();
       },
       // The engine has warmed up the web: on a map opened on the timeline, keep the web to go back to and put the
       // books on the timeline before the first frame is drawn.
@@ -351,7 +377,7 @@ function drawGraph(root, G, { go, lib, focus = null, arrive = null, mode, switch
         if (!nodes.every(n => n.web)) nodes.forEach(n => { delete n.web; });
         nodes.forEach(n => pinTo(n, timeline().pos.get(n)));
       },
-      firstFrame: () => enter(),
+      firstFrame() { enter(); if (startCascade && root.isConnected) openCascade(startCascade, 0); },
       frame: () => placePop(),
       // The books drift until the simulation rests: then settle the view once more on what it was showing.
       engineStop() { if (!touched) fit(900); else if (pin && !user) focusOn(pin, 900); },
@@ -411,6 +437,8 @@ function drawGraph(root, G, { go, lib, focus = null, arrive = null, mode, switch
     }
     const pill = view.querySelector('.graph-layout').getBoundingClientRect(); // Web | Timeline, in the bottom corner
     if (pill.height) bottom = Math.min(bottom, pill.top - box.top - 6);
+    const bar = view.querySelector('.graph-cascade').getBoundingClientRect(); // a cascade's bar, along the bottom
+    if (bar.height) bottom = Math.min(bottom, bar.top - box.top - 10);
     if (W >= 900 && !panel.hidden) right = Math.min(right, panel.getBoundingClientRect().left - box.left - 16); // an open filter panel
     if (authorOpen) { // the author panel: on the right, or a sheet along the bottom on phones
       const a = authorEl.getBoundingClientRect();
@@ -424,7 +452,8 @@ function drawGraph(root, G, { go, lib, focus = null, arrive = null, mode, switch
   // One entrance, on the first frame that has positions.
   function enter() {
     if (!root.isConnected) return;
-    engine.enter({ pin, arrive, reduced: reduced(), fit, focusOn });
+    // A cascade asked for by the address frames itself: no entrance flight over the whole map first.
+    engine.enter({ pin, arrive, reduced: reduced() || !!startCascade, fit, focusOn });
     arrive?.take(flight);
     // The timeline worked out ahead, once the map is in and idle (not while books fly in), so the switch starts at once.
     const idle = f => (window.requestIdleCallback || setTimeout)(f, { timeout: 4000 });
@@ -573,7 +602,7 @@ function drawGraph(root, G, { go, lib, focus = null, arrive = null, mode, switch
     popTab = +t.dataset.tab;
     pop.innerHTML = popHTML(popLink);
   });
-  const onKey = e => { if (e.key === 'Escape') { if (popLink) closePop(); else if (authorOpen) closeAuthor(); } };
+  const onKey = e => { if (e.key === 'Escape') { if (popLink) closePop(); else if (authorOpen) closeAuthor(); else if (cascade) closeCascade(); } };
   document.addEventListener('keydown', onKey);
 
   /* ---------- for tools/graph_qa.py: where things are on screen, in viewport px ---------- */
@@ -594,8 +623,7 @@ function drawGraph(root, G, { go, lib, focus = null, arrive = null, mode, switch
       fx: client(engine.screen(l.source)).x, tx: client(engine.screen(l.target)).x })),
   });
 
-  /* ---------- node click: the camera closes in, then the book comes out of the map ---------- */
-  const libBy = new Map((lib?.books || []).map(b => [b.slug, b]));
+  /* ---------- Read: the camera closes in, then the book comes out of the map ---------- */
   // Its relations first, each as what this book does to the other ('answers Frankenstein') or has done to it
   // ('answered by Rappaccini's Daughter'), then the author's other books.
   function connected(n) {
@@ -671,7 +699,7 @@ function drawGraph(root, G, { go, lib, focus = null, arrive = null, mode, switch
     const b = e.target.closest('[data-book]'), m = b && byId.get(b.dataset.book);
     if (!m) return;
     closeAuthor(); reveal(m);
-    openNode(m);
+    openCascade(m);
   });
   stage.openAuthor = id => byId.get(id)?.isA && openAuthor(byId.get(id)); // for tools/graph_qa.py
   stage.booksOf = id => byId.get(id)?.books?.map(b => b.id) || [];
@@ -721,6 +749,15 @@ function drawGraph(root, G, { go, lib, focus = null, arrive = null, mode, switch
     });
     // An author stays while any of its books does, and is bright while any of them is.
     authorNodes.forEach(a => { a.vis = a.books.some(b => b.vis); a.relOn = a.books.some(b => b.vis && b.relOn); });
+    // A cascade shows only its books, and the lines among them; no authors.
+    bookNodes.forEach(n => { n.fvis = n.vis; });
+    if (cascade) {
+      bookNodes.forEach(n => { n.vis = cascade.depth.has(n); });
+      // Only the cascade's own lines: each book to the book above it that brought it in.
+      const up = cascade.parent;
+      relLinks.forEach(l => { l.on &&= l.source.vis && l.target.vis && (up.get(l.source) === l.target || up.get(l.target) === l.source); });
+      authorNodes.forEach(a => { a.vis = false; });
+    }
     if (authorOpen && !authorOpen.vis) closeAuthor();
     if (popLink && !(popLink.on && popLink.source.vis && popLink.target.vis)) closePop();
     if (pin && !pin.vis) { unpin(); input.value = ''; }
@@ -762,6 +799,7 @@ function drawGraph(root, G, { go, lib, focus = null, arrive = null, mode, switch
       const set = b.dataset.group === 'rel' ? filters.rels : filters.genres;
       set.has(b.dataset.v) ? set.delete(b.dataset.v) : set.add(b.dataset.v);
     }
+    if (cascade) closeCascade(0);
     applyFilters(); refit();
   });
   range?.addEventListener('input', () => { filters.year = sliderYear(); applyFilters(); });
@@ -777,6 +815,7 @@ function drawGraph(root, G, { go, lib, focus = null, arrive = null, mode, switch
   let regrow = 0;
   function setLayout(next) {
     if (next === layout) return;
+    if (cascade) closeCascade(0);
     try { localStorage.setItem(LAYOUT_KEY, next); } catch { /* private mode: this visit only */ }
     layout = next; view.dataset.layout = next;
     layoutEl.querySelectorAll('[data-layout]').forEach(b => b.setAttribute('aria-pressed', b.dataset.layout === next));
@@ -882,7 +921,7 @@ function drawGraph(root, G, { go, lib, focus = null, arrive = null, mode, switch
     clearTimeout(typing);
     input.value = n.isA ? n.name : n.b.title; hideHits();
     if (narrow()) input.blur(); // put the keyboard away so the map shows
-    focusOn(n, 700);
+    if (n.isA) focusOn(n, 700); else openCascade(n);
   }
 
   // A book in focus: lit with its neighbours, framed with them, its address in the URL (#/graph/<slug>).
@@ -899,6 +938,7 @@ function drawGraph(root, G, { go, lib, focus = null, arrive = null, mode, switch
     applyFilters();
   }
   function focusOn(n, ms = 800) {
+    if (cascade) closeCascade(0);
     reveal(n);
     engine.still(); touched = true;
     if (pin !== n) { pin = n; history.replaceState(null, '', `#/graph/${n.isA ? n.slug : n.b.slugs[0]}`); }
@@ -915,6 +955,139 @@ function drawGraph(root, G, { go, lib, focus = null, arrive = null, mode, switch
     if (location.hash !== '#/graph') history.replaceState(null, '', '#/graph');
     setFocus(hoverNode, null);
   }
+  /* ---------- a book's cascade: the book at the top, the books it relates to below it, theirs below those ---------- */
+  // Every other book leaves the map and the camera faces it straight on. A click on a book below adds the relations
+  // it has that are not shown yet, under it; another click takes them away again. Read opens the book itself.
+  const ROW = 170, LINE = 76, L2_MAX = 16;
+  const GAP = () => (narrow() ? 118 : 140), PER_LINE = () => (narrow() ? 4 : 10);
+  const bar = root.querySelector('.graph-cascade');
+  let back = null, glideRaf = 0; // where every book was before the cascade, to go back to
+  const calmMs = ms => (reduced() ? 0 : ms);
+  // The books a book's shown relations reach (relation and genre filters apply), oldest first.
+  function relNbrs(n) {
+    const out = new Set();
+    relLinks.forEach(l => {
+      if (filters.rels.size && !filters.rels.has(l.rel)) return;
+      const m = l.source === n ? l.target : l.target === n ? l.source : null;
+      if (m && m.fvis !== false) out.add(m);
+    });
+    return [...out].sort((a, b) => (a.year || 9999) - (b.year || 9999) || a.b.title.localeCompare(b.b.title));
+  }
+  function addKids(c, n) {
+    const d = c.depth.get(n) + 1, kids = relNbrs(n).filter(m => !c.depth.has(m));
+    kids.forEach(m => { c.depth.set(m, d); c.parent.set(m, n); });
+    return kids;
+  }
+  // Takes away what a click on n added (and what clicks on those added), nothing that was there before.
+  function dropKids(c, n) {
+    (c.added.get(n) || []).forEach(m => { dropKids(c, m); c.depth.delete(m); c.parent.delete(m); });
+    c.added.delete(n);
+  }
+  // Two rows: the book's relations, then theirs (the most related first, when there are many).
+  function buildCascade(n) {
+    const c = { root: n, depth: new Map([[n, 0]]), parent: new Map(), added: new Map(), more: new Map() };
+    const l1 = addKids(c, n), cand = new Map();
+    l1.forEach(p => relNbrs(p).forEach(m => { if (!c.depth.has(m) && !cand.has(m)) cand.set(m, p); }));
+    [...cand].sort((a, b) => b[0].deg - a[0].deg).slice(0, L2_MAX).forEach(([m, p]) => { c.depth.set(m, 2); c.parent.set(m, p); });
+    return c;
+  }
+  // Rows top down, each centred under the book; a row's books under their parents, left to right, a long row in
+  // staggered lines. y down (the 3D map turns it over).
+  function cascadeSpots(c) {
+    const rows = [], at = new Map(), up = mode === '3d' ? -1 : 1;
+    c.depth.forEach((d, n) => (rows[d] ||= []).push(n));
+    let y = 0;
+    rows.forEach((row, d) => {
+      if (!row) return;
+      if (d) row.sort((a, b) => at.get(c.parent.get(a)).x - at.get(c.parent.get(b)).x || (a.year || 9999) - (b.year || 9999));
+      const lines = Math.ceil(row.length / PER_LINE()), per = Math.ceil(row.length / lines), gap = GAP();
+      for (let j = 0; j < lines; j++) {
+        const part = row.slice(j * per, (j + 1) * per), off = lines > 1 && j % 2 ? gap / 2 : 0;
+        part.forEach((n, i) => at.set(n, { x: (i - (part.length - 1) / 2) * gap + off, y: y + j * LINE, z: 0 }));
+      }
+      y += (lines - 1) * LINE + ROW;
+    });
+    at.forEach(p => { p.y *= up; });
+    return at;
+  }
+  // Books glide to their places (held there), then done().
+  function glide(to, ms, done) {
+    cancelAnimationFrame(glideRaf);
+    const from = new Map([...to.keys()].map(n => [n, { x: n.x, y: n.y, z: n.z || 0 }])), t0 = performance.now();
+    const step = now => {
+      const u = ms ? easeIO(Math.min(1, (now - t0) / ms)) : 1;
+      to.forEach((b, n) => { const a = from.get(n); pinTo(n, { x: a.x + (b.x - a.x) * u, y: a.y + (b.y - a.y) * u, z: a.z + (b.z - a.z) * u }); });
+      if (u < 1) glideRaf = requestAnimationFrame(step); else { glideRaf = 0; done?.(); }
+    };
+    step(t0);
+  }
+  function settle(ms, prev = null) {
+    const c = cascade;
+    c.depth.forEach((d, n) => c.more.set(n, relNbrs(n).filter(m => !c.depth.has(m)).length));
+    applyFilters();
+    const to = cascadeSpots(c);
+    // Books new to the cascade come out of the book that brought them.
+    if (prev) to.forEach((_, m) => { const q = c.parent.get(m); if (!prev.has(m) && q) pinTo(m, { x: q.x, y: q.y, z: q.z || 0 }); });
+    engine.still(); touched = true;
+    engine.reheat(true);
+    glide(to, ms);
+    // The whole cascade in view; on a phone the book and the first row, the rest a pan away.
+    const shownNow = narrow() && !prev ? [...to].filter(([n]) => c.depth.get(n) < 2).map(([, p]) => p) : [...to.values()];
+    engine.frame(shownNow, ms, 2.4, true);
+    setFocus(null, null);
+  }
+  function openCascade(n, ms = calmMs(900)) {
+    if (!n || n.isA) return;
+    if (cascade) closeCascade(0);
+    closePop(); closeAuthor(); closePanel(); hideHits(); tip.hidden = true;
+    reveal(n);
+    if (!engine.has(n)) { startCascade = n; return; } // before the first frame: firstFrame opens it
+    startCascade = null; pin = null;
+    // Every book stays where it is while away; the cascade's books go back there after.
+    back = new Map(nodes.map(m => [m, { x: m.x, y: m.y, z: m.z || 0, held: m.fx != null }]));
+    nodes.forEach(m => pinTo(m, back.get(m)));
+    cascade = buildCascade(n);
+    history.replaceState(null, '', `#/graph/${n.b.slugs[0]}`);
+    input.value = n.b.title;
+    bar.querySelector('.gk-title').textContent = n.b.title;
+    bar.querySelector('.gk-read').hidden = libBy.get(n.b.slugs?.[0])?.status !== 'ready';
+    bar.hidden = false;
+    settle(ms);
+  }
+  function toggleBook(n) {
+    const c = cascade;
+    if (!c.depth.has(n) || n === c.root) return;
+    const prev = new Set(c.depth.keys());
+    if (c.added.has(n)) dropKids(c, n);
+    else if (c.more.get(n)) c.added.set(n, addKids(c, n));
+    else return;
+    settle(calmMs(700), prev);
+  }
+  function closeCascade(ms = calmMs(900)) {
+    if (!cascade) return;
+    const was = [...cascade.depth.keys()], home = back;
+    cascade = null; bar.hidden = true;
+    if (location.hash !== '#/graph') history.replaceState(null, '', '#/graph');
+    closePop(); setFocus(null, null);
+    applyFilters();
+    engine.reheat(true);
+    glide(new Map(was.map(m => [m, home.get(m)])), ms, () => {
+      // In the web the books are free again, where they were; on the timeline they keep to their years.
+      nodes.forEach(m => { if (!home.get(m).held) { m.fx = m.fy = m.fz = undefined; m.vx = m.vy = m.vz = 0; } });
+      engine.rest();
+    });
+    engine.frame(nodes.filter(m => m.vis).map(m => home.get(m)), ms, 2.4, true);
+  }
+  const pickBook = n => (cascade ? toggleBook(n) : openCascade(n));
+  bar.addEventListener('click', e => {
+    if (e.target.closest('.gk-back')) closeCascade();
+    else if (e.target.closest('.gk-read') && cascade) openNode(cascade.root);
+  });
+  // For tools/graph_qa.py.
+  stage.cascade = () => cascade && [...cascade.depth].map(([n, d]) => ({ id: n.id, depth: d, open: cascade.added.has(n), more: cascade.more.get(n) || 0 }));
+  stage.openCascade = id => byId.has(id) && openCascade(byId.get(id), 0);
+  stage.toggleBook = id => !!cascade && byId.has(id) && toggleBook(byId.get(id));
+
   const onDocKey = e => { if (e.key === 'Escape') { closePanel(); hideHits(); } };
   document.addEventListener('keydown', onDocKey);
 
@@ -922,7 +1095,10 @@ function drawGraph(root, G, { go, lib, focus = null, arrive = null, mode, switch
   // #/graph/<slug>: a volume's slug or the work's own name; else an author's slug (the author with its books).
   const start = focus && (bookNodes.find(n => n.b.slugs?.includes(focus) || n.id === `work:${focus}`)
     || authorNodes.find(n => n.slug === focus));
-  if (start) { focusOn(start, 0); input.value = start.isA ? start.name : start.b.title; }
+  // A book's address opens its cascade once the map has positions; an author's frames it with its books.
+  if (start?.isA) focusOn(start, 0);
+  else if (start) startCascade = start;
+  if (start) input.value = start.isA ? start.name : start.b.title;
   // For tools/graph_qa.py: what the map shows and where the camera is.
   stage.state = () => {
     const c = engine.cam();
@@ -936,7 +1112,7 @@ function drawGraph(root, G, { go, lib, focus = null, arrive = null, mode, switch
   const ro = new ResizeObserver(() => engine.resize());
   ro.observe(stage);
   return () => {
-    clearTimeout(typing); clearTimeout(regrow); clearTimeout(prep); cancelAnimationFrame(tween); dropFlight();
+    clearTimeout(typing); clearTimeout(regrow); clearTimeout(prep); cancelAnimationFrame(tween); cancelAnimationFrame(glideRaf); dropFlight();
     document.removeEventListener('keydown', onKey); document.removeEventListener('keydown', onDocKey);
     ro.disconnect(); mo.disconnect(); mq.removeEventListener('change', readTheme);
     engine.destroy();

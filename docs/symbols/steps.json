@@ -1,0 +1,849 @@
+{
+ "waves": [
+  {
+   "name": "S1",
+   "label": "시범 8편 + 그래프 변경"
+  },
+  {
+   "name": "S2",
+   "label": "24편 · Adventure, Ghost Stories, Gothic…"
+  },
+  {
+   "name": "S3",
+   "label": "24편 · Adventure, Ghost Stories, Gothic…"
+  },
+  {
+   "name": "S4",
+   "label": "24편 · Adventure, Fairy Tales, Ghost Stories…"
+  },
+  {
+   "name": "S5",
+   "label": "24편 · Adventure, Fairy Tales, Ghost Stories…"
+  },
+  {
+   "name": "S6",
+   "label": "24편 · Adventure, Fairy Tales, Love…"
+  },
+  {
+   "name": "S7",
+   "label": "24편 · Adventure, Fairy Tales, Ghost Stories…"
+  },
+  {
+   "name": "S8",
+   "label": "24편 · Adventure, Fairy Tales, Gothic…"
+  },
+  {
+   "name": "S9",
+   "label": "24편 · Adventure, Gothic, Humor…"
+  },
+  {
+   "name": "S10",
+   "label": "24편 · Fairy Tales, Gothic, Humor…"
+  },
+  {
+   "name": "S11",
+   "label": "24편 · Adventure, Fairy Tales, Humor…"
+  },
+  {
+   "name": "S12",
+   "label": "10편 · Adventure, Humor, Realism…"
+  }
+ ],
+ "steps": [
+  {
+   "code": "S1-01",
+   "wave": "S1",
+   "kind": "draw",
+   "title": "시범 심볼 8편 (세션에서 직접)",
+   "works": [
+    "frankenstein",
+    "robinson-crusoe",
+    "pride-and-prejudice",
+    "time-machine",
+    "study-in-scarlet",
+    "christmas-carol",
+    "little-mermaid",
+    "moby-dick"
+   ],
+   "needs": [],
+   "done": "2026-10-15"
+  },
+  {
+   "code": "S1-OK",
+   "wave": "S1",
+   "kind": "user",
+   "title": "사용자 확인 (시범 시트 + 심볼 노드·cascade 그래프)",
+   "needs": [
+    "S1-01"
+   ],
+   "done": "2026-10-16"
+  },
+  {
+   "code": "S1-08",
+   "wave": "S1",
+   "kind": "commit",
+   "title": "커밋·배포 (그래프 변경 + 시범 심볼)",
+   "needs": [
+    "S1-OK"
+   ],
+   "extra": "이번엔 그래프 화면 변경도 같이 커밋한다: site/js/app.js, art.js, graph.js, graph2d.js, graph3d.js, site/css/graph.css, site/sw.js, tools/build.py, tools/graph_qa.py, tools/symbol_sheet.py, tools/symbol_pipeline.py. `python tools/graph_qa.py --node frankenstein-1`과 `--controls`도 통과해야 한다."
+  },
+  {
+   "code": "S2-01",
+   "wave": "S2",
+   "kind": "draw",
+   "title": "심볼 · Strange Case of Dr Jekyll and Mr Hyde, The Fall of the House of Usher 외 6편",
+   "works": [
+    "jekyll-and-hyde",
+    "fall-of-the-house-of-usher",
+    "dorian-gray",
+    "turn-of-the-screw",
+    "murders-in-the-rue-morgue",
+    "island-of-doctor-moreau",
+    "jane-eyre",
+    "rip-van-winkle"
+   ],
+   "needs": []
+  },
+  {
+   "code": "S2-02",
+   "wave": "S2",
+   "kind": "draw",
+   "title": "심볼 · Northanger Abbey, Gulliver's Travels 외 6편",
+   "works": [
+    "northanger-abbey",
+    "gullivers-travels",
+    "yellow-wallpaper",
+    "purloined-letter",
+    "don-quixote",
+    "scarlet-letter",
+    "necklace",
+    "story-of-an-hour"
+   ],
+   "needs": []
+  },
+  {
+   "code": "S2-03",
+   "wave": "S2",
+   "kind": "draw",
+   "title": "심볼 · The Birth-Mark, The Overcoat 외 6편",
+   "works": [
+    "birth-mark",
+    "overcoat",
+    "haunted-and-the-haunters",
+    "canterville-ghost",
+    "sindbad",
+    "million-pound-bank-note",
+    "bartleby",
+    "candide"
+   ],
+   "needs": []
+  },
+  {
+   "code": "S2-OK",
+   "wave": "S2",
+   "kind": "user",
+   "title": "사용자 확인 (S2 시트)",
+   "needs": [
+    "S2-01",
+    "S2-02",
+    "S2-03"
+   ]
+  },
+  {
+   "code": "S2-08",
+   "wave": "S2",
+   "kind": "commit",
+   "title": "커밋·배포",
+   "needs": [
+    "S2-OK"
+   ]
+  },
+  {
+   "code": "S3-01",
+   "wave": "S3",
+   "kind": "draw",
+   "title": "심볼 · Twenty Thousand Leagues under the Sea, Notes from Underground 외 6편",
+   "works": [
+    "twenty-thousand-leagues",
+    "notes-from-underground",
+    "connecticut-yankee",
+    "scandal-in-bohemia",
+    "signal-man",
+    "man-who-would-be-king",
+    "sleepy-hollow",
+    "hadleyburg"
+   ],
+   "needs": []
+  },
+  {
+   "code": "S3-02",
+   "wave": "S3",
+   "kind": "draw",
+   "title": "심볼 · Young Goodman Brown, Paul's Case 외 6편",
+   "works": [
+    "young-goodman-brown",
+    "pauls-case",
+    "treasure-island",
+    "dracula",
+    "huckleberry-finn",
+    "madame-bovary",
+    "oliver-twist",
+    "lord-jim"
+   ],
+   "needs": []
+  },
+  {
+   "code": "S3-03",
+   "wave": "S3",
+   "kind": "draw",
+   "title": "심볼 · A Portrait of the Artist as a Young Man, The Bet 외 6편",
+   "works": [
+    "portrait-of-the-artist",
+    "the-bet",
+    "lady-with-the-dog",
+    "araby",
+    "open-boat",
+    "the-dead",
+    "hound-of-the-baskervilles",
+    "tom-sawyer"
+   ],
+   "needs": []
+  },
+  {
+   "code": "S3-OK",
+   "wave": "S3",
+   "kind": "user",
+   "title": "사용자 확인 (S3 시트)",
+   "needs": [
+    "S3-01",
+    "S3-02",
+    "S3-03"
+   ]
+  },
+  {
+   "code": "S3-08",
+   "wave": "S3",
+   "kind": "commit",
+   "title": "커밋·배포",
+   "needs": [
+    "S3-OK"
+   ]
+  },
+  {
+   "code": "S4-01",
+   "wave": "S4",
+   "kind": "draw",
+   "title": "심볼 · The Man Who Was Thursday, Silas Marner 외 6편",
+   "works": [
+    "man-who-was-thursday",
+    "silas-marner",
+    "heart-of-darkness",
+    "cranford",
+    "wuthering-heights",
+    "this-side-of-paradise",
+    "two-brothers",
+    "beauty-and-the-beast"
+   ],
+   "needs": []
+  },
+  {
+   "code": "S4-02",
+   "wave": "S4",
+   "kind": "draw",
+   "title": "심볼 · Selected Fables, The Tell-Tale Heart 외 6편",
+   "works": [
+    "aesop-fables",
+    "tell-tale-heart",
+    "country-of-the-blind",
+    "upper-berth",
+    "blue-cross",
+    "diamond-lens",
+    "micromegas",
+    "rappaccinis-daughter"
+   ],
+   "needs": []
+  },
+  {
+   "code": "S4-03",
+   "wave": "S4",
+   "kind": "draw",
+   "title": "심볼 · The War of the Worlds, A Journey to the Centre of the Earth 외 6편",
+   "works": [
+    "war-of-the-worlds",
+    "journey-to-the-centre",
+    "the-awakening",
+    "lost-world",
+    "flatland",
+    "the-moonstone",
+    "tale-of-two-cities",
+    "kim"
+   ],
+   "needs": []
+  },
+  {
+   "code": "S4-OK",
+   "wave": "S4",
+   "kind": "user",
+   "title": "사용자 확인 (S4 시트)",
+   "needs": [
+    "S4-01",
+    "S4-02",
+    "S4-03"
+   ]
+  },
+  {
+   "code": "S4-08",
+   "wave": "S4",
+   "kind": "commit",
+   "title": "커밋·배포",
+   "needs": [
+    "S4-OK"
+   ]
+  },
+  {
+   "code": "S5-01",
+   "wave": "S5",
+   "kind": "draw",
+   "title": "심볼 · The Secret Agent, Hard Times 외 6편",
+   "works": [
+    "secret-agent",
+    "hard-times",
+    "far-from-the-madding-crowd",
+    "house-of-mirth",
+    "voyage-out",
+    "king-of-the-golden-river",
+    "gift-of-the-magi",
+    "rikki-tikki-tavi"
+   ],
+   "needs": []
+  },
+  {
+   "code": "S5-02",
+   "wave": "S5",
+   "kind": "draw",
+   "title": "심볼 · The Enchanted Horse, The Last Leaf 외 6편",
+   "works": [
+    "enchanted-horse",
+    "last-leaf",
+    "monkeys-paw",
+    "open-window",
+    "call-of-the-wild",
+    "jumping-frog",
+    "outcasts-of-poker-flat",
+    "red-headed-league"
+   ],
+   "needs": []
+  },
+  {
+   "code": "S5-03",
+   "wave": "S5",
+   "kind": "draw",
+   "title": "심볼 · The Furnished Room, The Luck of Roaring Camp 외 6편",
+   "works": [
+    "furnished-room",
+    "luck-of-roaring-camp",
+    "black-cat",
+    "descent-into-the-maelstrom",
+    "whistle-and-ill-come",
+    "gold-bug",
+    "machine-stops",
+    "around-the-world"
+   ],
+   "needs": []
+  },
+  {
+   "code": "S5-OK",
+   "wave": "S5",
+   "kind": "user",
+   "title": "사용자 확인 (S5 시트)",
+   "needs": [
+    "S5-01",
+    "S5-02",
+    "S5-03"
+   ]
+  },
+  {
+   "code": "S5-08",
+   "wave": "S5",
+   "kind": "commit",
+   "title": "커밋·배포",
+   "needs": [
+    "S5-OK"
+   ]
+  },
+  {
+   "code": "S6-01",
+   "wave": "S6",
+   "kind": "draw",
+   "title": "심볼 · The Invisible Man, The Sign of the Four 외 6편",
+   "works": [
+    "invisible-man",
+    "sign-of-the-four",
+    "mysterious-affair-at-styles",
+    "thirty-nine-steps",
+    "king-solomons-mines",
+    "the-great-gatsby",
+    "sorrows-of-young-werther",
+    "sea-wolf"
+   ],
+   "needs": []
+  },
+  {
+   "code": "S6-02",
+   "wave": "S6",
+   "kind": "draw",
+   "title": "심볼 · O Pioneers!, A Room with a View 외 6편",
+   "works": [
+    "o-pioneers",
+    "room-with-a-view",
+    "winesburg-ohio",
+    "germinal",
+    "mayor-of-casterbridge",
+    "sister-carrie",
+    "villette",
+    "jude-the-obscure"
+   ],
+   "needs": []
+  },
+  {
+   "code": "S6-03",
+   "wave": "S6",
+   "kind": "draw",
+   "title": "심볼 · The Pilgrim's Progress, After Twenty Years 외 6편",
+   "works": [
+    "pilgrims-progress",
+    "after-twenty-years",
+    "snow-queen",
+    "marsh-kings-daughter",
+    "camaralzaman",
+    "light-princess",
+    "kaas-hunting",
+    "what-men-live-by"
+   ],
+   "needs": []
+  },
+  {
+   "code": "S6-OK",
+   "wave": "S6",
+   "kind": "user",
+   "title": "사용자 확인 (S6 시트)",
+   "needs": [
+    "S6-01",
+    "S6-02",
+    "S6-03"
+   ]
+  },
+  {
+   "code": "S6-08",
+   "wave": "S6",
+   "kind": "commit",
+   "title": "커밋·배포",
+   "needs": [
+    "S6-OK"
+   ]
+  },
+  {
+   "code": "S7-01",
+   "wave": "S7",
+   "kind": "draw",
+   "title": "심볼 · To Build a Fire, The Magic Shop 외 6편",
+   "works": [
+    "to-build-a-fire",
+    "magic-shop",
+    "reluctant-dragon",
+    "ivan-the-fool",
+    "pair-of-silk-stockings",
+    "lottery-ticket",
+    "desirees-baby",
+    "the-star"
+   ],
+   "needs": []
+  },
+  {
+   "code": "S7-02",
+   "wave": "S7",
+   "kind": "draw",
+   "title": "심볼 · The Door in the Wall, Tobermory 외 6편",
+   "works": [
+    "door-in-the-wall",
+    "tobermory",
+    "bride-comes-to-yellow-sky",
+    "blue-carbuncle",
+    "jury-of-her-peers",
+    "body-snatcher",
+    "phantom-rickshaw",
+    "ministers-black-veil"
+   ],
+   "needs": []
+  },
+  {
+   "code": "S7-03",
+   "wave": "S7",
+   "kind": "draw",
+   "title": "심볼 · The Diamond as Big as the Ritz, Daisy Miller 외 6편",
+   "works": [
+    "diamond-as-big-as-the-ritz",
+    "daisy-miller",
+    "modest-proposal",
+    "kidnapped",
+    "red-badge-of-courage",
+    "herland",
+    "washington-square",
+    "billy-budd"
+   ],
+   "needs": []
+  },
+  {
+   "code": "S7-OK",
+   "wave": "S7",
+   "kind": "user",
+   "title": "사용자 확인 (S7 시트)",
+   "needs": [
+    "S7-01",
+    "S7-02",
+    "S7-03"
+   ]
+  },
+  {
+   "code": "S7-08",
+   "wave": "S7",
+   "kind": "commit",
+   "title": "커밋·배포",
+   "needs": [
+    "S7-OK"
+   ]
+  },
+  {
+   "code": "S8-01",
+   "wave": "S8",
+   "kind": "draw",
+   "title": "심볼 · A Hero of Our Time, My Ántonia 외 6편",
+   "works": [
+    "hero-of-our-time",
+    "my-antonia",
+    "sense-and-sensibility",
+    "persuasion",
+    "babbitt",
+    "last-of-the-mohicans",
+    "the-good-soldier",
+    "great-expectations"
+   ],
+   "needs": []
+  },
+  {
+   "code": "S8-02",
+   "wave": "S8",
+   "kind": "draw",
+   "title": "심볼 · The Moon and Sixpence, Emma 외 6편",
+   "works": [
+    "moon-and-sixpence",
+    "emma",
+    "crime-and-punishment",
+    "howards-end",
+    "age-of-innocence",
+    "north-and-south",
+    "mansfield-park",
+    "tess"
+   ],
+   "needs": []
+  },
+  {
+   "code": "S8-03",
+   "wave": "S8",
+   "kind": "draw",
+   "title": "심볼 · William Wilson, The Oval Portrait 외 6편",
+   "works": [
+    "william-wilson",
+    "oval-portrait",
+    "the-sandman",
+    "the-double",
+    "diary-of-a-madman",
+    "the-horla",
+    "vanka",
+    "fisherman-and-his-soul"
+   ],
+   "needs": []
+  },
+  {
+   "code": "S8-OK",
+   "wave": "S8",
+   "kind": "user",
+   "title": "사용자 확인 (S8 시트)",
+   "needs": [
+    "S8-01",
+    "S8-02",
+    "S8-03"
+   ]
+  },
+  {
+   "code": "S8-08",
+   "wave": "S8",
+   "kind": "commit",
+   "title": "커밋·배포",
+   "needs": [
+    "S8-OK"
+   ]
+  },
+  {
+   "code": "S9-01",
+   "wave": "S9",
+   "kind": "draw",
+   "title": "심볼 · The Ransom of Red Chief, The Interlopers 외 6편",
+   "works": [
+    "ransom-of-red-chief",
+    "interlopers",
+    "cop-and-the-anthem",
+    "romance-of-a-busy-broker",
+    "cask-of-amontillado",
+    "garden-party",
+    "masque-of-the-red-death",
+    "speckled-band"
+   ],
+   "needs": []
+  },
+  {
+   "code": "S9-02",
+   "wave": "S9",
+   "kind": "draw",
+   "title": "심볼 · The Hammer of God, An Occurrence at Owl Creek Bridge 외 6편",
+   "works": [
+    "hammer-of-god",
+    "owl-creek-bridge",
+    "white-fang",
+    "prisoner-of-zenda",
+    "three-men-in-a-boat",
+    "the-gambler",
+    "scarlet-pimpernel",
+    "ethan-frome"
+   ],
+   "needs": []
+  },
+  {
+   "code": "S9-03",
+   "wave": "S9",
+   "kind": "draw",
+   "title": "심볼 · The Phantom of the Opera, The Warden 외 6편",
+   "works": [
+    "phantom-of-the-opera",
+    "the-warden",
+    "fathers-and-sons",
+    "aspern-papers",
+    "agnes-grey",
+    "the-jungle",
+    "house-of-the-seven-gables",
+    "sun-also-rises"
+   ],
+   "needs": []
+  },
+  {
+   "code": "S9-OK",
+   "wave": "S9",
+   "kind": "user",
+   "title": "사용자 확인 (S9 시트)",
+   "needs": [
+    "S9-01",
+    "S9-02",
+    "S9-03"
+   ]
+  },
+  {
+   "code": "S9-08",
+   "wave": "S9",
+   "kind": "commit",
+   "title": "커밋·배포",
+   "needs": [
+    "S9-OK"
+   ]
+  },
+  {
+   "code": "S10-01",
+   "wave": "S10",
+   "kind": "draw",
+   "title": "심볼 · The Tenant of Wildfell Hall, Sons and Lovers 외 6편",
+   "works": [
+    "tenant-of-wildfell-hall",
+    "sons-and-lovers",
+    "passage-to-india",
+    "jacobs-room",
+    "the-nose",
+    "rasselas",
+    "golden-key",
+    "racketty-packetty-house"
+   ],
+   "needs": []
+  },
+  {
+   "code": "S10-02",
+   "wave": "S10",
+   "kind": "draw",
+   "title": "심볼 · The Great Stone Face, The Castle of Otranto 외 6편",
+   "works": [
+    "great-stone-face",
+    "castle-of-otranto",
+    "mysteries-of-udolpho",
+    "the-monk",
+    "vathek",
+    "the-vampyre",
+    "carmilla",
+    "melmoth-the-wanderer"
+   ],
+   "needs": []
+  },
+  {
+   "code": "S10-03",
+   "wave": "S10",
+   "kind": "draw",
+   "title": "심볼 · Joseph Andrews, The Vicar of Wakefield 외 6편",
+   "works": [
+    "joseph-andrews",
+    "vicar-of-wakefield",
+    "tristram-shandy",
+    "poor-folk",
+    "death-of-ivan-ilyich",
+    "anna-karenina",
+    "kreutzer-sonata",
+    "dead-souls"
+   ],
+   "needs": []
+  },
+  {
+   "code": "S10-OK",
+   "wave": "S10",
+   "kind": "user",
+   "title": "사용자 확인 (S10 시트)",
+   "needs": [
+    "S10-01",
+    "S10-02",
+    "S10-03"
+   ]
+  },
+  {
+   "code": "S10-08",
+   "wave": "S10",
+   "kind": "commit",
+   "title": "커밋·배포",
+   "needs": [
+    "S10-OK"
+   ]
+  },
+  {
+   "code": "S11-01",
+   "wave": "S11",
+   "kind": "draw",
+   "title": "심볼 · The Darling, Ward No. 6 외 6편",
+   "works": [
+    "the-darling",
+    "ward-no-6",
+    "woman-in-white",
+    "lady-audleys-secret",
+    "bleak-house",
+    "david-copperfield",
+    "vanity-fair",
+    "middlemarch"
+   ],
+   "needs": []
+  },
+  {
+   "code": "S11-02",
+   "wave": "S11",
+   "kind": "draw",
+   "title": "심볼 · Wives and Daughters, Alice's Adventures in Wonderland 외 6편",
+   "works": [
+    "wives-and-daughters",
+    "alice-in-wonderland",
+    "through-the-looking-glass",
+    "water-babies",
+    "little-women",
+    "wizard-of-oz",
+    "peter-and-wendy",
+    "wind-in-the-willows"
+   ],
+   "needs": []
+  },
+  {
+   "code": "S11-03",
+   "wave": "S11",
+   "kind": "draw",
+   "title": "심볼 · The Celestial Railroad, Dr. Heidegger's Experiment 외 6편",
+   "works": [
+    "celestial-railroad",
+    "dr-heideggers-experiment",
+    "feathertop",
+    "benito-cereno",
+    "typee",
+    "uncle-toms-cabin",
+    "looking-backward",
+    "news-from-nowhere"
+   ],
+   "needs": []
+  },
+  {
+   "code": "S11-OK",
+   "wave": "S11",
+   "kind": "user",
+   "title": "사용자 확인 (S11 시트)",
+   "needs": [
+    "S11-01",
+    "S11-02",
+    "S11-03"
+   ]
+  },
+  {
+   "code": "S11-08",
+   "wave": "S11",
+   "kind": "commit",
+   "title": "커밋·배포",
+   "needs": [
+    "S11-OK"
+   ]
+  },
+  {
+   "code": "S12-01",
+   "wave": "S12",
+   "kind": "draw",
+   "title": "심볼 · Erewhon, The Coming Race 외 6편",
+   "works": [
+    "erewhon",
+    "the-coming-race",
+    "from-the-earth-to-the-moon",
+    "first-men-in-the-moon",
+    "she-haggard",
+    "beach-of-falesa",
+    "almayers-folly",
+    "jungle-book"
+   ],
+   "needs": []
+  },
+  {
+   "code": "S12-02",
+   "wave": "S12",
+   "kind": "draw",
+   "title": "심볼 · The Swiss Family Robinson, The Coral Island",
+   "works": [
+    "swiss-family-robinson",
+    "coral-island"
+   ],
+   "needs": []
+  },
+  {
+   "code": "S12-OK",
+   "wave": "S12",
+   "kind": "user",
+   "title": "사용자 확인 (S12 시트)",
+   "needs": [
+    "S12-01",
+    "S12-02"
+   ]
+  },
+  {
+   "code": "S12-08",
+   "wave": "S12",
+   "kind": "commit",
+   "title": "커밋·배포",
+   "needs": [
+    "S12-OK"
+   ]
+  }
+ ]
+}

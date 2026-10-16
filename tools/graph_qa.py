@@ -5,7 +5,7 @@ Usage:
   python tools/graph_qa.py --smoke                          #/, #/graph, #/read/frankenstein-1 open without console/page errors
   python tools/graph_qa.py --shot <hash> [--w 1280 --h 800] [--out name]   screenshot to logs/graph-shots/<name>.png
   python tools/graph_qa.py --eval <hash> <js>               run JS in the page, print the result as JSON
-  python tools/graph_qa.py --node <slug> [--w --h]          #/graph: click the book's node with the mouse, check the
+  python tools/graph_qa.py --node <slug> [--w --h]          #/graph: click the book's node with the mouse (its cascade), Read, check the
                                                             pull-out panel, press Read, expect #/read/<slug>
   python tools/graph_qa.py --author <slug> [--w --h]        #/graph: hover the author's medal (tooltip), click it: the
                                                             camera takes in the author and its books beside the
@@ -102,6 +102,13 @@ def open_page(browser, base, h, w=1280, ht=800, errors=None, **opts):
     return ctx, page
 
 
+def through_cascade(page, timeout=5000):
+    """A book clicked on the map opens its cascade (graph.js): press Read there to take the book out of the map."""
+    page.wait_for_selector(".graph-cascade:not([hidden]) .gk-read:not([hidden])", timeout=timeout)
+    page.wait_for_timeout(1000)  # the books glide to their rows
+    page.click(".graph-cascade .gk-read")
+
+
 NODE_POS = """slug => {
   const st = document.querySelector('.graph-stage'), n = st.nodeIds().find(n => n.slug === slug);
   const p = n && st.screenOf(n.id);
@@ -122,6 +129,7 @@ def node_read(browser, base, slug, w, h) -> int:
     page.mouse.move(pos["x"], pos["y"])
     page.wait_for_timeout(150)
     page.mouse.click(pos["x"], pos["y"])
+    through_cascade(page)
     page.wait_for_selector("#flight-layer.show-info .flight-info", timeout=5000)
     page.wait_for_timeout(400)
     info = page.evaluate("""() => {
@@ -143,7 +151,7 @@ def node_read(browser, base, slug, w, h) -> int:
     end = page.evaluate("() => ({ hash: location.hash, view: document.body.dataset.view, layer: document.getElementById('flight-layer').className })")
     print("read ", json.dumps(end))
     ctx.close()
-    ok = (info["title"] and info["cover"] and info["hash"] == "#/graph" and end["hash"] == f"#/read/{slug}"
+    ok = (info["title"] and info["cover"] and info["hash"] == f"#/graph/{slug}" and end["hash"] == f"#/read/{slug}"
           and end["view"] == "reader" and not errs)
     for e in errs:
         print("   ", e)
@@ -207,6 +215,7 @@ def author_panel(browser, base, slug, w, h) -> int:
     print("shot  ", shot)
     first = info["books"][0]
     page.click(f".graph-author [data-book='{first}']")
+    through_cascade(page, 6000)
     page.wait_for_selector("#flight-layer.show-info .flight-info", timeout=6000)
     page.wait_for_timeout(400)
     title = page.evaluate("() => document.querySelector('#flight-layer #fi-title')?.textContent")
@@ -272,7 +281,9 @@ def open_line_pop(page, a, b):
             page.mouse.move(pos["x"], pos["y"])
             page.wait_for_timeout(60)
             tip = page.evaluate(TIP)
-            if tip["pair"]:
+            # This line, not another one crossing it there (lines into a much related book run close together).
+            lit = set(page.evaluate("() => document.querySelector('.graph-stage').state().lit"))
+            if tip["pair"] and lit == {f"work:{a}", f"work:{b}"}:
                 break
     print("tip  ", json.dumps(tip, ensure_ascii=False))
     page.mouse.click(pos["x"], pos["y"])
@@ -506,7 +517,9 @@ def controls(browser, base, w, h) -> int:
         return 1
     st = page.evaluate(STATE)
     pos = page.evaluate(NEAR, "work:frankenstein")
-    check("focus url", st["pin"] == "work:frankenstein" and pos["inside"], json.dumps({"pin": st["pin"], "zoom": round(st["zoom"], 2), **pos}))
+    # A book's address opens its cascade, the book at the top.
+    top = page.evaluate("() => (document.querySelector('.graph-stage').cascade() || []).find(n => n.depth === 0)?.id || null")
+    check("focus url", top == "work:frankenstein" and pos["inside"], json.dumps({"cascade": top, "zoom": round(st["zoom"], 2), **pos}))
     boxes = page.evaluate(BOXES)
     clash = [(a["el"], b["el"]) for i, a in enumerate(boxes) for b in boxes[i + 1:]
              if a["l"] < b["r"] and b["l"] < a["r"] and a["t"] < b["b"] and b["t"] < a["b"]]
@@ -1032,6 +1045,7 @@ def g1(browser, base) -> int:
     if tap_in:
         page.touchscreen.tap(tapped["x"], tapped["y"])
         try:
+            through_cascade(page)
             page.wait_for_selector("#flight-layer.show-info .flight-info", timeout=5000)
         except Exception:
             pass

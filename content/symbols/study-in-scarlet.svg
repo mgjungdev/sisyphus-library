@@ -1,0 +1,7 @@
+<!-- A Study in Scarlet: Holmes's lens over the woman's wedding ring left at the murder, the clue that runs through the scarlet thread of the case. -->
+<svg viewBox="0 0 120 100">
+  <circle cx="50" cy="42" r="27"/><circle cx="50" cy="42" r="22" opacity=".45"/>
+  <path d="M69 61l6-6 26 26-6 6z"/>
+  <ellipse cx="50" cy="44" rx="12" ry="8.5"/><ellipse cx="50" cy="44" rx="7.5" ry="4.8"/>
+  <path d="M8 90c8-7 16 3 26-3s16 1 22-2" opacity=".7"/>
+</svg>

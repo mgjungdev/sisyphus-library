@@ -266,3 +266,28 @@ body[data-view="graph"] { background: var(--bg); overflow: hidden; }
 }
 .gp-side:hover { background: color-mix(in srgb, var(--c, var(--ink)) 12%, transparent); }
 .gp-side svg { width: 18px; height: 18px; color: var(--c, var(--ink-2)); }
+
+/* A book's cascade: a bar along the bottom with the way back, the book's title and Read */
+.graph-cascade {
+  position: absolute; left: 50%; transform: translateX(-50%); bottom: clamp(12px, 2.4vw, 24px); z-index: 3;
+  display: flex; align-items: center; gap: 4px; max-width: calc(100% - 32px); padding: 4px;
+  border-radius: 999px; background: color-mix(in srgb, var(--surface) 92%, transparent); border: 1px solid color-mix(in srgb, var(--rule) 80%, transparent);
+  box-shadow: var(--shadow); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+}
+.graph-cascade[hidden] { display: none; }
+.graph-cascade button {
+  flex: none; display: inline-flex; align-items: center; gap: 4px; height: 34px; padding: 0 14px; border: 0; border-radius: 999px;
+  background: none; cursor: pointer; font: 500 13px var(--font-ui); color: var(--ink-2);
+}
+.graph-cascade button:hover { color: var(--ink); background: color-mix(in srgb, var(--ink) 6%, transparent); }
+.graph-cascade button[hidden] { display: none; }
+.graph-cascade svg { width: 16px; height: 16px; margin-left: -4px; }
+.graph-cascade .gk-title { min-width: 0; padding: 0 8px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font: italic 400 15.5px var(--font-read); color: var(--ink); }
+.graph-cascade .gk-read { background: var(--ink); color: var(--bg); }
+.graph-cascade .gk-read:hover { background: var(--ink); color: var(--bg); opacity: .88; }
+/* the Web | Timeline switch and the key make room for it */
+.graph-view:has(.graph-cascade:not([hidden])) .graph-layout { display: none; }
+@media (max-width: 639px) {
+  .graph-view:has(.graph-cascade:not([hidden])) .graph-key { display: none; }
+  .graph-cascade .gk-title { font-size: 14px; }
+}

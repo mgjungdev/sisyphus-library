@@ -3,6 +3,7 @@
   content/books.json               catalog (month, spine, cover)
   content/sources/<slug>.txt       story text, paragraphs separated by blank lines
   content/graph/, content/contexts/ relations catalog -> site/data/graph.json (see tools/catalog.py)
+  content/symbols/<work>.svg       each work's cover symbol (docs/symbols/PLAN.md) -> library.json "symbols"
 
 A book is "ready" when it has a source and a "reviewed" date in books.json (set by
 tools/pipeline.py mark-reviewed after the source text is checked); otherwise it is
@@ -78,6 +79,22 @@ def thickness(words: int | None) -> int:
     return round(18 + 7 * math.log(1 + words / 1500)) if words else 22
 
 
+SVG = re.compile(r'<svg[^>]*viewBox="([^"]+)"[^>]*>(.*)</svg>', re.S)
+
+
+def load_symbols() -> dict:
+    """content/symbols/<work>.svg -> {work: {"vb": viewBox, "body": inner markup}}; a work is a book's series, or its
+    slug when it is one volume. The comment at the top of each file (what the symbol stands for) is outside <svg>."""
+    out = {}
+    for f in sorted((CONTENT / "symbols").glob("*.svg")):
+        m = SVG.search(f.read_text(encoding="utf-8"))
+        if not m:
+            print(f"  symbol skipped (no <svg viewBox>): {f.name}")
+            continue
+        out[f.stem] = {"vb": m.group(1), "body": re.sub(r"\s*\n\s*", " ", m.group(2)).strip()}
+    return out
+
+
 def main():
     catalog = json.loads((CONTENT / "books.json").read_text(encoding="utf-8"))
     (OUT / "books").mkdir(parents=True, exist_ok=True)
@@ -110,7 +127,8 @@ def main():
     order = ["Fairy Tales & Fables", "Adventure", "Mystery & Detective", "Gothic & Horror", "Ghost Stories",
              "Science Fiction & Fantasy", "Love & Society", "Humor & Satire", "Realism & Character"]
     genres = [g for g in order if g in genres] + [g for g in genres if g not in order]
-    (OUT / "library.json").write_text(json.dumps({"genres": genres, "books": out}, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    symbols = load_symbols()
+    (OUT / "library.json").write_text(json.dumps({"genres": genres, "books": out, "symbols": symbols}, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     print(f"  library.json: {len(out)} books, {sum(b['status'] == 'ready' for b in out)} ready")
 
     # The relations catalog: graph.json (admitted records only) for everyone, and graph.drafts.json

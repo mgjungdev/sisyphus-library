@@ -54,8 +54,51 @@ export const MOTIFS = {
     <path d="M42 46h10l4-8 6 16 4-8h12"/></g>`),
 };
 
+// The book's own symbol (its work's, drawn for it: content/symbols/), else its genre's motif.
+export function symbolSVG(book) {
+  const s = book?.symbol;
+  return s ? S(s.vb, `<g ${G}>${s.body}</g>`) : MOTIFS[book?.cover?.motif] || MOTIFS.leaf;
+}
+
+// A book on the map: a round badge in its cover cloth, a gilt ring and its symbol in gilt, drawn once into a canvas
+// (px across) per book. The symbol arrives a moment later (an SVG image decodes asynchronously): onload is told then.
+const badges = new Map();
+export function badgeCanvas(book, cloth, gilt, px = 128, onload = null) {
+  const key = `${book?.series || book?.slug || ''}|${book?.cover?.motif || ''}|${cloth}|${gilt}|${px}`;
+  let b = badges.get(key);
+  if (b) { if (onload && !b.ready) b.wait.push(onload); return b.cv; }
+  const cv = document.createElement('canvas');
+  cv.width = cv.height = px;
+  const x = cv.getContext('2d'), r = px / 2;
+  const g = x.createRadialGradient(r * 0.7, r * 0.6, r * 0.1, r, r, r);
+  g.addColorStop(0, shadeHex(cloth, 0.14)); g.addColorStop(1, shadeHex(cloth, -0.12));
+  x.beginPath(); x.arc(r, r, r - 1, 0, Math.PI * 2); x.fillStyle = g; x.fill();
+  x.lineWidth = px * 0.035; x.strokeStyle = gilt;
+  x.beginPath(); x.arc(r, r, r - px * 0.05, 0, Math.PI * 2); x.stroke();
+  b = { cv, ready: false, wait: onload ? [onload] : [] };
+  badges.set(key, b);
+  // A heavier line than on the cover: a node is small on screen.
+  const svg = symbolSVG(book).replace('<svg ', `<svg xmlns="http://www.w3.org/2000/svg" color="${gilt}" `)
+    .replace(/stroke-width="2\.2"/g, 'stroke-width="4.2"');
+  const img = new Image();
+  img.onload = () => {
+    const vb = (/viewBox="([^"]+)"/.exec(svg)?.[1] || '0 0 120 100').split(/\s+/).map(Number);
+    const box = px * 0.62, k = box / Math.max(vb[2], vb[3]), w = vb[2] * k, h = vb[3] * k;
+    x.drawImage(img, r - w / 2, r - h / 2, w, h);
+    b.ready = true; b.wait.forEach(f => f()); b.wait = [];
+  };
+  img.src = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
+  return cv;
+}
+function shadeHex(hex, k) {
+  const m = /^#?([0-9a-f]{6})$/i.exec(hex || '');
+  if (!m) return hex || '#57605c';
+  const v = parseInt(m[1], 16), f = c => Math.round(Math.max(0, Math.min(255, k > 0 ? c + (255 - c) * k : c * (1 + k))));
+  return `rgb(${f(v >> 16)},${f((v >> 8) & 255)},${f(v & 255)})`;
+}
+
 export function coverHTML(book) {
-  const motif = MOTIFS[book.cover?.motif] || MOTIFS.leaf;
+  const motif = symbolSVG(book);
   const vol = book.vol ? `<span class="cv">Volume ${roman(book.vol)}</span>` : '';
   return `<span class="cover-art"><span class="ct">${esc(book.title)}</span>${vol}${motif}<span class="ca">${esc(book.author)}</span></span>`;
 }

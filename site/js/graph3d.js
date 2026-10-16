@@ -1,7 +1,6 @@
 // The map in space (graph.js's default when the browser has WebGL): 3d-force-graph with three.js (site/vendor). Each
-// book is a standing box: the spine (facing the camera at first) in its shelf cloth with the accent gilt bands, the
-// front cover in the cover cloth with a gilt frame, page edges on top, bottom and fore-edge. Its height grows with its
-// relations; a book with none is small and faint. Titles are sprites that face the camera: always for related books,
+// book is a round badge facing the camera: its cover symbol in gilt on its cloth (art.js badgeCanvas). It grows with
+// its relations; a book with none is small and faint. Titles are sprites that face the camera: always for related books,
 // for the rest while hovered or lit. Relation lines keep the 2D rules (contact = solid / dashed / dotted, case = width,
 // kind = colour, particles and an arrowhead from the older work to the newer); genres pull their books together and their names float
 // in space as large faint letters. An author is a small gilt medal facing the camera, its name always shown, tied to its
@@ -9,14 +8,12 @@
 // motion).
 import { isDrafts } from './catalog.js';
 import { GENRES, CASE_W, PER_YEAR, shortTitle, authorForces, drawMedal } from './graph.js';
+import { badgeCanvas } from './art.js';
 
 const DASH = { documented: null, probable: [7, 5], none: [1.6, 4] };
 const SPIN = 0.45; // OrbitControls.autoRotateSpeed: one turn in a little over two minutes
 const UP = [0, 0.26, 1]; // the first view: from the front, a little above
 const FRONT = [0, 0, 1]; // the timeline, straight on
-// One book's faces in its tile of the sheet: u ranges of each region.
-const AT = { spine: [0, 0.3125], cover: [0.3125, 0.8125], pages: [0.8125, 0.9375], back: [0.9375, 1] };
-const PAGE = '#efe7d4';
 
 export function make3D(env) {
   const T = window.THREE;
@@ -82,22 +79,11 @@ export function make3D(env) {
     return f;
   }
 
-  /* ---------- books: one box geometry for all, each with its own face atlas ---------- */
-  const box = new T.BoxGeometry(0.31, 1, 0.68);
-  {
-    // Faces in BoxGeometry order: +x front cover, -x back cover, +y top, -y bottom, +z spine, -z fore-edge.
-    const regions = [AT.cover, AT.back, AT.pages, AT.pages, AT.spine, AT.pages];
-    const uv = box.getAttribute('uv');
-    for (let f = 0; f < 6; f++) {
-      const [u0, u1] = regions[f];
-      for (let v = 0; v < 4; v++) { const i = f * 4 + v; uv.setX(i, u0 + uv.getX(i) * (u1 - u0)); }
-    }
-    uv.needsUpdate = true;
-  }
-  const shade = (hex, k) => { const c = new T.Color(hex); return `#${c.offsetHSL(0, 0, k).getHexString()}`; };
-  // Every book's faces on one sheet, a tile each: one texture to upload, not one per book (that stalls the first
-  // frame). Each book's material reads its own tile through a clone that shares the sheet's source.
-  const TILE = 128, PAD = 2, COLS = 16, S = TILE - PAD * 2;
+  /* ---------- books: each a badge with its cover symbol (art.js), on a sprite that faces the camera ---------- */
+  // Every badge on one sheet, a tile each: one texture to upload, not one per book (that stalls the first frame).
+  // Each book's sprite reads its own tile through a clone that shares the sheet's source. A badge's symbol decodes a
+  // moment later: its tile is drawn again then, and the sheet uploaded once more (at most once a frame).
+  const TILE = 128, COLS = 16;
   const sheet = document.createElement('canvas');
   sheet.width = COLS * TILE;
   sheet.height = 2 ** Math.ceil(Math.log2(Math.max(1, Math.ceil(nodes.length / COLS)) * TILE));
@@ -105,52 +91,15 @@ export function make3D(env) {
   const sheetTex = new T.CanvasTexture(sheet);
   sheetTex.colorSpace = T.SRGBColorSpace;
   sheetTex.anisotropy = 4;
-  let tiles = 0;
-  function atlas(b) {
-    const i = tiles++, ox = (i % COLS) * TILE + PAD, oy = Math.floor(i / COLS) * TILE + PAD;
-    const x = ink, cloth = b.spine?.color || '#57605c', gilt = b.accent || '#c9a24a';
-    x.save();
-    x.translate(ox, oy);
-    x.beginPath(); x.rect(-PAD, -PAD, TILE, TILE); x.clip();
-    const col = r => [r[0] * S, (r[1] - r[0]) * S];
-    // Spine: rounded cloth, light across the middle; gilt bands as on the shelf.
-    let [x0, w] = col(AT.spine);
-    x.fillStyle = cloth; x.fillRect(x0 - PAD, -PAD, w + PAD, TILE);
-    const g = x.createLinearGradient(x0, 0, x0 + w, 0);
-    g.addColorStop(0, 'rgba(0,0,0,.28)'); g.addColorStop(0.32, 'rgba(255,255,255,.16)');
-    g.addColorStop(0.6, 'rgba(255,255,255,.02)'); g.addColorStop(1, 'rgba(0,0,0,.32)');
-    x.fillStyle = g; x.fillRect(x0, -PAD, w, TILE);
-    x.fillStyle = gilt;
-    const band = S * 0.035;
-    x.fillRect(x0 + w * 0.08, S * 0.1, w * 0.84, band);
-    x.fillRect(x0 + w * 0.08, S * 0.1 + band * 2, w * 0.84, band * 0.6);
-    x.fillRect(x0 + w * 0.08, S * 0.8, w * 0.84, band);
-    // Front cover: the cover cloth a shade lighter, a gilt frame and a small gilt lozenge.
-    [x0, w] = col(AT.cover);
-    x.fillStyle = shade(cloth, 0.035); x.fillRect(x0, -PAD, w, TILE);
-    const cg = x.createLinearGradient(x0, 0, x0 + w, 0);
-    cg.addColorStop(0, 'rgba(0,0,0,.22)'); cg.addColorStop(0.08, 'rgba(0,0,0,0)'); cg.addColorStop(1, 'rgba(255,255,255,.05)');
-    x.fillStyle = cg; x.fillRect(x0, -PAD, w, TILE);
-    x.strokeStyle = gilt; x.lineWidth = 2;
-    x.strokeRect(x0 + w * 0.14, S * 0.07, w * 0.74, S * 0.86);
-    x.lineWidth = 1;
-    x.strokeRect(x0 + w * 0.2, S * 0.1, w * 0.62, S * 0.8);
-    x.fillStyle = gilt;
-    x.beginPath();
-    const cx = x0 + w * 0.51, cy = S * 0.42;
-    x.moveTo(cx, cy - 7); x.lineTo(cx + 4.5, cy); x.lineTo(cx, cy + 7); x.lineTo(cx - 4.5, cy); x.closePath(); x.fill();
-    // Page edges: cream with faint leaves.
-    [x0, w] = col(AT.pages);
-    x.fillStyle = PAGE; x.fillRect(x0, -PAD, w, TILE);
-    x.fillStyle = 'rgba(120,100,70,.14)';
-    for (let k = 2; k < w; k += 3) x.fillRect(x0 + k, -PAD, 1, TILE);
-    // Back cover: plain cloth.
-    [x0, w] = col(AT.back);
-    x.fillStyle = shade(cloth, -0.02); x.fillRect(x0, -PAD, w + PAD, TILE);
-    x.restore();
+  let tiles = 0, sheetDirty = false;
+  function atlas(n) {
+    const i = tiles++, ox = (i % COLS) * TILE, oy = Math.floor(i / COLS) * TILE;
+    const paint = () => { ink.clearRect(ox, oy, TILE, TILE); ink.drawImage(cv, ox, oy); sheetDirty = true; };
+    const cv = badgeCanvas(n.lb, n.b.spine?.color || '#57605c', n.b.accent || '#c9a24a', TILE, paint);
+    paint();
     const t = sheetTex.clone();
-    t.repeat.set(S / sheet.width, S / sheet.height);
-    t.offset.set(ox / sheet.width, 1 - (oy + S) / sheet.height);
+    t.repeat.set(TILE / sheet.width, TILE / sheet.height);
+    t.offset.set(ox / sheet.width, 1 - (oy + TILE) / sheet.height);
     t.needsUpdate = true; // the sheet itself is uploaded once, by whichever book is drawn first
     return t;
   }
@@ -217,10 +166,14 @@ export function make3D(env) {
     s.aspect = r.w / r.h; s.renderOrder = 20;
     return s;
   }
+  // A book's title; in a cascade, with how many of its relations a click would add.
+  const titleOf = n => { const more = env.more(n); return shortTitle(n.b.title) + (more ? `  +${more}` : ''); };
   function labelOf(n) {
+    if (n.label && !n.isA && n.labelText !== titleOf(n)) relabel(n);
     if (!n.label) {
       const c = C(), strong = n.deg > 0;
-      n.label = n.isA ? nameSprite(n) : textSprite(shortTitle(n.b.title), { fill: strong ? c.ink : c.ink2, stroke: c.bg });
+      if (!n.isA) n.labelText = titleOf(n);
+      n.label = n.isA ? nameSprite(n) : textSprite(n.labelText, { fill: strong ? c.ink : c.ink2, stroke: c.bg });
       n.obj3.add(n.label);
     }
     return n.label;
@@ -265,18 +218,17 @@ export function make3D(env) {
     if (n.obj3) return n.obj3;
     if (n.isA) return medalObject(n);
     const g = new T.Group();
-    const mat = new T.MeshLambertMaterial({ map: atlas(n.b), transparent: true });
-    const mesh = new T.Mesh(box, mat);
+    const sp = new T.Sprite(new T.SpriteMaterial({ map: atlas(n), transparent: true, alphaTest: 0.08 }));
     // Hidden books (filters, or their spines in the air) are not under the pointer.
-    mesh.raycast = function (rc, out) { if (n.vis && !n.away && g.visible) T.Mesh.prototype.raycast.call(this, rc, out); };
-    mesh.scale.setScalar(n.h);
-    g.add(mesh);
-    if (n.b.status === 'proposed' && isDrafts()) { // a draft record: a small gold seal at the head
+    sp.raycast = function (rc, out) { if (n.vis && !n.away && g.visible) T.Sprite.prototype.raycast.call(this, rc, out); };
+    sp.scale.setScalar(n.h);
+    g.add(sp);
+    if (n.b.status === 'proposed' && isDrafts()) { // a draft record: a small gold seal at the rim
       const seal = new T.Mesh(new T.SphereGeometry(1, 10, 8), new T.MeshBasicMaterial({ color: '#d4a72c', transparent: true }));
       seal.raycast = () => {};
       g.add(seal); n.seal = seal;
     }
-    n.obj3 = g; n.mesh = mesh;
+    n.obj3 = g; n.mesh = sp;
     return g;
   }
 
@@ -298,7 +250,7 @@ export function make3D(env) {
       l.pmesh = new T.Mesh(new T.SphereGeometry(((CASE_W[l.case] || 1.8) + 1.6) * 0.42, 10, 8),
         new T.MeshBasicMaterial({ color: C().rel(l.rel), transparent: true, depthWrite: false }));
       // An arrowhead by the newer book, the way the particles go; it shares their material, so it dims with them.
-      const ar = ((CASE_W[l.case] || 1.8) + 1.6) * 0.85;
+      const ar = ((CASE_W[l.case] || 1.8) + 1.6) * 1.35;
       const cone = new T.ConeGeometry(ar, ar * 2.8, 12);
       cone.translate(0, -ar * 1.4, 0); // the tip at the origin
       l.arrow = new T.Mesh(cone, l.pmesh.material);
@@ -340,7 +292,7 @@ export function make3D(env) {
       const pts = pointsOf(l);
       obj.geometry.setPositions(pts.flatMap(p => [p.x, p.y, p.z]));
       obj.computeLineDistances();
-      // The arrow's tip where the line leaves the newer book's box.
+      // The arrow's tip where the line leaves the newer book's badge.
       const t = l.target, reach = t.h * (t.s || 1) * 0.5 + 3, end = new T.Vector3(t.x, t.y, t.z);
       let i = pts.length - 1;
       while (i > 1 && pts[i - 1].distanceTo(end) < reach) i--;
@@ -349,6 +301,27 @@ export function make3D(env) {
     }
     return true;
   }
+
+  // In a cascade each line says what it is, along its arrow ('answered by'), in its colour, at its middle.
+  const verbs = new Map();
+  function verbOf(l, a) {
+    let s = verbs.get(l);
+    if (!env.cascade()) { if (s) s.visible = false; return; }
+    if (!s) {
+      s = textSprite(env.verbOf(l), { italic: true, size: 40, fill: C().rel(l.rel), stroke: C().bg });
+      s.renderOrder = 15; scene.add(s); verbs.set(l, s);
+    }
+    const p = vec(l.source).lerp(vec(l.target), env.verbAt(l)), k = pxAt(p), h = (11 * 1.32) / k;
+    // Words that would fall on a title, or on other words, are left out (the tooltip names the line).
+    const c = scr(p), tw = (h * s.aspect * k) / 2, b = { x0: c.x - tw, x1: c.x + tw, y0: c.y - 7, y1: c.y + 7 };
+    if (crowd(b)) { s.visible = false; return; }
+    place(b);
+    s.position.copy(p);
+    s.scale.set(h * s.aspect, h, 1);
+    s.material.opacity = a;
+    s.visible = true;
+  }
+  const dropVerbs = () => { verbs.forEach(s => { scene.remove(s); s.material.map.dispose(); s.material.dispose(); }); verbs.clear(); };
 
   /* ---------- the engine ---------- */
   const fg = ForceGraph3D({ controlType: 'orbit', rendererConfig: { antialias: true, alpha: true, powerPreference: 'high-performance' } })(stage)
@@ -361,7 +334,7 @@ export function make3D(env) {
     .nodeThreeObject(bookObject)
     .linkThreeObject(linkObject)
     .linkPositionUpdate(placeLink)
-    .linkCurvature(l => (l.kind === 'rel' ? 0.18 : 0))
+    .linkCurvature(l => (l.kind === 'rel' && !env.cascade() ? 0.18 : 0)) // a cascade's lines run straight
     .linkDirectionalParticles(l => (l.kind === 'rel' ? (l.case === 'strong' ? 4 : 3) : 0))
     .linkDirectionalParticleSpeed(l => (l.case === 'speculative' ? 0.0035 : 0.005))
     .linkDirectionalParticleThreeObject(l => l.pmesh)
@@ -457,7 +430,7 @@ export function make3D(env) {
     const ps = ns.filter(has).map(vec);
     if (!ps.length) return { k: 1 };
     const dir = camera.position.clone().sub(controls.target);
-    if (face || dir.lengthSq() < 1e-6) dir.set(...(env.layout() === 'timeline' ? FRONT : UP));
+    if (face || dir.lengthSq() < 1e-6) dir.set(...(env.front() ? FRONT : UP));
     dir.normalize();
     const right3 = new T.Vector3().crossVectors(camera.up, dir).normalize(), up3 = new T.Vector3().crossVectors(dir, right3);
     // The books' extent across, up and in depth as the camera sees them, with room for titles.
@@ -523,6 +496,7 @@ export function make3D(env) {
   const right3 = new T.Vector3(), up3 = new T.Vector3(); // the camera's axes, for titles beside a book
   scene.onBeforeRender = () => {
     frameNo++;
+    if (sheetDirty) { sheetDirty = false; sheetTex.needsUpdate = true; }
     if (!entered && nodes.every(has)) { entered = true; on.placed(); setTimeout(on.firstFrame); }
     if (ptrDirty && !hovering) {
       ptrDirty = false;
@@ -530,7 +504,7 @@ export function make3D(env) {
       const l = p ? lineAt(p, true) : null;
       if (l !== overLine) { overLine = l; on.hoverLink(l); }
     }
-    controls.autoRotate = spin && !env.touched() && !hovering && !overLine && env.layout() !== 'timeline';
+    controls.autoRotate = spin && !env.touched() && !hovering && !overLine && !env.front();
     const c = C(), focus = focusing();
     const inFlight = nodes.some(n => n.away); // author names wait until the books have landed
     placed.clear();
@@ -546,10 +520,10 @@ export function make3D(env) {
       if (!show) continue;
       const lit1 = lit.has(n), marked = env.marked(n);
       n.a = ease(n.a, focus ? (lit1 ? 1 : 0.1) : env.restAlpha(n));
-      n.s = ease(n.s, marked ? 1.18 : 1);
+      n.s = ease(n.s, (marked ? 1.18 : 1) * (env.cascade() ? 1.8 : 1)); // a cascade has room: its badges are larger
       n.mesh.material.opacity = n.a;
       n.mesh.scale.setScalar(n.h * n.s);
-      if (n.seal) { n.seal.position.set(0, n.h * n.s / 2 + 1.6, 0); n.seal.material.opacity = n.a; }
+      if (n.seal) { n.seal.position.set(n.h * n.s * 0.38, n.h * n.s * 0.38, 0.5); n.seal.material.opacity = n.a; }
       // Titles: always for related books, for the rest while hovered or lit.
       const dim = !focus && env.filters.rels.size && !n.relOn;
       const want = (n.isA && !inFlight) || lit1 || n === env.hoverNode() || (!focus && !dim && n.deg > 0);
@@ -566,13 +540,14 @@ export function make3D(env) {
       const k = pxAt(g.position), px = (n.isA ? 11.5 : n.deg || lit1 ? 12.5 : 11) * Math.min(1.45, Math.max(0.9, Math.sqrt(k)));
       const hW = (px * 1.32) / k, wW = hW * s.aspect, tw = wW * k;
       s.scale.set(wW, hW, 1);
-      const ctr = scr(g.position), half = (n.h * n.s * k) / 2, side = (n.h * n.s * (n.isA ? 1 : 0.31) * k) / 2 + 6 + tw / 2;
+      const ctr = scr(g.position), half = (n.h * n.s * k) / 2, side = (n.h * n.s * k) / 2 + 6 + tw / 2;
       const at = (dx, dy) => ({ dx, dy, x0: ctr.x + dx - tw / 2, x1: ctr.x + dx + tw / 2, y0: ctr.y + dy - px / 2, y1: ctr.y + dy + px / 2 });
       const tries = [at(0, half + 5 + px / 2), at(0, -half - 5 - px / 2), at(side, 0), at(-side, 0)];
       const best = tries.find(t => !crowd(t)) || tries.reduce((m, t) => (crowd(t) < crowd(m) ? t : m));
       place(best); place({ x0: ctr.x - side + tw / 2, x1: ctr.x + side - tw / 2, y0: ctr.y - half, y1: ctr.y + half }); // its book too
       s.position.copy(right3).multiplyScalar(best.dx / k).addScaledVector(up3, -best.dy / k);
     }
+    verbs.forEach(s => { s.visible = false; }); // shown again below for the cascade's lines
     for (const l of links) {
       const o = l.obj3;
       if (!o) continue;
@@ -586,6 +561,7 @@ export function make3D(env) {
         o.material.opacity = 0.88 * a;
         o.material.linewidth = (CASE_W[l.case] || 1.8) * (lit1 && env.hoverLink() === l ? 1.4 : 1);
         l.pmesh.material.opacity = a;
+        verbOf(l, a);
       }
     }
     hairFade = inFlight ? 0 : ease(hairFade, 1, 0.08);
@@ -752,7 +728,7 @@ export function make3D(env) {
     screen: n => scr(n),
     size(n, scaled) {
       const k = pxAt(vec(n)), h = n.h * (scaled ? n.s : 1) * k;
-      return { w: h * 0.31, h };
+      return { w: h, h };
     },
     mid: l => scr(l.__curve ? l.__curve.getPoint(0.5) : vec(l.source).add(vec(l.target)).multiplyScalar(0.5)),
     lineAt,
@@ -761,7 +737,7 @@ export function make3D(env) {
       let best = null, bd = Infinity;
       for (const n of nodes) {
         if (!n.vis || !has(n)) continue;
-        const p = scr(n), k = pxAt(vec(n)), hw = (n.h * (n.isA ? 1 : 0.4) * k) / 2 + pad, hh = (n.h * k) / 2 + pad;
+        const p = scr(n), k = pxAt(vec(n)), hw = (n.h * k) / 2 + pad, hh = hw;
         const dx = Math.abs(px - p.x), dy = Math.abs(py - p.y);
         if (dx > hw || dy > hh) continue;
         const d = camera.position.distanceTo(vec(n)) - (n.isA ? 1e5 : 0); // the nearest book in front; an author first
@@ -796,7 +772,7 @@ export function make3D(env) {
       dropAxis();
       nodes.forEach(relabel);
       names?.tex.dispose(); names = null;
-      makeRegions(); placeRegions();
+      makeRegions(); placeRegions(); dropVerbs();
       links.forEach(l => {
         if (!l.obj3 || l.kind !== 'rel') return;
         l.obj3.material.color.set(c.rel(l.rel));
@@ -819,7 +795,7 @@ export function make3D(env) {
       setTimeout(() => {
         nodes.forEach(n => { relabel(n); n.mesh?.material.map.dispose(); n.mesh?.material.dispose(); delete n.obj3; delete n.mesh; delete n.seal; });
         links.forEach(l => { delete l.obj3; delete l.pmesh; });
-        sheetTex.dispose(); medalTex.dispose(); names?.tex.dispose(); dropAxis();
+        sheetTex.dispose(); medalTex.dispose(); names?.tex.dispose(); dropAxis(); dropVerbs();
         hairGeo.dispose(); hair.material.dispose();
         fg._destructor?.();
         renderer.dispose();
