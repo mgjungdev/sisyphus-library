@@ -95,6 +95,9 @@ def load_symbols() -> dict:
     return out
 
 
+ESSENTIAL = 10  # relations on the map that make a work essential reading
+
+
 def main():
     catalog = json.loads((CONTENT / "books.json").read_text(encoding="utf-8"))
     (OUT / "books").mkdir(parents=True, exist_ok=True)
@@ -103,6 +106,17 @@ def main():
     def is_ready(meta: dict) -> bool:
         slug = meta["slug"]
         return (CONTENT / "sources" / f"{slug}.txt").exists() and bool(meta.get("reviewed"))
+
+    # Essential reading, bound in black on the shelves: the works most tied to others on the relations map (proposed
+    # records counted). It must never stop the shelves from building.
+    essential = set()
+    try:
+        import catalog as relations
+        for n in relations.build(relations.load(), drafts=True)["nodes"]:
+            if (n.get("degree") or 0) >= ESSENTIAL:
+                essential.update(n.get("slugs") or [])
+    except Exception as e:  # noqa: BLE001
+        print(f"  essential skipped: {e!r}")
 
     # The volume that follows each volume, when it is ready: the reader links to it on the last page.
     vols = {(m["series"], m["vol"]): m for m in catalog if m.get("vol")}
@@ -122,6 +136,8 @@ def main():
             info.update(status="ready", words=words, minutes=book["minutes"], chapters=len(book["chapters"]))
             print(f"  built {slug}: {words} words")
         info["spine"] = {**meta["spine"], "thickness": thickness(words)}
+        if slug in essential:
+            info["essential"] = True
         out.append(info)
     genres = list(dict.fromkeys(b["genre"] for b in catalog))
     order = ["Fairy Tales & Fables", "Adventure", "Mystery & Detective", "Gothic & Horror", "Ghost Stories",

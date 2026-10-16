@@ -1,133 +1,127 @@
-/* ================= Library: a page of covers ================= */
+/* ================= Library: shelves of spines ================= */
+/* A page of sections (a month, a century, a genre), each a header that pins under the bars while its books pass and is
+   pushed off by the next, then rows of books on ledges. Essential reading is bound in black, the rest in cream; the
+   genre is the band at the foot. */
 body[data-view="library"] { background: var(--wall); }
 .library {
+  --row: 252px; --stick: 112px;
   max-width: 1240px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 48px) 120px;
-  display: grid; grid-template-columns: repeat(var(--cols, 3), minmax(0, 1fr)); column-gap: var(--gap, 48px); row-gap: clamp(44px, 7vh, 72px);
-  align-items: start;
 }
 @media (min-width: 1100px) { .library { max-width: calc(1240px + 84px); padding-right: calc(clamp(16px, 4vw, 48px) + 84px); } }
+@media (max-width: 639px) { .library { --row: 222px; } }
 
-.month { min-width: 0; scroll-margin-top: 128px; }
-.month-head { display: grid; gap: 8px; margin: 0 0 18px; padding: 0 2px; }
-.month-head h2 { display: flex; align-items: baseline; gap: 12px; margin: 0; font-family: var(--font-display); font-weight: 400; line-height: 1; letter-spacing: -.005em; }
-.month-head .m { font-size: clamp(34px, 3vw, 44px); }
-.month-head .y { font: 500 11px/1 var(--font-ui); letter-spacing: .18em; color: var(--ink-3); font-variant-numeric: tabular-nums; }
-.month-head p { margin: 0; font: 500 10.5px/1.5 var(--font-ui); letter-spacing: .16em; text-transform: uppercase; color: var(--ink-3); }
-.month.is-current .month-head .y::after { content: "\00b7  This month"; margin-left: 4px; color: var(--ink); text-transform: uppercase; white-space: pre; }
-.month.long .month-head .m { font-size: clamp(28px, 2.6vw, 36px); text-wrap: balance; }
+.pin-mark { position: absolute; top: 0; left: 0; width: 1px; height: 1px; pointer-events: none; }
+.month { position: relative; min-width: 0; scroll-margin-top: var(--stick); content-visibility: auto; contain-intrinsic-size: auto 340px; }
+.month-head {
+  position: sticky; top: var(--stick); z-index: 12; height: 76px; display: flex; align-items: flex-end; gap: 14px;
+  margin: 0; padding: 0 2px 10px; background: var(--wall);
+}
+.month-head::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: var(--rule); opacity: 0; transition: opacity .3s; }
+/* the books passing under a pinned header fade into it rather than being cut off at a line */
+.month-head::before { content: ""; position: absolute; left: 0; right: 0; top: 100%; height: 22px; background: linear-gradient(var(--wall), transparent); opacity: 0; transition: opacity .3s; pointer-events: none; }
+.month-head h2 { display: block; margin: 0; font: 400 clamp(36px, 3.4vw, 44px)/1 var(--font-display); letter-spacing: -.005em; white-space: nowrap;
+  transform-origin: 0 100%; transition: transform .35s cubic-bezier(.2,.8,.2,1); }
+.month-head .m { display: flex; align-items: center; gap: 8px; min-width: 0; padding-bottom: 6px; transition: transform .35s cubic-bezier(.2,.8,.2,1); }
+.month-head .sw { flex: none; width: 9px; height: 9px; border-radius: 2px; background: var(--g); }
+.month-head p { margin: 0; font: 500 10.5px/1.4 var(--font-ui); letter-spacing: .16em; text-transform: uppercase; color: var(--ink-3); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+.month-head .now { color: var(--ink); }
+/* pinned: the title settles to a smaller size on the same baseline, the line beside it follows, a hairline under */
+.month-head.pinned h2 { transform: scale(.62); }
+.month-head.pinned .m { transform: translateX(calc(var(--shrink, 0px) * -1)); }
+.month-head.pinned::after, .month-head.pinned::before { opacity: 1; }
+@media (max-width: 639px) { .month-head { height: 64px; } .month-head h2 { font-size: 32px; } }
 
-.covers { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px 14px; }
-.month.wide .covers { grid-template-columns: repeat(auto-fill, minmax(104px, 1fr)); }
-@media (max-width: 639px) {
-  .library { row-gap: 40px; }
-  .month-head .m { font-size: 30px; }
-  .covers { gap: 16px 10px; }
-  .month.wide .covers { grid-template-columns: repeat(auto-fill, minmax(74px, 1fr)); }
-  .month.is-current .month-head .y::after { content: "\00b7  Now"; }
+/* rows of books on ledges: every book the same height, a ledge under each row */
+.shelf-rows {
+  display: flex; flex-wrap: wrap; align-items: flex-end; align-content: flex-start; gap: 0 2px; padding: 18px 10px 30px;
+  background: repeating-linear-gradient(to bottom, transparent 0 calc(var(--row) - 14px), var(--ledge-edge) calc(var(--row) - 14px) calc(var(--row) - 12px), var(--ledge) calc(var(--row) - 12px) var(--row));
 }
 
-/* A book: its cover (the cloth softened into the page, its symbol), then title and author */
+/* ================= A book on the shelf: flat at rest, a box when pointed at ================= */
+/* At rest a book is its spine with a thin strip of page edge above it, so hundreds of books cost no 3D layers;
+   pointed at, found or taken out it becomes a box (the same faces the pulled-out book is made of). */
 .book {
-  --c: #7a3b2e; --a: #d9b45a;
-  display: grid; gap: 7px; align-content: start; min-width: 0;
-  padding: 0; border: 0; background: none; cursor: pointer; text-align: left; color: var(--ink);
-  -webkit-tap-highlight-color: transparent;
+  --c: #7a3b2e; --a: #d9b45a; --g: #8a8a83;
+  position: relative; flex: 0 0 auto; width: var(--t); height: var(--h); margin: calc(var(--row) - var(--h) - 14px) 0 14px;
+  padding: 0; border: 0; background: none; cursor: pointer; -webkit-tap-highlight-color: transparent; transition: opacity .3s ease;
 }
-.shelf-cover {
-  position: relative; display: grid; place-items: center; aspect-ratio: 2 / 3; max-width: 100%;
-  background: color-mix(in srgb, var(--c) var(--cover-mix), var(--wall)); color: var(--cover-ink);
-  transition: transform .35s cubic-bezier(.2,.8,.2,1);
-}
-.shelf-cover svg { width: 58%; height: auto; }
-.sc-vol { position: absolute; bottom: 7%; font: 500 12px/1 var(--font-display); letter-spacing: .14em; }
-.sc-progress { position: absolute; left: 0; bottom: 0; height: 2px; width: var(--p); background: var(--cover-ink); opacity: .9; }
-.sc-done { position: absolute; right: 9%; top: 7%; width: 6px; height: 6px; border-radius: 50%; background: var(--cover-ink); }
-.shelf-t { font: 500 15.5px/1.2 var(--font-display); overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
-.shelf-a { font: 500 9.5px/1.3 var(--font-ui); letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-@media (max-width: 639px) { .shelf-t { font-size: 13.5px; } .shelf-a { font-size: 8.5px; letter-spacing: .1em; } }
-@media (hover: hover) { .book[data-status="ready"]:hover .shelf-cover { transform: translateY(-3px); } }
+.book::before { content: ""; position: absolute; left: 0; right: 0; top: -5px; height: 5px; clip-path: polygon(6% 0, 94% 0, 100% 100%, 0 100%);
+  background: linear-gradient(90deg, rgb(0 0 0 / .12), transparent 18%, transparent 82%, rgb(0 0 0 / .12)), repeating-linear-gradient(90deg, #f2ede1 0 1px, #e3dccb 1px 2px); }
+.book::after { content: ""; position: absolute; left: -1px; right: -3px; bottom: -3px; height: 5px; background: radial-gradient(closest-side, rgb(0 0 0 / .2), transparent); pointer-events: none; }
+.book .book-3d { transform: none; transition: transform .45s cubic-bezier(.2,.8,.2,1); }
+.book .face.spine { transform: none; }
+.book .face.top, .book .face.cover { display: none; }
+.book.live { perspective: 1400px; perspective-origin: 50% -30%; z-index: 2; }
+.book.live::before { display: none; }
+.book.live .book-3d { transform-style: preserve-3d; transform: translateZ(calc(var(--w) / -2)); }
+.book.live .face.spine { transform: translateZ(calc(var(--w) / 2)); }
+.book.live .face.top, .book.live .face.cover { display: block; }
+@media (hover: hover) { .book.live:hover .book-3d { transform: translateZ(calc(var(--w) / -2 + 30px)) translateY(-8px) rotateY(-18deg); } }
+.book.live.hit .book-3d { transform: translateZ(calc(var(--w) / -2 + 30px)) translateY(-8px) rotateY(-18deg); }
+.book.is-out .book-3d { opacity: 0; transition: none; }
+.book.is-out::before, .book.is-out::after { opacity: 0; }
 .book:focus-visible { outline: none; }
-.book:focus-visible .shelf-cover { outline: 2px solid var(--focus); outline-offset: 3px; }
-.book.is-out .shelf-cover, .shelf-cover.is-out { opacity: 0; transition: none; }
+.book:focus-visible .spine { outline: 2px solid var(--focus); outline-offset: 2px; }
+.library.searching .book:not(.match) { opacity: .22; }
 .book[data-status="planned"] { cursor: default; }
-.book[data-status="planned"] .shelf-cover { background: transparent; box-shadow: inset 0 0 0 1px var(--rule); }
-.book[data-status="planned"] .shelf-t { color: var(--ink-3); }
-.fly .shelf-cover { position: absolute; inset: 0; aspect-ratio: auto; }
-/* in the air a cover is plain cloth: its symbol would be painted again every frame */
-.fly .shelf-cover > * { display: none; }
-.fly .shelf-cover { will-change: transform; }
+.book[data-status="planned"] .spine { opacity: .5; }
 
-/* ================= Book (3D): the pulled-out book ================= */
+/* ================= Book (3D): the faces, on the shelf and pulled out ================= */
 .book-3d {
   position: absolute; inset: 0; transform-style: preserve-3d;
   transform: translateZ(calc(var(--w) / -2));
 }
 .face { position: absolute; display: block; backface-visibility: hidden; -webkit-backface-visibility: hidden; }
+/* the spine: cream paper (black for essential reading), the title in a serif, the author's surname in small capitals,
+   a hairline, the genre band, the library's mark */
 .spine {
-  left: 0; top: 0; width: var(--t); height: var(--h);
+  left: 0; top: 0; width: var(--t); height: var(--h); box-sizing: border-box; overflow: hidden;
   transform: translateZ(calc(var(--w) / 2));
-  /* a rounded cloth spine: dark at both turns, lit on the left shoulder, a woven grain, worn a little at head and tail */
-  background:
-    linear-gradient(90deg, rgb(0 0 0 / .46) 0, rgb(0 0 0 / .14) 8%, rgb(255 255 255 / .17) 24%, rgb(255 255 255 / .07) 38%, transparent 56%, rgb(0 0 0 / .12) 80%, rgb(0 0 0 / .44) 100%),
-    linear-gradient(180deg, rgb(255 255 255 / .10), transparent 7%, transparent 92%, rgb(0 0 0 / .22)),
-    repeating-linear-gradient(0deg, rgb(255 255 255 / .035) 0 1px, transparent 1px 2px),
-    repeating-linear-gradient(90deg, rgb(0 0 0 / .04) 0 1px, transparent 1px 2px),
-    var(--grain, none) 0 0 / 120px 120px;
-  background-color: var(--c);
-  background-blend-mode: normal, normal, normal, normal, overlay;
-  border-radius: 3px 3px 2px 2px;
-  display: flex; flex-direction: column; align-items: center; justify-content: space-between;
-  padding: 12px 0 10px;
-  color: var(--a);
-  box-shadow: 0 0 0 .5px rgb(0 0 0 / .4), inset 0 1px 0 rgb(255 255 255 / .12);
+  display: flex; flex-direction: column; align-items: center;
+  background: var(--spine-cream); color: var(--spine-ink);
 }
-.spine::before, .spine::after { /* gilt bands, catching the light across the round */
-  content: ""; position: absolute; left: 3px; right: 3px; height: 6px;
-  background:
-    linear-gradient(90deg, rgb(0 0 0 / .45), rgb(255 255 255 / .55) 30%, rgb(255 255 255 / .1) 50%, rgb(0 0 0 / .35)),
-    var(--a);
-  background-blend-mode: overlay, normal;
-  -webkit-mask: linear-gradient(#000 0 1px, transparent 1px 5px, #000 5px 6px);
-  mask: linear-gradient(#000 0 1px, transparent 1px 5px, #000 5px 6px);
-  opacity: .9;
-}
-.spine::before { top: 6px; }
-.spine::after { bottom: 22px; }
-.spine-title {
-  writing-mode: vertical-rl; text-orientation: mixed;
-  font: 600 var(--fs, 12px)/1 var(--font-read); letter-spacing: .03em;
-  max-height: calc(var(--h) - 44px); overflow: hidden; white-space: nowrap; text-overflow: ellipsis;
-  margin-top: 8px;
-  /* gold leaf: lit where the spine turns toward the light */
-  background: linear-gradient(90deg, color-mix(in srgb, var(--a) 62%, #000), color-mix(in srgb, var(--a) 55%, #fff) 42%, var(--a) 62%, color-mix(in srgb, var(--a) 75%, #000));
-  -webkit-background-clip: text; background-clip: text; color: transparent;
-  filter: drop-shadow(0 .5px 0 rgb(0 0 0 / .45));
-}
-.spine-author { font: 600 8.5px/1 var(--font-ui); letter-spacing: .08em; opacity: .9; }
-.spine-vol { font: 600 10px/1 var(--font-read); letter-spacing: .04em; margin: auto 0 6px; }
+.spine::after { content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(90deg, rgb(0 0 0 / .16), rgb(0 0 0 / .02) 14%, rgb(255 255 255 / .07) 34%, transparent 56%, rgb(0 0 0 / .04) 82%, rgb(0 0 0 / .18)); }
+.spine .sp-t { flex: 1; min-height: 0; padding: 13px 0 6px; display: flex; justify-content: center; }
+.spine .sp-t span { writing-mode: vertical-rl; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-height: 100%;
+  font: 500 var(--fs, 14px)/1 var(--font-display); }
+.spine .sp-v { font: 500 10px/1 var(--font-display); margin-bottom: 6px; color: var(--spine-ink-2); }
+.spine .sp-a { font: 600 6.5px/1 var(--font-ui); letter-spacing: .14em; writing-mode: vertical-rl; text-transform: uppercase; color: var(--spine-ink-2);
+  max-height: 56px; overflow: hidden; margin-bottom: 8px; }
+.spine .sp-l { flex: 0 0 1px; width: 100%; background: rgb(0 0 0 / .12); }
+.spine .sp-g { flex: 0 0 5%; width: 100%; background: var(--g); }
+.spine .sp-m { flex: 0 0 22px; display: grid; place-items: center; }
+.spine .sp-m svg { width: 10px; height: 10px; }
+.spine.must { background: var(--spine-black); color: var(--spine-cream-ink); }
+.spine.must .sp-v, .spine.must .sp-a { color: rgb(239 232 216 / .72); }
+.spine.must .sp-l { background: rgb(239 232 216 / .5); }
 .cover, .back {
   top: 0; width: var(--w); height: var(--h);
   left: calc((var(--t) - var(--w)) / 2);
-  background: color-mix(in srgb, var(--c) var(--cover-mix), var(--wall));
+  background: var(--spine-cream);
 }
+.must .cover, .must .back { background: var(--spine-black); }
 .cover { transform: rotateY(90deg) translateZ(calc(var(--t) / 2)); }
 .back  { transform: rotateY(-90deg) translateZ(calc(var(--t) / 2)); filter: brightness(.8); }
 .top {
   left: 0; width: var(--t); height: var(--w);
   top: calc((var(--h) - var(--w)) / 2);
   transform: rotateX(90deg) translateZ(calc(var(--h) / 2));
-  background:
-    linear-gradient(180deg, rgb(0 0 0 / .18), transparent 30%, transparent 85%, rgb(0 0 0 / .12)),
-    repeating-linear-gradient(90deg, #f1e9d6 0 1px, #dbcfb4 1px 2px);
-  box-shadow: inset 2px 0 0 var(--c), inset -2px 0 0 var(--c), inset 0 2px 0 color-mix(in srgb, var(--c) 70%, #000);
+  background: linear-gradient(90deg, rgb(0 0 0 / .12), transparent 18%, transparent 82%, rgb(0 0 0 / .12)), repeating-linear-gradient(90deg, #f2ede1 0 1px, #e3dccb 1px 2px);
 }
-/* ================= Cover art ================= */
+/* ================= Cover art: the same paper as the spine, title, author, the genre band, the mark ================= */
 .cover-art {
-  position: absolute; inset: 0; display: grid; place-items: center;
-  background: color-mix(in srgb, var(--c) var(--cover-mix), var(--wall)); color: var(--cover-ink);
+  position: absolute; inset: 0; display: flex; flex-direction: column;
+  background: var(--spine-cream); color: var(--spine-ink);
 }
-.cover-art svg { width: 54%; height: auto; }
-.cover-art .cv { position: absolute; bottom: 8%; font: 500 calc(var(--w) * .07)/1 var(--font-display); letter-spacing: .14em; }
+.must .cover-art, .cover-art.must { background: var(--spine-black); color: var(--spine-cream-ink); }
+.cover-art .ca-t { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8%; padding: 12% 10%; text-align: center; }
+.cover-art .ca-t svg { width: 34%; height: auto; opacity: .85; }
+.cover-art .ca-t b { font: 500 calc(var(--w) * .115)/1.12 var(--font-display); text-wrap: balance; }
+.cover-art .ca-t i { font: 600 calc(var(--w) * .042)/1.4 var(--font-ui); font-style: normal; letter-spacing: .16em; text-transform: uppercase; opacity: .72; }
+.cover-art .ca-g { flex: 0 0 6%; background: var(--g); }
+.cover-art .ca-m { flex: 0 0 13%; display: grid; place-items: center; }
+.cover-art .ca-m svg { width: 9%; height: auto; }
 
 /* ================= Pull-out layer ================= */
 #flight-layer {
@@ -154,12 +148,10 @@ body[data-view="library"] { background: var(--wall); }
 .cover-board .cover-art, .cover-board .endpaper { backface-visibility: hidden; -webkit-backface-visibility: hidden; }
 .endpaper {
   position: absolute; inset: 0; transform: rotateY(180deg);
-  background: color-mix(in srgb, var(--c) 25%, var(--surface));
+  background: color-mix(in srgb, var(--g) 22%, var(--surface));
 }
 /* the pulled-out book is flat, like its cover: no leather, no gilt bands */
-.fbook .spine { background: color-mix(in srgb, var(--c) var(--cover-mix), var(--wall)); filter: brightness(.92); box-shadow: none; color: var(--cover-ink); }
-.fbook .spine::before, .fbook .spine::after { display: none; }
-.fbook .spine-title { background: none; color: var(--cover-ink); filter: none; font-family: var(--font-display); font-weight: 500; }
+.fbook .spine .sp-t span { font-size: calc(var(--t) * .42); }
 .title-page {
   position: absolute; inset: 1.5% 1.5% 1.5% 0; transform: translateZ(-2px);
   background: linear-gradient(90deg, color-mix(in srgb, var(--page) 88%, #000), var(--page) 7%);
@@ -262,12 +254,18 @@ body[data-view="library"] { background: var(--wall); }
 .tag-track::-webkit-scrollbar { display: none; }
 .tagbar .chip { flex: 0 0 auto; min-height: 32px; font-size: 13px; background: color-mix(in srgb, var(--surface) 55%, transparent); }
 .tagbar .chip[aria-pressed="true"] { background: var(--ink); }
-.book { transition: opacity .35s ease; }
 .book.dim { opacity: .12; pointer-events: none; }
+
+/* ================= Search on the shelves ================= */
+.shelf-search { position: relative; flex: none; display: block; }
+.shelf-search input { width: min(260px, 46vw); height: 34px; box-sizing: border-box; border: 1px solid var(--rule); border-radius: 999px;
+  background: var(--surface); color: var(--ink); font: 14px var(--font-ui); padding: 0 60px 0 34px; }
+.shelf-search input::-webkit-search-cancel-button { display: none; }
+.shelf-search svg { position: absolute; left: 12px; top: 9px; width: 16px; height: 16px; color: var(--ink-3); pointer-events: none; }
+.shelf-search .n { position: absolute; right: 12px; top: 8px; font-size: 12px; color: var(--ink-3); font-variant-numeric: tabular-nums; pointer-events: none; }
+.tagbar { display: flex; align-items: center; gap: 10px; }
+.tagbar .tag-track { flex: 1; min-width: 0; }
 @media (max-width: 560px) { .arrange .chip { padding: 0 11px; } }
-/* in the air between shelves and map the cloth is too small and quick to see: a plain round spine paints in time */
-.fly .spine {
-  background: linear-gradient(90deg, rgb(0 0 0 / .4), rgb(255 255 255 / .12) 26%, transparent 56%, rgb(0 0 0 / .4)), var(--c);
-  background-blend-mode: normal;
-}
-.fly .spine-title { background: none; color: var(--a); filter: none; }
+/* in the air between shelves and map the lettering fades (transit.js); the spine keeps its paper and its band */
+.fly .spine::after { display: none; }
+.fly .spine > :not(.sp-g) { visibility: hidden; } /* only paper and band in the air: lettering would be painted again every frame */

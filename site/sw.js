@@ -1,5 +1,5 @@
 // Offline support: app shell and book data network-first (revalidated past the HTTP cache), dictionary lookups cache-first.
-const VERSION = 'v35';
+const VERSION = 'v36';
 const SHELL = `shell-${VERSION}`, DATA = `data-${VERSION}`, LOOKUP = 'lookup-v1', FONTS = 'fonts-v1';
 const SHELL_FILES = [
   './', 'index.html', 'manifest.webmanifest', 'img/icon.svg',

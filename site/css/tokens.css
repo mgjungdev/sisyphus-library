@@ -20,11 +20,13 @@
   /* a cover: the book's cloth mixed this far into the page, its symbol in this colour */
   --cover-mix: 45%;
   --cover-ink: #fbfbf8;
+  /* spines: cream paper with ink lettering, or black (essential reading) with cream lettering */
+  --spine-cream: #f4efe3; --spine-ink: #23221f; --spine-ink-2: #77746c; --spine-black: #26241f; --spine-cream-ink: #efe8d8;
   --focus: #2f6fb3;
   --shadow: 0 1px 2px rgb(28 34 32 / .06), 0 12px 32px -8px rgb(28 34 32 / .18);
 
-  --ledge: #f7f7f4;
-  --ledge-edge: #d6dad3;
+  --ledge: #e4e2db;
+  --ledge-edge: #f8f8f5;
   --ledge-shadow: rgb(40 48 44 / .22);
   --book-shadow: rgb(28 34 32 / .35);
   --scrim: rgb(243 243 240 / .88);
@@ -64,7 +66,7 @@
   --ink: #ecebe6; --ink-2: #b5b4ad; --ink-3: #8a8a83; --rule: #2e2e2b;
   --accent: #ecebe6; --accent-ink: #1c1c1a;
   --shadow: 0 1px 2px rgb(0 0 0 / .4), 0 14px 36px -8px rgb(0 0 0 / .7);
-  --ledge: #242422; --ledge-edge: #0f0f0e; --ledge-shadow: rgb(0 0 0 / .6); --book-shadow: rgb(0 0 0 / .7); --wall-ao: rgb(0 0 0 / .35);
+  --ledge: #2b2b28; --ledge-edge: #34342f; --ledge-shadow: rgb(0 0 0 / .6); --book-shadow: rgb(0 0 0 / .7); --wall-ao: rgb(0 0 0 / .35);
   --scrim: rgb(28 28 26 / .95);
   --cover-mix: 78%; --cover-ink: #e9e4d6;
   --page: #1f1f1d; --page-ink: #dedcd5; --page-ink-2: #8f8e88; --surround: #171716;
@@ -77,7 +79,7 @@
     --ink: #ecebe6; --ink-2: #b5b4ad; --ink-3: #8a8a83; --rule: #2e2e2b;
     --accent: #ecebe6; --accent-ink: #1c1c1a;
     --shadow: 0 1px 2px rgb(0 0 0 / .4), 0 14px 36px -8px rgb(0 0 0 / .7);
-    --ledge: #242422; --ledge-edge: #0f0f0e; --ledge-shadow: rgb(0 0 0 / .6); --book-shadow: rgb(0 0 0 / .7); --wall-ao: rgb(0 0 0 / .35);
+    --ledge: #2b2b28; --ledge-edge: #34342f; --ledge-shadow: rgb(0 0 0 / .6); --book-shadow: rgb(0 0 0 / .7); --wall-ao: rgb(0 0 0 / .35);
     --scrim: rgb(28 28 26 / .95);
     --cover-mix: 78%; --cover-ink: #e9e4d6;
     --page: #1f1f1d; --page-ink: #dedcd5; --page-ink-2: #8f8e88; --surround: #171716;

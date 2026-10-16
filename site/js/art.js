@@ -130,10 +130,20 @@ function shadeHex(hex, k) {
   return `rgb(${f(v >> 16)},${f((v >> 8) & 255)},${f(v & 255)})`;
 }
 
-// A cover: the cloth colour softened, the symbol, and a volume number for one volume of a longer novel.
+// Each genre's colour on the shelves: the band at a spine's foot, as an old paperback list coded its lists.
+export const GENRE_INK = {
+  'Fairy Tales & Fables': '#c49a45', 'Adventure': '#94485a', 'Mystery & Detective': '#3e6a53', 'Gothic & Horror': '#4b4060',
+  'Ghost Stories': '#5e6d78', 'Science Fiction & Fantasy': '#2f5d70', 'Love & Society': '#bf6a42', 'Humor & Satire': '#a4473c',
+  'Realism & Character': '#7a5b3f',
+};
+export const genreInk = g => GENRE_INK[g] || '#8a8a83';
+// The library's mark: a stone on a slope.
+export const MARK = '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2 16L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="9" cy="8.6" r="4.2" fill="currentColor"/></svg>';
+
+// A cover: the spine's paper (black for essential reading), the symbol, the title, the author, the genre band, the mark.
 export function coverHTML(book) {
-  const vol = book.vol ? `<span class="cv">${roman(book.vol)}</span>` : '';
-  return `<span class="cover-art">${symbolSVG(book)}${vol}</span>`;
+  const vol = book.vol ? `<i>Volume ${roman(book.vol)} of ${roman(book.vols)}</i>` : '';
+  return `<span class="cover-art${book.essential ? ' must' : ''}"><span class="ca-t">${symbolSVG(book)}<b>${esc(book.title)}</b>${vol}<i>${esc(book.author)}</i></span><span class="ca-g"></span><span class="ca-m">${MARK}</span></span>`;
 }
 
 export const roman = n => [[10, 'X'], [9, 'IX'], [5, 'V'], [4, 'IV'], [1, 'I']]

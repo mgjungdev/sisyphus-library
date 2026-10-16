@@ -1,4 +1,4 @@
-import { coverHTML, symbolSVG, initials, esc, roman, volOf } from './art.js';
+import { coverHTML, genreInk, MARK, esc, roman, volOf } from './art.js';
 import { getProgress, prefs } from './store.js';
 
 const reduceMotion = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -34,15 +34,15 @@ function groupBooks(lib, mode) {
   return list;
 }
 
-function summary(g) {
+// The line beside a section's name: its year (months), how many stories, how many essential, how long.
+function summary(g, current) {
   const n = g.books.length;
   const ready = g.books.filter(b => b.status === 'ready');
+  const must = ready.filter(b => b.essential).length;
   const mins = ready.reduce((t, b) => t + b.minutes, 0);
   const time = mins >= 90 ? `about ${Math.round(mins / 60)} hours` : `about ${mins} minutes`;
-  const stories = `${num(n)} ${n === 1 ? 'story' : 'stories'}`;
-  if (!ready.length) return `${stories}, coming soon.`;
-  if (ready.length === n) return `${stories}, ${time} of reading.`;
-  return `${stories}. ${num(ready.length)} ready, ${time} of reading.`;
+  const parts = [g.small, `${num(n)} ${n === 1 ? 'story' : 'stories'}`, must ? `${num(must)} essential` : '', ready.length ? time : 'coming soon'].filter(Boolean);
+  return parts.map(esc).join(' · ') + (current ? ' · <span class="now">This month</span>' : '');
 }
 
 export function renderLibrary(root, lib, { go }) {
@@ -58,44 +58,35 @@ export function renderLibrary(root, lib, { go }) {
   bar.innerHTML = `<div class="arrange seg" role="group" aria-label="Arrange shelves by">${MODES.map(([m, l]) =>
     `<button class="chip" data-mode="${m}" aria-pressed="${m === mode}">${l}</button>`).join('')}</div>`;
 
-  let spy = null;
-  // The page: groups side by side in columns, each a row of covers; a group of more than four books (a genre, a
-  // century) takes the whole width.
-  function wall() {
-    const narrow = isNarrow();
-    const pad = Math.min(48, Math.max(16, innerWidth * 0.04));
-    const nav = innerWidth >= 1100 ? 84 : 0; // the timeline at the right edge keeps its own lane
-    const inner = Math.min(innerWidth - nav, 1240) - 2 * pad;
-    const gap = narrow ? 20 : 64, min = narrow ? 300 : 420;
-    const cols = Math.max(1, Math.min(3, Math.floor((inner + gap) / (min + gap))));
-    return { narrow, cols, gap };
-  }
+  let spy = null, pins = null;
   function draw() {
-    const W = wall();
     const thisMonth = new Date().toISOString().slice(0, 7);
     const groups = groupBooks(lib, mode);
     const target = mode === 'month' ? (groups.find(g => g.key >= thisMonth) || groups[groups.length - 1]) : null;
-    const span = g => (mode !== 'month' && g.books.length > 4 ? W.cols : 1);
     root.innerHTML = `
-    <div class="library" data-mode="${mode}" style="--cols:${W.cols};--gap:${W.gap}px">
-      <div class="tagbar" role="group" aria-label="Show stories tagged">
+    <div class="library" data-mode="${mode}">
+      <div class="tagbar" role="group" aria-label="Find a book, or show stories tagged">
+        <label class="shelf-search"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"/><path d="M13 13l4 4" stroke-linecap="round"/></svg>
+          <input type="search" placeholder="Find a book or author" autocomplete="off" aria-label="Find a book or author" value="${esc(query)}"><span class="n"></span></label>
         <div class="tag-track">
           <button class="chip" data-tag="" aria-pressed="${!tag}">All stories</button>
           ${tags.map(t => `<button class="chip" data-tag="${esc(t)}" aria-pressed="${tag === t}">${esc(t)}</button>`).join('')}
         </div>
       </div>
-      ${groups.map(g => { const n = span(g); return `
-      <section class="month${g === target ? ' is-current' : ''}${g.long ? ' long' : ''}${n > 1 ? ' wide' : ''}" id="grp-${slugify(g.key)}" data-group="${esc(g.key)}" aria-label="${esc(g.big)}"${n > 1 ? ` style="grid-column: span ${n}"` : ''}>
-        <header class="month-head">
-          <h2><span class="m">${esc(g.big)}</span>${g.small ? `<span class="y">${esc(g.small)}</span>` : ''}</h2>
-          <p>${summary(g)}</p>
+      ${groups.map(g => `
+      <section class="month${g === target ? ' is-current' : ''}" id="grp-${slugify(g.key)}" data-group="${esc(g.key)}" aria-label="${esc(g.big)}">
+        <i class="pin-mark" aria-hidden="true"></i>
+        <header class="month-head"${mode === 'genre' ? ` style="--g:${genreInk(g.key)}"` : ''}>
+          <h2>${esc(g.big)}</h2><span class="m">${mode === 'genre' ? '<span class="sw"></span>' : ''}<p>${summary(g, g === target)}</p></span>
         </header>
-        <div class="month-body covers">${g.books.map(b => bookHTML(b, g.big)).join('')}</div>
-      </section>`; }).join('')}
+        <div class="shelf-rows">${g.books.map(b => bookHTML(b, g.big)).join('')}</div>
+      </section>`).join('')}
     </div>
     ${timeline(groups, mode)}`;
 
     applyTag();
+    pinHeads();
+    search();
     const shelves = [...root.querySelectorAll('.month')];
     spy?.disconnect();
     spy = new IntersectionObserver(es => {
@@ -117,6 +108,67 @@ export function renderLibrary(root, lib, { go }) {
       nav.querySelectorAll('.tl-year').forEach(el => el.classList.toggle('open', el.dataset.year === y));
     }
   }
+
+  // Each section's header pins under the bars while its books pass, and the next one pushes it off (position: sticky
+  // in its section). Pinned, its title settles smaller: a mark at the top of the section has gone under the bars.
+  function pinHeads() {
+    pins?.disconnect();
+    const lib0 = root.querySelector('.library');
+    const top = Math.round((document.querySelector('.topbar')?.getBoundingClientRect().height || 56) + (root.querySelector('.tagbar')?.getBoundingClientRect().height || 0));
+    lib0.style.setProperty('--stick', `${top}px`);
+    pins = new IntersectionObserver(es => es.forEach(e => {
+      e.target.nextElementSibling.classList.toggle('pinned', !e.isIntersecting && e.boundingClientRect.top < top - 2);
+    }), { rootMargin: `-${top - 2}px 0px 0px 0px` });
+    root.querySelectorAll('.pin-mark').forEach(m => {
+      pins.observe(m);
+      const h = m.nextElementSibling, t = h.querySelector('h2');
+      h.style.setProperty('--shrink', `${Math.round(t.offsetWidth * 0.38)}px`); // the line beside it follows the smaller title
+    });
+  }
+
+  // A book is a box only while it is pointed at, found or taken out; a moment after, it is flat again.
+  const settle = el => { clearTimeout(el._flat); el._flat = setTimeout(() => { if (!el.matches(':hover') && !el.classList.contains('hit') && !el.classList.contains('is-out')) el.classList.remove('live'); }, 500); };
+  // its cover is drawn the first time it becomes a box: hundreds of covers no one turns to would weigh on the page
+  const liven = el => {
+    if (el.classList.contains('live')) return;
+    const cv = el.querySelector('.face.cover');
+    if (cv && !cv.firstChild) cv.innerHTML = coverHTML(books.get(el.dataset.slug));
+    el.classList.add('live'); void el.offsetWidth;
+  };
+  root.addEventListener('pointerover', e => { const el = e.target.closest('.book[data-status="ready"]'); if (el) liven(el); });
+  root.addEventListener('pointerout', e => { const el = e.target.closest('.book'); if (el && !el.contains(e.relatedTarget)) settle(el); });
+
+  // Search: the books that match stay bright, the first comes forward and the page goes to it; Enter moves on.
+  let query = '', hits = [], at = 0, typing = 0;
+  const fold = s => (s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  function search(go = false) {
+    const lib0 = root.querySelector('.library'), count = root.querySelector('.shelf-search .n');
+    const v = fold(query.trim());
+    lib0.classList.toggle('searching', !!v);
+    root.querySelectorAll('.book.match, .book.hit').forEach(el => { el.classList.remove('match', 'hit'); settle(el); });
+    if (!v) { hits = []; count.textContent = ''; return; }
+    hits = [...root.querySelectorAll('.book')].filter(el => { const b = books.get(el.dataset.slug); return fold(b.title).includes(v) || fold(b.author).includes(v); });
+    hits.forEach(el => el.classList.add('match'));
+    count.textContent = hits.length ? `${Math.min(at, hits.length - 1) + 1}/${hits.length}` : '0';
+    if (go && hits.length) showHit();
+  }
+  function showHit() {
+    at = Math.min(at, hits.length - 1);
+    const el = hits[at];
+    root.querySelectorAll('.book.hit').forEach(x => { x.classList.remove('hit'); settle(x); });
+    liven(el); requestAnimationFrame(() => el.classList.add('hit'));
+    el.scrollIntoView({ behavior: reduceMotion() ? 'auto' : 'smooth', block: 'center' });
+    root.querySelector('.shelf-search .n').textContent = `${at + 1}/${hits.length}`;
+  }
+  root.addEventListener('input', e => {
+    if (!e.target.matches('.shelf-search input')) return;
+    query = e.target.value; at = 0; clearTimeout(typing); typing = setTimeout(() => search(true), 160);
+  });
+  root.addEventListener('keydown', e => {
+    if (!e.target.matches('.shelf-search input')) return;
+    if (e.key === 'Enter' && hits.length) { e.preventDefault(); at = (at + (e.shiftKey ? hits.length - 1 : 1)) % hits.length; showHit(); }
+    if (e.key === 'Escape') { e.target.value = query = ''; search(); }
+  });
 
   function applyTag() {
     root.querySelectorAll('.book').forEach(el => el.classList.toggle('dim', !!tag && !books.get(el.dataset.slug).tags.includes(tag)));
@@ -173,7 +225,7 @@ export function renderLibrary(root, lib, { go }) {
   };
   addEventListener('scroll', onScroll, { passive: true });
   let rz, lastW = innerWidth;
-  const onResize = () => { if (innerWidth === lastW) return; lastW = innerWidth; clearTimeout(rz); rz = setTimeout(draw, 200); };
+  const onResize = () => { if (innerWidth === lastW) return; lastW = innerWidth; clearTimeout(rz); rz = setTimeout(pinHeads, 200); };
   addEventListener('resize', onResize);
 
   root.addEventListener('click', e => {
@@ -192,11 +244,12 @@ export function renderLibrary(root, lib, { go }) {
     }
     const el = e.target.closest('.book');
     if (!el || el.dataset.status !== 'ready') return;
-    pullOut(el.querySelector('.shelf-cover') || el, books.get(el.dataset.slug), go);
+    liven(el);
+    pullOut(el, books.get(el.dataset.slug), go);
   });
 
   return () => {
-    spy?.disconnect();
+    spy?.disconnect(); pins?.disconnect(); clearTimeout(typing);
     bar.innerHTML = '';
     removeEventListener('scroll', onScroll);
     if (scrollT) { clearTimeout(scrollT); try { sessionStorage.setItem('sl.libScroll', String(scrollY)); } catch { /* ignore */ } }
@@ -225,25 +278,23 @@ function timeline(groups, mode) {
 const slugify = k => String(k).toLowerCase().replace(/[^a-z0-9]+/g, '-');
 export const yearText = y => (y < 0 ? `c. ${-y} BC` : y < 1000 ? `c. ${y}` : String(y));
 
-// A book on the page: its cover (the cloth colour softened, its symbol) with the title and author under it. The
-// cover is what flies: out to the pull-out, and to and from the map.
+// A book on the shelf: a spine all books share the height of, as wide as the book is long. Its faces are the pulled-out
+// book's (--h tall, --t thick, --w deep); the top and cover show only while it is a box (pointed at, found, taken out).
 function bookHTML(b, groupLabel) {
-  const p = getProgress(b.slug);
   const ready = b.status === 'ready';
-  const label = `${b.title}${b.vol ? `, volume ${b.vol} of ${b.vols},` : ''} by ${b.author}${ready ? '' : `, ${groupLabel}, coming soon`}`;
+  const label = `${b.title}${b.vol ? `, volume ${b.vol} of ${b.vols},` : ''} by ${b.author}${b.essential ? ', essential reading' : ''}${ready ? '' : `, ${groupLabel}, coming soon`}`;
+  const h = isNarrow() ? 196 : 224, t = Math.round(Math.max(20, Math.min(46, (b.spine?.thickness || 22) * 1.05 + 6)));
   return `
-  <button class="book" type="button" data-slug="${b.slug}" data-status="${b.status}" style="--c:${b.spine?.color};--a:${b.cover?.accent}"
+  <button class="book${b.essential ? ' must' : ''}" type="button" data-slug="${b.slug}" data-status="${b.status}"
+    style="--h:${h}px;--t:${t}px;--w:${Math.round(h * 0.66)}px;--c:${b.spine?.color};--a:${b.cover?.accent};--g:${genreInk(b.genre)}"
     aria-label="${esc(label)}" ${ready ? '' : 'aria-disabled="true"'}>
-    <span class="shelf-cover" data-face="cover">${ready ? symbolSVG(b) : ''}${b.vol ? `<span class="sc-vol">${roman(b.vol)}</span>` : ''}${
-      p && !p.done ? `<span class="sc-progress" style="--p:${p.pct || 0}%"></span>` : ''}${p && p.done ? '<span class="sc-done"></span>' : ''}</span>
-    <span class="shelf-t">${esc(b.title)}</span>
-    <span class="shelf-a">${esc(b.author)}</span>
+    <span class="book-3d"><span class="face top"></span><span class="face cover"></span><span class="face spine${b.essential ? ' must' : ''}">${spineHTML(b)}</span></span>
   </button>`;
 }
 
+const surname = a => (a || '').replace(/\(.*?\)/g, '').trim().split(/\s+/).pop();
 function spineHTML(b) {
-  const vol = b.vol ? `<span class="spine-vol">${roman(b.vol)}</span>` : '';
-  return `<span class="spine-title">${esc(b.title)}</span>${vol}<span class="spine-author">${esc(initials(b.author))}</span>`;
+  return `<span class="sp-t"><span>${esc(b.title)}</span></span>${b.vol ? `<span class="sp-v">${roman(b.vol)}</span>` : ''}<span class="sp-a">${esc(surname(b.author))}</span><span class="sp-l"></span><span class="sp-g"></span><span class="sp-m">${MARK}</span>`;
 }
 
 /* ---------------- pull-out ---------------- */
@@ -281,7 +332,7 @@ export function pullOut(el, book, go, extra = '', onPick = null) {
   const started = p && p.para > 1 && !p.done;
   layer.innerHTML = `
     <div class="flight-backdrop"></div>
-    <div class="frig"><div class="fbook" style="--fs:${Math.min(tf * 0.4, (Hf - 60) / (book.title.length * 0.56))}px;--h:${Hf}px;--t:${tf}px;--w:${wf}px;--c:${book.spine.color};--a:${book.cover.accent};left:${cx - tf / 2}px;top:${cy - Hf / 2}px">
+    <div class="frig"><div class="fbook${book.essential ? ' must' : ''}" style="--fs:${Math.min(tf * 0.42, (Hf - 60) / (book.title.length * 0.56))}px;--h:${Hf}px;--t:${tf}px;--w:${wf}px;--c:${book.spine.color};--a:${book.cover.accent};--g:${genreInk(book.genre)};left:${cx - tf / 2}px;top:${cy - Hf / 2}px">
       <span class="book-3d">
         <span class="face back"></span>
         <span class="face top"></span>
@@ -289,7 +340,7 @@ export function pullOut(el, book, go, extra = '', onPick = null) {
           <span class="title-page"><span class="tt">${esc(book.title)}</span>${book.vol ? `<span class="tv">${volOf(book)}</span>` : ''}<hr><span class="ta">${esc(book.author)}</span></span>
           <span class="cover-board">${coverHTML(book)}<span class="endpaper"></span></span>
         </span>
-        <span class="face spine">${spineHTML(book)}</span>
+        <span class="face spine${book.essential ? ' must' : ''}">${spineHTML(book)}</span>
       </span>
     </div></div>
     <section class="flight-info" style="${infoStyle}" role="dialog" aria-modal="true" aria-labelledby="fi-title">
