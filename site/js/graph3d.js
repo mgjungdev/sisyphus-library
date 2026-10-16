@@ -2,16 +2,15 @@
 // book is a round badge facing the camera: its cover symbol in gilt on its cloth (art.js badgeCanvas). It grows with
 // its relations; a book with none is small and faint. Titles are sprites that face the camera: always for related books,
 // for the rest while hovered or lit. Relation lines keep the 2D rules (contact = solid / dashed / dotted, case = width,
-// kind = colour, particles and an arrowhead from the older work to the newer); genres pull their books together and their names float
-// in space as large faint letters. An author is a small gilt medal facing the camera, its name always shown, tied to its
-// books by hairlines that pull them together. The map turns slowly until the reader takes hold of it (not under reduced
-// motion).
+// kind = colour, an arrowhead from the older work to the newer; faint at rest, full when lit); genres pull their books
+// into islands, each a soft pool of tone with its name floating by it. An author is a small gilt medal facing the
+// camera, its name shown as the reader comes close, tied to its books by hairlines that pull them together. The map
+// holds still until the reader turns it.
 import { isDrafts } from './catalog.js';
-import { GENRES, CASE_W, PER_YEAR, shortTitle, authorForces, drawMedal } from './graph.js';
+import { GENRES, CASE_W, REST_LINE, TITLES_AT, NAMES_AT, zoomIn, PER_YEAR, shortTitle, authorForces, drawMedal } from './graph.js';
 import { badgeCanvas } from './art.js';
 
 const DASH = { documented: null, probable: [7, 5], none: [1.6, 4] };
-const SPIN = 0.45; // OrbitControls.autoRotateSpeed: one turn in a little over two minutes
 const UP = [0, 0.26, 1]; // the first view: from the front, a little above
 const FRONT = [0, 0, 1]; // the timeline, straight on
 
@@ -27,7 +26,7 @@ export function make3D(env) {
   function placeAnchors() {
     const r = stage.getBoundingClientRect();
     const aspect = Math.min(2.2, Math.max(0.45, (r.width || 1280) / (r.height || 800)));
-    const R = 230, rx = R * Math.sqrt(aspect), ry = R / Math.sqrt(aspect);
+    const R = 560, rx = R * Math.sqrt(aspect), ry = R / Math.sqrt(aspect);
     anchors = new Map(GENRES.map((g, i) => {
       const t = (-85 / 180) * Math.PI + (i / GENRES.length) * Math.PI * 2;
       // y is up in three.js: the 2D map's top (Gothic) stays at the top. Neighbours step forward and back.
@@ -45,11 +44,11 @@ export function make3D(env) {
       }));
       ns.forEach(n => {
         const a = anchors.get(n.isA ? n.home : n.genre) || { x: 0, y: 0, z: 0 };
-        const k = (n.deg ? 0.03 : n.isA ? 0.05 : 0.06) * alpha; // a book leans on its author more than on its genre
+        const k = (n.deg ? 0.07 : n.isA ? 0.08 : 0.12) * alpha; // a book leans on its author more than on its genre
         n.vx += (a.x - n.x) * k; n.vy += (a.y - n.y) * k;
         // Related books keep near the middle plane, so the web of relations faces the reader and its books do not
         // hide one another; the genre regions around it keep their depth. An author follows its books (link force).
-        if (!n.isA) n.vz += ((n.deg ? 0 : a.z) - n.z) * (n.deg ? 0.08 * alpha : k);
+        if (!n.isA) n.vz += ((n.deg ? 0 : a.z) - n.z) * (n.deg ? 0.25 * alpha : k);
         n.heads.forEach(h => {
           const c = heads.get(h);
           if (c.k > 1) { const s = 0.05 * alpha; n.vx += (c.x / c.k - n.x) * s; n.vy += (c.y / c.k - n.y) * s; n.vz += (c.z / c.k - n.z) * s; }
@@ -70,7 +69,7 @@ export function make3D(env) {
           const dx = b.x + b.vx - a.x - a.vx, dy = b.y + b.vy - a.y - a.vy, dz = b.z + b.vz - a.z - a.vz;
           const want = a.r + b.r, d2 = dx * dx + dy * dy + dz * dz;
           if (d2 >= want * want) continue;
-          const d = Math.sqrt(d2) || 0.01, push = (want - d) / d * 0.25;
+          const d = Math.sqrt(d2) || 0.01, push = (want - d) / d * 0.4;
           a.vx -= dx * push; a.vy -= dy * push; a.vz -= dz * push; b.vx += dx * push; b.vy += dy * push; b.vz += dz * push;
         }
       }
@@ -106,13 +105,14 @@ export function make3D(env) {
 
   /* ---------- labels: text on a canvas, on a sprite that faces the camera ---------- */
   const LABEL_PX = 48;
-  function textSprite(text, { italic = false, size = LABEL_PX, fill, stroke } = {}) {
+  function textSprite(text, { italic = false, size = LABEL_PX, fill, stroke, ui = false } = {}) {
     const cv = document.createElement('canvas'), x = cv.getContext('2d');
-    const font = `${italic ? 'italic ' : ''}${size}px ${C().font}`;
-    x.font = font;
+    const font = ui ? `600 ${size}px ${C().ui}` : `${italic ? 'italic ' : ''}${size}px ${C().font}`;
+    const spaced = () => { if (ui && 'letterSpacing' in x) x.letterSpacing = `${Math.round(size * 0.14)}px`; };
+    x.font = font; spaced();
     const pad = Math.ceil(size * 0.3), w = Math.ceil(x.measureText(text).width) + pad * 2, h = Math.ceil(size * 1.32);
     cv.width = w; cv.height = h;
-    x.font = font; x.textAlign = 'center'; x.textBaseline = 'middle'; x.lineJoin = 'round';
+    x.font = font; spaced(); x.textAlign = 'center'; x.textBaseline = 'middle'; x.lineJoin = 'round';
     if (stroke) { x.lineWidth = size * 0.22; x.strokeStyle = stroke; x.strokeText(text, w / 2, h / 2); }
     x.fillStyle = fill; x.fillText(text, w / 2, h / 2);
     const t = new T.CanvasTexture(cv);
@@ -246,14 +246,11 @@ export function make3D(env) {
       const geo = new T.LineGeometry();
       geo.setPositions([0, 0, 0, 1, 1, 1]);
       l.obj3 = new T.Line2(geo, mat);
-      // Particles: one material per line, so a line dims with its own.
-      l.pmesh = new T.Mesh(new T.SphereGeometry(((CASE_W[l.case] || 1.8) + 1.6) * 0.42, 10, 8),
-        new T.MeshBasicMaterial({ color: C().rel(l.rel), transparent: true, depthWrite: false }));
-      // An arrowhead by the newer book, the way the particles go; it shares their material, so it dims with them.
+      // An arrowhead by the newer book, with a material of its own, so it dims with its line.
       const ar = ((CASE_W[l.case] || 1.8) + 1.6) * 1.35;
       const cone = new T.ConeGeometry(ar, ar * 2.8, 12);
       cone.translate(0, -ar * 1.4, 0); // the tip at the origin
-      l.arrow = new T.Mesh(cone, l.pmesh.material);
+      l.arrow = new T.Mesh(cone, new T.MeshBasicMaterial({ color: C().rel(l.rel), transparent: true, depthWrite: false }));
       l.arrow.raycast = () => {};
       l.obj3.add(l.arrow);
     } else l.obj3 = new T.Object3D(); // book -> author: drawn with all the others in one batch (hair)
@@ -334,10 +331,7 @@ export function make3D(env) {
     .nodeThreeObject(bookObject)
     .linkThreeObject(linkObject)
     .linkPositionUpdate(placeLink)
-    .linkCurvature(l => (l.kind === 'rel' && !env.cascade() ? 0.18 : 0)) // a cascade's lines run straight
-    .linkDirectionalParticles(l => (l.kind === 'rel' ? (l.case === 'strong' ? 4 : 3) : 0))
-    .linkDirectionalParticleSpeed(l => (l.case === 'speculative' ? 0.0035 : 0.005))
-    .linkDirectionalParticleThreeObject(l => l.pmesh)
+    .linkCurvature(l => (l.kind === 'rel' && !env.cascade() ? 0.14 : 0)) // a cascade's lines run straight
     .enableNodeDrag(false)
     .d3VelocityDecay(0.32)
     .d3AlphaDecay(0.018)
@@ -360,8 +354,8 @@ export function make3D(env) {
   controls.rotateSpeed = 0.7; controls.zoomSpeed = 0.9;
   controls.minDistance = 30; controls.maxDistance = 4000;
   controls.touches = { ONE: T.TOUCH.ROTATE, TWO: T.TOUCH.DOLLY_PAN };
-  const spin = !env.reduced();
-  controls.autoRotate = spin; controls.autoRotateSpeed = SPIN;
+  const spin = false; // the map holds still: nothing moves until the reader turns it
+  controls.autoRotate = false;
 
   // Genre names: large faint letters floating by each region.
   const regions = new Map();
@@ -369,12 +363,49 @@ export function make3D(env) {
     regions.forEach(s => { scene.remove(s); s.material.map.dispose(); s.material.dispose(); });
     regions.clear();
     GENRES.forEach(g => {
-      const s = textSprite(g, { italic: true, size: 64, fill: C().ink3 });
+      const s = textSprite(g.toUpperCase(), { ui: true, size: 44, fill: C().ink3 });
       s.renderOrder = 1;
       scene.add(s); regions.set(g, s);
     });
   }
   makeRegions();
+
+  // Each genre is an island: a soft pool of tone under its books (one shared texture), drawn before everything else.
+  const islands = new Map();
+  let poolTex = null;
+  function makeIslands() {
+    islands.forEach(s => { scene.remove(s); s.material.dispose(); });
+    islands.clear();
+    poolTex?.dispose();
+    const cv = document.createElement('canvas'), x = cv.getContext('2d'), S = 128;
+    cv.width = cv.height = S;
+    const g = x.createRadialGradient(S / 2, S / 2, 0, S / 2, S / 2, S / 2);
+    g.addColorStop(0, 'rgba(255,255,255,1)'); g.addColorStop(0.6, 'rgba(255,255,255,.7)'); g.addColorStop(1, 'rgba(255,255,255,0)');
+    x.fillStyle = g; x.fillRect(0, 0, S, S);
+    poolTex = new T.CanvasTexture(cv);
+    GENRES.forEach(gn => {
+      const s = new T.Sprite(new T.SpriteMaterial({ map: poolTex, color: C().ink, transparent: true, depthWrite: false, depthTest: false, opacity: 0 }));
+      s.raycast = () => {}; s.renderOrder = -1;
+      scene.add(s); islands.set(gn, s);
+    });
+  }
+  makeIslands();
+  function placeIslands() {
+    const sums = new Map();
+    nodes.forEach(n => {
+      if (!n.genre || n.isA || !n.vis || !has(n)) return;
+      const s = sums.get(n.genre) || { x: 0, y: 0, z: 0, rr: 0, k: 0 };
+      s.x += n.x; s.y += n.y; s.z += n.z; s.rr += n.x * n.x + n.y * n.y; s.k++; sums.set(n.genre, s);
+    });
+    islands.forEach((sp, g) => {
+      const s = sums.get(g);
+      sp.home = !!s && s.k > 1;
+      if (!sp.home) return;
+      const mx = s.x / s.k, my = s.y / s.k, sd = Math.sqrt(Math.max(0, s.rr / s.k - mx * mx - my * my)), r = sd * 1.3 + 26;
+      sp.position.set(mx, my, s.z / s.k);
+      sp.scale.set(r * 2, r * 2, 1);
+    });
+  }
 
   // Compile the shaders off the main thread (KHR_parallel_shader_compile) before the first frame: compiling them on
   // first use stalls the page for most of a second, mid-flight when the books are flying in from the shelves.
@@ -524,14 +555,13 @@ export function make3D(env) {
       n.mesh.material.opacity = n.a;
       n.mesh.scale.setScalar(n.h * n.s);
       if (n.seal) { n.seal.position.set(n.h * n.s * 0.38, n.h * n.s * 0.38, 0.5); n.seal.material.opacity = n.a; }
-      // Titles: always for related books, for the rest while hovered or lit.
-      const dim = !focus && env.filters.rels.size && !n.relOn;
-      const want = (n.isA && !inFlight) || lit1 || n === env.hoverNode() || (!focus && !dim && n.deg > 0);
+      // Titles: always for hubs, for other related books as the reader comes close, for the rest while hovered or lit.
+      // An author's name shows as the reader comes close, or when lit.
+      const dim = !focus && env.filters.rels.size && !n.relOn, hov = n === env.hoverNode(), near = pxAt(g.position);
+      const want = (n.isA && !inFlight) || lit1 || hov || (!focus && !dim && n.deg > 0 && (n.hub || near > TITLES_AT));
       if (!want && !n.label) continue;
       const s = labelOf(n);
-      // On the timeline the books' years come first: an author's name shows as the reader zooms in, or when lit.
-      const mix = n.isA && !lit1 && !marked ? env.timeline()?.mix || 0 : 0;
-      const named = mix ? 1 - mix * (1 - Math.max(0, Math.min(1, (pxAt(g.position) - 1.2) / 0.6))) : 1;
+      const named = lit1 || hov || marked ? 1 : n.isA ? zoomIn(near, NAMES_AT) : n.hub ? 1 : zoomIn(near, TITLES_AT);
       s.material.opacity = ease(s.material.opacity, want ? Math.min(1, n.a + 0.15) * named : 0, 0.25);
       s.visible = s.material.opacity > 0.02;
       if (!s.visible) continue;
@@ -557,10 +587,12 @@ export function make3D(env) {
       if (!shown) continue;
       const lit1 = litLinks.has(l);
       if (l.kind === 'rel') {
-        const a = focus ? (lit1 ? 1 : 0.06) : 1;
+        const a = focus ? (lit1 ? 1 : 0.05) : env.filters.rels.size ? REST_LINE.filtered : REST_LINE.alpha;
+        const w = focus && lit1 ? (env.hoverLink() === l ? 1.4 : 1) : REST_LINE.width;
         o.material.opacity = 0.88 * a;
-        o.material.linewidth = (CASE_W[l.case] || 1.8) * (lit1 && env.hoverLink() === l ? 1.4 : 1);
-        l.pmesh.material.opacity = a;
+        o.material.linewidth = (CASE_W[l.case] || 1.8) * w;
+        l.arrow.material.opacity = a;
+        l.arrow.scale.setScalar(0.4 + 0.6 * w);
         verbOf(l, a);
       }
     }
@@ -573,25 +605,29 @@ export function make3D(env) {
     const fade = Math.max(0, Math.min(1, (3.2 - k) / 1.4));
     const lanes = 1 - (env.timeline()?.mix || 0); // on the timeline the lanes name the genres instead
     regions.forEach(s => { s.material.opacity = s.home ? fade * lanes * (focus ? 0.22 : 0.5) : 0; s.visible = s.material.opacity > 0.01; });
+    // A name that would run off the side of the screen slides back in along it.
+    const SW = stage.clientWidth;
+    regions.forEach(s => {
+      if (!s.visible || !s.base) return;
+      const q = scr(s.base), kk = pxAt(s.base), half = (s.scale.x * kk) / 2;
+      const dx = Math.max(0, 8 - (q.x - half)) - Math.max(0, q.x + half - (SW - 8));
+      s.position.copy(s.base).addScaledVector(right3, dx / kk);
+    });
+    islands.forEach(s => { s.material.opacity = s.home ? lanes * (c.dark ? 0.09 : 0.07) * (focus ? 0.5 : 1) : 0; s.visible = s.material.opacity > 0.005; });
     drawAxis();
     on.frame();
   };
   function placeRegions() {
-    const sums = new Map();
-    nodes.forEach(n => {
-      if (!n.genre || n.deg || !n.vis || !has(n)) return;
-      const s = sums.get(n.genre) || { x: 0, y: 0, z: 0, rr: 0, k: 0 };
-      s.x += n.x; s.y += n.y; s.z += n.z; s.rr += n.x * n.x + n.y * n.y + n.z * n.z; s.k++; sums.set(n.genre, s);
-    });
+    placeIslands();
+    // Each name in small capitals at its island's outer rim, away from the middle where the lines between genres cross.
     regions.forEach((sp, g) => {
-      const s = sums.get(g);
-      sp.home = !!s;
-      if (!s) return;
-      const m = new T.Vector3(s.x / s.k, s.y / s.k, s.z / s.k), sd = Math.sqrt(Math.max(0, s.rr / s.k - m.lengthSq()));
-      const out = new T.Vector3(m.x, m.y, 0).normalize();
-      sp.position.copy(m).addScaledVector(out, sd * 1.2 + 26);
-      const h = 22;
-      sp.scale.set(h * sp.aspect, h, 1);
+      const isle = islands.get(g);
+      sp.home = !!isle?.home;
+      if (!sp.home) return;
+      const h = 30, w = h * sp.aspect, r = isle.scale.x / 2, out = new T.Vector3(isle.position.x, isle.position.y, 0).normalize();
+      sp.base = isle.position.clone().addScaledVector(out, r + 8 + Math.abs(out.x) * w / 2 + Math.abs(out.y) * h);
+      sp.position.copy(sp.base);
+      sp.scale.set(w, h, 1);
     });
   }
 
@@ -772,11 +808,11 @@ export function make3D(env) {
       dropAxis();
       nodes.forEach(relabel);
       names?.tex.dispose(); names = null;
-      makeRegions(); placeRegions(); dropVerbs();
+      makeRegions(); makeIslands(); placeRegions(); dropVerbs();
       links.forEach(l => {
         if (!l.obj3 || l.kind !== 'rel') return;
         l.obj3.material.color.set(c.rel(l.rel));
-        l.pmesh?.material.color.set(c.rel(l.rel));
+        l.arrow?.material.color.set(c.rel(l.rel));
       });
     },
     resize() { if (size()) { placeAnchors(); fg.d3ReheatSimulation(); } },
@@ -794,7 +830,8 @@ export function make3D(env) {
       // Freeing the GPU's copies takes a while: not while books may still be flying out of the map.
       setTimeout(() => {
         nodes.forEach(n => { relabel(n); n.mesh?.material.map.dispose(); n.mesh?.material.dispose(); delete n.obj3; delete n.mesh; delete n.seal; });
-        links.forEach(l => { delete l.obj3; delete l.pmesh; });
+        links.forEach(l => { l.arrow?.material.dispose(); delete l.obj3; delete l.arrow; });
+        islands.forEach(s => s.material.dispose()); poolTex?.dispose();
         sheetTex.dispose(); medalTex.dispose(); names?.tex.dispose(); dropAxis(); dropVerbs();
         hairGeo.dispose(); hair.material.dispose();
         fg._destructor?.();

@@ -36,8 +36,7 @@ Usage:
                                                             (no step over a tenth of the way), axis fades in, >= 50 fps,
                                                             relations and years run left to right, back in place; kept
                                                             for the next visit; reduced motion at once; G4-03-*.png
-  python tools/graph_qa.py --modes                          the 3D map turns by itself until touched (not under reduced
-                                                            motion); the 2D | 3D switch draws the other engine and is
+  python tools/graph_qa.py --modes                          the 3D map holds still until the reader turns it; the 2D | 3D switch draws the other engine and is
                                                             remembered; without WebGL the map is drawn in 2D
   python tools/graph_qa.py --g2                             G2 items of PLAN.md §7 (margin mark -> jump, appendix link, Show in the graph
                                                             -> focus) at 1280 and 390, then --g1
@@ -1084,7 +1083,7 @@ def modes(browser, base) -> int:
     page.wait_for_timeout(2000)
     b = page.evaluate(cam)
     turn = (b["az"] - a["az"] + 540) % 360 - 180
-    check("3D turns by itself", page.evaluate("() => document.querySelector('.graph-stage').mode") == "3d" and abs(turn) > 1.5, f"{turn:.1f} deg in 2 s")
+    check("3D holds still", page.evaluate("() => document.querySelector('.graph-stage').mode") == "3d" and abs(turn) < 0.3, f"{turn:.1f} deg in 2 s")
     page.mouse.move(1180, 690)  # empty stage, clear of the key, the controls and the Web | Timeline switch
     page.mouse.down(); page.mouse.up()
     page.wait_for_timeout(300)

@@ -1,10 +1,10 @@
 // The flat map (graph.js chooses it when there is no WebGL or the reader picks 2D): force-graph (site/vendor) draws
 // each book on a canvas as a round badge: its cover symbol in gilt on its cloth (art.js badgeCanvas). Relation lines: style = contact, weight = case
-// of the lead reading, colour = kind, particles and an arrowhead from the older work to the newer. An author is a small gilt medal with
+// of the lead reading, colour = kind, an arrowhead from the older work to the newer; faint at rest, full when lit. An author is a small gilt medal with
 // its name, tied to its books by hairlines that pull them together; genre and shelf heading only pull books together.
 // Genre names lie under the books like regions on a map.
 import { isDrafts } from './catalog.js';
-import { GENRES, CASE_W, PER_YEAR, shortTitle, authorForces, drawMedal } from './graph.js';
+import { GENRES, CASE_W, REST_LINE, TITLES_AT, NAMES_AT, zoomIn, PER_YEAR, shortTitle, authorForces, drawMedal } from './graph.js';
 import { badgeCanvas } from './art.js';
 
 const DASH = { documented: null, probable: [6, 4], none: [1.4, 3.2] };
@@ -19,7 +19,7 @@ export function make2D(env) {
   function placeAnchors() {
     const r = stage.getBoundingClientRect();
     const aspect = Math.min(2.2, Math.max(0.45, (r.width || 1280) / (r.height || 800)));
-    const R = 230, rx = R * Math.sqrt(aspect), ry = R / Math.sqrt(aspect);
+    const R = 560, rx = R * Math.sqrt(aspect), ry = R / Math.sqrt(aspect);
     anchors = new Map(GENRES.map((g, i) => {
       // Start just off vertical so the lower-left corner, where the key sits, falls between two regions.
       const t = (-85 / 180) * Math.PI + (i / GENRES.length) * Math.PI * 2;
@@ -37,7 +37,7 @@ export function make2D(env) {
       }));
       ns.forEach(n => {
         const a = anchors.get(n.isA ? n.home : n.genre) || { x: 0, y: 0 };
-        const k = (n.deg ? 0.03 : n.isA ? 0.05 : 0.06) * alpha; // a book leans on its author more than on its genre
+        const k = (n.deg ? 0.07 : n.isA ? 0.08 : 0.12) * alpha; // a book leans on its author more than on its genre
         n.vx += (a.x - n.x) * k; n.vy += (a.y - n.y) * k;
         n.heads.forEach(h => {
           const c = heads.get(h);
@@ -96,8 +96,8 @@ export function make2D(env) {
     if (r * scale >= 5) { ctx.shadowColor = c.dark ? 'rgba(0,0,0,.55)' : 'rgba(28,34,32,.3)'; ctx.shadowBlur = 5 * n.s; ctx.shadowOffsetY = 1.5; }
     ctx.drawImage(medalImage(n, r * scale >= 6), n.x - r, n.y - r, r * 2, r * 2);
     ctx.restore();
-    // On the timeline the books' years come first: an author's name shows as the reader zooms in, or when lit.
-    const mix = env.timeline()?.mix || 0, named = on || env.marked(n) ? 1 : 1 - mix * (1 - Math.max(0, Math.min(1, (scale - 1.2) / 0.6)));
+    // The books come first: an author's name shows as the reader zooms in, or when lit.
+    const named = on || env.marked(n) || n === env.hoverNode() ? 1 : zoomIn(scale, NAMES_AT);
     if (named < 0.02) return;
     const px = 11.5, th = px / scale;
     ctx.save();
@@ -145,12 +145,13 @@ export function make2D(env) {
     }
     ctx.restore();
 
-    // Titles: always for related books and the lit neighbourhood, for the rest once the reader zooms in.
-    const show = lit.has(n) || (!focus && !dim && (n.deg > 0 || scale > 2.6));
+    // Titles: always for hubs and the lit neighbourhood, for other related books as the reader zooms in, for the rest
+    // closer still.
+    const show = lit.has(n) || n === env.hoverNode() || (!focus && !dim && (n.hub || (n.deg > 0 && scale > TITLES_AT) || scale > 2.6));
     if (!show) return;
     const px = n.deg || lit.has(n) ? 12.5 : 10.5;
     ctx.save();
-    ctx.globalAlpha = Math.min(1, n.a * (n.deg || lit.has(n) ? 1 : Math.min(1, (scale - 2.6) * 2)));
+    ctx.globalAlpha = Math.min(1, n.a * (n.hub || lit.has(n) || n === env.hoverNode() ? 1 : n.deg ? zoomIn(scale, TITLES_AT) : Math.min(1, (scale - 2.6) * 2)));
     ctx.font = `${marked ? 'italic ' : ''}${px / scale}px ${c.font}`;
     ctx.textAlign = 'center'; ctx.textBaseline = 'top';
     ctx.lineJoin = 'round'; ctx.lineWidth = 3.5 / scale; ctx.strokeStyle = c.bg;
@@ -167,7 +168,7 @@ export function make2D(env) {
     if (n.deg) tries.push(box(n.x + side, n.y - th / 2), box(n.x - side, n.y - th / 2));
     let b = tries.find(free);
     if (!b) {
-      if (!n.deg && !lit.has(n)) { ctx.restore(); return; }
+      if (!n.hub && !lit.has(n)) { ctx.restore(); return; }
       b = tries.reduce((m, t) => (clash(t) < clash(m) ? t : m)); // the least crowded place
     }
     labels.push(b);
@@ -249,6 +250,60 @@ export function make2D(env) {
     ctx.font = f; ctx.setTransform(M);
   }
 
+  // Each genre is an island: a soft pool of tone under its books, so the regions read before the lines do; its name in
+  // small capitals at the island's outer rim, away from the middle where the lines between genres cross.
+  let isles = new Map();
+  function measureIslands() {
+    const sums = new Map();
+    nodes.forEach(n => {
+      if (!n.genre || n.isA || !n.vis || !Number.isFinite(n.x)) return;
+      const s = sums.get(n.genre) || { x: 0, y: 0, rr: 0, k: 0 };
+      s.x += n.x; s.y += n.y; s.rr += n.x * n.x + n.y * n.y; s.k++; sums.set(n.genre, s);
+    });
+    isles = new Map();
+    sums.forEach((s, g) => {
+      if (s.k < 2) return;
+      const x = s.x / s.k, y = s.y / s.k, sd = Math.sqrt(Math.max(0, s.rr / s.k - x * x - y * y));
+      isles.set(g, { x, y, r: sd * 1.3 + 26 });
+    });
+  }
+  function drawIslands(ctx) {
+    const mix = env.timeline()?.mix || 0;
+    if (mix >= 1) return;
+    const c = C(), a = (c.dark ? 0.07 : 0.05) * (1 - mix) * (focusing() ? 0.5 : 1);
+    ctx.save();
+    isles.forEach(({ x, y, r }) => {
+      const g = ctx.createRadialGradient(x, y, 0, x, y, r);
+      g.addColorStop(0, withAlpha(c.ink, a)); g.addColorStop(0.6, withAlpha(c.ink, a * 0.7)); g.addColorStop(1, withAlpha(c.ink, 0));
+      ctx.fillStyle = g;
+      ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI * 2); ctx.fill();
+    });
+    ctx.restore();
+  }
+  function drawIsleNames(ctx, scale) {
+    const fade = Math.max(0, Math.min(1, (3.2 - scale) / 1.4)) * (1 - (env.timeline()?.mix || 0));
+    if (!fade) return;
+    const c = C(), px = 10.5 / scale;
+    ctx.save();
+    ctx.font = `600 ${px}px ${c.ui}`;
+    if ('letterSpacing' in ctx) ctx.letterSpacing = '1.5px';
+    ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+    ctx.lineJoin = 'round'; ctx.lineWidth = 3 / scale; ctx.strokeStyle = c.bg;
+    ctx.fillStyle = c.ink3;
+    ctx.globalAlpha = fade * (focusing() ? 0.4 : 0.9);
+    isles.forEach(({ x, y, r }, g) => {
+      const d = Math.hypot(x, y) || 1, ux = x / d, uy = y / d, t = g.toUpperCase(), w = measure(ctx, t) * 1.12;
+      // Out past the rim, far enough that the name's own width clears the pool.
+      const reach = r + 10 / scale + Math.abs(ux) * w / 2 + Math.abs(uy) * px;
+      // A name that would run off the side of the screen slides back in along it.
+      const tl = fg.screen2GraphCoords(0, 0), br = fg.screen2GraphCoords(stage.clientWidth, 0), edge = 8 / scale;
+      const ly = y + uy * reach, lx = Math.max(tl.x + edge + w / 2, Math.min(br.x - edge - w / 2, x + ux * reach));
+      put(ctx, true, t, lx, ly); put(ctx, false, t, lx, ly);
+      labels.push({ x0: lx - w / 2, x1: lx + w / 2, y0: ly - px / 2, y1: ly + px / 2 });
+    });
+    ctx.restore();
+  }
+
   let entered = false;
   function drawRegions(ctx, scale) {
     M = ctx.getTransform();
@@ -258,58 +313,9 @@ export function make2D(env) {
     labels = nodes.filter(n => n.deg && n.vis && Number.isFinite(n.x))
       .map(n => ({ n, x0: n.x - n.w / 2, x1: n.x + n.w / 2, y0: n.y - n.h / 2, y1: n.y + n.h / 2 }));
     drawAxis(ctx, scale);
-    // On the timeline the lanes name the genres instead.
-    const fade = Math.max(0, Math.min(1, (3.2 - scale) / 1.4)) * (1 - (env.timeline()?.mix || 0));
-    if (!fade) return;
-    const c = C();
-    // Placed by the books that stay home (no relations pull them away): above the mean by their spread.
-    const sums = new Map();
-    nodes.forEach(n => {
-      if (!n.genre || n.deg || !n.vis || !Number.isFinite(n.x)) return;
-      const s = sums.get(n.genre) || { x: 0, y: 0, yy: 0, k: 0 };
-      s.x += n.x; s.y += n.y; s.yy += n.y * n.y; s.k++; sums.set(n.genre, s);
-    });
-    const fs = Math.max(15, 17 / Math.sqrt(scale));
-    // On the outer side of each region, away from the middle where related books gather.
-    sums.forEach(s => {
-      const my = s.y / s.k, sd = Math.sqrt(Math.max(0, s.yy / s.k - my * my));
-      s.base = my < 0 ? my - 1.7 * sd - 12 : my + 1.7 * sd + 12 + fs * 0.75;
-    });
-    ctx.save();
-    // Related books gather in the middle and keep their titles: a region name steps outward, then sideways, off
-    // any such book and the room for its title above and below.
-    ctx.font = `${12.5 / scale}px ${c.font}`;
-    const th = 12.5 / scale + 6 / scale + 2;
-    const taken = nodes.filter(n => n.deg && n.vis && Number.isFinite(n.x)).map(n => {
-      const tw = Math.max(measure(ctx, shortTitle(n.b.title)), n.w) / 2 + 4 / scale;
-      return { x0: n.x - tw, x1: n.x + tw, y0: n.y - n.h / 2 - th, y1: n.y + n.h / 2 + th };
-    });
-    const tl = fg.screen2GraphCoords(0, 0), br = fg.screen2GraphCoords(stage.clientWidth, stage.clientHeight), edge = 8 / scale;
-    const inView = b => b.x0 >= tl.x + edge && b.x1 <= br.x - edge;
-    const crowd = b => taken.reduce((a, o) => a
-      + Math.max(0, Math.min(b.x1, o.x1) - Math.max(b.x0, o.x0)) * Math.max(0, Math.min(b.y1, o.y1) - Math.max(b.y0, o.y0)), 0);
-    ctx.textAlign = 'center'; ctx.textBaseline = 'alphabetic';
-    ctx.font = `italic ${fs}px ${c.font}`;
-    ctx.fillStyle = c.ink3;
-    ctx.globalAlpha = fade * (focusing() ? 0.35 : 0.85);
-    sums.forEach((s, g) => {
-      const w = measure(ctx, g), out = s.base < 0 ? -1 : 1, cx = s.x / s.k;
-      const at = (dx, k) => {
-        const x = cx + dx * w, y = s.base + out * k * fs * 1.1;
-        return { x, y, x0: x - w / 2, x1: x + w / 2, y0: y - fs * 0.8, y1: y + fs * 0.2 };
-      };
-      const onScreen = c => { // slide a name that runs off the edge back in
-        const d = Math.max(0, tl.x + edge - c.x0) - Math.max(0, c.x1 - (br.x - edge));
-        return { ...c, x: c.x + d, x0: c.x0 + d, x1: c.x1 + d };
-      };
-      const cands = [];
-      for (const k of [0, 1, 2, 3]) for (const dx of [0, -0.45, 0.45]) { const c = at(dx, k); if (inView(c)) cands.push(c); }
-      for (const k of [0, 1, 2, 3]) cands.push(onScreen(at(0, k)));
-      const b = cands.find(c => !crowd(c)) || cands.reduce((m, c) => (crowd(c) < crowd(m) ? c : m));
-      put(ctx, false, g, b.x, b.y);
-      labels.push({ x0: b.x0, x1: b.x1, y0: b.y0, y1: b.y1 });
-    });
-    ctx.restore();
+    measureIslands();
+    drawIslands(ctx);
+    drawIsleNames(ctx, scale);
   }
 
   // In a cascade each line says what it is, along its arrow ('answered by'), in its colour, at its middle.
@@ -337,7 +343,8 @@ export function make2D(env) {
     ctx.restore();
   }
 
-  const linkAlpha = l => (focusing() ? (litLinks.has(l) ? 1 : 0.06) : 1);
+  const linkAlpha = l => (focusing() ? (litLinks.has(l) ? 1 : 0.05) : env.filters.rels.size ? REST_LINE.filtered : REST_LINE.alpha);
+  const linkW = l => (CASE_W[l.case] || 1.8) * (focusing() && litLinks.has(l) ? (env.hoverLink() === l ? 1.4 : 1) : REST_LINE.width);
   const withAlpha = (hex, a) => {
     if (!hex.startsWith('#')) return hex;
     const h = hex.length === 4 ? hex.replace(/#(.)(.)(.)/, '#$1$1$2$2$3$3') : hex;
@@ -354,24 +361,20 @@ export function make2D(env) {
     .nodePointerAreaPaint(hitBook)
     .nodeVisibility(n => n.vis)
     .linkVisibility(l => l.source.vis && l.target.vis && (l.kind !== 'rel' ? !inFlight : l.on))
-    .linkCurvature(l => (l.kind === 'rel' && !env.cascade() ? 0.18 : 0)) // a cascade's lines run straight
+    .linkCurvature(l => (l.kind === 'rel' && !env.cascade() ? 0.14 : 0)) // a cascade's lines run straight
     .linkColor(l => (l.kind === 'author'
       ? withAlpha(C().ink3, (focusing() ? (litLinks.has(l) ? 0.75 : 0.03) : (C().dark ? 0.2 : 0.16)))
       : withAlpha(C().rel(l.rel), 0.88 * linkAlpha(l))))
-    .linkWidth(l => (l.kind === 'author' ? (litLinks.has(l) ? 1 : 0.5) : (CASE_W[l.case] || 1.8) * (litLinks.has(l) && env.hoverLink() === l ? 1.4 : 1)))
+    .linkWidth(l => (l.kind === 'author' ? (litLinks.has(l) ? 1 : 0.5) : linkW(l)))
     .linkLineDash(l => (l.kind === 'rel' ? DASH[l.contact] : null))
     .linkHoverPrecision(6)
-    // An arrowhead by the newer book, pointing the way the particles go: just short of its spine.
-    .linkDirectionalArrowLength(l => (l.kind === 'rel' ? ((CASE_W[l.case] || 1.8) + 1.6) * 2.7 : 0))
+    // An arrowhead by the newer book: just short of its spine.
+    .linkDirectionalArrowLength(l => (l.kind === 'rel' ? (linkW(l) + 1.4) * 2.4 : 0))
     .linkDirectionalArrowRelPos(l => {
       const d = Math.hypot(l.target.x - l.source.x, l.target.y - l.source.y) || 1;
       return Math.max(0.55, Math.min(0.99, 1 - (l.target.h * l.target.s * 0.5 + 1) / d));
     })
     .linkDirectionalArrowColor(l => withAlpha(C().rel(l.rel), 0.95 * linkAlpha(l)))
-    .linkDirectionalParticles(l => (l.kind === 'rel' ? (l.case === 'strong' ? 4 : 3) : 0))
-    .linkDirectionalParticleSpeed(l => (l.case === 'speculative' ? 0.0035 : 0.005))
-    .linkDirectionalParticleWidth(l => (CASE_W[l.case] || 1.8) + 1.6)
-    .linkDirectionalParticleColor(l => withAlpha(C().rel(l.rel), linkAlpha(l)))
     .onRenderFramePre(drawRegions)
     .autoPauseRedraw(false)
     .minZoom(0.35).maxZoom(9)

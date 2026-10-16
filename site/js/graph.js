@@ -1,5 +1,5 @@
 // Graph view (#/graph): every readable book is a node. Relations (notes) are the strong lines: style = contact, weight
-// = case of the lead reading, colour = kind, particles and arrowheads run from the older work to the newer. Each author is a node too,
+// = case of the lead reading, colour = kind, arrowheads point from the older work to the newer. Each author is a node too,
 // a small medal with its name, tied to its books by hairlines that draw them into one cluster; genre and shelf heading
 // only pull books together, with no line drawn.
 // Two engines draw it: graph3d.js (3d-force-graph, books as boxes in space; the default) and graph2d.js (force-graph
@@ -13,6 +13,13 @@ import { make3D } from './graph3d.js';
 import { pairHref } from './pair.js';
 
 export const CASE_W = { strong: 3.4, moderate: 2.4, speculative: 1.4 };
+// At rest relation lines are thin and faint, so the regions read first; a book or line under the pointer, a filter or
+// a cascade brings its lines up to full colour and weight.
+export const REST_LINE = { alpha: 0.26, width: 0.55, filtered: 0.75 };
+const HUBS = 30;
+// Zoom (screen pixels per map unit) at which the other related books' titles, and the authors' names, come in.
+export const TITLES_AT = 1.5, NAMES_AT = 1.8;
+export const zoomIn = (k, at) => Math.max(0, Math.min(1, (k - at) / 0.4));
 // Neighbouring regions share a border: Gothic sits between ghosts and science fiction.
 export const GENRES = ['Gothic & Horror', 'Science Fiction & Fantasy', 'Adventure', 'Mystery & Detective', 'Humor & Satire',
   'Fairy Tales & Fables', 'Love & Society', 'Realism & Character', 'Ghost Stories'];
@@ -59,7 +66,7 @@ function wantedLayout() {
 
 // The timeline: x is the year a book came out, a lane for each genre (in the order of the map's regions) across it.
 // Years from 1700 on are to scale; the few older ones (a fable, the Nights) stand in slots of their own left of a
-// break. A relation's older book is always left of its newer one, so its particles run left to right. Within a lane
+// break. A relation's older book is always left of its newer one, so its arrows run left to right. Within a lane
 // the books step up and down out of one another's way. Positions are in map units with y down; the 3D engine turns
 // them over (yUp).
 export const PER_YEAR = 6.5;
@@ -174,7 +181,7 @@ function drawGraph(root, G, { go, lib, focus = null, arrive = null, mode, switch
   const authorNodes = nodes.filter(n => n.isA);
   const lifeOf = a => (a.p.born || a.p.died ? `${a.p.born || '?'}–${a.p.died || ''}` : '');
 
-  // Relation lines run from the older work (the note's to) to the newer one (its from), so particles and arrows carry
+  // Relation lines run from the older work (the note's to) to the newer one (its from), so arrows carry
   // influence forward in time, while the sentence reads back: 'the newer book answers the older'.
   const relLinks = G.notes.filter(n => byId.has(n.from) && byId.has(n.to)).map(n => {
     // The lead reading first, then any others, then the readings that dispute it.
@@ -242,7 +249,7 @@ function drawGraph(root, G, { go, lib, focus = null, arrive = null, mode, switch
             <li><i class="key-line" data-rel="${esc(r)}"></i><span><b>${esc(relLabel(r))}</b> ${esc(relKind(r).def)}</span></li>`).join('')}
           </ul>
           <h3>Direction</h3>
-          <ul><li><i class="key-arrow"></i><span>Arrows and moving dots carry influence forward, from the older book to the newer.
+          <ul><li><i class="key-arrow"></i><span>Arrows carry influence forward, from the older book to the newer. Point at a book to bring its lines forward.
             On the timeline they run left to right. Sentences read back from the newer: <i>Rappaccini's Daughter</i> answers <i>Frankenstein</i>.</span></li></ul>
           <h3>Contact</h3>
           <ul>${Object.entries(CONTACT_KINDS).map(([c, k]) => `
@@ -286,6 +293,13 @@ function drawGraph(root, G, { go, lib, focus = null, arrive = null, mode, switch
     n.h = n.w = n.deg ? 11 + 3.6 * Math.sqrt(n.deg) : 8; // the badge's diameter
     n.r = n.h * 0.5 + (n.deg ? 32 : 2); // related books keep room for their titles
   });
+  // Hubs keep their titles on the whole map: the most related books, and the two most related of each genre, so every
+  // region is named by its books. The rest show their titles as the reader zooms in, or when lit.
+  // On a phone, fewer: a dozen and one a genre.
+  const ranked = bookNodes.filter(n => n.deg).sort((a, b) => b.deg - a.deg), phone = innerWidth < 640;
+  ranked.slice(0, phone ? 12 : HUBS).forEach(n => { n.hub = true; });
+  GENRES.forEach(g => ranked.filter(n => n.genre === g).slice(0, phone ? 1 : 2).forEach(n => { n.hub = true; }));
+  ranked.forEach(n => { if (!n.hub) n.r = n.h * 0.5 + 10; }); // only a hub keeps room for its title at rest
 
   /* ---------- hover state ---------- */
   let hoverNode = null, hoverLink = null, popLink = null, pin = null; // pin: the book found or named in the URL
@@ -389,7 +403,7 @@ function drawGraph(root, G, { go, lib, focus = null, arrive = null, mode, switch
     const cs = getComputedStyle(document.documentElement);
     const v = k => cs.getPropertyValue(k).trim();
     const dark = cs.colorScheme === 'dark' || v('color-scheme') === 'dark';
-    const C = { dark, bg: v('--bg'), ink: v('--ink'), ink2: v('--ink-2'), ink3: v('--ink-3'), rule: v('--rule'), font: v('--font-read') || 'serif' };
+    const C = { dark, bg: v('--bg'), ink: v('--ink'), ink2: v('--ink-2'), ink3: v('--ink-3'), rule: v('--rule'), font: v('--font-read') || 'serif', ui: v('--font-ui') || 'sans-serif' };
     C.rel = r => relColour(r, dark);
     env.C = C;
     root.querySelectorAll('i[data-rel]').forEach(el => el.style.setProperty('--c', C.rel(el.dataset.rel)));
@@ -1124,10 +1138,12 @@ function drawGraph(root, G, { go, lib, focus = null, arrive = null, mode, switch
 // an author across genres keeps one tight cluster in its home region and only reaches out to the others; related books
 // stay in the middle, where the relations are.
 export function authorForces(fg) {
-  fg.d3Force('charge').strength(n => (n.deg ? -110 : n.isA ? -30 : -16)).distanceMax(220);
+  fg.d3Force('charge').strength(n => (n.deg ? -70 : n.isA ? -30 : -16)).distanceMax(130);
+  // A relation within a genre holds its books together; one across genres only leans, so the regions stay apart.
   fg.d3Force('link')
-    .distance(l => (l.kind === 'rel' ? 120 : 14 + l.target.h))
-    .strength(l => (l.kind === 'rel' ? 0.08 : l.source.deg ? 0.03 : l.source.genre === l.target.home ? 0.5 : 0.04));
+    .distance(l => (l.kind === 'rel' ? (l.source.genre === l.target.genre ? 90 : 220) : 14 + l.target.h))
+    .strength(l => (l.kind === 'rel' ? (l.source.genre === l.target.genre ? 0.07 : 0.012)
+      : l.source.deg ? 0.03 : l.source.genre === l.target.home ? 0.5 : 0.04));
 }
 
 // A gilt medal with initials, centred on (x, y), on a 2D canvas context.
